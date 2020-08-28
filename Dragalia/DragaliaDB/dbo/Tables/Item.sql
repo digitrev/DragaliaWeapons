@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Item] (
+    [ItemID]   SMALLINT      IDENTITY (1, 1) NOT NULL,
+    [ItemName] NVARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_Item] PRIMARY KEY CLUSTERED ([ItemID] ASC)
+);
+
