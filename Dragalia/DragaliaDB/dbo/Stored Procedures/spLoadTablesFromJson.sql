@@ -9,6 +9,9 @@ BEGIN
 	IF OBJECT_ID('tempdb..#WeaponUpgrade') IS NOT NULL
 		DROP TABLE #WeaponUpgrade
 
+	IF OBJECT_ID('tempdb..#Passive') IS NOT NULL
+		DROP TABLE #Passive
+
 	--Ability data
 	MERGE Ability AS trg
 	USING (
@@ -499,4 +502,156 @@ BEGIN
 		FROM #WeaponUpgrade
 		) AS wu
 	INNER JOIN Material AS m ON m.MaterialID = wu.MaterialID
+
+	--Passive data
+	SELECT p.PassiveID
+		,p.AbilityNumber
+		,p.WeaponTypeID
+		,p.ElementID
+		,p.AbilityID
+		,p.UnlockCoin
+		,p.UnlockMaterialId1
+		,p.UnlockMaterialQuantity1
+		,p.UnlockMaterialId2
+		,p.UnlockMaterialQuantity2
+		,p.UnlockMaterialId3
+		,p.UnlockMaterialQuantity3
+		,p.UnlockMaterialId4
+		,p.UnlockMaterialQuantity4
+		,p.UnlockMaterialId5
+		,p.UnlockMaterialQuantity5
+	INTO #Passive
+	FROM jsn.Passive AS pj
+	CROSS APPLY OPENJSON(pj.JsonText) WITH (cargoquery NVARCHAR(max) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			PassiveID INT '$.title.Id'
+			,AbilityNumber INT '$.title.WeaponPassiveAbilityNo'
+			,WeaponTypeID INT '$.title.WeaponTypeId'
+			,ElementID INT '$.title.ElementalTypeId'
+			,AbilityID INT '$.title.AbilityId'
+			,UnlockCoin INT '$.title.UnlockCoin'
+			,UnlockMaterialId1 NVARCHAR(50) '$.title.UnlockMaterialId1'
+			,UnlockMaterialQuantity1 INT '$.title.UnlockMaterialQuantity1'
+			,UnlockMaterialId2 NVARCHAR(50) '$.title.UnlockMaterialId2'
+			,UnlockMaterialQuantity2 INT '$.title.UnlockMaterialQuantity2'
+			,UnlockMaterialId3 NVARCHAR(50) '$.title.UnlockMaterialId3'
+			,UnlockMaterialQuantity3 INT '$.title.UnlockMaterialQuantity3'
+			,UnlockMaterialId4 NVARCHAR(50) '$.title.UnlockMaterialId4'
+			,UnlockMaterialQuantity4 INT '$.title.UnlockMaterialQuantity4'
+			,UnlockMaterialId5 NVARCHAR(50) '$.title.UnlockMaterialId5'
+			,UnlockMaterialQuantity5 INT '$.title.UnlockMaterialQuantity5'
+			) AS p
+
+	--Unknown abilities (should be deprecated in the future)
+	INSERT Ability (
+		AbilityID
+		,Ability
+		,GenericName
+		)
+	SELECT DISTINCT p.AbilityID
+		,CONCAT (
+			'('
+			,e.Element
+			,') Unknown Ability #'
+			,p.AbilityID
+			)
+		,CONCAT (
+			'Unknown Ability #'
+			,p.AbilityID
+			)
+	FROM #Passive AS p
+	INNER JOIN Element AS e ON e.ElementID = p.ElementID
+	LEFT JOIN Ability AS a ON a.AbilityID = p.AbilityID
+	WHERE a.AbilityID IS NULL
+
+	MERGE Passive AS trg
+	USING (
+		SELECT PassiveID
+			,WeaponTypeID
+			,ElementID
+			,AbilityID
+			,AbilityNumber
+		FROM #Passive AS p
+		) AS src
+		ON src.PassiveID = trg.PassiveID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET WeaponTypeID = src.WeaponTypeID
+				,ElementID = src.ElementID
+				,AbilityID = src.AbilityID
+				,AbilityNumber = src.AbilityNumber
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				PassiveID
+				,WeaponTypeID
+				,ElementID
+				,AbilityID
+				,AbilityNumber
+				)
+			VALUES (
+				src.PassiveID
+				,src.WeaponTypeID
+				,src.ElementID
+				,src.AbilityID
+				,src.AbilityNumber
+				);
+
+	--Passive crafting
+	TRUNCATE TABLE PassiveCrafting
+
+	INSERT PassiveCrafting (
+		PassiveID
+		,MaterialID
+		,Quantity
+		)
+	SELECT pc.PassiveID
+		,pc.MaterialID
+		,pc.Quantity
+	FROM (
+		SELECT PassiveID
+			,'Rupie' AS MaterialID
+			,UnlockCoin AS Quantity
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId1
+			,UnlockMaterialQuantity1
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId2
+			,UnlockMaterialQuantity2
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId3
+			,UnlockMaterialQuantity3
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId4
+			,UnlockMaterialQuantity4
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId5
+			,UnlockMaterialQuantity5
+		FROM #Passive
+		) AS pc
+	INNER JOIN Material AS m ON m.MaterialID = pc.MaterialID
 END

@@ -6,6 +6,6 @@
 		[WeaponID]
 		,[MaterialID]
 		)
-	,CONSTRAINT [FK_WeaponCrafting_Weapon] FOREIGN KEY ([WeaponID]) REFERENCES [Weapon]([WeaponID])
-	,CONSTRAINT [FK_WeaponCrafting_Material] FOREIGN KEY ([MaterialID]) REFERENCES [Material]([MaterialID])
+	,CONSTRAINT [FK_WeaponCrafting_Weapon] FOREIGN KEY ([WeaponID]) REFERENCES [Weapon]([WeaponID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_WeaponCrafting_Material] FOREIGN KEY ([MaterialID]) REFERENCES [Material]([MaterialID]) ON DELETE CASCADE
 	)

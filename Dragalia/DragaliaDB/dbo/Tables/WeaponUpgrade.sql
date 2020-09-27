@@ -10,7 +10,7 @@
 		,[Step]
 		,[MaterialID]
 		)
-	,CONSTRAINT [FK_WeaponUpgrade_Weapon] FOREIGN KEY ([WeaponID]) REFERENCES [Weapon]([WeaponID])
-	,CONSTRAINT [FK_WeaponUpgrade_UpgradeType] FOREIGN KEY ([UpgradeTypeID]) REFERENCES [UpgradeType]([UpgradeTypeID])
-	,CONSTRAINT [FK_WeaponUpgrade_Material] FOREIGN KEY ([MaterialID]) REFERENCES [Material]([MaterialID])
+	,CONSTRAINT [FK_WeaponUpgrade_Weapon] FOREIGN KEY ([WeaponID]) REFERENCES [Weapon]([WeaponID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_WeaponUpgrade_UpgradeType] FOREIGN KEY ([UpgradeTypeID]) REFERENCES [UpgradeType]([UpgradeTypeID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_WeaponUpgrade_Material] FOREIGN KEY ([MaterialID]) REFERENCES [Material]([MaterialID]) ON DELETE CASCADE
 	)

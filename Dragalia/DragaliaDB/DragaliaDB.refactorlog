@@ -49,4 +49,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AbilityID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="6fc92bbd-c65d-4f64-80cf-c029408ed8c0" ChangeDateTime="09/27/2020 17:37:33">
+    <Property Name="ElementName" Value="[dbo].[WeaponPassive].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponPassive]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponPassiveID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ab51b438-81e9-477b-828b-1f30fba5e03e" ChangeDateTime="09/27/2020 17:37:48">
+    <Property Name="ElementName" Value="[dbo].[WeaponPassive].[WeaponPassiveID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponPassive]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponTypeID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e3bda7da-5e67-4e46-bfac-a258e24a4dbc" ChangeDateTime="09/27/2020 17:44:05">
+    <Property Name="ElementName" Value="[dbo].[WeaponPassive].[WeaponPassiveID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponPassive]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PassiveID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ea90be2b-78a6-41b0-97fb-c6614b585524" ChangeDateTime="09/27/2020 17:44:21">
+    <Property Name="ElementName" Value="[dbo].[WeaponPassive]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Passive]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="26cf06a5-d29a-4855-861a-537fb58ef01b" ChangeDateTime="09/27/2020 18:08:43">
+    <Property Name="ElementName" Value="[dbo].[PassiveCrafting].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PassiveCrafting]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PassiveID" />
+  </Operation>
 </Operations>
