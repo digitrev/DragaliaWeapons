@@ -78,5 +78,7 @@
     <Build Include="dbo\Functions\fnGetWeaponCraftingCounts.sql" />
     <Build Include="dbo\Stored Procedures\spLoadTablesFromJson.sql" />
     <Build Include="Security\jsn.sql" />
+    <Build Include="dbo\Stored Procedures\spGetWeaponList.sql" />
+    <Build Include="dbo\Stored Procedures\spGetWeaponRecipe.sql" />
   </ItemGroup>
 </Project>
