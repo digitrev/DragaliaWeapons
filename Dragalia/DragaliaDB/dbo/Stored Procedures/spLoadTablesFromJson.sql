@@ -9,6 +9,42 @@ BEGIN
 	IF OBJECT_ID('tempdb..#WeaponUpgrade') IS NOT NULL
 		DROP TABLE #WeaponUpgrade
 
+	--Ability data
+	MERGE Ability AS trg
+	USING (
+		SELECT a.AbilityID
+			,REPLACE(a.Ability, '&amp;', '&') AS Ability
+			,REPLACE(a.GenericName, '&amp;', '&') AS GenericName
+		FROM jsn.Ability AS aj
+		CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				AbilityID INT '$.title.Id'
+				,Ability NVARCHAR(255) '$.title.Name'
+				,GenericName NVARCHAR(255) '$.title.GenericName'
+				) AS a
+		) AS src
+		ON src.AbilityID = trg.AbilityID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Ability = src.Ability
+				,GenericName = src.GenericName
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AbilityID
+				,Ability
+				,GenericName
+				)
+			VALUES (
+				src.AbilityID
+				,src.Ability
+				,src.GenericName
+				);
+
 	--Material data
 	MERGE Material AS trg
 	USING (
