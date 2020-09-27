@@ -547,6 +547,7 @@ BEGIN
 	--Passive data
 	SELECT p.PassiveID
 		,p.AbilityNumber
+		,p.SortId
 		,p.WeaponTypeID
 		,p.ElementID
 		,p.AbilityID
@@ -567,6 +568,7 @@ BEGIN
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			PassiveID INT '$.title.Id'
 			,AbilityNumber INT '$.title.WeaponPassiveAbilityNo'
+			,SortId INT '$.title.SortId'
 			,WeaponTypeID INT '$.title.WeaponTypeId'
 			,ElementID INT '$.title.ElementalTypeId'
 			,AbilityID INT '$.title.AbilityId'
@@ -612,6 +614,7 @@ BEGIN
 			,ElementID
 			,AbilityID
 			,AbilityNumber
+			,SortId
 		FROM #Passive AS p
 		) AS src
 		ON src.PassiveID = trg.PassiveID
@@ -622,6 +625,7 @@ BEGIN
 				,ElementID = src.ElementID
 				,AbilityID = src.AbilityID
 				,AbilityNumber = src.AbilityNumber
+				,SortOrder = src.SortId
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
@@ -633,6 +637,7 @@ BEGIN
 				,ElementID
 				,AbilityID
 				,AbilityNumber
+				,SortOrder 
 				)
 			VALUES (
 				src.PassiveID
@@ -640,6 +645,7 @@ BEGIN
 				,src.ElementID
 				,src.AbilityID
 				,src.AbilityNumber
+				,src.SortId
 				);
 
 	--Passive crafting

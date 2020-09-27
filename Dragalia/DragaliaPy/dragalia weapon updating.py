@@ -53,7 +53,7 @@ materialParams["fields"] = "Name,Id"
 
 passiveParams = baseParams.copy()
 passiveParams["tables"] = "WeaponPassiveAbility"
-passiveParams["fields"] = "Id,WeaponPassiveAbilityNo,WeaponTypeId,ElementalTypeId,AbilityId,UnlockCoin,UnlockMaterialId1,UnlockMaterialQuantity1,UnlockMaterialId2,UnlockMaterialQuantity2,UnlockMaterialId3,UnlockMaterialQuantity3,UnlockMaterialId4,UnlockMaterialQuantity4,UnlockMaterialId5,UnlockMaterialQuantity5"
+passiveParams["fields"] = "Id,WeaponPassiveAbilityNo,WeaponTypeId,ElementalTypeId,AbilityId,UnlockCoin,UnlockMaterialId1,UnlockMaterialQuantity1,UnlockMaterialId2,UnlockMaterialQuantity2,UnlockMaterialId3,UnlockMaterialQuantity3,UnlockMaterialId4,UnlockMaterialQuantity4,UnlockMaterialId5,UnlockMaterialQuantity5,SortId"
 
 weaponParams = baseParams.copy()
 weaponParams["tables"] = "Weapons"

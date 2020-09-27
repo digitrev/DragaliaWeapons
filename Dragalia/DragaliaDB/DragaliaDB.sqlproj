@@ -93,6 +93,8 @@
     <Build Include="dbo\Stored Procedures\spWeaponSlots.sql" />
     <Build Include="dbo\Stored Procedures\spWeaponBonus.sql" />
     <Build Include="dbo\Stored Procedures\spWeaponCopies.sql" />
+    <Build Include="dbo\Stored Procedures\spPassiveList.sql" />
+    <Build Include="dbo\Stored Procedures\spPassiveCrafting.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
