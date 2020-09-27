@@ -3,6 +3,12 @@ AS
 BEGIN
 	SET NOCOUNT ON
 
+	IF OBJECT_ID('tempdb..#Weapon') IS NOT NULL
+		DROP TABLE #Weapon
+
+	IF OBJECT_ID('tempdb..#WeaponUpgrade') IS NOT NULL
+		DROP TABLE #WeaponUpgrade
+
 	--Material data
 	MERGE Material AS trg
 	USING (
@@ -41,9 +47,6 @@ BEGIN
 				);
 
 	--Weapon data
-	IF OBJECT_ID('tempdb..#Weapon') IS NOT NULL
-		DROP TABLE #Weapon
-
 	SELECT w.WeaponID
 		,w.WeaponName
 		,w.WeaponSeries
@@ -64,6 +67,7 @@ BEGIN
 		,w.CreateEntityQuantity4
 		,w.CreateEntity5
 		,w.CreateEntityQuantity5
+		,w.GroupID
 	INTO #Weapon
 	FROM jsn.Weapon AS wj
 	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
@@ -88,7 +92,7 @@ BEGIN
 			,CreateEntityQuantity4 INT '$.title.CreateEntityQuantity4'
 			,CreateEntity5 NVARCHAR(50) '$.title.CreateEntity5'
 			,CreateEntityQuantity5 INT '$.title.CreateEntityQuantity5'
-			,WeaponBodyBuildupGroupID INT '$.title.WeaponBodyBuildupGroupId'
+			,GroupID INT '$.title.WeaponBodyBuildupGroupId'
 			) AS w
 
 	--Basic tables
@@ -262,4 +266,201 @@ BEGIN
 		FROM #Weapon
 		) AS wc
 	INNER JOIN Material AS m ON m.MaterialName = wc.Material
+
+	--Weapon upgrade
+	SELECT w.WeaponID
+		,wu.UpgradeTypeID
+		,wu.UpgradeType
+		,wu.Step
+		,wu.BuildupCoin
+		,wu.BuildupMaterialID1
+		,wu.BuildupMaterialQuantity1
+		,wu.BuildupMaterialID2
+		,wu.BuildupMaterialQuantity2
+		,wu.BuildupMaterialID3
+		,wu.BuildupMaterialQuantity3
+		,wu.BuildupMaterialID4
+		,wu.BuildupMaterialQuantity4
+		,wu.BuildupMaterialID5
+		,wu.BuildupMaterialQuantity5
+		,wu.BuildupMaterialID6
+		,wu.BuildupMaterialQuantity6
+		,wu.BuildupMaterialID7
+		,wu.BuildupMaterialQuantity7
+		,wu.BuildupMaterialID8
+		,wu.BuildupMaterialQuantity8
+		,wu.BuildupMaterialID9
+		,wu.BuildupMaterialQuantity9
+		,wu.BuildupMaterialID10
+		,wu.BuildupMaterialQuantity10
+	INTO #WeaponUpgrade
+	FROM jsn.WeaponUpgrade AS wuj
+	CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			GroupID NVARCHAR(50) '$.title.WeaponBodyBuildupGroupId'
+			,UpgradeTypeID NVARCHAR(50) '$.title.BuildupPieceTypeId'
+			,UpgradeType NVARCHAR(50) '$.title.BuildupPieceType'
+			,Step NVARCHAR(50) '$.title.Step'
+			,BuildupCoin INT '$.title.BuildupCoin'
+			,BuildupMaterialID1 NVARCHAR(50) '$.title.BuildupMaterialId1'
+			,BuildupMaterialQuantity1 INT '$.title.BuildupMaterialQuantity1'
+			,BuildupMaterialID2 NVARCHAR(50) '$.title.BuildupMaterialId2'
+			,BuildupMaterialQuantity2 INT '$.title.BuildupMaterialQuantity2'
+			,BuildupMaterialID3 NVARCHAR(50) '$.title.BuildupMaterialId3'
+			,BuildupMaterialQuantity3 INT '$.title.BuildupMaterialQuantity3'
+			,BuildupMaterialID4 NVARCHAR(50) '$.title.BuildupMaterialId4'
+			,BuildupMaterialQuantity4 INT '$.title.BuildupMaterialQuantity4'
+			,BuildupMaterialID5 NVARCHAR(50) '$.title.BuildupMaterialId5'
+			,BuildupMaterialQuantity5 INT '$.title.BuildupMaterialQuantity5'
+			,BuildupMaterialID6 NVARCHAR(50) '$.title.BuildupMaterialId6'
+			,BuildupMaterialQuantity6 INT '$.title.BuildupMaterialQuantity6'
+			,BuildupMaterialID7 NVARCHAR(50) '$.title.BuildupMaterialId7'
+			,BuildupMaterialQuantity7 INT '$.title.BuildupMaterialQuantity7'
+			,BuildupMaterialID8 NVARCHAR(50) '$.title.BuildupMaterialId8'
+			,BuildupMaterialQuantity8 INT '$.title.BuildupMaterialQuantity8'
+			,BuildupMaterialID9 NVARCHAR(50) '$.title.BuildupMaterialId9'
+			,BuildupMaterialQuantity9 INT '$.title.BuildupMaterialQuantity9'
+			,BuildupMaterialID10 NVARCHAR(50) '$.title.BuildupMaterialId10'
+			,BuildupMaterialQuantity10 INT '$.title.BuildupMaterialQuantity10'
+			) AS wu
+	INNER JOIN #Weapon AS w ON w.GroupID = wu.GroupID
+
+	MERGE UpgradeType AS trg
+	USING (
+		SELECT DISTINCT UpgradeTypeID
+			,UpgradeType
+		FROM #WeaponUpgrade
+		) AS src
+		ON src.UpgradeTypeID = trg.UpgradeType
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET UpgradeType = src.UpgradeType
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				UpgradeTypeID
+				,UpgradeType
+				)
+			VALUES (
+				src.UpgradeTypeID
+				,src.UpgradeType
+				);
+
+	TRUNCATE TABLE WeaponUpgrade
+
+	INSERT WeaponUpgrade (
+		WeaponID
+		,UpgradeTypeID
+		,Step
+		,MaterialID
+		,Quantity
+		)
+	SELECT wu.WeaponID
+		,wu.UpgradeTypeID
+		,wu.Step
+		,wu.MaterialID
+		,wu.Quantity
+	FROM (
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID1 AS MaterialID
+			,BuildupMaterialQuantity1 AS Quantity
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID2
+			,BuildupMaterialQuantity2
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID3
+			,BuildupMaterialQuantity3
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID4
+			,BuildupMaterialQuantity4
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID5
+			,BuildupMaterialQuantity5
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID6
+			,BuildupMaterialQuantity6
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID7
+			,BuildupMaterialQuantity7
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID8
+			,BuildupMaterialQuantity8
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID9
+			,BuildupMaterialQuantity9
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID10
+			,BuildupMaterialQuantity10
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,'Rupie'
+			,BuildupCoin
+		FROM #WeaponUpgrade
+		) AS wu
+	INNER JOIN Material AS m ON m.MaterialID = wu.MaterialID
 END
