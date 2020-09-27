@@ -88,9 +88,10 @@ BEGIN
 			,CreateEntityQuantity4 INT '$.title.CreateEntityQuantity4'
 			,CreateEntity5 NVARCHAR(50) '$.title.CreateEntity5'
 			,CreateEntityQuantity5 INT '$.title.CreateEntityQuantity5'
+			,WeaponBodyBuildupGroupID INT '$.title.WeaponBodyBuildupGroupId'
 			) AS w
 
-	--Build up basic tables
+	--Basic tables
 	MERGE Element AS trg
 	USING (
 		SELECT DISTINCT ElementID
@@ -166,7 +167,7 @@ BEGIN
 				,src.WeaponType
 				);
 
-	--Weapon table
+	--Weapons
 	MERGE Weapon AS trg
 	USING (
 		SELECT WeaponID
