@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="bf1661d8-e414-4a20-b23a-9220dae88c9a" ChangeDateTime="09/27/2020 13:59:26">
+    <Property Name="ElementName" Value="[jsn].[Material].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[jsn].[Material]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="JsonID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0402b060-144d-4dea-9e9a-ae95518b88ba" ChangeDateTime="09/27/2020 14:03:53">
+    <Property Name="ElementName" Value="[dbo].[Material].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Material]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MaterialID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9c75ace9-19de-4016-ba60-980eaa9b4037" ChangeDateTime="09/27/2020 14:26:40">
+    <Property Name="ElementName" Value="[dbo].[Weapon].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Weapon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1e7dbaac-e9e6-4d78-bf66-0a7ce164e287" ChangeDateTime="09/27/2020 14:45:12">
+    <Property Name="ElementName" Value="[dbo].[WeaponSeries].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponSeries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponSeriesID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a7e33363-bdb9-4fcd-9f9f-69940e1816fe" ChangeDateTime="09/27/2020 15:15:03">
+    <Property Name="ElementName" Value="[dbo].[WeaponCrafting].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponCrafting]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="882ebfd4-a258-47a5-8514-2f44159d4f37" ChangeDateTime="09/27/2020 15:58:07">
+    <Property Name="ElementName" Value="[dbo].[WeaponUpgrade].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponUpgrade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="77d798c8-444d-4973-9eed-f64c03a3bced" ChangeDateTime="09/27/2020 17:18:57">
+    <Property Name="ElementName" Value="[dbo].[Ability].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Ability]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AbilityID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6fc92bbd-c65d-4f64-80cf-c029408ed8c0" ChangeDateTime="09/27/2020 17:37:33">
+    <Property Name="ElementName" Value="[dbo].[WeaponPassive].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponPassive]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponPassiveID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ab51b438-81e9-477b-828b-1f30fba5e03e" ChangeDateTime="09/27/2020 17:37:48">
+    <Property Name="ElementName" Value="[dbo].[WeaponPassive].[WeaponPassiveID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponPassive]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponTypeID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e3bda7da-5e67-4e46-bfac-a258e24a4dbc" ChangeDateTime="09/27/2020 17:44:05">
+    <Property Name="ElementName" Value="[dbo].[WeaponPassive].[WeaponPassiveID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponPassive]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PassiveID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ea90be2b-78a6-41b0-97fb-c6614b585524" ChangeDateTime="09/27/2020 17:44:21">
+    <Property Name="ElementName" Value="[dbo].[WeaponPassive]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Passive]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="26cf06a5-d29a-4855-861a-537fb58ef01b" ChangeDateTime="09/27/2020 18:08:43">
+    <Property Name="ElementName" Value="[dbo].[PassiveCrafting].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PassiveCrafting]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PassiveID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ae9a25fc-7134-4277-9bea-3fd3c24b0dba" ChangeDateTime="09/27/2020 18:35:38">
+    <Property Name="ElementName" Value="[dbo].[WeaponLevel].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponLevel]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rarity" />
+  </Operation>
+</Operations>

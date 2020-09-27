@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Element] (
-    [ElementID] TINYINT       IDENTITY (1, 1) NOT NULL,
-    [Element]   NVARCHAR (10) NOT NULL,
-    CONSTRAINT [PK_Element] PRIMARY KEY CLUSTERED ([ElementID] ASC)
-);
-
+	[ElementID] INT NOT NULL
+	,[Element] NVARCHAR(50) NULL
+	,[SortOrder] INT NOT NULL , 
+    CONSTRAINT [PK_Element] PRIMARY KEY ([ElementID])
+	)

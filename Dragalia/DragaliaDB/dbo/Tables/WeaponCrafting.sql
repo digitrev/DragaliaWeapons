@@ -1,9 +1,11 @@
 ﻿CREATE TABLE [dbo].[WeaponCrafting] (
-    [WeaponID] INT      NOT NULL,
-    [ItemID]   SMALLINT NOT NULL,
-    [Quantity] INT      NOT NULL,
-    CONSTRAINT [PK_WeaponCrafting] PRIMARY KEY CLUSTERED ([WeaponID] ASC, [ItemID] ASC),
-    CONSTRAINT [FK_WeaponCrafting_Item] FOREIGN KEY ([ItemID]) REFERENCES [dbo].[Item] ([ItemID]),
-    CONSTRAINT [FK_WeaponCrafting_Weapon] FOREIGN KEY ([WeaponID]) REFERENCES [dbo].[Weapon] ([WeaponID])
-);
-
+	[WeaponID] INT NOT NULL
+	,[MaterialID] NVARCHAR(50) NOT NULL
+	,[Quantity] INT NOT NULL
+	,CONSTRAINT [PK_WeaponCrafting] PRIMARY KEY (
+		[WeaponID]
+		,[MaterialID]
+		)
+	,CONSTRAINT [FK_WeaponCrafting_Weapon] FOREIGN KEY ([WeaponID]) REFERENCES [Weapon]([WeaponID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_WeaponCrafting_Material] FOREIGN KEY ([MaterialID]) REFERENCES [Material]([MaterialID]) ON DELETE CASCADE
+	)

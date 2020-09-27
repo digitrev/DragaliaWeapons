@@ -3,178 +3,274 @@ AS
 BEGIN
 	SET NOCOUNT ON
 
-	DROP TABLE IF EXISTS #WeaponDenormalized
+	IF OBJECT_ID('tempdb..#Level') IS NOT NULL
+		DROP TABLE #Level
 
-	SELECT w.*
-	INTO #WeaponDenormalized
-	FROM jsn.Weapon AS rj
-	CROSS APPLY OPENJSON(rj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	IF OBJECT_ID('tempdb..#Passive') IS NOT NULL
+		DROP TABLE #Passive
+
+	IF OBJECT_ID('tempdb..#Weapon') IS NOT NULL
+		DROP TABLE #Weapon
+
+	IF OBJECT_ID('tempdb..#WeaponUpgrade') IS NOT NULL
+		DROP TABLE #WeaponUpgrade
+
+	--Ability data
+	MERGE Ability AS trg
+	USING (
+		SELECT a.AbilityID
+			,REPLACE(a.Ability, '&amp;', '&') AS Ability
+			,REPLACE(a.GenericName, '&amp;', '&') AS GenericName
+		FROM jsn.Ability AS aj
+		CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				AbilityID INT '$.title.Id'
+				,Ability NVARCHAR(255) '$.title.Name'
+				,GenericName NVARCHAR(255) '$.title.GenericName'
+				) AS a
+		) AS src
+		ON src.AbilityID = trg.AbilityID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Ability = src.Ability
+				,GenericName = src.GenericName
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AbilityID
+				,Ability
+				,GenericName
+				)
+			VALUES (
+				src.AbilityID
+				,src.Ability
+				,src.GenericName
+				);
+
+	--Material data
+	MERGE Material AS trg
+	USING (
+		SELECT m.MaterialID
+			,m.MaterialName
+		FROM jsn.Material AS mj
+		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				MaterialID NVARCHAR(50) '$.title.Id'
+				,MaterialName NVARCHAR(50) '$.title.Name'
+				) AS m
+		
+		UNION
+		
+		--Hard coded because Gamepedia doesn't track rupie as a separate material
+		SELECT 'Rupie'
+			,'Rupies'
+		) AS src
+		ON src.MaterialID = trg.MaterialID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET MaterialName = src.MaterialName
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				MaterialID
+				,MaterialName
+				)
+			VALUES (
+				src.MaterialID
+				,src.MaterialName
+				);
+
+	--Weapon data
+	SELECT w.WeaponID
+		,w.WeaponName
+		,w.WeaponSeries
+		,w.WeaponSeriesID
+		,w.WeaponType
+		,w.WeaponTypeID
+		,w.Rarity
+		,w.Element
+		,w.ElementID
+		,w.CreateCoin
+		,w.CreateEntity1
+		,w.CreateEntityQuantity1
+		,w.CreateEntity2
+		,w.CreateEntityQuantity2
+		,w.CreateEntity3
+		,w.CreateEntityQuantity3
+		,w.CreateEntity4
+		,w.CreateEntityQuantity4
+		,w.CreateEntity5
+		,w.CreateEntityQuantity5
+		,w.GroupID
+	INTO #Weapon
+	FROM jsn.Weapon AS wj
+	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
-			WeaponID int '$.title.Id'
-			,ParentWeaponID int '$.title.MainWeaponId'
-			,WeaponName NVARCHAR(50) '$.title.WeaponName'
-			,WeaponType NVARCHAR(10) '$.title.Type'
-			,Rarity smallint '$.title.Rarity'
-			,Element NVARCHAR(10) '$.title.ElementalType'
-			,WeaponSource NVARCHAR(20) '$.title.Availability'
-			,Ability1 int '$.title.Abilities11'
-			,Ability2 int '$.title.Abilities21'
-			,AssembleCoin NVARCHAR(50) '$.title.AssembleCoin'
-			,Material1 NVARCHAR(50) '$.title.CraftMaterial1'
-			,MaterialQuantity1 NVARCHAR(50) '$.title.CraftMaterialQuantity1'
-			,Material2 NVARCHAR(50) '$.title.CraftMaterial2'
-			,MaterialQuantity2 NVARCHAR(50) '$.title.CraftMaterialQuantity2'
-			,Material3 NVARCHAR(50) '$.title.CraftMaterial3'
-			,MaterialQuantity3 NVARCHAR(50) '$.title.CraftMaterialQuantity3'
-			,Material4 NVARCHAR(50) '$.title.CraftMaterial4'
-			,MaterialQuantity4 NVARCHAR(50) '$.title.CraftMaterialQuantity4'
-			,Material5 NVARCHAR(50) '$.title.CraftMaterial5'
-			,MaterialQuantity5 NVARCHAR(50) '$.title.CraftMaterialQuantity5'
+			WeaponID INT '$.title.Id'
+			,WeaponName NVARCHAR(255) '$.title.Name'
+			,WeaponSeries NVARCHAR(255) '$.title.WeaponSeries'
+			,WeaponSeriesID INT '$.title.WeaponSeriesId'
+			,WeaponType NVARCHAR(255) '$.title.WeaponType'
+			,WeaponTypeID INT '$.title.WeaponTypeId'
+			,Rarity INT '$.title.Rarity'
+			,Element NVARCHAR(255) '$.title.ElementalType'
+			,ElementID INT '$.title.ElementalTypeId'
+			,CreateCoin INT '$.title.CreateCoin'
+			,CreateEntity1 NVARCHAR(50) '$.title.CreateEntity1'
+			,CreateEntityQuantity1 INT '$.title.CreateEntityQuantity1'
+			,CreateEntity2 NVARCHAR(50) '$.title.CreateEntity2'
+			,CreateEntityQuantity2 INT '$.title.CreateEntityQuantity2'
+			,CreateEntity3 NVARCHAR(50) '$.title.CreateEntity3'
+			,CreateEntityQuantity3 INT '$.title.CreateEntityQuantity3'
+			,CreateEntity4 NVARCHAR(50) '$.title.CreateEntity4'
+			,CreateEntityQuantity4 INT '$.title.CreateEntityQuantity4'
+			,CreateEntity5 NVARCHAR(50) '$.title.CreateEntity5'
+			,CreateEntityQuantity5 INT '$.title.CreateEntityQuantity5'
+			,GroupID INT '$.title.WeaponBodyBuildupGroupId'
 			) AS w
 
-
-	INSERT Ability(AbilityID, GenericName, AbilityName)
-	SELECT DISTINCT a.AbilityID, a.GenericName, a.AbilityName
-	FROM jsn.Ability AS rj
-	CROSS APPLY OPENJSON(rj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
-	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
-			AbilityID int '$.title.Id'
-			,GenericName NVARCHAR(50) '$.title.GenericName'
-			,AbilityName NVARCHAR(50) '$.title.Name'
-			) AS a
-	LEFT JOIN Ability as a2
-		on a2.AbilityID = a.AbilityID
-	WHERE a.AbilityName is not null
-		AND a2.AbilityID IS NULL
-
-	UPDATE Ability 
-	SET AbilityName = REPLACE(AbilityName, '&amp;', '&')
-		,GenericName = REPLACE(GenericName, '&amp;', '&')
-
+	--Basic tables
 	MERGE Element AS trg
 	USING (
-		SELECT DISTINCT Element
-		FROM #WeaponDenormalized
+		SELECT DISTINCT ElementID
+			,Element
+		FROM #Weapon
 		) AS src
-		ON src.Element = trg.Element
+		ON src.ElementID = trg.ElementID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Element = src.Element
+				,SortOrder = src.ElementID
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
 	WHEN NOT MATCHED
 		THEN
-			INSERT (Element)
-			VALUES (src.Element);
+			INSERT (
+				ElementID
+				,Element
+				,SortOrder
+				)
+			VALUES (
+				src.ElementID
+				,src.Element
+				,src.ElementID
+				);
 
-	MERGE Item AS trg
+	--Just force elements to flip sort order
+	UPDATE Element
+	SET SortOrder = - SortOrder
+	WHERE Element = 'None'
+
+	MERGE WeaponSeries AS trg
 	USING (
-		SELECT Material1
-		FROM #WeaponDenormalized
-		WHERE Material1 NOT IN (
-				''
-				,'0'
-				)
-	
-		UNION
-	
-		SELECT Material2
-		FROM #WeaponDenormalized
-		WHERE Material2 NOT IN (
-				''
-				,'0'
-				)
-	
-		UNION
-	
-		SELECT Material3
-		FROM #WeaponDenormalized
-		WHERE Material3 NOT IN (
-				''
-				,'0'
-				)
-	
-		UNION
-	
-		SELECT Material4
-		FROM #WeaponDenormalized
-		WHERE Material4 NOT IN (
-				''
-				,'0'
-				)
-	
-		UNION
-	
-		SELECT Material5
-		FROM #WeaponDenormalized
-		WHERE Material5 NOT IN (
-				''
-				,'0'
-				)
-	
-		UNION
-	
-		SELECT 'Rupies'
-		) AS src(Item)
-		ON src.Item = trg.ItemName
+		SELECT DISTINCT WeaponSeriesID
+			,WeaponSeries
+		FROM #Weapon
+		) AS src
+		ON src.WeaponSeriesID = trg.WeaponSeriesID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET WeaponSeries = src.WeaponSeries
+				,SortOrder = src.WeaponSeriesID
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
 	WHEN NOT MATCHED
 		THEN
-			INSERT (ItemName)
-			VALUES (src.Item);
+			INSERT (
+				WeaponSeriesID
+				,WeaponSeries
+				,SortOrder
+				)
+			VALUES (
+				src.WeaponSeriesID
+				,src.WeaponSeries
+				,src.WeaponSeriesID
+				);
+
+	--Force sort order
+	UPDATE ws
+	SET SortOrder = src.SortOrder
+	FROM (
+		VALUES (
+			'Core'
+			,1
+			)
+			,(
+			'Void'
+			,2
+			)
+			,(
+			'High Dragon'
+			,4
+			)
+			,(
+			'Agito'
+			,5
+			)
+			,(
+			'Chimeratech'
+			,3
+			)
+		) AS src(WeaponSeries, SortOrder)
+	INNER JOIN WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
 
 	MERGE WeaponType AS trg
 	USING (
-		SELECT DISTINCT WeaponType
-		FROM #WeaponDenormalized
+		SELECT DISTINCT WeaponTypeID
+			,WeaponType
+		FROM #Weapon
 		) AS src
-		ON src.WeaponType = trg.WeaponType
+		ON src.WeaponTypeID = trg.WeaponTypeID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET WeaponType = src.WeaponType
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
 	WHEN NOT MATCHED
 		THEN
-			INSERT (WeaponType)
-			VALUES (src.WeaponType);
+			INSERT (
+				WeaponTypeID
+				,WeaponType
+				)
+			VALUES (
+				src.WeaponTypeID
+				,src.WeaponType
+				);
 
-	MERGE WeaponSource AS trg
-	USING (
-		SELECT DISTINCT WeaponSource
-		FROM #WeaponDenormalized
-		) AS src
-		ON src.WeaponSource = trg.WeaponSource
-	WHEN NOT MATCHED BY SOURCE
-		THEN
-			DELETE
-	WHEN NOT MATCHED
-		THEN
-			INSERT (WeaponSource)
-			VALUES (src.WeaponSource);
-
+	--Weapons
 	MERGE Weapon AS trg
 	USING (
-		SELECT wd.WeaponID
-			,NULLIF(wd.ParentWeaponID, 0) AS ParentWeaponID
-			,wd.WeaponName
-			,wt.WeaponTypeID
-			,wd.Rarity
-			,e.ElementID
-			,ws.WeaponSourceID
-		FROM #WeaponDenormalized AS wd
-		INNER JOIN WeaponType AS wt ON wt.WeaponType = wd.WeaponType
-		INNER JOIN Element AS e ON e.Element = wd.Element
-		INNER JOIN WeaponSource AS ws ON ws.WeaponSource = wd.WeaponSource
+		SELECT WeaponID
+			,WeaponName
+			,WeaponSeriesID
+			,WeaponTypeID
+			,Rarity
+			,ElementID
+		FROM #Weapon
 		) AS src
 		ON src.WeaponID = trg.WeaponID
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET ParentWeaponID = src.ParentWeaponID
-				,WeaponName = src.WeaponName
+			SET WeaponName = src.WeaponName
+				,WeaponSeriesID = src.WeaponSeriesID
 				,WeaponTypeID = src.WeaponTypeID
 				,Rarity = src.Rarity
 				,ElementID = src.ElementID
-				,WeaponSourceID = src.WeaponSourceID
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
@@ -182,121 +278,481 @@ BEGIN
 		THEN
 			INSERT (
 				WeaponID
-				,ParentWeaponID
 				,WeaponName
+				,WeaponSeriesID
 				,WeaponTypeID
 				,Rarity
 				,ElementID
-				,WeaponSourceID
 				)
 			VALUES (
 				src.WeaponID
-				,src.ParentWeaponID
 				,src.WeaponName
+				,src.WeaponSeriesID
 				,src.WeaponTypeID
 				,src.Rarity
 				,src.ElementID
-				,src.WeaponSourceID
 				);
 
-	MERGE WeaponAbility AS trg
-	USING (
-		SELECT WeaponID
-			,Ability1
-		FROM #WeaponDenormalized
-		WHERE Ability1 <> 0
-	
-		UNION
-	
-		SELECT WeaponID
-			,Ability2
-		FROM #WeaponDenormalized
-		WHERE Ability2 <> 0
-		) AS src(WeaponID, AbilityID)
-		ON src.WeaponID = trg.WeaponID
-			AND src.AbilityID = trg.AbilityID
-	WHEN NOT MATCHED BY SOURCE
-		THEN
-			DELETE
-	WHEN NOT MATCHED
-		THEN
-			INSERT (
-				WeaponID
-				,AbilityID
-				)
-			VALUES (
-				src.WeaponID
-				,src.AbilityID
-				);
+	--Weapon crafting
+	TRUNCATE TABLE WeaponCrafting
 
-	MERGE WeaponCrafting AS trg
+	INSERT WeaponCrafting (
+		WeaponID
+		,MaterialID
+		,Quantity
+		)
+	SELECT wc.WeaponID
+		,m.MaterialID
+		,wc.MaterialQuantity
+	FROM (
+		SELECT WeaponID
+			,CreateEntity1 AS Material
+			,CreateEntityQuantity1 AS MaterialQuantity
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,CreateEntity2
+			,CreateEntityQuantity2
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,CreateEntity3
+			,CreateEntityQuantity3
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,CreateEntity4
+			,CreateEntityQuantity4
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,CreateEntity5
+			,CreateEntityQuantity5
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,'Rupies'
+			,CreateCoin
+		FROM #Weapon
+		) AS wc
+	INNER JOIN Material AS m ON m.MaterialName = wc.Material
+
+	--Weapon upgrade
+	SELECT w.WeaponID
+		,wu.UpgradeTypeID
+		,wu.UpgradeType
+		,wu.Step
+		,wu.BuildupCoin
+		,wu.BuildupMaterialID1
+		,wu.BuildupMaterialQuantity1
+		,wu.BuildupMaterialID2
+		,wu.BuildupMaterialQuantity2
+		,wu.BuildupMaterialID3
+		,wu.BuildupMaterialQuantity3
+		,wu.BuildupMaterialID4
+		,wu.BuildupMaterialQuantity4
+		,wu.BuildupMaterialID5
+		,wu.BuildupMaterialQuantity5
+		,wu.BuildupMaterialID6
+		,wu.BuildupMaterialQuantity6
+		,wu.BuildupMaterialID7
+		,wu.BuildupMaterialQuantity7
+		,wu.BuildupMaterialID8
+		,wu.BuildupMaterialQuantity8
+		,wu.BuildupMaterialID9
+		,wu.BuildupMaterialQuantity9
+		,wu.BuildupMaterialID10
+		,wu.BuildupMaterialQuantity10
+	INTO #WeaponUpgrade
+	FROM jsn.WeaponUpgrade AS wuj
+	CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			GroupID NVARCHAR(50) '$.title.WeaponBodyBuildupGroupId'
+			,UpgradeTypeID NVARCHAR(50) '$.title.BuildupPieceTypeId'
+			,UpgradeType NVARCHAR(50) '$.title.BuildupPieceType'
+			,Step NVARCHAR(50) '$.title.Step'
+			,BuildupCoin INT '$.title.BuildupCoin'
+			,BuildupMaterialID1 NVARCHAR(50) '$.title.BuildupMaterialId1'
+			,BuildupMaterialQuantity1 INT '$.title.BuildupMaterialQuantity1'
+			,BuildupMaterialID2 NVARCHAR(50) '$.title.BuildupMaterialId2'
+			,BuildupMaterialQuantity2 INT '$.title.BuildupMaterialQuantity2'
+			,BuildupMaterialID3 NVARCHAR(50) '$.title.BuildupMaterialId3'
+			,BuildupMaterialQuantity3 INT '$.title.BuildupMaterialQuantity3'
+			,BuildupMaterialID4 NVARCHAR(50) '$.title.BuildupMaterialId4'
+			,BuildupMaterialQuantity4 INT '$.title.BuildupMaterialQuantity4'
+			,BuildupMaterialID5 NVARCHAR(50) '$.title.BuildupMaterialId5'
+			,BuildupMaterialQuantity5 INT '$.title.BuildupMaterialQuantity5'
+			,BuildupMaterialID6 NVARCHAR(50) '$.title.BuildupMaterialId6'
+			,BuildupMaterialQuantity6 INT '$.title.BuildupMaterialQuantity6'
+			,BuildupMaterialID7 NVARCHAR(50) '$.title.BuildupMaterialId7'
+			,BuildupMaterialQuantity7 INT '$.title.BuildupMaterialQuantity7'
+			,BuildupMaterialID8 NVARCHAR(50) '$.title.BuildupMaterialId8'
+			,BuildupMaterialQuantity8 INT '$.title.BuildupMaterialQuantity8'
+			,BuildupMaterialID9 NVARCHAR(50) '$.title.BuildupMaterialId9'
+			,BuildupMaterialQuantity9 INT '$.title.BuildupMaterialQuantity9'
+			,BuildupMaterialID10 NVARCHAR(50) '$.title.BuildupMaterialId10'
+			,BuildupMaterialQuantity10 INT '$.title.BuildupMaterialQuantity10'
+			) AS wu
+	INNER JOIN #Weapon AS w ON w.GroupID = wu.GroupID
+
+	MERGE UpgradeType AS trg
 	USING (
-		SELECT wd.WeaponID
-			,i.ItemID
-			,wd.AssembleCoin
-		FROM #WeaponDenormalized AS wd
-		CROSS JOIN Item AS i
-		WHERE i.ItemName = 'Rupies'
-	
-		UNION
-	
-		SELECT wd.WeaponID
-			,i.ItemID
-			,wd.MaterialQuantity1
-		FROM #WeaponDenormalized AS wd
-		INNER JOIN Item AS i ON i.ItemName = wd.Material1
-	
-		UNION
-	
-		SELECT wd.WeaponID
-			,i.ItemID
-			,wd.MaterialQuantity2
-		FROM #WeaponDenormalized AS wd
-		INNER JOIN Item AS i ON i.ItemName = wd.Material2
-	
-		UNION
-	
-		SELECT wd.WeaponID
-			,i.ItemID
-			,wd.MaterialQuantity3
-		FROM #WeaponDenormalized AS wd
-		INNER JOIN Item AS i ON i.ItemName = wd.Material3
-	
-		UNION
-	
-		SELECT wd.WeaponID
-			,i.ItemID
-			,wd.MaterialQuantity4
-		FROM #WeaponDenormalized AS wd
-		INNER JOIN Item AS i ON i.ItemName = wd.Material4
-	
-		UNION
-	
-		SELECT wd.WeaponID
-			,i.ItemID
-			,wd.MaterialQuantity5
-		FROM #WeaponDenormalized AS wd
-		INNER JOIN Item AS i ON i.ItemName = wd.Material5
-		) AS src(WeaponID, ItemID, ItemQuantity)
-		ON src.WeaponID = trg.WeaponID
-			AND src.ItemID = trg.ItemID
+		SELECT DISTINCT UpgradeTypeID
+			,UpgradeType
+		FROM #WeaponUpgrade
+		) AS src
+		ON src.UpgradeTypeID = trg.UpgradeType
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET Quantity = src.ItemQuantity
+			SET UpgradeType = src.UpgradeType
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
-				WeaponID
-				,ItemID
-				,Quantity
+				UpgradeTypeID
+				,UpgradeType
 				)
 			VALUES (
-				src.WeaponID
-				,src.ItemID
-				,src.ItemQuantity
+				src.UpgradeTypeID
+				,src.UpgradeType
 				);
+
+	TRUNCATE TABLE WeaponUpgrade
+
+	INSERT WeaponUpgrade (
+		WeaponID
+		,UpgradeTypeID
+		,Step
+		,MaterialID
+		,Quantity
+		)
+	SELECT wu.WeaponID
+		,wu.UpgradeTypeID
+		,wu.Step
+		,wu.MaterialID
+		,wu.Quantity
+	FROM (
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID1 AS MaterialID
+			,BuildupMaterialQuantity1 AS Quantity
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID2
+			,BuildupMaterialQuantity2
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID3
+			,BuildupMaterialQuantity3
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID4
+			,BuildupMaterialQuantity4
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID5
+			,BuildupMaterialQuantity5
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID6
+			,BuildupMaterialQuantity6
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID7
+			,BuildupMaterialQuantity7
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID8
+			,BuildupMaterialQuantity8
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID9
+			,BuildupMaterialQuantity9
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,BuildupMaterialID10
+			,BuildupMaterialQuantity10
+		FROM #WeaponUpgrade
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,UpgradeTypeID
+			,Step
+			,'Rupie'
+			,BuildupCoin
+		FROM #WeaponUpgrade
+		) AS wu
+	INNER JOIN Material AS m ON m.MaterialID = wu.MaterialID
+
+	--Passive data
+	SELECT p.PassiveID
+		,p.AbilityNumber
+		,p.WeaponTypeID
+		,p.ElementID
+		,p.AbilityID
+		,p.UnlockCoin
+		,p.UnlockMaterialId1
+		,p.UnlockMaterialQuantity1
+		,p.UnlockMaterialId2
+		,p.UnlockMaterialQuantity2
+		,p.UnlockMaterialId3
+		,p.UnlockMaterialQuantity3
+		,p.UnlockMaterialId4
+		,p.UnlockMaterialQuantity4
+		,p.UnlockMaterialId5
+		,p.UnlockMaterialQuantity5
+	INTO #Passive
+	FROM jsn.Passive AS pj
+	CROSS APPLY OPENJSON(pj.JsonText) WITH (cargoquery NVARCHAR(max) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			PassiveID INT '$.title.Id'
+			,AbilityNumber INT '$.title.WeaponPassiveAbilityNo'
+			,WeaponTypeID INT '$.title.WeaponTypeId'
+			,ElementID INT '$.title.ElementalTypeId'
+			,AbilityID INT '$.title.AbilityId'
+			,UnlockCoin INT '$.title.UnlockCoin'
+			,UnlockMaterialId1 NVARCHAR(50) '$.title.UnlockMaterialId1'
+			,UnlockMaterialQuantity1 INT '$.title.UnlockMaterialQuantity1'
+			,UnlockMaterialId2 NVARCHAR(50) '$.title.UnlockMaterialId2'
+			,UnlockMaterialQuantity2 INT '$.title.UnlockMaterialQuantity2'
+			,UnlockMaterialId3 NVARCHAR(50) '$.title.UnlockMaterialId3'
+			,UnlockMaterialQuantity3 INT '$.title.UnlockMaterialQuantity3'
+			,UnlockMaterialId4 NVARCHAR(50) '$.title.UnlockMaterialId4'
+			,UnlockMaterialQuantity4 INT '$.title.UnlockMaterialQuantity4'
+			,UnlockMaterialId5 NVARCHAR(50) '$.title.UnlockMaterialId5'
+			,UnlockMaterialQuantity5 INT '$.title.UnlockMaterialQuantity5'
+			) AS p
+
+	--Unknown abilities (should be deprecated in the future)
+	INSERT Ability (
+		AbilityID
+		,Ability
+		,GenericName
+		)
+	SELECT DISTINCT p.AbilityID
+		,CONCAT (
+			'('
+			,e.Element
+			,') Unknown Ability #'
+			,p.AbilityID
+			)
+		,CONCAT (
+			'Unknown Ability #'
+			,p.AbilityID
+			)
+	FROM #Passive AS p
+	INNER JOIN Element AS e ON e.ElementID = p.ElementID
+	LEFT JOIN Ability AS a ON a.AbilityID = p.AbilityID
+	WHERE a.AbilityID IS NULL
+
+	MERGE Passive AS trg
+	USING (
+		SELECT PassiveID
+			,WeaponTypeID
+			,ElementID
+			,AbilityID
+			,AbilityNumber
+		FROM #Passive AS p
+		) AS src
+		ON src.PassiveID = trg.PassiveID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET WeaponTypeID = src.WeaponTypeID
+				,ElementID = src.ElementID
+				,AbilityID = src.AbilityID
+				,AbilityNumber = src.AbilityNumber
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				PassiveID
+				,WeaponTypeID
+				,ElementID
+				,AbilityID
+				,AbilityNumber
+				)
+			VALUES (
+				src.PassiveID
+				,src.WeaponTypeID
+				,src.ElementID
+				,src.AbilityID
+				,src.AbilityNumber
+				);
+
+	--Passive crafting
+	TRUNCATE TABLE PassiveCrafting
+
+	INSERT PassiveCrafting (
+		PassiveID
+		,MaterialID
+		,Quantity
+		)
+	SELECT pc.PassiveID
+		,pc.MaterialID
+		,pc.Quantity
+	FROM (
+		SELECT PassiveID
+			,'Rupie' AS MaterialID
+			,UnlockCoin AS Quantity
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId1
+			,UnlockMaterialQuantity1
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId2
+			,UnlockMaterialQuantity2
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId3
+			,UnlockMaterialQuantity3
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId4
+			,UnlockMaterialQuantity4
+		FROM #Passive
+		
+		UNION ALL
+		
+		SELECT PassiveID
+			,UnlockMaterialId5
+			,UnlockMaterialQuantity5
+		FROM #Passive
+		) AS pc
+	INNER JOIN Material AS m ON m.MaterialID = pc.MaterialID
+
+	--Weapon leveling
+	SELECT wl.Rarity
+		,wl.WeaponLevel
+		,wl.BuildupMaterialId1
+		,wl.BuildupMaterialQuantity1
+		,wl.BuildupMaterialId2
+		,wl.BuildupMaterialQuantity2
+		,wl.BuildupMaterialId3
+		,wl.BuildupMaterialQuantity3
+	INTO #Level
+	FROM jsn.WeaponLevel AS wlj
+	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			Rarity INT '$.title.RarityGroup'
+			,WeaponLevel INT '$.title.Level'
+			,BuildupMaterialId1 NVARCHAR(50) '$.title.BuildupMaterialId1'
+			,BuildupMaterialQuantity1 INT '$.title.BuildupMaterialQuantity1'
+			,BuildupMaterialId2 NVARCHAR(50) '$.title.BuildupMaterialId2'
+			,BuildupMaterialQuantity2 INT '$.title.BuildupMaterialQuantity2'
+			,BuildupMaterialId3 NVARCHAR(50) '$.title.BuildupMaterialId3'
+			,BuildupMaterialQuantity3 INT '$.title.BuildupMaterialQuantity3'
+			) AS wl
+
+	TRUNCATE TABLE WeaponLevel
+
+	INSERT WeaponLevel (
+		Rarity
+		,WeaponLevel
+		,MaterialID
+		,Quantity
+		)
+	SELECT l.Rarity
+		,l.WeaponLevel
+		,l.MaterialID
+		,l.Quantity
+	FROM (
+		SELECT Rarity
+			,WeaponLevel
+			,BuildupMaterialId1 AS MaterialID
+			,BuildupMaterialQuantity1 AS Quantity
+		FROM #Level
+		
+		UNION ALL
+		
+		SELECT Rarity
+			,WeaponLevel
+			,BuildupMaterialId2
+			,BuildupMaterialQuantity2
+		FROM #Level
+		
+		UNION ALL
+		
+		SELECT Rarity
+			,WeaponLevel
+			,BuildupMaterialId3
+			,BuildupMaterialQuantity3
+		FROM #Level
+		) AS l
+	INNER JOIN Material AS m ON m.MaterialID = l.MaterialID
 END
