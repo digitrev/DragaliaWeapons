@@ -60,8 +60,6 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="jsn\" />
     <Folder Include="jsn\Tables\" />
-    <Folder Include="dbo\Functions\" />
-    <Folder Include="dbo\Stored Procedures\" />
     <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
@@ -69,8 +67,13 @@
     <Build Include="jsn\Tables\Ability.sql" />
     <Build Include="Security\jsn.sql" />
     <Build Include="jsn\Tables\Material.sql" />
+    <Build Include="dbo\Tables\Material.sql" />
+    <Build Include="dbo\spLoadTablesFromJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DragaliaDB.publish.xml" />
   </ItemGroup>
 </Project>
