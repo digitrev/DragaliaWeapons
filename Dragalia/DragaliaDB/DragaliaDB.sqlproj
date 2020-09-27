@@ -61,6 +61,7 @@
     <Folder Include="jsn\" />
     <Folder Include="jsn\Tables\" />
     <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="jsn\Tables\Weapon.sql" />
@@ -68,7 +69,11 @@
     <Build Include="Security\jsn.sql" />
     <Build Include="jsn\Tables\Material.sql" />
     <Build Include="dbo\Tables\Material.sql" />
-    <Build Include="dbo\spLoadTablesFromJson.sql" />
+    <Build Include="dbo\Tables\Weapon.sql" />
+    <Build Include="dbo\Tables\WeaponSeries.sql" />
+    <Build Include="dbo\Tables\WeaponType.sql" />
+    <Build Include="dbo\Tables\Element.sql" />
+    <Build Include="dbo\Stored Procedures\spLoadTablesFromJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

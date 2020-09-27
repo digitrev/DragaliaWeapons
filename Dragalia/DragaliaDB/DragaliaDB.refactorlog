@@ -14,4 +14,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="MaterialID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="9c75ace9-19de-4016-ba60-980eaa9b4037" ChangeDateTime="09/27/2020 14:26:40">
+    <Property Name="ElementName" Value="[dbo].[Weapon].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Weapon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1e7dbaac-e9e6-4d78-bf66-0a7ce164e287" ChangeDateTime="09/27/2020 14:45:12">
+    <Property Name="ElementName" Value="[dbo].[WeaponSeries].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponSeries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponSeriesID" />
+  </Operation>
 </Operations>
