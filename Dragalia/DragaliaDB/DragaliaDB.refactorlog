@@ -28,4 +28,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="WeaponSeriesID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a7e33363-bdb9-4fcd-9f9f-69940e1816fe" ChangeDateTime="09/27/2020 15:15:03">
+    <Property Name="ElementName" Value="[dbo].[WeaponCrafting].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WeaponCrafting]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponID" />
+  </Operation>
 </Operations>

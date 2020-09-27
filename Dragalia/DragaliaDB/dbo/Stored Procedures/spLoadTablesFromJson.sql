@@ -14,6 +14,12 @@ BEGIN
 				MaterialID NVARCHAR(50) '$.title.Id'
 				,MaterialName NVARCHAR(50) '$.title.Name'
 				) AS m
+		
+		UNION
+		
+		--Hard coded because Gamepedia doesn't track rupie as a separate material
+		SELECT 'Rupie'
+			,'Rupie'
 		) AS src
 		ON src.MaterialID = trg.MaterialID
 	WHEN MATCHED
@@ -47,6 +53,17 @@ BEGIN
 		,w.Rarity
 		,w.Element
 		,w.ElementID
+		,w.CreateCoin
+		,w.CreateEntity1
+		,w.CreateEntityQuantity1
+		,w.CreateEntity2
+		,w.CreateEntityQuantity2
+		,w.CreateEntity3
+		,w.CreateEntityQuantity3
+		,w.CreateEntity4
+		,w.CreateEntityQuantity4
+		,w.CreateEntity5
+		,w.CreateEntityQuantity5
 	INTO #Weapon
 	FROM jsn.Weapon AS wj
 	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
@@ -60,6 +77,17 @@ BEGIN
 			,Rarity INT '$.title.Rarity'
 			,Element NVARCHAR(255) '$.title.ElementalType'
 			,ElementID INT '$.title.ElementalTypeId'
+			,CreateCoin INT '$.title.CreateCoin'
+			,CreateEntity1 NVARCHAR(50) '$.title.CreateEntity1'
+			,CreateEntityQuantity1 INT '$.title.CreateEntityQuantity1'
+			,CreateEntity2 NVARCHAR(50) '$.title.CreateEntity2'
+			,CreateEntityQuantity2 INT '$.title.CreateEntityQuantity2'
+			,CreateEntity3 NVARCHAR(50) '$.title.CreateEntity3'
+			,CreateEntityQuantity3 INT '$.title.CreateEntityQuantity3'
+			,CreateEntity4 NVARCHAR(50) '$.title.CreateEntity4'
+			,CreateEntityQuantity4 INT '$.title.CreateEntityQuantity4'
+			,CreateEntity5 NVARCHAR(50) '$.title.CreateEntity5'
+			,CreateEntityQuantity5 INT '$.title.CreateEntityQuantity5'
 			) AS w
 
 	--Build up basic tables
@@ -139,17 +167,6 @@ BEGIN
 				);
 
 	--Weapon table
-	/*
-	w.WeaponID
-		,w.WeaponName
-		,w.WeaponSeries
-		,w.WeaponSeriesID
-		,w.WeaponType
-		,w.WeaponTypeID
-		,w.Rarity
-		,w.Element
-		,w.ElementID
-		*/
 	MERGE Weapon AS trg
 	USING (
 		SELECT WeaponID
@@ -190,4 +207,58 @@ BEGIN
 				,src.Rarity
 				,src.ElementID
 				);
+
+	--Weapon crafting
+	TRUNCATE TABLE WeaponCrafting
+
+	INSERT WeaponCrafting (
+		WeaponID
+		,MaterialID
+		,Quantity
+		)
+	SELECT wc.WeaponID
+		,m.MaterialID
+		,wc.MaterialQuantity
+	FROM (
+		SELECT WeaponID
+			,CreateEntity1 AS Material
+			,CreateEntityQuantity1 AS MaterialQuantity
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,CreateEntity2
+			,CreateEntityQuantity2
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,CreateEntity3
+			,CreateEntityQuantity3
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,CreateEntity4
+			,CreateEntityQuantity4
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,CreateEntity5
+			,CreateEntityQuantity5
+		FROM #Weapon
+		
+		UNION ALL
+		
+		SELECT WeaponID
+			,'Rupie'
+			,CreateCoin
+		FROM #Weapon
+		) AS wc
+	INNER JOIN Material AS m ON m.MaterialName = wc.Material
 END
