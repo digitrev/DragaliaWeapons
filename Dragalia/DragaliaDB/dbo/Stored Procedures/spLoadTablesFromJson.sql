@@ -3,14 +3,17 @@ AS
 BEGIN
 	SET NOCOUNT ON
 
+	IF OBJECT_ID('tempdb..#Level') IS NOT NULL
+		DROP TABLE #Level
+
+	IF OBJECT_ID('tempdb..#Passive') IS NOT NULL
+		DROP TABLE #Passive
+
 	IF OBJECT_ID('tempdb..#Weapon') IS NOT NULL
 		DROP TABLE #Weapon
 
 	IF OBJECT_ID('tempdb..#WeaponUpgrade') IS NOT NULL
 		DROP TABLE #WeaponUpgrade
-
-	IF OBJECT_ID('tempdb..#Passive') IS NOT NULL
-		DROP TABLE #Passive
 
 	--Ability data
 	MERGE Ability AS trg
@@ -654,4 +657,64 @@ BEGIN
 		FROM #Passive
 		) AS pc
 	INNER JOIN Material AS m ON m.MaterialID = pc.MaterialID
+
+	--Weapon leveling
+	SELECT wl.Rarity
+		,wl.WeaponLevel
+		,wl.BuildupMaterialId1
+		,wl.BuildupMaterialQuantity1
+		,wl.BuildupMaterialId2
+		,wl.BuildupMaterialQuantity2
+		,wl.BuildupMaterialId3
+		,wl.BuildupMaterialQuantity3
+	INTO #Level
+	FROM jsn.WeaponLevel AS wlj
+	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			Rarity INT '$.title.RarityGroup'
+			,WeaponLevel INT '$.title.Level'
+			,BuildupMaterialId1 NVARCHAR(50) '$.title.BuildupMaterialId1'
+			,BuildupMaterialQuantity1 INT '$.title.BuildupMaterialQuantity1'
+			,BuildupMaterialId2 NVARCHAR(50) '$.title.BuildupMaterialId2'
+			,BuildupMaterialQuantity2 INT '$.title.BuildupMaterialQuantity2'
+			,BuildupMaterialId3 NVARCHAR(50) '$.title.BuildupMaterialId3'
+			,BuildupMaterialQuantity3 INT '$.title.BuildupMaterialQuantity3'
+			) AS wl
+
+	TRUNCATE TABLE WeaponLevel
+
+	INSERT WeaponLevel (
+		Rarity
+		,WeaponLevel
+		,MaterialID
+		,Quantity
+		)
+	SELECT l.Rarity
+		,l.WeaponLevel
+		,l.MaterialID
+		,l.Quantity
+	FROM (
+		SELECT Rarity
+			,WeaponLevel
+			,BuildupMaterialId1 AS MaterialID
+			,BuildupMaterialQuantity1 AS Quantity
+		FROM #Level
+		
+		UNION ALL
+		
+		SELECT Rarity
+			,WeaponLevel
+			,BuildupMaterialId2
+			,BuildupMaterialQuantity2
+		FROM #Level
+		
+		UNION ALL
+		
+		SELECT Rarity
+			,WeaponLevel
+			,BuildupMaterialId3
+			,BuildupMaterialQuantity3
+		FROM #Level
+		) AS l
+	INNER JOIN Material AS m ON m.MaterialID = l.MaterialID
 END
