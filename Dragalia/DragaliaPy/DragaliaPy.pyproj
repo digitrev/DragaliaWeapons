@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>40907054-a690-4a47-b255-16dc20ff8d59</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DragaliaPy.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +23,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="dragalia weapon updating.py" />
-    <Compile Include="DragaliaPy.py" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DragaliaDB\DragaliaDB.sqlproj">
