@@ -67,7 +67,7 @@ BEGIN
 		
 		--Hard coded because Gamepedia doesn't track rupie as a separate material
 		SELECT 'Rupie'
-			,'Rupie'
+			,'Rupies'
 		) AS src
 		ON src.MaterialID = trg.MaterialID
 	WHEN MATCHED
@@ -149,6 +149,7 @@ BEGIN
 		THEN
 			UPDATE
 			SET Element = src.Element
+				,SortOrder = src.ElementID
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
@@ -157,11 +158,18 @@ BEGIN
 			INSERT (
 				ElementID
 				,Element
+				,SortOrder
 				)
 			VALUES (
 				src.ElementID
 				,src.Element
+				,src.ElementID
 				);
+
+	--Just force elements to flip sort order
+	UPDATE Element
+	SET SortOrder = - SortOrder
+	WHERE Element = 'None'
 
 	MERGE WeaponSeries AS trg
 	USING (
@@ -174,6 +182,7 @@ BEGIN
 		THEN
 			UPDATE
 			SET WeaponSeries = src.WeaponSeries
+				,SortOrder = src.WeaponSeriesID
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
@@ -182,11 +191,40 @@ BEGIN
 			INSERT (
 				WeaponSeriesID
 				,WeaponSeries
+				,SortOrder
 				)
 			VALUES (
 				src.WeaponSeriesID
 				,src.WeaponSeries
+				,src.WeaponSeriesID
 				);
+
+	--Force sort order
+	UPDATE ws
+	SET SortOrder = src.SortOrder
+	FROM (
+		VALUES (
+			'Core'
+			,1
+			)
+			,(
+			'Void'
+			,2
+			)
+			,(
+			'High Dragon'
+			,4
+			)
+			,(
+			'Agito'
+			,5
+			)
+			,(
+			'Chimeratech'
+			,3
+			)
+		) AS src(WeaponSeries, SortOrder)
+	INNER JOIN WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
 
 	MERGE WeaponType AS trg
 	USING (
@@ -303,7 +341,7 @@ BEGIN
 		UNION ALL
 		
 		SELECT WeaponID
-			,'Rupie'
+			,'Rupies'
 			,CreateCoin
 		FROM #Weapon
 		) AS wc
