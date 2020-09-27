@@ -65,20 +65,12 @@
     <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\WeaponType.sql" />
-    <Build Include="dbo\Tables\WeaponSource.sql" />
-    <Build Include="dbo\Tables\WeaponCrafting.sql" />
-    <Build Include="dbo\Tables\WeaponAbility.sql" />
-    <Build Include="dbo\Tables\Weapon.sql" />
-    <Build Include="dbo\Tables\Item.sql" />
-    <Build Include="dbo\Tables\Element.sql" />
-    <Build Include="dbo\Tables\Ability.sql" />
     <Build Include="jsn\Tables\Weapon.sql" />
     <Build Include="jsn\Tables\Ability.sql" />
-    <Build Include="dbo\Functions\fnGetWeaponCraftingCounts.sql" />
-    <Build Include="dbo\Stored Procedures\spLoadTablesFromJson.sql" />
     <Build Include="Security\jsn.sql" />
-    <Build Include="dbo\Stored Procedures\spGetWeaponList.sql" />
-    <Build Include="dbo\Stored Procedures\spGetWeaponRecipe.sql" />
+    <Build Include="jsn\Tables\Material.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DragaliaDB.refactorlog" />
   </ItemGroup>
 </Project>
