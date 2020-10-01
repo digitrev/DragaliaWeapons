@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[WeaponLevel] (
+﻿CREATE TABLE [core].[WeaponLevel] (
 	[Rarity] INT NOT NULL
 	,[WeaponLevel] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
@@ -8,5 +8,5 @@
 		,[WeaponLevel]
 		,[MaterialID]
 		)
-	,CONSTRAINT [FK_WeaponLevel_Material] FOREIGN KEY ([MaterialID]) REFERENCES [Material]([MaterialID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_WeaponLevel_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID]) ON DELETE CASCADE
 	)

@@ -160,7 +160,7 @@ while (weaponUpgradeParams["offset"] < weaponUpgradeCount):
     weaponUpgradeParams["offset"] += weaponUpgradeParams["limit"]
 
 print('Loading data tables from json tables')
-cursor.execute('EXECUTE spLoadTablesFromJson')
+cursor.execute('EXECUTE core.spLoadTablesFromJson')
 cursor.commit()
 
 #input("Press enter to finish")

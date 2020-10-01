@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Ability] (
+﻿CREATE TABLE [core].[Ability] (
 	[AbilityID] INT NOT NULL
 	,[Ability] NVARCHAR(100) NOT NULL
 	,[GenericName] NVARCHAR(50) NOT NULL

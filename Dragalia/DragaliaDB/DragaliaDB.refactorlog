@@ -91,4 +91,148 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Rarity" />
   </Operation>
+  <Operation Name="Move Schema" Key="9c37b0e0-0de2-456f-b215-12ca719ca83e" ChangeDateTime="10/01/2020 22:31:38">
+    <Property Name="ElementName" Value="[dbo].[spLoadTablesFromJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="4e39feaa-f4e4-4e2e-8f7f-cb9f43cd64bb" ChangeDateTime="10/01/2020 22:31:48">
+    <Property Name="ElementName" Value="[dbo].[spPassiveCrafting]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e6c64df4-8da0-4672-a5ac-aa8f12520b7d" ChangeDateTime="10/01/2020 22:31:55">
+    <Property Name="ElementName" Value="[dbo].[spPassiveList]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="b75ab392-1c91-4273-b637-268465a87970" ChangeDateTime="10/01/2020 22:32:03">
+    <Property Name="ElementName" Value="[dbo].[spWeaponBonus]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="078c2f9a-809c-45b8-a94b-274729ad1d43" ChangeDateTime="10/01/2020 22:32:10">
+    <Property Name="ElementName" Value="[dbo].[spWeaponCopies]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="903ce71a-34ce-493f-9526-506529be9d15" ChangeDateTime="10/01/2020 22:32:20">
+    <Property Name="ElementName" Value="[dbo].[spWeaponCrafting]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="9539480e-504b-4e25-b8ab-e53d6c961736" ChangeDateTime="10/01/2020 22:32:25">
+    <Property Name="ElementName" Value="[dbo].[spWeaponLevel]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="b0e2d1ce-7b7e-4d17-8e91-71088df41d5c" ChangeDateTime="10/01/2020 22:32:30">
+    <Property Name="ElementName" Value="[dbo].[spWeaponList]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="cae512e9-550a-421b-acd4-fd992f0ab754" ChangeDateTime="10/01/2020 22:32:36">
+    <Property Name="ElementName" Value="[dbo].[spWeaponRefinement]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="6b3eaf7d-2404-4a98-9348-3c8cb1d97294" ChangeDateTime="10/01/2020 22:32:42">
+    <Property Name="ElementName" Value="[dbo].[spWeaponSlots]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="fca3e5de-c352-4fe5-9790-33264d57662d" ChangeDateTime="10/01/2020 22:32:47">
+    <Property Name="ElementName" Value="[dbo].[spWeaponUnbind]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e99436be-f4c3-4c37-985e-2e68d66e5f04" ChangeDateTime="10/01/2020 22:32:54">
+    <Property Name="ElementName" Value="[dbo].[spWeaponUpgrade]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="b55ec7df-b4de-4750-afb7-199393772d7b" ChangeDateTime="10/01/2020 22:33:06">
+    <Property Name="ElementName" Value="[dbo].[Ability]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="682fd9ab-8ebe-4a98-a78c-b6516a9b5760" ChangeDateTime="10/01/2020 22:33:12">
+    <Property Name="ElementName" Value="[dbo].[Element]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="19c3fcb4-e4dd-4532-af2c-173e518f05c3" ChangeDateTime="10/01/2020 22:33:22">
+    <Property Name="ElementName" Value="[dbo].[Material]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="9149a278-ab56-41ef-ab42-9c847df6abb8" ChangeDateTime="10/01/2020 22:33:29">
+    <Property Name="ElementName" Value="[dbo].[Passive]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="65c566de-a387-44ed-8cd4-874a7a909aae" ChangeDateTime="10/01/2020 22:33:36">
+    <Property Name="ElementName" Value="[dbo].[PassiveCrafting]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3a5ce036-2a02-4d61-8924-58b5f0cec491" ChangeDateTime="10/01/2020 22:33:49">
+    <Property Name="ElementName" Value="[dbo].[UpgradeType]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="10f59c89-e070-4b6b-8f58-4f6f410f9bb7" ChangeDateTime="10/01/2020 22:33:55">
+    <Property Name="ElementName" Value="[dbo].[Weapon]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="453d59ba-ef7b-4b5f-b39c-847c5ce7a506" ChangeDateTime="10/01/2020 22:33:59">
+    <Property Name="ElementName" Value="[dbo].[WeaponCrafting]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="bb3dbeb3-e576-40ff-b4d1-e5a5175bcdbe" ChangeDateTime="10/01/2020 22:34:05">
+    <Property Name="ElementName" Value="[dbo].[WeaponLevel]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="4b77d276-8875-4220-a5fd-1fa9a2a99f3c" ChangeDateTime="10/01/2020 22:34:10">
+    <Property Name="ElementName" Value="[dbo].[WeaponSeries]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="7f844b8b-52be-420c-8fcb-1162391f4da8" ChangeDateTime="10/01/2020 22:34:15">
+    <Property Name="ElementName" Value="[dbo].[WeaponType]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="f17fa4f1-76e8-4ae7-a286-8a4d2a7e47b3" ChangeDateTime="10/01/2020 22:34:20">
+    <Property Name="ElementName" Value="[dbo].[WeaponUpgrade]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

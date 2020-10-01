@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[WeaponSeries] (
+﻿CREATE TABLE [core].[WeaponSeries] (
 	[WeaponSeriesID] INT NOT NULL
 	,[WeaponSeries] NVARCHAR(50) NOT NULL
 	,[SortOrder] INT NOT NULL, 

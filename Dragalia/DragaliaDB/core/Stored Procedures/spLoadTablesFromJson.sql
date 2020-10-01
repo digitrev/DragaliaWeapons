@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[spLoadTablesFromJson]
+﻿CREATE PROCEDURE [core].[spLoadTablesFromJson]
 AS
 BEGIN
 	SET NOCOUNT ON
@@ -16,7 +16,7 @@ BEGIN
 		DROP TABLE #WeaponUpgrade
 
 	--Ability data
-	MERGE Ability AS trg
+	MERGE [core].Ability AS trg
 	USING (
 		SELECT a.AbilityID
 			,REPLACE(a.Ability, '&amp;', '&') AS Ability
@@ -52,7 +52,7 @@ BEGIN
 				);
 
 	--Material data
-	MERGE Material AS trg
+	MERGE [core].Material AS trg
 	USING (
 		SELECT m.MaterialID
 			,m.MaterialName
@@ -138,7 +138,7 @@ BEGIN
 			) AS w
 
 	--Basic tables
-	MERGE Element AS trg
+	MERGE [core].Element AS trg
 	USING (
 		SELECT DISTINCT ElementID
 			,Element
@@ -167,11 +167,11 @@ BEGIN
 				);
 
 	--Just force elements to flip sort order
-	UPDATE Element
+	UPDATE [core].Element
 	SET SortOrder = - SortOrder
 	WHERE Element = 'None'
 
-	MERGE WeaponSeries AS trg
+	MERGE [core].WeaponSeries AS trg
 	USING (
 		SELECT DISTINCT WeaponSeriesID
 			,WeaponSeries
@@ -224,9 +224,9 @@ BEGIN
 			,3
 			)
 		) AS src(WeaponSeries, SortOrder)
-	INNER JOIN WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
+	INNER JOIN [core].WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
 
-	MERGE WeaponType AS trg
+	MERGE [core].WeaponType AS trg
 	USING (
 		SELECT DISTINCT WeaponTypeID
 			,WeaponType
@@ -252,7 +252,7 @@ BEGIN
 				);
 
 	--Weapons
-	MERGE Weapon AS trg
+	MERGE [core].Weapon AS trg
 	USING (
 		SELECT WeaponID
 			,WeaponName
@@ -294,9 +294,9 @@ BEGIN
 				);
 
 	--Weapon crafting
-	TRUNCATE TABLE WeaponCrafting
+	TRUNCATE TABLE [core].WeaponCrafting
 
-	INSERT WeaponCrafting (
+	INSERT [core].WeaponCrafting (
 		WeaponID
 		,MaterialID
 		,Quantity
@@ -345,7 +345,7 @@ BEGIN
 			,CreateCoin
 		FROM #Weapon
 		) AS wc
-	INNER JOIN Material AS m ON m.MaterialName = wc.Material
+	INNER JOIN [core].Material AS m ON m.MaterialName = wc.Material
 
 	--Weapon upgrade
 	SELECT w.WeaponID
@@ -405,7 +405,7 @@ BEGIN
 			) AS wu
 	INNER JOIN #Weapon AS w ON w.GroupID = wu.GroupID
 
-	MERGE UpgradeType AS trg
+	MERGE [core].UpgradeType AS trg
 	USING (
 		SELECT DISTINCT UpgradeTypeID
 			,UpgradeType
@@ -430,9 +430,9 @@ BEGIN
 				,src.UpgradeType
 				);
 
-	TRUNCATE TABLE WeaponUpgrade
+	TRUNCATE TABLE [core].WeaponUpgrade
 
-	INSERT WeaponUpgrade (
+	INSERT [core].WeaponUpgrade (
 		WeaponID
 		,UpgradeTypeID
 		,Step
@@ -542,7 +542,7 @@ BEGIN
 			,BuildupCoin
 		FROM #WeaponUpgrade
 		) AS wu
-	INNER JOIN Material AS m ON m.MaterialID = wu.MaterialID
+	INNER JOIN [core].Material AS m ON m.MaterialID = wu.MaterialID
 
 	--Passive data
 	SELECT p.PassiveID
@@ -586,7 +586,7 @@ BEGIN
 			) AS p
 
 	--Unknown abilities (should be deprecated in the future)
-	INSERT Ability (
+	INSERT [core].Ability (
 		AbilityID
 		,Ability
 		,GenericName
@@ -603,11 +603,11 @@ BEGIN
 			,p.AbilityID
 			)
 	FROM #Passive AS p
-	INNER JOIN Element AS e ON e.ElementID = p.ElementID
-	LEFT JOIN Ability AS a ON a.AbilityID = p.AbilityID
+	INNER JOIN [core].Element AS e ON e.ElementID = p.ElementID
+	LEFT JOIN [core].Ability AS a ON a.AbilityID = p.AbilityID
 	WHERE a.AbilityID IS NULL
 
-	MERGE Passive AS trg
+	MERGE [core].Passive AS trg
 	USING (
 		SELECT PassiveID
 			,WeaponTypeID
@@ -649,9 +649,9 @@ BEGIN
 				);
 
 	--Passive crafting
-	TRUNCATE TABLE PassiveCrafting
+	TRUNCATE TABLE [core].PassiveCrafting
 
-	INSERT PassiveCrafting (
+	INSERT [core].PassiveCrafting (
 		PassiveID
 		,MaterialID
 		,Quantity
@@ -700,7 +700,7 @@ BEGIN
 			,UnlockMaterialQuantity5
 		FROM #Passive
 		) AS pc
-	INNER JOIN Material AS m ON m.MaterialID = pc.MaterialID
+	INNER JOIN [core].Material AS m ON m.MaterialID = pc.MaterialID
 
 	--Weapon leveling
 	SELECT wl.Rarity
@@ -725,9 +725,9 @@ BEGIN
 			,BuildupMaterialQuantity3 INT '$.title.BuildupMaterialQuantity3'
 			) AS wl
 
-	TRUNCATE TABLE WeaponLevel
+	TRUNCATE TABLE [core].WeaponLevel
 
-	INSERT WeaponLevel (
+	INSERT [core].WeaponLevel (
 		Rarity
 		,WeaponLevel
 		,MaterialID
@@ -760,5 +760,5 @@ BEGIN
 			,BuildupMaterialQuantity3
 		FROM #Level
 		) AS l
-	INNER JOIN Material AS m ON m.MaterialID = l.MaterialID
+	INNER JOIN [core].Material AS m ON m.MaterialID = l.MaterialID
 END

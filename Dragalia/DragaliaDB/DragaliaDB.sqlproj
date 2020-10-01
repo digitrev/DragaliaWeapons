@@ -56,45 +56,46 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dbo\" />
-    <Folder Include="dbo\Tables\" />
+    <Folder Include="core" />
+    <Folder Include="core\Tables" />
     <Folder Include="jsn\" />
     <Folder Include="jsn\Tables\" />
     <Folder Include="Security\" />
-    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="core\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="jsn\Tables\Weapon.sql" />
     <Build Include="jsn\Tables\Ability.sql" />
     <Build Include="Security\jsn.sql" />
     <Build Include="jsn\Tables\Material.sql" />
-    <Build Include="dbo\Tables\Material.sql" />
-    <Build Include="dbo\Tables\Weapon.sql" />
-    <Build Include="dbo\Tables\WeaponSeries.sql" />
-    <Build Include="dbo\Tables\WeaponType.sql" />
-    <Build Include="dbo\Tables\Element.sql" />
-    <Build Include="dbo\Stored Procedures\spLoadTablesFromJson.sql" />
-    <Build Include="dbo\Tables\WeaponCrafting.sql" />
+    <Build Include="core\Tables\Material.sql" />
+    <Build Include="core\Tables\Weapon.sql" />
+    <Build Include="core\Tables\WeaponSeries.sql" />
+    <Build Include="core\Tables\WeaponType.sql" />
+    <Build Include="core\Tables\Element.sql" />
+    <Build Include="core\Stored Procedures\spLoadTablesFromJson.sql" />
+    <Build Include="core\Tables\WeaponCrafting.sql" />
     <Build Include="jsn\Tables\WeaponUpgrade.sql" />
-    <Build Include="dbo\Tables\UpgradeType.sql" />
-    <Build Include="dbo\Tables\WeaponUpgrade.sql" />
-    <Build Include="dbo\Tables\Ability.sql" />
-    <Build Include="dbo\Tables\Passive.sql" />
+    <Build Include="core\Tables\UpgradeType.sql" />
+    <Build Include="core\Tables\WeaponUpgrade.sql" />
+    <Build Include="core\Tables\Ability.sql" />
+    <Build Include="core\Tables\Passive.sql" />
     <Build Include="jsn\Tables\Passive.sql" />
-    <Build Include="dbo\Tables\PassiveCrafting.sql" />
+    <Build Include="core\Tables\PassiveCrafting.sql" />
     <Build Include="jsn\Tables\WeaponLevel.sql" />
-    <Build Include="dbo\Tables\WeaponLevel.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponList.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponCrafting.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponLevel.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponUnbind.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponUpgrade.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponRefinement.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponSlots.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponBonus.sql" />
-    <Build Include="dbo\Stored Procedures\spWeaponCopies.sql" />
-    <Build Include="dbo\Stored Procedures\spPassiveList.sql" />
-    <Build Include="dbo\Stored Procedures\spPassiveCrafting.sql" />
+    <Build Include="core\Tables\WeaponLevel.sql" />
+    <Build Include="core\Stored Procedures\spWeaponList.sql" />
+    <Build Include="core\Stored Procedures\spWeaponCrafting.sql" />
+    <Build Include="core\Stored Procedures\spWeaponLevel.sql" />
+    <Build Include="core\Stored Procedures\spWeaponUnbind.sql" />
+    <Build Include="core\Stored Procedures\spWeaponUpgrade.sql" />
+    <Build Include="core\Stored Procedures\spWeaponRefinement.sql" />
+    <Build Include="core\Stored Procedures\spWeaponSlots.sql" />
+    <Build Include="core\Stored Procedures\spWeaponBonus.sql" />
+    <Build Include="core\Stored Procedures\spWeaponCopies.sql" />
+    <Build Include="core\Stored Procedures\spPassiveList.sql" />
+    <Build Include="core\Stored Procedures\spPassiveCrafting.sql" />
+    <Build Include="Security\core.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
