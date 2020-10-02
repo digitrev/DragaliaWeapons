@@ -1,5 +1,0 @@
-﻿CREATE TABLE [jsn].[Passive] (
-	[JsonID] INT NOT NULL IDENTITY
-	,[JsonText] NVARCHAR(MAX) NULL
-	,CONSTRAINT [PK_Passive] PRIMARY KEY ([JsonID])
-	)

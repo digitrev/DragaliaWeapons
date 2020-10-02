@@ -64,10 +64,7 @@
     <Folder Include="core\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="jsn\Tables\Weapon.sql" />
-    <Build Include="jsn\Tables\Ability.sql" />
     <Build Include="Security\jsn.sql" />
-    <Build Include="jsn\Tables\Material.sql" />
     <Build Include="core\Tables\Material.sql" />
     <Build Include="core\Tables\Weapon.sql" />
     <Build Include="core\Tables\WeaponSeries.sql" />
@@ -75,14 +72,11 @@
     <Build Include="core\Tables\Element.sql" />
     <Build Include="core\Stored Procedures\spLoadTablesFromJson.sql" />
     <Build Include="core\Tables\WeaponCrafting.sql" />
-    <Build Include="jsn\Tables\WeaponUpgrade.sql" />
     <Build Include="core\Tables\UpgradeType.sql" />
     <Build Include="core\Tables\WeaponUpgrade.sql" />
     <Build Include="core\Tables\Ability.sql" />
     <Build Include="core\Tables\Passive.sql" />
-    <Build Include="jsn\Tables\Passive.sql" />
     <Build Include="core\Tables\PassiveCrafting.sql" />
-    <Build Include="jsn\Tables\WeaponLevel.sql" />
     <Build Include="core\Tables\WeaponLevel.sql" />
     <Build Include="core\Stored Procedures\spWeaponList.sql" />
     <Build Include="core\Stored Procedures\spWeaponCrafting.sql" />
@@ -96,6 +90,9 @@
     <Build Include="core\Stored Procedures\spPassiveList.sql" />
     <Build Include="core\Stored Procedures\spPassiveCrafting.sql" />
     <Build Include="Security\core.sql" />
+    <Build Include="jsn\Tables\TableJson.sql" />
+    <Build Include="core\Tables\Facility.sql" />
+    <Build Include="core\Tables\FacilityUpgrade.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

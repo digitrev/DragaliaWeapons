@@ -21,13 +21,14 @@ BEGIN
 		SELECT a.AbilityID
 			,REPLACE(a.Ability, '&amp;', '&') AS Ability
 			,REPLACE(a.GenericName, '&amp;', '&') AS GenericName
-		FROM jsn.Ability AS aj
+		FROM jsn.TableJson AS aj
 		CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				AbilityID INT '$.title.Id'
 				,Ability NVARCHAR(255) '$.title.Name'
 				,GenericName NVARCHAR(255) '$.title.GenericName'
 				) AS a
+		WHERE aj.TableName = 'Ability'
 		) AS src
 		ON src.AbilityID = trg.AbilityID
 	WHEN MATCHED
@@ -56,12 +57,13 @@ BEGIN
 	USING (
 		SELECT m.MaterialID
 			,m.MaterialName
-		FROM jsn.Material AS mj
+		FROM jsn.TableJson AS mj
 		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				MaterialID NVARCHAR(50) '$.title.Id'
 				,MaterialName NVARCHAR(50) '$.title.Name'
 				) AS m
+		WHERE mj.TableName = 'Material'
 		
 		UNION
 		
@@ -111,7 +113,7 @@ BEGIN
 		,w.CreateEntityQuantity5
 		,w.GroupID
 	INTO #Weapon
-	FROM jsn.Weapon AS wj
+	FROM jsn.TableJson AS wj
 	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			WeaponID INT '$.title.Id'
@@ -136,6 +138,7 @@ BEGIN
 			,CreateEntityQuantity5 INT '$.title.CreateEntityQuantity5'
 			,GroupID INT '$.title.WeaponBodyBuildupGroupId'
 			) AS w
+	WHERE wj.TableName = 'Weapon'
 
 	--Basic tables
 	MERGE [core].Element AS trg
@@ -374,7 +377,7 @@ BEGIN
 		,wu.BuildupMaterialID10
 		,wu.BuildupMaterialQuantity10
 	INTO #WeaponUpgrade
-	FROM jsn.WeaponUpgrade AS wuj
+	FROM jsn.TableJson AS wuj
 	CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			GroupID NVARCHAR(50) '$.title.WeaponBodyBuildupGroupId'
@@ -404,6 +407,7 @@ BEGIN
 			,BuildupMaterialQuantity10 INT '$.title.BuildupMaterialQuantity10'
 			) AS wu
 	INNER JOIN #Weapon AS w ON w.GroupID = wu.GroupID
+	WHERE wuj.TableName = 'WeaponUpgrade'
 
 	MERGE [core].UpgradeType AS trg
 	USING (
@@ -563,7 +567,7 @@ BEGIN
 		,p.UnlockMaterialId5
 		,p.UnlockMaterialQuantity5
 	INTO #Passive
-	FROM jsn.Passive AS pj
+	FROM jsn.TableJson AS pj
 	CROSS APPLY OPENJSON(pj.JsonText) WITH (cargoquery NVARCHAR(max) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			PassiveID INT '$.title.Id'
@@ -584,6 +588,7 @@ BEGIN
 			,UnlockMaterialId5 NVARCHAR(50) '$.title.UnlockMaterialId5'
 			,UnlockMaterialQuantity5 INT '$.title.UnlockMaterialQuantity5'
 			) AS p
+	WHERE pj.TableName = 'Passive'
 
 	--Unknown abilities (should be deprecated in the future)
 	INSERT [core].Ability (
@@ -637,7 +642,7 @@ BEGIN
 				,ElementID
 				,AbilityID
 				,AbilityNumber
-				,SortOrder 
+				,SortOrder
 				)
 			VALUES (
 				src.PassiveID
@@ -712,7 +717,7 @@ BEGIN
 		,wl.BuildupMaterialId3
 		,wl.BuildupMaterialQuantity3
 	INTO #Level
-	FROM jsn.WeaponLevel AS wlj
+	FROM jsn.TableJson AS wlj
 	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			Rarity INT '$.title.RarityGroup'
@@ -724,6 +729,7 @@ BEGIN
 			,BuildupMaterialId3 NVARCHAR(50) '$.title.BuildupMaterialId3'
 			,BuildupMaterialQuantity3 INT '$.title.BuildupMaterialQuantity3'
 			) AS wl
+	WHERE wlj.TableName = 'WeaponLevel'
 
 	TRUNCATE TABLE [core].WeaponLevel
 
@@ -761,4 +767,41 @@ BEGIN
 		FROM #Level
 		) AS l
 	INNER JOIN [core].Material AS m ON m.MaterialID = l.MaterialID
+
+	--Facilities
+	MERGE core.Facility AS trg
+	USING (
+		SELECT f.FacilityID
+			,f.FacilityName
+			,f.FacilityCount
+		FROM jsn.TableJson AS fj
+		CROSS APPLY OPENJSON(fj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				FacilityID INT '$.title.Id'
+				,FacilityName NVARCHAR(50) '$.title.Name'
+				,FacilityCount INT '$.title.Available'
+				) AS f
+		WHERE fj.TableName = 'Facility'
+		) AS src
+		ON src.FacilityID = trg.FacilityID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET FacilityName = src.FacilityName
+				,FacilityCount = src.FacilityCount
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				FacilityID
+				,FacilityName
+				,FacilityCount
+				)
+			VALUES (
+				src.FacilityID
+				,src.FacilityName
+				,src.FacilityCount
+				);
 END
