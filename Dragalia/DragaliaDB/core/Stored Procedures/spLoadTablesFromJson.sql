@@ -75,7 +75,7 @@ BEGIN
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET MaterialName = src.MaterialName
+			SET [Material] = src.MaterialName
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
@@ -83,7 +83,7 @@ BEGIN
 		THEN
 			INSERT (
 				MaterialID
-				,MaterialName
+				,[Material]
 				)
 			VALUES (
 				src.MaterialID
@@ -269,7 +269,7 @@ BEGIN
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET WeaponName = src.WeaponName
+			SET [Weapon] = src.WeaponName
 				,WeaponSeriesID = src.WeaponSeriesID
 				,WeaponTypeID = src.WeaponTypeID
 				,Rarity = src.Rarity
@@ -281,7 +281,7 @@ BEGIN
 		THEN
 			INSERT (
 				WeaponID
-				,WeaponName
+				,[Weapon]
 				,WeaponSeriesID
 				,WeaponTypeID
 				,Rarity
@@ -348,7 +348,7 @@ BEGIN
 			,CreateCoin
 		FROM #Weapon
 		) AS wc
-	INNER JOIN [core].Material AS m ON m.MaterialName = wc.Material
+	INNER JOIN [core].Material AS m ON m.[Material] = wc.Material
 
 	--Weapon upgrade
 	SELECT w.WeaponID
@@ -787,8 +787,8 @@ BEGIN
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET FacilityName = src.FacilityName
-				,FacilityCount = src.FacilityCount
+			SET [Facility] = src.FacilityName
+				,[Limit] = src.FacilityCount
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
@@ -796,8 +796,8 @@ BEGIN
 		THEN
 			INSERT (
 				FacilityID
-				,FacilityName
-				,FacilityCount
+				,[Facility]
+				,[Limit]
 				)
 			VALUES (
 				src.FacilityID

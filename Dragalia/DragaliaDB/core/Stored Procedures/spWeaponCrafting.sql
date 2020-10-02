@@ -2,8 +2,8 @@
 AS
 SELECT wt.WeaponType AS Weapon
 	,ws.WeaponSeries AS [Type]
-	,w.WeaponName AS [Name]
-	,m.MaterialName
+	,w.[Weapon] AS [Name]
+	,m.[Material]
 	,wc.Quantity
 FROM [core].WeaponCrafting AS wc
 INNER JOIN [core].Weapon AS w ON w.WeaponID = wc.WeaponID

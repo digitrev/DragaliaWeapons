@@ -3,7 +3,7 @@ AS
 SELECT wt.WeaponType
 	,e.Element
 	,a.GenericName
-	,m.MaterialName
+	,m.[Material]
 	,pc.Quantity
 FROM [core].Passive AS p
 INNER JOIN [core].WeaponType AS wt ON wt.WeaponTypeID = p.WeaponTypeID

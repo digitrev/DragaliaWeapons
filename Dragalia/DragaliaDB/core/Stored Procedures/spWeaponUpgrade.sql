@@ -2,8 +2,8 @@
 AS
 SELECT wt.WeaponType AS Weapon
 	,ws.WeaponSeries AS [Type]
-	,w.WeaponName AS [Name]
-	,m.MaterialName AS Material
+	,w.[Weapon] AS [Name]
+	,m.[Material] AS Material
 	,wu.Quantity
 	,wu.Step
 FROM [core].Weapon AS w

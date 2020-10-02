@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [core].[Weapon] (
 	[WeaponID] INT NOT NULL
-	,[WeaponName] NVARCHAR(50) NOT NULL
+	,[Weapon] NVARCHAR(50) NOT NULL
 	,[WeaponSeriesID] INT NOT NULL
 	,[WeaponTypeID] INT NOT NULL
 	,[Rarity] INT NOT NULL

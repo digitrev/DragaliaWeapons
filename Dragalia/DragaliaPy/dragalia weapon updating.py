@@ -62,6 +62,7 @@ for table,params in parameterDict.items():
 
 print('Loading data tables from json tables')
 cursor.execute('EXECUTE core.spLoadTablesFromJson')
+cursor.execute('EXECUTE core.spLoadTablesFromDen')
 cursor.commit()
 
 #input("Press enter to finish")

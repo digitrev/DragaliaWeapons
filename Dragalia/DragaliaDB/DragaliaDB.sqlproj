@@ -62,6 +62,9 @@
     <Folder Include="jsn\Tables\" />
     <Folder Include="Security\" />
     <Folder Include="core\Stored Procedures" />
+    <Folder Include="den" />
+    <Folder Include="den\Tables" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -93,11 +96,18 @@
     <Build Include="jsn\Tables\TableJson.sql" />
     <Build Include="core\Tables\Facility.sql" />
     <Build Include="core\Tables\FacilityUpgrade.sql" />
+    <Build Include="Security\den.sql" />
+    <Build Include="den\Tables\TreeCosts.sql" />
+    <Build Include="den\Tables\TreeMats.sql" />
+    <Build Include="core\Stored Procedures\spLoadTablesFromDen.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DragaliaDB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment_den_data.sql" />
   </ItemGroup>
 </Project>

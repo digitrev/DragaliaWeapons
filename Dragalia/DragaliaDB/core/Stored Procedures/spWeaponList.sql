@@ -2,7 +2,7 @@
 AS
 SELECT wt.WeaponType AS Weapon
 	,ws.WeaponSeries AS [Type]
-	,w.WeaponName AS [Name]
+	,w.[Weapon] AS [Name]
 	,w.Rarity
 	,e.Element
 FROM [core].Weapon AS w
