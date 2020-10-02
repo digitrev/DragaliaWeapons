@@ -383,4 +383,17 @@
     <Property Name="ParentElementType" Value="SqlSchema" />
     <Property Name="NewName" Value="[spLoadTablesFromDen]" />
   </Operation>
+  <Operation Name="Move Schema" Key="25cde300-3f8f-41c4-86ca-d74afaedab78" ChangeDateTime="10/02/2020 01:33:13">
+    <Property Name="ElementName" Value="[dbo].[MineCosts]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cb7a012e-571f-4a45-8071-7d2996de660e" ChangeDateTime="10/02/2020 01:33:22">
+    <Property Name="ElementName" Value="[den].[MineCosts].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[MineCosts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Level" />
+  </Operation>
 </Operations>

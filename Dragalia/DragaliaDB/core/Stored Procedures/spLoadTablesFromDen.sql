@@ -1,9 +1,15 @@
 ﻿CREATE PROCEDURE [core].[spLoadTablesFromDen]
 AS
 BEGIN
-	--Tree table
+	DECLARE @MineID INT = (
+			SELECT FacilityID
+			FROM core.Facility
+			WHERE Facility = 'Rupie Mine'
+			)
+
 	MERGE core.FacilityUpgrade AS trg
 	USING (
+		--Trees
 		SELECT f.FacilityID
 			,m.MaterialID
 			,tc.[Level] AS FacilityLevel
@@ -36,6 +42,60 @@ BEGIN
 		INNER JOIN core.Facility AS f ON f.Facility = tm.Facility
 		CROSS JOIN den.TreeCosts AS tc
 		WHERE tc.Rupie > 0
+		
+		UNION
+		
+		--Mines
+		SELECT @MineID
+			,'Rupie'
+			,mc.[Level]
+			,mc.Rupie
+		FROM den.MineCosts AS mc
+		WHERE Rupie > 0
+		
+		UNION
+		
+		SELECT @MineID
+			,m.MaterialID
+			,mc.[Level]
+			,mc.T1
+		FROM den.MineCosts AS mc
+		CROSS APPLY core.Material AS m
+		WHERE T1 > 0
+			AND m.Material = 'Light Orb'
+		
+		UNION
+		
+		SELECT @MineID
+			,m.MaterialID
+			,mc.[Level]
+			,mc.T2
+		FROM den.MineCosts AS mc
+		CROSS APPLY core.Material AS m
+		WHERE T2 > 0
+			AND m.Material = 'Radiance Orb'
+		
+		UNION
+		
+		SELECT @MineID
+			,m.MaterialID
+			,mc.[Level]
+			,mc.T3
+		FROM den.MineCosts AS mc
+		CROSS APPLY core.Material AS m
+		WHERE T3 > 0
+			AND m.Material = 'Refulgence Orb'
+		
+		UNION
+		
+		SELECT @MineID
+			,m.MaterialID
+			,mc.[Level]
+			,mc.T4
+		FROM den.MineCosts AS mc
+		CROSS APPLY core.Material AS m
+		WHERE T4 > 0
+			AND m.Material = 'Resplendence Orb'
 		) AS src
 		ON src.FacilityID = trg.FacilityID
 			AND src.MaterialID = trg.MaterialID
@@ -44,6 +104,9 @@ BEGIN
 		THEN
 			UPDATE
 			SET Quantity = src.Quantity
+	WHEN NOT MATCHED BY source
+		THEN
+			DELETE
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
