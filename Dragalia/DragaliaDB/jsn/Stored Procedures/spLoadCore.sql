@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [core].[spLoadTablesFromJson]
+﻿CREATE PROCEDURE [jsn].[spLoadCore]
 AS
 BEGIN
 	SET NOCOUNT ON

@@ -65,6 +65,8 @@
     <Folder Include="den" />
     <Folder Include="den\Tables" />
     <Folder Include="Scripts" />
+    <Folder Include="den\Stored Procedures" />
+    <Folder Include="jsn\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -73,7 +75,6 @@
     <Build Include="core\Tables\WeaponSeries.sql" />
     <Build Include="core\Tables\WeaponType.sql" />
     <Build Include="core\Tables\Element.sql" />
-    <Build Include="core\Stored Procedures\spLoadTablesFromJson.sql" />
     <Build Include="core\Tables\WeaponCrafting.sql" />
     <Build Include="core\Tables\UpgradeType.sql" />
     <Build Include="core\Tables\WeaponUpgrade.sql" />
@@ -99,8 +100,15 @@
     <Build Include="Security\den.sql" />
     <Build Include="den\Tables\TreeCosts.sql" />
     <Build Include="den\Tables\TreeMats.sql" />
-    <Build Include="core\Stored Procedures\spLoadTablesFromDen.sql" />
     <Build Include="den\Tables\MineCosts.sql" />
+    <Build Include="den\Tables\DojoCosts.sql" />
+    <Build Include="den\Tables\DojoMats.sql" />
+    <Build Include="den\Tables\AltarCosts.sql" />
+    <Build Include="den\Tables\AltarMats.sql" />
+    <Build Include="den\Stored Procedures\spLoadCore.sql" />
+    <Build Include="jsn\Stored Procedures\spLoadCore.sql" />
+    <Build Include="den\Tables\DracolithCosts.sql" />
+    <Build Include="den\Tables\DracolithMats.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
