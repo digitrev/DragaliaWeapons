@@ -6,4 +6,5 @@
 	,[T3] INT NULL
 	,[T4] INT NULL
 	,[Rainbow] INT NULL
+	,CONSTRAINT [PK_AltarCosts] PRIMARY KEY ([Level])
 	)
