@@ -566,4 +566,39 @@
     <Property Name="NewSchema" Value="den" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8f4a3ea9-1ed1-4c8c-9b2c-dbaf8a9e8972" ChangeDateTime="10/03/2020 02:31:37">
+    <Property Name="ElementName" Value="[dbo].[User].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ba0e705b-b863-4c8d-82a1-a55147c486ff" ChangeDateTime="10/03/2020 02:33:07">
+    <Property Name="ElementName" Value="[dbo].[Weapon].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Weapon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="678b3d60-d609-4071-97fa-f0efd049bf3b" ChangeDateTime="10/03/2020 02:36:03">
+    <Property Name="ElementName" Value="[dbo].[Weapon].[WantedLevel]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Weapon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponLevel" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c43ded8c-676c-4312-8355-aa8528ee4699" ChangeDateTime="10/03/2020 02:36:05">
+    <Property Name="ElementName" Value="[dbo].[Weapon].[CopiesOwned]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Weapon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Copies" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="39604b8c-3880-4996-8da0-0ee68e5eb88f" ChangeDateTime="10/03/2020 02:37:04">
+    <Property Name="ElementName" Value="[dbo].[Weapon].[Refined]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Weapon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Refine" />
+  </Operation>
 </Operations>

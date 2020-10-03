@@ -67,6 +67,8 @@
     <Folder Include="Scripts" />
     <Folder Include="den\Stored Procedures" />
     <Folder Include="jsn\Stored Procedures" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -113,6 +115,8 @@
     <Build Include="den\Tables\FafnirMats.sql" />
     <Build Include="den\Tables\StatueCosts.sql" />
     <Build Include="den\Tables\StatueMats.sql" />
+    <Build Include="dbo\Tables\Account.sql" />
+    <Build Include="dbo\Tables\Weapon.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
