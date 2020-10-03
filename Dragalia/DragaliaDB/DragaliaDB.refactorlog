@@ -514,4 +514,56 @@
     <Property Name="NewSchema" Value="den" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="b7b0e172-cc37-4249-974e-132e50be15cc" ChangeDateTime="10/03/2020 01:53:07">
+    <Property Name="ElementName" Value="[dbo].[FafnirCosts].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FafnirCosts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Level" />
+  </Operation>
+  <Operation Name="Move Schema" Key="987b983c-2b34-4bbd-85bc-b1f4499c5c44" ChangeDateTime="10/03/2020 01:53:15">
+    <Property Name="ElementName" Value="[dbo].[FafnirCosts]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6f171d5b-6572-422d-91fa-dff7fb1897f9" ChangeDateTime="10/03/2020 01:54:01">
+    <Property Name="ElementName" Value="[dbo].[FafnirMats].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FafnirMats]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Facility" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e07ba9da-16e4-449e-adc4-55323a8d7d29" ChangeDateTime="10/03/2020 01:54:54">
+    <Property Name="ElementName" Value="[dbo].[FafnirMats]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5a0ed07c-104e-408e-b817-879807b9da90" ChangeDateTime="10/03/2020 02:08:46">
+    <Property Name="ElementName" Value="[dbo].[StatueCosts].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StatueCosts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Level" />
+  </Operation>
+  <Operation Name="Move Schema" Key="53f5b881-754a-4357-89a7-9f11cbfc1429" ChangeDateTime="10/03/2020 02:10:06">
+    <Property Name="ElementName" Value="[dbo].[StatueCosts]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="88683ab3-76e9-41ee-9047-a6c2490c09a5" ChangeDateTime="10/03/2020 02:10:12">
+    <Property Name="ElementName" Value="[dbo].[StatueMats].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StatueMats]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Facility" />
+  </Operation>
+  <Operation Name="Move Schema" Key="8262e247-73d0-41bc-8e2c-60e8e0c75a00" ChangeDateTime="10/03/2020 02:11:03">
+    <Property Name="ElementName" Value="[dbo].[StatueMats]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

@@ -245,4 +245,117 @@ FROM OPENJSON(@Json) WITH (
 		)
 GO
 
+TRUNCATE TABLE den.FafnirCosts
+
+DECLARE @Json NVARCHAR(MAX) = 
+	N'[{"Level":1,"Greatsphere":30,"Talonstone":10},{"Level":2,"Rupie":10000,"Greatsphere":3},{"Level":3,"Rupie":20000,"Greatsphere":3},{"Level":4,"Rupie":30000,"Greatsphere":5},{"Level":5,"Rupie":40000,"Greatsphere":5},{"Level":6,"Rupie":50000,"Greatsphere":7,"GoldScale":5,"Talonstone":10},{"Level":7,"Rupie":60000,"Greatsphere":7,"GoldScale":5,"Talonstone":10},{"Level":8,"Rupie":70000,"Greatsphere":7,"GoldScale":5,"Talonstone":10},{"Level":9,"Rupie":80000,"Greatsphere":10,"GoldScale":5,"Talonstone":10},{"Level":10,"Rupie":90000,"Greatsphere":10,"GoldScale":5,"Talonstone":10},{"Level":11,"Rupie":100000,"Greatsphere":12,"GoldScale":10,"Talonstone":20},{"Level":12,"Rupie":110000,"Greatsphere":12,"GoldScale":10,"Talonstone":20},{"Level":13,"Rupie":120000,"Greatsphere":15,"GoldScale":10,"Talonstone":20},{"Level":14,"Rupie":130000,"Greatsphere":15,"GoldScale":10,"Talonstone":20},{"Level":15,"Rupie":140000,"Greatsphere":15,"GoldScale":10,"Talonstone":20},{"Level":16,"Rupie":160000,"Greatsphere":20,"GoldScale":20,"Talonstone":30},{"Level":17,"Rupie":180000,"Greatsphere":20,"GoldScale":20,"Talonstone":30},{"Level":18,"Rupie":200000,"Greatsphere":20,"GoldScale":20,"Talonstone":30},{"Level":19,"Rupie":220000,"Greatsphere":30,"GoldScale":20,"Talonstone":30},{"Level":20,"Rupie":240000,"Greatsphere":30,"GoldScale":20,"Talonstone":30},{"Level":21,"Rupie":260000,"Greatsphere":40,"GoldScale":30,"Talonstone":40},{"Level":22,"Rupie":280000,"Greatsphere":40,"GoldScale":30,"Talonstone":40},{"Level":23,"Rupie":300000,"Greatsphere":40,"GoldScale":30,"Talonstone":40},{"Level":24,"Rupie":320000,"Greatsphere":50,"GoldScale":30,"Talonstone":40},{"Level":25,"Rupie":340000,"Greatsphere":50,"GoldScale":30,"Talonstone":40},{"Level":26,"Rupie":360000,"Greatsphere":60,"GoldScale":50,"Talonstone":60},{"Level":27,"Rupie":380000,"Greatsphere":60,"GoldScale":50,"Talonstone":60},{"Level":28,"Rupie":400000,"Greatsphere":60,"GoldScale":50,"Talonstone":60},{"Level":29,"Rupie":420000,"Greatsphere":70,"GoldScale":50,"Talonstone":60},{"Level":30,"Rupie":440000,"Greatsphere":70,"GoldScale":50,"Talonstone":60}]'
+
+INSERT den.FafnirCosts (
+	[Level]
+	,[Rupie]
+	,[Greatsphere]
+	,[GoldScale]
+	,[Talonstone]
+	)
+SELECT [Level]
+	,[Rupie]
+	,[Greatsphere]
+	,[GoldScale]
+	,[Talonstone]
+FROM OPENJSON(@Json) WITH (
+		[Level] INT
+		,[Rupie] INT
+		,[Greatsphere] INT
+		,[GoldScale] INT
+		,[Talonstone] INT
+		)
+GO
+
+TRUNCATE TABLE den.FafnirMats
+
+DECLARE @JSON NVARCHAR(MAX) = N'[{"Facility":"Fafnir Statue (Flame)","GreatsphereMat":"Flamewyrm''s Greatsphere","GoldScaleMat":"Flamewyrm''s Scaldscale"},{"Facility":"Fafnir Statue (Light)","GreatsphereMat":"Lightwyrm''s Greatsphere","GoldScaleMat":"Lightwyrm''s Glowscale"},{"Facility":"Fafnir Statue (Shadow)","GreatsphereMat":"Shadowwyrm''s Greatsphere","GoldScaleMat":"Shadowwyrm''s Darkscale"},{"Facility":"Fafnir Statue (Water)","GreatsphereMat":"Waterwyrm''s Greatsphere","GoldScaleMat":"Waterwyrm''s Glistscale"},{"Facility":"Fafnir Statue (Wind)","GreatsphereMat":"Windwyrm''s Greatsphere","GoldScaleMat":"Windwyrm''s Squallscale"}]'
+
+INSERT den.FafnirMats (
+	[Facility]
+	,[GreatsphereMat]
+	,[GoldScaleMat]
+	)
+SELECT [Facility]
+	,[GreatsphereMat]
+	,[GoldScaleMat]
+FROM OPENJSON(@Json) WITH (
+		[Facility] NVARCHAR(50)
+		,[GreatsphereMat] NVARCHAR(50)
+		,[GoldScaleMat] NVARCHAR(50)
+		)
+GO
+
+TRUNCATE TABLE den.StatueCosts
+
+DECLARE @Json NVARCHAR(MAX) = N'[{"Level":1,"Seed":1},{"Level":2,"Rupie":5000,"Bronze":10},{"Level":3,"Rupie":10000,"Bronze":15,"Void1":2},{"Level":4,"Rupie":15000,"Bronze":20},{"Level":5,"Rupie":20000,"Bronze":25,"Void1":5},{"Level":6,"Rupie":25000,"Bronze":30,"Silver":5},{"Level":7,"Rupie":30000,"Bronze":35,"Silver":10,"Void2":2},{"Level":8,"Rupie":35000,"Bronze":40,"Silver":15},{"Level":9,"Rupie":40000,"Bronze":45,"Silver":20,"Void2":5},{"Level":10,"Rupie":50000,"Bronze":50,"Silver":25},{"Level":11,"Rupie":60000,"Bronze":55,"Silver":30,"Gold":5,"Void3":2},{"Level":12,"Rupie":70000,"Bronze":60,"Silver":35,"Gold":10},{"Level":13,"Rupie":80000,"Bronze":65,"Silver":40,"Gold":15,"Void3":5},{"Level":14,"Rupie":90000,"Bronze":70,"Silver":45,"Gold":20},{"Level":15,"Rupie":100000,"Bronze":75,"Silver":50,"Gold":30,"Void3":8}]'
+
+INSERT den.StatueCosts (
+	[Level]
+	,[Rupie]
+	,[Bronze]
+	,[Void1]
+	,[Silver]
+	,[Void2]
+	,[Gold]
+	,[Void3]
+	,[Seed]
+	)
+SELECT [Level]
+	,[Rupie]
+	,[Bronze]
+	,[Void1]
+	,[Silver]
+	,[Void2]
+	,[Gold]
+	,[Void3]
+	,[Seed]
+FROM OPENJSON(@Json) WITH (
+		[Level] INT
+		,[Rupie] INT
+		,[Bronze] INT
+		,[Void1] INT
+		,[Silver] INT
+		,[Void2] INT
+		,[Gold] INT
+		,[Void3] INT
+		,[Seed] INT
+		)
+GO
+
+TRUNCATE TABLE den.StatueMats
+
+DECLARE @Json NVARCHAR(MAX) = N'[{"Facility":"Aero Slime Statue","BronzeMat":"Fiend''s Claw","Void1Mat":"Solid Fungus","SilverMat":"Fiend''s Horn","Void2Mat":"Goblin Thread","GoldMat":"Fiend''s Eye","Void3Mat":"Oceanic Fin"},{"Facility":"Aqua Slime Statue","BronzeMat":"Iron Ore","Void1Mat":"Old Cloth","SilverMat":"Granite","Void2Mat":"Goblin Thread","GoldMat":"Meteorite","Void3Mat":"Blazing Horn"},{"Facility":"Magma Slime Statue","BronzeMat":"Bat''s Wing","Void1Mat":"Solid Fungus","SilverMat":"Ancient Bird''s Feather","Void2Mat":"Steel Slab","GoldMat":"Bewitching Wings","Void3Mat":"Great Feather"},{"Facility":"Poison Slime Statue","BronzeMat":"Iron Ore","Void1Mat":"Old Cloth","SilverMat":"Granite","Void2Mat":"Solid Fungus","GoldMat":"Meteorite","Void3Mat":"Necroblossom"},{"Facility":"Twinkling Slime Statue","BronzeMat":"Iron Ore","Void1Mat":"Solid Fungus","SilverMat":"Granite","Void2Mat":"Goblin Thread","GoldMat":"Meteorite","Void3Mat":"Ruinous Horn"}]'
+
+INSERT den.StatueMats (
+	[Facility]
+	,[BronzeMat]
+	,[Void1Mat]
+	,[SilverMat]
+	,[Void2Mat]
+	,[GoldMat]
+	,[Void3Mat]
+	)
+SELECT [Facility]
+	,[BronzeMat]
+	,[Void1Mat]
+	,[SilverMat]
+	,[Void2Mat]
+	,[GoldMat]
+	,[Void3Mat]
+FROM OPENJSON(@Json) WITH (
+		[Facility] NVARCHAR(50)
+		,[BronzeMat] NVARCHAR(50)
+		,[Void1Mat] NVARCHAR(50)
+		,[SilverMat] NVARCHAR(50)
+		,[Void2Mat] NVARCHAR(50)
+		,[GoldMat] NVARCHAR(50)
+		,[Void3Mat] NVARCHAR(50)
+		)
+GO
+
 

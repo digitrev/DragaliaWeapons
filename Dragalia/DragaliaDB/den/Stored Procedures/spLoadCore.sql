@@ -317,6 +317,152 @@ BEGIN
 		INNER JOIN core.Material AS m ON m.Material = dm.ScaleMat
 		CROSS APPLY den.DracolithCosts AS dc
 		WHERE dc.Scale > 0
+		
+		UNION
+		
+		--Fafnirs
+		SELECT f.FacilityID
+			,'Rupie'
+			,fc.[Level]
+			,fc.Rupie
+		FROM den.FafnirMats AS fm
+		INNER JOIN core.Facility AS f ON f.Facility = fm.Facility
+		CROSS APPLY den.FafnirCosts AS fc
+		WHERE fc.Rupie > 0
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,fc.[Level]
+			,fc.Talonstone
+		FROM den.FafnirMats AS fm
+		INNER JOIN core.Facility AS f ON f.Facility = fm.Facility
+		CROSS APPLY core.Material AS m
+		CROSS APPLY den.FafnirCosts AS fc
+		WHERE fc.Talonstone > 0
+			AND m.Material = 'Talonstone'
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,fc.[Level]
+			,fc.GoldScale
+		FROM den.FafnirMats AS fm
+		INNER JOIN core.Facility AS f ON f.Facility = fm.Facility
+		INNER JOIN core.Material AS m ON m.Material = fm.GoldScaleMat
+		CROSS APPLY den.FafnirCosts AS fc
+		WHERE fc.GoldScale > 0
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,fc.[Level]
+			,fc.Greatsphere
+		FROM den.FafnirMats AS fm
+		INNER JOIN core.Facility AS f ON f.Facility = fm.Facility
+		INNER JOIN core.Material AS m ON m.Material = fm.GreatsphereMat
+		CROSS APPLY den.FafnirCosts AS fc
+		WHERE fc.Greatsphere > 0
+		
+		UNION
+		
+		--Statues
+		SELECT f.FacilityID
+			,'Rupie'
+			,sc.[Level]
+			,sc.Rupie
+		FROM den.StatueMats AS sm
+		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		CROSS APPLY den.StatueCosts AS sc
+		WHERE sc.Rupie > 0
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,sc.[Level]
+			,sc.Seed
+		FROM den.StatueMats AS sm
+		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		CROSS APPLY core.Material AS m
+		CROSS APPLY den.StatueCosts AS sc
+		WHERE sc.Seed > 0
+			AND m.Material = 'Void Seed'
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,sc.[Level]
+			,sc.Bronze
+		FROM den.StatueMats AS sm
+		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN core.Material AS m ON m.Material = sm.BronzeMat
+		CROSS APPLY den.StatueCosts AS sc
+		WHERE sc.Bronze > 0
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,sc.[Level]
+			,sc.Silver
+		FROM den.StatueMats AS sm
+		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN core.Material AS m ON m.Material = sm.SilverMat
+		CROSS APPLY den.StatueCosts AS sc
+		WHERE sc.Silver > 0
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,sc.[Level]
+			,sc.Gold
+		FROM den.StatueMats AS sm
+		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN core.Material AS m ON m.Material = sm.GoldMat
+		CROSS APPLY den.StatueCosts AS sc
+		WHERE sc.Gold > 0
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,sc.[Level]
+			,sc.Void1
+		FROM den.StatueMats AS sm
+		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN core.Material AS m ON m.Material = sm.Void1Mat
+		CROSS APPLY den.StatueCosts AS sc
+		WHERE sc.Void1 > 0
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,sc.[Level]
+			,sc.Void2
+		FROM den.StatueMats AS sm
+		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN core.Material AS m ON m.Material = sm.Void2Mat
+		CROSS APPLY den.StatueCosts AS sc
+		WHERE sc.Void2 > 0
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,sc.[Level]
+			,sc.Void3
+		FROM den.StatueMats AS sm
+		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN core.Material AS m ON m.Material = sm.Void3Mat
+		CROSS APPLY den.StatueCosts AS sc
+		WHERE sc.Void3 > 0
 		) AS src
 		ON src.FacilityID = trg.FacilityID
 			AND src.MaterialID = trg.MaterialID

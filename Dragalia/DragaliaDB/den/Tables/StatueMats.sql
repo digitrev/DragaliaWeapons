@@ -1,0 +1,10 @@
+﻿CREATE TABLE [den].[StatueMats] (
+	[Facility] NVARCHAR(50) NOT NULL
+	,[BronzeMat] NVARCHAR(50) NOT NULL
+	,[Void1Mat] NVARCHAR(50) NOT NULL
+	,[SilverMat] NVARCHAR(50) NOT NULL
+	,[Void2Mat] NVARCHAR(50) NOT NULL
+	,[GoldMat] NVARCHAR(50) NOT NULL
+	,[Void3Mat] NVARCHAR(50) NOT NULL
+	,CONSTRAINT [PK_StatueMats] PRIMARY KEY ([Facility])
+	)

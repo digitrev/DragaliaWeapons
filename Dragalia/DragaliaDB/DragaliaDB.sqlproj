@@ -109,6 +109,10 @@
     <Build Include="jsn\Stored Procedures\spLoadCore.sql" />
     <Build Include="den\Tables\DracolithCosts.sql" />
     <Build Include="den\Tables\DracolithMats.sql" />
+    <Build Include="den\Tables\FafnirCosts.sql" />
+    <Build Include="den\Tables\FafnirMats.sql" />
+    <Build Include="den\Tables\StatueCosts.sql" />
+    <Build Include="den\Tables\StatueMats.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
