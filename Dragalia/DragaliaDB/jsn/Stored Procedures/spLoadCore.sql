@@ -257,7 +257,7 @@ BEGIN
 	--Weapons
 	MERGE [core].Weapon AS trg
 	USING (
-		SELECT WeaponID
+		SELECT DISTINCT WeaponID
 			,WeaponName
 			,WeaponSeriesID
 			,WeaponTypeID

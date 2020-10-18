@@ -601,4 +601,51 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Refine" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="98c25a53-db4d-43d6-8e22-7158ae524157" ChangeDateTime="10/18/2020 20:06:07">
+    <Property Name="ElementName" Value="[dbo].[Inventory].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Inventory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fbe57bf1-e871-4eb8-b5ff-4d2f5d6a920a" ChangeDateTime="10/18/2020 20:47:43">
+    <Property Name="ElementName" Value="[den].[HalidomSmithy].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[HalidomSmithy]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Facility" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="44bf1a18-b64a-4c14-9500-c1f90484434b" ChangeDateTime="10/18/2020 21:02:15">
+    <Property Name="ElementName" Value="[dbo].[EventCosts].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EventCosts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Level" />
+  </Operation>
+  <Operation Name="Move Schema" Key="8f1cc81f-6ce7-434b-8b76-6da5fdc62cdb" ChangeDateTime="10/18/2020 21:03:52">
+    <Property Name="ElementName" Value="[dbo].[EventCosts]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2d6a5d22-a358-4f4c-a6d9-5aa8ff57df7e" ChangeDateTime="10/18/2020 21:04:04">
+    <Property Name="ElementName" Value="[dbo].[EventMats].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EventMats]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Facility" />
+  </Operation>
+  <Operation Name="Move Schema" Key="36422ce1-198c-4073-b59b-d0b72c5e10bf" ChangeDateTime="10/18/2020 21:10:07">
+    <Property Name="ElementName" Value="[dbo].[EventMats]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6f0a0f57-85a9-4a15-96c5-704f453cb49b" ChangeDateTime="10/18/2020 21:40:40">
+    <Property Name="ElementName" Value="[dbo].[Facility].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Facility]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountID" />
+  </Operation>
 </Operations>

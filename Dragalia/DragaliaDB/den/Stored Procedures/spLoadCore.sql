@@ -463,6 +463,41 @@ BEGIN
 		INNER JOIN core.Material AS m ON m.Material = sm.Void3Mat
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Void3 > 0
+		
+		UNION
+		
+		--Event facilities
+		SELECT f.FacilityID
+			,'Rupie'
+			,ec.[Level]
+			,ec.Rupie
+		FROM den.EventMats AS em
+		INNER JOIN core.Facility AS f ON f.Facility = em.Facility
+		CROSS APPLY den.EventCosts AS ec
+		WHERE ec.[Level] <= em.MaxLevel
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,ec.[Level]
+			,ec.Bronze
+		FROM den.EventMats AS em
+		INNER JOIN core.Facility AS f ON f.Facility = em.Facility
+		INNER JOIN core.Material AS m ON m.Material = em.BronzeMat
+		CROSS APPLY den.EventCosts AS ec
+		WHERE ec.[Level] <= em.MaxLevel
+		
+		UNION
+		
+		--Halidom and smithy
+		SELECT f.FacilityID
+			,m.MaterialID
+			,hs.[Level]
+			,hs.Quantity
+		FROM den.HalidomSmithy AS hs
+		INNER JOIN core.Facility AS f ON f.Facility = hs.Facility
+		INNER JOIN core.Material AS m ON m.Material = hs.Material
 		) AS src
 		ON src.FacilityID = trg.FacilityID
 			AND src.MaterialID = trg.MaterialID
