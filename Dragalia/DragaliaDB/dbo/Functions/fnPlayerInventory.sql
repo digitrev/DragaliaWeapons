@@ -4,7 +4,8 @@ AS
 RETURN (
 		SELECT m.MaterialID
 			,ISNULL(i.Quantity, 0) AS Owned
-			,ISNULL(ic.Quantity, 0) AS Needed
+			,ISNULL(ic.Quantity, 0) AS Costs
+			,MAX(ISNULL(i.Quantity, 0) - ISNULL(ic.Quantity, 0), 0) AS Needed
 		FROM core.Material AS m
 		LEFT JOIN Inventory AS i ON i.MaterialID = m.MaterialID
 			AND i.AccountID = @AccountID
