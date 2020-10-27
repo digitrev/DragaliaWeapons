@@ -655,4 +655,10 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AccountID" />
   </Operation>
+  <Operation Name="Move Schema" Key="e643b4d4-7347-4886-b3b5-b39067dc25ec" ChangeDateTime="10/27/2020 21:55:11">
+    <Property Name="ElementName" Value="[dbo].[InlineMax]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="util" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

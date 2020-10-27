@@ -70,6 +70,8 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\Functions" />
+    <Folder Include="util" />
+    <Folder Include="util\Functions" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -126,6 +128,8 @@
     <Build Include="dbo\Functions\fnInventoryCosts.sql" />
     <Build Include="dbo\Tables\Passive.sql" />
     <Build Include="dbo\Functions\fnPlayerInventory.sql" />
+    <Build Include="Security\util.sql" />
+    <Build Include="util\Functions\InlineMax.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
