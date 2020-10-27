@@ -93,6 +93,16 @@ RETURN (
 			WHERE f.AccountID = @AccountID
 				AND f.CurrentLevel < fu.FacilityLevel
 				AND fu.FacilityLevel <= f.WantedLevel
+			
+			UNION ALL
+			
+			SELECT pc.MaterialID
+				,pc.Quantity
+			FROM Passive AS p
+			INNER JOIN core.PassiveCrafting AS pc ON pc.PassiveID = p.PassiveID
+			WHERE p.AccountID = @AccountID
+				AND p.Owned = 0
+				AND p.Wanted = 1
 			) AS i
 		GROUP BY i.MaterialID
 		)
