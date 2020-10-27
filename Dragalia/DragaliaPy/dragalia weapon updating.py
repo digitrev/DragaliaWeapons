@@ -62,6 +62,7 @@ for table,params in parameterDict.items():
 
 print('Loading data tables from json tables')
 cursor.execute('EXECUTE jsn.spLoadCore')
+print('Loading data tables from denomralized tables')
 cursor.execute('EXECUTE den.spLoadCore')
 cursor.commit()
 

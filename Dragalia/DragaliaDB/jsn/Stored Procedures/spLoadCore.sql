@@ -91,7 +91,7 @@ BEGIN
 				);
 
 	--Weapon data
-	SELECT w.WeaponID
+	SELECT DISTINCT w.WeaponID
 		,w.WeaponName
 		,w.WeaponSeries
 		,w.WeaponSeriesID

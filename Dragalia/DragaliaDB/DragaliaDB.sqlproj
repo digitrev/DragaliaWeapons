@@ -69,6 +69,7 @@
     <Folder Include="jsn\Stored Procedures" />
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Functions" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
