@@ -124,6 +124,7 @@
     <Build Include="den\Tables\EventCosts.sql" />
     <Build Include="den\Tables\EventMats.sql" />
     <Build Include="dbo\Functions\fnInventoryCosts.sql" />
+    <Build Include="dbo\Tables\Passive.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
