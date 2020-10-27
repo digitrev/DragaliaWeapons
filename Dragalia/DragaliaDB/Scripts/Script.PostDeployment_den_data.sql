@@ -403,7 +403,7 @@ GO
 
 TRUNCATE TABLE [den].[EventMats]
 
-DECLARE @Json NVARCHAR(MAX) = N'[{"Facility":"Arctos Monument","BronzeMat":"Motivational Log","MaxLevel":35},{"Facility":"Circus Tent","BronzeMat":"Tent Canvas","MaxLevel":35},{"Facility":"Dragoñata","BronzeMat":"Papier-mâché","MaxLevel":35},{"Facility":"Festival Stage","BronzeMat":"Ornate Lantern","MaxLevel":30},{"Facility":"Library Obscura","BronzeMat":"Arcane Tome","MaxLevel":30},{"Facility":"Seabed Stage","BronzeMat":"Glam Shell","MaxLevel":35},{"Facility":"Statue of Ilia","BronzeMat":"Holy Ore","MaxLevel":30},{"Facility":"Sweet Retreat","BronzeMat":"Snack-o''-Lantern","MaxLevel":35},{"Facility":"The Hungerdome","BronzeMat":"Chef''s Special","MaxLevel":30},{"Facility":"Wind Shrine","BronzeMat":"Windwhistle Grass","MaxLevel":35},{"Facility":"Yuletree","BronzeMat":"Astral Ornament","MaxLevel":35}]'
+DECLARE @Json NVARCHAR(MAX) = N'[{"Facility":"Arctos Monument","BronzeMat":"Motivational Log","MaxLevel":35},{"Facility":"Circus Tent","BronzeMat":"Tent Canvas","MaxLevel":35},{"Facility":"Dragoñata","BronzeMat":"Papier-mâché","MaxLevel":35},{"Facility":"Festival Stage","BronzeMat":"Ornate Lantern","MaxLevel":30},{"Facility":"Library Obscura","BronzeMat":"Arcane Tome","MaxLevel":30},{"Facility":"Seabed Stage","BronzeMat":"Glam Shell","MaxLevel":35},{"Facility":"Statue of Ilia","BronzeMat":"Holy Ore","MaxLevel":30},{"Facility":"Sweet Retreat","BronzeMat":"Snack-o''-Lantern","MaxLevel":35},{"Facility":"The Hungerdome","BronzeMat":"Chef''s Special","MaxLevel":30},{"Facility":"Wind Shrine","BronzeMat":"Windwhistle Grass","MaxLevel":35},{"Facility":"Yuletree","BronzeMat":"Astral Ornament","MaxLevel":35},{"Facility":"Opera House","BronzeMat":"Libretto","MaxLevel":30}]'
 
 INSERT [den].[EventMats] (
 	[Facility]
