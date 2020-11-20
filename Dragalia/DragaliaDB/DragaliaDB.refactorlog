@@ -661,4 +661,10 @@
     <Property Name="NewSchema" Value="util" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="4ec6aecb-b1b7-4a18-9f52-7e3c9c1cbe0d" ChangeDateTime="11/20/2020 18:41:04">
+    <Property Name="ElementName" Value="[dbo].[spInitializeDen]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>
