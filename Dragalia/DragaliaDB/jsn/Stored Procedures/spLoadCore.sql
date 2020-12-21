@@ -22,7 +22,7 @@ BEGIN
 			,REPLACE(a.Ability, '&amp;', '&') AS Ability
 			,REPLACE(a.GenericName, '&amp;', '&') AS GenericName
 		FROM jsn.TableJson AS aj
-		CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				AbilityID INT '$.title.Id'
 				,Ability NVARCHAR(255) '$.title.Name'

@@ -667,4 +667,52 @@
     <Property Name="NewSchema" Value="den" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a58bef63-6a79-47f4-831e-735d9a1d4889" ChangeDateTime="12/21/2020 05:56:20">
+    <Property Name="ElementName" Value="[core].[Wyrmprint].[WeaponID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WyrmprintID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4f30842-50dc-44c9-abc7-247d0332da40" ChangeDateTime="12/21/2020 05:58:59">
+    <Property Name="ElementName" Value="[core].[Wyrmprint].[Weapon]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Wyrmprint" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a6de740a-1fbb-40d5-b5fe-0bd5ce6a9a24" ChangeDateTime="12/21/2020 06:00:23">
+    <Property Name="ElementName" Value="[core].[Wyrmprint].[WeaponSeriesID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rarity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b57b7833-0b2a-4e06-9334-35c2fb39a926" ChangeDateTime="12/21/2020 06:04:14">
+    <Property Name="ElementName" Value="[core].[Wyrmprint].[WeaponTypeID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ability1UB0" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1b5a682b-153b-412e-b64b-7c69ef518ba4" ChangeDateTime="12/21/2020 06:04:47">
+    <Property Name="ElementName" Value="[core].[Wyrmprint].[Ability1UB0]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AffinityGroupID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="41485eab-e26f-4b32-b80d-b8479c3d5d89" ChangeDateTime="12/21/2020 06:09:35">
+    <Property Name="ElementName" Value="[dbo].[WyrmprintAbility]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="54ba9a67-390c-4d14-9f39-9f638d79617a" ChangeDateTime="12/21/2020 06:09:40">
+    <Property Name="ElementName" Value="[core].[WyrmprintAbility].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[WyrmprintAbility]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WyrmprintID" />
+  </Operation>
 </Operations>

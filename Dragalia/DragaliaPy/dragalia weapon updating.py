@@ -14,6 +14,9 @@ parameterDict["Weapon"]={"tables":"Weapons","where":"Obtain='Crafting'","fields"
 parameterDict["WeaponLevel"]={"tables":"WeaponBodyBuildupLevel","fields":"Id,RarityGroup,Level,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2,BuildupMaterialId3,BuildupMaterialQuantity3"}
 parameterDict["WeaponUpgrade"]={"tables":"WeaponBodyBuildupGroup","fields":"WeaponBodyBuildupGroupId,BuildupPieceTypeId,BuildupPieceType,Step,BuildupCoin,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2,BuildupMaterialId3,BuildupMaterialQuantity3,BuildupMaterialId4,BuildupMaterialQuantity4,BuildupMaterialId5,BuildupMaterialQuantity5,BuildupMaterialId6,BuildupMaterialQuantity6,BuildupMaterialId7,BuildupMaterialQuantity7,BuildupMaterialId8,BuildupMaterialQuantity8,BuildupMaterialId9,BuildupMaterialQuantity9,BuildupMaterialId10,BuildupMaterialQuantity10"}
 parameterDict["Facility"]={"tables":"Facilities","fields":"Id,Name,Available"}
+parameterDict["Wyrmprint"]={"tables":"Wyrmprints","fields":"Id,Name,Rarity,Abilities11,Abilities12,Abilities13,Abilities21,Abilities22,Abilities23,UnionAbilityGroupId,AbilityCrestBuildupGroupId"}
+parameterDict["WyrmprintUpgrade"]={"tables":"WyrmprintBuildupGroup","fields":"Id,AbilityCrestBuildupGroupId,BuildupPieceTypeId,BuildupPieceType,Step,BuildupDewPoint,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2"}
+parameterDict["WyrmprintLevel"]={"tables":"WyrmprintBuildupLevel","fields":"Id,RarityGroup,Level,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2"}
 
 #Setting up request parameters
 print('Setting up request parameters')
