@@ -11,9 +11,9 @@ INNER JOIN [core].WeaponSeries AS ws ON ws.WeaponSeriesID = w.WeaponSeriesID
 INNER JOIN [core].WeaponType AS wt ON wt.WeaponTypeID = w.WeaponTypeID
 INNER JOIN [core].Element AS e ON e.ElementID = w.ElementID
 INNER JOIN [core].WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
-INNER JOIN [core].UpgradeType AS ut ON ut.UpgradeTypeID = wu.UpgradeTypeID
+INNER JOIN [core].[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 INNER JOIN [core].Material AS m ON m.MaterialID = wu.MaterialID
-WHERE ut.UpgradeType = @UpgradeType
+WHERE ut.[UpgradeType] = @UpgradeType
 ORDER BY ws.SortOrder
 	,wt.WeaponTypeID
 	,w.Rarity

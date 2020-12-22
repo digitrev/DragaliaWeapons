@@ -8,6 +8,6 @@
 		,[MaterialID]
 		,[FacilityLevel]
 		)
-	,CONSTRAINT [FK_FacilityUpgrade_Facility] FOREIGN KEY ([FacilityID]) REFERENCES [core].[Facility]([FacilityID])
-	,CONSTRAINT [FK_FacilityUpgrade_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID])
+	,CONSTRAINT [FK_FacilityUpgrade_Facility] FOREIGN KEY ([FacilityID]) REFERENCES [core].[Facility]([FacilityID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_FacilityUpgrade_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID]) ON DELETE CASCADE
 	)

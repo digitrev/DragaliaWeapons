@@ -131,6 +131,15 @@
     <Build Include="Security\util.sql" />
     <Build Include="util\Functions\InlineMax.sql" />
     <Build Include="den\Stored Procedures\spInitializeDen.sql" />
+    <Build Include="core\Tables\Wyrmprint.sql" />
+    <Build Include="core\Tables\WyrmprintAbility.sql" />
+    <Build Include="core\Tables\AbilityGroup.sql" />
+    <Build Include="core\Tables\WeaponLevelLimit.sql" />
+    <Build Include="core\Tables\WeaponUnbindLimit.sql" />
+    <Build Include="core\Tables\Affinity.sql" />
+    <Build Include="core\Tables\WyrmprintUpgrade.sql" />
+    <Build Include="core\Tables\WyrmprintLevel.sql" />
+    <Build Include="core\Tables\WyrmprintLevelLimit.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

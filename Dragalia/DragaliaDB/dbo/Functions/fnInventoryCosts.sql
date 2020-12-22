@@ -19,9 +19,9 @@ RETURN (
 				,wu.Quantity
 			FROM Weapon AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
-			INNER JOIN core.UpgradeType AS ut ON ut.UpgradeTypeID = wu.UpgradeTypeID
+			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
-				AND ut.UpgradeType = 'Copies'
+				AND ut.[UpgradeType] = 'Copies'
 				AND w.Copies < wu.Step
 				AND wu.Step <= w.CopiesWanted
 			
@@ -31,9 +31,9 @@ RETURN (
 				,wu.Quantity
 			FROM Weapon AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
-			INNER JOIN core.UpgradeType AS ut ON ut.UpgradeTypeID = wu.UpgradeTypeID
+			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
-				AND ut.UpgradeType = 'Unbind'
+				AND ut.[UpgradeType] = 'Unbind'
 				AND w.Unbind < wu.Step
 				AND wu.Step <= w.UnbindWanted
 			
@@ -43,9 +43,9 @@ RETURN (
 				,wu.Quantity
 			FROM Weapon AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
-			INNER JOIN core.UpgradeType AS ut ON ut.UpgradeTypeID = wu.UpgradeTypeID
+			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
-				AND ut.UpgradeType = 'Refinement'
+				AND ut.[UpgradeType] = 'Refinement'
 				AND w.Refine < wu.Step
 				AND wu.Step <= w.RefineWanted
 			
@@ -55,9 +55,9 @@ RETURN (
 				,wu.Quantity
 			FROM Weapon AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
-			INNER JOIN core.UpgradeType AS ut ON ut.UpgradeTypeID = wu.UpgradeTypeID
+			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
-				AND ut.UpgradeType = 'Slots'
+				AND ut.[UpgradeType] = 'Slots'
 				AND w.Slot < wu.Step
 				AND wu.Step <= w.SlotWanted
 			
@@ -67,9 +67,9 @@ RETURN (
 				,wu.Quantity
 			FROM Weapon AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
-			INNER JOIN core.UpgradeType AS ut ON ut.UpgradeTypeID = wu.UpgradeTypeID
+			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
-				AND ut.UpgradeType = 'Weapon Bonus'
+				AND ut.[UpgradeType] = 'Weapon Bonus'
 				AND w.Bonus < wu.Step
 				AND wu.Step <= w.BonusWanted
 			

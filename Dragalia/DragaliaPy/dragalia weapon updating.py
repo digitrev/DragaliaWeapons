@@ -7,13 +7,20 @@ dbName = "DragaliaV2"
 
 #array of useful data?
 parameterDict = dict()
-parameterDict["Ability"]={"tables":"Abilities","fields":"GenericName,Name,Id"}
+parameterDict["Ability"]={"tables":"Abilities","fields":"GenericName,Name,Id,AbilityGroup"}
+parameterDict["AbilityGroup"]={"tables":"AbilityGroup","fields":"Id,GroupName"}
+parameterDict["Affinity"]={"tables":"AffinityBonus","fields":"Id,Name"}
+parameterDict["Facility"]={"tables":"Facilities","fields":"Id,Name,Available"}
 parameterDict["Material"]={"tables":"Materials","fields":"Name,Id"}
 parameterDict["Passive"]={"tables":"WeaponPassiveAbility","fields":"Id,WeaponPassiveAbilityNo,WeaponTypeId,ElementalTypeId,AbilityId,UnlockCoin,UnlockMaterialId1,UnlockMaterialQuantity1,UnlockMaterialId2,UnlockMaterialQuantity2,UnlockMaterialId3,UnlockMaterialQuantity3,UnlockMaterialId4,UnlockMaterialQuantity4,UnlockMaterialId5,UnlockMaterialQuantity5,SortId"}
 parameterDict["Weapon"]={"tables":"Weapons","where":"Obtain='Crafting'","fields":"Id,Name,WeaponSeries,WeaponSeriesId,WeaponType,WeaponTypeId,Rarity,ElementalType,ElementalTypeId,CreateCoin,CreateEntity1,CreateEntityQuantity1,CreateEntity2,CreateEntityQuantity2,CreateEntity3,CreateEntityQuantity3,CreateEntity4,CreateEntityQuantity4,CreateEntity5,CreateEntityQuantity5,WeaponBodyBuildupGroupId"}
 parameterDict["WeaponLevel"]={"tables":"WeaponBodyBuildupLevel","fields":"Id,RarityGroup,Level,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2,BuildupMaterialId3,BuildupMaterialQuantity3"}
 parameterDict["WeaponUpgrade"]={"tables":"WeaponBodyBuildupGroup","fields":"WeaponBodyBuildupGroupId,BuildupPieceTypeId,BuildupPieceType,Step,BuildupCoin,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2,BuildupMaterialId3,BuildupMaterialQuantity3,BuildupMaterialId4,BuildupMaterialQuantity4,BuildupMaterialId5,BuildupMaterialQuantity5,BuildupMaterialId6,BuildupMaterialQuantity6,BuildupMaterialId7,BuildupMaterialQuantity7,BuildupMaterialId8,BuildupMaterialQuantity8,BuildupMaterialId9,BuildupMaterialQuantity9,BuildupMaterialId10,BuildupMaterialQuantity10"}
-parameterDict["Facility"]={"tables":"Facilities","fields":"Id,Name,Available"}
+parameterDict["WeaponLimit"]={"tables":"WeaponBodyRarity","fields":"Id,MaxLimitBreakCountByLimitOver0,MaxLimitBreakCountByLimitOver1,MaxLimitBreakCountByLimitOver2,MaxLimitLevelByLimitBreak0,MaxLimitLevelByLimitBreak1,MaxLimitLevelByLimitBreak2,MaxLimitLevelByLimitBreak3,MaxLimitLevelByLimitBreak4,MaxLimitLevelByLimitBreak5,MaxLimitLevelByLimitBreak6,MaxLimitLevelByLimitBreak7,MaxLimitLevelByLimitBreak8,MaxLimitLevelByLimitBreak9"}
+parameterDict["Wyrmprint"]={"tables":"Wyrmprints","fields":"Id,Name,Rarity,Abilities11,Abilities12,Abilities13,Abilities21,Abilities22,Abilities23,UnionAbilityGroupId,AbilityCrestBuildupGroupId"}
+parameterDict["WyrmprintUpgrade"]={"tables":"WyrmprintBuildupGroup","fields":"Id,AbilityCrestBuildupGroupId,BuildupPieceTypeId,Step,BuildupDewPoint,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2"}
+parameterDict["WyrmprintLevel"]={"tables":"WyrmprintBuildupLevel","fields":"Id,RarityGroup,Level,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2"}
+parameterDict["WyrmprintLimit"]={"tables":"WyrmprintRarity","fields":"Id,MaxLimitLevelByLimitBreak0,MaxLimitLevelByLimitBreak1,MaxLimitLevelByLimitBreak2,MaxLimitLevelByLimitBreak3,MaxLimitLevelByLimitBreak4"}
 
 #Setting up request parameters
 print('Setting up request parameters')
