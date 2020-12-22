@@ -15,18 +15,55 @@ BEGIN
 	IF OBJECT_ID('tempdb..#WeaponUpgrade') IS NOT NULL
 		DROP TABLE #WeaponUpgrade
 
+	IF OBJECT_ID('tempdb..#WeaponLimit') IS NOT NULL
+		DROP TABLE #WeaponLimit
+
+	--Ability group
+	MERGE core.AbilityGroup AS trg
+	USING (
+		SELECT ag.AbilityGroupID
+			,REPLACE(ag.AbilityGroup, '&amp;', '&') AS AbilityGroup
+		FROM jsn.TableJson AS agj
+		CROSS APPLY OPENJSON(agj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				AbilityGroupID INT '$.title.Id'
+				,AbilityGroup NVARCHAR(255) '$.title.GroupName'
+				) AS ag
+		WHERE agj.TableName = 'AbilityGroup'
+		) AS src
+		ON src.AbilityGroupID = trg.AbilityGroupID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET AbilityGroup = src.AbilityGroup
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AbilityGroupID
+				,AbilityGroup
+				)
+			VALUES (
+				src.AbilityGroupID
+				,src.AbilityGroup
+				);
+
 	--Ability data
-	MERGE [core].Ability AS trg
+	MERGE core.Ability AS trg
 	USING (
 		SELECT a.AbilityID
 			,REPLACE(a.Ability, '&amp;', '&') AS Ability
 			,REPLACE(a.GenericName, '&amp;', '&') AS GenericName
+			,a.AbilityGroupID
 		FROM jsn.TableJson AS aj
 		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				AbilityID INT '$.title.Id'
 				,Ability NVARCHAR(255) '$.title.Name'
 				,GenericName NVARCHAR(255) '$.title.GenericName'
+				,AbilityGroupID INT '$.title.AbilityGroup'
 				) AS a
 		WHERE aj.TableName = 'Ability'
 		) AS src
@@ -36,6 +73,7 @@ BEGIN
 			UPDATE
 			SET Ability = src.Ability
 				,GenericName = src.GenericName
+				,AbilityGroupID = src.AbilityGroupID
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
@@ -45,15 +83,49 @@ BEGIN
 				AbilityID
 				,Ability
 				,GenericName
+				,AbilityGroupID
 				)
 			VALUES (
 				src.AbilityID
 				,src.Ability
 				,src.GenericName
+				,src.AbilityGroupID
+				);
+
+	--Affinity data
+	MERGE core.[Affinity] AS trg
+	USING (
+		SELECT a.AffinityID
+			,REPLACE(a.[Affinity], '&amp;', '&') AS [Affinity]
+		FROM jsn.TableJson AS aj
+		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				AffinityID INT '$.title.Id'
+				,[Affinity] NVARCHAR(255) '$.title.Name'
+				) AS a
+		WHERE aj.TableName = 'Affinity'
+		) AS src
+		ON src.AffinityID = trg.AffinityID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET [Affinity] = src.[Affinity]
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AffinityID
+				,[Affinity]
+				)
+			VALUES (
+				src.AffinityID
+				,src.[Affinity]
 				);
 
 	--Material data
-	MERGE [core].Material AS trg
+	MERGE core.Material AS trg
 	USING (
 		SELECT m.MaterialID
 			,m.MaterialName
@@ -141,7 +213,7 @@ BEGIN
 	WHERE wj.TableName = 'Weapon'
 
 	--Basic tables
-	MERGE [core].Element AS trg
+	MERGE core.Element AS trg
 	USING (
 		SELECT DISTINCT ElementID
 			,Element
@@ -170,11 +242,11 @@ BEGIN
 				);
 
 	--Just force elements to flip sort order
-	UPDATE [core].Element
+	UPDATE core.Element
 	SET SortOrder = - SortOrder
 	WHERE Element = 'None'
 
-	MERGE [core].WeaponSeries AS trg
+	MERGE core.WeaponSeries AS trg
 	USING (
 		SELECT DISTINCT WeaponSeriesID
 			,WeaponSeries
@@ -227,9 +299,9 @@ BEGIN
 			,3
 			)
 		) AS src(WeaponSeries, SortOrder)
-	INNER JOIN [core].WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
+	INNER JOIN core.WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
 
-	MERGE [core].WeaponType AS trg
+	MERGE core.WeaponType AS trg
 	USING (
 		SELECT DISTINCT WeaponTypeID
 			,WeaponType
@@ -255,7 +327,7 @@ BEGIN
 				);
 
 	--Weapons
-	MERGE [core].Weapon AS trg
+	MERGE core.Weapon AS trg
 	USING (
 		SELECT DISTINCT WeaponID
 			,WeaponName
@@ -297,9 +369,9 @@ BEGIN
 				);
 
 	--Weapon crafting
-	TRUNCATE TABLE [core].WeaponCrafting
+	TRUNCATE TABLE core.WeaponCrafting
 
-	INSERT [core].WeaponCrafting (
+	INSERT core.WeaponCrafting (
 		WeaponID
 		,MaterialID
 		,Quantity
@@ -348,7 +420,7 @@ BEGIN
 			,CreateCoin
 		FROM #Weapon
 		) AS wc
-	INNER JOIN [core].Material AS m ON m.[Material] = wc.Material
+	INNER JOIN core.Material AS m ON m.[Material] = wc.Material
 
 	--Weapon upgrade
 	SELECT w.WeaponID
@@ -409,13 +481,13 @@ BEGIN
 	INNER JOIN #Weapon AS w ON w.GroupID = wu.GroupID
 	WHERE wuj.TableName = 'WeaponUpgrade'
 
-	MERGE [core].[UpgradeType] AS trg
+	MERGE core.UpgradeType AS trg
 	USING (
 		SELECT DISTINCT UpgradeTypeID
 			,UpgradeType
 		FROM #WeaponUpgrade
 		) AS src
-		ON src.UpgradeTypeID = trg.[UpgradeType]
+		ON src.UpgradeTypeID = trg.UpgradeType
 	WHEN MATCHED
 		THEN
 			UPDATE
@@ -434,9 +506,9 @@ BEGIN
 				,src.UpgradeType
 				);
 
-	TRUNCATE TABLE [core].WeaponUpgrade
+	TRUNCATE TABLE core.WeaponUpgrade
 
-	INSERT [core].WeaponUpgrade (
+	INSERT core.WeaponUpgrade (
 		WeaponID
 		,UpgradeTypeID
 		,Step
@@ -546,7 +618,7 @@ BEGIN
 			,BuildupCoin
 		FROM #WeaponUpgrade
 		) AS wu
-	INNER JOIN [core].Material AS m ON m.MaterialID = wu.MaterialID
+	INNER JOIN core.Material AS m ON m.MaterialID = wu.MaterialID
 
 	--Passive data
 	SELECT p.PassiveID
@@ -591,7 +663,7 @@ BEGIN
 	WHERE pj.TableName = 'Passive'
 
 	--Unknown abilities (should be deprecated in the future)
-	INSERT [core].Ability (
+	INSERT core.Ability (
 		AbilityID
 		,Ability
 		,GenericName
@@ -608,11 +680,11 @@ BEGIN
 			,p.AbilityID
 			)
 	FROM #Passive AS p
-	INNER JOIN [core].Element AS e ON e.ElementID = p.ElementID
-	LEFT JOIN [core].Ability AS a ON a.AbilityID = p.AbilityID
+	INNER JOIN core.Element AS e ON e.ElementID = p.ElementID
+	LEFT JOIN core.Ability AS a ON a.AbilityID = p.AbilityID
 	WHERE a.AbilityID IS NULL
 
-	MERGE [core].Passive AS trg
+	MERGE core.Passive AS trg
 	USING (
 		SELECT PassiveID
 			,WeaponTypeID
@@ -654,9 +726,9 @@ BEGIN
 				);
 
 	--Passive crafting
-	TRUNCATE TABLE [core].PassiveCrafting
+	TRUNCATE TABLE core.PassiveCrafting
 
-	INSERT [core].PassiveCrafting (
+	INSERT core.PassiveCrafting (
 		PassiveID
 		,MaterialID
 		,Quantity
@@ -705,7 +777,7 @@ BEGIN
 			,UnlockMaterialQuantity5
 		FROM #Passive
 		) AS pc
-	INNER JOIN [core].Material AS m ON m.MaterialID = pc.MaterialID
+	INNER JOIN core.Material AS m ON m.MaterialID = pc.MaterialID
 
 	--Weapon leveling
 	SELECT wl.Rarity
@@ -731,9 +803,9 @@ BEGIN
 			) AS wl
 	WHERE wlj.TableName = 'WeaponLevel'
 
-	TRUNCATE TABLE [core].WeaponLevel
+	TRUNCATE TABLE core.WeaponLevel
 
-	INSERT [core].WeaponLevel (
+	INSERT core.WeaponLevel (
 		Rarity
 		,WeaponLevel
 		,MaterialID
@@ -766,7 +838,7 @@ BEGIN
 			,BuildupMaterialQuantity3
 		FROM #Level
 		) AS l
-	INNER JOIN [core].Material AS m ON m.MaterialID = l.MaterialID
+	INNER JOIN core.Material AS m ON m.MaterialID = l.MaterialID
 
 	--Facilities
 	MERGE core.Facility AS trg
@@ -803,5 +875,120 @@ BEGIN
 				src.FacilityID
 				,src.FacilityName
 				,src.FacilityCount
+				);
+
+	--WeaponLimit
+	SELECT wl.WeaponRarity
+		,wl.UnbindLimit0
+		,wl.UnbindLimit1
+		,wl.UnbindLimit2
+		,wl.LevelLimit0
+		,wl.LevelLimit1
+		,wl.LevelLimit2
+		,wl.LevelLimit3
+		,wl.LevelLimit4
+		,wl.LevelLimit5
+		,wl.LevelLimit6
+		,wl.LevelLimit7
+		,wl.LevelLimit8
+		,wl.LevelLimit9
+	INTO #WeaponLimit
+	FROM jsn.TableJson AS wlj
+	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			WeaponRarity INT '$.title.Id'
+			,UnbindLimit0 INT '$.title.MaxLimitBreakCountByLimitOver0'
+			,UnbindLimit1 INT '$.title.MaxLimitBreakCountByLimitOver1'
+			,UnbindLimit2 INT '$.title.MaxLimitBreakCountByLimitOver2'
+			,LevelLimit0 INT '$.title.MaxLimitLevelByLimitBreak0'
+			,LevelLimit1 INT '$.title.MaxLimitLevelByLimitBreak1'
+			,LevelLimit2 INT '$.title.MaxLimitLevelByLimitBreak2'
+			,LevelLimit3 INT '$.title.MaxLimitLevelByLimitBreak3'
+			,LevelLimit4 INT '$.title.MaxLimitLevelByLimitBreak4'
+			,LevelLimit5 INT '$.title.MaxLimitLevelByLimitBreak5'
+			,LevelLimit6 INT '$.title.MaxLimitLevelByLimitBreak6'
+			,LevelLimit7 INT '$.title.MaxLimitLevelByLimitBreak7'
+			,LevelLimit8 INT '$.title.MaxLimitLevelByLimitBreak8'
+			,LevelLimit9 INT '$.title.MaxLimitLevelByLimitBreak9'
+			) AS wl
+	WHERE wlj.TableName = 'WeaponLimit'
+
+	--WeaponUnbindLimit
+	MERGE core.WeaponUnbindLimit AS trg
+	USING (
+		SELECT upvt.WeaponRarity
+			,upvt.MaxUnbindLevel
+			,REPLACE(upvt.RefinementLevel, 'UnbindLimit', '') AS RefinementLevel
+		FROM #WeaponLimit AS src
+		UNPIVOT(MaxUnbindLevel FOR RefinementLevel IN (
+					UnbindLimit0
+					,UnbindLimit1
+					,UnbindLimit2
+					)) AS upvt
+		WHERE upvt.MaxUnbindLevel > 0
+		) AS src
+		ON src.WeaponRarity = trg.WeaponRarity
+			AND src.RefinementLevel = trg.RefinementLevel
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET MaxUnbindLevel = src.MaxUnbindLevel
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				WeaponRarity
+				,RefinementLevel
+				,MaxUnbindLevel
+				)
+			VALUES (
+				src.WeaponRarity
+				,src.RefinementLevel
+				,src.MaxUnbindLevel
+				);
+
+	--WeaponLevelLimit
+	MERGE core.WeaponLevelLimit AS trg
+	USING (
+		SELECT upvt.WeaponRarity
+			,upvt.MaxWeaponLevel
+			,REPLACE(upvt.UnbindLevel, 'LevelLimit', '') AS UnbindLevel
+		FROM #WeaponLimit AS src
+		UNPIVOT(MaxWeaponLevel FOR UnbindLevel IN (
+					LevelLimit0
+					,LevelLimit1
+					,LevelLimit2
+					,LevelLimit3
+					,LevelLimit4
+					,LevelLimit5
+					,LevelLimit6
+					,LevelLimit7
+					,LevelLimit8
+					,LevelLimit9
+					)) AS upvt
+		WHERE upvt.MaxWeaponLevel > 0
+		) AS src
+		ON src.WeaponRarity = trg.WeaponRarity
+			AND src.UnbindLevel = trg.UnbindLevel
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET MaxWeaponLevel = src.MaxWeaponLevel
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				WeaponRarity
+				,UnbindLevel
+				,MaxWeaponLevel
+				)
+			VALUES (
+				src.WeaponRarity
+				,src.UnbindLevel
+				,src.MaxWeaponLevel
 				);
 END

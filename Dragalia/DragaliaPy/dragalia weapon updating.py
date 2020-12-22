@@ -7,7 +7,7 @@ dbName = "DragaliaV2"
 
 #array of useful data?
 parameterDict = dict()
-parameterDict["Ability"]={"tables":"Abilities","fields":"GenericName,Name,Id,AbilityGroupId"}
+parameterDict["Ability"]={"tables":"Abilities","fields":"GenericName,Name,Id,AbilityGroup"}
 parameterDict["AbilityGroup"]={"tables":"AbilityGroup","fields":"Id,GroupName"}
 parameterDict["Affinity"]={"tables":"AffinityBonus","fields":"Id,Name"}
 parameterDict["Facility"]={"tables":"Facilities","fields":"Id,Name,Available"}
