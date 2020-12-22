@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Weapon] (
+﻿CREATE TABLE [dbo].[AccountWeapon] (
 	[AccountID] INT NOT NULL
 	,[WeaponID] INT NOT NULL
 	,[Copies] INT NOT NULL CONSTRAINT [DF_Weapon_Copies] DEFAULT(0)

@@ -119,14 +119,14 @@
     <Build Include="den\Tables\StatueCosts.sql" />
     <Build Include="den\Tables\StatueMats.sql" />
     <Build Include="dbo\Tables\Account.sql" />
-    <Build Include="dbo\Tables\Weapon.sql" />
-    <Build Include="dbo\Tables\Inventory.sql" />
-    <Build Include="dbo\Tables\Facility.sql" />
+    <Build Include="dbo\Tables\AccountWeapon.sql" />
+    <Build Include="dbo\Tables\AccountInventory.sql" />
+    <Build Include="dbo\Tables\AccountFacility.sql" />
     <Build Include="den\Tables\HalidomSmithy.sql" />
     <Build Include="den\Tables\EventCosts.sql" />
     <Build Include="den\Tables\EventMats.sql" />
     <Build Include="dbo\Functions\fnInventoryCosts.sql" />
-    <Build Include="dbo\Tables\Passive.sql" />
+    <Build Include="dbo\Tables\AccountPassive.sql" />
     <Build Include="dbo\Functions\fnPlayerInventory.sql" />
     <Build Include="Security\util.sql" />
     <Build Include="util\Functions\InlineMax.sql" />
@@ -140,6 +140,7 @@
     <Build Include="core\Tables\WyrmprintUpgrade.sql" />
     <Build Include="core\Tables\WyrmprintLevel.sql" />
     <Build Include="core\Tables\WyrmprintLevelLimit.sql" />
+    <Build Include="dbo\Tables\AccountWyrmprint.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

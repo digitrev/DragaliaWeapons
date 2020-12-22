@@ -7,7 +7,7 @@ RETURN (
 		FROM (
 			SELECT wc.MaterialID
 				,wc.Quantity
-			FROM Weapon AS w
+			FROM [AccountWeapon] AS w
 			INNER JOIN core.WeaponCrafting AS wc ON wc.WeaponID = w.WeaponID
 			WHERE w.AccountID = @AccountID
 				AND w.Copies = 0
@@ -17,7 +17,7 @@ RETURN (
 			
 			SELECT wu.MaterialID
 				,wu.Quantity
-			FROM Weapon AS w
+			FROM [AccountWeapon] AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
 			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
@@ -29,7 +29,7 @@ RETURN (
 			
 			SELECT wu.MaterialID
 				,wu.Quantity
-			FROM Weapon AS w
+			FROM [AccountWeapon] AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
 			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
@@ -41,7 +41,7 @@ RETURN (
 			
 			SELECT wu.MaterialID
 				,wu.Quantity
-			FROM Weapon AS w
+			FROM [AccountWeapon] AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
 			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
@@ -53,7 +53,7 @@ RETURN (
 			
 			SELECT wu.MaterialID
 				,wu.Quantity
-			FROM Weapon AS w
+			FROM [AccountWeapon] AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
 			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
@@ -65,7 +65,7 @@ RETURN (
 			
 			SELECT wu.MaterialID
 				,wu.Quantity
-			FROM Weapon AS w
+			FROM [AccountWeapon] AS w
 			INNER JOIN core.WeaponUpgrade AS wu ON wu.WeaponID = w.WeaponID
 			INNER JOIN core.[UpgradeType] AS ut ON ut.[UpgradeTypeID] = wu.UpgradeTypeID
 			WHERE w.AccountID = @AccountID
@@ -77,7 +77,7 @@ RETURN (
 			
 			SELECT wl.MaterialID
 				,wl.Quantity
-			FROM Weapon AS w
+			FROM [AccountWeapon] AS w
 			INNER JOIN core.Weapon AS cw ON cw.WeaponID = w.WeaponID
 			INNER JOIN core.WeaponLevel AS wl ON wl.Rarity = cw.Rarity
 			WHERE w.AccountID = @AccountID
@@ -88,7 +88,7 @@ RETURN (
 			
 			SELECT fu.MaterialID
 				,fu.Quantity
-			FROM Facility AS f
+			FROM [AccountFacility] AS f
 			INNER JOIN core.FacilityUpgrade AS fu ON fu.FacilityID = f.FacilityID
 			WHERE f.AccountID = @AccountID
 				AND f.CurrentLevel < fu.FacilityLevel
@@ -98,7 +98,7 @@ RETURN (
 			
 			SELECT pc.MaterialID
 				,pc.Quantity
-			FROM Passive AS p
+			FROM [AccountPassive] AS p
 			INNER JOIN core.PassiveCrafting AS pc ON pc.PassiveID = p.PassiveID
 			WHERE p.AccountID = @AccountID
 				AND p.Owned = 0

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Facility] (
+﻿CREATE TABLE [dbo].[AccountFacility] (
 	[AccountID] INT NOT NULL
 	,[FacilityID] INT NOT NULL
 	,[CopyNumber] INT NOT NULL
