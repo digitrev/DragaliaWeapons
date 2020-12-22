@@ -871,4 +871,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[PK_UpgradeType]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="ac571d83-aa00-47c2-b842-9382ebd347e2" ChangeDateTime="12/22/2020 20:47:07">
+    <Property Name="ElementName" Value="[dbo].[Wyrmprint].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a2c4d404-cf19-45eb-bf54-d934713f6cf3" ChangeDateTime="12/22/2020 20:48:25">
+    <Property Name="ElementName" Value="[dbo].[Wyrmprint].[UnbindLevel]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Unbind" />
+  </Operation>
 </Operations>
