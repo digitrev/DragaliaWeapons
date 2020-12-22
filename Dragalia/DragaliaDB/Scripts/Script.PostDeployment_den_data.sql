@@ -9,4 +9,6 @@ Post-Deployment Script Template
 			   SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+PRINT 'Initializing denormalized tables'
+
 EXEC [den].[spInitializeDen]

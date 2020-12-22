@@ -3,9 +3,6 @@ AS
 BEGIN
 	SET NOCOUNT ON
 
-	IF OBJECT_ID('tempdb..#Level') IS NOT NULL
-		DROP TABLE #Level
-
 	IF OBJECT_ID('tempdb..#Passive') IS NOT NULL
 		DROP TABLE #Passive
 
@@ -15,8 +12,23 @@ BEGIN
 	IF OBJECT_ID('tempdb..#WeaponUpgrade') IS NOT NULL
 		DROP TABLE #WeaponUpgrade
 
+	IF OBJECT_ID('tempdb..#WeaponLevel') IS NOT NULL
+		DROP TABLE #WeaponLevel
+
 	IF OBJECT_ID('tempdb..#WeaponLimit') IS NOT NULL
 		DROP TABLE #WeaponLimit
+
+	IF OBJECT_ID('tempdb..#Wyrmprint') IS NOT NULL
+		DROP TABLE #Wyrmprint
+
+	IF OBJECT_ID('tempdb..#WyrmprintUpgrade') IS NOT NULL
+		DROP TABLE #WyrmprintUpgrade
+
+	IF OBJECT_ID('tempdb..#WyrmprintLevel') IS NOT NULL
+		DROP TABLE #WyrmprintLevel
+
+	IF OBJECT_ID('tempdb..#WyrmprintLimit') IS NOT NULL
+		DROP TABLE #WyrmprintLimit
 
 	--Ability group
 	MERGE core.AbilityGroup AS trg
@@ -139,9 +151,15 @@ BEGIN
 		
 		UNION
 		
-		--Hard coded because Gamepedia doesn't track rupie as a separate material
+		--Hard coded because Gamepedia doesn't track rupies as a separate material
 		SELECT 'Rupie'
 			,'Rupies'
+		
+		UNION
+		
+		--Hard coded because Gamepedia doesn't track eldwater as a separate material
+		SELECT 'Eldwater'
+			,'Eldwater'
 		) AS src
 		ON src.MaterialID = trg.MaterialID
 	WHEN MATCHED
@@ -788,7 +806,7 @@ BEGIN
 		,wl.BuildupMaterialQuantity2
 		,wl.BuildupMaterialId3
 		,wl.BuildupMaterialQuantity3
-	INTO #Level
+	INTO #WeaponLevel
 	FROM jsn.TableJson AS wlj
 	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
@@ -820,7 +838,7 @@ BEGIN
 			,WeaponLevel
 			,BuildupMaterialId1 AS MaterialID
 			,BuildupMaterialQuantity1 AS Quantity
-		FROM #Level
+		FROM #WeaponLevel
 		
 		UNION ALL
 		
@@ -828,7 +846,7 @@ BEGIN
 			,WeaponLevel
 			,BuildupMaterialId2
 			,BuildupMaterialQuantity2
-		FROM #Level
+		FROM #WeaponLevel
 		
 		UNION ALL
 		
@@ -836,7 +854,7 @@ BEGIN
 			,WeaponLevel
 			,BuildupMaterialId3
 			,BuildupMaterialQuantity3
-		FROM #Level
+		FROM #WeaponLevel
 		) AS l
 	INNER JOIN core.Material AS m ON m.MaterialID = l.MaterialID
 
@@ -914,81 +932,329 @@ BEGIN
 	WHERE wlj.TableName = 'WeaponLimit'
 
 	--WeaponUnbindLimit
-	MERGE core.WeaponUnbindLimit AS trg
-	USING (
-		SELECT upvt.WeaponRarity
-			,upvt.MaxUnbindLevel
-			,REPLACE(upvt.RefinementLevel, 'UnbindLimit', '') AS RefinementLevel
-		FROM #WeaponLimit AS src
-		UNPIVOT(MaxUnbindLevel FOR RefinementLevel IN (
-					UnbindLimit0
-					,UnbindLimit1
-					,UnbindLimit2
-					)) AS upvt
-		WHERE upvt.MaxUnbindLevel > 0
-		) AS src
-		ON src.WeaponRarity = trg.WeaponRarity
-			AND src.RefinementLevel = trg.RefinementLevel
-	WHEN MATCHED
-		THEN
-			UPDATE
-			SET MaxUnbindLevel = src.MaxUnbindLevel
-	WHEN NOT MATCHED BY SOURCE
-		THEN
-			DELETE
-	WHEN NOT MATCHED
-		THEN
-			INSERT (
-				WeaponRarity
-				,RefinementLevel
-				,MaxUnbindLevel
-				)
-			VALUES (
-				src.WeaponRarity
-				,src.RefinementLevel
-				,src.MaxUnbindLevel
-				);
+	TRUNCATE TABLE core.WeaponUnbindLimit
+
+	INSERT core.WeaponUnbindLimit (
+		WeaponRarity
+		,RefinementLevel
+		,MaxUnbindLevel
+		)
+	SELECT upvt.WeaponRarity
+		,REPLACE(upvt.RefinementLevel, 'UnbindLimit', '') AS RefinementLevel
+		,upvt.MaxUnbindLevel
+	FROM #WeaponLimit AS src
+	UNPIVOT(MaxUnbindLevel FOR RefinementLevel IN (
+				UnbindLimit0
+				,UnbindLimit1
+				,UnbindLimit2
+				)) AS upvt
+	WHERE upvt.MaxUnbindLevel > 0
 
 	--WeaponLevelLimit
-	MERGE core.WeaponLevelLimit AS trg
+	TRUNCATE TABLE core.WeaponLevelLimit
+
+	INSERT core.WeaponLevelLimit (
+		WeaponRarity
+		,UnbindLevel
+		,MaxWeaponLevel
+		)
+	SELECT upvt.WeaponRarity
+		,REPLACE(upvt.UnbindLevel, 'LevelLimit', '') AS UnbindLevel
+		,upvt.MaxWeaponLevel
+	FROM #WeaponLimit AS src
+	UNPIVOT(MaxWeaponLevel FOR UnbindLevel IN (
+				LevelLimit0
+				,LevelLimit1
+				,LevelLimit2
+				,LevelLimit3
+				,LevelLimit4
+				,LevelLimit5
+				,LevelLimit6
+				,LevelLimit7
+				,LevelLimit8
+				,LevelLimit9
+				)) AS upvt
+	WHERE upvt.MaxWeaponLevel > 0
+
+	--Wyrmprint
+	SELECT w.WyrmprintID
+		,w.Wyrmprint
+		,w.Rarity
+		,w.AbilityID11
+		,w.AbilityID12
+		,w.AbilityID13
+		,w.AbilityID21
+		,w.AbilityID22
+		,w.AbilityID23
+		,w.AffinityID
+		,w.GroupID
+	INTO #Wyrmprint
+	FROM jsn.TableJson AS wj
+	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			WyrmprintID INT '$.title.Id'
+			,Wyrmprint NVARCHAR(50) '$.title.Name'
+			,Rarity INT '$.title.Rarity'
+			,AbilityID11 INT '$.title.Abilities11'
+			,AbilityID12 INT '$.title.Abilities12'
+			,AbilityID13 INT '$.title.Abilities13'
+			,AbilityID21 INT '$.title.Abilities21'
+			,AbilityID22 INT '$.title.Abilities22'
+			,AbilityID23 INT '$.title.Abilities23'
+			,AffinityID INT '$.title.UnionAbilityGroupId'
+			,GroupID INT '$.title.AbilityCrestBuildupGroupId'
+			) AS w
+	WHERE wj.TableName = 'Wyrmprint'
+
+	MERGE core.Wyrmprint AS trg
 	USING (
-		SELECT upvt.WeaponRarity
-			,upvt.MaxWeaponLevel
-			,REPLACE(upvt.UnbindLevel, 'LevelLimit', '') AS UnbindLevel
-		FROM #WeaponLimit AS src
-		UNPIVOT(MaxWeaponLevel FOR UnbindLevel IN (
-					LevelLimit0
-					,LevelLimit1
-					,LevelLimit2
-					,LevelLimit3
-					,LevelLimit4
-					,LevelLimit5
-					,LevelLimit6
-					,LevelLimit7
-					,LevelLimit8
-					,LevelLimit9
-					)) AS upvt
-		WHERE upvt.MaxWeaponLevel > 0
+		SELECT DISTINCT WyrmprintID
+			,Wyrmprint
+			,Rarity
+			,NULLIF(AffinityID, 0) AS AffinityID
+		FROM #Wyrmprint
 		) AS src
-		ON src.WeaponRarity = trg.WeaponRarity
-			AND src.UnbindLevel = trg.UnbindLevel
+		ON src.WyrmprintID = trg.WyrmprintID
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET MaxWeaponLevel = src.MaxWeaponLevel
+			SET Wyrmprint = src.Wyrmprint
+				,Rarity = src.Rarity
+				,AffinityID = src.AffinityID
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
-				WeaponRarity
-				,UnbindLevel
-				,MaxWeaponLevel
+				WyrmprintID
+				,Wyrmprint
+				,Rarity
+				,AffinityID
 				)
 			VALUES (
-				src.WeaponRarity
-				,src.UnbindLevel
-				,src.MaxWeaponLevel
+				src.WyrmprintID
+				,src.Wyrmprint
+				,src.Rarity
+				,src.AffinityID
 				);
+
+	--WyrmprintAbility
+	TRUNCATE TABLE core.WyrmprintAbility
+
+	INSERT core.WyrmprintAbility (
+		WyrmprintID
+		,AbilityID
+		,AbilitySlot
+		,AbilityLevel
+		)
+	SELECT wa.WyrmprintID
+		,wa.AbilityID
+		,wa.AbilitySlot
+		,wa.AbilityLevel
+	FROM (
+		SELECT WyrmprintID
+			,AbilityID11 AS AbilityID
+			,1 AS AbilitySlot
+			,1 AS AbilityLevel
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID12
+			,1
+			,2
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID13
+			,1
+			,3
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID21
+			,2
+			,1
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID22
+			,2
+			,2
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID23
+			,2
+			,3
+		FROM #Wyrmprint
+		) AS wa
+	INNER JOIN core.Ability AS a ON a.AbilityID = wa.AbilityID
+
+	--WyrmprintUpgrade
+	SELECT w.WyrmprintID
+		,wu.UpgradeTypeID
+		,wu.Step
+		,wu.Eldwater
+		,wu.MaterialID1
+		,wu.Quantity1
+		,wu.MaterialID2
+		,wu.Quantity2
+	INTO #WyrmprintUpgrade
+	FROM jsn.TableJson AS wuj
+	CROSS APPLY OPENJSON(wuj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			Id INT '$.title.Id'
+			,GroupID INT '$.title.AbilityCrestBuildupGroupId'
+			,UpgradeTypeID INT '$.title.BuildupPieceTypeId'
+			,Step INT '$.title.Step'
+			,Eldwater INT '$.title.BuildupDewPoint'
+			,MaterialID1 NVARCHAR(50) '$.title.BuildupMaterialId1'
+			,Quantity1 INT '$.title.BuildupMaterialQuantity1'
+			,MaterialID2 NVARCHAR(50) '$.title.BuildupMaterialId2'
+			,Quantity2 INT '$.title.BuildupMaterialQuantity2'
+			) AS wu
+	INNER JOIN #Wyrmprint AS w ON w.GroupID = wu.GroupID
+	WHERE wuj.TableName = 'WyrmprintUpgrade'
+
+	TRUNCATE TABLE core.WyrmprintUpgrade
+
+	INSERT core.WyrmprintUpgrade (
+		WyrmprintID
+		,UpgradeTypeID
+		,Step
+		,MaterialID
+		,Quantity
+		)
+	SELECT wu.WyrmprintID
+		,wu.UpgradeTypeID
+		,wu.Step
+		,wu.MaterialID
+		,wu.Quantity
+	FROM (
+		SELECT WyrmprintID
+			,UpgradeTypeID
+			,Step
+			,MaterialID1 AS MaterialID
+			,Quantity1 AS Quantity
+		FROM #WyrmprintUpgrade
+		
+		UNION
+		
+		SELECT WyrmprintID
+			,UpgradeTypeID
+			,Step
+			,MaterialID2
+			,Quantity2
+		FROM #WyrmprintUpgrade
+		
+		UNION
+		
+		SELECT WyrmprintID
+			,UpgradeTypeID
+			,Step
+			,'Eldwater'
+			,Eldwater
+		FROM #WyrmprintUpgrade
+		) AS wu
+	INNER JOIN core.Material AS m ON m.MaterialID = wu.MaterialID
+
+	--WyrmprintLevel
+	SELECT wl.Rarity
+		,wl.WyrmprintLevel
+		,wl.MaterialID1
+		,wl.Quantity1
+		,wl.MaterialID2
+		,wl.Quantity2
+	INTO #WyrmprintLevel
+	FROM jsn.TableJson AS wlj
+	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			Rarity INT '$.title.RarityGroup'
+			,WyrmprintLevel INT '$.title.Level'
+			,MaterialID1 NVARCHAR(50) '$.title.BuildupMaterialId1'
+			,Quantity1 INT '$.title.BuildupMaterialQuantity1'
+			,MaterialID2 NVARCHAR(50) '$.title.BuildupMaterialId2'
+			,Quantity2 INT '$.title.BuildupMaterialQuantity2'
+			) AS wl
+	WHERE wlj.TableName = 'WyrmprintLevel'
+
+	TRUNCATE TABLE core.WyrmprintLevel
+
+	INSERT core.WyrmprintLevel (
+		Rarity
+		,WyrmprintLevel
+		,MaterialID
+		,Quantity
+		)
+	SELECT wl.Rarity
+		,wl.WyrmprintLevel
+		,wl.MaterialID
+		,wl.Quantity
+	FROM (
+		SELECT Rarity
+			,WyrmprintLevel
+			,MaterialID1 AS MaterialID
+			,Quantity1 AS Quantity
+		FROM #WyrmprintLevel
+		
+		UNION
+		
+		SELECT Rarity
+			,WyrmprintLevel
+			,MaterialID2
+			,Quantity2
+		FROM #WyrmprintLevel
+		) AS wl
+	INNER JOIN core.Material AS m ON m.MaterialID = wl.MaterialID
+
+	--WyrmprintLevelLimit
+	SELECT wl.WyrmprintRarity
+		,wl.LevelLimit0
+		,wl.LevelLimit1
+		,wl.LevelLimit2
+		,wl.LevelLimit3
+		,wl.LevelLimit4
+	INTO #WyrmprintLimit
+	FROM jsn.TableJson AS wlj
+	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			WyrmprintRarity INT '$.title.Id'
+			,LevelLimit0 INT '$.title.MaxLimitLevelByLimitBreak0'
+			,LevelLimit1 INT '$.title.MaxLimitLevelByLimitBreak1'
+			,LevelLimit2 INT '$.title.MaxLimitLevelByLimitBreak2'
+			,LevelLimit3 INT '$.title.MaxLimitLevelByLimitBreak3'
+			,LevelLimit4 INT '$.title.MaxLimitLevelByLimitBreak4'
+			) AS wl
+	WHERE wlj.TableName = 'WyrmprintLimit'
+
+	TRUNCATE TABLE core.WyrmprintLevelLimit
+
+	INSERT core.WyrmprintLevelLimit (
+		WyrmprintRarity
+		,UnbindLevel
+		,MaxWyrmprintLevel
+		)
+	SELECT upvt.WyrmprintRarity
+		,REPLACE(upvt.UnbindLevel, 'LevelLimit', '') AS UnbindLevel
+		,upvt.MaxWyrmprintLevel
+	FROM #WyrmprintLimit AS src
+	UNPIVOT(MaxWyrmprintLevel FOR UnbindLevel IN (
+				LevelLimit0
+				,LevelLimit1
+				,LevelLimit2
+				,LevelLimit3
+				,LevelLimit4
+				)) AS upvt
+	WHERE upvt.MaxWyrmprintLevel > 0
 END
