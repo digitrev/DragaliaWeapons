@@ -9,6 +9,6 @@
 		,[AbilityID]
 		,[AbilitySlot]
 		)
-	,CONSTRAINT [FK_WyrmprintAbility_Wyrmprint] FOREIGN KEY ([WyrmprintID]) REFERENCES [core].[Wyrmprint]([WyrmprintID])
-	,CONSTRAINT [FK_WyrmprintAbility_Ability] FOREIGN KEY ([AbilityID]) REFERENCES [core].[Ability]([AbilityID])
+	,CONSTRAINT [FK_WyrmprintAbility_Wyrmprint] FOREIGN KEY ([WyrmprintID]) REFERENCES [core].[Wyrmprint]([WyrmprintID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_WyrmprintAbility_Ability] FOREIGN KEY ([AbilityID]) REFERENCES [core].[Ability]([AbilityID]) ON DELETE CASCADE
 	)

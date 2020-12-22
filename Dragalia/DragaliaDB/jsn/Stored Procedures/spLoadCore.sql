@@ -409,25 +409,25 @@ BEGIN
 	INNER JOIN #Weapon AS w ON w.GroupID = wu.GroupID
 	WHERE wuj.TableName = 'WeaponUpgrade'
 
-	MERGE [core].UpgradeType AS trg
+	MERGE [core].[UpgradeType] AS trg
 	USING (
 		SELECT DISTINCT UpgradeTypeID
 			,UpgradeType
 		FROM #WeaponUpgrade
 		) AS src
-		ON src.UpgradeTypeID = trg.UpgradeType
+		ON src.UpgradeTypeID = trg.[UpgradeType]
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET UpgradeType = src.UpgradeType
+			SET [UpgradeType] = src.UpgradeType
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
-				UpgradeTypeID
-				,UpgradeType
+				[UpgradeTypeID]
+				,[UpgradeType]
 				)
 			VALUES (
 				src.UpgradeTypeID

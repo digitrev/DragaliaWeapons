@@ -715,4 +715,160 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="WyrmprintID" />
   </Operation>
+  <Operation Name="Move Schema" Key="4517a750-348b-47b9-b995-01b0bbc8caf3" ChangeDateTime="12/22/2020 17:27:01">
+    <Property Name="ElementName" Value="[dbo].[AbilityGroup]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="364af39e-146c-4d4f-b1ed-2fb02360ac1e" ChangeDateTime="12/22/2020 17:27:07">
+    <Property Name="ElementName" Value="[core].[AbilityGroup].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[AbilityGroup]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AbilityGroupID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="864baf2b-3315-4ec9-a1cb-a1c9fcaab18f" ChangeDateTime="12/22/2020 17:28:37">
+    <Property Name="ElementName" Value="[dbo].[WeaponLevelLimit]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="812239b9-8df6-466a-a73f-8e619a49e579" ChangeDateTime="12/22/2020 17:29:13">
+    <Property Name="ElementName" Value="[core].[WeaponLevelLimit].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[WeaponLevelLimit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponRarity" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3b69daaf-ef37-49da-bd90-230f369ca2df" ChangeDateTime="12/22/2020 17:30:58">
+    <Property Name="ElementName" Value="[dbo].[WeaponUnbindLimit]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fc19da84-849d-4e29-b7ea-52579e2940a7" ChangeDateTime="12/22/2020 17:31:05">
+    <Property Name="ElementName" Value="[core].[WeaponUnbindLimit].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[WeaponUnbindLimit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeaponRarity" />
+  </Operation>
+  <Operation Name="Move Schema" Key="f99c155f-68f5-47f3-9240-952c24134b98" ChangeDateTime="12/22/2020 18:17:44">
+    <Property Name="ElementName" Value="[dbo].[Affinity]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="af94f1bd-c06a-4b0a-ba81-965ff34a4f9c" ChangeDateTime="12/22/2020 18:17:50">
+    <Property Name="ElementName" Value="[core].[Affinity].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Affinity]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AffinityID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7034486b-af81-42e4-be1b-c69886a66e69" ChangeDateTime="12/22/2020 18:18:27">
+    <Property Name="ElementName" Value="[core].[FK_Wyrmprint_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Wyrmprint_Affinity]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4ae8801b-43c7-4e9f-9b4f-c4e87635701e" ChangeDateTime="12/22/2020 18:19:25">
+    <Property Name="ElementName" Value="[core].[Wyrmprint].[AffinityGroupID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AffinityID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="50aade30-d7ca-4353-9f14-b475824fb42d" ChangeDateTime="12/22/2020 18:20:47">
+    <Property Name="ElementName" Value="[core].[Wyrmprint].[WyrmprintUpgradeGroupID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WyrmprintUpgradeID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="1f466346-ea59-4d74-b582-e07cd3a6b226" ChangeDateTime="12/22/2020 18:21:05">
+    <Property Name="ElementName" Value="[dbo].[WyrmprintUpgrade]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a98a5aa9-34f4-452f-bb85-f32f5f7989e4" ChangeDateTime="12/22/2020 18:21:39">
+    <Property Name="ElementName" Value="[core].[WyrmprintUpgrade].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[WyrmprintUpgrade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WyrmprintUpgradeID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2b76e5c8-1bc7-4364-bd63-f4ff7e4d1be8" ChangeDateTime="12/22/2020 18:29:25">
+    <Property Name="ElementName" Value="[core].[WyrmprintUpgrade].[WyrmprintUpgradeID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[WyrmprintUpgrade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WyrmprintID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dcd5e53e-d47b-4250-8626-3faa2ab02280" ChangeDateTime="12/22/2020 18:30:15">
+    <Property Name="ElementName" Value="[core].[UpgradeType]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[core]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[WeaponUpgradeType]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fe75fddf-cd82-4aeb-9635-ec986976e39c" ChangeDateTime="12/22/2020 18:30:19">
+    <Property Name="ElementName" Value="[core].[WeaponUpgradeType].[UpgradeTypeID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[WeaponUpgradeType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[WeaponUpgradeTypeID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="acefaf05-fef2-473c-bd42-01b96b7c8d99" ChangeDateTime="12/22/2020 18:30:35">
+    <Property Name="ElementName" Value="[core].[WeaponUpgradeType].[UpgradeType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[WeaponUpgradeType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[WeaponUpgradeType]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9dfb74c6-61cf-49d5-a0a8-13b37834566e" ChangeDateTime="12/22/2020 18:30:39">
+    <Property Name="ElementName" Value="[core].[PK_UpgradeType]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="" />
+    <Property Name="ParentElementType" Value="" />
+    <Property Name="NewName" Value="PK_WeaponUpgradeType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a40b885f-f637-42d3-b33a-fe8443a45956" ChangeDateTime="12/22/2020 18:31:54">
+    <Property Name="ElementName" Value="[core].[WeaponUpgradeType]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[core]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[UpgradeType]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0134dea3-a202-4b01-bfe0-449b5876972f" ChangeDateTime="12/22/2020 18:32:02">
+    <Property Name="ElementName" Value="[core].[UpgradeType].[WeaponUpgradeTypeID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[UpgradeType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UpgradeTypeID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c6d71081-6ff3-4e30-92f3-c2da3e72aa09" ChangeDateTime="12/22/2020 18:32:06">
+    <Property Name="ElementName" Value="[core].[UpgradeType].[WeaponUpgradeType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[UpgradeType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UpgradeType]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="54098783-774f-4a49-8a49-b8e9c05132e2" ChangeDateTime="12/22/2020 18:32:11">
+    <Property Name="ElementName" Value="[core].[PK_WeaponUpgradeType]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="" />
+    <Property Name="ParentElementType" Value="" />
+    <Property Name="NewName" Value="PK_UpgradeType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b59c71e3-1dad-418a-a4d0-008aa6126b0d" ChangeDateTime="12/22/2020 18:32:23">
+    <Property Name="ElementName" Value="[core].[PK_UpgradeType]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[core].[UpgradeType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_UpgradeType]" />
+  </Operation>
 </Operations>
