@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Wyrmprint] (
+﻿CREATE TABLE [dbo].[AccountWyrmprint] (
 	[AccountID] INT NOT NULL
 	,[WyrmprintID] INT NOT NULL
 	,[WyrmprintLevel] INT NOT NULL CONSTRAINT [DF_Wyrmprint_WyrmprintLevel] DEFAULT(0)

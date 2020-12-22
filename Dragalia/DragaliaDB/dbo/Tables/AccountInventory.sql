@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Inventory] (
+﻿CREATE TABLE [dbo].[AccountInventory] (
 	[AccountID] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
 	,[Quantity] INT NOT NULL CONSTRAINT [DF_Inventory_Quantity] DEFAULT(0)

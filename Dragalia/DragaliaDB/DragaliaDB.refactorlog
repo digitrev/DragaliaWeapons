@@ -885,4 +885,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Unbind" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="908bb8a2-f3b5-4902-b516-c9e00ffb563f" ChangeDateTime="12/22/2020 21:05:43">
+    <Property Name="ElementName" Value="[dbo].[Facility]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[AccountFacility]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7a2cd436-8141-4d22-b65e-a208e44fb21c" ChangeDateTime="12/22/2020 21:06:01">
+    <Property Name="ElementName" Value="[dbo].[Inventory]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[AccountInventory]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2aa599da-8feb-48d6-82c9-b3da1d671ff7" ChangeDateTime="12/22/2020 21:06:07">
+    <Property Name="ElementName" Value="[dbo].[Passive]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[AccountPassive]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="216fe26b-da57-4d86-bd20-2a813ee1ba0b" ChangeDateTime="12/22/2020 21:06:13">
+    <Property Name="ElementName" Value="[dbo].[Weapon]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[AccountWeapon]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="904f6a05-bd20-4320-9996-680affbbce29" ChangeDateTime="12/22/2020 21:06:18">
+    <Property Name="ElementName" Value="[dbo].[Wyrmprint]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[AccountWyrmprint]" />
+  </Operation>
 </Operations>

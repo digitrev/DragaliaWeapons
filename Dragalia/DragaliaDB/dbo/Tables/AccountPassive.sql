@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Passive] (
+﻿CREATE TABLE [dbo].[AccountPassive] (
 	[AccountID] INT NOT NULL
 	,[PassiveID] INT NOT NULL
 	,[Owned] BIT NOT NULL CONSTRAINT [DF_Passive_Owned] DEFAULT(0)
