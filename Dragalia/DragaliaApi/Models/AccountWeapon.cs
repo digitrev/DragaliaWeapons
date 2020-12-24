@@ -16,8 +16,8 @@ namespace DragaliaApi.Models
         public int WeaponLevelWanted { get; set; }
         public int Unbind { get; set; }
         public int UnbindWanted { get; set; }
-        public bool Refine { get; set; }
-        public bool RefineWanted { get; set; }
+        public int Refine { get; set; }
+        public int RefineWanted { get; set; }
         public bool Slot { get; set; }
         public bool SlotWanted { get; set; }
         public bool Bonus { get; set; }

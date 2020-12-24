@@ -107,8 +107,7 @@ namespace DragaliaApi.Data
 
             modelBuilder.Entity<AccountFacility>(entity =>
             {
-                entity.HasKey(e => new { e.AccountId, e.FacilityId, e.CopyNumber })
-                    .HasName("PK_Facility");
+                entity.HasKey(e => new { e.AccountId, e.FacilityId, e.CopyNumber });
 
                 entity.ToTable("AccountFacility");
 
@@ -120,19 +119,18 @@ namespace DragaliaApi.Data
                     .WithMany(p => p.AccountFacilities)
                     .HasForeignKey(d => d.AccountId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Facility_Account");
+                    .HasConstraintName("FK_AccountFacility_Account");
 
                 entity.HasOne(d => d.Facility)
                     .WithMany(p => p.AccountFacilities)
                     .HasForeignKey(d => d.FacilityId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Facility_Facility");
+                    .HasConstraintName("FK_AccountFacility_Facility");
             });
 
             modelBuilder.Entity<AccountInventory>(entity =>
             {
-                entity.HasKey(e => new { e.AccountId, e.MaterialId })
-                    .HasName("PK_Inventory");
+                entity.HasKey(e => new { e.AccountId, e.MaterialId });
 
                 entity.ToTable("AccountInventory");
 
@@ -146,19 +144,18 @@ namespace DragaliaApi.Data
                     .WithMany(p => p.AccountInventories)
                     .HasForeignKey(d => d.AccountId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Inventory_Account");
+                    .HasConstraintName("FK_AccountInventory_Account");
 
                 entity.HasOne(d => d.Material)
                     .WithMany(p => p.AccountInventories)
                     .HasForeignKey(d => d.MaterialId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Inventory_Material");
+                    .HasConstraintName("FK_AccountInventory_Material");
             });
 
             modelBuilder.Entity<AccountPassive>(entity =>
             {
-                entity.HasKey(e => new { e.AccountId, e.PassiveId })
-                    .HasName("PK_Passive");
+                entity.HasKey(e => new { e.AccountId, e.PassiveId });
 
                 entity.ToTable("AccountPassive");
 
@@ -170,19 +167,18 @@ namespace DragaliaApi.Data
                     .WithMany(p => p.AccountPassives)
                     .HasForeignKey(d => d.AccountId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Passive_Account");
+                    .HasConstraintName("FK_AccountPassive_Account");
 
                 entity.HasOne(d => d.Passive)
                     .WithMany(p => p.AccountPassives)
                     .HasForeignKey(d => d.PassiveId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Passive_Passive");
+                    .HasConstraintName("FK_AccountPassive_Passive");
             });
 
             modelBuilder.Entity<AccountWeapon>(entity =>
             {
-                entity.HasKey(e => new { e.AccountId, e.WeaponId })
-                    .HasName("PK_Weapon");
+                entity.HasKey(e => new { e.AccountId, e.WeaponId });
 
                 entity.ToTable("AccountWeapon");
 
@@ -194,19 +190,18 @@ namespace DragaliaApi.Data
                     .WithMany(p => p.AccountWeapons)
                     .HasForeignKey(d => d.AccountId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Weapon_Account");
+                    .HasConstraintName("FK_AccountWeapon_Account");
 
                 entity.HasOne(d => d.Weapon)
                     .WithMany(p => p.AccountWeapons)
                     .HasForeignKey(d => d.WeaponId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Weapon_CoreWeapon");
+                    .HasConstraintName("FK_AccountWeapon_CoreWeapon");
             });
 
             modelBuilder.Entity<AccountWyrmprint>(entity =>
             {
-                entity.HasKey(e => new { e.AccountId, e.WyrmprintId })
-                    .HasName("PK_Wyrmprint");
+                entity.HasKey(e => new { e.AccountId, e.WyrmprintId });
 
                 entity.ToTable("AccountWyrmprint");
 
@@ -218,13 +213,13 @@ namespace DragaliaApi.Data
                     .WithMany(p => p.AccountWyrmprints)
                     .HasForeignKey(d => d.AccountId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Wyrmprint_Account");
+                    .HasConstraintName("FK_AccountWyrmprint_Account");
 
                 entity.HasOne(d => d.Wyrmprint)
                     .WithMany(p => p.AccountWyrmprints)
                     .HasForeignKey(d => d.WyrmprintId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Wyrmprint_Wyrmprint");
+                    .HasConstraintName("FK_AccountWyrmprint_Wyrmprint");
             });
 
             modelBuilder.Entity<Affinity>(entity =>

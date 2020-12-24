@@ -26,32 +26,69 @@ namespace DragaliaApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons()
         {
-            return await _context.AccountWeapons.Include(aw => aw.Weapon).ToListAsync();
+            return await _context.AccountWeapons.Include(aw => aw.Weapon)
+                                                .ThenInclude(w => w.Element)
+                                                .Select(aw => AccountWeaponDTO.ToDTO(aw))
+                                                .ToListAsync();
         }
 
         // GET: api/AccountWeapons/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<AccountWeapon>> GetAccountWeapon(int id)
+        [HttpGet("{accountID}")]
+        public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons(int accountID)
         {
-            var accountWeapon = await _context.AccountWeapons.FindAsync(id);
+            return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID)
+                                                .Include(aw => aw.Weapon)
+                                                .ThenInclude(w => w.Element)
+                                                .Select(aw => AccountWeaponDTO.ToDTO(aw))
+                                                .ToListAsync();
+        }
+
+        // GET: api/AccountWeapons/5/1002
+        [HttpGet("{accountID}/{weaponID}")]
+        public async Task<ActionResult<AccountWeaponDTO>> GetAccountWeapon(int accountID, int weaponID)
+        {
+            var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
+
+            _context.Entry(accountWeapon)
+                    .Reference(aw => aw.Weapon)
+                    .Load();
+
+            _context.Entry(accountWeapon.Weapon)
+                    .Reference(w => w.Element)
+                    .Load();
 
             if (accountWeapon == null)
             {
                 return NotFound();
             }
 
-            return accountWeapon;
+            return AccountWeaponDTO.ToDTO(accountWeapon);
         }
 
         // PUT: api/AccountWeapons/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutAccountWeapon(int id, AccountWeapon accountWeapon)
+        [HttpPut("{accountID}/{weaponID}")]
+        public async Task<IActionResult> PutAccountWeapon(int accountID, int weaponID, AccountWeaponDTO accountWeaponDTO)
         {
-            if (id != accountWeapon.AccountId)
+            if (accountID != accountWeaponDTO.AccountId || weaponID != accountWeaponDTO.WeaponId)
             {
                 return BadRequest();
             }
+
+            var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
+
+            accountWeapon.Copies = accountWeaponDTO.Copies;
+            accountWeapon.CopiesWanted = accountWeaponDTO.CopiesWanted;
+            accountWeapon.WeaponLevel = accountWeaponDTO.WeaponLevel;
+            accountWeapon.WeaponLevelWanted = accountWeaponDTO.WeaponLevelWanted;
+            accountWeapon.Unbind = accountWeaponDTO.Unbind;
+            accountWeapon.UnbindWanted = accountWeaponDTO.UnbindWanted;
+            accountWeapon.Refine = accountWeaponDTO.Refine;
+            accountWeapon.RefineWanted = accountWeaponDTO.RefineWanted;
+            accountWeapon.Slot = accountWeaponDTO.Slot;
+            accountWeapon.SlotWanted = accountWeaponDTO.SlotWanted;
+            accountWeapon.Bonus = accountWeaponDTO.Bonus;
+            accountWeapon.BonusWanted = accountWeaponDTO.BonusWanted;
 
             _context.Entry(accountWeapon).State = EntityState.Modified;
 
@@ -59,16 +96,9 @@ namespace DragaliaApi.Controllers
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException) when (!AccountWeaponExists(accountID, weaponID))
             {
-                if (!AccountWeaponExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return NotFound();
             }
 
             return NoContent();
@@ -77,33 +107,47 @@ namespace DragaliaApi.Controllers
         // POST: api/AccountWeapons
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<AccountWeapon>> PostAccountWeapon(AccountWeapon accountWeapon)
+        public async Task<ActionResult<AccountWeapon>> PostAccountWeapon(AccountWeaponDTO accountWeaponDTO)
         {
+            var accountWeapon = new AccountWeapon
+            {
+                AccountId = accountWeaponDTO.AccountId,
+                WeaponId = accountWeaponDTO.WeaponId,
+                Copies = accountWeaponDTO.Copies,
+                CopiesWanted = accountWeaponDTO.CopiesWanted,
+                WeaponLevel = accountWeaponDTO.WeaponLevel,
+                WeaponLevelWanted = accountWeaponDTO.WeaponLevelWanted,
+                Unbind = accountWeaponDTO.Unbind,
+                UnbindWanted = accountWeaponDTO.UnbindWanted,
+                Refine = accountWeaponDTO.Refine,
+                RefineWanted = accountWeaponDTO.RefineWanted,
+                Slot = accountWeaponDTO.Slot,
+                SlotWanted = accountWeaponDTO.SlotWanted,
+                Bonus = accountWeaponDTO.Bonus,
+                BonusWanted = accountWeaponDTO.BonusWanted
+            };
+
             _context.AccountWeapons.Add(accountWeapon);
             try
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException) when (AccountWeaponExists(accountWeapon.AccountId, accountWeapon.WeaponId))
             {
-                if (AccountWeaponExists(accountWeapon.AccountId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
+                return Conflict();
             }
 
-            return CreatedAtAction("GetAccountWeapon", new { id = accountWeapon.AccountId }, accountWeapon);
+            return CreatedAtAction(
+                nameof(GetAccountWeapon),
+                new { accountID = accountWeapon.AccountId, weaponID = accountWeapon.WeaponId },
+                AccountWeaponDTO.ToDTO(accountWeapon));
         }
 
-        // DELETE: api/AccountWeapons/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAccountWeapon(int id)
+        // DELETE: api/AccountWeapons/5/1001
+        [HttpDelete("{accountID}/{weaponID}")]
+        public async Task<IActionResult> DeleteAccountWeapon(int accountID, int weaponID)
         {
-            var accountWeapon = await _context.AccountWeapons.FindAsync(id);
+            var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
             if (accountWeapon == null)
             {
                 return NotFound();
@@ -115,20 +159,9 @@ namespace DragaliaApi.Controllers
             return NoContent();
         }
 
-        private bool AccountWeaponExists(int id) => _context.AccountWeapons.Any(e => e.AccountId == id);
+        private bool AccountWeaponExists(int accountID, int weaponID) => _context.AccountWeapons.Any(e => e.AccountId == accountID
+                                                                                                          && e.WeaponId == weaponID);
 
-        private static AccountWeaponDTO AccountWeaponToDTO (AccountWeapon accountWeapon) => new AccountWeaponDTO
-        {
-            AccountId = accountWeapon.AccountId,
-            WeaponId = accountWeapon.WeaponId,
-            Copies = accountWeapon.Copies,
-            CopiesWanted = accountWeapon.CopiesWanted,
-            WeaponLevel = accountWeapon.WeaponLevel,
-            WeaponLevelWanted = accountWeapon.WeaponLevelWanted,
-            Unbind = accountWeapon.Unbind,
-            UnbindWanted = accountWeapon.UnbindWanted,
-            Refine = accountWeapon.Refine,
 
-        }
     }
 }

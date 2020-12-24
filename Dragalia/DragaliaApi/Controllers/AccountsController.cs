@@ -26,36 +26,35 @@ namespace DragaliaApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountDTO>>> GetAccounts()
         {
-            return await _context.Accounts
-                .Select(a => AccountToDTO(a))
-                .ToListAsync();
+            return await _context.Accounts.Select(a => AccountDTO.ToDTO(a))
+                                          .ToListAsync();
         }
 
         // GET: api/Accounts/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<AccountDTO>> GetAccount(int id)
+        [HttpGet("{accountID}")]
+        public async Task<ActionResult<AccountDTO>> GetAccount(int accountID)
         {
-            var account = await _context.Accounts.FindAsync(id);
+            var account = await _context.Accounts.FindAsync(accountID);
 
             if (account == null)
             {
                 return NotFound();
             }
 
-            return AccountToDTO(account);
+            return AccountDTO.ToDTO(account);
         }
 
         // PUT: api/Accounts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAccount(int id, AccountDTO accountDTO)
+        [HttpPut("{accountID}")]
+        public async Task<IActionResult> UpdateAccount(int accountID, AccountDTO accountDTO)
         {
-            if (id != accountDTO.AccountId)
+            if (accountID != accountDTO.AccountId)
             {
                 return BadRequest();
             }
 
-            var account = await _context.Accounts.FindAsync(id);
+            var account = await _context.Accounts.FindAsync(accountID);
             account.AccountName = accountDTO.AccountName;
             account.AccountEmail = accountDTO.AccountEmail;
 
@@ -65,7 +64,7 @@ namespace DragaliaApi.Controllers
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException) when (!AccountExists(id))
+            catch (DbUpdateConcurrencyException) when (!AccountExists(accountID))
             {
                 return NotFound();
             }
@@ -90,14 +89,14 @@ namespace DragaliaApi.Controllers
             return CreatedAtAction(
                 nameof(GetAccount),
                 new { id = account.AccountId },
-                AccountToDTO(account));
+                AccountDTO.ToDTO(account));
         }
 
         // DELETE: api/Accounts/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAccount(int id)
+        [HttpDelete("{accountID}")]
+        public async Task<IActionResult> DeleteAccount(int accountID)
         {
-            var account = await _context.Accounts.FindAsync(id);
+            var account = await _context.Accounts.FindAsync(accountID);
             if (account == null)
             {
                 return NotFound();
@@ -109,13 +108,6 @@ namespace DragaliaApi.Controllers
             return NoContent();
         }
 
-        private bool AccountExists(int id) => _context.Accounts.Any(e => e.AccountId == id);
-
-        private static AccountDTO AccountToDTO(Account account) => new AccountDTO
-        {
-            AccountId = account.AccountId,
-            AccountName = account.AccountName,
-            AccountEmail = account.AccountEmail
-        };
+        private bool AccountExists(int accountID) => _context.Accounts.Any(e => e.AccountId == accountID);
     }
 }
