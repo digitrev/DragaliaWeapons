@@ -7,28 +7,21 @@ namespace DragaliaApi.Models.DTO
 {
     public class WeaponDTO
     {
-        public int WeaponId { get; set; }
+        public int? WeaponId { get; set; }
         public string Weapon1 { get; set; }
-        public int WeaponSeriesId { get; set; }
-        public int WeaponTypeId { get; set; }
-        public int Rarity { get; set; }
-        public int ElementId { get; set; }
-
-        public virtual ElementDTO Element { get; set; }
-        public virtual WeaponSeries WeaponSeries { get; set; }
-        public virtual WeaponType WeaponType { get; set; }
+        public string WeaponSeries { get; set; }
+        public string WeaponType { get; set; }
+        public int? Rarity { get; set; }
+        public string Element { get; set; }
 
         public static WeaponDTO ToDTO(Weapon weapon) => new WeaponDTO
         {
-            WeaponId = weapon.WeaponId,
-            Weapon1 = weapon.Weapon1,
-            WeaponSeriesId = weapon.WeaponSeriesId,
-            WeaponTypeId = weapon.WeaponTypeId,
-            Rarity = weapon.Rarity,
-            ElementId = weapon.ElementId,
-            Element = weapon.Element == null ? null : ElementDTO.ToTDO(weapon.Element),
-            WeaponSeries = weapon.WeaponSeries,
-            WeaponType = weapon.WeaponType
+            WeaponId = weapon?.WeaponId,
+            Weapon1 = weapon?.Weapon1,
+            WeaponSeries = weapon?.WeaponSeries?.WeaponSeries1,
+            WeaponType = weapon?.WeaponType?.WeaponType1,
+            Rarity = weapon?.Rarity,
+            Element = weapon?.Element?.Element1
         };
     }
 }

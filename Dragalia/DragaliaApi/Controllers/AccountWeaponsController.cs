@@ -26,8 +26,9 @@ namespace DragaliaApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons()
         {
-            return await _context.AccountWeapons.Include(aw => aw.Weapon)
-                                                .ThenInclude(w => w.Element)
+            return await _context.AccountWeapons.Include(aw => aw.Weapon).ThenInclude(w => w.Element)
+                                                .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponSeries)
+                                                .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponType)
                                                 .Select(aw => AccountWeaponDTO.ToDTO(aw))
                                                 .ToListAsync();
         }
@@ -37,8 +38,9 @@ namespace DragaliaApi.Controllers
         public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons(int accountID)
         {
             return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID)
-                                                .Include(aw => aw.Weapon)
-                                                .ThenInclude(w => w.Element)
+                                                .Include(aw => aw.Weapon).ThenInclude(w => w.Element)
+                                                .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponSeries)
+                                                .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponType)
                                                 .Select(aw => AccountWeaponDTO.ToDTO(aw))
                                                 .ToListAsync();
         }
@@ -55,6 +57,14 @@ namespace DragaliaApi.Controllers
 
             _context.Entry(accountWeapon.Weapon)
                     .Reference(w => w.Element)
+                    .Load();
+
+            _context.Entry(accountWeapon.Weapon)
+                    .Reference(w => w.WeaponSeries)
+                    .Load();
+
+            _context.Entry(accountWeapon.Weapon)
+                    .Reference(w => w.WeaponType)
                     .Load();
 
             if (accountWeapon == null)
