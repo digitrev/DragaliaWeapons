@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  table
+    tr
+      th Account ID
+      th Account Name
+      th Account Email
+    each user in data
+      tr
+        td 
+          a(href='/account/'+user.accountId) #{user.accountId}
+        td #{user.accountName}
+        td #{user.accountEmail}
+    
