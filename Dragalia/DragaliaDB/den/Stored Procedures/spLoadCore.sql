@@ -174,6 +174,19 @@ BEGIN
 		
 		UNION
 		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,dc.[Level]
+			,dc.Blessing
+		FROM den.DojoMats AS dm
+		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		CROSS APPLY core.Material AS m
+		CROSS APPLY den.DojoCosts AS dc
+		WHERE dc.Blessing > 0
+			AND m.Material = 'Nature''s Blessing'
+		
+		UNION
+		
 		--Altars
 		SELECT f.FacilityID
 			,'Rupie'
@@ -196,6 +209,19 @@ BEGIN
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.Rainbow > 0
 			AND m.Material = 'Rainbow Orb'
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,ac.[Level]
+			,ac.Blessing
+		FROM den.AltarMats AS am
+		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		CROSS APPLY core.Material AS m
+		CROSS APPLY den.AltarCosts AS ac
+		WHERE ac.Blessing > 0
+			AND m.Material = 'Nature''s Blessing'
 		
 		UNION
 		

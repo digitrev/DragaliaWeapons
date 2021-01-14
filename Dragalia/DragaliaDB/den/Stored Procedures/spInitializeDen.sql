@@ -72,7 +72,7 @@ BEGIN
 	TRUNCATE TABLE den.DojoCosts
 
 	SET @Json = 
-		N'[{"Level":1},{"Level":2,"Rupie":3000,"Aes":10},{"Level":3,"Rupie":3500,"Aes":10},{"Level":4,"Rupie":4000,"Aes":10},{"Level":5,"Rupie":4500,"Aes":10},{"Level":6,"Rupie":5000,"Aes":20},{"Level":7,"Rupie":6000,"Aes":20},{"Level":8,"Rupie":7000,"Aes":20},{"Level":9,"Rupie":8000,"Aes":20},{"Level":10,"Rupie":9000,"Aes":20},{"Level":11,"Rupie":10000,"Aes":30,"Argentus":5,"Silver":10},{"Level":12,"Rupie":12000,"Aes":30,"Argentus":5,"Silver":10},{"Level":13,"Rupie":14000,"Aes":30,"Argentus":5,"Silver":10},{"Level":14,"Rupie":16000,"Aes":30,"Argentus":10,"Silver":20},{"Level":15,"Rupie":18000,"Aes":30,"Argentus":10,"Silver":20},{"Level":16,"Rupie":20000,"Aes":50,"Argentus":20,"Silver":40},{"Level":17,"Rupie":25000,"Aes":50,"Argentus":20,"Silver":40},{"Level":18,"Rupie":30000,"Aes":50,"Argentus":20,"Silver":40},{"Level":19,"Rupie":35000,"Aes":70,"Argentus":30,"Silver":60},{"Level":20,"Rupie":40000,"Aes":70,"Argentus":30,"Silver":60},{"Level":21,"Rupie":50000,"Aes":100,"Argentus":40,"Aureus":20,"Silver":80},{"Level":22,"Rupie":60000,"Aes":100,"Argentus":40,"Aureus":30,"Silver":80},{"Level":23,"Rupie":70000,"Aes":100,"Argentus":40,"Aureus":40,"Silver":80},{"Level":24,"Rupie":80000,"Aes":150,"Argentus":50,"Aureus":50,"Silver":100},{"Level":25,"Rupie":90000,"Aes":150,"Argentus":50,"Aureus":60,"Silver":100},{"Level":26,"Rupie":100000,"Aes":200,"Argentus":60,"Aureus":70,"Silver":120,"Gold":20},{"Level":27,"Rupie":110000,"Aes":200,"Argentus":60,"Aureus":80,"Silver":120,"Gold":30},{"Level":28,"Rupie":120000,"Aes":200,"Argentus":60,"Aureus":90,"Silver":120,"Gold":40},{"Level":29,"Rupie":130000,"Aes":300,"Argentus":80,"Aureus":100,"Silver":160,"Gold":50},{"Level":30,"Rupie":140000,"Aes":300,"Argentus":80,"Aureus":110,"Silver":160,"Gold":60},{"Level":31,"Rupie":160000,"Aes":300,"Argentus":80,"Aureus":120,"Silver":200,"Gold":80},{"Level":32,"Rupie":180000,"Aes":400,"Argentus":100,"Aureus":130,"Silver":200,"Gold":80},{"Level":33,"Rupie":200000,"Aes":400,"Argentus":100,"Aureus":140,"Silver":200,"Gold":80},{"Level":34,"Rupie":220000,"Aes":500,"Argentus":120,"Aureus":150,"Silver":240,"Gold":100},{"Level":35,"Rupie":240000,"Aes":500,"Argentus":120,"Aureus":160,"Silver":240,"Gold":100}]'
+		N'[{"Level":1},{"Level":2,"Rupie":3000,"Aes":10},{"Level":3,"Rupie":3500,"Aes":10},{"Level":4,"Rupie":4000,"Aes":10},{"Level":5,"Rupie":4500,"Aes":10},{"Level":6,"Rupie":5000,"Aes":20},{"Level":7,"Rupie":6000,"Aes":20},{"Level":8,"Rupie":7000,"Aes":20},{"Level":9,"Rupie":8000,"Aes":20},{"Level":10,"Rupie":9000,"Aes":20},{"Level":11,"Rupie":10000,"Aes":30,"Argenteus":5,"Silver":10},{"Level":12,"Rupie":12000,"Aes":30,"Argenteus":5,"Silver":10},{"Level":13,"Rupie":14000,"Aes":30,"Argenteus":5,"Silver":10},{"Level":14,"Rupie":16000,"Aes":30,"Argenteus":10,"Silver":20},{"Level":15,"Rupie":18000,"Aes":30,"Argenteus":10,"Silver":20},{"Level":16,"Rupie":20000,"Aes":50,"Argenteus":20,"Silver":40},{"Level":17,"Rupie":25000,"Aes":50,"Argenteus":20,"Silver":40},{"Level":18,"Rupie":30000,"Aes":50,"Argenteus":20,"Silver":40},{"Level":19,"Rupie":35000,"Aes":70,"Argenteus":30,"Silver":60},{"Level":20,"Rupie":40000,"Aes":70,"Argenteus":30,"Silver":60},{"Level":21,"Rupie":50000,"Aes":100,"Argenteus":40,"Aureus":20,"Silver":80},{"Level":22,"Rupie":60000,"Aes":100,"Argenteus":40,"Aureus":30,"Silver":80},{"Level":23,"Rupie":70000,"Aes":100,"Argenteus":40,"Aureus":40,"Silver":80},{"Level":24,"Rupie":80000,"Aes":150,"Argenteus":50,"Aureus":50,"Silver":100},{"Level":25,"Rupie":90000,"Aes":150,"Argenteus":50,"Aureus":60,"Silver":100},{"Level":26,"Rupie":100000,"Aes":200,"Argenteus":60,"Aureus":70,"Silver":120,"Gold":20},{"Level":27,"Rupie":110000,"Aes":200,"Argenteus":60,"Aureus":80,"Silver":120,"Gold":30},{"Level":28,"Rupie":120000,"Aes":200,"Argenteus":60,"Aureus":90,"Silver":120,"Gold":40},{"Level":29,"Rupie":130000,"Aes":300,"Argenteus":80,"Aureus":100,"Silver":160,"Gold":50},{"Level":30,"Rupie":140000,"Aes":300,"Argenteus":80,"Aureus":110,"Silver":160,"Gold":60},{"Level":31,"Rupie":160000,"Aes":300,"Argenteus":100,"Aureus":120,"Silver":200,"Gold":80},{"Level":32,"Rupie":180000,"Aes":400,"Argenteus":100,"Aureus":130,"Silver":200,"Gold":80},{"Level":33,"Rupie":200000,"Aes":400,"Argenteus":100,"Aureus":140,"Silver":200,"Gold":80},{"Level":34,"Rupie":220000,"Aes":500,"Argenteus":120,"Aureus":150,"Silver":240,"Gold":100},{"Level":35,"Rupie":240000,"Aes":500,"Argenteus":120,"Aureus":160,"Silver":240,"Gold":100},{"Level":36,"Rupie":400000,"Argenteus":150,"Aureus":175,"Silver":260,"Gold":100,"Blessing":2},{"Level":37,"Rupie":500000,"Argenteus":175,"Aureus":200,"Silver":280,"Gold":120,"Blessing":2},{"Level":38,"Rupie":620000,"Argenteus":200,"Aureus":225,"Silver":300,"Gold":140,"Blessing":3},{"Level":39,"Rupie":760000,"Argenteus":225,"Aureus":250,"Silver":320,"Gold":160,"Blessing":3},{"Level":40,"Rupie":920000,"Argenteus":250,"Aureus":275,"Silver":340,"Gold":180,"Blessing":4}]'
 
 	INSERT den.DojoCosts (
 		[Level]
@@ -82,6 +82,7 @@ BEGIN
 		,[Aureus]
 		,[Silver]
 		,[Gold]
+		,[Blessing]
 		)
 	SELECT [Level]
 		,[Rupie]
@@ -90,6 +91,7 @@ BEGIN
 		,[Aureus]
 		,[Silver]
 		,[Gold]
+		,[Blessing]
 	FROM OPENJSON(@Json) WITH (
 			[Level] INT
 			,[Rupie] INT
@@ -98,6 +100,7 @@ BEGIN
 			,[Aureus] INT
 			,[Silver] INT
 			,[Gold] INT
+			,[Blessing] INT
 			)
 
 	TRUNCATE TABLE den.DojoMats
@@ -121,7 +124,7 @@ BEGIN
 	TRUNCATE TABLE den.AltarCosts
 
 	SET @Json = 
-		N'[{"Level":1,"Rupie":200},{"Level":2,"Rupie":400},{"Level":3,"Rupie":600},{"Level":4,"Rupie":800,"T1":1},{"Level":5,"Rupie":1000,"T1":3},{"Level":6,"Rupie":1200,"T1":5},{"Level":7,"Rupie":1500,"T1":5},{"Level":8,"Rupie":2000,"T1":5},{"Level":9,"Rupie":2500,"T1":7},{"Level":10,"Rupie":3000,"T1":7},{"Level":11,"Rupie":4000,"T1":10,"T2":1},{"Level":12,"Rupie":5000,"T1":10,"T2":1},{"Level":13,"Rupie":6000,"T1":10,"T2":1},{"Level":14,"Rupie":7000,"T1":15,"T2":2},{"Level":15,"Rupie":8000,"T1":15,"T2":2},{"Level":16,"Rupie":10000,"T1":20,"T2":3},{"Level":17,"Rupie":12000,"T1":20,"T2":3},{"Level":18,"Rupie":14000,"T1":20,"T2":3},{"Level":19,"Rupie":16000,"T1":30,"T2":4},{"Level":20,"Rupie":18000,"T1":30,"T2":4},{"Level":21,"Rupie":20000,"T1":50,"T2":6,"T3":1},{"Level":22,"Rupie":22000,"T1":50,"T2":6,"T3":1},{"Level":23,"Rupie":24000,"T1":50,"T2":6,"T3":1},{"Level":24,"Rupie":26000,"T1":70,"T2":8,"T3":1},{"Level":25,"Rupie":28000,"T1":70,"T2":8,"T3":1},{"Level":26,"Rupie":30000,"T1":100,"T2":10,"T3":2},{"Level":27,"Rupie":32000,"T1":100,"T2":10,"T3":2},{"Level":28,"Rupie":34000,"T1":100,"T2":10,"T3":2},{"Level":29,"Rupie":36000,"T1":150,"T2":12,"T3":3},{"Level":30,"Rupie":38000,"T1":150,"T2":12,"T3":3},{"Level":31,"Rupie":42000,"T1":200,"T2":15,"T3":5},{"Level":32,"Rupie":46000,"T1":200,"T2":15,"T3":5},{"Level":33,"Rupie":50000,"T1":200,"T2":15,"T3":5},{"Level":34,"Rupie":54000,"T1":250,"T2":18,"T3":7},{"Level":35,"Rupie":58000,"T1":250,"T2":18,"T3":7},{"Level":36,"Rupie":100000,"T1":300,"T2":36,"T3":15,"T4":2,"Rainbow":6},{"Level":37,"Rupie":140000,"T1":350,"T2":72,"T3":30,"T4":4,"Rainbow":12},{"Level":38,"Rupie":190000,"T1":400,"T2":108,"T3":45,"T4":6,"Rainbow":18},{"Level":39,"Rupie":250000,"T1":450,"T2":144,"T3":60,"T4":8,"Rainbow":24},{"Level":40,"Rupie":320000,"T1":500,"T2":180,"T3":75,"T4":10,"Rainbow":30}]'
+		N'[{"Level":1,"Rupie":200},{"Level":2,"Rupie":400},{"Level":3,"Rupie":600},{"Level":4,"Rupie":800,"T1":1},{"Level":5,"Rupie":1000,"T1":3},{"Level":6,"Rupie":1200,"T1":5},{"Level":7,"Rupie":1500,"T1":5},{"Level":8,"Rupie":2000,"T1":5},{"Level":9,"Rupie":2500,"T1":7},{"Level":10,"Rupie":3000,"T1":7},{"Level":11,"Rupie":4000,"T1":10,"T2":1},{"Level":12,"Rupie":5000,"T1":10,"T2":1},{"Level":13,"Rupie":6000,"T1":10,"T2":1},{"Level":14,"Rupie":7000,"T1":15,"T2":2},{"Level":15,"Rupie":8000,"T1":15,"T2":2},{"Level":16,"Rupie":10000,"T1":20,"T2":3},{"Level":17,"Rupie":12000,"T1":20,"T2":3},{"Level":18,"Rupie":14000,"T1":20,"T2":3},{"Level":19,"Rupie":16000,"T1":30,"T2":4},{"Level":20,"Rupie":18000,"T1":30,"T2":4},{"Level":21,"Rupie":20000,"T1":50,"T2":6,"T3":1},{"Level":22,"Rupie":22000,"T1":50,"T2":6,"T3":1},{"Level":23,"Rupie":24000,"T1":50,"T2":6,"T3":1},{"Level":24,"Rupie":26000,"T1":70,"T2":8,"T3":1},{"Level":25,"Rupie":28000,"T1":70,"T2":8,"T3":1},{"Level":26,"Rupie":30000,"T1":100,"T2":10,"T3":2},{"Level":27,"Rupie":32000,"T1":100,"T2":10,"T3":2},{"Level":28,"Rupie":34000,"T1":100,"T2":10,"T3":2},{"Level":29,"Rupie":36000,"T1":150,"T2":12,"T3":3},{"Level":30,"Rupie":38000,"T1":150,"T2":12,"T3":3},{"Level":31,"Rupie":42000,"T1":200,"T2":15,"T3":5},{"Level":32,"Rupie":46000,"T1":200,"T2":15,"T3":5},{"Level":33,"Rupie":50000,"T1":200,"T2":15,"T3":5},{"Level":34,"Rupie":54000,"T1":250,"T2":18,"T3":7},{"Level":35,"Rupie":58000,"T1":250,"T2":18,"T3":7},{"Level":36,"Rupie":100000,"T1":300,"T2":36,"T3":15,"T4":2,"Rainbow":6},{"Level":37,"Rupie":140000,"T1":350,"T2":72,"T3":30,"T4":4,"Rainbow":12},{"Level":38,"Rupie":190000,"T1":400,"T2":108,"T3":45,"T4":6,"Rainbow":18},{"Level":39,"Rupie":250000,"T1":450,"T2":144,"T3":60,"T4":8,"Rainbow":24},{"Level":40,"Rupie":320000,"T1":500,"T2":180,"T3":75,"T4":10,"Rainbow":30},{"Level":41,"Rupie":400000,"T2":300,"T3":125,"T4":14,"Rainbow":45,"Blessing":2},{"Level":42,"Rupie":500000,"T2":350,"T3":150,"T4":18,"Rainbow":55,"Blessing":2},{"Level":43,"Rupie":620000,"T2":400,"T3":175,"T4":22,"Rainbow":65,"Blessing":3},{"Level":44,"Rupie":760000,"T2":450,"T3":200,"T4":26,"Rainbow":75,"Blessing":3},{"Level":45,"Rupie":920000,"T2":500,"T3":225,"T4":30,"Rainbow":85,"Blessing":4}]'
 
 	INSERT den.AltarCosts (
 		[Level]
@@ -131,6 +134,7 @@ BEGIN
 		,[T3]
 		,[T4]
 		,[Rainbow]
+		,[Blessing]
 		)
 	SELECT [Level]
 		,[Rupie]
@@ -139,6 +143,7 @@ BEGIN
 		,[T3]
 		,[T4]
 		,[Rainbow]
+		,[Blessing]
 	FROM OPENJSON(@Json) WITH (
 			[Level] INT
 			,[Rupie] INT
@@ -147,6 +152,7 @@ BEGIN
 			,[T3] INT
 			,[T4] INT
 			,[Rainbow] INT
+			,[Blessing] INT
 			)
 
 	TRUNCATE TABLE den.AltarMats

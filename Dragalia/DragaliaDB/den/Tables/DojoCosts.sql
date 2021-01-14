@@ -6,5 +6,6 @@
 	,[Aureus] INT NULL
 	,[Silver] INT NULL
 	,[Gold] INT NULL
+	,[Blessing] INT NULL
 	,CONSTRAINT [PK_DojoCosts] PRIMARY KEY ([Level])
 	)
