@@ -29,11 +29,6 @@ namespace DragaliaApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<WeaponDTO>>> GetWeapons()
         {
-            //return await _context.Weapons.Include(w => w.Element)
-            //                             .Include(w => w.WeaponSeries)
-            //                             .Include(w => w.WeaponType)
-            //                             .Select(w => WeaponDTO.ToDTO(w))
-            //                             .ToListAsync();
             return await _context.Weapons.Include(w => w.Element)
                                          .Include(w => w.WeaponSeries)
                                          .Include(w => w.WeaponType)
@@ -65,7 +60,6 @@ namespace DragaliaApi.Controllers
             }
 
             return _mapper.Map<WeaponDTO>(weapon);
-            //return WeaponDTO.ToDTO(weapon);
         }
     }
 }
