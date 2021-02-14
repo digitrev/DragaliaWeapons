@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DragaliaApi.Data;
 using DragaliaApi.Models;
 using DragaliaApi.Models.DTO;
+using AutoMapper;
 
 namespace DragaliaApi.Controllers
 {
@@ -16,18 +17,21 @@ namespace DragaliaApi.Controllers
     public class AccountsController : ControllerBase
     {
         private readonly DragaliaContext _context;
+        private readonly IMapper _mapper;
 
-        public AccountsController(DragaliaContext context)
+        public AccountsController(DragaliaContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/Accounts
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountDTO>>> GetAccounts()
         {
-            return await _context.Accounts.Select(a => AccountDTO.ToDTO(a))
-                                          .ToListAsync();
+            //return await _context.Accounts.Select(a => AccountDTO.ToDTO(a))
+            //                              .ToListAsync();
+            return await _context.Accounts.Select(a => _mapper.Map<AccountDTO>(a)).ToListAsync();
         }
 
         // GET: api/Accounts/5
@@ -41,7 +45,7 @@ namespace DragaliaApi.Controllers
                 return NotFound();
             }
 
-            return AccountDTO.ToDTO(account);
+            return _mapper.Map<AccountDTO>(account);
         }
 
         // PUT: api/Accounts/5
@@ -89,7 +93,7 @@ namespace DragaliaApi.Controllers
             return CreatedAtAction(
                 nameof(GetAccount),
                 new { id = account.AccountId },
-                AccountDTO.ToDTO(account));
+                _mapper.Map<AccountDTO>(account));
         }
 
         // DELETE: api/Accounts/5

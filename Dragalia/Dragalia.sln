@@ -7,7 +7,10 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DragaliaDB", "DragaliaDB\Dr
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DragaliaPy", "DragaliaPy\DragaliaPy.pyproj", "{40907054-A690-4A47-B255-16DC20FF8D59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragaliaApi", "DragaliaApi\DragaliaApi.csproj", "{02431925-8A3C-4970-B983-DE5CB9CBB6B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DragaliaApi", "DragaliaApi\DragaliaApi.csproj", "{02431925-8A3C-4970-B983-DE5CB9CBB6B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3901B7C6-0B1B-45A0-8B0B-F6BB7A162D09} = {3901B7C6-0B1B-45A0-8B0B-F6BB7A162D09}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

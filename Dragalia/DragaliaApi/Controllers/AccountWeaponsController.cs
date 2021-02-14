@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DragaliaApi.Data;
 using DragaliaApi.Models;
 using DragaliaApi.Models.DTO;
+using AutoMapper;
 
 namespace DragaliaApi.Controllers
 {
@@ -16,10 +17,12 @@ namespace DragaliaApi.Controllers
     public class AccountWeaponsController : ControllerBase
     {
         private readonly DragaliaContext _context;
+        private readonly IMapper _mapper;
 
-        public AccountWeaponsController(DragaliaContext context)
+        public AccountWeaponsController(DragaliaContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/AccountWeapons
@@ -29,7 +32,7 @@ namespace DragaliaApi.Controllers
             return await _context.AccountWeapons.Include(aw => aw.Weapon).ThenInclude(w => w.Element)
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponSeries)
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponType)
-                                                .Select(aw => AccountWeaponDTO.ToDTO(aw))
+                                                .Select(aw => _mapper.Map<AccountWeaponDTO>(aw))
                                                 .ToListAsync();
         }
 
@@ -41,7 +44,7 @@ namespace DragaliaApi.Controllers
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.Element)
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponSeries)
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponType)
-                                                .Select(aw => AccountWeaponDTO.ToDTO(aw))
+                                                .Select(aw => _mapper.Map<AccountWeaponDTO>(aw))
                                                 .ToListAsync();
         }
 
@@ -50,6 +53,11 @@ namespace DragaliaApi.Controllers
         public async Task<ActionResult<AccountWeaponDTO>> GetAccountWeapon(int accountID, int weaponID)
         {
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
+
+            if (accountWeapon == null)
+            {
+                return NotFound();
+            }
 
             _context.Entry(accountWeapon)
                     .Reference(aw => aw.Weapon)
@@ -67,12 +75,7 @@ namespace DragaliaApi.Controllers
                     .Reference(w => w.WeaponType)
                     .Load();
 
-            if (accountWeapon == null)
-            {
-                return NotFound();
-            }
-
-            return AccountWeaponDTO.ToDTO(accountWeapon);
+            return _mapper.Map<AccountWeaponDTO>(accountWeapon);
         }
 
         // PUT: api/AccountWeapons/5
@@ -150,7 +153,7 @@ namespace DragaliaApi.Controllers
             return CreatedAtAction(
                 nameof(GetAccountWeapon),
                 new { accountID = accountWeapon.AccountId, weaponID = accountWeapon.WeaponId },
-                AccountWeaponDTO.ToDTO(accountWeapon));
+                _mapper.Map<AccountWeaponDTO>(accountWeapon));
         }
 
         // DELETE: api/AccountWeapons/5/1001
@@ -171,7 +174,5 @@ namespace DragaliaApi.Controllers
 
         private bool AccountWeaponExists(int accountID, int weaponID) => _context.AccountWeapons.Any(e => e.AccountId == accountID
                                                                                                           && e.WeaponId == weaponID);
-
-
     }
 }

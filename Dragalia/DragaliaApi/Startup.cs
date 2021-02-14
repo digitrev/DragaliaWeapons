@@ -15,6 +15,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DragaliaApi.Models;
 using DragaliaApi.Data;
+using AutoMapper;
 
 namespace DragaliaApi
 {
@@ -30,6 +31,7 @@ namespace DragaliaApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddDbContext<DragaliaContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DragaliaDB")));

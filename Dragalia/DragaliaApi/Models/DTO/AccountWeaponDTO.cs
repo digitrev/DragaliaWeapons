@@ -22,24 +22,5 @@ namespace DragaliaApi.Models.DTO
         public bool Bonus { get; set; }
         public bool BonusWanted { get; set; }
         public virtual WeaponDTO Weapon { get; set; }
-
-        public static AccountWeaponDTO ToDTO(AccountWeapon accountWeapon) => new AccountWeaponDTO
-        {
-            AccountId = accountWeapon.AccountId,
-            WeaponId = accountWeapon.WeaponId,
-            Copies = accountWeapon.Copies,
-            CopiesWanted = accountWeapon.CopiesWanted,
-            WeaponLevel = accountWeapon.WeaponLevel,
-            WeaponLevelWanted = accountWeapon.WeaponLevelWanted,
-            Unbind = accountWeapon.Unbind,
-            UnbindWanted = accountWeapon.UnbindWanted,
-            Refine = accountWeapon.Refine,
-            RefineWanted = accountWeapon.RefineWanted,
-            Slot = accountWeapon.Slot,
-            SlotWanted = accountWeapon.Slot,
-            Bonus = accountWeapon.Bonus,
-            BonusWanted = accountWeapon.BonusWanted,
-            Weapon = accountWeapon.Weapon == null ? null : WeaponDTO.ToDTO(accountWeapon.Weapon)
-        };
     }
 }

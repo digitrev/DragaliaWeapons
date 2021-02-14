@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DragaliaApi.Data;
 using DragaliaApi.Models;
 using DragaliaApi.Models.DTO;
+using AutoMapper;
 
 namespace DragaliaApi.Controllers
 {
@@ -16,20 +17,27 @@ namespace DragaliaApi.Controllers
     public class WeaponsController : ControllerBase
     {
         private readonly DragaliaContext _context;
+        private readonly IMapper _mapper;
 
-        public WeaponsController(DragaliaContext context)
+        public WeaponsController(DragaliaContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/Weapons
         [HttpGet]
         public async Task<ActionResult<IEnumerable<WeaponDTO>>> GetWeapons()
         {
+            //return await _context.Weapons.Include(w => w.Element)
+            //                             .Include(w => w.WeaponSeries)
+            //                             .Include(w => w.WeaponType)
+            //                             .Select(w => WeaponDTO.ToDTO(w))
+            //                             .ToListAsync();
             return await _context.Weapons.Include(w => w.Element)
                                          .Include(w => w.WeaponSeries)
                                          .Include(w => w.WeaponType)
-                                         .Select(w => WeaponDTO.ToDTO(w))
+                                         .Select(w => _mapper.Map<WeaponDTO>(w))
                                          .ToListAsync();
         }
 
@@ -56,7 +64,8 @@ namespace DragaliaApi.Controllers
                 return NotFound();
             }
 
-            return WeaponDTO.ToDTO(weapon);
+            return _mapper.Map<WeaponDTO>(weapon);
+            //return WeaponDTO.ToDTO(weapon);
         }
     }
 }
