@@ -1,26 +1,33 @@
+/** @jsxImportSource @emotion/react */
+import { css, jsx } from '@emotion/react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { Header } from './pages/Header';
+import { HomePage } from './pages/HomePage';
+import { NotFoundPage } from './pages/NotFoundPage';
+import { WeaponsPage } from './pages/WeaponsPage';
+import { fontFamily, fontSize, gray2 } from './Styles';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div
+        css={css`
+          font-family: ${fontFamily};
+          font-size: ${fontSize};
+          color: ${gray2};
+        `}
+      >
+        <Header />
+        <Switch>
+          <Redirect from="/home" to="/" />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/weapons" component={WeaponsPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
