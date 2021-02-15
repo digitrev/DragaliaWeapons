@@ -23,7 +23,10 @@ namespace DragaliaApi
                     opt => opt.MapFrom(src => src.WeaponSeries.WeaponSeries1))
                 .ForMember(
                     dest => dest.WeaponType,
-                    opt => opt.MapFrom(src => src.WeaponType.WeaponType1));
+                    opt => opt.MapFrom(src => src.WeaponType.WeaponType1))
+                .ForMember(
+                    dest => dest.Weapon,
+                    opt => opt.MapFrom(src => src.Weapon1));
             CreateMap<AccountWeapon, AccountWeaponDTO>();
             CreateMap<AccountWeaponDTO, AccountWeapon>();
         }

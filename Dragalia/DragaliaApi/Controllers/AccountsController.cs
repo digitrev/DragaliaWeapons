@@ -81,11 +81,7 @@ namespace DragaliaApi.Controllers
         [HttpPost]
         public async Task<ActionResult<AccountDTO>> CreateAccount(AccountDTO accountDTO)
         {
-            var account = new Account
-            {
-                AccountName = accountDTO.AccountName,
-                AccountEmail = accountDTO.AccountEmail
-            };
+            var account = _mapper.Map<Account>(accountDTO);
 
             _context.Accounts.Add(account);
             await _context.SaveChangesAsync();
