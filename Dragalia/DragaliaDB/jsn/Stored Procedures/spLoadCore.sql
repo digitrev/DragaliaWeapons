@@ -166,6 +166,12 @@ BEGIN
 		--Hard coded because Gamepedia doesn't track eldwater as a separate material
 		SELECT 'Eldwater'
 			,'Eldwater'
+		
+		UNION
+		
+		--Hard coded because Gamepedia doesn't track mana as a separate material
+		SELECT 'Mana'
+			,'Mana'
 		) AS src
 		ON src.MaterialID = trg.MaterialID
 	WHEN MATCHED
