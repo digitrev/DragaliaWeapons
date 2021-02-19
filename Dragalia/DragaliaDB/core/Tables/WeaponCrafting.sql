@@ -2,6 +2,7 @@
 	[WeaponID] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
 	,[Quantity] INT NOT NULL
+	,[Active] BIT NOT NULL CONSTRAINT [DF_WeaponCrafting_Active] DEFAULT(1)
 	,CONSTRAINT [PK_WeaponCrafting] PRIMARY KEY (
 		[WeaponID]
 		,[MaterialID]

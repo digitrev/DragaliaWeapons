@@ -48,9 +48,11 @@ BEGIN
 		THEN
 			UPDATE
 			SET AbilityGroup = src.AbilityGroup
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -86,9 +88,11 @@ BEGIN
 			SET Ability = src.Ability
 				,GenericName = src.GenericName
 				,AbilityGroupID = src.AbilityGroupID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -122,9 +126,11 @@ BEGIN
 		THEN
 			UPDATE
 			SET [Affinity] = src.[Affinity]
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -166,9 +172,11 @@ BEGIN
 		THEN
 			UPDATE
 			SET [Material] = src.MaterialName
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -243,9 +251,11 @@ BEGIN
 			UPDATE
 			SET Element = src.Element
 				,SortOrder = src.ElementID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -276,9 +286,11 @@ BEGIN
 			UPDATE
 			SET WeaponSeries = src.WeaponSeries
 				,SortOrder = src.WeaponSeriesID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -330,9 +342,11 @@ BEGIN
 		THEN
 			UPDATE
 			SET WeaponType = src.WeaponType
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -364,9 +378,11 @@ BEGIN
 				,WeaponTypeID = src.WeaponTypeID
 				,Rarity = src.Rarity
 				,ElementID = src.ElementID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -510,9 +526,11 @@ BEGIN
 		THEN
 			UPDATE
 			SET [UpgradeType] = src.UpgradeType
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -721,9 +739,11 @@ BEGIN
 				,AbilityID = src.AbilityID
 				,AbilityNumber = src.AbilityNumber
 				,SortOrder = src.SortId
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -879,9 +899,11 @@ BEGIN
 			UPDATE
 			SET [Facility] = src.FacilityName
 				,[Limit] = src.FacilityCount
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -1021,9 +1043,11 @@ BEGIN
 			SET Wyrmprint = src.Wyrmprint
 				,Rarity = src.Rarity
 				,AffinityID = src.AffinityID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (

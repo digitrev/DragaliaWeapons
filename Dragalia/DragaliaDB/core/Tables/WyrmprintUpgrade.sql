@@ -4,6 +4,7 @@
 	,[Step] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
 	,[Quantity] INT NOT NULL
+	,[Active] BIT NOT NULL CONSTRAINT [DF_WyrmprintUpgrade_Active] DEFAULT(1)
 	,CONSTRAINT [PK_WyrmprintUpgrade] PRIMARY KEY (
 		[WyrmprintID]
 		,[UpgradeTypeID]
