@@ -1032,4 +1032,17 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_AccountWyrmprint_Wyrmprint]" />
   </Operation>
+  <Operation Name="Move Schema" Key="84e4bea7-81eb-47f3-9dac-221e3ad43202" ChangeDateTime="02/19/2021 01:30:46">
+    <Property Name="ElementName" Value="[dbo].[Category]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6f83ada6-1915-40a8-a1d9-16f89ab85a7b" ChangeDateTime="02/19/2021 01:30:51">
+    <Property Name="ElementName" Value="[core].[Category].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Category]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CategoryID" />
+  </Operation>
 </Operations>
