@@ -3,7 +3,6 @@
 	,[WyrmprintLevel] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
 	,[Quantity] INT NOT NULL
-	,[Active] BIT NOT NULL CONSTRAINT [DF_WyrmprintLevel_Active] DEFAULT(1)
 	,CONSTRAINT [PK_WyrmprintLevel] PRIMARY KEY (
 		[Rarity]
 		,[WyrmprintLevel]

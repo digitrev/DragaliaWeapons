@@ -521,7 +521,7 @@ BEGIN
 			,UpgradeType
 		FROM #WeaponUpgrade
 		) AS src
-		ON src.UpgradeTypeID = trg.UpgradeType
+		ON src.UpgradeTypeID = trg.UpgradeTypeID
 	WHEN MATCHED
 		THEN
 			UPDATE

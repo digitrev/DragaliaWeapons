@@ -2,7 +2,6 @@
 	[PassiveID] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
 	,[Quantity] INT NOT NULL
-	,[Active] BIT NOT NULL CONSTRAINT [DF_PassiveCrafting_Active] DEFAULT(1)
 	,CONSTRAINT [PK_PassiveCrafting] PRIMARY KEY (
 		[PassiveID]
 		,[MaterialID]
