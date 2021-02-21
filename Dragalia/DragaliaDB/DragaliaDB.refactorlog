@@ -1045,4 +1045,10 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="CategoryID" />
   </Operation>
+  <Operation Name="Move Schema" Key="04ec4afb-8c9d-48bc-9b04-0c9c864b360c" ChangeDateTime="02/21/2021 16:18:48">
+    <Property Name="ElementName" Value="[dbo].[spSetSortPath]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>
