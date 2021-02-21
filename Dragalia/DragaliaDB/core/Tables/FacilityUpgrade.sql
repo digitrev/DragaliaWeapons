@@ -3,6 +3,7 @@
 	,[MaterialID] NVARCHAR(50) NOT NULL
 	,[FacilityLevel] TINYINT NOT NULL
 	,[Quantity] INT NOT NULL
+	,[Active] BIT NOT NULL CONSTRAINT [DF_FacilityUpgrade_Active] DEFAULT(1)
 	,CONSTRAINT [PK_FacilityUpgrade] PRIMARY KEY (
 		[FacilityID]
 		,[MaterialID]
