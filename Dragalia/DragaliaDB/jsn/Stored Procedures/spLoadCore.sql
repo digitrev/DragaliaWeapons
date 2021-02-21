@@ -194,8 +194,6 @@ BEGIN
 				,src.MaterialName
 				);
 
-	EXEC core.spSetSortPath
-
 	--Weapon data
 	SELECT DISTINCT w.WeaponID
 		,w.WeaponName

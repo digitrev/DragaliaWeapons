@@ -142,7 +142,8 @@
     <Build Include="core\Tables\WyrmprintLevelLimit.sql" />
     <Build Include="dbo\Tables\AccountWyrmprint.sql" />
     <Build Include="core\Tables\Category.sql" />
-    <Build Include="core\Stored Procedures\spSetSortPath.sql" />
+    <Build Include="den\Tables\MaterialMetadata.sql" />
+    <Build Include="den\Tables\FacilityMetadata.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
