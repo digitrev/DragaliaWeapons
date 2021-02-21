@@ -532,7 +532,7 @@ BEGIN
 		THEN
 			UPDATE
 			SET Quantity = src.Quantity
-	WHEN NOT MATCHED BY source
+	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
 	WHEN NOT MATCHED
@@ -549,4 +549,39 @@ BEGIN
 				,src.FacilityLevel
 				,src.Quantity
 				);
+
+	MERGE core.Category AS trg
+	USING (
+		SELECT Category
+		FROM den.MaterialMetadata
+		
+		UNION
+		
+		SELECT Category
+		FROM den.FacilityMetadata
+		) AS src
+		ON src.Category = trg.Category
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (Category)
+			VALUES (src.Category);
+
+	UPDATE core.Material
+	SET SortPath = HIERARCHYID::GetRoot()
+
+	UPDATE m
+	SET SortPath = mm.SortPath
+		,CategoryID = c.CategoryID
+	FROM core.Material AS m
+	INNER JOIN den.MaterialMetadata AS mm ON mm.Material = m.Material
+	INNER JOIN core.Category AS c ON c.Category = mm.Category
+
+	UPDATE f
+	SET CategoryID = c.CategoryID
+	FROM core.Facility AS f
+	INNER JOIN den.FacilityMetadata AS fm ON fm.Facility = f.Facility
+	INNER JOIN core.Category AS c ON c.Category = fm.Category
 END
