@@ -20,6 +20,7 @@ namespace DragaliaApi.Models
         public int AbilityId { get; set; }
         public int AbilityNumber { get; set; }
         public int SortOrder { get; set; }
+        public bool? Active { get; set; }
 
         public virtual Ability Ability { get; set; }
         public virtual Element Element { get; set; }

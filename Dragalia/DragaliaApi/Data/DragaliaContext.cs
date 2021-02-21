@@ -28,6 +28,7 @@ namespace DragaliaApi.Data
         public virtual DbSet<AccountWeapon> AccountWeapons { get; set; }
         public virtual DbSet<AccountWyrmprint> AccountWyrmprints { get; set; }
         public virtual DbSet<Affinity> Affinities { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Element> Elements { get; set; }
         public virtual DbSet<Facility> Facilities { get; set; }
         public virtual DbSet<FacilityUpgrade> FacilityUpgrades { get; set; }
@@ -51,6 +52,8 @@ namespace DragaliaApi.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.HasAnnotation("Scaffolding:ConnectionString", "Data Source=(local);Initial Catalog=DragaliaDB;Integrated Security=true");
+
             modelBuilder.Entity<Ability>(entity =>
             {
                 entity.ToTable("Ability", "core");
@@ -65,6 +68,10 @@ namespace DragaliaApi.Data
                     .HasColumnName("Ability");
 
                 entity.Property(e => e.AbilityGroupId).HasColumnName("AbilityGroupID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
 
                 entity.Property(e => e.GenericName)
                     .IsRequired()
@@ -88,11 +95,17 @@ namespace DragaliaApi.Data
                     .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("AbilityGroup");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
             });
 
             modelBuilder.Entity<Account>(entity =>
             {
                 entity.ToTable("Account");
+
+                entity.HasIndex(e => e.AuthId, "IX_Account_AuthID");
 
                 entity.Property(e => e.AccountId).HasColumnName("AccountID");
 
@@ -103,6 +116,15 @@ namespace DragaliaApi.Data
                 entity.Property(e => e.AccountName)
                     .IsRequired()
                     .HasMaxLength(255);
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
+
+                entity.Property(e => e.AuthId)
+                    .IsRequired()
+                    .HasMaxLength(255)
+                    .HasColumnName("AuthID");
             });
 
             modelBuilder.Entity<AccountFacility>(entity =>
@@ -230,10 +252,26 @@ namespace DragaliaApi.Data
                     .ValueGeneratedNever()
                     .HasColumnName("AffinityID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
+
                 entity.Property(e => e.Affinity1)
                     .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("Affinity");
+            });
+
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.ToTable("Category", "core");
+
+                entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
+
+                entity.Property(e => e.Category1)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnName("Category");
             });
 
             modelBuilder.Entity<Element>(entity =>
@@ -243,6 +281,10 @@ namespace DragaliaApi.Data
                 entity.Property(e => e.ElementId)
                     .ValueGeneratedNever()
                     .HasColumnName("ElementID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
 
                 entity.Property(e => e.Element1)
                     .HasMaxLength(50)
@@ -257,10 +299,21 @@ namespace DragaliaApi.Data
                     .ValueGeneratedNever()
                     .HasColumnName("FacilityID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
+
+                entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
+
                 entity.Property(e => e.Facility1)
                     .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("Facility");
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Facilities)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK_Facility_Category");
             });
 
             modelBuilder.Entity<FacilityUpgrade>(entity =>
@@ -274,6 +327,10 @@ namespace DragaliaApi.Data
                 entity.Property(e => e.MaterialId)
                     .HasMaxLength(50)
                     .HasColumnName("MaterialID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
 
                 entity.HasOne(d => d.Facility)
                     .WithMany(p => p.FacilityUpgrades)
@@ -294,10 +351,21 @@ namespace DragaliaApi.Data
                     .HasMaxLength(50)
                     .HasColumnName("MaterialID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
+
+                entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
+
                 entity.Property(e => e.Material1)
                     .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("Material");
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Materials)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK_Material_Category");
             });
 
             modelBuilder.Entity<Passive>(entity =>
@@ -309,6 +377,10 @@ namespace DragaliaApi.Data
                     .HasColumnName("PassiveID");
 
                 entity.Property(e => e.AbilityId).HasColumnName("AbilityID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
 
                 entity.Property(e => e.ElementId).HasColumnName("ElementID");
 
@@ -361,6 +433,10 @@ namespace DragaliaApi.Data
                     .ValueGeneratedNever()
                     .HasColumnName("UpgradeTypeID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
+
                 entity.Property(e => e.UpgradeType1)
                     .IsRequired()
                     .HasMaxLength(50)
@@ -374,6 +450,10 @@ namespace DragaliaApi.Data
                 entity.Property(e => e.WeaponId)
                     .ValueGeneratedNever()
                     .HasColumnName("WeaponID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
 
                 entity.Property(e => e.ElementId).HasColumnName("ElementID");
 
@@ -458,6 +538,10 @@ namespace DragaliaApi.Data
                     .ValueGeneratedNever()
                     .HasColumnName("WeaponSeriesID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
+
                 entity.Property(e => e.WeaponSeries1)
                     .IsRequired()
                     .HasMaxLength(50)
@@ -471,6 +555,10 @@ namespace DragaliaApi.Data
                 entity.Property(e => e.WeaponTypeId)
                     .ValueGeneratedNever()
                     .HasColumnName("WeaponTypeID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
 
                 entity.Property(e => e.WeaponType1)
                     .IsRequired()
@@ -522,6 +610,10 @@ namespace DragaliaApi.Data
                 entity.Property(e => e.WyrmprintId)
                     .ValueGeneratedNever()
                     .HasColumnName("WyrmprintID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
 
                 entity.Property(e => e.AffinityId).HasColumnName("AffinityID");
 

@@ -22,7 +22,10 @@ namespace DragaliaApi.Models
 
         public string MaterialId { get; set; }
         public string Material1 { get; set; }
+        public int? CategoryId { get; set; }
+        public bool? Active { get; set; }
 
+        public virtual Category Category { get; set; }
         public virtual ICollection<AccountInventory> AccountInventories { get; set; }
         public virtual ICollection<FacilityUpgrade> FacilityUpgrades { get; set; }
         public virtual ICollection<PassiveCrafting> PassiveCraftings { get; set; }

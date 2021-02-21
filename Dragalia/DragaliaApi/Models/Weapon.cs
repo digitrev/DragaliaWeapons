@@ -21,6 +21,7 @@ namespace DragaliaApi.Models
         public int WeaponTypeId { get; set; }
         public int Rarity { get; set; }
         public int ElementId { get; set; }
+        public bool? Active { get; set; }
 
         public virtual Element Element { get; set; }
         public virtual WeaponSeries WeaponSeries { get; set; }

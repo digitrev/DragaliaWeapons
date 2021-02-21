@@ -1,4 +1,5 @@
 ﻿{
+   "CodeGenerationMode": 0,
    "ContextClassName": "DragaliaContext",
    "ContextNamespace": null,
    "DefaultDacpacSchema": null,
@@ -22,6 +23,10 @@
       },
       {
          "Name": "[core].[Affinity]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[core].[Category]",
          "ObjectType": 0
       },
       {
@@ -129,12 +134,17 @@
          "ObjectType": 0
       }
    ],
+   "UiHint": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,
    "UseDbContextSplitting": false,
    "UseFluentApiOnly": true,
    "UseHandleBars": false,
    "UseInflector": true,
    "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoNavigations": false,
    "UseNodaTime": false,
+   "UseNullableReferences": false,
    "UseSpatial": false
 }
