@@ -18,6 +18,7 @@ namespace DragaliaApi.Controllers
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
+        private readonly int accountID = 1; //debugging, change later
 
         public AccountWeaponsController(DragaliaContext context, IMapper mapper)
         {
@@ -29,17 +30,6 @@ namespace DragaliaApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons()
         {
-            return await _context.AccountWeapons.Include(aw => aw.Weapon).ThenInclude(w => w.Element)
-                                                .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponSeries)
-                                                .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponType)
-                                                .Select(aw => _mapper.Map<AccountWeaponDTO>(aw))
-                                                .ToListAsync();
-        }
-
-        // GET: api/AccountWeapons/5
-        [HttpGet("{accountID}")]
-        public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons(int accountID)
-        {
             return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID)
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.Element)
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponSeries)
@@ -48,9 +38,9 @@ namespace DragaliaApi.Controllers
                                                 .ToListAsync();
         }
 
-        // GET: api/AccountWeapons/5/1002
-        [HttpGet("{accountID}/{weaponID}")]
-        public async Task<ActionResult<AccountWeaponDTO>> GetAccountWeapon(int accountID, int weaponID)
+        // GET: api/AccountWeapons/1002
+        [HttpGet("{weaponID}")]
+        public async Task<ActionResult<AccountWeaponDTO>> GetAccountWeapon(int weaponID)
         {
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
 
@@ -80,8 +70,8 @@ namespace DragaliaApi.Controllers
 
         // PUT: api/AccountWeapons/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{accountID}/{weaponID}")]
-        public async Task<IActionResult> PutAccountWeapon(int accountID, int weaponID, AccountWeaponDTO accountWeaponDTO)
+        [HttpPut("{weaponID}")]
+        public async Task<IActionResult> PutAccountWeapon(int weaponID, AccountWeaponDTO accountWeaponDTO)
         {
             if (accountID != accountWeaponDTO.AccountId || weaponID != accountWeaponDTO.WeaponId)
             {
@@ -157,8 +147,8 @@ namespace DragaliaApi.Controllers
         }
 
         // DELETE: api/AccountWeapons/5/1001
-        [HttpDelete("{accountID}/{weaponID}")]
-        public async Task<IActionResult> DeleteAccountWeapon(int accountID, int weaponID)
+        [HttpDelete("{weaponID}")]
+        public async Task<IActionResult> DeleteAccountWeapon(int weaponID)
         {
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
             if (accountWeapon == null)
