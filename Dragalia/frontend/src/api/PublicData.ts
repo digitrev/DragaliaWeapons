@@ -3,7 +3,7 @@ import { webAPIUrl } from '../AppSettings';
 
 export interface WeaponData {
   weaponId: number;
-  weapon1: string;
+  weapon: string;
   weaponSeries: string;
   weaponType: string;
   rarity: number;
@@ -12,9 +12,13 @@ export interface WeaponData {
 
 export interface MaterialData {
   materialId: string;
-  material1: string;
+  material: string;
   category: string;
-  active: boolean;
+}
+
+export interface CategoryData {
+  category: string;
+  materials: MaterialData[];
 }
 
 export class PublicApi extends HttpClient {
@@ -22,8 +26,14 @@ export class PublicApi extends HttpClient {
     super(webAPIUrl);
   }
 
-  public getWeapons = () => this.instance.get<WeaponData[]>('/Weapons');
+  public getWeapons = () => this.instance.get<WeaponData[]>('/WeaponList');
 
   public getWeapon = (id: number) =>
     this.instance.get<WeaponData>(`/Weapons/${id}`);
+
+  public getMaterials = () =>
+    this.instance.get<MaterialData[]>('/MaterialList');
+
+  public getMaterial = (id: string) =>
+    this.instance.get<MaterialData>(`/MaterialList/${id}`);
 }

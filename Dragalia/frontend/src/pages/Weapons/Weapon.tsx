@@ -1,14 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { WeaponData } from '../api/PublicData';
+import { WeaponData } from '../../api/PublicData';
 
 interface Props {
   data: WeaponData;
 }
 
 export const Weapon: FC<Props> = ({ data }) => {
-  const { weapon1, weaponSeries, weaponType, rarity, element } = data;
+  const { weapon, weaponSeries, weaponType, rarity, element } = data;
   return (
     <div
       css={css`
@@ -21,7 +21,7 @@ export const Weapon: FC<Props> = ({ data }) => {
           font-size: 19px;
         `}
       >
-        {weapon1}
+        {weapon}
       </div>
       <div>
         {rarity}* {weaponSeries} {element === 'None' ? '' : element}{' '}

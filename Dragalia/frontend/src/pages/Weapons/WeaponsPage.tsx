@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
-import { PublicApi, WeaponData } from '../api/PublicData';
-import { Page } from './Page';
+import { PublicApi, WeaponData } from '../../api/PublicData';
+import { Page } from '../Page';
 import { WeaponList } from './WeaponList';
 
 export const WeaponsPage = () => {

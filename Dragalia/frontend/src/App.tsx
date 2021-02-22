@@ -4,8 +4,9 @@ import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Header } from './pages/Header';
 import { HomePage } from './pages/HomePage';
+import { MaterialPage } from './pages/Materials/MaterialPage';
 import { NotFoundPage } from './pages/NotFoundPage';
-import { WeaponsPage } from './pages/WeaponsPage';
+import { WeaponsPage } from './pages/Weapons/WeaponsPage';
 import { fontFamily, fontSize, gray2 } from './Styles';
 
 const App: React.FC = () => {
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           <Redirect from="/home" to="/" />
           <Route exact path="/" component={HomePage} />
           <Route path="/weapons" component={WeaponsPage} />
+          <Route path="/materials" component={MaterialPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </div>

@@ -4,6 +4,13 @@ import { Page } from './Page';
 
 export const HomePage = () => (
   <Page title="Home">
-    <Link to="/weapons">Weapon List</Link>
+    <ul>
+      <li>
+        <Link to="/weapons">Weapon List</Link>
+      </li>
+      <li>
+        <Link to="/materials">Material List</Link>
+      </li>
+    </ul>
   </Page>
 );
