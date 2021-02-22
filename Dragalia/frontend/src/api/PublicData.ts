@@ -1,4 +1,4 @@
-import HttpClient from '../api/HttpClient';
+import HttpClient from './HttpClient';
 import { webAPIUrl } from '../AppSettings';
 
 export interface WeaponData {
@@ -10,7 +10,14 @@ export interface WeaponData {
   element: string;
 }
 
-export class WeaponApi extends HttpClient {
+export interface MaterialData {
+  materialId: string;
+  material1: string;
+  category: string;
+  active: boolean;
+}
+
+export class PublicApi extends HttpClient {
   public constructor() {
     super(webAPIUrl);
   }

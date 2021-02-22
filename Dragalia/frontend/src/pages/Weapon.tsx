@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { WeaponData } from '../data/WeaponData';
+import { WeaponData } from '../api/PublicData';
 
 interface Props {
   data: WeaponData;

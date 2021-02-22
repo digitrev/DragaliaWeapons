@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
-import { WeaponApi, WeaponData } from '../data/WeaponData';
+import { PublicApi, WeaponData } from '../api/PublicData';
 import { Page } from './Page';
 import { WeaponList } from './WeaponList';
 
@@ -12,7 +12,7 @@ export const WeaponsPage = () => {
   useEffect(() => {
     let cancelled = false;
     const doGetWeapons = async () => {
-      const api = new WeaponApi();
+      const api = new PublicApi();
       const weaponData = await api.getWeapons();
       if (!cancelled) {
         setWeapons(weaponData);
