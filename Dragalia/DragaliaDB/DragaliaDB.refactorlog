@@ -1032,4 +1032,62 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_AccountWyrmprint_Wyrmprint]" />
   </Operation>
+  <Operation Name="Move Schema" Key="84e4bea7-81eb-47f3-9dac-221e3ad43202" ChangeDateTime="02/19/2021 01:30:46">
+    <Property Name="ElementName" Value="[dbo].[Category]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6f83ada6-1915-40a8-a1d9-16f89ab85a7b" ChangeDateTime="02/19/2021 01:30:51">
+    <Property Name="ElementName" Value="[core].[Category].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Category]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CategoryID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="04ec4afb-8c9d-48bc-9b04-0c9c864b360c" ChangeDateTime="02/21/2021 16:18:48">
+    <Property Name="ElementName" Value="[dbo].[spSetSortPath]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="7d3288f7-adb4-494e-b783-4374bfb7acd0" ChangeDateTime="02/21/2021 18:48:12">
+    <Property Name="ElementName" Value="[dbo].[spSetCategory]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="6606ad0c-667d-4b5c-b695-7f40eefd35e2" ChangeDateTime="02/21/2021 19:02:18">
+    <Property Name="ElementName" Value="[dbo].[MaterialCategory]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b2892bf3-074e-4c31-9dce-796baeffc165" ChangeDateTime="02/21/2021 19:02:31">
+    <Property Name="ElementName" Value="[den].[MaterialCategory].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[MaterialCategory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Material" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="44b274a1-ef84-402f-84b7-b89ae180b413" ChangeDateTime="02/21/2021 19:09:09">
+    <Property Name="ElementName" Value="[den].[MaterialCategory]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[MaterialMetadata]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="de07d292-19d8-490d-89e3-13e792d754f8" ChangeDateTime="02/21/2021 19:21:05">
+    <Property Name="ElementName" Value="[dbo].[FacilityMetadata].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FacilityMetadata]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Facility" />
+  </Operation>
+  <Operation Name="Move Schema" Key="821b206e-c00c-4d78-b7a3-21dc4880e2d7" ChangeDateTime="02/21/2021 19:21:37">
+    <Property Name="ElementName" Value="[dbo].[FacilityMetadata]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

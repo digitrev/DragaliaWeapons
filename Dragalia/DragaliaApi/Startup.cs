@@ -34,7 +34,10 @@ namespace DragaliaApi
             services.AddAutoMapper(typeof(Startup));
 
             services.AddDbContext<DragaliaContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DragaliaDB")));
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DragaliaDB"),
+                    options => options.UseHierarchyId())
+                );
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen(c =>

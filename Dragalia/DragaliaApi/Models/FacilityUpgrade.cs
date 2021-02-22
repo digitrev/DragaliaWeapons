@@ -12,6 +12,7 @@ namespace DragaliaApi.Models
         public string MaterialId { get; set; }
         public byte FacilityLevel { get; set; }
         public int Quantity { get; set; }
+        public bool? Active { get; set; }
 
         public virtual Facility Facility { get; set; }
         public virtual Material Material { get; set; }

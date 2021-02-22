@@ -18,6 +18,7 @@ namespace DragaliaApi.Models
         public string Ability1 { get; set; }
         public string GenericName { get; set; }
         public int AbilityGroupId { get; set; }
+        public bool? Active { get; set; }
 
         public virtual AbilityGroup AbilityGroup { get; set; }
         public virtual ICollection<Passive> Passives { get; set; }

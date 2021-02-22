@@ -16,6 +16,7 @@ namespace DragaliaApi.Models
 
         public int UpgradeTypeId { get; set; }
         public string UpgradeType1 { get; set; }
+        public bool? Active { get; set; }
 
         public virtual ICollection<WeaponUpgrade> WeaponUpgrades { get; set; }
         public virtual ICollection<WyrmprintUpgrade> WyrmprintUpgrades { get; set; }

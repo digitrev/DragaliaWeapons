@@ -19,6 +19,7 @@ namespace DragaliaApi.Models
         public string Wyrmprint1 { get; set; }
         public int Rarity { get; set; }
         public int? AffinityId { get; set; }
+        public bool? Active { get; set; }
 
         public virtual Affinity Affinity { get; set; }
         public virtual ICollection<AccountWyrmprint> AccountWyrmprints { get; set; }

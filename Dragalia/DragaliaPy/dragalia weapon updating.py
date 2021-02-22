@@ -24,7 +24,7 @@ parameterDict["WyrmprintLimit"]={"tables":"WyrmprintRarity","fields":"Id,MaxLimi
 
 #Setting up request parameters
 print('Setting up request parameters')
-apiUrl = "https://dragalialost.gamepedia.com/api.php"
+apiUrl = "https://dragalialost.wiki/api.php"
 
 baseParams = dict()
 baseParams["action"]="cargoquery"

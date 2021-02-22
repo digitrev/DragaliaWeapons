@@ -16,6 +16,7 @@ namespace DragaliaApi.Models
 
         public int WeaponTypeId { get; set; }
         public string WeaponType1 { get; set; }
+        public bool? Active { get; set; }
 
         public virtual ICollection<Passive> Passives { get; set; }
         public virtual ICollection<Weapon> Weapons { get; set; }

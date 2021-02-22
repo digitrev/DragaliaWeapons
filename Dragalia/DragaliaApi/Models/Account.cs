@@ -20,6 +20,8 @@ namespace DragaliaApi.Models
         public int AccountId { get; set; }
         public string AccountName { get; set; }
         public string AccountEmail { get; set; }
+        public string AuthId { get; set; }
+        public bool? Active { get; set; }
 
         public virtual ICollection<AccountFacility> AccountFacilities { get; set; }
         public virtual ICollection<AccountInventory> AccountInventories { get; set; }

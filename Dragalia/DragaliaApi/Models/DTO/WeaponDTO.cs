@@ -8,7 +8,7 @@ namespace DragaliaApi.Models.DTO
     public class WeaponDTO
     {
         public int WeaponId { get; set; }
-        public string Weapon1 { get; set; }
+        public string Weapon { get; set; }
         public string WeaponSeries { get; set; }
         public string WeaponType { get; set; }
         public int Rarity { get; set; }
