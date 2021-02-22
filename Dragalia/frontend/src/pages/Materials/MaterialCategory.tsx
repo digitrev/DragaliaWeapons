@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
 import { CategoryData } from '../../api/PublicData';
-import { accent2, gray5 } from '../../Styles';
+import { gray5 } from '../../Styles';
 import { Material } from './Material';
 
 interface Props {
@@ -49,7 +49,7 @@ export const MaterialCategory: FC<Props> = ({ data }) => {
             <Material data={material} />
           </li>
         ))}
-      </ul>{' '}
+      </ul>
     </div>
   );
 };
