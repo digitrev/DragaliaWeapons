@@ -18,7 +18,6 @@ namespace DragaliaApi.Controllers
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
-        private readonly int accountID = 1; //debugging, change later
 
         public AccountWeaponsController(DragaliaContext context, IMapper mapper)
         {
@@ -30,6 +29,7 @@ namespace DragaliaApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons()
         {
+            var accountID = await AccountsController.GetAccountID();
             return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID)
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.Element)
                                                 .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponSeries)
@@ -42,6 +42,7 @@ namespace DragaliaApi.Controllers
         [HttpGet("{weaponID}")]
         public async Task<ActionResult<AccountWeaponDTO>> GetAccountWeapon(int weaponID)
         {
+            var accountID = await AccountsController.GetAccountID();
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
 
             if (accountWeapon == null)
@@ -73,11 +74,7 @@ namespace DragaliaApi.Controllers
         [HttpPut("{weaponID}")]
         public async Task<IActionResult> PutAccountWeapon(int weaponID, AccountWeaponDTO accountWeaponDTO)
         {
-            if (accountID != accountWeaponDTO.AccountId || weaponID != accountWeaponDTO.WeaponId)
-            {
-                return BadRequest();
-            }
-
+            var accountID = await AccountsController.GetAccountID();
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
 
             accountWeapon.Copies = accountWeaponDTO.Copies;
@@ -112,23 +109,9 @@ namespace DragaliaApi.Controllers
         [HttpPost]
         public async Task<ActionResult<AccountWeapon>> PostAccountWeapon(AccountWeaponDTO accountWeaponDTO)
         {
-            var accountWeapon = new AccountWeapon
-            {
-                AccountId = accountWeaponDTO.AccountId,
-                WeaponId = accountWeaponDTO.WeaponId,
-                Copies = accountWeaponDTO.Copies,
-                CopiesWanted = accountWeaponDTO.CopiesWanted,
-                WeaponLevel = accountWeaponDTO.WeaponLevel,
-                WeaponLevelWanted = accountWeaponDTO.WeaponLevelWanted,
-                Unbind = accountWeaponDTO.Unbind,
-                UnbindWanted = accountWeaponDTO.UnbindWanted,
-                Refine = accountWeaponDTO.Refine,
-                RefineWanted = accountWeaponDTO.RefineWanted,
-                Slot = accountWeaponDTO.Slot,
-                SlotWanted = accountWeaponDTO.SlotWanted,
-                Bonus = accountWeaponDTO.Bonus,
-                BonusWanted = accountWeaponDTO.BonusWanted
-            };
+            var accountID = await AccountsController.GetAccountID();
+            var accountWeapon = _mapper.Map<AccountWeapon>(accountWeaponDTO);
+            accountWeapon.AccountId = accountID;
 
             _context.AccountWeapons.Add(accountWeapon);
             try
@@ -150,6 +133,7 @@ namespace DragaliaApi.Controllers
         [HttpDelete("{weaponID}")]
         public async Task<IActionResult> DeleteAccountWeapon(int weaponID)
         {
+            var accountID = await AccountsController.GetAccountID();
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
             if (accountWeapon == null)
             {

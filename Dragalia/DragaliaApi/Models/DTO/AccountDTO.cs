@@ -7,7 +7,6 @@ namespace DragaliaApi.Models.DTO
 {
     public class AccountDTO
     {
-        public int AccountId { get; set; }
         public string AccountName { get; set; }
         public string AccountEmail { get; set; }
     }
