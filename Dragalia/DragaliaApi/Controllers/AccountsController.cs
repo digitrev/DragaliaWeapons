@@ -27,17 +27,9 @@ namespace DragaliaApi.Controllers
 
         // GET: api/Accounts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<AccountDTO>>> GetAccounts()
+        public async Task<ActionResult<AccountDTO>> GetAccount()
         {
-            //return await _context.Accounts.Select(a => AccountDTO.ToDTO(a))
-            //                              .ToListAsync();
-            return await _context.Accounts.Select(a => _mapper.Map<AccountDTO>(a)).ToListAsync();
-        }
-
-        // GET: api/Accounts/5
-        [HttpGet("{accountID}")]
-        public async Task<ActionResult<AccountDTO>> GetAccount(int accountID)
-        {
+            var accountID = await GetAccountID();
             var account = await _context.Accounts.FindAsync(accountID);
 
             if (account == null)
@@ -51,14 +43,11 @@ namespace DragaliaApi.Controllers
         // PUT: api/Accounts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{accountID}")]
-        public async Task<IActionResult> UpdateAccount(int accountID, AccountDTO accountDTO)
+        public async Task<IActionResult> UpdateAccount(AccountDTO accountDTO)
         {
-            if (accountID != accountDTO.AccountId)
-            {
-                return BadRequest();
-            }
-
+            var accountID = await GetAccountID();
             var account = await _context.Accounts.FindAsync(accountID);
+            
             account.AccountName = accountDTO.AccountName;
             account.AccountEmail = accountDTO.AccountEmail;
 
@@ -92,20 +81,10 @@ namespace DragaliaApi.Controllers
                 _mapper.Map<AccountDTO>(account));
         }
 
-        // DELETE: api/Accounts/5
-        [HttpDelete("{accountID}")]
-        public async Task<IActionResult> DeleteAccount(int accountID)
+        public static async Task<int> GetAccountID()
         {
-            var account = await _context.Accounts.FindAsync(accountID);
-            if (account == null)
-            {
-                return NotFound();
-            }
-
-            _context.Accounts.Remove(account);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            //TODO - implement actual logic
+            return await Task.FromResult(1);
         }
 
         private bool AccountExists(int accountID) => _context.Accounts.Any(e => e.AccountId == accountID);
