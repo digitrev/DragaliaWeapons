@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
-import { PublicApi, MaterialData } from '../../api/PublicData';
+import { MaterialData } from '../../api/DataInterfaces';
+import { PublicApi } from '../../api/PublicData';
 import { Page } from '../Page';
 import { MaterialList } from './MaterialList';
 

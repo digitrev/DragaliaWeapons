@@ -1,19 +1,19 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
-import { WeaponData } from '../../api/DataInterfaces';
-import { PublicApi } from '../../api/PublicData';
+import { AccountWeaponData } from '../../api/DataInterfaces';
+import { PrivateApi } from '../../api/PrivateData';
 import { Page } from '../Page';
-import { WeaponList } from './WeaponList';
+import { AccountWeaponList } from './AccountWeaponList';
 
-export const WeaponsPage = () => {
-  const [weapons, setWeapons] = useState<WeaponData[] | null>(null);
+export const AccountWeaponsPage = () => {
+  const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
   const [weaponsLoading, setWeaponsLoading] = useState(true);
 
   useEffect(() => {
     let cancelled = false;
     const doGetWeapons = async () => {
-      const api = new PublicApi();
+      const api = new PrivateApi();
       const weaponData = await api.getWeapons();
       if (!cancelled) {
         setWeapons(weaponData);
@@ -27,7 +27,7 @@ export const WeaponsPage = () => {
   }, []);
 
   return (
-    <Page title="Weapon List">
+    <Page title="Your Weapons">
       {weaponsLoading ? (
         <div
           css={css`
@@ -38,7 +38,7 @@ export const WeaponsPage = () => {
           Loading...
         </div>
       ) : (
-        <WeaponList data={weapons || []} />
+        <AccountWeaponList data={weapons || []} />
       )}
     </Page>
   );

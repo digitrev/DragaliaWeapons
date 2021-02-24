@@ -72,7 +72,7 @@ namespace DragaliaApi.Controllers
         // PUT: api/AccountWeapons/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{weaponID}")]
-        public async Task<IActionResult> PutAccountWeapon(int weaponID, AccountWeaponDTO accountWeaponDTO)
+        public async Task<ActionResult<AccountWeaponDTO>> PutAccountWeapon(int weaponID, AccountWeaponDTO accountWeaponDTO)
         {
             var accountID = await AccountsController.GetAccountID();
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
@@ -101,7 +101,7 @@ namespace DragaliaApi.Controllers
                 return NotFound();
             }
 
-            return NoContent();
+            return _mapper.Map<AccountWeaponDTO>(accountWeapon);
         }
 
         // POST: api/AccountWeapons

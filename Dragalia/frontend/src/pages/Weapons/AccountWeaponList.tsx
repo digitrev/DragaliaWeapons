@@ -1,15 +1,15 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { WeaponData } from '../../api/DataInterfaces';
+import { AccountWeaponData } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
-import { Weapon } from './Weapon';
+import { AccountWeapon } from './AccountWeapon';
 
 interface Props {
-  data: WeaponData[];
+  data: AccountWeaponData[];
 }
 
-export const WeaponList: FC<Props> = ({ data }) => {
+export const AccountWeaponList: FC<Props> = ({ data }) => {
   return (
     <ul
       css={css`
@@ -33,7 +33,7 @@ export const WeaponList: FC<Props> = ({ data }) => {
             }
           `}
         >
-          <Weapon data={weapon} />
+          <AccountWeapon data={weapon} />
         </li>
       ))}
     </ul>

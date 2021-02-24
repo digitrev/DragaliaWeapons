@@ -1,25 +1,6 @@
 import HttpClient from './HttpClient';
 import { webAPIUrl } from '../AppSettings';
-
-export interface WeaponData {
-  weaponId: number;
-  weapon: string;
-  weaponSeries: string;
-  weaponType: string;
-  rarity: number;
-  element: string;
-}
-
-export interface MaterialData {
-  materialId: string;
-  material: string;
-  category: string;
-}
-
-export interface CategoryData {
-  category: string;
-  materials: MaterialData[];
-}
+import { MaterialData, WeaponData } from './DataInterfaces';
 
 export class PublicApi extends HttpClient {
   public constructor() {

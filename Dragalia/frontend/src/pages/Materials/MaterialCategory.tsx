@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { CategoryData } from '../../api/PublicData';
+import { CategoryData } from '../../api/DataInterfaces';
 import { gray5 } from '../../Styles';
 import { Material } from './Material';
 

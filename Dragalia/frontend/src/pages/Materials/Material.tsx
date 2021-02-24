@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { FC } from 'react';
-import { MaterialData } from '../../api/PublicData';
+import { MaterialData } from '../../api/DataInterfaces';
 
 interface Props {
   data: MaterialData;
