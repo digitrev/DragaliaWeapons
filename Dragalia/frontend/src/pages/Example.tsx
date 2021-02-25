@@ -1,37 +1,26 @@
-import React, { FocusEvent } from 'react';
+import React from 'react';
 import { Page } from './Page';
+import Select, { ActionMeta } from 'react-select';
+
+interface Flavour {
+  value: string;
+  label: string;
+}
 
 export const Example = () => {
+  const options: Flavour[] = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' },
+  ];
+
+  const handleChange = (val: Flavour | null, meta: ActionMeta<Flavour>) => {
+    console.log(val);
+  };
+
   return (
     <Page title="Example">
-      <div
-        tabIndex={1}
-        onFocus={(e: FocusEvent<any>) => {
-          if (e.currentTarget === e.target) {
-            console.log('focused self');
-          } else {
-            console.log('focused child', e.target);
-          }
-          if (!e.currentTarget.contains(e.relatedTarget)) {
-            // Not triggered when swapping focus between children
-            console.log('focus entered self');
-          }
-        }}
-        onBlur={(e: FocusEvent<any>) => {
-          if (e.currentTarget === e.target) {
-            console.log('unfocused self');
-          } else {
-            console.log('unfocused child', e.target);
-          }
-          if (!e.currentTarget.contains(e.relatedTarget)) {
-            // Not triggered when swapping focus between children
-            console.log('focus left self');
-          }
-        }}
-      >
-        <input id="1" />
-        <input id="2" />
-      </div>
+      <Select options={options} onChange={handleChange} />
     </Page>
   );
 };
