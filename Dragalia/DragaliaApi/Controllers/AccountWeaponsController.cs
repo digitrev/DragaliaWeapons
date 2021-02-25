@@ -30,12 +30,26 @@ namespace DragaliaApi.Controllers
         public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons()
         {
             var accountID = await AccountsController.GetAccountID();
-            return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID)
-                                                .Include(aw => aw.Weapon).ThenInclude(w => w.Element)
-                                                .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponSeries)
-                                                .Include(aw => aw.Weapon).ThenInclude(w => w.WeaponType)
-                                                .Select(aw => _mapper.Map<AccountWeaponDTO>(aw))
-                                                .ToListAsync();
+            try
+            {
+                return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID)
+                                                    .Include(aw => aw.Weapon)
+                                                    .ThenInclude(w => w.Element)
+                                                    .Include(aw => aw.Weapon)
+                                                    .ThenInclude(w => w.WeaponSeries)
+                                                    .Include(aw => aw.Weapon)
+                                                    .ThenInclude(w => w.WeaponType)
+                                                    .OrderBy(aw => aw.Weapon.WeaponSeries.SortOrder)
+                                                    .ThenBy(aw => aw.Weapon.WeaponTypeId)
+                                                    .ThenBy(aw => aw.Weapon.Rarity)
+                                                    .ThenBy(aw => aw.Weapon.Element.SortOrder)
+                                                    .Select(aw => _mapper.Map<AccountWeaponDTO>(aw))
+                                                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
+            }
         }
 
         // GET: api/AccountWeapons/1002
@@ -67,6 +81,31 @@ namespace DragaliaApi.Controllers
                     .Load();
 
             return _mapper.Map<AccountWeaponDTO>(accountWeapon);
+        }
+
+        // GET /api/AccountWeapons/untracked
+        [HttpGet("untracked")]
+        public async Task<ActionResult<IEnumerable<WeaponDTO>>> GetUntrackedWeapons()
+        {
+            var accountID = await AccountsController.GetAccountID();
+            try
+            {
+                return await _context.Weapons.Include(w => w.Element)
+                                             .Include(w => w.WeaponSeries)
+                                             .Include(w => w.WeaponType)
+                                             .Where(w => !_context.AccountWeapons.Any(aw => aw.AccountId == accountID && aw.WeaponId == w.WeaponId))
+                                             .OrderBy(w => w.WeaponSeries.SortOrder)
+                                             .ThenBy(w => w.WeaponTypeId)
+                                             .ThenBy(w => w.Rarity)
+                                             .ThenBy(w => w.Element.SortOrder)
+                                             .Select(w => _mapper.Map<WeaponDTO>(w))
+                                             .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
+            }
+
         }
 
         // PUT: api/AccountWeapons/5
