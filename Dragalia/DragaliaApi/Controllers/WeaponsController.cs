@@ -37,6 +37,10 @@ namespace DragaliaApi.Controllers
                                              .Where(w => (element == null || w.Element.Element1.Equals(element))
                                                          && (series == null || w.WeaponSeries.WeaponSeries1.Equals(series))
                                                          && (type == null || w.WeaponType.WeaponType1.Equals(type)))
+                                             .OrderBy(w => w.WeaponSeries.SortOrder)
+                                             .ThenBy(w => w.WeaponTypeId)
+                                             .ThenBy(w => w.Rarity)
+                                             .ThenBy(w => w.Element.SortOrder)
                                              .Select(w => _mapper.Map<WeaponDTO>(w))
                                              .ToListAsync();
             }
