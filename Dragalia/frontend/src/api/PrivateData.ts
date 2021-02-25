@@ -17,5 +17,5 @@ export class PrivateApi extends HttpClient {
     this.instance.post<AccountWeaponData>(`/AccountWeapons`);
 
   public putWeapon = (id: number, weapon: AccountWeaponData) =>
-    this.instance.put<AccountWeaponData>(`/AccountWeapons/${id}`, weapon);
+    this.instance.put(`/AccountWeapons/${id}`, weapon);
 }

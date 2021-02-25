@@ -125,7 +125,7 @@ export const Form: FC<Props> = ({
       setSubmitError(!result.success);
       setSubmitting(false);
       setSubmitted(true);
-      await delay(1000);
+      await delay(2000);
       setSubmitted(false);
     }
   };

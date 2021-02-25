@@ -14,25 +14,29 @@ interface Props {
 export const AccountWeapon: FC<Props> = ({ data }) => {
   const handleSubmit = async (values: Values) => {
     const api = new PrivateApi();
-    const accountWeaponData = await api.putWeapon(values.weaponId, {
-      weaponId: values.weaponId,
-      copies: values.copies,
-      copiesWanted: values.copiesWanted,
-      weaponLevel: values.weaponLevel,
-      weaponLevelWanted: values.weaponLevelWanted,
-      unbind: values.unbind,
-      unbindWanted: values.unbindWanted,
-      refine: values.refine,
-      refineWanted: values.refineWanted,
-      slot: values.slot,
-      slotWanted: values.slotWanted,
-      bonus: values.bonus,
-      bonusWanted: values.bonusWanted,
-    }).catch(
-      return { success: false }
-    );
+    let res: boolean;
+    try {
+      await api.putWeapon(values.weaponId, {
+        weaponId: values.weaponId,
+        copies: values.copies,
+        copiesWanted: values.copiesWanted,
+        weaponLevel: values.weaponLevel,
+        weaponLevelWanted: values.weaponLevelWanted,
+        unbind: values.unbind,
+        unbindWanted: values.unbindWanted,
+        refine: values.refine,
+        refineWanted: values.refineWanted,
+        slot: values.slot,
+        slotWanted: values.slotWanted,
+        bonus: values.bonus,
+        bonusWanted: values.bonusWanted,
+      });
+      res = true;
+    } catch {
+      res = false;
+    }
 
-    return { success: accountWeaponData ? true : false };
+    return { success: res };
   };
 
   const { weapon } = data;
