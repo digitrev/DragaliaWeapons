@@ -1,6 +1,12 @@
 import HttpClient from './HttpClient';
 import { webAPIUrl } from '../AppSettings';
-import { MaterialData, WeaponData } from './DataInterfaces';
+import {
+  ElementData,
+  MaterialData,
+  WeaponData,
+  WeaponSeriesData,
+  WeaponTypeData,
+} from './DataInterfaces';
 
 export class PublicApi extends HttpClient {
   public constructor() {
@@ -17,4 +23,12 @@ export class PublicApi extends HttpClient {
 
   public getMaterial = (id: string) =>
     this.instance.get<MaterialData>(`/MaterialList/${id}`);
+
+  public getElements = () => this.instance.get<ElementData[]>('/Elements');
+
+  public getWeaponTypes = () =>
+    this.instance.get<WeaponTypeData[]>('/WeaponTypes');
+
+  public getWeaponSeries = () =>
+    this.instance.get<WeaponSeriesData[]>('/WeaponSeries');
 }

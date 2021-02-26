@@ -34,3 +34,18 @@ export interface CategoryData {
   category: string;
   materials: MaterialData[];
 }
+
+export interface ElementData {
+  elementId: number;
+  element: string;
+}
+
+export interface WeaponTypeData {
+  weaponTypeId: number;
+  weaponType: string;
+}
+
+export interface WeaponSeriesData {
+  weaponSeriesId: number;
+  weaponSeries: string;
+}

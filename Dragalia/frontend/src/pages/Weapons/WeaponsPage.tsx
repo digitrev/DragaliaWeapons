@@ -3,6 +3,7 @@ import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { WeaponData } from '../../api/DataInterfaces';
 import { PublicApi } from '../../api/PublicData';
+import { LoadingText } from '../../Loading';
 import { Page } from '../Page';
 import { WeaponList } from './WeaponList';
 
@@ -28,18 +29,7 @@ export const WeaponsPage = () => {
 
   return (
     <Page title="Weapon List">
-      {weaponsLoading ? (
-        <div
-          css={css`
-            font-size: 16px;
-            font-style: italic;
-          `}
-        >
-          Loading...
-        </div>
-      ) : (
-        <WeaponList data={weapons || []} />
-      )}
+      {weaponsLoading ? <LoadingText /> : <WeaponList data={weapons || []} />}
     </Page>
   );
 };

@@ -166,12 +166,7 @@ export const Form: FC<Props> = ({
         },
       }}
     >
-      <form
-        noValidate={true}
-        onSubmit={handleSubmit}
-        onBlur={handleBlur}
-        name={'testing'}
-      >
+      <form noValidate={true} onSubmit={handleSubmit} onBlur={handleBlur}>
         <fieldset
           disabled={submitting || (submitted && !submitError)}
           css={css`

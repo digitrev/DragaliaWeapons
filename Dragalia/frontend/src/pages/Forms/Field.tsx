@@ -3,11 +3,25 @@ import { css, jsx } from '@emotion/react';
 import { ChangeEvent, FC, useContext } from 'react';
 import { fontFamily, fontSize, gray5, gray2, gray6 } from '../../Styles';
 import { FormContext } from './Form';
+import Select, { ActionMeta, OptionTypeBase } from 'react-select';
+
+export interface SubmitOption {
+  label: string;
+  value: string;
+}
 
 interface Props {
   name: string;
   label?: string;
-  type?: 'Text' | 'TextArea' | 'Password' | 'Number' | 'Checkbox' | 'Hidden';
+  type?:
+    | 'Text'
+    | 'TextArea'
+    | 'Password'
+    | 'Number'
+    | 'Checkbox'
+    | 'Hidden'
+    | 'Select';
+  submitOptions?: SubmitOption[];
 }
 
 const baseCSS = css`
@@ -29,7 +43,12 @@ const baseCSS = css`
   }
 `;
 
-export const Field: FC<Props> = ({ name, label, type = 'Text' }) => {
+export const Field: FC<Props> = ({
+  name,
+  label,
+  type = 'Text',
+  submitOptions: selectOptions,
+}) => {
   const { setValue, touched, setTouched, validate } = useContext(FormContext);
 
   const handleChange = (
@@ -50,6 +69,20 @@ export const Field: FC<Props> = ({ name, label, type = 'Text' }) => {
       setValue(name, e.currentTarget.checked);
     }
     if (touched[name]) {
+      if (validate) {
+        validate(name);
+      }
+    }
+  };
+
+  const handleSelectChange = (
+    value: SubmitOption | null,
+    actionMeta: ActionMeta<SubmitOption>,
+  ) => {
+    if (value) {
+      if (setValue) {
+        setValue(name, value.value);
+      }
       if (validate) {
         validate(name);
       }
@@ -123,6 +156,9 @@ export const Field: FC<Props> = ({ name, label, type = 'Text' }) => {
               value={values[name] === undefined ? '' : values[name]}
               type="hidden"
             />
+          )}
+          {type === 'Select' && (
+            <Select options={selectOptions} onChange={handleSelectChange} />
           )}
           {errors[name] &&
             errors[name].length > 0 &&
