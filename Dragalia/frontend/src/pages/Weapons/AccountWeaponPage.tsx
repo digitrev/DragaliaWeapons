@@ -3,12 +3,13 @@ import { css, jsx } from '@emotion/react';
 import React, { Fragment, useEffect, useState } from 'react';
 import { AccountWeaponData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
+import { LoadingText } from '../../Loading';
 import { accent2, PrimaryButton } from '../../Styles';
 import { Page } from '../Page';
 import { AccountWeaponList } from './AccountWeaponList';
 import { AddWeapon } from './AddWeapon';
 
-export const AccountWeaponsPage = () => {
+export const AccountWeaponPage = () => {
   const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
   const [weaponsLoading, setWeaponsLoading] = useState(true);
   const [addingWeapon, setAddingWeapon] = useState(false);
@@ -38,14 +39,7 @@ export const AccountWeaponsPage = () => {
   return (
     <Page title="Your Weapons">
       {weaponsLoading ? (
-        <div
-          css={css`
-            font-size: 16px;
-            font-style: italic;
-          `}
-        >
-          Loading...
-        </div>
+        <LoadingText />
       ) : (
         <Fragment>
           <AccountWeaponList data={weapons || []} />

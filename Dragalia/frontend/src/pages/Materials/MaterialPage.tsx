@@ -3,6 +3,7 @@ import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { MaterialData } from '../../api/DataInterfaces';
 import { PublicApi } from '../../api/PublicData';
+import { LoadingText } from '../../Loading';
 import { Page } from '../Page';
 import { MaterialList } from './MaterialList';
 
@@ -29,14 +30,7 @@ export const MaterialPage = () => {
   return (
     <Page title="Material List">
       {materialsLoading ? (
-        <div
-          css={css`
-            font-size: 16px;
-            font-style: italic;
-          `}
-        >
-          Loading...
-        </div>
+        <LoadingText />
       ) : (
         <MaterialList data={materials || []} />
       )}

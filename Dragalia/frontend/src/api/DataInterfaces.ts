@@ -35,6 +35,11 @@ export interface CategoryData {
   materials: MaterialData[];
 }
 
+export interface InventoryCategoryData {
+  category: string;
+  items: AccountInventoryData[];
+}
+
 export interface ElementData {
   elementId: number;
   element: string;
@@ -48,4 +53,10 @@ export interface WeaponTypeData {
 export interface WeaponSeriesData {
   weaponSeriesId: number;
   weaponSeries: string;
+}
+
+export interface AccountInventoryData {
+  materialId: string;
+  quantity: number;
+  material?: MaterialData;
 }

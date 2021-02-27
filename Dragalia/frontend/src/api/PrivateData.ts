@@ -1,6 +1,10 @@
 import HttpClient from './HttpClient';
 import { webAPIUrl } from '../AppSettings';
-import { AccountWeaponData, WeaponData } from './DataInterfaces';
+import {
+  AccountInventoryData,
+  AccountWeaponData,
+  WeaponData,
+} from './DataInterfaces';
 
 export class PrivateApi extends HttpClient {
   public constructor() {
@@ -21,4 +25,13 @@ export class PrivateApi extends HttpClient {
 
   public putWeapon = (id: number, weapon: AccountWeaponData) =>
     this.instance.put(`/AccountWeapons/${id}`, weapon);
+
+  public getInventory = () =>
+    this.instance.get<AccountInventoryData[]>('/AccountInventories');
+
+  public getItem = (id: string) =>
+    this.instance.get<AccountInventoryData>(`/AccountInventories/${id}`);
+
+  public putItem = (id: string, item: AccountInventoryData) =>
+    this.instance.put(`/AccountInventories/${id}`, item);
 }
