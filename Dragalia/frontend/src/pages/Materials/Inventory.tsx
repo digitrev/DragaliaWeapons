@@ -36,7 +36,6 @@ export const Inventory: FC<Props> = ({ data }) => {
         padding-bottom: 10px;
       `}
     >
-      {material ? <Material data={material} /> : ''}
       <Form
         submitCaption="Update"
         onSubmit={handleSubmit}
@@ -48,7 +47,16 @@ export const Inventory: FC<Props> = ({ data }) => {
           quantity: [{ validator: isInteger }, { validator: required }],
         }}
       >
-        <Field name="quantity" type="Number" />
+        <table>
+          <tbody>
+            <tr>
+              <td>{material ? <Material data={material} /> : ''}</td>
+              <td>
+                <Field name="quantity" type="Number" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </Form>
     </div>
   );
