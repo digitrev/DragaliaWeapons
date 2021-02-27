@@ -35,6 +35,7 @@ namespace DragaliaApi.Controllers
                 return await _context.AccountInventories.Where(ai => ai.AccountId == accountID)
                                                         .Include(ai => ai.Material)
                                                         .ThenInclude(m => m.Category)
+                                                        .Where(ai => ai.Material.Category != null)
                                                         .OrderBy(ai => ai.Material.SortPath)
                                                         .Select(ai => _mapper.Map<AccountInventoryDTO>(ai))
                                                         .ToListAsync();
