@@ -13,7 +13,7 @@ import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
 import { LoadingText } from '../../Loading';
 import { Field, SubmitOption } from '../Forms/Field';
-import { Form, Values } from '../Forms/Form';
+import { Form, required, Values } from '../Forms/Form';
 
 export const AddWeapon = () => {
   const [elements, setElements] = useState<ElementData[] | null>(null);
@@ -159,6 +159,9 @@ export const AddWeapon = () => {
       onSubmit={handleSubmit}
       successMessage={'✔'}
       failureMessage={'❌'}
+      validationRules={{
+        weaponId: [{ validator: required }],
+      }}
     >
       <label
         htmlFor="elements"

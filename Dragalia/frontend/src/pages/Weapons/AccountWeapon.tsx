@@ -4,7 +4,7 @@ import { FC } from 'react';
 import { AccountWeaponData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { Field } from '../Forms/Field';
-import { Form, Values } from '../Forms/Form';
+import { Form, Values, isInteger, required } from '../Forms/Form';
 import { Weapon } from './Weapon';
 
 interface Props {
@@ -44,7 +44,7 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
   return (
     <div
       css={css`
-        padding: 10px 0px;
+        padding-bottom: 10px;
       `}
     >
       {weapon ? <Weapon data={weapon} /> : ''}
@@ -55,6 +55,19 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
         showSubmit={false}
         successMessage={'✔'}
         failureMessage={'❌'}
+        validationRules={{
+          copies: [{ validator: isInteger }, { validator: required }],
+          copiesWanted: [{ validator: isInteger }, { validator: required }],
+          weaponLevel: [{ validator: isInteger }, { validator: required }],
+          weaponLevelWanted: [
+            { validator: isInteger },
+            { validator: required },
+          ],
+          unbind: [{ validator: isInteger }, { validator: required }],
+          unbindWanted: [{ validator: isInteger }, { validator: required }],
+          refine: [{ validator: isInteger }, { validator: required }],
+          refineWanted: [{ validator: isInteger }, { validator: required }],
+        }}
       >
         <table>
           <tbody>

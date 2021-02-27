@@ -45,7 +45,7 @@ export const required: Validator = (value: any): string =>
     : '';
 
 export const isInteger: Validator = (value: any): string =>
-  !Number.isInteger(value) ? 'Value must be an integer' : '';
+  !Number.isInteger(Number(value)) ? 'Value must be an integer' : '';
 
 export const minLength: Validator = (value: any, length: number): string =>
   value && value.length < length

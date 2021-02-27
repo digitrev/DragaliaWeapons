@@ -12,7 +12,7 @@ export const Weapon: FC<Props> = ({ data }) => {
   return (
     <div
       css={css`
-        padding: 10px 0px;
+        padding-bottom: 10px;
       `}
     >
       <div

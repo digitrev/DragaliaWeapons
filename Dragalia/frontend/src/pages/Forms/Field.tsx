@@ -3,7 +3,7 @@ import { css, jsx } from '@emotion/react';
 import { ChangeEvent, FC, useContext } from 'react';
 import { fontFamily, fontSize, gray5, gray2, gray6 } from '../../Styles';
 import { FormContext } from './Form';
-import Select, { ActionMeta, OptionTypeBase } from 'react-select';
+import Select, { ActionMeta } from 'react-select';
 
 export interface SubmitOption {
   label: string;
@@ -76,13 +76,13 @@ export const Field: FC<Props> = ({
   };
 
   const handleSelectChange = (
-    value: SubmitOption | null,
+    opt: SubmitOption | null,
     actionMeta: ActionMeta<SubmitOption>,
   ) => {
-    if (value) {
-      if (setValue) {
-        setValue(name, value.value);
-      }
+    if (setValue) {
+      setValue(name, opt ? opt.value : null);
+    }
+    if (touched[name]) {
       if (validate) {
         validate(name);
       }
@@ -158,7 +158,14 @@ export const Field: FC<Props> = ({
             />
           )}
           {type === 'Select' && (
-            <Select options={selectOptions} onChange={handleSelectChange} />
+            <Select
+              options={selectOptions}
+              onChange={handleSelectChange}
+              onBlur={handleBlur}
+              id={name}
+              name={name}
+              isClearable={true}
+            />
           )}
           {errors[name] &&
             errors[name].length > 0 &&

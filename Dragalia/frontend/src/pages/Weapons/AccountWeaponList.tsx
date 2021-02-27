@@ -1,22 +1,15 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
-import React, { FC, Fragment, useState } from 'react';
+import React, { FC } from 'react';
 import { AccountWeaponData } from '../../api/DataInterfaces';
-import { accent2, gray5, PrimaryButton } from '../../Styles';
+import { accent2, gray5 } from '../../Styles';
 import { AccountWeapon } from './AccountWeapon';
-import { AddWeapon } from './AddWeapon';
 
 interface Props {
   data: AccountWeaponData[];
 }
 
 export const AccountWeaponList: FC<Props> = ({ data }) => {
-  const [addingWeapon, setAddingWeapon] = useState(false);
-
-  const onClickWeaponButton = () => {
-    setAddingWeapon(!addingWeapon);
-  };
-
   return (
     <ul
       css={css`
@@ -43,19 +36,6 @@ export const AccountWeaponList: FC<Props> = ({ data }) => {
           <AccountWeapon data={weapon} />
         </li>
       ))}
-      <li>
-        {addingWeapon && <AddWeapon />}
-        <div
-          css={css`
-            margin: 10px 0px 10px 0px;
-            padding: 10px 0px 10px 0px;
-          `}
-        >
-          <PrimaryButton type="button" onClick={onClickWeaponButton}>
-            {addingWeapon ? 'Done' : 'Track Weapons'}
-          </PrimaryButton>
-        </div>
-      </li>
     </ul>
   );
 };
