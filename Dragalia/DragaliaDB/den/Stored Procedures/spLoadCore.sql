@@ -1,6 +1,8 @@
 ﻿CREATE PROCEDURE [den].[spLoadCore]
 AS
 BEGIN
+	SET NOCOUNT ON
+
 	DECLARE @MineID INT = (
 			SELECT FacilityID
 			FROM core.Facility
