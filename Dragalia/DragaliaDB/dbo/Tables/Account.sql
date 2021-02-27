@@ -9,3 +9,13 @@
 GO
 
 CREATE INDEX [IX_Account_AuthID] ON [dbo].[Account] ([AuthID])
+GO
+
+CREATE TRIGGER [dbo].[Trigger_Account] ON [dbo].[Account]
+AFTER INSERT
+AS
+BEGIN
+	SET NOCOUNT ON
+
+	EXEC dbo.spFillInventory
+END

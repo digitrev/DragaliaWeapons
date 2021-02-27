@@ -1,6 +1,8 @@
 ﻿CREATE PROCEDURE [den].[spInitializeDen]
 AS
 BEGIN
+	SET NOCOUNT ON
+
 	TRUNCATE TABLE den.TreeCosts
 
 	DECLARE @Json NVARCHAR(MAX) = 
