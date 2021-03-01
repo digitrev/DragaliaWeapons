@@ -3,9 +3,9 @@ import { css, jsx } from '@emotion/react';
 import { ChangeEvent, FC, useContext } from 'react';
 import { fontFamily, fontSize, gray5, gray2, gray6 } from '../../Styles';
 import { FormContext } from './Form';
-import Select, { ActionMeta } from 'react-select';
+import Select, { ActionMeta, OptionsType } from 'react-select';
 
-export interface SubmitOption {
+export interface SelectOption {
   label: string;
   value: string;
 }
@@ -21,7 +21,8 @@ interface Props {
     | 'Checkbox'
     | 'Hidden'
     | 'Select';
-  submitOptions?: SubmitOption[];
+  selectOptions?: SelectOption[];
+  selectIsMulti?: boolean;
 }
 
 const baseCSS = css`
@@ -47,7 +48,8 @@ export const Field: FC<Props> = ({
   name,
   label,
   type = 'Text',
-  submitOptions: selectOptions,
+  selectOptions,
+  selectIsMulti = true,
 }) => {
   const { setValue, touched, setTouched, validate } = useContext(FormContext);
 
@@ -76,11 +78,25 @@ export const Field: FC<Props> = ({
   };
 
   const handleSelectChange = (
-    opt: SubmitOption | null,
-    actionMeta: ActionMeta<SubmitOption>,
+    opt: SelectOption | null,
+    // actionMeta: ActionMeta<SelectOption>,
   ) => {
     if (setValue) {
       setValue(name, opt ? opt.value : null);
+    }
+    if (touched[name]) {
+      if (validate) {
+        validate(name);
+      }
+    }
+  };
+
+  const handleSelectChangeMulti = (
+    opt: OptionsType<SelectOption> | null,
+    actionMeta: ActionMeta<SelectOption>,
+  ) => {
+    if (setValue) {
+      setValue(name, opt ? opt.map((o) => o.value) : null);
     }
     if (touched[name]) {
       if (validate) {
@@ -157,16 +173,27 @@ export const Field: FC<Props> = ({
               type="hidden"
             />
           )}
-          {type === 'Select' && (
-            <Select
-              options={selectOptions}
-              onChange={handleSelectChange}
-              onBlur={handleBlur}
-              id={name}
-              name={name}
-              isClearable={true}
-            />
-          )}
+          {type === 'Select' &&
+            (selectIsMulti ? (
+              <Select
+                options={selectOptions}
+                onChange={handleSelectChangeMulti}
+                onBlur={handleBlur}
+                id={name}
+                name={name}
+                isClearable={true}
+                isMulti={true}
+              />
+            ) : (
+              <Select
+                options={selectOptions}
+                onChange={handleSelectChange}
+                onBlur={handleBlur}
+                id={name}
+                name={name}
+                isClearable={true}
+              />
+            ))}
           {errors[name] &&
             errors[name].length > 0 &&
             errors[name].map((error) => (

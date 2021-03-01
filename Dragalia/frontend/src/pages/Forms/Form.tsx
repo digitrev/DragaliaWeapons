@@ -7,6 +7,7 @@ import React, {
   FormEvent,
   useState,
 } from 'react';
+import { submitDelay } from '../../AppSettings';
 import { gray6, gray5, PrimaryButton } from '../../Styles';
 
 const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
@@ -74,6 +75,7 @@ interface Props {
   failureMessage?: string;
   defaultValues?: Values;
   showSubmit?: boolean;
+  onDelete?: (values: Values) => Promise<SubmitResult>;
 }
 
 export const Form: FC<Props> = ({
@@ -85,6 +87,7 @@ export const Form: FC<Props> = ({
   failureMessage = 'Something went wrong',
   defaultValues = {},
   showSubmit = true,
+  onDelete,
 }) => {
   const [values, setValues] = useState<Values>(defaultValues);
   const [errors, setErrors] = useState<Errors>({});
@@ -125,7 +128,21 @@ export const Form: FC<Props> = ({
       setSubmitError(!result.success);
       setSubmitting(false);
       setSubmitted(true);
-      await delay(2000);
+      await delay(submitDelay);
+      setSubmitted(false);
+    }
+  };
+
+  const handleDelete = async () => {
+    if (onDelete) {
+      setSubmitting(true);
+      setSubmitError(false);
+      const result = await onDelete(values);
+      setErrors(result.errors || {});
+      setSubmitError(!result.success);
+      setSubmitting(false);
+      setSubmitted(true);
+      await delay(submitDelay);
       setSubmitted(false);
     }
   };
@@ -167,6 +184,11 @@ export const Form: FC<Props> = ({
       }}
     >
       <form noValidate={true} onSubmit={handleSubmit} onBlur={handleBlur}>
+        {onDelete && (
+          <PrimaryButton type="button" onClick={handleDelete}>
+            Delete
+          </PrimaryButton>
+        )}
         <fieldset
           disabled={submitting || (submitted && !submitError)}
           css={css`
@@ -191,7 +213,7 @@ export const Form: FC<Props> = ({
               <PrimaryButton type="submit">{submitCaption}</PrimaryButton>
             </div>
           )}
-          {submitted && submitError && (
+          {/* {submitted && submitError && (
             <p
               css={css`
                 color: red;
@@ -208,7 +230,7 @@ export const Form: FC<Props> = ({
             >
               {successMessage}
             </p>
-          )}
+          )} */}
         </fieldset>
       </form>
     </FormContext.Provider>

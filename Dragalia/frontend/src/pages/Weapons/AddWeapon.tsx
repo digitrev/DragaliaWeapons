@@ -12,7 +12,7 @@ import {
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
 import { LoadingText } from '../../Loading';
-import { Field, SubmitOption } from '../Forms/Field';
+import { Field, SelectOption } from '../Forms/Field';
 import { Form, required, Values } from '../Forms/Form';
 
 export const AddWeapon = () => {
@@ -31,11 +31,11 @@ export const AddWeapon = () => {
     weaponTypeFilter,
     setWeaponTypeFilter,
   ] = useState<WeaponTypeData | null>(null);
-  const [weaponOptions, setWeaponOptions] = useState<SubmitOption[] | null>(
+  const [weaponOptions, setWeaponOptions] = useState<SelectOption[] | null>(
     null,
   );
 
-  const weaponToSubmit = (wd: WeaponData): SubmitOption => {
+  const weaponToSubmit = (wd: WeaponData): SelectOption => {
     return {
       label: `${wd.weapon}: ${wd.rarity}* ${wd.weaponSeries} ${
         wd.element === 'None' ? '' : wd.element
@@ -127,23 +127,27 @@ export const AddWeapon = () => {
 
   const handleSubmit = async (values: Values) => {
     const api = new PrivateApi();
-    const weaponData = await api.postWeapon({
-      weaponId: values.weaponId,
-      copies: 0,
-      copiesWanted: 0,
-      weaponLevel: 0,
-      weaponLevelWanted: 0,
-      unbind: 0,
-      unbindWanted: 0,
-      refine: 0,
-      refineWanted: 0,
-      slot: 0,
-      slotWanted: 0,
-      bonus: 0,
-      bonusWanted: 0,
-    });
+    const weaponData = values.weaponIds.forEach(
+      async (weaponId: number) =>
+        await api.postWeapon({
+          weaponId: weaponId,
+          copies: 0,
+          copiesWanted: 0,
+          weaponLevel: 0,
+          weaponLevelWanted: 0,
+          unbind: 0,
+          unbindWanted: 0,
+          refine: 0,
+          refineWanted: 0,
+          slot: 0,
+          slotWanted: 0,
+          bonus: 0,
+          bonusWanted: 0,
+        }),
+    );
 
     return { success: weaponData ? true : false };
+    // return { success: true };
   };
 
   return (
@@ -160,7 +164,7 @@ export const AddWeapon = () => {
       successMessage={'✔'}
       failureMessage={'❌'}
       validationRules={{
-        weaponId: [{ validator: required }],
+        weaponIds: [{ validator: required }],
       }}
     >
       <label
@@ -230,7 +234,7 @@ export const AddWeapon = () => {
       </label>
       {weaponOptions ? (
         // <div>weapon picker goes here</div>
-        <Field type="Select" submitOptions={weaponOptions} name="weaponId" />
+        <Field type="Select" selectOptions={weaponOptions} name="weaponIds" />
       ) : (
         //     <Select
         //       name="weaponOptions"

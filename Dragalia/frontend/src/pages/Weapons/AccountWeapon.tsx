@@ -1,8 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
-import { FC } from 'react';
+import React, { FC, Fragment } from 'react';
 import { AccountWeaponData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
+import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import { Form, Values, isInteger, required } from '../Forms/Form';
 import { Weapon } from './Weapon';
@@ -39,6 +40,19 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
     return { success: res };
   };
 
+  const handleDelete = async (values: Values) => {
+    const api = new PrivateApi();
+    let res: boolean;
+    try {
+      api.deleteWeapon(values.weaponId);
+      res = true;
+    } catch {
+      res = false;
+    }
+
+    return { success: res };
+  };
+
   const { weapon } = data;
 
   return (
@@ -55,6 +69,7 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
         showSubmit={false}
         successMessage={'✔'}
         failureMessage={'❌'}
+        onDelete={handleDelete}
         validationRules={{
           copies: [{ validator: isInteger }, { validator: required }],
           copiesWanted: [{ validator: isInteger }, { validator: required }],
