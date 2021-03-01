@@ -43,8 +43,8 @@ export const Example = () => {
       setWeaponTypes(weaponTypeData);
     };
     const doGetWeapons = async () => {
-      const api = new PrivateApi();
-      const weaponData = await api.getUntrackedWeapons();
+      const api = new PublicApi();
+      const weaponData = await api.getWeapons();
       setWeapons(weaponData);
       setWeaponOptions(weaponData);
     };

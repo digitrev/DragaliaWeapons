@@ -15,6 +15,10 @@ export interface AccountWeaponData {
   weapon?: WeaponData;
 }
 
+export interface DisplayWeaponData extends AccountWeaponData {
+  display: boolean;
+}
+
 export interface WeaponData {
   weaponId: number;
   weapon: string;

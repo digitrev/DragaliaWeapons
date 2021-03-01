@@ -1,12 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { FC } from 'react';
-import { AccountWeaponData } from '../../api/DataInterfaces';
+import { DisplayWeaponData } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
 import { AccountWeapon } from './AccountWeapon';
 
 interface Props {
-  data: AccountWeaponData[];
+  data: DisplayWeaponData[];
 }
 
 export const AccountWeaponList: FC<Props> = ({ data }) => {
@@ -23,19 +23,21 @@ export const AccountWeaponList: FC<Props> = ({ data }) => {
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
       `}
     >
-      {data.map((weapon) => (
-        <li
-          key={weapon.weaponId}
-          css={css`
-            border-top: 1px solid ${gray5};
-            ::first-of-type {
-              border-top: none;
-            }
-          `}
-        >
-          <AccountWeapon data={weapon} />
-        </li>
-      ))}
+      {data
+        .filter((w) => w.display)
+        .map((weapon) => (
+          <li
+            key={weapon.weaponId}
+            css={css`
+              border-top: 1px solid ${gray5};
+              ::first-of-type {
+                border-top: none;
+              }
+            `}
+          >
+            <AccountWeapon data={weapon} />
+          </li>
+        ))}
     </ul>
   );
 };

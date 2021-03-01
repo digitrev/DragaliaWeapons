@@ -1,25 +1,61 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { Fragment, useEffect, useState } from 'react';
-import { AccountWeaponData } from '../../api/DataInterfaces';
+import Select, { ActionMeta } from 'react-select';
+import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
+import {
+  AccountWeaponData,
+  DisplayWeaponData,
+  ElementData,
+  WeaponSeriesData,
+  WeaponTypeData,
+} from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
+import { PublicApi } from '../../api/PublicData';
 import { LoadingText } from '../../Loading';
-import { accent2, PrimaryButton } from '../../Styles';
 import { Page } from '../Page';
 import { AccountWeaponList } from './AccountWeaponList';
-import { AddWeapon } from './AddWeapon';
+// import ReactPaginate from 'react-paginate';
 
 export const AccountWeaponPage = () => {
   const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
   const [weaponsLoading, setWeaponsLoading] = useState(true);
-  const [addingWeapon, setAddingWeapon] = useState(false);
+  const [displayWeapons, setDisplayWeapons] = useState<
+    DisplayWeaponData[] | null
+  >(null);
 
-  const onClickWeaponButton = () => {
-    setAddingWeapon(!addingWeapon);
+  const [elements, setElements] = useState<ElementData[]>([]);
+  const [weaponSeries, setWeaponSeries] = useState<WeaponSeriesData[]>([]);
+  const [weaponTypes, setWeaponTypes] = useState<WeaponTypeData[]>([]);
+
+  const [elementFilter, setElementFilter] = useState<ElementData | null>(null);
+  const [
+    weaponSeriesFilter,
+    setWeaponSeriesFilter,
+  ] = useState<WeaponSeriesData | null>(null);
+  const [
+    weaponTypeFilter,
+    setWeaponTypeFilter,
+  ] = useState<WeaponTypeData | null>(null);
+
+  const weaponToDisplay = (weapon: AccountWeaponData): DisplayWeaponData => {
+    return { ...weapon, display: true };
   };
 
   useEffect(() => {
+    console.log('useEffect');
     let cancelled = false;
+    const doGetPublicData = async () => {
+      const api = new PublicApi();
+      const elementData = await api.getElements();
+      const weaponSeriesData = await api.getWeaponSeries();
+      const weaponTypeData = await api.getWeaponTypes();
+      if (!cancelled) {
+        setElements(elementData);
+        setWeaponSeries(weaponSeriesData);
+        setWeaponTypes(weaponTypeData);
+      }
+    };
     const doGetWeapons = async () => {
       const api = new PrivateApi();
       const weaponData = await api.getWeapons();
@@ -28,13 +64,77 @@ export const AccountWeaponPage = () => {
         setWeaponsLoading(false);
       }
     };
-    if (!addingWeapon) {
-      doGetWeapons();
-    }
+    doGetPublicData();
+    doGetWeapons();
     return () => {
       cancelled = true;
     };
-  }, [addingWeapon]);
+  }, []);
+
+  useEffect(() => {
+    let weaponFilter = weapons;
+    if (weaponFilter) {
+      if (elementFilter) {
+        weaponFilter = weaponFilter.filter(
+          (w) => w.weapon?.element === elementFilter.element,
+        );
+      }
+      if (weaponSeriesFilter) {
+        weaponFilter = weaponFilter.filter(
+          (w) => w.weapon?.weaponSeries === weaponSeriesFilter.weaponSeries,
+        );
+      }
+      if (weaponTypeFilter) {
+        weaponFilter = weaponFilter.filter(
+          (w) => w.weapon?.weaponType === weaponTypeFilter.weaponType,
+        );
+      }
+      if (weaponFilter.length > 20) {
+        weaponFilter = weaponFilter.slice(0, 20);
+      }
+      console.log('wf length', weaponFilter.length);
+      setDisplayWeapons(weaponFilter.map((w) => weaponToDisplay(w)));
+    }
+  }, [elementFilter, weaponSeriesFilter, weaponTypeFilter, weapons]);
+
+  const handleChangeElement = (
+    value: ElementData | null,
+    actionMeta: ActionMeta<ElementData>,
+  ) => {
+    setElementFilter(value);
+  };
+
+  const handleChangeWeaponSeries = (
+    value: WeaponSeriesData | null,
+    actionMeta: ActionMeta<WeaponSeriesData>,
+  ) => {
+    setWeaponSeriesFilter(value);
+  };
+
+  const handleChangeWeaponType = (
+    value: WeaponTypeData | null,
+    actionMeta: ActionMeta<WeaponTypeData>,
+  ) => {
+    setWeaponTypeFilter(value);
+  };
+
+  const getElementValue: getOptionValue<ElementData> = (option) =>
+    option.elementId.toString();
+
+  const getElementLabel: getOptionLabel<ElementData> = (option) =>
+    option.element;
+
+  const getWeaponSeriesValue: getOptionValue<WeaponSeriesData> = (option) =>
+    option.weaponSeriesId.toString();
+
+  const getWeaponSeriesLabel: getOptionLabel<WeaponSeriesData> = (option) =>
+    option.weaponSeries;
+
+  const getWeaponTypeValue: getOptionValue<WeaponTypeData> = (option) =>
+    option.weaponTypeId.toString();
+
+  const getWeaponTypeLabel: getOptionLabel<WeaponTypeData> = (option) =>
+    option.weaponType;
 
   return (
     <Page title="Your Weapons">
@@ -42,33 +142,67 @@ export const AccountWeaponPage = () => {
         <LoadingText />
       ) : (
         <Fragment>
-          <AccountWeaponList data={weapons || []} />
-          {addingWeapon && (
-            <div
-              css={css`
-                list-style: none;
-                margin: 10px 0 0 0;
-                padding: 0px 20px 10px 0px;
-                background-color: #fff;
-                border-bottom-left-radius: 4px;
-                border-bottom-right-radius: 4px;
-                border-top: 3px solid ${accent2};
-                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
-              `}
-            >
-              <AddWeapon />
-            </div>
-          )}
-          <div
+          <label
+            htmlFor="elements"
             css={css`
-              margin: 10px 0px 10px 0px;
-              padding: 10px 0px 10px 0px;
+              font-weight: bold;
             `}
           >
-            <PrimaryButton type="button" onClick={onClickWeaponButton}>
-              {addingWeapon ? 'Done' : 'Track Weapons'}
-            </PrimaryButton>
-          </div>
+            Element
+          </label>
+          {elements ? (
+            <Select
+              name="elements"
+              options={elements}
+              getOptionValue={getElementValue}
+              getOptionLabel={getElementLabel}
+              onChange={handleChangeElement}
+              isClearable={true}
+            />
+          ) : (
+            <LoadingText />
+          )}
+          <label
+            htmlFor="weaponSeries"
+            css={css`
+              font-weight: bold;
+            `}
+          >
+            Weapon Series
+          </label>
+          {weaponSeries ? (
+            <Select
+              name="weaponSeries"
+              options={weaponSeries}
+              getOptionValue={getWeaponSeriesValue}
+              getOptionLabel={getWeaponSeriesLabel}
+              onChange={handleChangeWeaponSeries}
+              isClearable={true}
+            />
+          ) : (
+            <LoadingText />
+          )}
+          <label
+            htmlFor="weaponType"
+            css={css`
+              font-weight: bold;
+            `}
+          >
+            Weapon Type
+          </label>
+          {weaponTypes ? (
+            <Select
+              name="weaponType"
+              options={weaponTypes}
+              getOptionValue={getWeaponTypeValue}
+              getOptionLabel={getWeaponTypeLabel}
+              onChange={handleChangeWeaponType}
+              isClearable={true}
+            />
+          ) : (
+            <LoadingText />
+          )}
+          <AccountWeaponList data={displayWeapons || []} />
         </Fragment>
       )}
     </Page>
