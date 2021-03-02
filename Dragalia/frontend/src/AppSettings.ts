@@ -4,6 +4,10 @@ export const webAPIUrl = `${server}/api`;
 
 export const submitDelay = 1500;
 
+export const displayLimit = 20;
+export const pageRangeDisplayed = 5;
+export const marginPagesDisplayed = 2;
+
 // export const authSettings = {
 //   domain: 'dev-7fftggv6.us.auth0.com',
 //   client_id: 'wlIoIEZate54qLoY07u9X7NtUHboaKTL',

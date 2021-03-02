@@ -1,14 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { FC } from 'react';
-import { DisplayWeaponData } from '../../api/DataInterfaces';
+import { AccountWeaponData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { Field } from '../Forms/Field';
 import { Form, Values, isInteger, required } from '../Forms/Form';
 import { Weapon } from './Weapon';
 
 interface Props {
-  data: DisplayWeaponData;
+  data: AccountWeaponData;
 }
 
 export const AccountWeapon: FC<Props> = ({ data }) => {

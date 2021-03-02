@@ -15,6 +15,10 @@ import { fontFamily, fontSize, gray2 } from './Styles';
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+      <link
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        rel="stylesheet"
+      ></link>
       <div
         css={css`
           font-family: ${fontFamily};

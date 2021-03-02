@@ -5,7 +5,6 @@ import Select, { ActionMeta } from 'react-select';
 import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
 import {
   AccountWeaponData,
-  DisplayWeaponData,
   ElementData,
   WeaponSeriesData,
   WeaponTypeData,
@@ -15,13 +14,18 @@ import { PublicApi } from '../../api/PublicData';
 import { LoadingText } from '../../Loading';
 import { Page } from '../Page';
 import { AccountWeaponList } from './AccountWeaponList';
-// import ReactPaginate from 'react-paginate';
+import ReactPaginate from 'react-paginate';
+import {
+  displayLimit,
+  marginPagesDisplayed,
+  pageRangeDisplayed,
+} from '../../AppSettings';
 
 export const AccountWeaponPage = () => {
   const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
   const [weaponsLoading, setWeaponsLoading] = useState(true);
   const [displayWeapons, setDisplayWeapons] = useState<
-    DisplayWeaponData[] | null
+    AccountWeaponData[] | null
   >(null);
 
   const [elements, setElements] = useState<ElementData[]>([]);
@@ -38,12 +42,10 @@ export const AccountWeaponPage = () => {
     setWeaponTypeFilter,
   ] = useState<WeaponTypeData | null>(null);
 
-  const weaponToDisplay = (weapon: AccountWeaponData): DisplayWeaponData => {
-    return { ...weapon, display: true };
-  };
+  const [offset, setOffset] = useState(0);
+  const [pageCount, setPageCount] = useState(1);
 
   useEffect(() => {
-    console.log('useEffect');
     let cancelled = false;
     const doGetPublicData = async () => {
       const api = new PublicApi();
@@ -89,13 +91,11 @@ export const AccountWeaponPage = () => {
           (w) => w.weapon?.weaponType === weaponTypeFilter.weaponType,
         );
       }
-      if (weaponFilter.length > 20) {
-        weaponFilter = weaponFilter.slice(0, 20);
-      }
-      console.log('wf length', weaponFilter.length);
-      setDisplayWeapons(weaponFilter.map((w) => weaponToDisplay(w)));
+      setPageCount(Math.ceil(weaponFilter.length / displayLimit));
+      weaponFilter = weaponFilter.slice(offset, offset + displayLimit);
+      setDisplayWeapons(weaponFilter);
     }
-  }, [elementFilter, weaponSeriesFilter, weaponTypeFilter, weapons]);
+  }, [elementFilter, offset, weaponSeriesFilter, weaponTypeFilter, weapons]);
 
   const handleChangeElement = (
     value: ElementData | null,
@@ -116,6 +116,10 @@ export const AccountWeaponPage = () => {
     actionMeta: ActionMeta<WeaponTypeData>,
   ) => {
     setWeaponTypeFilter(value);
+  };
+
+  const handlePageChange = (selectedItem: { selected: number }) => {
+    setOffset(selectedItem.selected * displayLimit);
   };
 
   const getElementValue: getOptionValue<ElementData> = (option) =>
@@ -203,6 +207,16 @@ export const AccountWeaponPage = () => {
             <LoadingText />
           )}
           <AccountWeaponList data={displayWeapons || []} />
+          <ReactPaginate
+            pageCount={pageCount}
+            pageRangeDisplayed={pageRangeDisplayed}
+            marginPagesDisplayed={marginPagesDisplayed}
+            onPageChange={handlePageChange}
+            containerClassName="pagination"
+            pageClassName="pages pagination"
+            activeClassName="active"
+            breakClassName="break-me"
+          />
         </Fragment>
       )}
     </Page>
