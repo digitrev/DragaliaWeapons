@@ -13,12 +13,14 @@ export const Material: FC<Props> = ({ data }) => {
     <div
       css={css`
         padding: 10px 0px;
+        width: 200px;
       `}
     >
       <div
         css={css`
           padding: 10px 0px;
-          font-size: 14px;
+          font-size: 15px;
+          /* font-weight: bold; */
         `}
       >
         {material}

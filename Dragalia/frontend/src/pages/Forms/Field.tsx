@@ -4,6 +4,7 @@ import { ChangeEvent, FC, useContext } from 'react';
 import { fontFamily, fontSize, gray5, gray2, gray6 } from '../../Styles';
 import { FormContext } from './Form';
 import Select, { ActionMeta, OptionsType } from 'react-select';
+import NumberFormat, { NumberFormatValues } from 'react-number-format';
 
 export interface SelectOption {
   label: string;
@@ -77,6 +78,17 @@ export const Field: FC<Props> = ({
     }
   };
 
+  const handleNumberFormatChange = (values: NumberFormatValues) => {
+    if (setValue) {
+      setValue(name, values.floatValue);
+    }
+    if (touched[name]) {
+      if (validate) {
+        validate(name);
+      }
+    }
+  };
+
   const handleSelectChange = (
     opt: SelectOption | null,
     // actionMeta: ActionMeta<SelectOption>,
@@ -134,7 +146,7 @@ export const Field: FC<Props> = ({
               {label}
             </label>
           )}
-          {(type === 'Text' || type === 'Password' || type === 'Number') && (
+          {(type === 'Text' || type === 'Password') && (
             <input
               type={type.toLowerCase()}
               id={name}
@@ -142,6 +154,19 @@ export const Field: FC<Props> = ({
               onChange={handleChange}
               onBlur={handleBlur}
               css={baseCSS}
+            />
+          )}
+          {type === 'Number' && (
+            <NumberFormat
+              displayType="input"
+              id={name}
+              value={values[name] === undefined ? '' : values[name]}
+              // onChange={handleChange}
+              onValueChange={handleNumberFormatChange}
+              onBlur={handleBlur}
+              css={baseCSS}
+              thousandSeparator={true}
+              isNumericString={true}
             />
           )}
           {type === 'TextArea' && (

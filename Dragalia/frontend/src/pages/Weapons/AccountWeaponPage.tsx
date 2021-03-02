@@ -147,26 +147,6 @@ export const AccountWeaponPage = () => {
       ) : (
         <Fragment>
           <label
-            htmlFor="elements"
-            css={css`
-              font-weight: bold;
-            `}
-          >
-            Element
-          </label>
-          {elements ? (
-            <Select
-              name="elements"
-              options={elements}
-              getOptionValue={getElementValue}
-              getOptionLabel={getElementLabel}
-              onChange={handleChangeElement}
-              isClearable={true}
-            />
-          ) : (
-            <LoadingText />
-          )}
-          <label
             htmlFor="weaponSeries"
             css={css`
               font-weight: bold;
@@ -201,6 +181,26 @@ export const AccountWeaponPage = () => {
               getOptionValue={getWeaponTypeValue}
               getOptionLabel={getWeaponTypeLabel}
               onChange={handleChangeWeaponType}
+              isClearable={true}
+            />
+          ) : (
+            <LoadingText />
+          )}
+          <label
+            htmlFor="elements"
+            css={css`
+              font-weight: bold;
+            `}
+          >
+            Element
+          </label>
+          {elements ? (
+            <Select
+              name="elements"
+              options={elements}
+              getOptionValue={getElementValue}
+              getOptionLabel={getElementLabel}
+              onChange={handleChangeElement}
               isClearable={true}
             />
           ) : (
