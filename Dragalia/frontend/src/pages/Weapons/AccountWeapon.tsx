@@ -95,10 +95,10 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
                 <Field name="refine" type="Number" />
               </td>
               <td>
-                <Field name="slot" type="Checkbox" />
+                <Field name="slot" type="Number" />
               </td>
               <td>
-                <Field name="bonus" type="Checkbox" />
+                <Field name="bonus" type="Number" />
               </td>
             </tr>
             <tr>
@@ -116,10 +116,10 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
                 <Field name="refineWanted" type="Number" />
               </td>
               <td>
-                <Field name="slotWanted" type="Checkbox" />
+                <Field name="slotWanted" type="Number" />
               </td>
               <td>
-                <Field name="bonusWanted" type="Checkbox" />
+                <Field name="bonusWanted" type="Number" />
               </td>
             </tr>
           </tbody>
