@@ -18,10 +18,10 @@ namespace DragaliaApi.Models
         public int UnbindWanted { get; set; }
         public int Refine { get; set; }
         public int RefineWanted { get; set; }
-        public bool Slot { get; set; }
-        public bool SlotWanted { get; set; }
-        public bool Bonus { get; set; }
-        public bool BonusWanted { get; set; }
+        public int Slot { get; set; }
+        public int SlotWanted { get; set; }
+        public int Bonus { get; set; }
+        public int BonusWanted { get; set; }
 
         public virtual Account Account { get; set; }
         public virtual Weapon Weapon { get; set; }

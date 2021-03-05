@@ -313,6 +313,7 @@ namespace DragaliaApi.Data
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Facilities)
                     .HasForeignKey(d => d.CategoryId)
+                    .OnDelete(DeleteBehavior.SetNull)
                     .HasConstraintName("FK_Facility_Category");
             });
 
@@ -365,6 +366,7 @@ namespace DragaliaApi.Data
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Materials)
                     .HasForeignKey(d => d.CategoryId)
+                    .OnDelete(DeleteBehavior.SetNull)
                     .HasConstraintName("FK_Material_Category");
             });
 
