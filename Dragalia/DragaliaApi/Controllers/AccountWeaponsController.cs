@@ -225,9 +225,11 @@ namespace DragaliaApi.Controllers
                     && x.accountWeapon.Copies < x.weaponUpgrade.Step
                     && x.weaponUpgrade.Step <= x.accountWeapon.CopiesWanted)
                     || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Slots"
-                    && !x.accountWeapon.Slot && x.accountWeapon.SlotWanted)
+                    && x.accountWeapon.Slot < x.weaponUpgrade.Step
+                    && x.weaponUpgrade.Step <= x.accountWeapon.SlotWanted)
                     || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Weapon Bonus"
-                    && !x.accountWeapon.Bonus && x.accountWeapon.BonusWanted)
+                    && x.accountWeapon.Bonus < x.weaponUpgrade.Step
+                    && x.weaponUpgrade.Step <= x.accountWeapon.BonusWanted)
                     )
                 .Select(x => new MaterialCost
                 {
