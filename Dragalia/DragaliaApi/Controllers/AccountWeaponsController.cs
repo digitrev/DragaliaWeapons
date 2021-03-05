@@ -185,6 +185,61 @@ namespace DragaliaApi.Controllers
             return NoContent();
         }
 
+        [HttpGet("costs")]
+        public async Task<ActionResult<IEnumerable<MaterialCost>>> GetWeaponCosts()
+        {
+            var accountID = await AccountsController.GetAccountID();
+            var materialCosts = new List<MaterialCost>();
+
+            //Weapon crafting
+            materialCosts.AddRange(await _context.AccountWeapons
+                .Where(aw => aw.AccountId == accountID && aw.CopiesWanted > 0 && aw.Copies == 0)
+                .Include(aw => aw.Weapon)
+                .ThenInclude(w => w.WeaponCraftings)
+                .ThenInclude(wc => wc.Material)
+                .ThenInclude(m => m.Category)
+                .SelectMany(aw => aw.Weapon.WeaponCraftings,
+                    (aw, wc) => new MaterialCost
+                    {
+                        Product = $"Craft: {aw.Weapon.Weapon1}",
+                        Material = _mapper.Map<MaterialDTO>(wc.Material),
+                        Quantity = wc.Quantity
+                    })
+                .ToListAsync());
+
+            //Unbinding, refining, and copies
+            materialCosts.AddRange(await _context.AccountWeapons
+                .Where(aw => aw.AccountId == accountID)
+                .Include(aw => aw.Weapon)
+                .ThenInclude(w => w.WeaponUpgrades)
+                .ThenInclude(wu => wu.UpgradeType)
+                .SelectMany(aw => aw.Weapon.WeaponUpgrades,
+                    (accountWeapon, weaponUpgrade) => new { accountWeapon, weaponUpgrade })
+                .Where(x => (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Unbind"
+                    && x.accountWeapon.Unbind < x.weaponUpgrade.Step 
+                    && x.weaponUpgrade.Step <= x.accountWeapon.UnbindWanted)
+                    || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Refinement"
+                    && x.accountWeapon.Refine < x.weaponUpgrade.Step
+                    && x.weaponUpgrade.Step <= x.accountWeapon.RefineWanted)
+                    || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Copies"
+                    && x.accountWeapon.Copies < x.weaponUpgrade.Step
+                    && x.weaponUpgrade.Step <= x.accountWeapon.CopiesWanted)
+                    || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Slots"
+                    && !x.accountWeapon.Slot && x.accountWeapon.SlotWanted)
+                    || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Weapon Bonus"
+                    && !x.accountWeapon.Bonus && x.accountWeapon.BonusWanted)
+                    )
+                .Select(x => new MaterialCost
+                {
+                    Product = $"{x.weaponUpgrade.UpgradeType.UpgradeType1} {x.accountWeapon.Weapon.Weapon1} to {x.weaponUpgrade.Step}",
+                    Material = _mapper.Map<MaterialDTO>(x.weaponUpgrade.Material),
+                    Quantity = x.weaponUpgrade.Quantity
+                })
+                .ToListAsync());
+
+            return materialCosts;
+        }
+
         private bool AccountWeaponExists(int accountID, int weaponID) => _context.AccountWeapons.Any(e => e.AccountId == accountID
                                                                                                           && e.WeaponId == weaponID);
     }
