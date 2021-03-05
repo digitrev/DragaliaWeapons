@@ -8,7 +8,7 @@ namespace DragaliaApi.Models.DTO
     public class MaterialCost
     {
         public string Product { get; set; }
-        public MaterialDTO Material { get; set; }
+        public virtual MaterialDTO Material { get; set; }
         public int Quantity { get; set; }
     }
 }
