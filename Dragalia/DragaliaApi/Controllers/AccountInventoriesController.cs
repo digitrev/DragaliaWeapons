@@ -51,22 +51,21 @@ namespace DragaliaApi.Controllers
         public async Task<ActionResult<AccountInventoryDTO>> GetAccountInventory(string materialID)
         {
             var accountID = await AccountsController.GetAccountID();
-            var accountInventory = await _context.AccountInventories.FindAsync(accountID, materialID);
-
-            if (accountInventory == null)
+            try
             {
-                return NotFound();
+                return await _context.AccountInventories.Where(ai => ai.AccountId == accountID && ai.MaterialId == materialID)
+                                                        .Include(ai => ai.Material)
+                                                        .ThenInclude(m => m.Category)
+                                                        .Where(ai => ai.Material.Category != null)
+                                                        .OrderBy(ai => ai.Material.SortPath)
+                                                        .Select(ai => _mapper.Map<AccountInventoryDTO>(ai))
+                                                        .FirstAsync();
+            }
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
             }
 
-            _context.Entry(accountInventory)
-                .Reference(ai => ai.Material)
-                .Load();
-
-            _context.Entry(accountInventory.Material)
-                .Reference(m => m.Category)
-                .Load();
-
-            return _mapper.Map<AccountInventoryDTO>(accountInventory);
         }
 
         // GET: api/AccountInventories/untracked

@@ -57,30 +57,22 @@ namespace DragaliaApi.Controllers
         public async Task<ActionResult<AccountWeaponDTO>> GetAccountWeapon(int weaponID)
         {
             var accountID = await AccountsController.GetAccountID();
-            var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
-
-            if (accountWeapon == null)
+            try
             {
-                return NotFound();
+                return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID && aw.WeaponId == weaponID)
+                                                    .Include(aw => aw.Weapon)
+                                                    .ThenInclude(w => w.Element)
+                                                    .Include(aw => aw.Weapon)
+                                                    .ThenInclude(w => w.WeaponSeries)
+                                                    .Include(aw => aw.Weapon)
+                                                    .ThenInclude(w => w.WeaponType)
+                                                    .Select(aw => _mapper.Map<AccountWeaponDTO>(aw))
+                                                    .FirstAsync();
             }
-
-            _context.Entry(accountWeapon)
-                    .Reference(aw => aw.Weapon)
-                    .Load();
-
-            _context.Entry(accountWeapon.Weapon)
-                    .Reference(w => w.Element)
-                    .Load();
-
-            _context.Entry(accountWeapon.Weapon)
-                    .Reference(w => w.WeaponSeries)
-                    .Load();
-
-            _context.Entry(accountWeapon.Weapon)
-                    .Reference(w => w.WeaponType)
-                    .Load();
-
-            return _mapper.Map<AccountWeaponDTO>(accountWeapon);
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
+            }
         }
 
         // GET /api/AccountWeapons/untracked
@@ -201,13 +193,13 @@ namespace DragaliaApi.Controllers
                 .SelectMany(aw => aw.Weapon.WeaponCraftings,
                     (aw, wc) => new MaterialCost
                     {
-                        Product = $"Craft: {aw.Weapon.Weapon1}",
+                        Product = $"{aw.Weapon.Weapon1}: Craft",
                         Material = _mapper.Map<MaterialDTO>(wc.Material),
                         Quantity = wc.Quantity
                     })
                 .ToListAsync());
 
-            //Unbinding, refining, and copies
+            //Unbinding, refining, copies, slots, and bonuses
             materialCosts.AddRange(await _context.AccountWeapons
                 .Where(aw => aw.AccountId == accountID)
                 .Include(aw => aw.Weapon)
@@ -216,7 +208,7 @@ namespace DragaliaApi.Controllers
                 .SelectMany(aw => aw.Weapon.WeaponUpgrades,
                     (accountWeapon, weaponUpgrade) => new { accountWeapon, weaponUpgrade })
                 .Where(x => (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Unbind"
-                    && x.accountWeapon.Unbind < x.weaponUpgrade.Step 
+                    && x.accountWeapon.Unbind < x.weaponUpgrade.Step
                     && x.weaponUpgrade.Step <= x.accountWeapon.UnbindWanted)
                     || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Refinement"
                     && x.accountWeapon.Refine < x.weaponUpgrade.Step
@@ -233,11 +225,27 @@ namespace DragaliaApi.Controllers
                     )
                 .Select(x => new MaterialCost
                 {
-                    Product = $"{x.weaponUpgrade.UpgradeType.UpgradeType1} {x.accountWeapon.Weapon.Weapon1} to {x.weaponUpgrade.Step}",
+                    Product = $"{x.accountWeapon.Weapon.Weapon1}: {x.weaponUpgrade.UpgradeType.UpgradeType1}-{x.weaponUpgrade.Step}",
                     Material = _mapper.Map<MaterialDTO>(x.weaponUpgrade.Material),
                     Quantity = x.weaponUpgrade.Quantity
                 })
                 .ToListAsync());
+
+            //Weapon level
+            materialCosts.AddRange(await _context.AccountWeapons
+                .Where(aw => aw.AccountId == accountID && aw.CopiesWanted > 0 && aw.Copies == 0)
+                .Include(aw => aw.Weapon)
+                .Join(_context.WeaponLevels.Include(wl => wl.Material),
+                    aw => aw.Weapon.Rarity,
+                    wl => wl.Rarity,
+                    (aw, wl) => new MaterialCost
+                    {
+                        Product = $"{aw.Weapon.Weapon1}: Level-{wl.WeaponLevel1}",
+                        Material = _mapper.Map<MaterialDTO>(wl.Material),
+                        Quantity = wl.Quantity
+                    })
+                .ToListAsync());
+
 
             return materialCosts;
         }
