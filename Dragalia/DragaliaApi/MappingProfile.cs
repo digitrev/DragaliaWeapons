@@ -50,6 +50,13 @@ namespace DragaliaApi
                            opt => opt.MapFrom(src => src.Material1));
             CreateMap<MaterialDTO, Material>();
 
+            CreateMap<Facility, FacilityDTO>()
+                .ForMember(dest => dest.Category,
+                           opt => opt.MapFrom(src => src.Category.Category1))
+                .ForMember(dest => dest.Facility,
+                           opt => opt.MapFrom(src => src.Facility1));
+            CreateMap<FacilityDTO, Facility>();
+
         }
     }
 }
