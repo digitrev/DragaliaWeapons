@@ -12,6 +12,7 @@ namespace DragaliaApi
     {
         public MappingProfile()
         {
+            //Account stuff
             CreateMap<Account, AccountDTO>();
             CreateMap<AccountDTO, Account>();
 
@@ -21,6 +22,10 @@ namespace DragaliaApi
             CreateMap<AccountInventory, AccountInventoryDTO>();
             CreateMap<AccountInventoryDTO, AccountInventory>();
 
+            CreateMap<AccountFacility, AccountFacilityDTO>();
+            CreateMap<AccountFacilityDTO, AccountFacility>();
+
+            //Weapon data
             CreateMap<Weapon, WeaponDTO>()
                 .ForMember(dest => dest.Element,
                            opt => opt.MapFrom(src => src.Element.Element1))
@@ -50,6 +55,7 @@ namespace DragaliaApi
                            opt => opt.MapFrom(src => src.Material1));
             CreateMap<MaterialDTO, Material>();
 
+            //Facility data
             CreateMap<Facility, FacilityDTO>()
                 .ForMember(dest => dest.Category,
                            opt => opt.MapFrom(src => src.Category.Category1))
