@@ -1090,4 +1090,17 @@
     <Property Name="NewSchema" Value="den" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="21d14ef3-80da-4d90-bbc4-e10e9b89a613" ChangeDateTime="03/06/2021 18:58:55">
+    <Property Name="ElementName" Value="[dbo].[Tally]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="util" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dfca0b12-ab8d-4f5b-83ea-a7489520d056" ChangeDateTime="03/06/2021 18:59:02">
+    <Property Name="ElementName" Value="[util].[Tally].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[util].[Tally]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="N" />
+  </Operation>
 </Operations>

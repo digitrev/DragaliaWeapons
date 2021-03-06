@@ -12,3 +12,18 @@ Post-Deployment Script Template
 PRINT 'Initializing denormalized tables'
 
 EXEC [den].[spInitializeDen]
+
+PRINT 'Initializing tally table'
+
+TRUNCATE TABLE util.Tally
+
+SET IDENTITY_INSERT util.Tally ON
+
+INSERT util.Tally (N)
+SELECT TOP 100000 ROW_NUMBER() OVER (
+		ORDER BY c1.column_id
+		)
+FROM sys.all_columns c1
+	,sys.all_columns c2
+
+SET IDENTITY_INSERT util.Tally OFF
