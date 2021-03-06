@@ -73,6 +73,7 @@
     <Folder Include="util" />
     <Folder Include="util\Functions" />
     <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="util\Table" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -146,6 +147,9 @@
     <Build Include="den\Tables\MaterialMetadata.sql" />
     <Build Include="den\Tables\FacilityMetadata.sql" />
     <Build Include="dbo\Stored Procedures\spFillInventory.sql" />
+    <Build Include="util\Table\Tally.sql" />
+    <Build Include="dbo\Stored Procedures\spFillFacility.sql" />
+    <Build Include="dbo\Stored Procedures\spFillWeapon.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

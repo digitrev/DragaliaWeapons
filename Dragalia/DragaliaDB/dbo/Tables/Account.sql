@@ -17,5 +17,7 @@ AS
 BEGIN
 	SET NOCOUNT ON
 
+	EXEC dbo.spFillFacility
 	EXEC dbo.spFillInventory
+	exec dbo.spFillWeapon
 END
