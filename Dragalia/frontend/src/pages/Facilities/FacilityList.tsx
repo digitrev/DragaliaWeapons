@@ -1,23 +1,24 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { FC } from 'react';
-import { MaterialData, MaterialCategoryData } from '../../api/DataInterfaces';
+import { FacilityCategoryData, FacilityData } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
-import { MaterialCategory } from './MaterialCategory';
+import { FacilityCategory } from './FacilityCategory';
 
 interface Props {
-  data: MaterialData[];
+  data: FacilityData[];
 }
 
-export const MaterialList: FC<Props> = ({ data }) => {
-  const categories: MaterialCategoryData[] = [];
-  [...Array.from(new Set(data.map((material) => material.category)))].forEach(
+export const FacilityList: FC<Props> = ({ data }) => {
+  const categories: FacilityCategoryData[] = [];
+  [...Array.from(new Set(data.map((facility) => facility.category)))].forEach(
     (cat) =>
       categories.push({
         category: cat,
-        materials: data.filter((mat) => mat.category === cat),
+        facilities: data.filter((fac) => fac.category === cat),
       }),
   );
+
   return (
     <ul
       css={css`
@@ -41,7 +42,7 @@ export const MaterialList: FC<Props> = ({ data }) => {
             }
           `}
         >
-          <MaterialCategory data={category} />
+          <FacilityCategory data={category} />
         </li>
       ))}
     </ul>

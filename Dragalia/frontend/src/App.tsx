@@ -3,6 +3,8 @@ import { css, jsx } from '@emotion/react';
 import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Example } from './pages/Example';
+import { AccountFacilityPage } from './pages/Facilities/AccountFacilityPage';
+import { FacilityPage } from './pages/Facilities/FacilityPage';
 import { Header } from './pages/Header';
 import { HomePage } from './pages/HomePage';
 import { InventoryPage } from './pages/Materials/InventoryPage';
@@ -32,7 +34,9 @@ const App: React.FC = () => {
           <Route exact path="/" component={HomePage} />
           <Route path="/weapons" component={WeaponsPage} />
           <Route path="/materials" component={MaterialPage} />
+          <Route path="/facilities" component={FacilityPage} />
           <Route path="/account/weapons" component={AccountWeaponPage} />
+          <Route path="/account/facilities" component={AccountFacilityPage} />
           <Route path="/account/inventory" component={InventoryPage} />
           <Route path="/example" component={Example} />
           <Route component={NotFoundPage} />

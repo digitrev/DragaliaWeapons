@@ -30,14 +30,45 @@ export interface MaterialData {
   category: string;
 }
 
-export interface CategoryData {
+export interface MaterialCategoryData {
   category: string;
   materials: MaterialData[];
+}
+
+export interface AccountInventoryData {
+  materialId: string;
+  quantity: number;
+  material?: MaterialData;
 }
 
 export interface InventoryCategoryData {
   category: string;
   items: AccountInventoryData[];
+}
+
+export interface FacilityData {
+  facilityId: number;
+  facility: string;
+  limit: number;
+  category: string;
+}
+
+export interface FacilityCategoryData {
+  category: string;
+  facilities: FacilityData[];
+}
+
+export interface AccountFacilityCategoryData {
+  category: string;
+  accountFacilities: AccountFacilityData[];
+}
+
+export interface AccountFacilityData {
+  facilityId: number;
+  copyNumber: number;
+  currentLevel: number;
+  wantedLevel: number;
+  facility?: FacilityData;
 }
 
 export interface ElementData {
@@ -55,8 +86,8 @@ export interface WeaponSeriesData {
   weaponSeries: string;
 }
 
-export interface AccountInventoryData {
-  materialId: string;
+export interface MaterialCosts {
+  product: string;
+  material: MaterialData;
   quantity: number;
-  material?: MaterialData;
 }

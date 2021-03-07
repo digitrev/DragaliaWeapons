@@ -1,23 +1,36 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { FC } from 'react';
-import { MaterialData, MaterialCategoryData } from '../../api/DataInterfaces';
+import {
+  AccountFacilityCategoryData,
+  AccountFacilityData,
+} from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
-import { MaterialCategory } from './MaterialCategory';
+import { AccountFacilityCategory } from './AccountFacilityCategory';
 
 interface Props {
-  data: MaterialData[];
+  data: AccountFacilityData[];
 }
 
-export const MaterialList: FC<Props> = ({ data }) => {
-  const categories: MaterialCategoryData[] = [];
-  [...Array.from(new Set(data.map((material) => material.category)))].forEach(
-    (cat) =>
-      categories.push({
-        category: cat,
-        materials: data.filter((mat) => mat.category === cat),
-      }),
+export const AccountFacilityList: FC<Props> = ({ data }) => {
+  const categories: AccountFacilityCategoryData[] = [];
+  [
+    ...Array.from(
+      new Set(
+        data
+          .filter((accountFacility) => accountFacility.facility !== undefined)
+          .map((accountFacility) => accountFacility.facility!.category),
+      ),
+    ),
+  ].forEach((cat) =>
+    categories.push({
+      category: cat,
+      accountFacilities: data.filter(
+        (accountFacility) => accountFacility.facility!.category === cat,
+      ),
+    }),
   );
+
   return (
     <ul
       css={css`
@@ -41,7 +54,7 @@ export const MaterialList: FC<Props> = ({ data }) => {
             }
           `}
         >
-          <MaterialCategory data={category} />
+          <AccountFacilityCategory data={category} />
         </li>
       ))}
     </ul>

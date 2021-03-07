@@ -1,15 +1,17 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { InventoryCategoryData } from '../../api/DataInterfaces';
+import { AccountFacilityCategoryData } from '../../api/DataInterfaces';
 import { gray5 } from '../../Styles';
-import { Inventory } from './Inventory';
+import { AccountFacility } from './AccountFacility';
 
 interface Props {
-  data: InventoryCategoryData;
+  data: AccountFacilityCategoryData;
 }
 
-export const InventoryCategory: FC<Props> = ({ data: { category, items } }) => {
+export const AccountFacilityCategory: FC<Props> = ({
+  data: { category, accountFacilities },
+}) => {
   return (
     <div
       css={css`
@@ -35,9 +37,9 @@ export const InventoryCategory: FC<Props> = ({ data: { category, items } }) => {
           box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
         `}
       >
-        {items.map((item) => (
+        {accountFacilities.map((accountFacility) => (
           <li
-            key={item.materialId}
+            key={`${accountFacility.facilityId} ${accountFacility.copyNumber}`}
             css={css`
               border-top: 1px solid ${gray5};
               ::first-of-type {
@@ -45,7 +47,7 @@ export const InventoryCategory: FC<Props> = ({ data: { category, items } }) => {
               }
             `}
           >
-            <Inventory data={item} />
+            <AccountFacility data={accountFacility} />
           </li>
         ))}
       </ul>

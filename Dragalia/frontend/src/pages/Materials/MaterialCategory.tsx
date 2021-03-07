@@ -1,16 +1,17 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { CategoryData } from '../../api/DataInterfaces';
+import { MaterialCategoryData } from '../../api/DataInterfaces';
 import { gray5 } from '../../Styles';
 import { Material } from './Material';
 
 interface Props {
-  data: CategoryData;
+  data: MaterialCategoryData;
 }
 
-export const MaterialCategory: FC<Props> = ({ data }) => {
-  const { category, materials } = data;
+export const MaterialCategory: FC<Props> = ({
+  data: { category, materials },
+}) => {
   return (
     <div
       css={css`

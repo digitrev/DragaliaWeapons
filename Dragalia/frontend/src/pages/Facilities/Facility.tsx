@@ -1,14 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { WeaponData } from '../../api/DataInterfaces';
+import { FacilityData } from '../../api/DataInterfaces';
 
 interface Props {
-  data: WeaponData;
+  data: FacilityData;
+  showLimit?: boolean;
 }
 
-export const Weapon: FC<Props> = ({
-  data: { weapon, weaponSeries, weaponType, rarity, element },
+export const Facility: FC<Props> = ({
+  data: { facility, limit },
+  showLimit = true,
 }) => {
   return (
     <div
@@ -22,12 +24,9 @@ export const Weapon: FC<Props> = ({
           font-size: 19px;
         `}
       >
-        {weapon}
+        {facility}
       </div>
-      <div>
-        {rarity}* {weaponSeries} {element === 'None' ? '' : element}{' '}
-        {weaponType}
-      </div>
+      {showLimit && <div>Max {limit}</div>}
     </div>
   );
 };

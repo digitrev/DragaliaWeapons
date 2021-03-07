@@ -1,15 +1,17 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { InventoryCategoryData } from '../../api/DataInterfaces';
+import { FacilityCategoryData } from '../../api/DataInterfaces';
 import { gray5 } from '../../Styles';
-import { Inventory } from './Inventory';
+import { Facility } from './Facility';
 
 interface Props {
-  data: InventoryCategoryData;
+  data: FacilityCategoryData;
 }
 
-export const InventoryCategory: FC<Props> = ({ data: { category, items } }) => {
+export const FacilityCategory: FC<Props> = ({
+  data: { category, facilities },
+}) => {
   return (
     <div
       css={css`
@@ -35,9 +37,9 @@ export const InventoryCategory: FC<Props> = ({ data: { category, items } }) => {
           box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
         `}
       >
-        {items.map((item) => (
+        {facilities.map((facility) => (
           <li
-            key={item.materialId}
+            key={facility.facilityId}
             css={css`
               border-top: 1px solid ${gray5};
               ::first-of-type {
@@ -45,7 +47,7 @@ export const InventoryCategory: FC<Props> = ({ data: { category, items } }) => {
               }
             `}
           >
-            <Inventory data={item} />
+            <Facility data={facility} showLimit={facility.limit > 1} />
           </li>
         ))}
       </ul>

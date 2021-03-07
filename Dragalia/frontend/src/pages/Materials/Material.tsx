@@ -7,8 +7,7 @@ interface Props {
   data: MaterialData;
 }
 
-export const Material: FC<Props> = ({ data }) => {
-  const { material } = data;
+export const Material: FC<Props> = ({ data: { material } }) => {
   return (
     <div
       css={css`
