@@ -1,0 +1,4 @@
+﻿CREATE TABLE [util].[Tally] (
+	[N] INT NOT NULL IDENTITY(1, 1)
+	,CONSTRAINT [PK_Tally] PRIMARY KEY CLUSTERED ([N])
+	)

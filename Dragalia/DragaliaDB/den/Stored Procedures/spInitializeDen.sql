@@ -422,4 +422,20 @@ BEGIN
 			,[Category] NVARCHAR(50)
 			,[SortPath] NVARCHAR(255)
 			)
+
+	TRUNCATE TABLE [den].[FacilityMetadata]
+
+	SET @Json = 
+		N'[{"Facility":"Halidom","Category":"Halidom"},{"Facility":"Rupie Mine","Category":"Production"},{"Facility":"Dragontree","Category":"Production"},{"Facility":"Flame Altar","Category":"Altars"},{"Facility":"Water Altar","Category":"Altars"},{"Facility":"Wind Altar","Category":"Altars"},{"Facility":"Light Altar","Category":"Altars"},{"Facility":"Shadow Altar","Category":"Altars"},{"Facility":"Sword Dojo","Category":"Dojos"},{"Facility":"Blade Dojo","Category":"Dojos"},{"Facility":"Dagger Dojo","Category":"Dojos"},{"Facility":"Axe Dojo","Category":"Dojos"},{"Facility":"Lance Dojo","Category":"Dojos"},{"Facility":"Bow Dojo","Category":"Dojos"},{"Facility":"Wand Dojo","Category":"Dojos"},{"Facility":"Staff Dojo","Category":"Dojos"},{"Facility":"Manacaster Dojo","Category":"Dojos"},{"Facility":"Flame Dracolith","Category":"Dracoliths"},{"Facility":"Water Dracolith","Category":"Dracoliths"},{"Facility":"Wind Dracolith","Category":"Dracoliths"},{"Facility":"Light Dracolith","Category":"Dracoliths"},{"Facility":"Shadow Dracolith","Category":"Dracoliths"},{"Facility":"Red Flowers","Category":"Decoration"},{"Facility":"Blue Flowers","Category":"Decoration"},{"Facility":"Conifer Tree","Category":"Decoration"},{"Facility":"Broadleaf Tree","Category":"Decoration"},{"Facility":"Battle Standard","Category":"Decoration"},{"Facility":"Circus Tent","Category":"Event Facility"},{"Facility":"Balloon Wagon","Category":"Decoration"},{"Facility":"Fafnir Statue (Flame)","Category":"Fafnir Statues"},{"Facility":"Fafnir Statue (Water)","Category":"Fafnir Statues"},{"Facility":"Fafnir Statue (Wind)","Category":"Fafnir Statues"},{"Facility":"Fafnir Statue (Light)","Category":"Fafnir Statues"},{"Facility":"Fafnir Statue (Shadow)","Category":"Fafnir Statues"},{"Facility":"Wind Shrine","Category":"Event Facility"},{"Facility":"Wishmill","Category":"Decoration"},{"Facility":"Seabed Stage","Category":"Event Facility"},{"Facility":"Palm Tree","Category":"Decoration"},{"Facility":"Smithy","Category":"Halidom"},{"Facility":"Sweet Retreat","Category":"Event Facility"},{"Facility":"Jack-o''-Lantern","Category":"Decoration"},{"Facility":"Yuletree","Category":"Event Facility"},{"Facility":"Snowdrake","Category":"Decoration"},{"Facility":"Library Obscura","Category":"Event Facility"},{"Facility":"Lectern","Category":"Decoration"},{"Facility":"Dragoñata","Category":"Event Facility"},{"Facility":"Eggy Luca","Category":"Decoration"},{"Facility":"Eggy Sarisse","Category":"Decoration"},{"Facility":"Magma Slime Statue","Category":"Slime Statues"},{"Facility":"Aqua Slime Statue","Category":"Slime Statues"},{"Facility":"Aero Slime Statue","Category":"Slime Statues"},{"Facility":"Twinkling Slime Statue","Category":"Slime Statues"},{"Facility":"Poison Slime Statue","Category":"Slime Statues"},{"Facility":"Arctos Monument","Category":"Event Facility"},{"Facility":"Iron Weather Vane","Category":"Decoration"},{"Facility":"Pumpkin Mariti","Category":"Decoration"},{"Facility":"Metall","Category":"Decoration"},{"Facility":"Flame Tree","Category":"Agito Trees"},{"Facility":"Water Tree","Category":"Agito Trees"},{"Facility":"Wind Tree","Category":"Agito Trees"},{"Facility":"Light Tree","Category":"Agito Trees"},{"Facility":"Shadow Tree","Category":"Agito Trees"},{"Facility":"The Hungerdome","Category":"Event Facility"},{"Facility":"Foodie''s Fork","Category":"Decoration"},{"Facility":"Festival Stage","Category":"Event Facility"},{"Facility":"Hinomotoan Fan","Category":"Decoration"},{"Facility":"Statue of Ilia","Category":"Event Facility"},{"Facility":"Opera House","Category":"Event Facility"},{"Facility":"Double Bass","Category":"Decoration"},{"Facility":"Cleansing Fount","Category":"Event Facility"},{"Facility":"Little Pi Plushie","Category":"Decoration"}]'
+
+	INSERT [den].[FacilityMetadata] (
+		[Facility]
+		,[Category]
+		)
+	SELECT [Facility]
+		,[Category]
+	FROM OPENJSON(@Json) WITH (
+			[Facility] NVARCHAR(50)
+			,[Category] NVARCHAR(50)
+			)
 END

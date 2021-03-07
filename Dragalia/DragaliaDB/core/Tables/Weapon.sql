@@ -11,3 +11,13 @@
 	,CONSTRAINT [FK_Weapon_WeaponType] FOREIGN KEY ([WeaponTypeID]) REFERENCES [core].[WeaponType]([WeaponTypeID]) ON DELETE CASCADE
 	,CONSTRAINT [FK_Weapon_Element] FOREIGN KEY ([ElementID]) REFERENCES [core].[Element]([ElementID]) ON DELETE CASCADE
 	)
+GO
+
+CREATE TRIGGER [core].[Trigger_Weapon] ON [core].[Weapon]
+AFTER INSERT
+AS
+BEGIN
+	SET NOCOUNT ON
+
+	EXEC dbo.spFillWeapon
+END

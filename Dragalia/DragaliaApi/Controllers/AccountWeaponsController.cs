@@ -210,20 +210,20 @@ namespace DragaliaApi.Controllers
                     .SelectMany(aw => aw.Weapon.WeaponUpgrades,
                         (accountWeapon, weaponUpgrade) => new { accountWeapon, weaponUpgrade })
                     .Where(x => (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Unbind"
-                        && x.accountWeapon.Unbind < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.UnbindWanted)
+                                 && x.accountWeapon.Unbind < x.weaponUpgrade.Step
+                                 && x.weaponUpgrade.Step <= x.accountWeapon.UnbindWanted)
                         || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Refinement"
-                        && x.accountWeapon.Refine < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.RefineWanted)
+                            && x.accountWeapon.Refine < x.weaponUpgrade.Step
+                            && x.weaponUpgrade.Step <= x.accountWeapon.RefineWanted)
                         || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Copies"
-                        && x.accountWeapon.Copies < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.CopiesWanted)
+                            && x.accountWeapon.Copies < x.weaponUpgrade.Step
+                            && x.weaponUpgrade.Step <= x.accountWeapon.CopiesWanted)
                         || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Slots"
-                        && x.accountWeapon.Slot < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.SlotWanted)
+                            && x.accountWeapon.Slot < x.weaponUpgrade.Step
+                            && x.weaponUpgrade.Step <= x.accountWeapon.SlotWanted)
                         || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Weapon Bonus"
-                        && x.accountWeapon.Bonus < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.BonusWanted)
+                            && x.accountWeapon.Bonus < x.weaponUpgrade.Step
+                            && x.weaponUpgrade.Step <= x.accountWeapon.BonusWanted)
                         )
                     .Select(x => new MaterialCost
                     {

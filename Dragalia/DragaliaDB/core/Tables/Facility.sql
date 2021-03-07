@@ -7,3 +7,13 @@
 	,CONSTRAINT [PK_Facility] PRIMARY KEY ([FacilityID])
 	,CONSTRAINT [FK_Facility_Category] FOREIGN KEY ([CategoryID]) REFERENCES [core].[Category]([CategoryID]) ON DELETE SET NULL
 	)
+GO
+
+CREATE TRIGGER [core].[Trigger_Facility] ON [core].[Facility]
+AFTER INSERT
+AS
+BEGIN
+	SET NOCOUNT ON
+
+	EXEC dbo.spFillFacility
+END
