@@ -192,12 +192,24 @@ namespace DragaliaApi.Controllers
                     .ThenInclude(w => w.WeaponCraftings)
                     .ThenInclude(wc => wc.Material)
                     .ThenInclude(m => m.Category)
+                    .Include(aw => aw.Weapon)
+                    .ThenInclude(w => w.Element)
+                    .Include(aw => aw.Weapon)
+                    .ThenInclude(w => w.WeaponSeries)
+                    .Include(aw => aw.Weapon)
+                    .ThenInclude(aw => aw.WeaponType)
                     .SelectMany(aw => aw.Weapon.WeaponCraftings,
-                        (aw, wc) => new MaterialCost
+                        (aw, wc) => new {aw, wc})
+                    .OrderBy(x => x.aw.Weapon.WeaponSeries.SortOrder)
+                    .ThenBy(x => x.aw.Weapon.WeaponTypeId)
+                    .ThenBy(x => x.aw.Weapon.Rarity)
+                    .ThenBy(x => x.aw.Weapon.Element.SortOrder)
+                    .ThenBy(x => x.wc.Material.SortPath)
+                    .Select(x => new MaterialCost
                         {
-                            Product = $"{aw.Weapon.Weapon1}: Craft",
-                            Material = _mapper.Map<MaterialDTO>(wc.Material),
-                            Quantity = wc.Quantity
+                            Product = $"{x.aw.Weapon.Weapon1}: Craft",
+                            Material = _mapper.Map<MaterialDTO>(x.wc.Material),
+                            Quantity = x.wc.Quantity
                         })
                     .ToListAsync());
 
@@ -207,29 +219,43 @@ namespace DragaliaApi.Controllers
                     .Include(aw => aw.Weapon)
                     .ThenInclude(w => w.WeaponUpgrades)
                     .ThenInclude(wu => wu.UpgradeType)
+                    .Include(aw => aw.Weapon)
+                    .ThenInclude(w => w.Element)
+                    .Include(aw => aw.Weapon)
+                    .ThenInclude(w => w.WeaponSeries)
+                    .Include(aw => aw.Weapon)
+                    .ThenInclude(aw => aw.WeaponType)
                     .SelectMany(aw => aw.Weapon.WeaponUpgrades,
-                        (accountWeapon, weaponUpgrade) => new { accountWeapon, weaponUpgrade })
-                    .Where(x => (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Unbind"
-                                 && x.accountWeapon.Unbind < x.weaponUpgrade.Step
-                                 && x.weaponUpgrade.Step <= x.accountWeapon.UnbindWanted)
-                        || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Refinement"
-                            && x.accountWeapon.Refine < x.weaponUpgrade.Step
-                            && x.weaponUpgrade.Step <= x.accountWeapon.RefineWanted)
-                        || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Copies"
-                            && x.accountWeapon.Copies < x.weaponUpgrade.Step
-                            && x.weaponUpgrade.Step <= x.accountWeapon.CopiesWanted)
-                        || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Slots"
-                            && x.accountWeapon.Slot < x.weaponUpgrade.Step
-                            && x.weaponUpgrade.Step <= x.accountWeapon.SlotWanted)
-                        || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Weapon Bonus"
-                            && x.accountWeapon.Bonus < x.weaponUpgrade.Step
-                            && x.weaponUpgrade.Step <= x.accountWeapon.BonusWanted)
+                        (aw, wu) => new { aw, wu })
+                    .OrderBy(x => x.aw.Weapon.WeaponSeries.SortOrder)
+                    .ThenBy(x => x.aw.Weapon.WeaponTypeId)
+                    .ThenBy(x => x.aw.Weapon.Rarity)
+                    .ThenBy(x => x.aw.Weapon.Element.SortOrder)
+                    .ThenBy(x => x.wu.UpgradeType.UpgradeType1)
+                    .ThenBy(x => x.wu.Step)
+                    .ThenBy(x => x.wu.Material.SortPath)
+                    .Where(x => 
+                           (x.wu.UpgradeType.UpgradeType1 == "Unbind"
+                            && x.aw.Unbind < x.wu.Step
+                            && x.wu.Step <= x.aw.UnbindWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Refinement"
+                            && x.aw.Refine < x.wu.Step
+                            && x.wu.Step <= x.aw.RefineWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Copies"
+                            && x.aw.Copies < x.wu.Step
+                            && x.wu.Step <= x.aw.CopiesWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Slots"
+                            && x.aw.Slot < x.wu.Step
+                            && x.wu.Step <= x.aw.SlotWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Weapon Bonus"
+                            && x.aw.Bonus < x.wu.Step
+                            && x.wu.Step <= x.aw.BonusWanted)
                         )
                     .Select(x => new MaterialCost
                     {
-                        Product = $"{x.accountWeapon.Weapon.Weapon1}: {x.weaponUpgrade.UpgradeType.UpgradeType1} {x.weaponUpgrade.Step}",
-                        Material = _mapper.Map<MaterialDTO>(x.weaponUpgrade.Material),
-                        Quantity = x.weaponUpgrade.Quantity
+                        Product = $"{x.aw.Weapon.Weapon1}: {x.wu.UpgradeType.UpgradeType1} {x.wu.Step}",
+                        Material = _mapper.Map<MaterialDTO>(x.wu.Material),
+                        Quantity = x.wu.Quantity
                     })
                     .ToListAsync());
 
@@ -237,10 +263,21 @@ namespace DragaliaApi.Controllers
                 materialCosts.AddRange(await _context.AccountWeapons
                     .Where(aw => aw.AccountId == accountID)
                     .Include(aw => aw.Weapon)
+                    .ThenInclude(w => w.Element)
+                    .Include(aw => aw.Weapon)
+                    .ThenInclude(w => w.WeaponSeries)
+                    .Include(aw => aw.Weapon)
+                    .ThenInclude(aw => aw.WeaponType)
                     .Join(_context.WeaponLevels.Include(wl => wl.Material),
                         aw => aw.Weapon.Rarity,
                         wl => wl.Rarity,
                         (aw, wl) => new { aw, wl })
+                    .OrderBy(x => x.aw.Weapon.WeaponSeries.SortOrder)
+                    .ThenBy(x => x.aw.Weapon.WeaponTypeId)
+                    .ThenBy(x => x.aw.Weapon.Rarity)
+                    .ThenBy(x => x.aw.Weapon.Element.SortOrder)
+                    .ThenBy(x => x.wl.WeaponLevel1)
+                    .ThenBy(x => x.wl.Material.SortPath)
                     .Where(x => x.aw.WeaponLevel < x.wl.WeaponLevel1 && x.wl.WeaponLevel1 <= x.aw.WeaponLevelWanted)
                     .Select(x => new MaterialCost
                     {
@@ -278,54 +315,62 @@ namespace DragaliaApi.Controllers
                     .ThenInclude(wc => wc.Material)
                     .ThenInclude(m => m.Category)
                     .SelectMany(aw => aw.Weapon.WeaponCraftings,
-                        (aw, wc) => new MaterialCost
-                        {
-                            Product = $"{aw.Weapon.Weapon1}: Craft",
-                            Material = _mapper.Map<MaterialDTO>(wc.Material),
-                            Quantity = wc.Quantity
-                        })
+                        (aw, wc) => new { aw, wc })
+                    .OrderBy(x => x.wc.Material.SortPath)
+                    .Select(x => new MaterialCost
+                    {
+                        Product = $"{x.aw.Weapon.Weapon1}: Craft",
+                        Material = _mapper.Map<MaterialDTO>(x.wc.Material),
+                        Quantity = x.wc.Quantity
+                    })
                     .ToListAsync());
 
                 //Unbinding, refining, copies, slots, and bonuses
                 materialCosts.AddRange(await _context.AccountWeapons
-                    .Where(aw => aw.AccountId == accountID && aw.WeaponId == weaponID)
+                    .Where(aw => aw.AccountId == accountID)
                     .Include(aw => aw.Weapon)
                     .ThenInclude(w => w.WeaponUpgrades)
                     .ThenInclude(wu => wu.UpgradeType)
                     .SelectMany(aw => aw.Weapon.WeaponUpgrades,
-                        (accountWeapon, weaponUpgrade) => new { accountWeapon, weaponUpgrade })
-                    .Where(x => (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Unbind"
-                        && x.accountWeapon.Unbind < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.UnbindWanted)
-                        || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Refinement"
-                        && x.accountWeapon.Refine < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.RefineWanted)
-                        || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Copies"
-                        && x.accountWeapon.Copies < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.CopiesWanted)
-                        || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Slots"
-                        && x.accountWeapon.Slot < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.SlotWanted)
-                        || (x.weaponUpgrade.UpgradeType.UpgradeType1 == "Weapon Bonus"
-                        && x.accountWeapon.Bonus < x.weaponUpgrade.Step
-                        && x.weaponUpgrade.Step <= x.accountWeapon.BonusWanted)
+                        (aw, wu) => new { aw, wu })
+                    .OrderBy(x => x.wu.UpgradeType.UpgradeType1)
+                    .ThenBy(x => x.wu.Step)
+                    .ThenBy(x => x.wu.Material.SortPath)
+                    .Where(x =>
+                           (x.wu.UpgradeType.UpgradeType1 == "Unbind"
+                            && x.aw.Unbind < x.wu.Step
+                            && x.wu.Step <= x.aw.UnbindWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Refinement"
+                            && x.aw.Refine < x.wu.Step
+                            && x.wu.Step <= x.aw.RefineWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Copies"
+                            && x.aw.Copies < x.wu.Step
+                            && x.wu.Step <= x.aw.CopiesWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Slots"
+                            && x.aw.Slot < x.wu.Step
+                            && x.wu.Step <= x.aw.SlotWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Weapon Bonus"
+                            && x.aw.Bonus < x.wu.Step
+                            && x.wu.Step <= x.aw.BonusWanted)
                         )
                     .Select(x => new MaterialCost
                     {
-                        Product = $"{x.accountWeapon.Weapon.Weapon1}: {x.weaponUpgrade.UpgradeType.UpgradeType1} {x.weaponUpgrade.Step}",
-                        Material = _mapper.Map<MaterialDTO>(x.weaponUpgrade.Material),
-                        Quantity = x.weaponUpgrade.Quantity
+                        Product = $"{x.aw.Weapon.Weapon1}: {x.wu.UpgradeType.UpgradeType1} {x.wu.Step}",
+                        Material = _mapper.Map<MaterialDTO>(x.wu.Material),
+                        Quantity = x.wu.Quantity
                     })
                     .ToListAsync());
 
                 //Weapon level
                 materialCosts.AddRange(await _context.AccountWeapons
-                    .Where(aw => aw.AccountId == accountID && aw.WeaponId == weaponID)
+                    .Where(aw => aw.AccountId == accountID)
                     .Include(aw => aw.Weapon)
                     .Join(_context.WeaponLevels.Include(wl => wl.Material),
                         aw => aw.Weapon.Rarity,
                         wl => wl.Rarity,
                         (aw, wl) => new { aw, wl })
+                    .OrderBy(x => x.wl.WeaponLevel1)
+                    .ThenBy(x => x.wl.Material.SortPath)
                     .Where(x => x.aw.WeaponLevel < x.wl.WeaponLevel1 && x.wl.WeaponLevel1 <= x.aw.WeaponLevelWanted)
                     .Select(x => new MaterialCost
                     {
