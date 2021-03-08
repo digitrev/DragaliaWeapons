@@ -199,18 +199,18 @@ namespace DragaliaApi.Controllers
                     .Include(aw => aw.Weapon)
                     .ThenInclude(aw => aw.WeaponType)
                     .SelectMany(aw => aw.Weapon.WeaponCraftings,
-                        (aw, wc) => new {aw, wc})
+                        (aw, wc) => new { aw, wc })
                     .OrderBy(x => x.aw.Weapon.WeaponSeries.SortOrder)
                     .ThenBy(x => x.aw.Weapon.WeaponTypeId)
                     .ThenBy(x => x.aw.Weapon.Rarity)
                     .ThenBy(x => x.aw.Weapon.Element.SortOrder)
                     .ThenBy(x => x.wc.Material.SortPath)
                     .Select(x => new MaterialCost
-                        {
-                            Product = $"{x.aw.Weapon.Weapon1}: Craft",
-                            Material = _mapper.Map<MaterialDTO>(x.wc.Material),
-                            Quantity = x.wc.Quantity
-                        })
+                    {
+                        Product = $"{x.aw.Weapon.Weapon1}: Craft",
+                        Material = _mapper.Map<MaterialDTO>(x.wc.Material),
+                        Quantity = x.wc.Quantity
+                    })
                     .ToListAsync());
 
                 //Unbinding, refining, copies, slots, and bonuses
@@ -234,7 +234,7 @@ namespace DragaliaApi.Controllers
                     .ThenBy(x => x.wu.UpgradeType.UpgradeType1)
                     .ThenBy(x => x.wu.Step)
                     .ThenBy(x => x.wu.Material.SortPath)
-                    .Where(x => 
+                    .Where(x =>
                            (x.wu.UpgradeType.UpgradeType1 == "Unbind"
                             && x.aw.Unbind < x.wu.Step
                             && x.wu.Step <= x.aw.UnbindWanted)
@@ -327,7 +327,7 @@ namespace DragaliaApi.Controllers
 
                 //Unbinding, refining, copies, slots, and bonuses
                 materialCosts.AddRange(await _context.AccountWeapons
-                    .Where(aw => aw.AccountId == accountID)
+                    .Where(aw => aw.AccountId == accountID && aw.WeaponId == weaponID)
                     .Include(aw => aw.Weapon)
                     .ThenInclude(w => w.WeaponUpgrades)
                     .ThenInclude(wu => wu.UpgradeType)
@@ -363,7 +363,7 @@ namespace DragaliaApi.Controllers
 
                 //Weapon level
                 materialCosts.AddRange(await _context.AccountWeapons
-                    .Where(aw => aw.AccountId == accountID)
+                    .Where(aw => aw.AccountId == accountID && aw.WeaponId == weaponID)
                     .Include(aw => aw.Weapon)
                     .Join(_context.WeaponLevels.Include(wl => wl.Material),
                         aw => aw.Weapon.Rarity,
