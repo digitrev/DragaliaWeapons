@@ -503,6 +503,7 @@ BEGIN
 		INNER JOIN core.Facility AS f ON f.Facility = em.Facility
 		CROSS APPLY den.EventCosts AS ec
 		WHERE ec.[Level] <= em.MaxLevel
+			AND ec.Rupie > 0
 		
 		UNION
 		
@@ -515,6 +516,7 @@ BEGIN
 		INNER JOIN core.Material AS m ON m.Material = em.BronzeMat
 		CROSS APPLY den.EventCosts AS ec
 		WHERE ec.[Level] <= em.MaxLevel
+			AND ec.Bronze > 0
 		
 		UNION
 		
@@ -526,6 +528,7 @@ BEGIN
 		FROM den.HalidomSmithy AS hs
 		INNER JOIN core.Facility AS f ON f.Facility = hs.Facility
 		INNER JOIN core.Material AS m ON m.Material = hs.Material
+		WHERE hs.Quantity > 0
 		) AS src
 		ON src.FacilityID = trg.FacilityID
 			AND src.MaterialID = trg.MaterialID

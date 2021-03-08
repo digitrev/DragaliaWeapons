@@ -158,6 +158,6 @@
     <None Include="DragaliaDB.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Scripts\Script.PostDeployment_den_data.sql" />
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
