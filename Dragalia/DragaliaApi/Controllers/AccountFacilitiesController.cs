@@ -153,6 +153,11 @@ namespace DragaliaApi.Controllers
                         (accountFacility, facilityUpgrade) => new { accountFacility, facilityUpgrade })
                     .Where(x => x.accountFacility.CurrentLevel < x.facilityUpgrade.FacilityLevel
                         && x.facilityUpgrade.FacilityLevel <= x.accountFacility.WantedLevel)
+                    .OrderBy(x => x.accountFacility.Facility.Category)
+                    .ThenBy(x => x.accountFacility.Facility.Facility1)
+                    .ThenBy(x => x.accountFacility.CopyNumber)
+                    .ThenBy(x => x.facilityUpgrade.FacilityLevel)
+                    .ThenBy(x => x.facilityUpgrade.Material.SortPath)
                     .Select(x => new MaterialCost
                     {
                         Product = $"{x.accountFacility.Facility.Facility1} #{x.accountFacility.CopyNumber} Level {x.facilityUpgrade.FacilityLevel}",
@@ -183,6 +188,8 @@ namespace DragaliaApi.Controllers
                         (accountFacility, facilityUpgrade) => new { accountFacility, facilityUpgrade })
                     .Where(x => x.accountFacility.CurrentLevel < x.facilityUpgrade.FacilityLevel
                         && x.facilityUpgrade.FacilityLevel <= x.accountFacility.WantedLevel)
+                    .OrderBy(x => x.facilityUpgrade.FacilityLevel)
+                    .ThenBy(x => x.facilityUpgrade.Material.SortPath)
                     .Select(x => new MaterialCost
                     {
                         Product = $"{x.accountFacility.Facility.Facility1} #{x.accountFacility.CopyNumber} Level {x.facilityUpgrade.FacilityLevel}",
