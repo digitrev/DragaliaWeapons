@@ -1,10 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
-import React, { FC } from 'react';
-import { AccountWeaponData } from '../../api/DataInterfaces';
+import React, { FC, useEffect, useState } from 'react';
+import { AccountWeaponData, MaterialCosts } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
+import { LoadingText } from '../../Loading';
+import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import { Form, Values, isInteger, required } from '../Forms/Form';
+import { Costs } from '../Materials/Costs';
 import { Weapon } from './Weapon';
 
 interface Props {
@@ -12,6 +15,32 @@ interface Props {
 }
 
 export const AccountWeapon: FC<Props> = ({ data }) => {
+  const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
+  const [costsLoading, setCostsLoading] = useState(true);
+  const [costsRequested, setCostsRequested] = useState(false);
+  const [costUpdate, setCostUpdate] = useState(false);
+
+  const { weaponId, weapon } = data;
+
+  useEffect(() => {
+    let cancelled = false;
+    const doGetCosts = async () => {
+      const api = new PrivateApi();
+      const costData = await api.getWeaponCosts(weaponId);
+      console.log(costData);
+      if (!cancelled) {
+        setCosts(costData);
+        setCostsLoading(false);
+      }
+    };
+    if (costsRequested) {
+      doGetCosts();
+    }
+    return () => {
+      cancelled = true;
+    };
+  }, [costsRequested, weaponId, costUpdate]);
+
   const handleSubmit = async (values: Values) => {
     const api = new PrivateApi();
     let res: boolean;
@@ -39,7 +68,9 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
     return { success: res };
   };
 
-  const { weapon } = data;
+  const handleCosts = () => {
+    setCostsRequested(true);
+  };
 
   return (
     <div
@@ -125,6 +156,22 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
           </tbody>
         </table>
       </Form>
+      {costsRequested ? (
+        costsLoading ? (
+          <LoadingText />
+        ) : (
+          <Costs data={costs || []} />
+        )
+      ) : (
+        <PrimaryButton
+          css={css`
+            margin-top: 10px;
+          `}
+          onClick={handleCosts}
+        >
+          Costs
+        </PrimaryButton>
+      )}
     </div>
   );
 };

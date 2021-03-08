@@ -32,6 +32,11 @@ export class PrivateApi extends HttpClient {
   public putWeapon = (id: number, weapon: AccountWeaponData) =>
     this.instance.put(`/AccountWeapons/${id}`, weapon);
 
+  public getAllWeaponCosts = () => this.instance.get('/AccountWeapons/costs');
+
+  public getWeaponCosts = (id: number) =>
+    this.instance.get(`/AccountWeapons/costs/${id}`);
+
   //Inventory
   public getInventory = () =>
     this.instance.get<AccountInventoryData[]>('/AccountInventories');
