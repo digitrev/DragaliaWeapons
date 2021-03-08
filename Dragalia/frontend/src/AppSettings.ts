@@ -2,7 +2,7 @@ export const server = 'http://localhost:59900';
 
 export const webAPIUrl = `${server}/api`;
 
-export const submitDelay = 1500;
+export const submitDelay = 0;
 
 export const displayLimit = 20;
 export const pageRangeDisplayed = 5;

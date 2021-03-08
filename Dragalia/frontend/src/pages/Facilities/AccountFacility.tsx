@@ -7,6 +7,7 @@ import { LoadingText } from '../../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import { Form, isInteger, required, Values } from '../Forms/Form';
+import { Costs } from '../Materials/Costs';
 import { Facility } from './Facility';
 
 interface Props {
@@ -17,11 +18,11 @@ export const AccountFacility: FC<Props> = ({ data }) => {
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
   const [costsLoading, setCostsLoading] = useState(true);
   const [costsRequested, setCostsRequested] = useState(false);
+  const [costUpdate, setCostUpdate] = useState(false);
 
   const { facility, facilityId, copyNumber } = data;
 
   useEffect(() => {
-    console.log(costsRequested);
     let cancelled = false;
     const doGetCosts = async () => {
       const api = new PrivateApi();
@@ -33,13 +34,12 @@ export const AccountFacility: FC<Props> = ({ data }) => {
       }
     };
     if (costsRequested) {
-      console.log();
       doGetCosts();
     }
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, facilityId, copyNumber]);
+  }, [costsRequested, facilityId, copyNumber, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
     const api = new PrivateApi();
@@ -52,6 +52,7 @@ export const AccountFacility: FC<Props> = ({ data }) => {
         wantedLevel: values.wantedLevel,
       });
       res = true;
+      setCostUpdate(!costUpdate);
     } catch {
       res = false;
     }
@@ -110,11 +111,7 @@ export const AccountFacility: FC<Props> = ({ data }) => {
         costsLoading ? (
           <LoadingText />
         ) : (
-          <ul>
-            {costs?.map((c) => (
-              <li>{c.product}</li>
-            ))}
-          </ul>
+          <Costs data={costs || []} />
         )
       ) : (
         <PrimaryButton
