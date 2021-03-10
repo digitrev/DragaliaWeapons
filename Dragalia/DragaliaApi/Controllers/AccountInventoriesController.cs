@@ -27,12 +27,14 @@ namespace DragaliaApi.Controllers
 
         // GET: api/AccountInventories
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<AccountInventoryDTO>>> GetAccountInventories()
+        public async Task<ActionResult<IEnumerable<AccountInventoryDTO>>> GetAccountInventories(string materials)
         {
+            string[] materialArray = materials != null ? materials.Split(',') : new string[0];
             var accountID = await AccountsController.GetAccountID();
             try
             {
-                return await _context.AccountInventories.Where(ai => ai.AccountId == accountID)
+                return await _context.AccountInventories.Where(ai => ai.AccountId == accountID
+                                                            && (materialArray.Count() == 0 || materialArray.Any(m => m == ai.MaterialId)))
                                                         .Include(ai => ai.Material)
                                                         .ThenInclude(m => m.Category)
                                                         .Where(ai => ai.Material.Category != null)
@@ -65,27 +67,6 @@ namespace DragaliaApi.Controllers
                 return Problem(detail: ex.ToString(), statusCode: 500);
             }
 
-        }
-
-        // GET: api/AccountInventories/multi
-        [HttpGet("filter")]
-        public async Task<ActionResult<IEnumerable<AccountInventoryDTO>>> GetAccountInventories(List<string> materials)
-        {
-            var accountID = await AccountsController.GetAccountID();
-            try
-            {
-                return await _context.AccountInventories.Where(ai => ai.AccountId == accountID && materials.Any(m => m == ai.MaterialId))
-                                                        .Include(ai => ai.Material)
-                                                        .ThenInclude(m => m.Category)
-                                                        .Where(ai => ai.Material.Category != null)
-                                                        .OrderBy(ai => ai.Material.SortPath)
-                                                        .Select(ai => _mapper.Map<AccountInventoryDTO>(ai))
-                                                        .ToListAsync();
-            }
-            catch (Exception ex)
-            {
-                return Problem(detail: ex.ToString(), statusCode: 500);
-            }
         }
 
         // GET: api/AccountInventories/untracked
