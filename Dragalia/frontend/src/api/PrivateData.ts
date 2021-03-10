@@ -44,6 +44,11 @@ export class PrivateApi extends HttpClient {
   public getItem = (id: string) =>
     this.instance.get<AccountInventoryData>(`/AccountInventories/${id}`);
 
+  public getItemFilter = (ids: string[]) =>
+    this.instance.get<AccountInventoryData[]>(
+      `/AccountInventories/filter/${ids}`,
+    );
+
   public putItem = (id: string, item: AccountInventoryData) =>
     this.instance.put(`/AccountInventories/${id}`, item);
 
