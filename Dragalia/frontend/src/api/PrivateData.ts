@@ -46,7 +46,10 @@ export class PrivateApi extends HttpClient {
 
   public getItemFilter = (ids: string[]) =>
     this.instance.get<AccountInventoryData[]>(
-      `/AccountInventories/filter/${ids}`,
+      `/AccountInventories?materials=${ids.reduce(
+        (acc, cur) => `${cur},${acc}`,
+        '',
+      )}`,
     );
 
   public putItem = (id: string, item: AccountInventoryData) =>

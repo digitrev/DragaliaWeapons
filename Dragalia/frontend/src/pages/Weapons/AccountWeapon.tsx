@@ -27,7 +27,6 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
     const doGetCosts = async () => {
       const api = new PrivateApi();
       const costData = await api.getWeaponCosts(weaponId);
-      console.log(costData);
       if (!cancelled) {
         setCosts(costData);
         setCostsLoading(false);
@@ -61,6 +60,7 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
         bonusWanted: values.bonusWanted,
       });
       res = true;
+      setCostUpdate(!costUpdate);
     } catch {
       res = false;
     }

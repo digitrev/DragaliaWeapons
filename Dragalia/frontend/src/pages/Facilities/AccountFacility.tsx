@@ -27,7 +27,6 @@ export const AccountFacility: FC<Props> = ({ data }) => {
     const doGetCosts = async () => {
       const api = new PrivateApi();
       const costData = await api.getFacilityCosts(facilityId, copyNumber);
-      console.log(costData);
       if (!cancelled) {
         setCosts(costData);
         setCostsLoading(false);
