@@ -148,7 +148,6 @@ namespace DragaliaApi.Controllers
                     .Include(af => af.Facility)
                     .ThenInclude(f => f.FacilityUpgrades)
                     .ThenInclude(fu => fu.Material)
-                    .ThenInclude(m => m.Category)
                     .SelectMany(af => af.Facility.FacilityUpgrades, 
                         (accountFacility, facilityUpgrade) => new { accountFacility, facilityUpgrade })
                     .Where(x => x.accountFacility.CurrentLevel < x.facilityUpgrade.FacilityLevel
@@ -183,7 +182,6 @@ namespace DragaliaApi.Controllers
                     .Include(af => af.Facility)
                     .ThenInclude(f => f.FacilityUpgrades)
                     .ThenInclude(fu => fu.Material)
-                    .ThenInclude(m => m.Category)
                     .SelectMany(af => af.Facility.FacilityUpgrades,
                         (accountFacility, facilityUpgrade) => new { accountFacility, facilityUpgrade })
                     .Where(x => x.accountFacility.CurrentLevel < x.facilityUpgrade.FacilityLevel

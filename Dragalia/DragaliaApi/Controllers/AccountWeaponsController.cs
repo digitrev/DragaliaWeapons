@@ -191,7 +191,6 @@ namespace DragaliaApi.Controllers
                     .Include(aw => aw.Weapon)
                     .ThenInclude(w => w.WeaponCraftings)
                     .ThenInclude(wc => wc.Material)
-                    .ThenInclude(m => m.Category)
                     .Include(aw => aw.Weapon)
                     .ThenInclude(w => w.Element)
                     .Include(aw => aw.Weapon)
@@ -247,6 +246,9 @@ namespace DragaliaApi.Controllers
                         || (x.wu.UpgradeType.UpgradeType1 == "Slots"
                             && x.aw.Slot < x.wu.Step
                             && x.wu.Step <= x.aw.SlotWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Dominion"
+                            && x.aw.Slot < x.wu.Step + 1
+                            && x.wu.Step + 1 <= x.aw.SlotWanted)
                         || (x.wu.UpgradeType.UpgradeType1 == "Weapon Bonus"
                             && x.aw.Bonus < x.wu.Step
                             && x.wu.Step <= x.aw.BonusWanted)
@@ -313,7 +315,6 @@ namespace DragaliaApi.Controllers
                     .Include(aw => aw.Weapon)
                     .ThenInclude(w => w.WeaponCraftings)
                     .ThenInclude(wc => wc.Material)
-                    .ThenInclude(m => m.Category)
                     .SelectMany(aw => aw.Weapon.WeaponCraftings,
                         (aw, wc) => new { aw, wc })
                     .OrderBy(x => x.wc.Material.SortPath)
@@ -349,6 +350,9 @@ namespace DragaliaApi.Controllers
                         || (x.wu.UpgradeType.UpgradeType1 == "Slots"
                             && x.aw.Slot < x.wu.Step
                             && x.wu.Step <= x.aw.SlotWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Dominion"
+                            && x.aw.Slot < x.wu.Step + 1
+                            && x.wu.Step + 1 <= x.aw.SlotWanted)
                         || (x.wu.UpgradeType.UpgradeType1 == "Weapon Bonus"
                             && x.aw.Bonus < x.wu.Step
                             && x.wu.Step <= x.aw.BonusWanted)

@@ -29,7 +29,7 @@ namespace DragaliaApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountInventoryDTO>>> GetAccountInventories(string materials)
         {
-            string[] materialArray = materials != null ? materials.Split(',') : new string[0];
+            string[] materialArray = materials != null ? materials.Split(',') : Array.Empty<string>();
             var accountID = await AccountsController.GetAccountID();
             try
             {
