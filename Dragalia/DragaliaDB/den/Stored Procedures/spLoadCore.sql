@@ -589,4 +589,25 @@ BEGIN
 	FROM core.Facility AS f
 	INNER JOIN den.FacilityMetadata AS fm ON fm.Facility = f.Facility
 	INNER JOIN core.Category AS c ON c.Category = fm.Category
+
+	MERGE core.Quest AS trg
+	USING den.QuestHierarchy AS src
+		ON src.Quest = trg.Quest
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET SortPath = src.SortPath
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				Quest
+				,SortPath
+				)
+			VALUES (
+				src.Quest
+				,src.SortPath
+				);
 END

@@ -1129,4 +1129,10 @@
     <Property Name="NewSchema" Value="den" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="ba2e6228-4699-487f-acf8-6ef91c3e2be2" ChangeDateTime="03/13/2021 01:45:03">
+    <Property Name="ElementName" Value="[dbo].[spSetQuestHierachy]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>
