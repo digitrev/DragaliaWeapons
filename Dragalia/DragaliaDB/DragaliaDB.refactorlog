@@ -1103,4 +1103,17 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="N" />
   </Operation>
+  <Operation Name="Move Schema" Key="afd6b36b-4e47-4942-9dc4-cdd79a0880d4" ChangeDateTime="03/13/2021 00:21:41">
+    <Property Name="ElementName" Value="[dbo].[Quest]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c5e1c438-ce79-4d07-88d2-bbd58ef37202" ChangeDateTime="03/13/2021 00:21:52">
+    <Property Name="ElementName" Value="[core].[Quest].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Quest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuestID" />
+  </Operation>
 </Operations>

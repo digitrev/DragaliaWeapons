@@ -150,6 +150,7 @@
     <Build Include="util\Table\Tally.sql" />
     <Build Include="dbo\Stored Procedures\spFillFacility.sql" />
     <Build Include="dbo\Stored Procedures\spFillWeapon.sql" />
+    <Build Include="core\Tables\Quest.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
