@@ -1116,4 +1116,17 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="QuestID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="069eb0da-edf0-45ee-af4f-21ae8f91f15c" ChangeDateTime="03/13/2021 01:19:05">
+    <Property Name="ElementName" Value="[dbo].[QuestHierarchy].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[QuestHierarchy]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuestHierachyID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e57b0b15-6013-40c1-a6d6-647570c931fa" ChangeDateTime="03/13/2021 01:20:22">
+    <Property Name="ElementName" Value="[dbo].[QuestHierarchy]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>
