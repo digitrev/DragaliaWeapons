@@ -1135,4 +1135,37 @@
     <Property Name="NewSchema" Value="den" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="b6727b34-cccc-4dda-8b75-2018b4729fbc" ChangeDateTime="03/13/2021 17:36:50">
+    <Property Name="ElementName" Value="[dbo].[FarmLocation]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7e1d89cc-4061-4e54-b74a-a76d5baf53bd" ChangeDateTime="03/13/2021 17:37:00">
+    <Property Name="ElementName" Value="[den].[FarmLocation].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[FarmLocation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Quest" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1f8fab4f-ebe8-4b37-ac0c-e0bc64af6055" ChangeDateTime="03/13/2021 17:37:14">
+    <Property Name="ElementName" Value="[den].[FarmLocation].[Quest]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[FarmLocation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Material" />
+  </Operation>
+  <Operation Name="Move Schema" Key="dc04475c-a4f5-4e2c-984d-61a465c099bc" ChangeDateTime="03/13/2021 17:39:58">
+    <Property Name="ElementName" Value="[dbo].[MaterialQuest]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ab459a7b-8bd3-4253-b1c0-ef25e3d69013" ChangeDateTime="03/13/2021 17:40:03">
+    <Property Name="ElementName" Value="[core].[MaterialQuest].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[MaterialQuest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MaterialID" />
+  </Operation>
 </Operations>

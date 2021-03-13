@@ -610,4 +610,16 @@ BEGIN
 				src.Quest
 				,src.SortPath
 				);
+
+	TRUNCATE TABLE core.MaterialQuest
+
+	INSERT core.MaterialQuest (
+		MaterialID
+		,QuestID
+		)
+	SELECT m.MaterialID
+		,q.QuestID
+	FROM den.FarmLocation AS fl
+	INNER JOIN core.Material AS m ON m.Material = fl.Material
+	INNER JOIN core.Quest AS q ON q.Quest = fl.Quest
 END
