@@ -33,8 +33,10 @@ namespace DragaliaApi.Data
         public virtual DbSet<Facility> Facilities { get; set; }
         public virtual DbSet<FacilityUpgrade> FacilityUpgrades { get; set; }
         public virtual DbSet<Material> Materials { get; set; }
+        public virtual DbSet<MaterialQuest> MaterialQuests { get; set; }
         public virtual DbSet<Passive> Passives { get; set; }
         public virtual DbSet<PassiveCrafting> PassiveCraftings { get; set; }
+        public virtual DbSet<Quest> Quests { get; set; }
         public virtual DbSet<UpgradeType> UpgradeTypes { get; set; }
         public virtual DbSet<Weapon> Weapons { get; set; }
         public virtual DbSet<WeaponCrafting> WeaponCraftings { get; set; }
@@ -370,6 +372,31 @@ namespace DragaliaApi.Data
                     .HasConstraintName("FK_Material_Category");
             });
 
+            modelBuilder.Entity<MaterialQuest>(entity =>
+            {
+                entity.HasKey(e => new { e.MaterialId, e.QuestId });
+
+                entity.ToTable("MaterialQuest", "core");
+
+                entity.Property(e => e.MaterialId)
+                    .HasMaxLength(50)
+                    .HasColumnName("MaterialID");
+
+                entity.Property(e => e.QuestId).HasColumnName("QuestID");
+
+                entity.HasOne(d => d.Material)
+                    .WithMany(p => p.MaterialQuests)
+                    .HasForeignKey(d => d.MaterialId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_MaterialQuest_Material");
+
+                entity.HasOne(d => d.Quest)
+                    .WithMany(p => p.MaterialQuests)
+                    .HasForeignKey(d => d.QuestId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_MaterialQuest_Quest");
+            });
+
             modelBuilder.Entity<Passive>(entity =>
             {
                 entity.ToTable("Passive", "core");
@@ -425,6 +452,18 @@ namespace DragaliaApi.Data
                     .WithMany(p => p.PassiveCraftings)
                     .HasForeignKey(d => d.PassiveId)
                     .HasConstraintName("FK_PassiveCrafting_Passive");
+            });
+
+            modelBuilder.Entity<Quest>(entity =>
+            {
+                entity.ToTable("Quest", "core");
+
+                entity.Property(e => e.QuestId).HasColumnName("QuestID");
+
+                entity.Property(e => e.Quest1)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnName("Quest");
             });
 
             modelBuilder.Entity<UpgradeType>(entity =>
