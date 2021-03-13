@@ -1,0 +1,6 @@
+﻿CREATE TABLE [core].[Quest] (
+	[QuestID] INT NOT NULL IDENTITY
+	,[Quest] NVARCHAR(50) NOT NULL
+	,[SortPath] HIERARCHYID NOT NULL
+	,CONSTRAINT [PK_Quest] PRIMARY KEY ([QuestID])
+	)
