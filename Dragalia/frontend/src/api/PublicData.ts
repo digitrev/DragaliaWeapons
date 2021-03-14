@@ -5,8 +5,10 @@ import {
   FacilityData,
   MaterialData,
   WeaponData,
+  WeaponLevelLimit,
   WeaponSeriesData,
   WeaponTypeData,
+  WeaponUnbindLimit,
 } from './DataInterfaces';
 
 export class PublicApi extends HttpClient {
@@ -14,16 +16,11 @@ export class PublicApi extends HttpClient {
     super(webAPIUrl);
   }
 
+  //weapon api
   public getWeapons = () => this.instance.get<WeaponData[]>('/WeaponList');
 
   public getWeapon = (id: number) =>
     this.instance.get<WeaponData>(`/Weapons/${id}`);
-
-  public getMaterials = () =>
-    this.instance.get<MaterialData[]>('/MaterialList');
-
-  public getMaterial = (id: string) =>
-    this.instance.get<MaterialData>(`/MaterialList/${id}`);
 
   public getElements = () => this.instance.get<ElementData[]>('/Elements');
 
@@ -33,6 +30,28 @@ export class PublicApi extends HttpClient {
   public getWeaponSeries = () =>
     this.instance.get<WeaponSeriesData[]>('/WeaponSeries');
 
+  public getWeaponUnbindLimits = (rarity?: number) =>
+    this.instance.get<WeaponUnbindLimit[]>('/WeaponLimits/unbind', {
+      params: {
+        rarity: rarity,
+      },
+    });
+
+  public getWeaponLevelLimits = (rarity?: number) =>
+    this.instance.get<WeaponLevelLimit[]>('/WeaponLimits/level', {
+      params: {
+        rarity: rarity,
+      },
+    });
+
+  //material api
+  public getMaterials = () =>
+    this.instance.get<MaterialData[]>('/MaterialList');
+
+  public getMaterial = (id: string) =>
+    this.instance.get<MaterialData>(`/MaterialList/${id}`);
+
+  //facility api
   public getFacilities = () =>
     this.instance.get<FacilityData[]>('/FacilityList');
 

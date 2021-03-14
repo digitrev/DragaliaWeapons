@@ -1,13 +1,15 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import Select, { ActionMeta } from 'react-select';
 import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
 import {
   AccountWeaponData,
   ElementData,
+  WeaponLevelLimit,
   WeaponSeriesData,
   WeaponTypeData,
+  WeaponUnbindLimit,
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
@@ -41,6 +43,14 @@ export const AccountWeaponPage = () => {
     weaponTypeFilter,
     setWeaponTypeFilter,
   ] = useState<WeaponTypeData | null>(null);
+  const [progressFilter, setProgressFilter] = useState(false);
+
+  const [unbindLimits, setUnbindLimits] = useState<WeaponUnbindLimit[] | null>(
+    null,
+  );
+  const [levelLimits, setLevelLimits] = useState<WeaponLevelLimit[] | null>(
+    null,
+  );
 
   const [offset, setOffset] = useState(0);
   const [pageCount, setPageCount] = useState(1);
@@ -52,10 +62,14 @@ export const AccountWeaponPage = () => {
       const elementData = await api.getElements();
       const weaponSeriesData = await api.getWeaponSeries();
       const weaponTypeData = await api.getWeaponTypes();
+      const unbindLimitData = await api.getWeaponUnbindLimits();
+      const levelLimitData = await api.getWeaponLevelLimits();
       if (!cancelled) {
         setElements(elementData);
         setWeaponSeries(weaponSeriesData);
         setWeaponTypes(weaponTypeData);
+        setUnbindLimits(unbindLimitData);
+        setLevelLimits(levelLimitData);
       }
     };
     const doGetWeapons = async () => {
@@ -91,11 +105,29 @@ export const AccountWeaponPage = () => {
           (w) => w.weapon?.weaponType === weaponTypeFilter.weaponType,
         );
       }
+      if (progressFilter) {
+        weaponFilter = weaponFilter.filter(
+          (w) =>
+            w.bonusWanted > w.bonus ||
+            w.copiesWanted > w.copies ||
+            w.refineWanted > w.refine ||
+            w.slotWanted > w.slot ||
+            w.unbindWanted > w.unbind ||
+            w.weaponLevelWanted > w.weaponLevel,
+        );
+      }
       setPageCount(Math.ceil(weaponFilter.length / displayLimit));
       weaponFilter = weaponFilter.slice(offset, offset + displayLimit);
       setDisplayWeapons(weaponFilter);
     }
-  }, [elementFilter, offset, weaponSeriesFilter, weaponTypeFilter, weapons]);
+  }, [
+    elementFilter,
+    offset,
+    progressFilter,
+    weaponSeriesFilter,
+    weaponTypeFilter,
+    weapons,
+  ]);
 
   const handleChangeElement = (
     value: ElementData | null,
@@ -116,6 +148,10 @@ export const AccountWeaponPage = () => {
     actionMeta: ActionMeta<WeaponTypeData>,
   ) => {
     setWeaponTypeFilter(value);
+  };
+
+  const handleChangeProgress = (e: ChangeEvent<HTMLInputElement>) => {
+    setProgressFilter(e.currentTarget.checked);
   };
 
   const handlePageChange = (selectedItem: { selected: number }) => {
@@ -146,6 +182,21 @@ export const AccountWeaponPage = () => {
         <LoadingText />
       ) : (
         <Fragment>
+          <div>
+            <input
+              type="checkbox"
+              name="inProgress"
+              onChange={handleChangeProgress}
+            />
+            <label
+              htmlFor="inProgress"
+              css={css`
+                font-weight: bold;
+              `}
+            >
+              In Progress?
+            </label>
+          </div>
           <label
             htmlFor="weaponSeries"
             css={css`
@@ -206,7 +257,11 @@ export const AccountWeaponPage = () => {
           ) : (
             <LoadingText />
           )}
-          <AccountWeaponList data={displayWeapons || []} />
+          <AccountWeaponList
+            data={displayWeapons || []}
+            unbindLimits={unbindLimits || []}
+            levelLimits={levelLimits || []}
+          />
           <ReactPaginate
             pageCount={pageCount}
             pageRangeDisplayed={pageRangeDisplayed}

@@ -53,6 +53,12 @@ export const minLength: Validator = (value: any, length: number): string =>
     ? `This must be at least ${length} characters`
     : '';
 
+export const nonNegative: Validator = (value: any): string =>
+  value >= 0 ? '' : 'This must be positive';
+
+export const maxValue: Validator = (value: any, maxLimit: number): string =>
+  value <= maxLimit ? '' : `This cannot exceed a value of ${maxLimit}`;
+
 interface Validation {
   validator: Validator;
   arg?: any;

@@ -1,15 +1,25 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { FC } from 'react';
-import { AccountWeaponData } from '../../api/DataInterfaces';
+import {
+  AccountWeaponData,
+  WeaponLevelLimit,
+  WeaponUnbindLimit,
+} from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
 import { AccountWeapon } from './AccountWeapon';
 
 interface Props {
   data: AccountWeaponData[];
+  unbindLimits: WeaponUnbindLimit[];
+  levelLimits: WeaponLevelLimit[];
 }
 
-export const AccountWeaponList: FC<Props> = ({ data }) => {
+export const AccountWeaponList: FC<Props> = ({
+  data,
+  levelLimits,
+  unbindLimits,
+}) => {
   return (
     <ul
       css={css`
@@ -33,7 +43,15 @@ export const AccountWeaponList: FC<Props> = ({ data }) => {
             }
           `}
         >
-          <AccountWeapon data={weapon} />
+          <AccountWeapon
+            data={weapon}
+            unbindLimits={unbindLimits.filter(
+              (ul) => ul.weaponRarity === weapon.weapon?.rarity,
+            )}
+            levelLimits={levelLimits.filter(
+              (ll) => ll.weaponRarity === weapon.weapon?.rarity,
+            )}
+          />
         </li>
       ))}
     </ul>

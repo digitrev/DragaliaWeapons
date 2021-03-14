@@ -1,24 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
-import { AccountInventoryData } from '../api/DataInterfaces';
-import { PrivateApi } from '../api/PrivateData';
+import { PublicApi } from '../api/PublicData';
 
 export const Example = () => {
-  const [data, setData] = useState<AccountInventoryData[]>([]);
-
   useEffect(() => {
-    const doGetFilters = async () => {
-      const api = new PrivateApi();
-      const itemData = await api.getItemFilter([
-        '101001001',
-        '101001002',
-        '101001003',
-      ]);
-      setData(itemData);
-      console.log(itemData);
+    const doGetLimits = async () => {
+      const api = new PublicApi();
+      const unbindLimits = await api.getWeaponLevelLimits(3);
+      console.log(unbindLimits);
     };
-    doGetFilters();
+    doGetLimits();
   }, []);
 
   return <div>blank</div>;

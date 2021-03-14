@@ -1,20 +1,38 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
-import React, { FC, useEffect, useState } from 'react';
-import { AccountWeaponData, MaterialCosts } from '../../api/DataInterfaces';
+import React, { FC, Fragment, useEffect, useState } from 'react';
+import {
+  AccountWeaponData,
+  MaterialCosts,
+  WeaponLevelLimit,
+  WeaponUnbindLimit,
+} from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { LoadingText } from '../../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
-import { Form, Values, isInteger, required } from '../Forms/Form';
+import {
+  Form,
+  Values,
+  isInteger,
+  required,
+  nonNegative,
+  maxValue,
+} from '../Forms/Form';
 import { Costs } from '../Materials/Costs';
 import { Weapon } from './Weapon';
 
 interface Props {
   data: AccountWeaponData;
+  unbindLimits: WeaponUnbindLimit[];
+  levelLimits: WeaponLevelLimit[];
 }
 
-export const AccountWeapon: FC<Props> = ({ data }) => {
+export const AccountWeapon: FC<Props> = ({
+  data,
+  unbindLimits,
+  levelLimits,
+}) => {
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
   const [costsLoading, setCostsLoading] = useState(true);
   const [costsRequested, setCostsRequested] = useState(false);
@@ -44,7 +62,7 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
     const api = new PrivateApi();
     let res: boolean;
     try {
-      await api.putWeapon(values.weaponId, {
+      const updateWeapon: AccountWeaponData = {
         weaponId: values.weaponId,
         copies: values.copies,
         copiesWanted: values.copiesWanted,
@@ -58,7 +76,8 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
         slotWanted: values.slotWanted,
         bonus: values.bonus,
         bonusWanted: values.bonusWanted,
-      });
+      };
+      await api.putWeapon(values.weaponId, updateWeapon);
       res = true;
       setCostUpdate(!costUpdate);
     } catch {
@@ -87,17 +106,48 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
         successMessage={'✔'}
         failureMessage={'❌'}
         validationRules={{
-          copies: [{ validator: isInteger }, { validator: required }],
-          copiesWanted: [{ validator: isInteger }, { validator: required }],
-          weaponLevel: [{ validator: isInteger }, { validator: required }],
+          copies: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: 4 },
+          ],
+          copiesWanted: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: 4 },
+          ],
+          weaponLevel: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+          ],
           weaponLevelWanted: [
             { validator: isInteger },
             { validator: required },
+            { validator: nonNegative },
           ],
-          unbind: [{ validator: isInteger }, { validator: required }],
-          unbindWanted: [{ validator: isInteger }, { validator: required }],
-          refine: [{ validator: isInteger }, { validator: required }],
-          refineWanted: [{ validator: isInteger }, { validator: required }],
+          unbind: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+          ],
+          unbindWanted: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+          ],
+          refine: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+          ],
+          refineWanted: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+          ],
         }}
       >
         <table>
@@ -107,9 +157,13 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
               <th>Copies</th>
               <th>Weapon Level</th>
               <th>Unbind</th>
-              <th>Refinement</th>
-              <th>Slots</th>
-              <th>Bonus</th>
+              {weapon?.weaponSeries !== 'Core' && <th>Refinement</th>}
+              {weapon?.element !== 'None' && (
+                <Fragment>
+                  <th>Slots</th>
+                  <th>Bonus</th>
+                </Fragment>
+              )}
             </tr>
             <tr>
               <th>Current</th>
@@ -122,15 +176,21 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
               <td>
                 <Field name="unbind" type="Number" />
               </td>
-              <td>
-                <Field name="refine" type="Number" />
-              </td>
-              <td>
-                <Field name="slot" type="Number" />
-              </td>
-              <td>
-                <Field name="bonus" type="Number" />
-              </td>
+              {weapon?.weaponSeries !== 'Core' && (
+                <td>
+                  <Field name="refine" type="Number" />
+                </td>
+              )}
+              {weapon?.element !== 'None' && (
+                <Fragment>
+                  <td>
+                    <Field name="slot" type="Number" />
+                  </td>
+                  <td>
+                    <Field name="bonus" type="Number" />
+                  </td>
+                </Fragment>
+              )}
             </tr>
             <tr>
               <th>Wanted</th>
@@ -143,15 +203,21 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
               <td>
                 <Field name="unbindWanted" type="Number" />
               </td>
-              <td>
-                <Field name="refineWanted" type="Number" />
-              </td>
-              <td>
-                <Field name="slotWanted" type="Number" />
-              </td>
-              <td>
-                <Field name="bonusWanted" type="Number" />
-              </td>
+              {weapon?.weaponSeries !== 'Core' && (
+                <td>
+                  <Field name="refineWanted" type="Number" />
+                </td>
+              )}
+              {weapon?.element !== 'None' && (
+                <Fragment>
+                  <td>
+                    <Field name="slotWanted" type="Number" />
+                  </td>
+                  <td>
+                    <Field name="bonusWanted" type="Number" />
+                  </td>
+                </Fragment>
+              )}
             </tr>
           </tbody>
         </table>

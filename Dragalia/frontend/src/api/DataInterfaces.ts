@@ -1,3 +1,4 @@
+//weapon related data
 export interface AccountWeaponData {
   weaponId: number;
   copies: number;
@@ -24,6 +25,34 @@ export interface WeaponData {
   element: string;
 }
 
+export interface ElementData {
+  elementId: number;
+  element: string;
+}
+
+export interface WeaponTypeData {
+  weaponTypeId: number;
+  weaponType: string;
+}
+
+export interface WeaponSeriesData {
+  weaponSeriesId: number;
+  weaponSeries: string;
+}
+
+export interface WeaponUnbindLimit {
+  weaponRarity: number;
+  refinementLevel: number;
+  maxUnbindLevel: number;
+}
+
+export interface WeaponLevelLimit {
+  weaponRarity: number;
+  unbindLevel: number;
+  maxWeaponLevel: number;
+}
+
+//material related data
 export interface MaterialData {
   materialId: string;
   material: string;
@@ -46,6 +75,13 @@ export interface InventoryCategoryData {
   items: AccountInventoryData[];
 }
 
+export interface MaterialCosts {
+  product: string;
+  material: MaterialData;
+  quantity: number;
+}
+
+//facility related data
 export interface FacilityData {
   facilityId: number;
   facility: string;
@@ -69,25 +105,4 @@ export interface AccountFacilityData {
   currentLevel: number;
   wantedLevel: number;
   facility?: FacilityData;
-}
-
-export interface ElementData {
-  elementId: number;
-  element: string;
-}
-
-export interface WeaponTypeData {
-  weaponTypeId: number;
-  weaponType: string;
-}
-
-export interface WeaponSeriesData {
-  weaponSeriesId: number;
-  weaponSeries: string;
-}
-
-export interface MaterialCosts {
-  product: string;
-  material: MaterialData;
-  quantity: number;
 }
