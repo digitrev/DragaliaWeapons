@@ -589,4 +589,37 @@ BEGIN
 	FROM core.Facility AS f
 	INNER JOIN den.FacilityMetadata AS fm ON fm.Facility = f.Facility
 	INNER JOIN core.Category AS c ON c.Category = fm.Category
+
+	MERGE core.Quest AS trg
+	USING den.QuestHierarchy AS src
+		ON src.Quest = trg.Quest
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET SortPath = src.SortPath
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				Quest
+				,SortPath
+				)
+			VALUES (
+				src.Quest
+				,src.SortPath
+				);
+
+	TRUNCATE TABLE core.MaterialQuest
+
+	INSERT core.MaterialQuest (
+		MaterialID
+		,QuestID
+		)
+	SELECT m.MaterialID
+		,q.QuestID
+	FROM den.FarmLocation AS fl
+	INNER JOIN core.Material AS m ON m.Material = fl.Material
+	INNER JOIN core.Quest AS q ON q.Quest = fl.Quest
 END

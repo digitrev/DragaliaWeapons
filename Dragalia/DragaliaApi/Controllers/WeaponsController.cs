@@ -51,12 +51,12 @@ namespace DragaliaApi.Controllers
         }
 
         // GET: api/WeaponList/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<WeaponDTO>> GetWeapon(int id)
+        [HttpGet("{weaponID}")]
+        public async Task<ActionResult<WeaponDTO>> GetWeapon(int weaponID)
         {
             try
             {
-                var weapon = await _context.Weapons.FindAsync(id);
+                var weapon = await _context.Weapons.FindAsync(weaponID);
 
                 _context.Entry(weapon)
                         .Reference(w => w.Element)

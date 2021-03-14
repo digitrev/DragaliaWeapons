@@ -1103,4 +1103,69 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="N" />
   </Operation>
+  <Operation Name="Move Schema" Key="afd6b36b-4e47-4942-9dc4-cdd79a0880d4" ChangeDateTime="03/13/2021 00:21:41">
+    <Property Name="ElementName" Value="[dbo].[Quest]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c5e1c438-ce79-4d07-88d2-bbd58ef37202" ChangeDateTime="03/13/2021 00:21:52">
+    <Property Name="ElementName" Value="[core].[Quest].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Quest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuestID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="069eb0da-edf0-45ee-af4f-21ae8f91f15c" ChangeDateTime="03/13/2021 01:19:05">
+    <Property Name="ElementName" Value="[dbo].[QuestHierarchy].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[QuestHierarchy]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuestHierachyID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e57b0b15-6013-40c1-a6d6-647570c931fa" ChangeDateTime="03/13/2021 01:20:22">
+    <Property Name="ElementName" Value="[dbo].[QuestHierarchy]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="ba2e6228-4699-487f-acf8-6ef91c3e2be2" ChangeDateTime="03/13/2021 01:45:03">
+    <Property Name="ElementName" Value="[dbo].[spSetQuestHierachy]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="b6727b34-cccc-4dda-8b75-2018b4729fbc" ChangeDateTime="03/13/2021 17:36:50">
+    <Property Name="ElementName" Value="[dbo].[FarmLocation]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7e1d89cc-4061-4e54-b74a-a76d5baf53bd" ChangeDateTime="03/13/2021 17:37:00">
+    <Property Name="ElementName" Value="[den].[FarmLocation].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[FarmLocation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Quest" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1f8fab4f-ebe8-4b37-ac0c-e0bc64af6055" ChangeDateTime="03/13/2021 17:37:14">
+    <Property Name="ElementName" Value="[den].[FarmLocation].[Quest]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[FarmLocation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Material" />
+  </Operation>
+  <Operation Name="Move Schema" Key="dc04475c-a4f5-4e2c-984d-61a465c099bc" ChangeDateTime="03/13/2021 17:39:58">
+    <Property Name="ElementName" Value="[dbo].[MaterialQuest]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ab459a7b-8bd3-4253-b1c0-ef25e3d69013" ChangeDateTime="03/13/2021 17:40:03">
+    <Property Name="ElementName" Value="[core].[MaterialQuest].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[MaterialQuest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MaterialID" />
+  </Operation>
 </Operations>

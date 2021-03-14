@@ -46,11 +46,19 @@
          "ObjectType": 0
       },
       {
+         "Name": "[core].[MaterialQuest]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[core].[Passive]",
          "ObjectType": 0
       },
       {
          "Name": "[core].[PassiveCrafting]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[core].[Quest]",
          "ObjectType": 0
       },
       {
