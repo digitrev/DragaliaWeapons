@@ -155,6 +155,7 @@
     <Build Include="den\Stored Procedures\spSetQuestHierachy.sql" />
     <Build Include="den\Tables\FarmLocation.sql" />
     <Build Include="core\Tables\MaterialQuest.sql" />
+    <Build Include="core\Stored Procedures\spWeaponDominionSlots.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
