@@ -18,6 +18,8 @@ namespace DragaliaApi.Models.DTO
         public int RefineWanted { get; set; }
         public int Slot { get; set; }
         public int SlotWanted { get; set; }
+        public int Dominion { get; set; }
+        public int DominionWanted { get; set; }
         public int Bonus { get; set; }
         public int BonusWanted { get; set; }
         public virtual WeaponDTO Weapon { get; set; }

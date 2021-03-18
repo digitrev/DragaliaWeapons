@@ -11,6 +11,8 @@
 	,[RefineWanted] INT NOT NULL CONSTRAINT [DF_Weapon_RefineWanted] DEFAULT(0)
 	,[Slot] INT NOT NULL CONSTRAINT [DF_Weapon_Slot] DEFAULT(0)
 	,[SlotWanted] INT NOT NULL CONSTRAINT [DF_Weapon_SlotWanted] DEFAULT(0)
+	,[Dominion] INT NOT NULL CONSTRAINT [DF_Weapon_Dominion] DEFAULT(0)
+	,[DominionWanted] INT NOT NULL CONSTRAINT [DF_Weapon_DominionWanted] DEFAULT(0)
 	,[Bonus] INT NOT NULL CONSTRAINT [DF_Weapon_Bonus] DEFAULT(0)
 	,[BonusWanted] INT NOT NULL CONSTRAINT [DF_Weapon_BonusWanted] DEFAULT(0)
 	,CONSTRAINT [FK_AccountWeapon_Account] FOREIGN KEY ([AccountID]) REFERENCES [Account]([AccountID])
