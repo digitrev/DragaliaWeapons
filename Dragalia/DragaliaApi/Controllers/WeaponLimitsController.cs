@@ -50,11 +50,11 @@ namespace DragaliaApi.Controllers
                         Slots = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Slots")
                                                   .Select(wu => wu.Step)
                                                   .DefaultIfEmpty()
-                                                  .Max() +
-                                x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Dominion")
-                                                  .Select(wu => wu.Step)
-                                                  .DefaultIfEmpty()
                                                   .Max(),
+                        Dominion = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Dominion")
+                                                     .Select(wu => wu.Step)
+                                                     .DefaultIfEmpty()
+                                                     .Max(),
                         Bonus = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Weapon Bonus")
                                                   .Select(wu => wu.Step)
                                                   .DefaultIfEmpty()
@@ -96,11 +96,11 @@ namespace DragaliaApi.Controllers
                         Slots = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Slots")
                                                   .Select(wu => wu.Step)
                                                   .DefaultIfEmpty()
-                                                  .Max() +
-                                x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Dominion")
-                                                  .Select(wu => wu.Step)
-                                                  .DefaultIfEmpty()
                                                   .Max(),
+                        Dominion = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Dominion")
+                                                     .Select(wu => wu.Step)
+                                                     .DefaultIfEmpty()
+                                                     .Max(),
                         Bonus = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Weapon Bonus")
                                                   .Select(wu => wu.Step)
                                                   .DefaultIfEmpty()
