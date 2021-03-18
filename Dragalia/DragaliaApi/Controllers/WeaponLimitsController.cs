@@ -23,11 +23,12 @@ namespace DragaliaApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<WeaponLimits>>> GetWeaponLimits()
+        public async Task<ActionResult<IEnumerable<WeaponLimits>>> GetWeaponLimits(int? weaponID)
         {
             try
             {
-                return await _context.Weapons.Include(w => w.WeaponUpgrades)
+                return await _context.Weapons.Where(w => weaponID == null || w.WeaponId == weaponID)
+                    .Include(w => w.WeaponUpgrades)
                     .ThenInclude(wu => wu.UpgradeType)
                     .Join(_context.WeaponLevels.GroupBy(wl => wl.Rarity,
                                                         (rarity, wl) => new { rarity, level = wl.Max(x => x.WeaponLevel1) }),
@@ -68,53 +69,6 @@ namespace DragaliaApi.Controllers
             }
         }
         
-        [HttpGet("{weaponID}")]
-        public async Task<ActionResult<WeaponLimits>> GetWeaponLimitsByWeapon(int weaponID)
-        {
-            try
-            {
-                return await _context.Weapons.Where(w => w.WeaponId == weaponID)
-                    .Include(w => w.WeaponUpgrades)
-                    .ThenInclude(wu => wu.UpgradeType)
-                    .Join(_context.WeaponLevels.GroupBy(wl => wl.Rarity,
-                                                        (rarity, wl) => new { rarity, level = wl.Max(x => x.WeaponLevel1) }),
-                          w => w.Rarity,
-                          wl => wl.rarity,
-                          (w, wl) => new { w, wl.level }
-                          )
-                    .Select(x => new WeaponLimits
-                    {
-                        WeaponID = x.w.WeaponId,
-                        Level = x.level,
-                        Unbind = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Unbind")
-                                                   .Select(wu => wu.Step)
-                                                   .DefaultIfEmpty()
-                                                   .Max(),
-                        Refinement = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Refinement")
-                                                       .Select(wu => wu.Step)
-                                                       .DefaultIfEmpty()
-                                                       .Max(),
-                        Slots = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Slots")
-                                                  .Select(wu => wu.Step)
-                                                  .DefaultIfEmpty()
-                                                  .Max() +
-                                x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Dominion")
-                                                  .Select(wu => wu.Step)
-                                                  .DefaultIfEmpty()
-                                                  .Max(),
-                        Bonus = x.w.WeaponUpgrades.Where(wu => wu.UpgradeType.UpgradeType1 == "Weapon Bonus")
-                                                  .Select(wu => wu.Step)
-                                                  .DefaultIfEmpty()
-                                                  .Max()
-                    })
-                    .FirstAsync();
-            }
-            catch (Exception ex)
-            {
-                return Problem(detail: ex.ToString(), statusCode: 500);
-            }
-        }
-
         // GET: api/WeaponLimits/unbind
         [HttpGet("unbind")]
         public async Task<ActionResult<IEnumerable<WeaponUnbindLimit>>> GetWeaponUnbindLimits(int? rarity)

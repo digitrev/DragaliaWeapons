@@ -118,6 +118,8 @@ namespace DragaliaApi.Controllers
             accountWeapon.RefineWanted = accountWeaponDTO.RefineWanted;
             accountWeapon.Slot = accountWeaponDTO.Slot;
             accountWeapon.SlotWanted = accountWeaponDTO.SlotWanted;
+            accountWeapon.Dominion = accountWeaponDTO.Dominion;
+            accountWeapon.DominionWanted = accountWeaponDTO.DominionWanted;
             accountWeapon.Bonus = accountWeaponDTO.Bonus;
             accountWeapon.BonusWanted = accountWeaponDTO.BonusWanted;
 
@@ -251,8 +253,8 @@ namespace DragaliaApi.Controllers
                             && x.aw.Slot < x.wu.Step
                             && x.wu.Step <= x.aw.SlotWanted)
                         || (x.wu.UpgradeType.UpgradeType1 == "Dominion"
-                            && x.aw.Slot < x.wu.Step + 1
-                            && x.wu.Step + 1 <= x.aw.SlotWanted)
+                            && x.aw.Dominion < x.wu.Step
+                            && x.wu.Step <= x.aw.DominionWanted)
                         || (x.wu.UpgradeType.UpgradeType1 == "Weapon Bonus"
                             && x.aw.Bonus < x.wu.Step
                             && x.wu.Step <= x.aw.BonusWanted)

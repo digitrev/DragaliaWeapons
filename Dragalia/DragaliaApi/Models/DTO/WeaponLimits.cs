@@ -12,6 +12,7 @@ namespace DragaliaApi.Models.DTO
         public int Unbind { get; set; }
         public int Refinement { get; set; }
         public int Slots { get; set; }
+        public int Dominion { get; set; }
         public int Bonus { get; set; }
     }
 }
