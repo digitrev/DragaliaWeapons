@@ -6,6 +6,7 @@ import {
   MaterialData,
   WeaponData,
   WeaponLevelLimit,
+  WeaponLimit,
   WeaponSeriesData,
   WeaponTypeData,
   WeaponUnbindLimit,
@@ -30,6 +31,7 @@ export class PublicApi extends HttpClient {
   public getWeaponSeries = () =>
     this.instance.get<WeaponSeriesData[]>('/WeaponSeries');
 
+  //weapon limits
   public getWeaponUnbindLimits = (rarity?: number) =>
     this.instance.get<WeaponUnbindLimit[]>('/WeaponLimits/unbind', {
       params: {
@@ -43,6 +45,16 @@ export class PublicApi extends HttpClient {
         rarity: rarity,
       },
     });
+
+  public getAllWeaponLimits = (weaponID: number) =>
+    this.instance.get<WeaponLimit[]>('/WeaponLimits', {
+      params: {
+        weaponID: weaponID,
+      },
+    });
+
+  public getWeaponLimits = () =>
+    this.instance.get<WeaponLimit[]>('/WeaponLimits');
 
   //material api
   public getMaterials = () =>

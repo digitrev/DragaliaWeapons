@@ -11,6 +11,8 @@ export interface AccountWeaponData {
   refineWanted: number;
   slot: number;
   slotWanted: number;
+  dominion: number;
+  dominionWanted: number;
   bonus: number;
   bonusWanted: number;
   weapon?: WeaponData;
@@ -50,6 +52,16 @@ export interface WeaponLevelLimit {
   weaponRarity: number;
   unbindLevel: number;
   maxWeaponLevel: number;
+}
+
+export interface WeaponLimit {
+  weaponID: number;
+  level: number;
+  unbind: number;
+  refinement: number;
+  slots: number;
+  dominion: number;
+  bonus: number;
 }
 
 //material related data

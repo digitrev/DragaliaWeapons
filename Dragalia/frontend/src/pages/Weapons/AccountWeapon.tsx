@@ -74,6 +74,8 @@ export const AccountWeapon: FC<Props> = ({
         refineWanted: values.refineWanted,
         slot: values.slot,
         slotWanted: values.slotWanted,
+        dominion: values.dominion,
+        dominionWanted: values.dominionWanted,
         bonus: values.bonus,
         bonusWanted: values.bonusWanted,
       };
