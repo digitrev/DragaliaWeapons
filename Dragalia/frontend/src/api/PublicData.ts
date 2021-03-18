@@ -46,14 +46,10 @@ export class PublicApi extends HttpClient {
       },
     });
 
-  public getAllWeaponLimits = (weaponID: number) =>
-    this.instance.get<WeaponLimit[]>('/WeaponLimits', {
-      params: {
-        weaponID: weaponID,
-      },
-    });
+  public getWeaponLimits = (weaponID: number) =>
+    this.instance.get<WeaponLimit>(`/WeaponLimits/${weaponID}`);
 
-  public getWeaponLimits = () =>
+  public getAllWeaponLimits = () =>
     this.instance.get<WeaponLimit[]>('/WeaponLimits');
 
   //material api

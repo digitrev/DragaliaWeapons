@@ -43,15 +43,7 @@ export const AccountWeaponList: FC<Props> = ({
             }
           `}
         >
-          <AccountWeapon
-            data={weapon}
-            unbindLimits={unbindLimits.filter(
-              (ul) => ul.weaponRarity === weapon.weapon?.rarity,
-            )}
-            levelLimits={levelLimits.filter(
-              (ll) => ll.weaponRarity === weapon.weapon?.rarity,
-            )}
-          />
+          <AccountWeapon data={weapon} />
         </li>
       ))}
     </ul>
