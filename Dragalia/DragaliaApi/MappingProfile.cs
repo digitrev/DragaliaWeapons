@@ -48,12 +48,14 @@ namespace DragaliaApi
                 .ForMember(dest => dest.WeaponSeries,
                            opt => opt.MapFrom(src => src.WeaponSeries1));
 
-            CreateMap<Material, MaterialDTO>()
-                .ForMember(dest => dest.Category,
-                           opt => opt.MapFrom(src => src.Category.Category1))
-                .ForMember(dest => dest.Material,
-                           opt => opt.MapFrom(src => src.Material1));
-            CreateMap<MaterialDTO, Material>();
+            //Weapon passives
+            CreateMap<Passive, PassiveDTO>()
+                .ForMember(dest => dest.Ability,
+                           opt => opt.MapFrom(src => src.Ability.Ability1))
+                .ForMember(dest => dest.Element,
+                           opt => opt.MapFrom(src => src.Element.Element1))
+                .ForMember(dest => dest.WeaponType,
+                           opt => opt.MapFrom(src => src.WeaponType.WeaponType1));
 
             //Facility data
             CreateMap<Facility, FacilityDTO>()
@@ -62,6 +64,14 @@ namespace DragaliaApi
                 .ForMember(dest => dest.Facility,
                            opt => opt.MapFrom(src => src.Facility1));
             CreateMap<FacilityDTO, Facility>();
+
+            //Material data
+            CreateMap<Material, MaterialDTO>()
+                .ForMember(dest => dest.Category,
+                           opt => opt.MapFrom(src => src.Category.Category1))
+                .ForMember(dest => dest.Material,
+                           opt => opt.MapFrom(src => src.Material1));
+            CreateMap<MaterialDTO, Material>();
 
         }
     }
