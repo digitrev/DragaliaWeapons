@@ -1,15 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
-import React, { FC, Fragment, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import {
   AccountWeaponData,
   MaterialCosts,
-  WeaponLevelLimit,
   WeaponLimit,
-  WeaponUnbindLimit,
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
 import { LoadingText } from '../../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
@@ -26,26 +23,16 @@ import { Weapon } from './Weapon';
 
 interface Props {
   data: AccountWeaponData;
+  limits: WeaponLimit;
 }
 
-export const AccountWeapon: FC<Props> = ({ data }) => {
+export const AccountWeapon: FC<Props> = ({ data, limits }) => {
   const { weaponId, weapon } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
   const [costsLoading, setCostsLoading] = useState(true);
   const [costsRequested, setCostsRequested] = useState(false);
   const [costUpdate, setCostUpdate] = useState(false);
-
-  const [limits, setLimits] = useState<WeaponLimit>({
-    weaponID: weaponId,
-    level: 0,
-    refinement: 0,
-    unbind: 0,
-    slots: 0,
-    dominion: 0,
-    bonus: 0,
-  });
-  const [limitsLoading, setLimitsLoading] = useState(true);
 
   useEffect(() => {
     let cancelled = false;
@@ -57,6 +44,7 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
         setCostsLoading(false);
       }
     };
+    console.log(costsRequested);
     if (costsRequested) {
       doGetCosts();
     }
@@ -64,22 +52,6 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
       cancelled = true;
     };
   }, [costsRequested, weaponId, costUpdate]);
-
-  useEffect(() => {
-    let cancelled = false;
-    const doGetLimits = async () => {
-      const api = new PublicApi();
-      const limitData = await api.getWeaponLimits(weaponId);
-      if (!cancelled) {
-        setLimits(limitData);
-        setLimitsLoading(false);
-      }
-    };
-    doGetLimits();
-    return () => {
-      cancelled = true;
-    };
-  }, [weaponId]);
 
   const handleSubmit = async (values: Values) => {
     const api = new PrivateApi();
@@ -122,7 +94,8 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
         padding-bottom: 10px;
       `}
     >
-      {weapon && !limitsLoading ? <Weapon data={weapon} /> : ''}
+      {weapon ? <Weapon data={weapon} /> : ''}
+
       <Form
         submitCaption="Update"
         onSubmit={handleSubmit}
@@ -178,6 +151,42 @@ export const AccountWeapon: FC<Props> = ({ data }) => {
             { validator: required },
             { validator: nonNegative },
             { validator: maxValue, arg: limits?.refinement },
+          ],
+          slot: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: limits?.slots },
+          ],
+          slotWanted: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: limits?.slots },
+          ],
+          dominion: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: limits?.dominion },
+          ],
+          dominionWanted: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: limits?.dominion },
+          ],
+          bonus: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: limits?.bonus },
+          ],
+          bonusWanted: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: limits?.bonus },
           ],
         }}
       >

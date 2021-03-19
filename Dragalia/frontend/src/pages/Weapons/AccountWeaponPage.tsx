@@ -6,10 +6,9 @@ import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
 import {
   AccountWeaponData,
   ElementData,
-  WeaponLevelLimit,
+  WeaponLimit,
   WeaponSeriesData,
   WeaponTypeData,
-  WeaponUnbindLimit,
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
@@ -29,6 +28,7 @@ export const AccountWeaponPage = () => {
   const [displayWeapons, setDisplayWeapons] = useState<
     AccountWeaponData[] | null
   >(null);
+  const [limits, setLimits] = useState<WeaponLimit[] | null>(null);
 
   const [elements, setElements] = useState<ElementData[]>([]);
   const [weaponSeries, setWeaponSeries] = useState<WeaponSeriesData[]>([]);
@@ -45,13 +45,6 @@ export const AccountWeaponPage = () => {
   ] = useState<WeaponTypeData | null>(null);
   const [progressFilter, setProgressFilter] = useState(false);
 
-  const [unbindLimits, setUnbindLimits] = useState<WeaponUnbindLimit[] | null>(
-    null,
-  );
-  const [levelLimits, setLevelLimits] = useState<WeaponLevelLimit[] | null>(
-    null,
-  );
-
   const [offset, setOffset] = useState(0);
   const [pageCount, setPageCount] = useState(1);
 
@@ -62,14 +55,12 @@ export const AccountWeaponPage = () => {
       const elementData = await api.getElements();
       const weaponSeriesData = await api.getWeaponSeries();
       const weaponTypeData = await api.getWeaponTypes();
-      const unbindLimitData = await api.getWeaponUnbindLimits();
-      const levelLimitData = await api.getWeaponLevelLimits();
+      const limitData = await api.getAllWeaponLimits();
       if (!cancelled) {
         setElements(elementData);
         setWeaponSeries(weaponSeriesData);
         setWeaponTypes(weaponTypeData);
-        setUnbindLimits(unbindLimitData);
-        setLevelLimits(levelLimitData);
+        setLimits(limitData);
       }
     };
     const doGetWeapons = async () => {
@@ -113,6 +104,7 @@ export const AccountWeaponPage = () => {
             w.refineWanted > w.refine ||
             w.slotWanted > w.slot ||
             w.unbindWanted > w.unbind ||
+            w.dominionWanted > w.dominion ||
             w.weaponLevelWanted > w.weaponLevel,
         );
       }
@@ -259,8 +251,7 @@ export const AccountWeaponPage = () => {
           )}
           <AccountWeaponList
             data={displayWeapons || []}
-            unbindLimits={unbindLimits || []}
-            levelLimits={levelLimits || []}
+            limits={limits || []}
           />
           <ReactPaginate
             pageCount={pageCount}

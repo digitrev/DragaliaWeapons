@@ -1,25 +1,32 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { FC } from 'react';
-import {
-  AccountWeaponData,
-  WeaponLevelLimit,
-  WeaponUnbindLimit,
-} from '../../api/DataInterfaces';
+import { AccountWeaponData, WeaponLimit } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
 import { AccountWeapon } from './AccountWeapon';
 
 interface Props {
   data: AccountWeaponData[];
-  unbindLimits: WeaponUnbindLimit[];
-  levelLimits: WeaponLevelLimit[];
+  limits: WeaponLimit[];
 }
 
-export const AccountWeaponList: FC<Props> = ({
-  data,
-  levelLimits,
-  unbindLimits,
-}) => {
+export const AccountWeaponList: FC<Props> = ({ data, limits }) => {
+  const findLimit = (weaponID: number) => {
+    let limit = limits.find((l) => l.weaponID === weaponID);
+    if (limit === undefined) {
+      limit = {
+        weaponID: weaponID,
+        unbind: 0,
+        refinement: 0,
+        bonus: 0,
+        dominion: 0,
+        level: 0,
+        slots: 0,
+      };
+    }
+    return limit;
+  };
+
   return (
     <ul
       css={css`
@@ -43,7 +50,7 @@ export const AccountWeaponList: FC<Props> = ({
             }
           `}
         >
-          <AccountWeapon data={weapon} />
+          <AccountWeapon data={weapon} limits={findLimit(weapon.weaponId)} />
         </li>
       ))}
     </ul>
