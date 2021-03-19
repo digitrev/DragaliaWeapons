@@ -18,6 +18,10 @@ BEGIN
 	SET NOCOUNT ON
 
 	EXEC dbo.spFillFacility
+
 	EXEC dbo.spFillInventory
-	exec dbo.spFillWeapon
+
+	EXEC dbo.spFillWeapon
+
+	EXEC dbo.spFillPassive
 END

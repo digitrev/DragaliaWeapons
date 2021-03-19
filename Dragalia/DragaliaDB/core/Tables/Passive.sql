@@ -11,3 +11,13 @@
 	,CONSTRAINT [FK_Passive_Element] FOREIGN KEY ([ElementID]) REFERENCES [core].[Element]([ElementID]) ON DELETE CASCADE
 	,CONSTRAINT [FK_Passive_Ability] FOREIGN KEY ([AbilityID]) REFERENCES [core].[Ability]([AbilityID]) ON DELETE CASCADE
 	)
+GO
+
+CREATE TRIGGER [core].[Trigger_Passive] ON [core].[Passive]
+AFTER INSERT
+AS
+BEGIN
+	SET NOCOUNT ON
+
+	EXEC dbo.spFillPassive
+END
