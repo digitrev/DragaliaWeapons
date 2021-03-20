@@ -22,16 +22,19 @@ namespace DragaliaApi.Data
         public virtual DbSet<Ability> Abilities { get; set; }
         public virtual DbSet<AbilityGroup> AbilityGroups { get; set; }
         public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<AccountAdventurer> AccountAdventurers { get; set; }
         public virtual DbSet<AccountFacility> AccountFacilities { get; set; }
         public virtual DbSet<AccountInventory> AccountInventories { get; set; }
         public virtual DbSet<AccountPassive> AccountPassives { get; set; }
         public virtual DbSet<AccountWeapon> AccountWeapons { get; set; }
         public virtual DbSet<AccountWyrmprint> AccountWyrmprints { get; set; }
+        public virtual DbSet<Adventurer> Adventurers { get; set; }
         public virtual DbSet<Affinity> Affinities { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Element> Elements { get; set; }
         public virtual DbSet<Facility> Facilities { get; set; }
         public virtual DbSet<FacilityUpgrade> FacilityUpgrades { get; set; }
+        public virtual DbSet<ManaCircle> ManaCircles { get; set; }
         public virtual DbSet<Material> Materials { get; set; }
         public virtual DbSet<MaterialQuest> MaterialQuests { get; set; }
         public virtual DbSet<Passive> Passives { get; set; }
@@ -127,6 +130,29 @@ namespace DragaliaApi.Data
                     .IsRequired()
                     .HasMaxLength(255)
                     .HasColumnName("AuthID");
+            });
+
+            modelBuilder.Entity<AccountAdventurer>(entity =>
+            {
+                entity.HasKey(e => new { e.AccountId, e.AdventurerId });
+
+                entity.ToTable("AccountAdventurer");
+
+                entity.Property(e => e.AccountId).HasColumnName("AccountID");
+
+                entity.Property(e => e.AdventurerId).HasColumnName("AdventurerID");
+
+                entity.HasOne(d => d.Account)
+                    .WithMany(p => p.AccountAdventurers)
+                    .HasForeignKey(d => d.AccountId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_AccountAdventurer_Account");
+
+                entity.HasOne(d => d.Adventurer)
+                    .WithMany(p => p.AccountAdventurers)
+                    .HasForeignKey(d => d.AdventurerId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_AccountAdventurer_Adventurer");
             });
 
             modelBuilder.Entity<AccountFacility>(entity =>
@@ -246,6 +272,42 @@ namespace DragaliaApi.Data
                     .HasConstraintName("FK_AccountWyrmprint_Wyrmprint");
             });
 
+            modelBuilder.Entity<Adventurer>(entity =>
+            {
+                entity.ToTable("Adventurer", "core");
+
+                entity.Property(e => e.AdventurerId)
+                    .ValueGeneratedNever()
+                    .HasColumnName("AdventurerID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
+
+                entity.Property(e => e.Adventurer1)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnName("Adventurer");
+
+                entity.Property(e => e.ElementId).HasColumnName("ElementID");
+
+                entity.Property(e => e.Mclimit).HasColumnName("MCLimit");
+
+                entity.Property(e => e.WeaponTypeId).HasColumnName("WeaponTypeID");
+
+                entity.HasOne(d => d.Element)
+                    .WithMany(p => p.Adventurers)
+                    .HasForeignKey(d => d.ElementId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Adventurer_Element");
+
+                entity.HasOne(d => d.WeaponType)
+                    .WithMany(p => p.Adventurers)
+                    .HasForeignKey(d => d.WeaponTypeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Adventurer_WeaponType");
+            });
+
             modelBuilder.Entity<Affinity>(entity =>
             {
                 entity.ToTable("Affinity", "core");
@@ -344,6 +406,31 @@ namespace DragaliaApi.Data
                     .WithMany(p => p.FacilityUpgrades)
                     .HasForeignKey(d => d.MaterialId)
                     .HasConstraintName("FK_FacilityUpgrade_Material");
+            });
+
+            modelBuilder.Entity<ManaCircle>(entity =>
+            {
+                entity.HasKey(e => new { e.AdventurerId, e.ManaNode, e.MaterialId });
+
+                entity.ToTable("ManaCircle", "core");
+
+                entity.Property(e => e.AdventurerId).HasColumnName("AdventurerID");
+
+                entity.Property(e => e.MaterialId)
+                    .HasMaxLength(50)
+                    .HasColumnName("MaterialID");
+
+                entity.HasOne(d => d.Adventurer)
+                    .WithMany(p => p.ManaCircles)
+                    .HasForeignKey(d => d.AdventurerId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ManaCircle_Adventurer");
+
+                entity.HasOne(d => d.Material)
+                    .WithMany(p => p.ManaCircles)
+                    .HasForeignKey(d => d.MaterialId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ManaCircle_Material");
             });
 
             modelBuilder.Entity<Material>(entity =>

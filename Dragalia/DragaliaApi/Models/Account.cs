@@ -10,6 +10,7 @@ namespace DragaliaApi.Models
     {
         public Account()
         {
+            AccountAdventurers = new HashSet<AccountAdventurer>();
             AccountFacilities = new HashSet<AccountFacility>();
             AccountInventories = new HashSet<AccountInventory>();
             AccountPassives = new HashSet<AccountPassive>();
@@ -23,6 +24,7 @@ namespace DragaliaApi.Models
         public string AuthId { get; set; }
         public bool? Active { get; set; }
 
+        public virtual ICollection<AccountAdventurer> AccountAdventurers { get; set; }
         public virtual ICollection<AccountFacility> AccountFacilities { get; set; }
         public virtual ICollection<AccountInventory> AccountInventories { get; set; }
         public virtual ICollection<AccountPassive> AccountPassives { get; set; }
