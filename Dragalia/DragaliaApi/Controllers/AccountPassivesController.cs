@@ -82,10 +82,11 @@ namespace DragaliaApi.Controllers
         [HttpPut("{passiveID}")]
         public async Task<IActionResult> PutAccountPassive(int passiveID, AccountPassiveDTO accountPassiveDTO)
         {
-            if (id != accountPassive.AccountId)
-            {
-                return BadRequest();
-            }
+            var accountID = await AccountsController.GetAccountID();
+            var accountPassive = await _context.AccountPassives.FindAsync(accountID, passiveID);
+
+            accountPassive.Owned = accountPassiveDTO.Owned;
+            accountPassive.Wanted = accountPassiveDTO.Wanted;
 
             _context.Entry(accountPassive).State = EntityState.Modified;
 
@@ -93,16 +94,9 @@ namespace DragaliaApi.Controllers
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException) when (!AccountPassiveExists(accountID, passiveID))
             {
-                if (!AccountPassiveExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return NotFound();
             }
 
             return NoContent();
@@ -113,31 +107,33 @@ namespace DragaliaApi.Controllers
         [HttpPost]
         public async Task<ActionResult<AccountPassiveDTO>> PostAccountPassive(AccountPassiveDTO accountPassiveDTO)
         {
+            var accountID = await AccountsController.GetAccountID();
+            var accountPassive = _mapper.Map<AccountPassive>(accountPassiveDTO);
+            accountPassive.AccountId = accountID;
+
             _context.AccountPassives.Add(accountPassive);
             try
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException) when (AccountPassiveExists(accountID, accountPassive.PassiveId))
             {
-                if (AccountPassiveExists(accountPassive.AccountId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
+                return Conflict();
             }
 
-            return CreatedAtAction("GetAccountPassive", new { id = accountPassive.AccountId }, accountPassive);
+            return CreatedAtAction(
+                nameof(GetAccountPassive),
+                new { accountID = accountPassive.AccountId, passiveID = accountPassive.PassiveId },
+                _mapper.Map<AccountPassiveDTO>(accountPassive)
+                );
         }
 
         // DELETE: api/AccountPassives/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAccountPassive(int id)
+        public async Task<IActionResult> DeleteAccountPassive(int passiveID)
         {
-            var accountPassive = await _context.AccountPassives.FindAsync(id);
+            var accountID = await AccountsController.GetAccountID();
+            var accountPassive = await _context.AccountPassives.FindAsync(accountID, passiveID);
             if (accountPassive == null)
             {
                 return NotFound();
