@@ -30,6 +30,30 @@ BEGIN
 	IF OBJECT_ID('tempdb..#WyrmprintLimit') IS NOT NULL
 		DROP TABLE #WyrmprintLimit
 
+	IF OBJECT_ID('tempdb..#AdventurerMC') IS NOT NULL
+		DROP TABLE #AdventurerMC
+
+	IF OBJECT_ID('tempdb..#ManaMaterial') IS NOT NULL
+		DROP TABLE #ManaMaterial
+
+	IF OBJECT_ID('tempdb..#MCNodes') IS NOT NULL
+		DROP TABLE #MCNodes
+
+	IF OBJECT_ID('tempdb..#ManaPieceRaw') IS NOT NULL
+		DROP TABLE #ManaPieceRaw
+
+	IF OBJECT_ID('tempdb..#ManaPieceElement') IS NOT NULL
+		DROP TABLE #ManaPieceElement
+
+	IF OBJECT_ID('tempdb..#ManaPieceEldwater') IS NOT NULL
+		DROP TABLE #ManaPieceEldwater
+
+	IF OBJECT_ID('tempdb..#AdventurerUnbind') IS NOT NULL
+		DROP TABLE #AdventurerUnbind
+
+	IF OBJECT_ID('tempdb..#MCUnbind') IS NOT NULL
+		DROP TABLE #MCUnbind
+
 	--Ability group
 	MERGE core.AbilityGroup AS trg
 	USING (
@@ -1287,4 +1311,807 @@ BEGIN
 				,LevelLimit4
 				)) AS upvt
 	WHERE upvt.MaxWyrmprintLevel > 0
+
+	--Adventurer data
+	MERGE core.Adventurer AS trg
+	USING (
+		SELECT a.AdventurerID
+			,a.VariationID
+			,a.Adventurer
+			,a.Rarity
+			,a.ElementID
+			,a.WeaponTypeID
+			,CASE a.MaxLimitBreakCount
+				WHEN 4
+					THEN 50
+				WHEN 5
+					THEN 70
+				ELSE 0
+				END AS MCLimit
+		FROM jsn.TableJson AS aj
+		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				AdventurerID INT '$.title.IdLong'
+				,VariationID INT '$.title.VariationId'
+				,Adventurer NVARCHAR(50) '$.title.FullName'
+				,Rarity INT '$.title.Rarity'
+				,ElementID INT '$.title.ElementalTypeId'
+				,WeaponTypeID INT '$.title.WeaponTypeId'
+				,MaxLimitBreakCount INT '$.title.MaxLimitBreakCount'
+				) AS a
+		WHERE aj.TableName = 'Adventurer'
+		) AS src
+		ON src.AdventurerID = trg.AdventurerID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Adventurer = src.Adventurer
+				,Rarity = src.Rarity
+				,ElementID = src.ElementID
+				,WeaponTypeID = src.WeaponTypeID
+				,MCLimit = src.MCLimit
+				,Active = 1
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			UPDATE
+			SET Active = 0
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AdventurerID
+				,Adventurer
+				,Rarity
+				,ElementID
+				,WeaponTypeID
+				,MCLimit
+				,Active
+				)
+			VALUES (
+				src.AdventurerID
+				,src.Adventurer
+				,src.Rarity
+				,src.ElementID
+				,src.WeaponTypeID
+				,src.MCLimit
+				,1
+				);
+
+	--Mana circles (lots of it)
+	SELECT a.AdventurerID
+		,CAST(REPLACE(a.ManaCircleName, 'MC_', '') AS INT) AS MCID
+	INTO #AdventurerMC
+	FROM jsn.TableJson AS aj
+	CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			AdventurerID INT '$.title.IdLong'
+			,ManaCircleName NVARCHAR(50) '$.title.ManaCircleName'
+			) AS a
+	WHERE aj.TableName = 'Adventurer'
+
+	SELECT upvt.ManaMaterialID
+		,upvt.Element
+		,upvt.MaterialID
+	INTO #ManaMaterial
+	FROM (
+		SELECT m.ManaMaterialID
+			,m.Flame
+			,m.Water
+			,m.Wind
+			,m.Light
+			,m.Shadow
+		FROM jsn.TableJson AS mj
+		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				ManaMaterialID INT '$.title.Id'
+				,Flame NVARCHAR(50) '$.title.FireMaterialId'
+				,Water NVARCHAR(50) '$.title.WaterMaterialId'
+				,Wind NVARCHAR(50) '$.title.WindMaterialId'
+				,Light NVARCHAR(50) '$.title.LightMaterialId'
+				,Shadow NVARCHAR(50) '$.title.DarkMaterialId'
+				) AS m
+		WHERE mj.TableName = 'MCMaterials'
+		) AS src
+	UNPIVOT(MaterialID FOR Element IN (
+				Flame
+				,Water
+				,Wind
+				,Light
+				,Shadow
+				)) AS upvt
+
+	SELECT MCID
+		,ManaNode
+		,ManaPieceType
+		,ManaCost
+		,Stage = ROW_NUMBER() OVER (
+			PARTITION BY MCID
+			,ManaPieceType ORDER BY ManaNode
+			)
+	INTO #MCNodes
+	FROM (
+		SELECT CAST(REPLACE(m.ManaCircleName, 'MC_', '') AS INT) AS MCID
+			,m.ManaNode
+			,m.ManaPieceType
+			,m.ManaCost
+		FROM jsn.TableJson AS mj
+		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				ManaCircleName NVARCHAR(50) '$.title.MC'
+				,ManaNode INT '$.title.Id'
+				,ManaPieceType INT '$.title.ManaPieceType'
+				,ManaCost INT '$.title.NecessaryManaPoint'
+				) AS m
+		WHERE mj.TableName = 'MCNodes'
+		) AS d
+
+	SELECT m.MCID
+		,m.ManaPieceType
+		,m.ManaMaterialId11
+		,m.ManaMaterialId12
+		,m.ManaMaterialId13
+		,m.ManaMaterialQuantity11
+		,m.ManaMaterialQuantity12
+		,m.ManaMaterialQuantity13
+		,m.NeedDewPoint1
+		,m.ManaMaterialId21
+		,m.ManaMaterialId22
+		,m.ManaMaterialId23
+		,m.ManaMaterialQuantity21
+		,m.ManaMaterialQuantity22
+		,m.ManaMaterialQuantity23
+		,m.NeedDewPoint2
+		,m.ManaMaterialId31
+		,m.ManaMaterialId32
+		,m.ManaMaterialId33
+		,m.ManaMaterialQuantity31
+		,m.ManaMaterialQuantity32
+		,m.ManaMaterialQuantity33
+		,m.NeedDewPoint3
+		,m.ManaMaterialId41
+		,m.ManaMaterialId42
+		,m.ManaMaterialId43
+		,m.ManaMaterialQuantity41
+		,m.ManaMaterialQuantity42
+		,m.ManaMaterialQuantity43
+		,m.NeedDewPoint4
+	INTO #ManaPieceRaw
+	FROM jsn.TableJson AS mj
+	CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			MCID INT '$.title.ElementId'
+			,ManaPieceType INT '$.title.ManaPieceType'
+			,ManaMaterialId11 INT '$.title.ManaMaterialId11'
+			,ManaMaterialId12 INT '$.title.ManaMaterialId12'
+			,ManaMaterialId13 INT '$.title.ManaMaterialId13'
+			,ManaMaterialQuantity11 INT '$.title.ManaMaterialQuantity11'
+			,ManaMaterialQuantity12 INT '$.title.ManaMaterialQuantity12'
+			,ManaMaterialQuantity13 INT '$.title.ManaMaterialQuantity13'
+			,NeedDewPoint1 INT '$.title.NeedDewPoint1'
+			,ManaMaterialId21 INT '$.title.ManaMaterialId21'
+			,ManaMaterialId22 INT '$.title.ManaMaterialId22'
+			,ManaMaterialId23 INT '$.title.ManaMaterialId23'
+			,ManaMaterialQuantity21 INT '$.title.ManaMaterialQuantity21'
+			,ManaMaterialQuantity22 INT '$.title.ManaMaterialQuantity22'
+			,ManaMaterialQuantity23 INT '$.title.ManaMaterialQuantity23'
+			,NeedDewPoint2 INT '$.title.NeedDewPoint2'
+			,ManaMaterialId31 INT '$.title.ManaMaterialId31'
+			,ManaMaterialId32 INT '$.title.ManaMaterialId32'
+			,ManaMaterialId33 INT '$.title.ManaMaterialId33'
+			,ManaMaterialQuantity31 INT '$.title.ManaMaterialQuantity31'
+			,ManaMaterialQuantity32 INT '$.title.ManaMaterialQuantity32'
+			,ManaMaterialQuantity33 INT '$.title.ManaMaterialQuantity33'
+			,NeedDewPoint3 INT '$.title.NeedDewPoint3'
+			,ManaMaterialId41 INT '$.title.ManaMaterialId41'
+			,ManaMaterialId42 INT '$.title.ManaMaterialId42'
+			,ManaMaterialId43 INT '$.title.ManaMaterialId43'
+			,ManaMaterialQuantity41 INT '$.title.ManaMaterialQuantity41'
+			,ManaMaterialQuantity42 INT '$.title.ManaMaterialQuantity42'
+			,ManaMaterialQuantity43 INT '$.title.ManaMaterialQuantity43'
+			,NeedDewPoint4 INT '$.title.NeedDewPoint4'
+			) AS m
+	WHERE mj.TableName = 'ManaPieceElement'
+
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId11 AS ManaMaterialID
+		,ManaMaterialQuantity11 AS Quantity
+		,1 AS Stage
+	INTO #ManaPieceElement
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId11 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId12
+		,ManaMaterialQuantity12
+		,1
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId12 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId13
+		,ManaMaterialQuantity13
+		,1
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId13 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId21
+		,ManaMaterialQuantity21
+		,2
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId21 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId22
+		,ManaMaterialQuantity22
+		,2
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId22 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId23
+		,ManaMaterialQuantity23
+		,2
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId23 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId31
+		,ManaMaterialQuantity31
+		,3
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId31 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId32
+		,ManaMaterialQuantity32
+		,3
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId32 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId33
+		,ManaMaterialQuantity33
+		,3
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId33 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId41
+		,ManaMaterialQuantity41
+		,4
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId41 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId42
+		,ManaMaterialQuantity42
+		,4
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId42 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId43
+		,ManaMaterialQuantity43
+		,4
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId43 <> 0
+
+	SELECT MCID
+		,ManaPieceType
+		,CAST(REPLACE(Stage, 'NeedDewPoint', '') AS INT) AS Stage
+		,Eldwater
+	INTO #ManaPieceEldwater
+	FROM (
+		SELECT MCID
+			,ManaPieceType
+			,NeedDewPoint1
+			,NeedDewPoint2
+			,NeedDewPoint3
+			,NeedDewPoint4
+		FROM #ManaPieceRaw AS mpr
+		) AS src
+	UNPIVOT(Eldwater FOR Stage IN (
+				NeedDewPoint1
+				,NeedDewPoint2
+				,NeedDewPoint3
+				,NeedDewPoint4
+				)) AS upvt
+	WHERE Eldwater <> 0
+
+	TRUNCATE TABLE core.ManaCircle
+
+	INSERT core.ManaCircle (
+		AdventurerID
+		,ManaNode
+		,MaterialID
+		,Quantity
+		)
+	SELECT a.AdventurerID
+		,mc.ManaNode
+		,'Mana'
+		,mc.ManaCost
+	FROM core.Adventurer AS a
+	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
+	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
+	
+	UNION ALL
+	
+	SELECT a.AdventurerID
+		,mc.ManaNode
+		,'Eldwater'
+		,mpe.Eldwater
+	FROM core.Adventurer AS a
+	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
+	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
+	INNER JOIN #ManaPieceEldwater AS mpe ON mpe.MCID = mc.MCID
+		AND mpe.ManaPieceType = mc.ManaPieceType
+		AND mpe.Stage = mc.Stage
+	
+	UNION ALL
+	
+	SELECT a.AdventurerID
+		,mc.ManaNode
+		,mm.MaterialID
+		,mpe.Quantity
+	FROM core.Adventurer AS a
+	INNER JOIN core.Element AS e ON e.ElementID = a.ElementID
+	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
+	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
+	INNER JOIN #ManaPieceElement AS mpe ON mpe.MCID = mc.MCID
+		AND mpe.ManaPieceType = mc.ManaPieceType
+		AND mpe.Stage = mc.Stage
+	INNER JOIN #ManaMaterial AS mm ON mm.ManaMaterialID = mpe.ManaMaterialID
+		AND mm.Element = e.Element
+
+	INSERT core.ManaCircle (
+		AdventurerID
+		,ManaNode
+		,MaterialID
+		,Quantity
+		)
+	SELECT a.AdventurerID
+		,31
+		,'Eldwater'
+		,2500
+	FROM core.Adventurer AS a
+	WHERE a.Rarity = 3
+	
+	UNION ALL
+	
+	SELECT a.AdventurerID
+		,41
+		,'Eldwater'
+		,25000
+	FROM core.Adventurer AS a
+	WHERE a.Rarity IN (
+			3
+			,4
+			)
+
+	SELECT a.AdventurerID
+		,CONCAT (
+			'10'
+			,CASE 
+				WHEN amc.MCID IN (
+						404
+						,405
+						)
+					THEN 401
+				WHEN amc.MCID = 403
+					THEN 402
+				WHEN amc.MCID > 501
+					THEN 501
+				ELSE amc.MCID
+				END
+			,'0'
+			,a.ElementID
+			) AS UnbindID
+	INTO #AdventurerUnbind
+	FROM #AdventurerMC AS amc
+	INNER JOIN core.Adventurer AS a ON a.AdventurerID = amc.AdventurerID
+	WHERE amc.MCID <> 0
+
+	SELECT c.UnbindID
+		,c.OrbData1Id1
+		,c.OrbData2Id1
+		,c.OrbData3Id1
+		,c.OrbData4Id1
+		,c.OrbData5Id1
+		,c.OrbData1Num1
+		,c.OrbData2Num1
+		,c.OrbData3Num1
+		,c.OrbData4Num1
+		,c.OrbData5Num1
+		,c.OrbData1Id2
+		,c.OrbData2Id2
+		,c.OrbData3Id2
+		,c.OrbData4Id2
+		,c.OrbData5Id2
+		,c.OrbData1Num2
+		,c.OrbData2Num2
+		,c.OrbData3Num2
+		,c.OrbData4Num2
+		,c.OrbData5Num2
+		,c.OrbData1Id3
+		,c.OrbData2Id3
+		,c.OrbData3Id3
+		,c.OrbData4Id3
+		,c.OrbData5Id3
+		,c.OrbData1Num3
+		,c.OrbData2Num3
+		,c.OrbData3Num3
+		,c.OrbData4Num3
+		,c.OrbData5Num3
+		,c.OrbData1Id4
+		,c.OrbData2Id4
+		,c.OrbData3Id4
+		,c.OrbData4Id4
+		,c.OrbData5Id4
+		,c.OrbData1Num4
+		,c.OrbData2Num4
+		,c.OrbData3Num4
+		,c.OrbData4Num4
+		,c.OrbData5Num4
+		,c.OrbData1Id5
+		,c.OrbData2Id5
+		,c.OrbData3Id5
+		,c.OrbData4Id5
+		,c.OrbData5Id5
+		,c.OrbData1Num5
+		,c.OrbData2Num5
+		,c.OrbData3Num5
+		,c.OrbData4Num5
+		,c.OrbData5Num5
+	INTO #MCUnbind
+	FROM jsn.TableJson AS cj
+	CROSS APPLY OPENJSON(cj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			UnbindID INT '$.title.Id'
+			,OrbData1Id1 NVARCHAR(50) '$.title.OrbData1Id1'
+			,OrbData2Id1 NVARCHAR(50) '$.title.OrbData2Id1'
+			,OrbData3Id1 NVARCHAR(50) '$.title.OrbData3Id1'
+			,OrbData4Id1 NVARCHAR(50) '$.title.OrbData4Id1'
+			,OrbData5Id1 NVARCHAR(50) '$.title.OrbData5Id1'
+			,OrbData1Num1 INT '$.title.OrbData1Num1'
+			,OrbData2Num1 INT '$.title.OrbData2Num1'
+			,OrbData3Num1 INT '$.title.OrbData3Num1'
+			,OrbData4Num1 INT '$.title.OrbData4Num1'
+			,OrbData5Num1 INT '$.title.OrbData5Num1'
+			,OrbData1Id2 NVARCHAR(50) '$.title.OrbData1Id2'
+			,OrbData2Id2 NVARCHAR(50) '$.title.OrbData2Id2'
+			,OrbData3Id2 NVARCHAR(50) '$.title.OrbData3Id2'
+			,OrbData4Id2 NVARCHAR(50) '$.title.OrbData4Id2'
+			,OrbData5Id2 NVARCHAR(50) '$.title.OrbData5Id2'
+			,OrbData1Num2 INT '$.title.OrbData1Num2'
+			,OrbData2Num2 INT '$.title.OrbData2Num2'
+			,OrbData3Num2 INT '$.title.OrbData3Num2'
+			,OrbData4Num2 INT '$.title.OrbData4Num2'
+			,OrbData5Num2 INT '$.title.OrbData5Num2'
+			,OrbData1Id3 NVARCHAR(50) '$.title.OrbData1Id3'
+			,OrbData2Id3 NVARCHAR(50) '$.title.OrbData2Id3'
+			,OrbData3Id3 NVARCHAR(50) '$.title.OrbData3Id3'
+			,OrbData4Id3 NVARCHAR(50) '$.title.OrbData4Id3'
+			,OrbData5Id3 NVARCHAR(50) '$.title.OrbData5Id3'
+			,OrbData1Num3 INT '$.title.OrbData1Num3'
+			,OrbData2Num3 INT '$.title.OrbData2Num3'
+			,OrbData3Num3 INT '$.title.OrbData3Num3'
+			,OrbData4Num3 INT '$.title.OrbData4Num3'
+			,OrbData5Num3 INT '$.title.OrbData5Num3'
+			,OrbData1Id4 NVARCHAR(50) '$.title.OrbData1Id4'
+			,OrbData2Id4 NVARCHAR(50) '$.title.OrbData2Id4'
+			,OrbData3Id4 NVARCHAR(50) '$.title.OrbData3Id4'
+			,OrbData4Id4 NVARCHAR(50) '$.title.OrbData4Id4'
+			,OrbData5Id4 NVARCHAR(50) '$.title.OrbData5Id4'
+			,OrbData1Num4 INT '$.title.OrbData1Num4'
+			,OrbData2Num4 INT '$.title.OrbData2Num4'
+			,OrbData3Num4 INT '$.title.OrbData3Num4'
+			,OrbData4Num4 INT '$.title.OrbData4Num4'
+			,OrbData5Num4 INT '$.title.OrbData5Num4'
+			,OrbData1Id5 NVARCHAR(50) '$.title.OrbData1Id5'
+			,OrbData2Id5 NVARCHAR(50) '$.title.OrbData2Id5'
+			,OrbData3Id5 NVARCHAR(50) '$.title.OrbData3Id5'
+			,OrbData4Id5 NVARCHAR(50) '$.title.OrbData4Id5'
+			,OrbData5Id5 NVARCHAR(50) '$.title.OrbData5Id5'
+			,OrbData1Num5 INT '$.title.OrbData1Num5'
+			,OrbData2Num5 INT '$.title.OrbData2Num5'
+			,OrbData3Num5 INT '$.title.OrbData3Num5'
+			,OrbData4Num5 INT '$.title.OrbData4Num5'
+			,OrbData5Num5 INT '$.title.OrbData5Num5'
+			) AS c
+	WHERE cj.TableName = 'CharaLimitBreak';
+
+	WITH cte
+	AS (
+		SELECT UnbindID
+			,11 AS ManaNode
+			,OrbData1Id1 AS MaterialID
+			,OrbData1Num1 AS Quantity
+		FROM #MCUnbind
+		WHERE OrbData1Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,11
+			,OrbData2Id1
+			,OrbData2Num1
+		FROM #MCUnbind
+		WHERE OrbData2Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,11
+			,OrbData3Id1
+			,OrbData3Num1
+		FROM #MCUnbind
+		WHERE OrbData3Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,11
+			,OrbData4Id1
+			,OrbData4Num1
+		FROM #MCUnbind
+		WHERE OrbData4Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,11
+			,OrbData5Id1
+			,OrbData5Num1
+		FROM #MCUnbind
+		WHERE OrbData5Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData1Id2
+			,OrbData1Num2
+		FROM #MCUnbind
+		WHERE OrbData1Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData2Id2
+			,OrbData2Num2
+		FROM #MCUnbind
+		WHERE OrbData2Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData3Id2
+			,OrbData3Num2
+		FROM #MCUnbind
+		WHERE OrbData3Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData4Id2
+			,OrbData4Num2
+		FROM #MCUnbind
+		WHERE OrbData4Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData5Id2
+			,OrbData5Num2
+		FROM #MCUnbind
+		WHERE OrbData5Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData1Id3
+			,OrbData1Num3
+		FROM #MCUnbind
+		WHERE OrbData1Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData2Id3
+			,OrbData2Num3
+		FROM #MCUnbind
+		WHERE OrbData2Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData3Id3
+			,OrbData3Num3
+		FROM #MCUnbind
+		WHERE OrbData3Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData4Id3
+			,OrbData4Num3
+		FROM #MCUnbind
+		WHERE OrbData4Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData5Id3
+			,OrbData5Num3
+		FROM #MCUnbind
+		WHERE OrbData5Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData1Id4
+			,OrbData1Num4
+		FROM #MCUnbind
+		WHERE OrbData1Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData2Id4
+			,OrbData2Num4
+		FROM #MCUnbind
+		WHERE OrbData2Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData3Id4
+			,OrbData3Num4
+		FROM #MCUnbind
+		WHERE OrbData3Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData4Id4
+			,OrbData4Num4
+		FROM #MCUnbind
+		WHERE OrbData4Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData5Id4
+			,OrbData5Num4
+		FROM #MCUnbind
+		WHERE OrbData5Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData1Id5
+			,OrbData1Num5
+		FROM #MCUnbind
+		WHERE OrbData1Num5 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData2Id5
+			,OrbData2Num5
+		FROM #MCUnbind
+		WHERE OrbData2Num5 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData3Id5
+			,OrbData3Num5
+		FROM #MCUnbind
+		WHERE OrbData3Num5 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData4Id5
+			,OrbData4Num5
+		FROM #MCUnbind
+		WHERE OrbData4Num5 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData5Id5
+			,OrbData5Num5
+		FROM #MCUnbind
+		WHERE OrbData5Num5 <> 0
+		)
+	MERGE core.ManaCircle AS trg
+	USING (
+		SELECT ub.AdventurerID
+			,cte.ManaNode
+			,cte.MaterialID
+			,cte.Quantity
+		FROM cte
+		INNER JOIN #AdventurerUnbind AS ub ON ub.UnbindID = cte.UnbindID
+		) AS src
+		ON src.AdventurerID = trg.AdventurerID
+			AND src.ManaNode = trg.ManaNode
+			AND src.MaterialID = trg.MaterialID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Quantity = src.Quantity + trg.Quantity
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AdventurerID
+				,ManaNode
+				,MaterialID
+				,Quantity
+				)
+			VALUES (
+				src.AdventurerID
+				,src.ManaNode
+				,src.MaterialID
+				,src.Quantity
+				);
+
+	DELETE mc
+	FROM core.Adventurer AS a
+	INNER JOIN core.ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
+	WHERE mc.ManaNode > a.MCLimit
 END

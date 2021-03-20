@@ -156,6 +156,10 @@
     <Build Include="den\Tables\FarmLocation.sql" />
     <Build Include="core\Tables\MaterialQuest.sql" />
     <Build Include="core\Stored Procedures\spWeaponDominionSlots.sql" />
+    <Build Include="dbo\Stored Procedures\spFillPassive.sql" />
+    <Build Include="core\Tables\Adventurer.sql" />
+    <Build Include="dbo\Tables\AccountAdventurer.sql" />
+    <Build Include="core\Tables\ManaCircle.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
