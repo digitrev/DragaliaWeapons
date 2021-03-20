@@ -1168,4 +1168,58 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="MaterialID" />
   </Operation>
+  <Operation Name="Move Schema" Key="89542357-ab70-4c75-90ed-7d1e693ed3e3" ChangeDateTime="03/20/2021 02:47:43">
+    <Property Name="ElementName" Value="[dbo].[Adventurer]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="51959ad6-d8ba-46b8-8816-688e91b33736" ChangeDateTime="03/20/2021 02:47:51">
+    <Property Name="ElementName" Value="[core].[Adventurer].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Adventurer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AdventurerID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8051b865-3f95-423a-9e9b-f6d76bd4550f" ChangeDateTime="03/20/2021 02:50:21">
+    <Property Name="ElementName" Value="[core].[Adventurer].[ElementID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Adventurer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rarity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6c18aa78-27c8-4a86-a856-4eb86b775ed8" ChangeDateTime="03/20/2021 02:57:41">
+    <Property Name="ElementName" Value="[dbo].[AccountAdventurer].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AccountAdventurer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="4275ace9-f36c-4185-a3b2-ff5930ef8f2a" ChangeDateTime="03/20/2021 03:00:17">
+    <Property Name="ElementName" Value="[dbo].[ManaCircle]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ffcd2d37-f821-46ff-ae55-a4e851ad3ef3" ChangeDateTime="03/20/2021 03:00:22">
+    <Property Name="ElementName" Value="[core].[ManaCircle].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[ManaCircle]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AdventurerID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="34cde827-94d6-4127-805a-9ef66175a0a7" ChangeDateTime="03/20/2021 03:02:02">
+    <Property Name="ElementName" Value="[core].[ManaCircle].[ManaCircle]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[ManaCircle]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ManaNod" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="681e0a9d-9f3f-4fa0-b42f-37da2876bda9" ChangeDateTime="03/20/2021 03:02:06">
+    <Property Name="ElementName" Value="[core].[ManaCircle].[ManaNod]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[ManaCircle]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ManaNode" />
+  </Operation>
 </Operations>
