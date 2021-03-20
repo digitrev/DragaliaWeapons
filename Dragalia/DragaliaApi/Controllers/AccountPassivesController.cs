@@ -145,6 +145,41 @@ namespace DragaliaApi.Controllers
             return NoContent();
         }
 
+        [HttpGet("costs")]
+        public async Task<ActionResult<IEnumerable<MaterialCost>>> GetPassiveCosts(int? passiveID)
+        {
+            try
+            {
+                var accountID = await AccountsController.GetAccountID();
+
+                return await _context.AccountPassives
+                    .Where(ap => ap.AccountId == accountID
+                                 && (passiveID == null || ap.PassiveId == passiveID))
+                    .Include(ap => ap.Passive)
+                    .ThenInclude(p => p.PassiveCraftings)
+                    .ThenInclude(pc => pc.Material)
+                    .Include(ap => ap.Passive)
+                    .ThenInclude(p => p.Element)
+                    .SelectMany(ap => ap.Passive.PassiveCraftings,
+                        (accountPassive, passiveCraftings) => new { accountPassive, passiveCraftings })
+                    .Where(x => x.accountPassive.Wanted && !x.accountPassive.Owned)
+                    .OrderBy(x => x.accountPassive.Passive.WeaponTypeId)
+                    .ThenBy(x => x.accountPassive.Passive.Element.SortOrder)
+                    .ThenBy(x => x.accountPassive.Passive.AbilityNumber)
+                    .Select(x => new MaterialCost
+                    {
+                        Product = $"{x.accountPassive.Passive.WeaponType.WeaponType1} {x.accountPassive.Passive.Ability.GenericName}",
+                        Material = _mapper.Map<MaterialDTO>(x.passiveCraftings.Material),
+                        Quantity = x.passiveCraftings.Quantity
+                    })
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
+            }
+        }
+
         private bool AccountPassiveExists(int accountID, int passiveID) => _context.AccountPassives.Any(ap => ap.AccountId == accountID
                                                                                                               && ap.PassiveId == passiveID);
     }

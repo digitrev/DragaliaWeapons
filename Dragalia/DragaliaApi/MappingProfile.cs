@@ -25,6 +25,9 @@ namespace DragaliaApi
             CreateMap<AccountFacility, AccountFacilityDTO>();
             CreateMap<AccountFacilityDTO, AccountFacility>();
 
+            CreateMap<AccountPassive, AccountPassiveDTO>();
+            CreateMap<AccountPassiveDTO, AccountPassive>();
+
             //Weapon data
             CreateMap<Weapon, WeaponDTO>()
                 .ForMember(dest => dest.Element,
@@ -51,7 +54,7 @@ namespace DragaliaApi
             //Weapon passives
             CreateMap<Passive, PassiveDTO>()
                 .ForMember(dest => dest.Ability,
-                           opt => opt.MapFrom(src => src.Ability.Ability1))
+                           opt => opt.MapFrom(src => src.Ability.GenericName))
                 .ForMember(dest => dest.Element,
                            opt => opt.MapFrom(src => src.Element.Element1))
                 .ForMember(dest => dest.WeaponType,
