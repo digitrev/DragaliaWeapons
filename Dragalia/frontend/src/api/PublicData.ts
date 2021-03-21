@@ -1,6 +1,7 @@
 import HttpClient from './HttpClient';
 import { webAPIUrl } from '../AppSettings';
 import {
+  AdventurerData,
   ElementData,
   FacilityData,
   MaterialData,
@@ -72,4 +73,8 @@ export class PublicApi extends HttpClient {
 
   public getFacility = (id: number) =>
     this.instance.get<FacilityData>(`/FacilityList/${id}`);
+
+  //adventurers
+  public getAdventurers = () =>
+    this.instance.get<AdventurerData[]>('/Adventurers');
 }

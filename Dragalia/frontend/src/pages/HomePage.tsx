@@ -6,6 +6,9 @@ export const HomePage = () => (
   <Page title="Home">
     <ul>
       <li>
+        <Link to="/adventurers">Adventurer List</Link>
+      </li>
+      <li>
         <Link to="/weapons">Weapon List</Link>
       </li>
       <li>

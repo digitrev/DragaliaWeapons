@@ -147,3 +147,20 @@ export interface AccountFacilityData {
   wantedLevel: number;
   facility?: FacilityData;
 }
+
+//Adventurers
+export interface AdventurerData {
+  adventurerId: number;
+  adventurer: string;
+  rarity: number;
+  element: string;
+  weaponType: string;
+  mcLimit: number;
+}
+
+export interface AccountAdventurer {
+  adventurerId: number;
+  currentLevel: number;
+  wantedLevel: number;
+  adventurer?: AdventurerData;
+}
