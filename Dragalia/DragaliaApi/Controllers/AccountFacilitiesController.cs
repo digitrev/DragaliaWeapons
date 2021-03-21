@@ -137,14 +137,16 @@ namespace DragaliaApi.Controllers
         }
 
         [HttpGet("costs")]
-        public async Task<ActionResult<IEnumerable<MaterialCost>>> GetFacilityCosts()
+        public async Task<ActionResult<IEnumerable<MaterialCost>>> GetFacilityCosts(int? facilityID, int? copyNumber)
         {
             try
             {
                 var accountID = await AccountsController.GetAccountID();
 
                 return await _context.AccountFacilities
-                    .Where(af => af.AccountId == accountID)
+                    .Where(af => af.AccountId == accountID
+                                 && (facilityID == null || af.FacilityId == facilityID)
+                                 && (copyNumber == null || af.CopyNumber == copyNumber))
                     .Include(af => af.Facility)
                     .ThenInclude(f => f.FacilityUpgrades)
                     .ThenInclude(fu => fu.Material)
@@ -159,39 +161,8 @@ namespace DragaliaApi.Controllers
                     .ThenBy(x => x.facilityUpgrade.Material.SortPath)
                     .Select(x => new MaterialCost
                     {
-                        Product = $"{x.accountFacility.Facility.Facility1} #{x.accountFacility.CopyNumber} Level {x.facilityUpgrade.FacilityLevel}",
+                        Product = $"{x.accountFacility.Facility.Facility1} {(x.accountFacility.Facility.Limit > 1 ? $"#{x.accountFacility.CopyNumber} " : "")}Level {x.facilityUpgrade.FacilityLevel}",
                         Material = _mapper.Map<MaterialDTO>( x.facilityUpgrade.Material),
-                        Quantity = x.facilityUpgrade.Quantity
-                    })
-                    .ToListAsync();
-            }
-            catch (Exception ex)
-            {
-                return Problem(detail: ex.ToString(), statusCode: 500);
-            }
-        }
-        [HttpGet("costs/{facilityID}/{copyNumber}")]
-        public async Task<ActionResult<IEnumerable<MaterialCost>>> GetFacilityCostsByFacility(int facilityID, int copyNumber)
-        {
-            try
-            {
-                var accountID = await AccountsController.GetAccountID();
-
-                return await _context.AccountFacilities
-                    .Where(af => af.AccountId == accountID && af.FacilityId == facilityID && af.CopyNumber == copyNumber)
-                    .Include(af => af.Facility)
-                    .ThenInclude(f => f.FacilityUpgrades)
-                    .ThenInclude(fu => fu.Material)
-                    .SelectMany(af => af.Facility.FacilityUpgrades,
-                        (accountFacility, facilityUpgrade) => new { accountFacility, facilityUpgrade })
-                    .Where(x => x.accountFacility.CurrentLevel < x.facilityUpgrade.FacilityLevel
-                        && x.facilityUpgrade.FacilityLevel <= x.accountFacility.WantedLevel)
-                    .OrderBy(x => x.facilityUpgrade.FacilityLevel)
-                    .ThenBy(x => x.facilityUpgrade.Material.SortPath)
-                    .Select(x => new MaterialCost
-                    {
-                        Product = $"{x.accountFacility.Facility.Facility1} #{x.accountFacility.CopyNumber} Level {x.facilityUpgrade.FacilityLevel}",
-                        Material = _mapper.Map<MaterialDTO>(x.facilityUpgrade.Material),
                         Quantity = x.facilityUpgrade.Quantity
                     })
                     .ToListAsync();

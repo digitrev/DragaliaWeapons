@@ -13,6 +13,7 @@ namespace DragaliaApi.Models
         {
             AccountInventories = new HashSet<AccountInventory>();
             FacilityUpgrades = new HashSet<FacilityUpgrade>();
+            ManaCircles = new HashSet<ManaCircle>();
             MaterialQuests = new HashSet<MaterialQuest>();
             PassiveCraftings = new HashSet<PassiveCrafting>();
             WeaponCraftings = new HashSet<WeaponCrafting>();
@@ -31,6 +32,7 @@ namespace DragaliaApi.Models
         public virtual Category Category { get; set; }
         public virtual ICollection<AccountInventory> AccountInventories { get; set; }
         public virtual ICollection<FacilityUpgrade> FacilityUpgrades { get; set; }
+        public virtual ICollection<ManaCircle> ManaCircles { get; set; }
         public virtual ICollection<MaterialQuest> MaterialQuests { get; set; }
         public virtual ICollection<PassiveCrafting> PassiveCraftings { get; set; }
         public virtual ICollection<WeaponCrafting> WeaponCraftings { get; set; }
