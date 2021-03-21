@@ -11,7 +11,7 @@ namespace DragaliaApi.Models.DTO
         public bool Owned { get; set; }
         public bool Wanted { get; set; }
 
-        public virtual Passive Passive { get; set; }
+        public virtual PassiveDTO Passive { get; set; }
 
     }
 }
