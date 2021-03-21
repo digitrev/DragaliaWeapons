@@ -28,6 +28,9 @@ namespace DragaliaApi
             CreateMap<AccountPassive, AccountPassiveDTO>();
             CreateMap<AccountPassiveDTO, AccountPassive>();
 
+            CreateMap<AccountAdventurer, AccountAdventurerDTO>();
+            CreateMap<AccountAdventurerDTO, AccountAdventurer>();
+
             //Weapon data
             CreateMap<Weapon, WeaponDTO>()
                 .ForMember(dest => dest.Element,
@@ -76,6 +79,15 @@ namespace DragaliaApi
                            opt => opt.MapFrom(src => src.Material1));
             CreateMap<MaterialDTO, Material>();
 
+            //Adventurers
+            CreateMap<Adventurer, AdventurerDTO>()
+                .ForMember(dest => dest.Adventurer,
+                           opt => opt.MapFrom(src => src.Adventurer1))
+                .ForMember(dest => dest.Element,
+                           opt => opt.MapFrom(src => src.Element.Element1))
+                .ForMember(dest => dest.WeaponType,
+                           opt => opt.MapFrom(src => src.WeaponType.WeaponType1));
+            CreateMap<AdventurerDTO, Adventurer>();
         }
     }
 }
