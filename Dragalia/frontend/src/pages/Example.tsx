@@ -1,16 +1,17 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
+import { PrivateApi } from '../api/PrivateData';
 import { PublicApi } from '../api/PublicData';
 
 export const Example = () => {
   useEffect(() => {
-    const doGetLimits = async () => {
-      const api = new PublicApi();
-      const unbindLimits = await api.getWeaponLevelLimits(3);
-      console.log(unbindLimits);
+    const doThing = async () => {
+      const api = new PrivateApi();
+      const thing = await api.getPassiveCosts();
+      console.log(thing);
     };
-    doGetLimits();
+    doThing();
   }, []);
 
   return <div>blank</div>;
