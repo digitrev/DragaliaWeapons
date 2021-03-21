@@ -4,6 +4,7 @@ import {
   ElementData,
   FacilityData,
   MaterialData,
+  PassiveData,
   WeaponData,
   WeaponLevelLimit,
   WeaponLimit,
@@ -51,6 +52,12 @@ export class PublicApi extends HttpClient {
 
   public getAllWeaponLimits = () =>
     this.instance.get<WeaponLimit[]>('/WeaponLimits');
+
+  //passive apis
+  public getPassives = () => this.instance.get<PassiveData[]>('/Passives');
+
+  public getPassive = (passiveID: number) =>
+    this.instance.get<PassiveData>(`/api/Passives/${passiveID}`);
 
   //material api
   public getMaterials = () =>

@@ -42,6 +42,7 @@ export interface WeaponSeriesData {
   weaponSeries: string;
 }
 
+//weapon limits
 export interface WeaponUnbindLimit {
   weaponRarity: number;
   refinementLevel: number;
@@ -62,6 +63,21 @@ export interface WeaponLimit {
   slots: number;
   dominion: number;
   bonus: number;
+}
+
+//Passives
+export interface PassiveData {
+  passiveID: number;
+  abilityNumber: number;
+  ability: string;
+  element: string;
+  weaponType: string;
+}
+
+export interface PassiveGroupData {
+  element: string;
+  weaponType: string;
+  passives: PassiveData[];
 }
 
 //material related data

@@ -18,6 +18,7 @@ export const MaterialList: FC<Props> = ({ data }) => {
         materials: data.filter((mat) => mat.category === cat),
       }),
   );
+
   return (
     <ul
       css={css`

@@ -10,6 +10,7 @@ import { HomePage } from './pages/HomePage';
 import { InventoryPage } from './pages/Materials/InventoryPage';
 import { MaterialPage } from './pages/Materials/MaterialPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { PassivePage } from './pages/Passives/PassivePage';
 import { AccountWeaponPage } from './pages/Weapons/AccountWeaponPage';
 import { WeaponsPage } from './pages/Weapons/WeaponsPage';
 import { fontFamily, fontSize, gray2 } from './Styles';
@@ -33,6 +34,7 @@ const App: React.FC = () => {
           <Redirect from="/home" to="/" />
           <Route exact path="/" component={HomePage} />
           <Route path="/weapons" component={WeaponsPage} />
+          <Route path="/passives" component={PassivePage} />
           <Route path="/materials" component={MaterialPage} />
           <Route path="/facilities" component={FacilityPage} />
           <Route path="/account/weapons" component={AccountWeaponPage} />

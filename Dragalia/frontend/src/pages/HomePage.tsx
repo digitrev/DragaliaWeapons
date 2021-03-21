@@ -9,6 +9,9 @@ export const HomePage = () => (
         <Link to="/weapons">Weapon List</Link>
       </li>
       <li>
+        <Link to="/passives">Passive List</Link>
+      </li>
+      <li>
         <Link to="/facilities">Facility List</Link>
       </li>
       <li>
