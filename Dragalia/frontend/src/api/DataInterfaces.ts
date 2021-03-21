@@ -56,7 +56,7 @@ export interface WeaponLevelLimit {
 }
 
 export interface WeaponLimit {
-  weaponId: number;
+  weaponID: number;
   level: number;
   unbind: number;
   refinement: number;
@@ -158,7 +158,7 @@ export interface AdventurerData {
   mcLimit: number;
 }
 
-export interface AccountAdventurer {
+export interface AccountAdventurerData {
   adventurerId: number;
   currentLevel: number;
   wantedLevel: number;

@@ -12,10 +12,10 @@ interface Props {
 
 export const AccountWeaponList: FC<Props> = ({ data, limits }) => {
   const findLimit = (weaponId: number) => {
-    let limit = limits.find((l) => l.weaponId === weaponId);
+    let limit = limits.find((l) => l.weaponID === weaponId);
     if (limit === undefined) {
       limit = {
-        weaponId: weaponId,
+        weaponID: weaponId,
         unbind: 0,
         refinement: 0,
         bonus: 0,

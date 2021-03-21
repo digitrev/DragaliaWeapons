@@ -2,6 +2,7 @@
 import { css, jsx } from '@emotion/react';
 import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { AccountAdventurerPage } from './pages/Adventurers/AccountAdventurerPage';
 import { AdventurerPage } from './pages/Adventurers/AdventurerPage';
 import { Example } from './pages/Example';
 import { AccountFacilityPage } from './pages/Facilities/AccountFacilityPage';
@@ -40,6 +41,10 @@ const App: React.FC = () => {
           <Route path="/passives" component={PassivePage} />
           <Route path="/materials" component={MaterialPage} />
           <Route path="/facilities" component={FacilityPage} />
+          <Route
+            path="/account/adventurers"
+            component={AccountAdventurerPage}
+          />
           <Route path="/account/weapons" component={AccountWeaponPage} />
           <Route path="/account/passives" component={AccountPassivePage} />
           <Route path="/account/facilities" component={AccountFacilityPage} />

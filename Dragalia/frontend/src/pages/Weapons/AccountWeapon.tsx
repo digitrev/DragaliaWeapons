@@ -94,7 +94,6 @@ export const AccountWeapon: FC<Props> = ({ data, limits }) => {
       `}
     >
       {weapon ? <Weapon data={weapon} /> : ''}
-
       <Form
         submitCaption="Update"
         onSubmit={handleSubmit}

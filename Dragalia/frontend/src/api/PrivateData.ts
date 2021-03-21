@@ -1,6 +1,7 @@
 import HttpClient from './HttpClient';
 import { webAPIUrl } from '../AppSettings';
 import {
+  AccountAdventurerData,
   AccountFacilityData,
   AccountInventoryData,
   AccountPassiveData,
@@ -91,10 +92,37 @@ export class PrivateApi extends HttpClient {
     );
 
   public getFacilityCosts = (facilityID?: number, copyNumber?: number) =>
-    this.instance.get<MaterialCosts[]>(`/AccountFacilities/costs`, {
+    this.instance.get<MaterialCosts[]>('/AccountFacilities/costs', {
       params: {
         facilityID: facilityID,
         copyNumber: copyNumber,
+      },
+    });
+
+  //adventurers
+  public getAdventurers = () =>
+    this.instance.get<AccountAdventurerData[]>('/AccountAdventurers');
+
+  public getAdventurer = (adventurerID: number) =>
+    this.instance.get<AccountAdventurerData>(
+      `/AccountAdventurers/${adventurerID}`,
+    );
+
+  public putAdventurer = (
+    adventurerID: number,
+    adventurer: AccountAdventurerData,
+  ) => this.instance.put(`/AccountAdventurers/${adventurerID}`, adventurer);
+
+  public postAdventurer = (adventurer: AccountAdventurerData) =>
+    this.instance.post('/AccountAdventurer', adventurer);
+
+  public deleteAdventurer = (adventurerID: number) =>
+    this.instance.delete(`/AccountAdventurers/${adventurerID}`);
+
+  public getAdventurerCosts = (adventurerID?: number) =>
+    this.instance.get<MaterialCosts[]>('/AccountAdventurers/costs', {
+      params: {
+        adventurerID: adventurerID,
       },
     });
 }
