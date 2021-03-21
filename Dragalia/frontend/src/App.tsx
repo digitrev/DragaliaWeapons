@@ -10,6 +10,7 @@ import { HomePage } from './pages/HomePage';
 import { InventoryPage } from './pages/Materials/InventoryPage';
 import { MaterialPage } from './pages/Materials/MaterialPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { AccountPassivePage } from './pages/Passives/AccountPassivePage';
 import { PassivePage } from './pages/Passives/PassivePage';
 import { AccountWeaponPage } from './pages/Weapons/AccountWeaponPage';
 import { WeaponsPage } from './pages/Weapons/WeaponsPage';
@@ -38,6 +39,7 @@ const App: React.FC = () => {
           <Route path="/materials" component={MaterialPage} />
           <Route path="/facilities" component={FacilityPage} />
           <Route path="/account/weapons" component={AccountWeaponPage} />
+          <Route path="/account/passives" component={AccountPassivePage} />
           <Route path="/account/facilities" component={AccountFacilityPage} />
           <Route path="/account/inventory" component={InventoryPage} />
           <Route path="/example" component={Example} />

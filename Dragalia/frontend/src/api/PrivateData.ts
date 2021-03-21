@@ -3,6 +3,7 @@ import { webAPIUrl } from '../AppSettings';
 import {
   AccountFacilityData,
   AccountInventoryData,
+  AccountPassiveData,
   AccountWeaponData,
   MaterialCosts,
   WeaponData,
@@ -17,27 +18,36 @@ export class PrivateApi extends HttpClient {
   public getWeapons = () =>
     this.instance.get<AccountWeaponData[]>('/AccountWeapons');
 
-  public getWeapon = (id: number) =>
-    this.instance.get<AccountWeaponData>(`/AccountWeapons/${id}`);
+  public getWeapon = (weaponID: number) =>
+    this.instance.get<AccountWeaponData>(`/AccountWeapons/${weaponID}`);
 
   public getUntrackedWeapons = () =>
     this.instance.get<WeaponData[]>('/AccountWeapons/untracked');
 
-  public postWeapon = (weapon: AccountWeaponData) =>
-    this.instance.post<AccountWeaponData>(`/AccountWeapons`, weapon);
+  public putWeapon = (weaponID: number, weapon: AccountWeaponData) =>
+    this.instance.put(`/AccountWeapons/${weaponID}`, weapon);
 
-  public deleteWeapon = (id: number) =>
-    this.instance.delete(`/AccountWeapons/${id}`);
-
-  public putWeapon = (id: number, weapon: AccountWeaponData) =>
-    this.instance.put(`/AccountWeapons/${id}`, weapon);
-
-  // public getAllWeaponCosts = () => this.instance.get('/AccountWeapons/costs');
-
-  public getWeaponCosts = (id?: number) =>
+  public getWeaponCosts = (weaponID?: number) =>
     this.instance.get<MaterialCosts[]>('/AccountWeapons/costs', {
       params: {
-        weaponId: id,
+        weaponID: weaponID,
+      },
+    });
+
+  //Passives
+  public getPassives = () =>
+    this.instance.get<AccountPassiveData[]>('AccountPassives');
+
+  public getPassive = (passiveID: number) =>
+    this.instance.get<AccountPassiveData>(`/AccountPassives/${passiveID}`);
+
+  public putPassive = (passiveID: number, passive: AccountPassiveData) =>
+    this.instance.put(`/AccountPassives/${passiveID}`, passive);
+
+  public getPassiveCosts = (passiveID?: number) =>
+    this.instance.get<MaterialCosts[]>('AccountPassives/costs', {
+      params: {
+        passiveID: passiveID,
       },
     });
 
@@ -45,19 +55,21 @@ export class PrivateApi extends HttpClient {
   public getInventory = () =>
     this.instance.get<AccountInventoryData[]>('/AccountInventories');
 
-  public getItem = (id: string) =>
-    this.instance.get<AccountInventoryData>(`/AccountInventories/${id}`);
+  public getItem = (materialID: string) =>
+    this.instance.get<AccountInventoryData>(
+      `/AccountInventories/${materialID}`,
+    );
 
-  public getItemFilter = (ids: string[]) =>
+  public getItemFilter = (materialIDs: string[]) =>
     this.instance.get<AccountInventoryData[]>(
-      `/AccountInventories?materials=${ids.reduce(
+      `/AccountInventories?materials=${materialIDs.reduce(
         (acc, cur) => `${cur},${acc}`,
         '',
       )}`,
     );
 
-  public putItem = (id: string, item: AccountInventoryData) =>
-    this.instance.put(`/AccountInventories/${id}`, item);
+  public putItem = (materialID: string, item: AccountInventoryData) =>
+    this.instance.put(`/AccountInventories/${materialID}`, item);
 
   //Facilities
   public getFacilities = () =>
@@ -78,11 +90,11 @@ export class PrivateApi extends HttpClient {
       facility,
     );
 
-  public getAllFacilityCosts = () =>
-    this.instance.get<MaterialCosts[]>('/AccountFacilities/costs');
-
-  public getFacilityCosts = (facilityID: number, copyNumber: number) =>
-    this.instance.get<MaterialCosts[]>(
-      `/AccountFacilities/costs/${facilityID}/${copyNumber}`,
-    );
+  public getFacilityCosts = (facilityID?: number, copyNumber?: number) =>
+    this.instance.get<MaterialCosts[]>(`/AccountFacilities/costs`, {
+      params: {
+        facilityID: facilityID,
+        copyNumber: copyNumber,
+      },
+    });
 }

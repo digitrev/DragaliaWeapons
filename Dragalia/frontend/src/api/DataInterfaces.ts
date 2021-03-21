@@ -56,7 +56,7 @@ export interface WeaponLevelLimit {
 }
 
 export interface WeaponLimit {
-  weaponID: number;
+  weaponId: number;
   level: number;
   unbind: number;
   refinement: number;
@@ -67,7 +67,7 @@ export interface WeaponLimit {
 
 //Passives
 export interface PassiveData {
-  passiveID: number;
+  passiveId: number;
   abilityNumber: number;
   ability: string;
   element: string;
@@ -78,6 +78,19 @@ export interface PassiveGroupData {
   element: string;
   weaponType: string;
   passives: PassiveData[];
+}
+
+export interface AccountPassiveData {
+  passiveId: number;
+  owned: boolean;
+  wanted: boolean;
+  passive?: PassiveData;
+}
+
+export interface AccountPassiveGroupData {
+  element: string;
+  weaponType: string;
+  passives: AccountPassiveData[];
 }
 
 //material related data

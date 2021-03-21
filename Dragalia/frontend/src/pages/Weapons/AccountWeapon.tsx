@@ -44,7 +44,6 @@ export const AccountWeapon: FC<Props> = ({ data, limits }) => {
         setCostsLoading(false);
       }
     };
-    console.log(costsRequested);
     if (costsRequested) {
       doGetCosts();
     }

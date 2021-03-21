@@ -8,12 +8,13 @@ interface Props {
 }
 
 export const Passive: FC<Props> = ({
-  data: { passiveID, abilityNumber, ability, element, weaponType },
+  data: { passiveId, abilityNumber, ability, element, weaponType },
 }) => {
   return (
     <div
       css={css`
         padding-bottom: 10px;
+        width: 300px;
       `}
     >
       <div

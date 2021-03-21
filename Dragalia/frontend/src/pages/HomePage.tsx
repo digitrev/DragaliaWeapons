@@ -21,6 +21,9 @@ export const HomePage = () => (
         <Link to="/account/weapons">Your Weapons</Link>
       </li>
       <li>
+        <Link to="/account/passives">Your Passives</Link>
+      </li>
+      <li>
         <Link to="/account/facilities">Your Facilities</Link>
       </li>
       <li>

@@ -11,11 +11,11 @@ interface Props {
 }
 
 export const AccountWeaponList: FC<Props> = ({ data, limits }) => {
-  const findLimit = (weaponID: number) => {
-    let limit = limits.find((l) => l.weaponID === weaponID);
+  const findLimit = (weaponId: number) => {
+    let limit = limits.find((l) => l.weaponId === weaponId);
     if (limit === undefined) {
       limit = {
-        weaponID: weaponID,
+        weaponId: weaponId,
         unbind: 0,
         refinement: 0,
         bonus: 0,

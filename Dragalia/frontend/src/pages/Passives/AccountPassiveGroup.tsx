@@ -1,15 +1,15 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
-import React, { FC } from 'react';
-import { PassiveGroupData } from '../../api/DataInterfaces';
+import { FC } from 'react';
+import { AccountPassiveGroupData } from '../../api/DataInterfaces';
 import { gray5 } from '../../Styles';
-import { Passive } from './Passive';
+import { AccountPassive } from './AccountPassive';
 
 interface Props {
-  data: PassiveGroupData;
+  data: AccountPassiveGroupData;
 }
 
-export const PassiveGroup: FC<Props> = ({
+export const AccountPassiveGroup: FC<Props> = ({
   data: { element, weaponType, passives },
 }) => {
   return (
@@ -47,7 +47,7 @@ export const PassiveGroup: FC<Props> = ({
               }
             `}
           >
-            <Passive data={passive} />
+            <AccountPassive data={passive} />
           </li>
         ))}
       </ul>
