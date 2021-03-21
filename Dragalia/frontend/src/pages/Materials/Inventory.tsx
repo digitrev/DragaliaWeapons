@@ -4,7 +4,7 @@ import { FC } from 'react';
 import { AccountInventoryData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { Field } from '../Forms/Field';
-import { Form, Values, isInteger, required } from '../Forms/Form';
+import { Form, Values, isInteger, required, nonNegative } from '../Forms/Form';
 import { Material } from './Material';
 
 interface Props {
@@ -44,7 +44,11 @@ export const Inventory: FC<Props> = ({ data }) => {
         successMessage={'✔'}
         failureMessage={'❌'}
         validationRules={{
-          quantity: [{ validator: isInteger }, { validator: required }],
+          quantity: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+          ],
         }}
       >
         <table>

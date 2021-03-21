@@ -6,7 +6,14 @@ import { PrivateApi } from '../../api/PrivateData';
 import { LoadingText } from '../../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
-import { Form, isInteger, required, Values } from '../Forms/Form';
+import {
+  Form,
+  isInteger,
+  maxValue,
+  nonNegative,
+  required,
+  Values,
+} from '../Forms/Form';
 import { Costs } from '../Materials/Costs';
 import { Facility } from './Facility';
 
@@ -93,8 +100,18 @@ export const AccountFacility: FC<Props> = ({ data }) => {
         successMessage={'✔'}
         failureMessage={'❌'}
         validationRules={{
-          currentLevel: [{ validator: isInteger }, { validator: required }],
-          wantedLevel: [{ validator: isInteger }, { validator: required }],
+          wantedLevel: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: 50 },
+          ],
+          currentLevel: [
+            { validator: isInteger },
+            { validator: required },
+            { validator: nonNegative },
+            { validator: maxValue, arg: 50 },
+          ],
         }}
       >
         <div
