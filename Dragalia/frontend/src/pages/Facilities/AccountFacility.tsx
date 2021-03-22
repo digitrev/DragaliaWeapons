@@ -1,7 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import React, { FC, useEffect, useState } from 'react';
-import { AccountFacilityData, MaterialCosts } from '../../api/DataInterfaces';
+import {
+  AccountFacilityData,
+  FacilityLimit,
+  MaterialCosts,
+} from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { LoadingText } from '../../Loading';
 import { PrimaryButton } from '../../Styles';
@@ -19,9 +23,10 @@ import { Facility } from './Facility';
 
 interface Props {
   data: AccountFacilityData;
+  limits: FacilityLimit;
 }
 
-export const AccountFacility: FC<Props> = ({ data }) => {
+export const AccountFacility: FC<Props> = ({ data, limits }) => {
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
   const [costsLoading, setCostsLoading] = useState(true);
   const [costsRequested, setCostsRequested] = useState(false);
@@ -104,13 +109,13 @@ export const AccountFacility: FC<Props> = ({ data }) => {
             { validator: isInteger },
             { validator: required },
             { validator: nonNegative },
-            { validator: maxValue, arg: 50 },
+            { validator: maxValue, arg: limits.maxLevel },
           ],
           currentLevel: [
             { validator: isInteger },
             { validator: required },
             { validator: nonNegative },
-            { validator: maxValue, arg: 50 },
+            { validator: maxValue, arg: limits.maxLevel },
           ],
         }}
       >

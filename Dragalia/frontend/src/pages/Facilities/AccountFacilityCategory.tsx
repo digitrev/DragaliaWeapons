@@ -1,17 +1,33 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
-import { AccountFacilityCategoryData } from '../../api/DataInterfaces';
+import {
+  AccountFacilityCategoryData,
+  FacilityLimit,
+} from '../../api/DataInterfaces';
 import { gray5 } from '../../Styles';
 import { AccountFacility } from './AccountFacility';
 
 interface Props {
   data: AccountFacilityCategoryData;
+  limits: FacilityLimit[];
 }
 
 export const AccountFacilityCategory: FC<Props> = ({
   data: { category, accountFacilities },
+  limits,
 }) => {
+  const findLimit = (facilityId: number) => {
+    let limit = limits.find((l) => l.facilityID === facilityId);
+    if (limit === undefined) {
+      limit = {
+        facilityID: facilityId,
+        maxLevel: 0,
+      };
+    }
+    return limit;
+  };
+
   return (
     <div
       css={css`
@@ -47,7 +63,10 @@ export const AccountFacilityCategory: FC<Props> = ({
               }
             `}
           >
-            <AccountFacility data={accountFacility} />
+            <AccountFacility
+              data={accountFacility}
+              limits={findLimit(accountFacility.facilityId)}
+            />
           </li>
         ))}
       </ul>

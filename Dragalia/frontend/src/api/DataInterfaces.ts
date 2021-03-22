@@ -148,6 +148,11 @@ export interface AccountFacilityData {
   facility?: FacilityData;
 }
 
+export interface FacilityLimit {
+  facilityID: number;
+  maxLevel: number;
+}
+
 //Adventurers
 export interface AdventurerData {
   adventurerId: number;

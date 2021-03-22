@@ -4,15 +4,17 @@ import React, { FC } from 'react';
 import {
   AccountFacilityCategoryData,
   AccountFacilityData,
+  FacilityLimit,
 } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
 import { AccountFacilityCategory } from './AccountFacilityCategory';
 
 interface Props {
   data: AccountFacilityData[];
+  limits: FacilityLimit[];
 }
 
-export const AccountFacilityList: FC<Props> = ({ data }) => {
+export const AccountFacilityList: FC<Props> = ({ data, limits }) => {
   const categories: AccountFacilityCategoryData[] = [];
   [
     ...Array.from(
@@ -54,7 +56,7 @@ export const AccountFacilityList: FC<Props> = ({ data }) => {
             }
           `}
         >
-          <AccountFacilityCategory data={category} />
+          <AccountFacilityCategory data={category} limits={limits} />
         </li>
       ))}
     </ul>

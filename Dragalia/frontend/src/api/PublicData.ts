@@ -4,6 +4,7 @@ import {
   AdventurerData,
   ElementData,
   FacilityData,
+  FacilityLimit,
   MaterialData,
   PassiveData,
   WeaponData,
@@ -73,6 +74,12 @@ export class PublicApi extends HttpClient {
 
   public getFacility = (id: number) =>
     this.instance.get<FacilityData>(`/FacilityList/${id}`);
+
+  public getFacilityLimits = (facilityID: number) =>
+    this.instance.get<FacilityLimit>(`/FacilityLimits/${facilityID}`);
+
+  public getAllFacilityLimits = () =>
+    this.instance.get<FacilityLimit[]>('/FacilityLimits');
 
   //adventurers
   public getAdventurers = () =>
