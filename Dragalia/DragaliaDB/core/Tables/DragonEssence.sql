@@ -6,4 +6,6 @@
 		[DragonID]
 		,[MaterialID]
 		)
+	,CONSTRAINT [FK_DragonEssence_Dragon] FOREIGN KEY ([DragonID]) REFERENCES [core].[Dragon]([DragonID])
+	,CONSTRAINT [FK_DragonEssence_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID])
 	)
