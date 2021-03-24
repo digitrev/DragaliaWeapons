@@ -2158,4 +2158,18 @@ BEGIN
 				,src.Rarity
 				,src.ElementID
 				);
+
+	TRUNCATE TABLE core.DragonEssence
+
+	INSERT core.DragonEssence (
+		DragonID
+		,MaterialID
+		)
+	SELECT d.DragonID
+		,m.MaterialID
+	FROM core.Dragon AS d
+	INNER JOIN core.Material AS m ON m.Material = CONCAT (
+			d.Dragon
+			,'''s Essence'
+			)
 END

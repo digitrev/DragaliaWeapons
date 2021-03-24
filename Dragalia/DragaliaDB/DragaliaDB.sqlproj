@@ -161,6 +161,7 @@
     <Build Include="dbo\Tables\AccountAdventurer.sql" />
     <Build Include="core\Tables\ManaCircle.sql" />
     <Build Include="core\Tables\Dragon.sql" />
+    <Build Include="core\Tables\DragonEssence.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

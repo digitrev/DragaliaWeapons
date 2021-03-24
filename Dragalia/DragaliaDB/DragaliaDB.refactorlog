@@ -1249,4 +1249,17 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Active" />
   </Operation>
+  <Operation Name="Move Schema" Key="0115197a-e027-4c74-87c3-7fef8a11177d" ChangeDateTime="03/24/2021 20:00:19">
+    <Property Name="ElementName" Value="[dbo].[DragonEssence]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9e4e1344-dac6-4131-9c38-38348bff29d8" ChangeDateTime="03/24/2021 20:00:23">
+    <Property Name="ElementName" Value="[core].[DragonEssence].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[DragonEssence]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DragonID" />
+  </Operation>
 </Operations>
