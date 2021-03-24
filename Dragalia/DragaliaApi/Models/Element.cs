@@ -11,6 +11,7 @@ namespace DragaliaApi.Models
         public Element()
         {
             Adventurers = new HashSet<Adventurer>();
+            Dragons = new HashSet<Dragon>();
             Passives = new HashSet<Passive>();
             Weapons = new HashSet<Weapon>();
         }
@@ -21,6 +22,7 @@ namespace DragaliaApi.Models
         public bool? Active { get; set; }
 
         public virtual ICollection<Adventurer> Adventurers { get; set; }
+        public virtual ICollection<Dragon> Dragons { get; set; }
         public virtual ICollection<Passive> Passives { get; set; }
         public virtual ICollection<Weapon> Weapons { get; set; }
     }
