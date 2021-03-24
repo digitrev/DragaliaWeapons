@@ -12,6 +12,7 @@ parameterDict["AbilityGroup"]={"tables":"AbilityGroup","fields":"Id,GroupName"}
 parameterDict["Adventurer"]={"tables":"Adventurers","fields":"IdLong,VariationId,FullName,Rarity,ElementalTypeId,WeaponTypeId,ManaCircleName,MaxLimitBreakCount"}
 parameterDict["Affinity"]={"tables":"AffinityBonus","fields":"Id,Name"}
 parameterDict["CharaLimitBreak"]={"tables":"CharaLimitBreak","fields":"Id,OrbData1Id1,OrbData2Id1,OrbData3Id1,OrbData4Id1,OrbData5Id1,OrbData1Num1,OrbData2Num1,OrbData3Num1,OrbData4Num1,OrbData5Num1,OrbData1Id2,OrbData2Id2,OrbData3Id2,OrbData4Id2,OrbData5Id2,OrbData1Num2,OrbData2Num2,OrbData3Num2,OrbData4Num2,OrbData5Num2,OrbData1Id3,OrbData2Id3,OrbData3Id3,OrbData4Id3,OrbData5Id3,OrbData1Num3,OrbData2Num3,OrbData3Num3,OrbData4Num3,OrbData5Num3,OrbData1Id4,OrbData2Id4,OrbData3Id4,OrbData4Id4,OrbData5Id4,OrbData1Num4,OrbData2Num4,OrbData3Num4,OrbData4Num4,OrbData5Num4,OrbData1Id5,OrbData2Id5,OrbData3Id5,OrbData4Id5,OrbData5Id5,OrbData1Num5,OrbData2Num5,OrbData3Num5,OrbData4Num5,OrbData5Num5"}
+parameterDict["Dragon"]={"tables":"Dragons","fields":"Id,Name,Rarity,ElementalTypeId","where":"ReleaseDate>'2000-01-01' AND IsPlayable=1"}
 parameterDict["Facility"]={"tables":"Facilities","fields":"Id,Name,Available"}
 parameterDict["Material"]={"tables":"Materials","fields":"Name,Id"}
 parameterDict["MCMaterials"]={"tables":"MCMaterials","fields":"Id,FireMaterialId,WaterMaterialId,WindMaterialId,LightMaterialId,DarkMaterialId"}

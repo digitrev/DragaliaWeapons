@@ -2114,4 +2114,62 @@ BEGIN
 	FROM core.Adventurer AS a
 	INNER JOIN core.ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
 	WHERE mc.ManaNode > a.MCLimit
+
+	--Dragons
+	MERGE core.Dragon AS trg
+	USING (
+		SELECT d.DragonID
+			,d.Dragon
+			,d.ElementID
+			,d.Rarity
+		FROM jsn.TableJson AS dj
+		CROSS APPLY OPENJSON(dj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				DragonID INT '$.title.Id'
+				,Dragon NVARCHAR(50) '$.title.Name'
+				,Rarity INT '$.title.Rarity'
+				,ElementID INT '$.title.ElementalTypeId'
+				) AS d
+		WHERE dj.TableName = 'Dragon'
+		) AS src
+		ON src.DragonID = trg.DragonID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Dragon = src.Dragon
+				,Rarity = src.Rarity
+				,ElementID = src.ElementID
+				,Active = 1
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			UPDATE
+			SET Active = 0
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				DragonID
+				,Dragon
+				,Rarity
+				,ElementID
+				)
+			VALUES (
+				src.DragonID
+				,src.Dragon
+				,src.Rarity
+				,src.ElementID
+				);
+
+	TRUNCATE TABLE core.DragonEssence
+
+	INSERT core.DragonEssence (
+		DragonID
+		,MaterialID
+		)
+	SELECT d.DragonID
+		,m.MaterialID
+	FROM core.Dragon AS d
+	INNER JOIN core.Material AS m ON m.Material = CONCAT (
+			d.Dragon
+			,'''s Essence'
+			)
 END
