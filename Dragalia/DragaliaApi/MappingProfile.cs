@@ -88,6 +88,14 @@ namespace DragaliaApi
                 .ForMember(dest => dest.WeaponType,
                            opt => opt.MapFrom(src => src.WeaponType.WeaponType1));
             CreateMap<AdventurerDTO, Adventurer>();
+
+            //Dragon
+            CreateMap<Dragon, DragonDTO>()
+                .ForMember(dest => dest.Dragon,
+                           opt => opt.MapFrom(src => src.Dragon1))
+                .ForMember(dest => dest.Element,
+                           opt => opt.MapFrom(src => src.Element.Element1));
+            CreateMap<DragonDTO, Dragon>();
         }
     }
 }

@@ -10,7 +10,7 @@ using DragaliaApi.Models;
 using AutoMapper;
 using DragaliaApi.Models.DTO;
 
-namespace DragaliaApi.Controllers
+namespace DragaliaApi.Controllers.Public
 {
     [Route("api/MaterialList")]
     [ApiController]

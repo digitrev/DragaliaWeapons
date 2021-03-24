@@ -9,7 +9,7 @@ using DragaliaApi.Data;
 using DragaliaApi.Models;
 using DragaliaApi.Models.DTO;
 
-namespace DragaliaApi.Controllers
+namespace DragaliaApi.Controllers.Public
 {
     [Route("api/FacilityLimits")]
     [ApiController]
