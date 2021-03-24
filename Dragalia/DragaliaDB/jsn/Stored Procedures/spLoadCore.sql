@@ -2126,7 +2126,7 @@ BEGIN
 		CROSS APPLY OPENJSON(dj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				DragonID INT '$.title.Id'
-				,Dragon NVARCHAR(50) '$.title.Name'
+				,Dragon NVARCHAR(50) '$.title.FullName'
 				,Rarity INT '$.title.Rarity'
 				,ElementID INT '$.title.ElementalTypeId'
 				) AS d
