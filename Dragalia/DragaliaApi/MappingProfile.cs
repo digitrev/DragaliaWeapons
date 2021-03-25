@@ -16,20 +16,26 @@ namespace DragaliaApi
             CreateMap<Account, AccountDTO>();
             CreateMap<AccountDTO, Account>();
 
-            CreateMap<AccountWeapon, AccountWeaponDTO>();
-            CreateMap<AccountWeaponDTO, AccountWeapon>();
-            
-            CreateMap<AccountInventory, AccountInventoryDTO>();
-            CreateMap<AccountInventoryDTO, AccountInventory>();
+            CreateMap<AccountAdventurer, AccountAdventurerDTO>();
+            CreateMap<AccountAdventurerDTO, AccountAdventurer>();
+
+            CreateMap<AccountDragon, AccountDragonDTO>();
+            CreateMap<AccountDragonDTO, AccountDragon>();
 
             CreateMap<AccountFacility, AccountFacilityDTO>();
             CreateMap<AccountFacilityDTO, AccountFacility>();
 
+            CreateMap<AccountInventory, AccountInventoryDTO>();
+            CreateMap<AccountInventoryDTO, AccountInventory>();
+
             CreateMap<AccountPassive, AccountPassiveDTO>();
             CreateMap<AccountPassiveDTO, AccountPassive>();
 
-            CreateMap<AccountAdventurer, AccountAdventurerDTO>();
-            CreateMap<AccountAdventurerDTO, AccountAdventurer>();
+            CreateMap<AccountWeapon, AccountWeaponDTO>();
+            CreateMap<AccountWeaponDTO, AccountWeapon>();
+
+            CreateMap<AccountWyrmprint, AccountWyrmprintDTO>();
+            CreateMap<AccountWyrmprintDTO, AccountWyrmprint>();
 
             //Weapon data
             CreateMap<Weapon, WeaponDTO>()
@@ -96,6 +102,20 @@ namespace DragaliaApi
                 .ForMember(dest => dest.Element,
                            opt => opt.MapFrom(src => src.Element.Element1));
             CreateMap<DragonDTO, Dragon>();
+
+            //Wyrmprints
+            CreateMap<Wyrmprint, WyrmprintDTO>()
+                .ForMember(dest => dest.Wyrmprint,
+                           opt => opt.MapFrom(src => src.Wyrmprint1))
+                .ForMember(dest => dest.Affinity,
+                           opt => opt.MapFrom(src => src.Affinity.Affinity1))
+                .ForMember(dest => dest.Abilities,
+                           opt => opt.MapFrom(
+                               src => src.WyrmprintAbilities
+                                .Where(wa => wa.AbilityLevel == 3)
+                                .Select(wa => wa.Ability.GenericName)
+                                .ToList()));
+            CreateMap<WyrmprintDTO, WyrmprintDTO>();
         }
     }
 }

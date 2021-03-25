@@ -12,7 +12,7 @@ using AutoMapper;
 
 namespace DragaliaApi.Controllers.Public
 {
-    [Route("api/[controller]")]
+    [Route("api/Dragons")]
     [ApiController]
     public class DragonsController : ControllerBase
     {
