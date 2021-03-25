@@ -35,6 +35,9 @@ namespace DragaliaApi.Controllers.Private
                 return await _context.AccountWyrmprints.Where(aw => aw.AccountId == accountID)
                                                        .Include(aw => aw.Wyrmprint)
                                                        .ThenInclude(w => w.WyrmprintAbilities)
+                                                       .ThenInclude(wa => wa.Ability)
+                                                       .Include(aw => aw.Wyrmprint)
+                                                       .ThenInclude(w => w.Affinity)
                                                        .OrderByDescending(aw => aw.Wyrmprint.Rarity)
                                                        .Select(aw => _mapper.Map<AccountWyrmprintDTO>(aw))
                                                        .ToListAsync();
@@ -56,6 +59,9 @@ namespace DragaliaApi.Controllers.Private
                                                                     && aw.WyrmprintId == wyrmprintID)
                                                        .Include(aw => aw.Wyrmprint)
                                                        .ThenInclude(w => w.WyrmprintAbilities)
+                                                       .ThenInclude(wa => wa.Ability)
+                                                       .Include(aw => aw.Wyrmprint)
+                                                       .ThenInclude(w => w.Affinity)
                                                        .OrderByDescending(aw => aw.Wyrmprint.Rarity)
                                                        .Select(aw => _mapper.Map<AccountWyrmprintDTO>(aw))
                                                        .FirstOrDefaultAsync();
@@ -178,24 +184,21 @@ namespace DragaliaApi.Controllers.Private
                     .Where(aw => aw.AccountId == accountID
                                  && (wyrmprintID == null || aw.WyrmprintId == wyrmprintID))
                     .Join(_context.WyrmprintLevels.Include(wl => wl.Material),
-                        aw => aw.Wyrmprint.Rarity,
+                        aw => aw.Wyrmprint.RarityGroup,
                         wl => wl.Rarity,
                         (aw, wl) => new { aw, wl })
-                    .OrderBy(x => x.aw.Weapon.WeaponSeries.SortOrder)
-                    .ThenBy(x => x.aw.Weapon.WeaponTypeId)
-                    .ThenBy(x => x.aw.Weapon.Rarity)
-                    .ThenBy(x => x.aw.Weapon.Element.SortOrder)
-                    .ThenBy(x => x.wl.WeaponLevel1)
+                    .OrderByDescending(x => x.aw.Wyrmprint.Rarity)
+                    .ThenBy(x => x.wl.WyrmprintLevel1)
                     .ThenBy(x => x.wl.Material.SortPath)
-                    .Where(x => x.aw.WeaponLevel < x.wl.WeaponLevel1 && x.wl.WeaponLevel1 <= x.aw.WeaponLevelWanted)
+                    .Where(x => x.aw.WyrmprintLevel < x.wl.WyrmprintLevel1
+                                && x.wl.WyrmprintLevel1 <= x.aw.WyrmprintLevelWanted)
                     .Select(x => new MaterialCost
                     {
-                        Product = $"{x.aw.Weapon.Weapon1}: Level {x.wl.WeaponLevel1}",
+                        Product = $"{x.aw.Wyrmprint.Wyrmprint1}: Level {x.wl.WyrmprintLevel1}",
                         Material = _mapper.Map<MaterialDTO>(x.wl.Material),
                         Quantity = x.wl.Quantity
                     })
                     .ToListAsync());
-
 
                 return materialCosts;
             }
