@@ -1032,6 +1032,7 @@ BEGIN
 	SELECT w.WyrmprintID
 		,w.Wyrmprint
 		,w.Rarity
+		,w.RarityGroup
 		,w.AbilityID11
 		,w.AbilityID12
 		,w.AbilityID13
@@ -1047,6 +1048,7 @@ BEGIN
 			WyrmprintID INT '$.title.Id'
 			,Wyrmprint NVARCHAR(50) '$.title.Name'
 			,Rarity INT '$.title.Rarity'
+			,RarityGroup INT '$.title.RarityGroup'
 			,AbilityID11 INT '$.title.Abilities11'
 			,AbilityID12 INT '$.title.Abilities12'
 			,AbilityID13 INT '$.title.Abilities13'
@@ -1063,6 +1065,7 @@ BEGIN
 		SELECT DISTINCT WyrmprintID
 			,Wyrmprint
 			,Rarity
+			,RarityGroup
 			,NULLIF(AffinityID, 0) AS AffinityID
 		FROM #Wyrmprint
 		) AS src
@@ -1072,6 +1075,7 @@ BEGIN
 			UPDATE
 			SET Wyrmprint = src.Wyrmprint
 				,Rarity = src.Rarity
+				,RarityGroup = src.RarityGroup
 				,AffinityID = src.AffinityID
 				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
@@ -1084,12 +1088,14 @@ BEGIN
 				WyrmprintID
 				,Wyrmprint
 				,Rarity
+				,RarityGroup
 				,AffinityID
 				)
 			VALUES (
 				src.WyrmprintID
 				,src.Wyrmprint
 				,src.Rarity
+				,src.RarityGroup
 				,src.AffinityID
 				);
 
@@ -2114,4 +2120,62 @@ BEGIN
 	FROM core.Adventurer AS a
 	INNER JOIN core.ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
 	WHERE mc.ManaNode > a.MCLimit
+
+	--Dragons
+	MERGE core.Dragon AS trg
+	USING (
+		SELECT d.DragonID
+			,d.Dragon
+			,d.ElementID
+			,d.Rarity
+		FROM jsn.TableJson AS dj
+		CROSS APPLY OPENJSON(dj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				DragonID INT '$.title.Id'
+				,Dragon NVARCHAR(50) '$.title.FullName'
+				,Rarity INT '$.title.Rarity'
+				,ElementID INT '$.title.ElementalTypeId'
+				) AS d
+		WHERE dj.TableName = 'Dragon'
+		) AS src
+		ON src.DragonID = trg.DragonID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Dragon = src.Dragon
+				,Rarity = src.Rarity
+				,ElementID = src.ElementID
+				,Active = 1
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			UPDATE
+			SET Active = 0
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				DragonID
+				,Dragon
+				,Rarity
+				,ElementID
+				)
+			VALUES (
+				src.DragonID
+				,src.Dragon
+				,src.Rarity
+				,src.ElementID
+				);
+
+	TRUNCATE TABLE core.DragonEssence
+
+	INSERT core.DragonEssence (
+		DragonID
+		,MaterialID
+		)
+	SELECT d.DragonID
+		,m.MaterialID
+	FROM core.Dragon AS d
+	INNER JOIN core.Material AS m ON m.Material = CONCAT (
+			d.Dragon
+			,'''s Essence'
+			)
 END

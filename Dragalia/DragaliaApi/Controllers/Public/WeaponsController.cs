@@ -10,7 +10,7 @@ using DragaliaApi.Models;
 using DragaliaApi.Models.DTO;
 using AutoMapper;
 
-namespace DragaliaApi.Controllers
+namespace DragaliaApi.Controllers.Public
 {
     [Route("api/WeaponList")]
     [ApiController]

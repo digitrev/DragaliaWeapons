@@ -23,6 +23,7 @@ namespace DragaliaApi.Data
         public virtual DbSet<AbilityGroup> AbilityGroups { get; set; }
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<AccountAdventurer> AccountAdventurers { get; set; }
+        public virtual DbSet<AccountDragon> AccountDragons { get; set; }
         public virtual DbSet<AccountFacility> AccountFacilities { get; set; }
         public virtual DbSet<AccountInventory> AccountInventories { get; set; }
         public virtual DbSet<AccountPassive> AccountPassives { get; set; }
@@ -31,6 +32,8 @@ namespace DragaliaApi.Data
         public virtual DbSet<Adventurer> Adventurers { get; set; }
         public virtual DbSet<Affinity> Affinities { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Dragon> Dragons { get; set; }
+        public virtual DbSet<DragonEssence> DragonEssences { get; set; }
         public virtual DbSet<Element> Elements { get; set; }
         public virtual DbSet<Facility> Facilities { get; set; }
         public virtual DbSet<FacilityUpgrade> FacilityUpgrades { get; set; }
@@ -153,6 +156,29 @@ namespace DragaliaApi.Data
                     .HasForeignKey(d => d.AdventurerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_AccountAdventurer_Adventurer");
+            });
+
+            modelBuilder.Entity<AccountDragon>(entity =>
+            {
+                entity.HasKey(e => new { e.AccountId, e.DragonId });
+
+                entity.ToTable("AccountDragon");
+
+                entity.Property(e => e.AccountId).HasColumnName("AccountID");
+
+                entity.Property(e => e.DragonId).HasColumnName("DragonID");
+
+                entity.HasOne(d => d.Account)
+                    .WithMany(p => p.AccountDragons)
+                    .HasForeignKey(d => d.AccountId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_AccountDragon_Account");
+
+                entity.HasOne(d => d.Dragon)
+                    .WithMany(p => p.AccountDragons)
+                    .HasForeignKey(d => d.DragonId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_AccountDragon_Dragon");
             });
 
             modelBuilder.Entity<AccountFacility>(entity =>
@@ -336,6 +362,59 @@ namespace DragaliaApi.Data
                     .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("Category");
+            });
+
+            modelBuilder.Entity<Dragon>(entity =>
+            {
+                entity.ToTable("Dragon", "core");
+
+                entity.Property(e => e.DragonId)
+                    .ValueGeneratedNever()
+                    .HasColumnName("DragonID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("1");
+
+                entity.Property(e => e.Dragon1)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnName("Dragon");
+
+                entity.Property(e => e.ElementId).HasColumnName("ElementID");
+
+                entity.HasOne(d => d.Element)
+                    .WithMany(p => p.Dragons)
+                    .HasForeignKey(d => d.ElementId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Dragon_Element");
+            });
+
+            modelBuilder.Entity<DragonEssence>(entity =>
+            {
+                entity.HasKey(e => new { e.DragonId, e.MaterialId });
+
+                entity.ToTable("DragonEssence", "core");
+
+                entity.Property(e => e.DragonId).HasColumnName("DragonID");
+
+                entity.Property(e => e.MaterialId)
+                    .HasMaxLength(50)
+                    .HasColumnName("MaterialID");
+
+                entity.Property(e => e.Quantity).HasDefaultValueSql("50");
+
+                entity.HasOne(d => d.Dragon)
+                    .WithMany(p => p.DragonEssences)
+                    .HasForeignKey(d => d.DragonId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_DragonEssence_Dragon");
+
+                entity.HasOne(d => d.Material)
+                    .WithMany(p => p.DragonEssences)
+                    .HasForeignKey(d => d.MaterialId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_DragonEssence_Material");
             });
 
             modelBuilder.Entity<Element>(entity =>

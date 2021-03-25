@@ -34,6 +34,14 @@
          "ObjectType": 0
       },
       {
+         "Name": "[core].[Dragon]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[core].[DragonEssence]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[core].[Element]",
          "ObjectType": 0
       },
@@ -131,6 +139,10 @@
       },
       {
          "Name": "[dbo].[AccountAdventurer]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AccountDragon]",
          "ObjectType": 0
       },
       {

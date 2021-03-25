@@ -1222,4 +1222,79 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ManaNode" />
   </Operation>
+  <Operation Name="Move Schema" Key="99f7e35f-086d-4aac-9c7e-82de664b99ce" ChangeDateTime="03/24/2021 19:29:47">
+    <Property Name="ElementName" Value="[dbo].[Dragon]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4c0e12b1-81bd-47da-a072-ba05c5e6de70" ChangeDateTime="03/24/2021 19:50:41">
+    <Property Name="ElementName" Value="[core].[Dragon].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Dragon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DragonID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4658684c-7fc6-45d5-b3b5-73cb5f2b0346" ChangeDateTime="03/24/2021 19:51:24">
+    <Property Name="ElementName" Value="[core].[Dragon].[ElementID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Dragon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rarity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f1304cf6-0854-4bb0-a4c6-76168185d088" ChangeDateTime="03/24/2021 19:53:31">
+    <Property Name="ElementName" Value="[core].[Dragon].[IsActive]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Dragon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Active" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0115197a-e027-4c74-87c3-7fef8a11177d" ChangeDateTime="03/24/2021 20:00:19">
+    <Property Name="ElementName" Value="[dbo].[DragonEssence]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9e4e1344-dac6-4131-9c38-38348bff29d8" ChangeDateTime="03/24/2021 20:00:23">
+    <Property Name="ElementName" Value="[core].[DragonEssence].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[DragonEssence]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DragonID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="557d1cad-61ae-40c2-8c32-aa18fe0e6c88" ChangeDateTime="03/24/2021 20:02:59">
+    <Property Name="ElementName" Value="[dbo].[AccountDragon].[CurrentLevel]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AccountDragon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CurrentUnbind" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7951054c-dab2-4d69-aabc-4967f40f1f4e" ChangeDateTime="03/24/2021 20:03:02">
+    <Property Name="ElementName" Value="[dbo].[AccountDragon].[WantedLevel]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AccountDragon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Wanted" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="77dc2643-4f65-41c7-b120-f6819a649090" ChangeDateTime="03/24/2021 20:03:04">
+    <Property Name="ElementName" Value="[dbo].[AccountDragon].[CurrentUnbind]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AccountDragon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Unbind" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ca19519a-f346-4710-bc92-caec214ded16" ChangeDateTime="03/24/2021 20:03:06">
+    <Property Name="ElementName" Value="[dbo].[AccountDragon].[Wanted]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AccountDragon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WantedUnbind" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d284ac92-a70b-4a4e-a4b6-10b828fe6387" ChangeDateTime="03/24/2021 20:03:11">
+    <Property Name="ElementName" Value="[dbo].[AccountDragon].[WantedUnbind]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AccountDragon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UnbindWanted" />
+  </Operation>
 </Operations>
