@@ -1,0 +1,211 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using DragaliaApi.Data;
+using DragaliaApi.Models;
+using DragaliaApi.Models.DTO;
+using AutoMapper;
+
+namespace DragaliaApi.Controllers.Private
+{
+    [Route("api/AccountWyrmprints")]
+    [ApiController]
+    public class AccountWyrmprintsController : ControllerBase
+    {
+        private readonly DragaliaContext _context;
+        private readonly IMapper _mapper;
+
+        public AccountWyrmprintsController(DragaliaContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
+
+        // GET: api/AccountWyrmprints
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<AccountWyrmprintDTO>>> GetAccountWyrmprints()
+        {
+            try
+            {
+                var accountID = await AccountsController.GetAccountID();
+                return await _context.AccountWyrmprints.Where(aw => aw.AccountId == accountID)
+                                                       .Include(aw => aw.Wyrmprint)
+                                                       .ThenInclude(w => w.WyrmprintAbilities)
+                                                       .OrderByDescending(aw => aw.Wyrmprint.Rarity)
+                                                       .Select(aw => _mapper.Map<AccountWyrmprintDTO>(aw))
+                                                       .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
+            }
+        }
+
+        // GET: api/AccountWyrmprints/5
+        [HttpGet("{wyrmprintID}")]
+        public async Task<ActionResult<AccountWyrmprintDTO>> GetAccountWyrmprint(int wyrmprintID)
+        {
+            try
+            {
+                var accountID = await AccountsController.GetAccountID();
+                return await _context.AccountWyrmprints.Where(aw => aw.AccountId == accountID
+                                                                    && aw.WyrmprintId == wyrmprintID)
+                                                       .Include(aw => aw.Wyrmprint)
+                                                       .ThenInclude(w => w.WyrmprintAbilities)
+                                                       .OrderByDescending(aw => aw.Wyrmprint.Rarity)
+                                                       .Select(aw => _mapper.Map<AccountWyrmprintDTO>(aw))
+                                                       .FirstOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
+            }
+        }
+
+        // PUT: api/AccountWyrmprints/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPut("{wyrmprintID}")]
+        public async Task<IActionResult> PutAccountWyrmprint(int wyrmprintID, AccountWyrmprintDTO accountWyrmprintDTO)
+        {
+            var accountID = await AccountsController.GetAccountID();
+            var accountWyrmprint = await _context.AccountWyrmprints.FindAsync(accountID, wyrmprintID);
+
+            accountWyrmprint.Unbind = accountWyrmprintDTO.Unbind;
+            accountWyrmprint.UnbindWanted = accountWyrmprintDTO.UnbindWanted;
+            accountWyrmprint.Copies = accountWyrmprintDTO.Copies;
+            accountWyrmprint.CopiesWanted = accountWyrmprintDTO.CopiesWanted;
+            accountWyrmprint.WyrmprintLevel = accountWyrmprintDTO.WyrmprintLevel;
+            accountWyrmprint.WyrmprintLevelWanted = accountWyrmprintDTO.WyrmprintLevelWanted;
+
+            _context.Entry(accountWyrmprint).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException) when (!AccountWyrmprintExists(accountID, wyrmprintID))
+            {
+                return NotFound();
+            }
+
+            return NoContent();
+        }
+
+        // POST: api/AccountWyrmprints
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<ActionResult<AccountWyrmprint>> PostAccountWyrmprint(AccountWyrmprintDTO accountWyrmprintDTO)
+        {
+            var accountID = await AccountsController.GetAccountID();
+            var accountWyrmprint = _mapper.Map<AccountWyrmprint>(accountWyrmprintDTO);
+            accountWyrmprint.AccountId = accountID;
+
+            _context.AccountWyrmprints.Add(accountWyrmprint);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException) when (AccountWyrmprintExists(accountID, accountWyrmprint.WyrmprintId))
+            {
+                return Conflict();
+            }
+
+            return CreatedAtAction(
+                nameof(GetAccountWyrmprint),
+                new { accountID = accountWyrmprint.AccountId, WyrmprintID = accountWyrmprint.WyrmprintId },
+                _mapper.Map<AccountWyrmprintDTO>(accountWyrmprint));
+        }
+
+        // DELETE: api/AccountWyrmprints/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAccountWyrmprint(int id)
+        {
+            var accountWyrmprint = await _context.AccountWyrmprints.FindAsync(id);
+            if (accountWyrmprint == null)
+            {
+                return NotFound();
+            }
+
+            _context.AccountWyrmprints.Remove(accountWyrmprint);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        [HttpGet("costs")]
+        public async Task<ActionResult<IEnumerable<MaterialCost>>> GetWyrmprintCosts(int? wyrmprintID)
+        {
+            try
+            {
+                var accountID = await AccountsController.GetAccountID();
+                var materialCosts = new List<MaterialCost>();
+
+                //Unbinding, copies
+                materialCosts.AddRange(await _context.AccountWyrmprints
+                    .Where(aw => aw.AccountId == accountID
+                                 && (wyrmprintID == null || aw.WyrmprintId == wyrmprintID))
+                    .Include(aw => aw.Wyrmprint)
+                    .ThenInclude(w => w.WyrmprintUpgrades)
+                    .ThenInclude(wu => wu.UpgradeType)
+                    .SelectMany(aw => aw.Wyrmprint.WyrmprintUpgrades,
+                        (aw, wu) => new { aw, wu })
+                    .OrderByDescending(x => x.aw.Wyrmprint.Rarity)
+                    .ThenBy(x => x.wu.UpgradeType.UpgradeType1)
+                    .ThenBy(x => x.wu.Step)
+                    .ThenBy(x => x.wu.Material.SortPath)
+                    .Where(x =>
+                           (x.wu.UpgradeType.UpgradeType1 == "Unbind"
+                            && x.aw.Unbind < x.wu.Step
+                            && x.wu.Step <= x.aw.UnbindWanted)
+                        || (x.wu.UpgradeType.UpgradeType1 == "Copies"
+                            && x.aw.Copies < x.wu.Step
+                            && x.wu.Step <= x.aw.CopiesWanted)
+                        )
+                    .Select(x => new MaterialCost
+                    {
+                        Product = $"{x.aw.Wyrmprint.Wyrmprint1}: {x.wu.UpgradeType.UpgradeType1} {x.wu.Step}",
+                        Material = _mapper.Map<MaterialDTO>(x.wu.Material),
+                        Quantity = x.wu.Quantity
+                    })
+                    .ToListAsync());
+
+                //Weapon level
+                materialCosts.AddRange(await _context.AccountWyrmprints
+                    .Where(aw => aw.AccountId == accountID
+                                 && (wyrmprintID == null || aw.WyrmprintId == wyrmprintID))
+                    .Join(_context.WyrmprintLevels.Include(wl => wl.Material),
+                        aw => aw.Wyrmprint.Rarity,
+                        wl => wl.Rarity,
+                        (aw, wl) => new { aw, wl })
+                    .OrderBy(x => x.aw.Weapon.WeaponSeries.SortOrder)
+                    .ThenBy(x => x.aw.Weapon.WeaponTypeId)
+                    .ThenBy(x => x.aw.Weapon.Rarity)
+                    .ThenBy(x => x.aw.Weapon.Element.SortOrder)
+                    .ThenBy(x => x.wl.WeaponLevel1)
+                    .ThenBy(x => x.wl.Material.SortPath)
+                    .Where(x => x.aw.WeaponLevel < x.wl.WeaponLevel1 && x.wl.WeaponLevel1 <= x.aw.WeaponLevelWanted)
+                    .Select(x => new MaterialCost
+                    {
+                        Product = $"{x.aw.Weapon.Weapon1}: Level {x.wl.WeaponLevel1}",
+                        Material = _mapper.Map<MaterialDTO>(x.wl.Material),
+                        Quantity = x.wl.Quantity
+                    })
+                    .ToListAsync());
+
+
+                return materialCosts;
+            }
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
+            }
+        }
+
+        private bool AccountWyrmprintExists(int accountID, int wyrmprintID) => _context.AccountWyrmprints.Any(aw => aw.AccountId == accountID
+                                                                                                                    && aw.WyrmprintId == wyrmprintID);
+    }
+}
