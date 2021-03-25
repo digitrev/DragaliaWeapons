@@ -1032,6 +1032,7 @@ BEGIN
 	SELECT w.WyrmprintID
 		,w.Wyrmprint
 		,w.Rarity
+		,w.RarityGroup
 		,w.AbilityID11
 		,w.AbilityID12
 		,w.AbilityID13
@@ -1047,6 +1048,7 @@ BEGIN
 			WyrmprintID INT '$.title.Id'
 			,Wyrmprint NVARCHAR(50) '$.title.Name'
 			,Rarity INT '$.title.Rarity'
+			,RarityGroup INT '$.title.RarityGroup'
 			,AbilityID11 INT '$.title.Abilities11'
 			,AbilityID12 INT '$.title.Abilities12'
 			,AbilityID13 INT '$.title.Abilities13'
@@ -1063,6 +1065,7 @@ BEGIN
 		SELECT DISTINCT WyrmprintID
 			,Wyrmprint
 			,Rarity
+			,RarityGroup
 			,NULLIF(AffinityID, 0) AS AffinityID
 		FROM #Wyrmprint
 		) AS src
@@ -1072,6 +1075,7 @@ BEGIN
 			UPDATE
 			SET Wyrmprint = src.Wyrmprint
 				,Rarity = src.Rarity
+				,RarityGroup = src.RarityGroup
 				,AffinityID = src.AffinityID
 				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
@@ -1084,12 +1088,14 @@ BEGIN
 				WyrmprintID
 				,Wyrmprint
 				,Rarity
+				,RarityGroup
 				,AffinityID
 				)
 			VALUES (
 				src.WyrmprintID
 				,src.Wyrmprint
 				,src.Rarity
+				,src.RarityGroup
 				,src.AffinityID
 				);
 
