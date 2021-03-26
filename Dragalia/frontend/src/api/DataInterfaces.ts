@@ -182,7 +182,7 @@ export interface AccountDragonData {
   dragonId: number;
   unbind: number;
   unbindWanted: number;
-  dragon: DragonData;
+  dragon?: DragonData;
 }
 
 //wyrmprints
@@ -202,5 +202,5 @@ export interface AccountWyrmprintData {
   unbindWanted: number;
   copies: number;
   copiesWanted: number;
-  wyrmprint: WyrmprintData;
+  wyrmprint?: WyrmprintData;
 }

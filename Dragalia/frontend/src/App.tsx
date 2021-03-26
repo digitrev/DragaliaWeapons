@@ -4,6 +4,8 @@ import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { AccountAdventurerPage } from './pages/Adventurers/AccountAdventurerPage';
 import { AdventurerPage } from './pages/Adventurers/AdventurerPage';
+import { AccountDragonPage } from './pages/Dragons/AccountDragonPage';
+import { DragonPage } from './pages/Dragons/DragonPage';
 import { Example } from './pages/Example';
 import { AccountFacilityPage } from './pages/Facilities/AccountFacilityPage';
 import { FacilityPage } from './pages/Facilities/FacilityPage';
@@ -37,18 +39,20 @@ const App: React.FC = () => {
           <Redirect from="/home" to="/" />
           <Route exact path="/" component={HomePage} />
           <Route path="/adventurers" component={AdventurerPage} />
-          <Route path="/weapons" component={WeaponsPage} />
-          <Route path="/passives" component={PassivePage} />
-          <Route path="/materials" component={MaterialPage} />
+          <Route path="/dragons" component={DragonPage} />
           <Route path="/facilities" component={FacilityPage} />
+          <Route path="/materials" component={MaterialPage} />
+          <Route path="/passives" component={PassivePage} />
+          <Route path="/weapons" component={WeaponsPage} />
           <Route
             path="/account/adventurers"
             component={AccountAdventurerPage}
           />
-          <Route path="/account/weapons" component={AccountWeaponPage} />
-          <Route path="/account/passives" component={AccountPassivePage} />
           <Route path="/account/facilities" component={AccountFacilityPage} />
           <Route path="/account/inventory" component={InventoryPage} />
+          <Route path="/account/passives" component={AccountPassivePage} />
+          <Route path="/account/dragons" component={AccountDragonPage} />
+          <Route path="/account/weapons" component={AccountWeaponPage} />
           <Route path="/example" component={Example} />
           <Route component={NotFoundPage} />
         </Switch>

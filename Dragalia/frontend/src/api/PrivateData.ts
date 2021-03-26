@@ -2,10 +2,12 @@ import HttpClient from './HttpClient';
 import { webAPIUrl } from '../AppSettings';
 import {
   AccountAdventurerData,
+  AccountDragonData,
   AccountFacilityData,
   AccountInventoryData,
   AccountPassiveData,
   AccountWeaponData,
+  AccountWyrmprintData,
   MaterialCosts,
   WeaponData,
 } from './DataInterfaces';
@@ -15,64 +17,57 @@ export class PrivateApi extends HttpClient {
     super(webAPIUrl);
   }
 
-  //Weapons
-  public getWeapons = () =>
-    this.instance.get<AccountWeaponData[]>('/AccountWeapons');
+  //adventurers
+  public getAdventurers = () =>
+    this.instance.get<AccountAdventurerData[]>('/AccountAdventurers');
 
-  public getWeapon = (weaponID: number) =>
-    this.instance.get<AccountWeaponData>(`/AccountWeapons/${weaponID}`);
+  public getAdventurer = (adventurerID: number) =>
+    this.instance.get<AccountAdventurerData>(
+      `/AccountAdventurers/${adventurerID}`,
+    );
 
-  public getUntrackedWeapons = () =>
-    this.instance.get<WeaponData[]>('/AccountWeapons/untracked');
+  public putAdventurer = (
+    adventurerID: number,
+    adventurer: AccountAdventurerData,
+  ) => this.instance.put(`/AccountAdventurers/${adventurerID}`, adventurer);
 
-  public putWeapon = (weaponID: number, weapon: AccountWeaponData) =>
-    this.instance.put(`/AccountWeapons/${weaponID}`, weapon);
+  public postAdventurer = (adventurer: AccountAdventurerData) =>
+    this.instance.post('/AccountAdventurer', adventurer);
 
-  public getWeaponCosts = (weaponID?: number) =>
-    this.instance.get<MaterialCosts[]>('/AccountWeapons/costs', {
+  public deleteAdventurer = (adventurerID: number) =>
+    this.instance.delete(`/AccountAdventurers/${adventurerID}`);
+
+  public getAdventurerCosts = (adventurerID?: number) =>
+    this.instance.get<MaterialCosts[]>('/AccountAdventurers/costs', {
       params: {
-        weaponID: weaponID,
+        adventurerID: adventurerID,
       },
     });
 
-  //Passives
-  public getPassives = () =>
-    this.instance.get<AccountPassiveData[]>('AccountPassives');
+  //dragons
+  public getDragons = () =>
+    this.instance.get<AccountDragonData[]>('/AccountDragons');
 
-  public getPassive = (passiveID: number) =>
-    this.instance.get<AccountPassiveData>(`/AccountPassives/${passiveID}`);
+  public getDragon = (dragonID: number) =>
+    this.instance.get<AccountDragonData>(`/AccountDragons/${dragonID}`);
 
-  public putPassive = (passiveID: number, passive: AccountPassiveData) =>
-    this.instance.put(`/AccountPassives/${passiveID}`, passive);
+  public putDragon = (dragonID: number, dragon: AccountDragonData) =>
+    this.instance.put(`/AccountDragons/${dragonID}`, dragon);
 
-  public getPassiveCosts = (passiveID?: number) =>
-    this.instance.get<MaterialCosts[]>('AccountPassives/costs', {
+  public postDragon = (dragon: AccountDragonData) =>
+    this.instance.post('/AccountDragons', dragon);
+
+  public deleteDragon = (dragonID: number) =>
+    this.instance.delete(`/AccountDragons/${dragonID}`);
+
+  public getDragonCosts = (dragonID?: number) =>
+    this.instance.get('/AccountDragons/costs', {
       params: {
-        passiveID: passiveID,
+        dragonID: dragonID,
       },
     });
 
-  //Inventory
-  public getInventory = () =>
-    this.instance.get<AccountInventoryData[]>('/AccountInventories');
-
-  public getItem = (materialID: string) =>
-    this.instance.get<AccountInventoryData>(
-      `/AccountInventories/${materialID}`,
-    );
-
-  public getItemFilter = (materialIDs: string[]) =>
-    this.instance.get<AccountInventoryData[]>(
-      `/AccountInventories?materials=${materialIDs.reduce(
-        (acc, cur) => `${cur},${acc}`,
-        '',
-      )}`,
-    );
-
-  public putItem = (materialID: string, item: AccountInventoryData) =>
-    this.instance.put(`/AccountInventories/${materialID}`, item);
-
-  //Facilities
+  //facilities
   public getFacilities = () =>
     this.instance.get<AccountFacilityData[]>('/AccountFacilities');
 
@@ -99,30 +94,81 @@ export class PrivateApi extends HttpClient {
       },
     });
 
-  //adventurers
-  public getAdventurers = () =>
-    this.instance.get<AccountAdventurerData[]>('/AccountAdventurers');
+  //Inventory
+  public getInventory = () =>
+    this.instance.get<AccountInventoryData[]>('/AccountInventories');
 
-  public getAdventurer = (adventurerID: number) =>
-    this.instance.get<AccountAdventurerData>(
-      `/AccountAdventurers/${adventurerID}`,
+  public getItem = (materialID: string) =>
+    this.instance.get<AccountInventoryData>(
+      `/AccountInventories/${materialID}`,
     );
 
-  public putAdventurer = (
-    adventurerID: number,
-    adventurer: AccountAdventurerData,
-  ) => this.instance.put(`/AccountAdventurers/${adventurerID}`, adventurer);
+  public getItemFilter = (materialIDs: string[]) =>
+    this.instance.get<AccountInventoryData[]>(
+      `/AccountInventories?materials=${materialIDs.reduce(
+        (acc, cur) => `${cur},${acc}`,
+        '',
+      )}`,
+    );
 
-  public postAdventurer = (adventurer: AccountAdventurerData) =>
-    this.instance.post('/AccountAdventurer', adventurer);
+  public putItem = (materialID: string, item: AccountInventoryData) =>
+    this.instance.put(`/AccountInventories/${materialID}`, item);
 
-  public deleteAdventurer = (adventurerID: number) =>
-    this.instance.delete(`/AccountAdventurers/${adventurerID}`);
+  //Passives
+  public getPassives = () =>
+    this.instance.get<AccountPassiveData[]>('AccountPassives');
 
-  public getAdventurerCosts = (adventurerID?: number) =>
-    this.instance.get<MaterialCosts[]>('/AccountAdventurers/costs', {
+  public getPassive = (passiveID: number) =>
+    this.instance.get<AccountPassiveData>(`/AccountPassives/${passiveID}`);
+
+  public putPassive = (passiveID: number, passive: AccountPassiveData) =>
+    this.instance.put(`/AccountPassives/${passiveID}`, passive);
+
+  public getPassiveCosts = (passiveID?: number) =>
+    this.instance.get<MaterialCosts[]>('AccountPassives/costs', {
       params: {
-        adventurerID: adventurerID,
+        passiveID: passiveID,
+      },
+    });
+
+  //Weapons
+  public getWeapons = () =>
+    this.instance.get<AccountWeaponData[]>('/AccountWeapons');
+
+  public getWeapon = (weaponID: number) =>
+    this.instance.get<AccountWeaponData>(`/AccountWeapons/${weaponID}`);
+
+  public getUntrackedWeapons = () =>
+    this.instance.get<WeaponData[]>('/AccountWeapons/untracked');
+
+  public putWeapon = (weaponID: number, weapon: AccountWeaponData) =>
+    this.instance.put(`/AccountWeapons/${weaponID}`, weapon);
+
+  public getWeaponCosts = (weaponID?: number) =>
+    this.instance.get<MaterialCosts[]>('/AccountWeapons/costs', {
+      params: {
+        weaponID: weaponID,
+      },
+    });
+
+  //wyrmprints
+  public getWyrmprints = () =>
+    this.instance.get<AccountWyrmprintData[]>('/AccountWyrmprints');
+
+  public getWyrmprint = (wyrmprintID: number) =>
+    this.instance.get<AccountWyrmprintData>(
+      `/AccountWyrmprints/${wyrmprintID}`,
+    );
+
+  public putWyrmprint = (
+    wyrmprintID: number,
+    wyrmprint: AccountWyrmprintData,
+  ) => this.instance.put(`/AccountWyrmprints/${wyrmprintID}`, wyrmprint);
+
+  public getWyrmprintCosts = (wyrmprintID?: number) =>
+    this.instance.get<MaterialCosts[]>('/AccountWyrmprints/costs', {
+      params: {
+        wyrmprintID: wyrmprintID,
       },
     });
 }

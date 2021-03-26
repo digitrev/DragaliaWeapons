@@ -18,6 +18,9 @@ export const HomePage = () => (
         <Link to="/facilities">Facility List</Link>
       </li>
       <li>
+        <Link to="/dragons">Dragon List</Link>
+      </li>
+      <li>
         <Link to="/materials">Material List</Link>
       </li>
       <li>
@@ -31,6 +34,9 @@ export const HomePage = () => (
       </li>
       <li>
         <Link to="/account/facilities">Your Facilities</Link>
+      </li>
+      <li>
+        <Link to="/account/dragons">Your Dragons</Link>
       </li>
       <li>
         <Link to="/account/inventory">Your Inventory</Link>
