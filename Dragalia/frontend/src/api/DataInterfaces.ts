@@ -169,3 +169,38 @@ export interface AccountAdventurerData {
   wantedLevel: number;
   adventurer?: AdventurerData;
 }
+
+//dragons
+export interface DragonData {
+  dragonId: number;
+  dragon: string;
+  rarity: number;
+  element: string;
+}
+
+export interface AccountDragonData {
+  dragonId: number;
+  unbind: number;
+  unbindWanted: number;
+  dragon: DragonData;
+}
+
+//wyrmprints
+export interface WyrmprintData {
+  wyrmprintId: number;
+  wyrmprint: string;
+  rarity: number;
+  affinity: string;
+  abilities: string[];
+}
+
+export interface AccountWyrmprintData {
+  wyrmprintId: number;
+  wyrmprintLevel: number;
+  wyrmprintLevelWanted: number;
+  unbind: number;
+  unbindWanted: number;
+  copies: number;
+  copiesWanted: number;
+  wyrmprint: WyrmprintData;
+}
