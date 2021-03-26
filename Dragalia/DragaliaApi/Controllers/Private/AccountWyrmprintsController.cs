@@ -55,16 +55,19 @@ namespace DragaliaApi.Controllers.Private
             try
             {
                 var accountID = await AccountsController.GetAccountID();
-                return await _context.AccountWyrmprints.Where(aw => aw.AccountId == accountID
-                                                                    && aw.WyrmprintId == wyrmprintID)
-                                                       .Include(aw => aw.Wyrmprint)
-                                                       .ThenInclude(w => w.WyrmprintAbilities)
-                                                       .ThenInclude(wa => wa.Ability)
-                                                       .Include(aw => aw.Wyrmprint)
-                                                       .ThenInclude(w => w.Affinity)
-                                                       .OrderByDescending(aw => aw.Wyrmprint.Rarity)
-                                                       .Select(aw => _mapper.Map<AccountWyrmprintDTO>(aw))
-                                                       .FirstOrDefaultAsync();
+                var rval = await _context.AccountWyrmprints.Where(aw => aw.AccountId == accountID && aw.WyrmprintId == wyrmprintID)
+                                                           .Include(aw => aw.Wyrmprint)
+                                                           .ThenInclude(w => w.WyrmprintAbilities)
+                                                           .ThenInclude(wa => wa.Ability)
+                                                           .Include(aw => aw.Wyrmprint)
+                                                           .ThenInclude(w => w.Affinity)
+                                                           .OrderByDescending(aw => aw.Wyrmprint.Rarity)
+                                                           .Select(aw => _mapper.Map<AccountWyrmprintDTO>(aw))
+                                                           .FirstOrDefaultAsync();
+
+                if (rval == null)
+                    return NotFound();
+                return rval;
             }
             catch (Exception ex)
             {

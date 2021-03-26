@@ -54,14 +54,18 @@ namespace DragaliaApi.Controllers.Private
             var accountID = await AccountsController.GetAccountID();
             try
             {
-                return await _context.AccountFacilities.Where(af => af.AccountId == accountID && af.FacilityId == facilityID && af.CopyNumber == copyNumber)
-                                                       .Include(af => af.Facility)
-                                                       .ThenInclude(f => f.Category)
-                                                       .Where(af => af.Facility.Category.Category1 != "Decoration")
-                                                       .OrderBy(af => af.Facility.CategoryId)
-                                                       .ThenBy(af => af.Facility.Facility1)
-                                                       .Select(af => _mapper.Map<AccountFacilityDTO>(af))
-                                                       .FirstAsync();
+                var rval = await _context.AccountFacilities.Where(af => af.AccountId == accountID && af.FacilityId == facilityID && af.CopyNumber == copyNumber)
+                                                           .Include(af => af.Facility)
+                                                           .ThenInclude(f => f.Category)
+                                                           .Where(af => af.Facility.Category.Category1 != "Decoration")
+                                                           .OrderBy(af => af.Facility.CategoryId)
+                                                           .ThenBy(af => af.Facility.Facility1)
+                                                           .Select(af => _mapper.Map<AccountFacilityDTO>(af))
+                                                           .FirstAsync();
+
+                if (rval == null)
+                    return NotFound();
+                return rval;
             }
             catch (Exception ex)
             {
@@ -150,7 +154,7 @@ namespace DragaliaApi.Controllers.Private
                     .Include(af => af.Facility)
                     .ThenInclude(f => f.FacilityUpgrades)
                     .ThenInclude(fu => fu.Material)
-                    .SelectMany(af => af.Facility.FacilityUpgrades, 
+                    .SelectMany(af => af.Facility.FacilityUpgrades,
                         (accountFacility, facilityUpgrade) => new { accountFacility, facilityUpgrade })
                     .Where(x => x.accountFacility.CurrentLevel < x.facilityUpgrade.FacilityLevel
                         && x.facilityUpgrade.FacilityLevel <= x.accountFacility.WantedLevel)
@@ -162,7 +166,7 @@ namespace DragaliaApi.Controllers.Private
                     .Select(x => new MaterialCost
                     {
                         Product = $"{x.accountFacility.Facility.Facility1} {(x.accountFacility.Facility.Limit > 1 ? $"#{x.accountFacility.CopyNumber} " : "")}Level {x.facilityUpgrade.FacilityLevel}",
-                        Material = _mapper.Map<MaterialDTO>( x.facilityUpgrade.Material),
+                        Material = _mapper.Map<MaterialDTO>(x.facilityUpgrade.Material),
                         Quantity = x.facilityUpgrade.Quantity
                     })
                     .ToListAsync();

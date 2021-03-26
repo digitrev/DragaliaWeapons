@@ -59,15 +59,19 @@ namespace DragaliaApi.Controllers.Private
             var accountID = await AccountsController.GetAccountID();
             try
             {
-                return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID && aw.WeaponId == weaponID)
-                                                    .Include(aw => aw.Weapon)
-                                                    .ThenInclude(w => w.Element)
-                                                    .Include(aw => aw.Weapon)
-                                                    .ThenInclude(w => w.WeaponSeries)
-                                                    .Include(aw => aw.Weapon)
-                                                    .ThenInclude(w => w.WeaponType)
-                                                    .Select(aw => _mapper.Map<AccountWeaponDTO>(aw))
-                                                    .FirstAsync();
+                var rval = await _context.AccountWeapons.Where(aw => aw.AccountId == accountID && aw.WeaponId == weaponID)
+                                                        .Include(aw => aw.Weapon)
+                                                        .ThenInclude(w => w.Element)
+                                                        .Include(aw => aw.Weapon)
+                                                        .ThenInclude(w => w.WeaponSeries)
+                                                        .Include(aw => aw.Weapon)
+                                                        .ThenInclude(w => w.WeaponType)
+                                                        .Select(aw => _mapper.Map<AccountWeaponDTO>(aw))
+                                                        .FirstAsync();
+
+                if (rval == null)
+                    return NotFound();
+                return rval;
             }
             catch (Exception ex)
             {
