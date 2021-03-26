@@ -54,10 +54,14 @@ namespace DragaliaApi.Controllers.Private
             try
             {
                 var accountID = await AccountsController.GetAccountID();
-                return await _context.AccountAdventurers.Where(aa => aa.AccountId == accountID && aa.AdventurerId == adventurerID)
-                                                        .Include(aa => aa.Adventurer)
-                                                        .Select(aa => _mapper.Map<AccountAdventurerDTO>(aa))
-                                                        .FirstOrDefaultAsync();
+                var rval = await _context.AccountAdventurers.Where(aa => aa.AccountId == accountID && aa.AdventurerId == adventurerID)
+                                                            .Include(aa => aa.Adventurer)
+                                                            .Select(aa => _mapper.Map<AccountAdventurerDTO>(aa))
+                                                            .FirstOrDefaultAsync();
+
+                if (rval == null)
+                    return NotFound();
+                return rval;
             }
             catch (Exception ex)
             {

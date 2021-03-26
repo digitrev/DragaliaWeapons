@@ -55,12 +55,16 @@ namespace DragaliaApi.Controllers.Private
             var accountID = await AccountsController.GetAccountID();
             try
             {
-                return await _context.AccountInventories.Where(ai => ai.AccountId == accountID && ai.MaterialId == materialID)
-                                                        .Include(ai => ai.Material)
-                                                        .ThenInclude(m => m.Category)
-                                                        .Where(ai => ai.Material.Category != null)
-                                                        .Select(ai => _mapper.Map<AccountInventoryDTO>(ai))
-                                                        .FirstAsync();
+                var rval = await _context.AccountInventories.Where(ai => ai.AccountId == accountID && ai.MaterialId == materialID)
+                                                            .Include(ai => ai.Material)
+                                                            .ThenInclude(m => m.Category)
+                                                            .Where(ai => ai.Material.Category != null)
+                                                            .Select(ai => _mapper.Map<AccountInventoryDTO>(ai))
+                                                            .FirstAsync();
+
+                if (rval == null)
+                    return NotFound();
+                return rval;
             }
             catch (Exception ex)
             {

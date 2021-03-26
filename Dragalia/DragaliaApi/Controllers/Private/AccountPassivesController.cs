@@ -58,18 +58,22 @@ namespace DragaliaApi.Controllers.Private
             var accountID = await AccountsController.GetAccountID();
             try
             {
-                return await _context.AccountPassives.Where(ap => ap.AccountId == accountID && ap.PassiveId == passiveID)
-                                                     .Include(ap => ap.Passive)
-                                                     .ThenInclude(p => p.Ability)
-                                                     .Include(ap => ap.Passive)
-                                                     .ThenInclude(p => p.Element)
-                                                     .Include(ap => ap.Passive)
-                                                     .ThenInclude(p => p.WeaponType)
-                                                     .OrderBy(ap => ap.Passive.WeaponTypeId)
-                                                     .ThenBy(ap => ap.Passive.Element.SortOrder)
-                                                     .ThenBy(ap => ap.Passive.SortOrder)
-                                                     .Select(ap => _mapper.Map<AccountPassiveDTO>(ap))
-                                                     .FirstOrDefaultAsync();
+                var rval = await _context.AccountPassives.Where(ap => ap.AccountId == accountID && ap.PassiveId == passiveID)
+                                                         .Include(ap => ap.Passive)
+                                                         .ThenInclude(p => p.Ability)
+                                                         .Include(ap => ap.Passive)
+                                                         .ThenInclude(p => p.Element)
+                                                         .Include(ap => ap.Passive)
+                                                         .ThenInclude(p => p.WeaponType)
+                                                         .OrderBy(ap => ap.Passive.WeaponTypeId)
+                                                         .ThenBy(ap => ap.Passive.Element.SortOrder)
+                                                         .ThenBy(ap => ap.Passive.SortOrder)
+                                                         .Select(ap => _mapper.Map<AccountPassiveDTO>(ap))
+                                                         .FirstOrDefaultAsync();
+
+                if (rval == null)
+                    return NotFound();
+                return rval;
             }
             catch (Exception ex)
             {

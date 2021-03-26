@@ -11,7 +11,6 @@ namespace DragaliaApi.Models.DTO
         public int Unbind { get; set; }
         public int UnbindWanted { get; set; }
 
-        public virtual AccountDTO Account { get; set; }
         public virtual DragonDTO Dragon { get; set; }
     }
 }
