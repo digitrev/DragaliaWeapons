@@ -18,7 +18,7 @@ import {
   nonNegative,
   maxValue,
 } from '../Forms/Form';
-import { Costs } from '../Materials/Costs';
+import { Costs } from '../Costs/Costs';
 import { Weapon } from './Weapon';
 
 interface Props {

@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { AccountAdventurerPage } from './pages/Adventurers/AccountAdventurerPage';
 import { AdventurerPage } from './pages/Adventurers/AdventurerPage';
+import { WeaponCostsPage } from './pages/Costs/WeaponCostsPage';
 import { AccountDragonPage } from './pages/Dragons/AccountDragonPage';
 import { DragonPage } from './pages/Dragons/DragonPage';
 import { Example } from './pages/Example';
@@ -57,6 +58,7 @@ const App: React.FC = () => {
           <Route path="/account/dragons" component={AccountDragonPage} />
           <Route path="/account/weapons" component={AccountWeaponPage} />
           <Route path="/account/wyrmprints" component={AccountWyrmprintPage} />
+          <Route path="/costs/weapons" component={WeaponCostsPage} />
           <Route path="/example" component={Example} />
           <Route component={NotFoundPage} />
         </Switch>

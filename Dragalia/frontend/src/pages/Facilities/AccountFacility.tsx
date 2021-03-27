@@ -18,7 +18,7 @@ import {
   required,
   Values,
 } from '../Forms/Form';
-import { Costs } from '../Materials/Costs';
+import { Costs } from '../Costs/Costs';
 import { Facility } from './Facility';
 
 interface Props {

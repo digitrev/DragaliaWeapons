@@ -7,7 +7,7 @@ import { LoadingText } from '../../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import { Form, isInteger, nonNegative, required, Values } from '../Forms/Form';
-import { Costs } from '../Materials/Costs';
+import { Costs } from '../Costs/Costs';
 import { Dragon } from './Dragon';
 
 interface Props {

@@ -18,7 +18,7 @@ import {
   nonNegative,
   maxValue,
 } from '../Forms/Form';
-import { Costs } from '../Materials/Costs';
+import { Costs } from '../Costs/Costs';
 import { Wyrmprint } from './Wyrmprint';
 
 interface Props {
