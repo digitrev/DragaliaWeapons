@@ -14,7 +14,9 @@ export const HomePage = () => (
           <li>
             <Link to="/account/adventurers">Your Adventurers</Link>
           </li>
-          <li>Adventurer Costs</li>
+          <li>
+            <Link to="/costs/adventurers">Adventurer Costs</Link>
+          </li>
         </ul>
       </li>
       <li>
@@ -40,7 +42,9 @@ export const HomePage = () => (
           <li>
             <Link to="/account/passives">Your Passives</Link>
           </li>
-          <li>Passive Costs</li>
+          <li>
+            <Link to="/costs/passives">Passive Costs</Link>
+          </li>
         </ul>
       </li>
       <li>
@@ -52,7 +56,9 @@ export const HomePage = () => (
           <li>
             <Link to="/account/wyrmprints">Your Wyrmprints</Link>
           </li>
-          <li>Wyrmprint Costs</li>
+          <li>
+            <Link to="/costs/wyrmprints">Wyrmprint Costs</Link>
+          </li>
         </ul>
       </li>
       <li>
@@ -64,7 +70,9 @@ export const HomePage = () => (
           <li>
             <Link to="/account/dragons">Your Dragons</Link>
           </li>
-          <li>Dragon Costs</li>
+          <li>
+            <Link to="/costs/dragons">Dragon Costs</Link>
+          </li>
         </ul>
       </li>
       <li>
@@ -76,7 +84,9 @@ export const HomePage = () => (
           <li>
             <Link to="/account/facilities">Your Facilities</Link>
           </li>
-          <li>Facility Costs</li>
+          <li>
+            <Link to="/costs/facilities">Facility Costs</Link>
+          </li>
         </ul>
       </li>
       <li>
@@ -88,7 +98,9 @@ export const HomePage = () => (
           <li>
             <Link to="/account/inventory">Your Inventory</Link>
           </li>
-          <li>Total Costs</li>
+          <li>
+            <Link to="/costs/totals">Total Costs</Link>
+          </li>
         </ul>
       </li>
     </ul>

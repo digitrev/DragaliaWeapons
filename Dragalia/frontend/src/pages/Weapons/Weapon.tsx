@@ -25,7 +25,7 @@ export const Weapon: FC<Props> = ({
         {weapon}
       </div>
       <div>
-        {rarity}* {weaponSeries} {element === 'None' ? '' : element}{' '}
+        {rarity}⭐ {weaponSeries} {element === 'None' ? '' : element}{' '}
         {weaponType}
       </div>
     </div>

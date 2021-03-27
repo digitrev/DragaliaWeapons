@@ -7,17 +7,17 @@ import { LoadingText } from '../../Loading';
 import { Page } from '../Page';
 import { Costs } from './Costs';
 
-export const WeaponCostsPage = () => {
-  const [weaponCosts, setWeaponCosts] = useState<MaterialCosts[]>([]);
+export const PassiveCostsPage = () => {
+  const [passiveCosts, setPassiveCosts] = useState<MaterialCosts[]>([]);
   const [costsLoading, setCostsLoading] = useState(true);
 
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
       const api = new PrivateApi();
-      const costData = await api.getWeaponCosts();
+      const costData = await api.getPassiveCosts();
       if (!cancelled) {
-        setWeaponCosts(costData);
+        setPassiveCosts(costData);
         setCostsLoading(false);
       }
     };
@@ -28,8 +28,8 @@ export const WeaponCostsPage = () => {
   }, []);
 
   return (
-    <Page title="Weapon Costs">
-      {costsLoading ? <LoadingText /> : <Costs data={weaponCosts} />}
+    <Page title="Passive Costs">
+      {costsLoading ? <LoadingText /> : <Costs data={passiveCosts} />}
     </Page>
   );
 };

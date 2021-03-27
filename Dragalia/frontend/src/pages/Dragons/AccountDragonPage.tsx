@@ -96,7 +96,7 @@ export const AccountDragonPage = () => {
     option.element;
 
   return (
-    <Page title="Dragon List">
+    <Page title="Your Dragons">
       {dragonsLoading ? (
         <LoadingText />
       ) : (

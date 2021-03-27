@@ -7,6 +7,7 @@ import {
   MaterialCosts,
   MaterialData,
 } from '../../api/DataInterfaces';
+import { materialComparator } from '../../api/HelperFunctions';
 import { PrivateApi } from '../../api/PrivateData';
 import { PrimaryButton } from '../../Styles';
 
@@ -27,20 +28,22 @@ export const Costs: FC<Props> = ({ data }) => {
   const [items, setItems] = useState<AccountInventoryData[]>([]);
 
   const sumByMaterial = (c: MaterialCosts[]): SummaryTable[] => {
-    return c.reduce<SummaryTable[]>((acc, cur) => {
-      const x = acc.find(
-        (mc) => mc.material.material === cur.material.material,
-      );
-      if (x === undefined) {
-        acc.push({
-          material: cur.material,
-          sum: cur.quantity,
-        });
-      } else {
-        x.sum += cur.quantity;
-      }
-      return acc;
-    }, []);
+    return c
+      .reduce<SummaryTable[]>((acc, cur) => {
+        const x = acc.find(
+          (mc) => mc.material.material === cur.material.material,
+        );
+        if (x === undefined) {
+          acc.push({
+            material: cur.material,
+            sum: cur.quantity,
+          });
+        } else {
+          x.sum += cur.quantity;
+        }
+        return acc;
+      }, [])
+      .sort((a, b) => materialComparator(a.material, b.material));
   };
 
   const handleDisplay = () => {

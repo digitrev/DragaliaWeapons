@@ -124,7 +124,7 @@ export const AccountPassivePage = () => {
     option.weaponType;
 
   return (
-    <Page title="Passive List">
+    <Page title="Your Passives">
       {passivesLoading ? (
         <LoadingText />
       ) : (

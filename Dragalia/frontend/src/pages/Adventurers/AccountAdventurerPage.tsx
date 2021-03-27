@@ -129,7 +129,7 @@ export const AccountAdventurerPage = () => {
     option.weaponType;
 
   return (
-    <Page title="Adventurer List">
+    <Page title="Your Adventurers">
       {adventurersLoading ? (
         <LoadingText />
       ) : (

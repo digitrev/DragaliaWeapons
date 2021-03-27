@@ -7,17 +7,17 @@ import { LoadingText } from '../../Loading';
 import { Page } from '../Page';
 import { Costs } from './Costs';
 
-export const WeaponCostsPage = () => {
-  const [weaponCosts, setWeaponCosts] = useState<MaterialCosts[]>([]);
+export const WyrmprintCostsPage = () => {
+  const [wyrmprintCosts, setWyrmprintCosts] = useState<MaterialCosts[]>([]);
   const [costsLoading, setCostsLoading] = useState(true);
 
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
       const api = new PrivateApi();
-      const costData = await api.getWeaponCosts();
+      const costData = await api.getWyrmprintCosts();
       if (!cancelled) {
-        setWeaponCosts(costData);
+        setWyrmprintCosts(costData);
         setCostsLoading(false);
       }
     };
@@ -28,8 +28,8 @@ export const WeaponCostsPage = () => {
   }, []);
 
   return (
-    <Page title="Weapon Costs">
-      {costsLoading ? <LoadingText /> : <Costs data={weaponCosts} />}
+    <Page title="Wyrmprint Costs">
+      {costsLoading ? <LoadingText /> : <Costs data={wyrmprintCosts} />}
     </Page>
   );
 };

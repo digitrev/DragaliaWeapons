@@ -25,7 +25,7 @@ export const Adventurer: FC<Props> = ({
         {adventurer}
       </div>
       <div>
-        {rarity}* {element === 'None' ? '' : element} {weaponType}
+        {rarity}⭐ {element === 'None' ? '' : element} {weaponType}
       </div>
     </div>
   );

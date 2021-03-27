@@ -4,7 +4,13 @@ import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { AccountAdventurerPage } from './pages/Adventurers/AccountAdventurerPage';
 import { AdventurerPage } from './pages/Adventurers/AdventurerPage';
+import { AdventurerCostsPage } from './pages/Costs/AdventurerCostsPage';
+import { DragonCostsPage } from './pages/Costs/DragonCostsPage';
+import { FacilityCostsPage } from './pages/Costs/FacilityCostsPage';
+import { PassiveCostsPage } from './pages/Costs/PassiveCostsPage';
+import { TotalCostsPage } from './pages/Costs/TotalCosts';
 import { WeaponCostsPage } from './pages/Costs/WeaponCostsPage';
+import { WyrmprintCostsPage } from './pages/Costs/WyrmprintCostPage';
 import { AccountDragonPage } from './pages/Dragons/AccountDragonPage';
 import { DragonPage } from './pages/Dragons/DragonPage';
 import { Example } from './pages/Example';
@@ -58,7 +64,13 @@ const App: React.FC = () => {
           <Route path="/account/dragons" component={AccountDragonPage} />
           <Route path="/account/weapons" component={AccountWeaponPage} />
           <Route path="/account/wyrmprints" component={AccountWyrmprintPage} />
+          <Route path="/costs/adventurers" component={AdventurerCostsPage} />
+          <Route path="/costs/dragons" component={DragonCostsPage} />
+          <Route path="/costs/facilities" component={FacilityCostsPage} />
+          <Route path="/costs/passives" component={PassiveCostsPage} />
           <Route path="/costs/weapons" component={WeaponCostsPage} />
+          <Route path="/costs/wyrmprints" component={WyrmprintCostsPage} />
+          <Route path="/costs/totals" component={TotalCostsPage} />
           <Route path="/example" component={Example} />
           <Route component={NotFoundPage} />
         </Switch>

@@ -23,7 +23,7 @@ export const Dragon: FC<Props> = ({ data: { dragon, rarity, element } }) => {
         {dragon}
       </div>
       <div>
-        {rarity}* {element === 'None' ? '' : element} Dragon
+        {rarity}⭐ {element === 'None' ? '' : element} Dragon
       </div>
     </div>
   );

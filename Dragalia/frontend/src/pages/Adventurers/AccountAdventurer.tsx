@@ -104,8 +104,8 @@ export const AccountAdventurer: FC<Props> = ({ data }) => {
             display: flex;
           `}
         >
-          <Field name="currentLevel" label="Current Level" type="Number" />
-          <Field name="wantedLevel" label="Wanted Level" type="Number" />
+          <Field name="currentLevel" label="Current MC" type="Number" />
+          <Field name="wantedLevel" label="Wanted MC" type="Number" />
         </div>
         {costsRequested ? (
           costsLoading ? (

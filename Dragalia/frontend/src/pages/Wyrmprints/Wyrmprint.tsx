@@ -24,7 +24,7 @@ export const Wyrmprint: FC<Props> = ({
       >
         {wyrmprint}
       </div>
-      <div>{rarity === 9 ? 'Dominion' : `${rarity}*`}</div>
+      <div>{rarity === 9 ? 'Dominion' : `${rarity}⭐`}</div>
       <div>Affinity: {affinity || 'None'}</div>
       <div>
         Skill(s):

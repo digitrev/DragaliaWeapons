@@ -98,6 +98,7 @@ export interface MaterialData {
   materialId: string;
   material: string;
   category: string;
+  sortPath: string;
 }
 
 export interface MaterialCategoryData {
