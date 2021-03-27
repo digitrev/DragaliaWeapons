@@ -232,7 +232,7 @@ export const AccountWeapon: FC<Props> = ({ data, limits }) => {
                 <td>
                   <Field name="bonus" type="Number" />
                 </td>
-              )}{' '}
+              )}
             </tr>
             <tr>
               <th>Wanted</th>

@@ -18,6 +18,7 @@ import { AccountPassivePage } from './pages/Passives/AccountPassivePage';
 import { PassivePage } from './pages/Passives/PassivePage';
 import { AccountWeaponPage } from './pages/Weapons/AccountWeaponPage';
 import { WeaponPage } from './pages/Weapons/WeaponPage';
+import { AccountWyrmprintPage } from './pages/Wyrmprints/AccountWyrmprintPage';
 import { WyrmprintPage } from './pages/Wyrmprints/WyrmprintPage';
 import { fontFamily, fontSize, gray2 } from './Styles';
 
@@ -55,6 +56,7 @@ const App: React.FC = () => {
           <Route path="/account/passives" component={AccountPassivePage} />
           <Route path="/account/dragons" component={AccountDragonPage} />
           <Route path="/account/weapons" component={AccountWeaponPage} />
+          <Route path="/account/wyrmprints" component={AccountWyrmprintPage} />
           <Route path="/example" component={Example} />
           <Route component={NotFoundPage} />
         </Switch>

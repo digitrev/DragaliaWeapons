@@ -64,14 +64,6 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
         wyrmprintLevelWanted: values.wyrmprintLevelWanted,
         unbind: values.unbind,
         unbindWanted: values.unbindWanted,
-        refine: values.refine,
-        refineWanted: values.refineWanted,
-        slot: values.slot,
-        slotWanted: values.slotWanted,
-        dominion: values.dominion,
-        dominionWanted: values.dominionWanted,
-        bonus: values.bonus,
-        bonusWanted: values.bonusWanted,
       };
       await api.putWyrmprint(values.wyrmprintId, updateWyrmprint);
       res = true;
@@ -130,61 +122,13 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
             { validator: isInteger },
             { validator: required },
             { validator: nonNegative },
-            { validator: maxValue, arg: limits?.unbind },
+            { validator: maxValue, arg: 4 },
           ],
           unbindWanted: [
             { validator: isInteger },
             { validator: required },
             { validator: nonNegative },
-            { validator: maxValue, arg: limits?.unbind },
-          ],
-          refine: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.refinement },
-          ],
-          refineWanted: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.refinement },
-          ],
-          slot: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.slots },
-          ],
-          slotWanted: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.slots },
-          ],
-          dominion: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.dominion },
-          ],
-          dominionWanted: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.dominion },
-          ],
-          bonus: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.bonus },
-          ],
-          bonusWanted: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.bonus },
+            { validator: maxValue, arg: 4 },
           ],
         }}
       >
@@ -194,11 +138,7 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
               <th />
               <th>Copies</th>
               <th>Wyrmprint Level</th>
-              {limits.unbind > 0 && <th>Unbind</th>}
-              {limits.refinement > 0 && <th>Refinement</th>}
-              {limits.slots > 0 && <th>5⭐ Slots</th>}
-              {limits.dominion > 0 && <th>Dominion Slots</th>}
-              {limits.bonus > 0 && <th>Bonus</th>}
+              <th>Unbind</th>
             </tr>
             <tr>
               <th>Current</th>
@@ -208,31 +148,9 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
               <td>
                 <Field name="wyrmprintLevel" type="Number" />
               </td>
-              {limits.unbind > 0 && (
-                <td>
-                  <Field name="unbind" type="Number" />
-                </td>
-              )}
-              {limits.refinement > 0 && (
-                <td>
-                  <Field name="refine" type="Number" />
-                </td>
-              )}
-              {limits.slots > 0 && (
-                <td>
-                  <Field name="slot" type="Number" />
-                </td>
-              )}
-              {limits.dominion > 0 && (
-                <td>
-                  <Field name="dominion" type="Number" />
-                </td>
-              )}
-              {limits.bonus > 0 && (
-                <td>
-                  <Field name="bonus" type="Number" />
-                </td>
-              )}{' '}
+              <td>
+                <Field name="unbind" type="Number" />
+              </td>
             </tr>
             <tr>
               <th>Wanted</th>
@@ -244,31 +162,9 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
                   <Field name="wyrmprintLevelWanted" type="Number" />
                 </td>
               }
-              {limits.unbind > 0 && (
-                <td>
-                  <Field name="unbindWanted" type="Number" />
-                </td>
-              )}
-              {limits.refinement > 0 && (
-                <td>
-                  <Field name="refineWanted" type="Number" />
-                </td>
-              )}
-              {limits.slots > 0 && (
-                <td>
-                  <Field name="slotWanted" type="Number" />
-                </td>
-              )}
-              {limits.dominion > 0 && (
-                <td>
-                  <Field name="dominionWanted" type="Number" />
-                </td>
-              )}
-              {limits.bonus > 0 && (
-                <td>
-                  <Field name="bonusWanted" type="Number" />
-                </td>
-              )}
+              <td>
+                <Field name="unbindWanted" type="Number" />
+              </td>
             </tr>
           </tbody>
         </table>

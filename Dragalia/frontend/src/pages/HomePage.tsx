@@ -15,13 +15,13 @@ export const HomePage = () => (
         <Link to="/passives">Passive List</Link>
       </li>
       <li>
-        <Link to="/facilities">Facility List</Link>
-      </li>
-      <li>
         <Link to="/wyrmprints">Wyrmprint List</Link>
       </li>
       <li>
         <Link to="/dragons">Dragon List</Link>
+      </li>
+      <li>
+        <Link to="/facilities">Facility List</Link>
       </li>
       <li>
         <Link to="/materials">Material List</Link>
@@ -36,10 +36,13 @@ export const HomePage = () => (
         <Link to="/account/passives">Your Passives</Link>
       </li>
       <li>
-        <Link to="/account/facilities">Your Facilities</Link>
+        <Link to="/account/wyrmprints">Your Wyrmprints</Link>
       </li>
       <li>
         <Link to="/account/dragons">Your Dragons</Link>
+      </li>
+      <li>
+        <Link to="/account/facilities">Your Facilities</Link>
       </li>
       <li>
         <Link to="/account/inventory">Your Inventory</Link>

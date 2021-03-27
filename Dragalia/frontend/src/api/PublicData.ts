@@ -15,6 +15,7 @@ import {
   WeaponTypeData,
   WeaponUnbindLimit,
   WyrmprintData,
+  WyrmprintLimit,
 } from './DataInterfaces';
 
 export class PublicApi extends HttpClient {
@@ -106,4 +107,10 @@ export class PublicApi extends HttpClient {
 
   public getWyrmprint = (wyrmprintID: number) =>
     this.instance.get<WyrmprintData>(`/Wyrmprints/${wyrmprintID}`);
+
+  public getWyrmprintLimits = () =>
+    this.instance.get<WyrmprintLimit[]>('/WyrmprintLevelLimits');
+
+  public getWyrmprintLimitByRarity = (rarity: number) =>
+    this.instance.get<WyrmprintLimit[]>(`/WyrmprintLevelLimits/${rarity}`);
 }

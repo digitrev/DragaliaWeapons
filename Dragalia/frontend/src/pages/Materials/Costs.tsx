@@ -164,7 +164,6 @@ export const Costs: FC<Props> = ({ data }) => {
                   />
                 </td>
                 <td>
-                  {' '}
                   <NumberFormat
                     displayType="text"
                     thousandSeparator={true}

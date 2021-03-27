@@ -204,3 +204,8 @@ export interface AccountWyrmprintData {
   copiesWanted: number;
   wyrmprint?: WyrmprintData;
 }
+
+export interface WyrmprintLimit {
+  rarity: number;
+  level: number;
+}

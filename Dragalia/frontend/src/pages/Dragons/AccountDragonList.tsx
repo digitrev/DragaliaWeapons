@@ -23,7 +23,6 @@ export const AccountDragonList: FC<Props> = ({ data }) => {
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
       `}
     >
-      {' '}
       {data.map((dragon) => (
         <li
           key={dragon.dragonId}
