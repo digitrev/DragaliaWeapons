@@ -190,7 +190,7 @@ export interface WyrmprintData {
   wyrmprintId: number;
   wyrmprint: string;
   rarity: number;
-  affinity: string;
+  affinity?: string;
   abilities: string[];
 }
 

@@ -18,6 +18,9 @@ export const HomePage = () => (
         <Link to="/facilities">Facility List</Link>
       </li>
       <li>
+        <Link to="/wyrmprints">Wyrmprint List</Link>
+      </li>
+      <li>
         <Link to="/dragons">Dragon List</Link>
       </li>
       <li>

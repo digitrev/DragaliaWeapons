@@ -17,7 +17,8 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { AccountPassivePage } from './pages/Passives/AccountPassivePage';
 import { PassivePage } from './pages/Passives/PassivePage';
 import { AccountWeaponPage } from './pages/Weapons/AccountWeaponPage';
-import { WeaponsPage } from './pages/Weapons/WeaponsPage';
+import { WeaponPage } from './pages/Weapons/WeaponPage';
+import { WyrmprintPage } from './pages/Wyrmprints/WyrmprintPage';
 import { fontFamily, fontSize, gray2 } from './Styles';
 
 const App: React.FC = () => {
@@ -43,7 +44,8 @@ const App: React.FC = () => {
           <Route path="/facilities" component={FacilityPage} />
           <Route path="/materials" component={MaterialPage} />
           <Route path="/passives" component={PassivePage} />
-          <Route path="/weapons" component={WeaponsPage} />
+          <Route path="/weapons" component={WeaponPage} />
+          <Route path="/wyrmprints" component={WyrmprintPage} />
           <Route
             path="/account/adventurers"
             component={AccountAdventurerPage}

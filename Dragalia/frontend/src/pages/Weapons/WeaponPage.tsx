@@ -7,7 +7,7 @@ import { LoadingText } from '../../Loading';
 import { Page } from '../Page';
 import { WeaponList } from './WeaponList';
 
-export const WeaponsPage = () => {
+export const WeaponPage = () => {
   const [weapons, setWeapons] = useState<WeaponData[] | null>(null);
   const [weaponsLoading, setWeaponsLoading] = useState(true);
 
