@@ -11,5 +11,7 @@ namespace DragaliaApi.Models.DTO
         public string MaterialId { get; set; }
         public string Material { get; set; }
         public string Category { get; set; }
+        public string SortPath { get; set; }
+
     }
 }
