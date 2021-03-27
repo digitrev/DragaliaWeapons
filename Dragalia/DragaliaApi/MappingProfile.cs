@@ -116,6 +116,16 @@ namespace DragaliaApi
                                 .Select(wa => wa.Ability.GenericName)
                                 .ToList()));
             CreateMap<WyrmprintDTO, WyrmprintDTO>();
+
+            //Quests
+            CreateMap<Quest, QuestDTO>()
+                .ForMember(dest => dest.Quest,
+                           opt => opt.MapFrom(src => src.Quest1));
+            CreateMap<QuestDTO, Quest>();
+
+            //material quests
+            CreateMap<MaterialQuest, MaterialQuestDTO>();
+            CreateMap<MaterialQuestDTO, MaterialQuest>();
         }
     }
 }

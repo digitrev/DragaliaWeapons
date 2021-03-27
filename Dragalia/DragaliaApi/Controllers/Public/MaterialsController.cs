@@ -64,5 +64,25 @@ namespace DragaliaApi.Controllers.Public
                 return Problem(detail: ex.ToString(), statusCode: 500);
             }
         }
+
+        [HttpGet("quests")]
+        public async Task<ActionResult<IEnumerable<MaterialQuestDTO>>> GetMaterialQuests(string materialID)
+        {
+            try
+            {
+                return await _context.MaterialQuests.Where(mq => materialID == null || mq.MaterialId == materialID)
+                                                    .Include(mq => mq.Material)
+                                                    .ThenInclude(m => m.Category)
+                                                    .Include(mq => mq.Quest)
+                                                    .OrderBy(mq => mq.Quest.SortPath)
+                                                    .ThenBy(mq => mq.Material.SortPath)
+                                                    .Select(q => _mapper.Map<MaterialQuestDTO>(q))
+                                                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                return Problem(detail: ex.ToString(), statusCode: 500);
+            }
+        }
     }
 }
