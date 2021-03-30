@@ -22,18 +22,18 @@ const numberArrayComparator = (
   return 0;
 };
 
-export const materialComparator = (m1: MaterialData, m2: MaterialData) => {
-  const toSortPathArray = (m: MaterialData) =>
-    m.sortPath
+export const sortPathComparator = (sp1: string, sp2: string) => {
+  const toSortPathArray = (sp: string) =>
+    sp
       .split('/')
       .filter((sp) => sp)
       .map((sp) => sp.split('.').map((f) => parseInt(f)));
-  const sp1 = toSortPathArray(m1);
-  const sp2 = toSortPathArray(m2);
+  const sp1arr = toSortPathArray(sp1);
+  const sp2arr = toSortPathArray(sp2);
 
-  for (let i = 0; i < Math.max(sp1.length, sp2.length); i++) {
-    const e1 = sp1[i];
-    const e2 = sp2[i];
+  for (let i = 0; i < Math.max(sp1arr.length, sp2arr.length); i++) {
+    const e1 = sp1arr[i];
+    const e2 = sp2arr[i];
     const eComp = numberArrayComparator(e1, e2);
     if (e1 === undefined || eComp === -1) {
       return -1;
@@ -42,4 +42,8 @@ export const materialComparator = (m1: MaterialData, m2: MaterialData) => {
     }
   }
   return 0;
+};
+
+export const materialComparator = (m1: MaterialData, m2: MaterialData) => {
+  return sortPathComparator(m1.sortPath, m2.sortPath);
 };

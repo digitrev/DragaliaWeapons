@@ -106,6 +106,13 @@ export interface MaterialCategoryData {
   materials: MaterialData[];
 }
 
+export interface MaterialQuestData {
+  materialId: number;
+  questId: number;
+  material: MaterialData;
+  quest: QuestData;
+}
+
 export interface AccountInventoryData {
   materialId: string;
   quantity: number;
@@ -209,4 +216,11 @@ export interface AccountWyrmprintData {
 export interface WyrmprintLimit {
   rarity: number;
   level: number;
+}
+
+//quests
+export interface QuestData {
+  questId: number;
+  quest: string;
+  sortPath: string;
 }

@@ -7,7 +7,9 @@ import {
   FacilityData,
   FacilityLimit,
   MaterialData,
+  MaterialQuestData,
   PassiveData,
+  QuestData,
   WeaponData,
   WeaponLevelLimit,
   WeaponLimit,
@@ -60,11 +62,24 @@ export class PublicApi extends HttpClient {
   public getMaterial = (materialID: string) =>
     this.instance.get<MaterialData>(`/MaterialList/${materialID}`);
 
+  public getMaterialQuests = (materialID?: string) =>
+    this.instance.get<MaterialQuestData[]>('/MaterialList/quests', {
+      params: {
+        materialID: materialID,
+      },
+    });
+
   //passive apis
   public getPassives = () => this.instance.get<PassiveData[]>('/Passives');
 
   public getPassive = (passiveID: number) =>
-    this.instance.get<PassiveData>(`/api/Passives/${passiveID}`);
+    this.instance.get<PassiveData>(`/Passives/${passiveID}`);
+
+  //quests
+  public getQuests = () => this.instance.get<QuestData[]>('/Quests');
+
+  public getQuest = (questID: number) =>
+    this.instance.get<QuestData>(`/Quests/${questID}`);
 
   //weapon limits
   public getAllWeaponLimits = () =>

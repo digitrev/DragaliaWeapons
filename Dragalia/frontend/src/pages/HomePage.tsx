@@ -103,6 +103,14 @@ export const HomePage = () => (
           </li>
         </ul>
       </li>
+      <li>
+        Quests
+        <ul>
+          <li>
+            <Link to="/quests">Quest List</Link>
+          </li>
+        </ul>
+      </li>
     </ul>
   </Page>
 );

@@ -23,6 +23,7 @@ import { MaterialPage } from './pages/Materials/MaterialPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { AccountPassivePage } from './pages/Passives/AccountPassivePage';
 import { PassivePage } from './pages/Passives/PassivePage';
+import { QuestPage } from './pages/Quests/QuestPage';
 import { AccountWeaponPage } from './pages/Weapons/AccountWeaponPage';
 import { WeaponPage } from './pages/Weapons/WeaponPage';
 import { AccountWyrmprintPage } from './pages/Wyrmprints/AccountWyrmprintPage';
@@ -52,6 +53,7 @@ const App: React.FC = () => {
           <Route path="/facilities" component={FacilityPage} />
           <Route path="/materials" component={MaterialPage} />
           <Route path="/passives" component={PassivePage} />
+          <Route path="/quests" component={QuestPage} />
           <Route path="/weapons" component={WeaponPage} />
           <Route path="/wyrmprints" component={WyrmprintPage} />
           <Route
