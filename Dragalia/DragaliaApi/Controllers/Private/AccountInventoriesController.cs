@@ -34,7 +34,7 @@ namespace DragaliaApi.Controllers.Private
             try
             {
                 return await _context.AccountInventories.Where(ai => ai.AccountId == accountID
-                                                            && (materialArray.Count() == 0 || materialArray.Any(m => m == ai.MaterialId)))
+                                                            && (materialArray.Length == 0 || materialArray.Any(m => m == ai.MaterialId)))
                                                         .Include(ai => ai.Material)
                                                         .ThenInclude(m => m.Category)
                                                         .Where(ai => ai.Material.Category != null)
