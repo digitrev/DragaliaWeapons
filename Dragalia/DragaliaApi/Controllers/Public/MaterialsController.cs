@@ -66,11 +66,13 @@ namespace DragaliaApi.Controllers.Public
         }
 
         [HttpGet("quests")]
-        public async Task<ActionResult<IEnumerable<MaterialQuestDTO>>> GetMaterialQuests(string materialID)
+        public async Task<ActionResult<IEnumerable<MaterialQuestDTO>>> GetMaterialQuests(string materials)
         {
+            string[] materialArray = materials != null ? materials.Split(',') : Array.Empty<string>();
             try
             {
-                var mqs = await _context.MaterialQuests.Where(mq => materialID == null || mq.MaterialId == materialID)
+                var mqs = await _context.MaterialQuests.Where(mq => materialArray.Length == 0
+                                                                    || materialArray.Any(m => m == mq.MaterialId))
                                                        .Include(mq => mq.Material)
                                                        .ThenInclude(m => m.Category)
                                                        .Include(mq => mq.Quest)
