@@ -6,6 +6,28 @@ export const HomePage = () => (
   <Page title="Home">
     <ul>
       <li>
+        Quests
+        <ul>
+          <li>
+            <Link to="/quests">Quest List</Link>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Materials
+        <ul>
+          <li>
+            <Link to="/materials">Material List</Link>
+          </li>
+          <li>
+            <Link to="/account/inventory">Your Inventory</Link>
+          </li>
+          <li>
+            <Link to="/costs/totals">Total Costs</Link>
+          </li>
+        </ul>
+      </li>
+      <li>
         Adventurers
         <ul>
           <li>
@@ -86,28 +108,6 @@ export const HomePage = () => (
           </li>
           <li>
             <Link to="/costs/facilities">Facility Costs</Link>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Materials
-        <ul>
-          <li>
-            <Link to="/materials">Material List</Link>
-          </li>
-          <li>
-            <Link to="/account/inventory">Your Inventory</Link>
-          </li>
-          <li>
-            <Link to="/costs/totals">Total Costs</Link>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Quests
-        <ul>
-          <li>
-            <Link to="/quests">Quest List</Link>
           </li>
         </ul>
       </li>
