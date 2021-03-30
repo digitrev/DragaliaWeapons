@@ -70,14 +70,37 @@ namespace DragaliaApi.Controllers.Public
         {
             try
             {
-                return await _context.MaterialQuests.Where(mq => materialID == null || mq.MaterialId == materialID)
-                                                    .Include(mq => mq.Material)
-                                                    .ThenInclude(m => m.Category)
-                                                    .Include(mq => mq.Quest)
-                                                    .OrderBy(mq => mq.Quest.SortPath)
-                                                    .ThenBy(mq => mq.Material.SortPath)
-                                                    .Select(q => _mapper.Map<MaterialQuestDTO>(q))
-                                                    .ToListAsync();
+                var mqs = await _context.MaterialQuests.Where(mq => materialID == null || mq.MaterialId == materialID)
+                                                       .Include(mq => mq.Material)
+                                                       .ThenInclude(m => m.Category)
+                                                       .Include(mq => mq.Quest)
+                                                       .ToListAsync();
+
+                var allQuests = await _context.Quests.ToListAsync();
+
+                var newMqs = new List<MaterialQuest>();
+
+                foreach (var mq in mqs)
+                {
+                    newMqs.AddRange(allQuests.Where(q => q.QuestId != mq.QuestId
+                                                         && q.SortPath.IsDescendantOf(mq.Quest.SortPath))
+                                       .Select(q => new MaterialQuest
+                                       {
+                                           Material = mq.Material,
+                                           MaterialId = mq.MaterialId,
+                                           Quest = q,
+                                           QuestId = q.QuestId
+                                       })
+                                       .ToList());
+                }
+
+                mqs.AddRange(newMqs);
+
+                return mqs.OrderBy(mq => mq.Quest.SortPath)
+                          .ThenBy(mq => mq.Material.SortPath)
+                          .Select(q => _mapper.Map<MaterialQuestDTO>(q))
+                          .ToList();
+
             }
             catch (Exception ex)
             {
