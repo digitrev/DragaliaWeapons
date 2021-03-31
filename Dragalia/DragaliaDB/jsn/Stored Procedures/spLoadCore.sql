@@ -3,9 +3,6 @@ AS
 BEGIN
 	SET NOCOUNT ON
 
-	IF OBJECT_ID('tempdb..#Level') IS NOT NULL
-		DROP TABLE #Level
-
 	IF OBJECT_ID('tempdb..#Passive') IS NOT NULL
 		DROP TABLE #Passive
 
@@ -15,18 +12,96 @@ BEGIN
 	IF OBJECT_ID('tempdb..#WeaponUpgrade') IS NOT NULL
 		DROP TABLE #WeaponUpgrade
 
+	IF OBJECT_ID('tempdb..#WeaponLevel') IS NOT NULL
+		DROP TABLE #WeaponLevel
+
+	IF OBJECT_ID('tempdb..#WeaponLimit') IS NOT NULL
+		DROP TABLE #WeaponLimit
+
+	IF OBJECT_ID('tempdb..#Wyrmprint') IS NOT NULL
+		DROP TABLE #Wyrmprint
+
+	IF OBJECT_ID('tempdb..#WyrmprintUpgrade') IS NOT NULL
+		DROP TABLE #WyrmprintUpgrade
+
+	IF OBJECT_ID('tempdb..#WyrmprintLevel') IS NOT NULL
+		DROP TABLE #WyrmprintLevel
+
+	IF OBJECT_ID('tempdb..#WyrmprintLimit') IS NOT NULL
+		DROP TABLE #WyrmprintLimit
+
+	IF OBJECT_ID('tempdb..#AdventurerMC') IS NOT NULL
+		DROP TABLE #AdventurerMC
+
+	IF OBJECT_ID('tempdb..#ManaMaterial') IS NOT NULL
+		DROP TABLE #ManaMaterial
+
+	IF OBJECT_ID('tempdb..#MCNodes') IS NOT NULL
+		DROP TABLE #MCNodes
+
+	IF OBJECT_ID('tempdb..#ManaPieceRaw') IS NOT NULL
+		DROP TABLE #ManaPieceRaw
+
+	IF OBJECT_ID('tempdb..#ManaPieceElement') IS NOT NULL
+		DROP TABLE #ManaPieceElement
+
+	IF OBJECT_ID('tempdb..#ManaPieceEldwater') IS NOT NULL
+		DROP TABLE #ManaPieceEldwater
+
+	IF OBJECT_ID('tempdb..#AdventurerUnbind') IS NOT NULL
+		DROP TABLE #AdventurerUnbind
+
+	IF OBJECT_ID('tempdb..#MCUnbind') IS NOT NULL
+		DROP TABLE #MCUnbind
+
+	--Ability group
+	MERGE core.AbilityGroup AS trg
+	USING (
+		SELECT ag.AbilityGroupID
+			,REPLACE(ag.AbilityGroup, '&amp;', '&') AS AbilityGroup
+		FROM jsn.TableJson AS agj
+		CROSS APPLY OPENJSON(agj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				AbilityGroupID INT '$.title.Id'
+				,AbilityGroup NVARCHAR(255) '$.title.GroupName'
+				) AS ag
+		WHERE agj.TableName = 'AbilityGroup'
+		) AS src
+		ON src.AbilityGroupID = trg.AbilityGroupID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET AbilityGroup = src.AbilityGroup
+				,Active = 1
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			UPDATE
+			SET Active = 0
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AbilityGroupID
+				,AbilityGroup
+				)
+			VALUES (
+				src.AbilityGroupID
+				,src.AbilityGroup
+				);
+
 	--Ability data
-	MERGE [core].Ability AS trg
+	MERGE core.Ability AS trg
 	USING (
 		SELECT a.AbilityID
 			,REPLACE(a.Ability, '&amp;', '&') AS Ability
 			,REPLACE(a.GenericName, '&amp;', '&') AS GenericName
+			,a.AbilityGroupID
 		FROM jsn.TableJson AS aj
-		CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				AbilityID INT '$.title.Id'
 				,Ability NVARCHAR(255) '$.title.Name'
 				,GenericName NVARCHAR(255) '$.title.GenericName'
+				,AbilityGroupID INT '$.title.AbilityGroup'
 				) AS a
 		WHERE aj.TableName = 'Ability'
 		) AS src
@@ -36,24 +111,63 @@ BEGIN
 			UPDATE
 			SET Ability = src.Ability
 				,GenericName = src.GenericName
+				,AbilityGroupID = src.AbilityGroupID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
 				AbilityID
 				,Ability
 				,GenericName
+				,AbilityGroupID
 				)
 			VALUES (
 				src.AbilityID
 				,src.Ability
 				,src.GenericName
+				,src.AbilityGroupID
+				);
+
+	--Affinity data
+	MERGE core.[Affinity] AS trg
+	USING (
+		SELECT a.AffinityID
+			,REPLACE(a.[Affinity], '&amp;', '&') AS [Affinity]
+		FROM jsn.TableJson AS aj
+		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				AffinityID INT '$.title.Id'
+				,[Affinity] NVARCHAR(255) '$.title.Name'
+				) AS a
+		WHERE aj.TableName = 'Affinity'
+		) AS src
+		ON src.AffinityID = trg.AffinityID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET [Affinity] = src.[Affinity]
+				,Active = 1
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			UPDATE
+			SET Active = 0
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AffinityID
+				,[Affinity]
+				)
+			VALUES (
+				src.AffinityID
+				,src.[Affinity]
 				);
 
 	--Material data
-	MERGE [core].Material AS trg
+	MERGE core.Material AS trg
 	USING (
 		SELECT m.MaterialID
 			,m.MaterialName
@@ -67,18 +181,32 @@ BEGIN
 		
 		UNION
 		
-		--Hard coded because Gamepedia doesn't track rupie as a separate material
+		--Hard coded because Gamepedia doesn't track rupies as a separate material
 		SELECT 'Rupie'
 			,'Rupies'
+		
+		UNION
+		
+		--Hard coded because Gamepedia doesn't track eldwater as a separate material
+		SELECT 'Eldwater'
+			,'Eldwater'
+		
+		UNION
+		
+		--Hard coded because Gamepedia doesn't track mana as a separate material
+		SELECT 'Mana'
+			,'Mana'
 		) AS src
 		ON src.MaterialID = trg.MaterialID
 	WHEN MATCHED
 		THEN
 			UPDATE
 			SET [Material] = src.MaterialName
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -141,7 +269,7 @@ BEGIN
 	WHERE wj.TableName = 'Weapon'
 
 	--Basic tables
-	MERGE [core].Element AS trg
+	MERGE core.Element AS trg
 	USING (
 		SELECT DISTINCT ElementID
 			,Element
@@ -153,9 +281,11 @@ BEGIN
 			UPDATE
 			SET Element = src.Element
 				,SortOrder = src.ElementID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -170,11 +300,11 @@ BEGIN
 				);
 
 	--Just force elements to flip sort order
-	UPDATE [core].Element
+	UPDATE core.Element
 	SET SortOrder = - SortOrder
 	WHERE Element = 'None'
 
-	MERGE [core].WeaponSeries AS trg
+	MERGE core.WeaponSeries AS trg
 	USING (
 		SELECT DISTINCT WeaponSeriesID
 			,WeaponSeries
@@ -186,9 +316,11 @@ BEGIN
 			UPDATE
 			SET WeaponSeries = src.WeaponSeries
 				,SortOrder = src.WeaponSeriesID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -227,9 +359,9 @@ BEGIN
 			,3
 			)
 		) AS src(WeaponSeries, SortOrder)
-	INNER JOIN [core].WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
+	INNER JOIN core.WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
 
-	MERGE [core].WeaponType AS trg
+	MERGE core.WeaponType AS trg
 	USING (
 		SELECT DISTINCT WeaponTypeID
 			,WeaponType
@@ -240,9 +372,11 @@ BEGIN
 		THEN
 			UPDATE
 			SET WeaponType = src.WeaponType
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -255,7 +389,7 @@ BEGIN
 				);
 
 	--Weapons
-	MERGE [core].Weapon AS trg
+	MERGE core.Weapon AS trg
 	USING (
 		SELECT DISTINCT WeaponID
 			,WeaponName
@@ -274,9 +408,11 @@ BEGIN
 				,WeaponTypeID = src.WeaponTypeID
 				,Rarity = src.Rarity
 				,ElementID = src.ElementID
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -297,9 +433,9 @@ BEGIN
 				);
 
 	--Weapon crafting
-	TRUNCATE TABLE [core].WeaponCrafting
+	TRUNCATE TABLE core.WeaponCrafting
 
-	INSERT [core].WeaponCrafting (
+	INSERT core.WeaponCrafting (
 		WeaponID
 		,MaterialID
 		,Quantity
@@ -348,7 +484,7 @@ BEGIN
 			,CreateCoin
 		FROM #Weapon
 		) AS wc
-	INNER JOIN [core].Material AS m ON m.[Material] = wc.Material
+	INNER JOIN core.Material AS m ON m.[Material] = wc.Material
 
 	--Weapon upgrade
 	SELECT w.WeaponID
@@ -409,34 +545,36 @@ BEGIN
 	INNER JOIN #Weapon AS w ON w.GroupID = wu.GroupID
 	WHERE wuj.TableName = 'WeaponUpgrade'
 
-	MERGE [core].UpgradeType AS trg
+	MERGE core.UpgradeType AS trg
 	USING (
 		SELECT DISTINCT UpgradeTypeID
 			,UpgradeType
 		FROM #WeaponUpgrade
 		) AS src
-		ON src.UpgradeTypeID = trg.UpgradeType
+		ON src.UpgradeTypeID = trg.UpgradeTypeID
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET UpgradeType = src.UpgradeType
+			SET [UpgradeType] = src.UpgradeType
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
-				UpgradeTypeID
-				,UpgradeType
+				[UpgradeTypeID]
+				,[UpgradeType]
 				)
 			VALUES (
 				src.UpgradeTypeID
 				,src.UpgradeType
 				);
 
-	TRUNCATE TABLE [core].WeaponUpgrade
+	TRUNCATE TABLE core.WeaponUpgrade
 
-	INSERT [core].WeaponUpgrade (
+	INSERT core.WeaponUpgrade (
 		WeaponID
 		,UpgradeTypeID
 		,Step
@@ -546,7 +684,7 @@ BEGIN
 			,BuildupCoin
 		FROM #WeaponUpgrade
 		) AS wu
-	INNER JOIN [core].Material AS m ON m.MaterialID = wu.MaterialID
+	INNER JOIN core.Material AS m ON m.MaterialID = wu.MaterialID
 
 	--Passive data
 	SELECT p.PassiveID
@@ -591,7 +729,7 @@ BEGIN
 	WHERE pj.TableName = 'Passive'
 
 	--Unknown abilities (should be deprecated in the future)
-	INSERT [core].Ability (
+	INSERT core.Ability (
 		AbilityID
 		,Ability
 		,GenericName
@@ -608,11 +746,11 @@ BEGIN
 			,p.AbilityID
 			)
 	FROM #Passive AS p
-	INNER JOIN [core].Element AS e ON e.ElementID = p.ElementID
-	LEFT JOIN [core].Ability AS a ON a.AbilityID = p.AbilityID
+	INNER JOIN core.Element AS e ON e.ElementID = p.ElementID
+	LEFT JOIN core.Ability AS a ON a.AbilityID = p.AbilityID
 	WHERE a.AbilityID IS NULL
 
-	MERGE [core].Passive AS trg
+	MERGE core.Passive AS trg
 	USING (
 		SELECT PassiveID
 			,WeaponTypeID
@@ -631,9 +769,11 @@ BEGIN
 				,AbilityID = src.AbilityID
 				,AbilityNumber = src.AbilityNumber
 				,SortOrder = src.SortId
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -654,9 +794,9 @@ BEGIN
 				);
 
 	--Passive crafting
-	TRUNCATE TABLE [core].PassiveCrafting
+	TRUNCATE TABLE core.PassiveCrafting
 
-	INSERT [core].PassiveCrafting (
+	INSERT core.PassiveCrafting (
 		PassiveID
 		,MaterialID
 		,Quantity
@@ -705,7 +845,7 @@ BEGIN
 			,UnlockMaterialQuantity5
 		FROM #Passive
 		) AS pc
-	INNER JOIN [core].Material AS m ON m.MaterialID = pc.MaterialID
+	INNER JOIN core.Material AS m ON m.MaterialID = pc.MaterialID
 
 	--Weapon leveling
 	SELECT wl.Rarity
@@ -716,7 +856,7 @@ BEGIN
 		,wl.BuildupMaterialQuantity2
 		,wl.BuildupMaterialId3
 		,wl.BuildupMaterialQuantity3
-	INTO #Level
+	INTO #WeaponLevel
 	FROM jsn.TableJson AS wlj
 	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
@@ -731,9 +871,9 @@ BEGIN
 			) AS wl
 	WHERE wlj.TableName = 'WeaponLevel'
 
-	TRUNCATE TABLE [core].WeaponLevel
+	TRUNCATE TABLE core.WeaponLevel
 
-	INSERT [core].WeaponLevel (
+	INSERT core.WeaponLevel (
 		Rarity
 		,WeaponLevel
 		,MaterialID
@@ -748,7 +888,7 @@ BEGIN
 			,WeaponLevel
 			,BuildupMaterialId1 AS MaterialID
 			,BuildupMaterialQuantity1 AS Quantity
-		FROM #Level
+		FROM #WeaponLevel
 		
 		UNION ALL
 		
@@ -756,7 +896,7 @@ BEGIN
 			,WeaponLevel
 			,BuildupMaterialId2
 			,BuildupMaterialQuantity2
-		FROM #Level
+		FROM #WeaponLevel
 		
 		UNION ALL
 		
@@ -764,9 +904,9 @@ BEGIN
 			,WeaponLevel
 			,BuildupMaterialId3
 			,BuildupMaterialQuantity3
-		FROM #Level
+		FROM #WeaponLevel
 		) AS l
-	INNER JOIN [core].Material AS m ON m.MaterialID = l.MaterialID
+	INNER JOIN core.Material AS m ON m.MaterialID = l.MaterialID
 
 	--Facilities
 	MERGE core.Facility AS trg
@@ -789,9 +929,11 @@ BEGIN
 			UPDATE
 			SET [Facility] = src.FacilityName
 				,[Limit] = src.FacilityCount
+				,Active = 1
 	WHEN NOT MATCHED BY SOURCE
 		THEN
-			DELETE
+			UPDATE
+			SET Active = 0
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -804,4 +946,1236 @@ BEGIN
 				,src.FacilityName
 				,src.FacilityCount
 				);
+
+	--WeaponLimit
+	SELECT wl.WeaponRarity
+		,wl.UnbindLimit0
+		,wl.UnbindLimit1
+		,wl.UnbindLimit2
+		,wl.LevelLimit0
+		,wl.LevelLimit1
+		,wl.LevelLimit2
+		,wl.LevelLimit3
+		,wl.LevelLimit4
+		,wl.LevelLimit5
+		,wl.LevelLimit6
+		,wl.LevelLimit7
+		,wl.LevelLimit8
+		,wl.LevelLimit9
+	INTO #WeaponLimit
+	FROM jsn.TableJson AS wlj
+	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			WeaponRarity INT '$.title.Id'
+			,UnbindLimit0 INT '$.title.MaxLimitBreakCountByLimitOver0'
+			,UnbindLimit1 INT '$.title.MaxLimitBreakCountByLimitOver1'
+			,UnbindLimit2 INT '$.title.MaxLimitBreakCountByLimitOver2'
+			,LevelLimit0 INT '$.title.MaxLimitLevelByLimitBreak0'
+			,LevelLimit1 INT '$.title.MaxLimitLevelByLimitBreak1'
+			,LevelLimit2 INT '$.title.MaxLimitLevelByLimitBreak2'
+			,LevelLimit3 INT '$.title.MaxLimitLevelByLimitBreak3'
+			,LevelLimit4 INT '$.title.MaxLimitLevelByLimitBreak4'
+			,LevelLimit5 INT '$.title.MaxLimitLevelByLimitBreak5'
+			,LevelLimit6 INT '$.title.MaxLimitLevelByLimitBreak6'
+			,LevelLimit7 INT '$.title.MaxLimitLevelByLimitBreak7'
+			,LevelLimit8 INT '$.title.MaxLimitLevelByLimitBreak8'
+			,LevelLimit9 INT '$.title.MaxLimitLevelByLimitBreak9'
+			) AS wl
+	WHERE wlj.TableName = 'WeaponLimit'
+
+	--WeaponUnbindLimit
+	TRUNCATE TABLE core.WeaponUnbindLimit
+
+	INSERT core.WeaponUnbindLimit (
+		WeaponRarity
+		,RefinementLevel
+		,MaxUnbindLevel
+		)
+	SELECT upvt.WeaponRarity
+		,REPLACE(upvt.RefinementLevel, 'UnbindLimit', '') AS RefinementLevel
+		,upvt.MaxUnbindLevel
+	FROM #WeaponLimit AS src
+	UNPIVOT(MaxUnbindLevel FOR RefinementLevel IN (
+				UnbindLimit0
+				,UnbindLimit1
+				,UnbindLimit2
+				)) AS upvt
+	WHERE upvt.MaxUnbindLevel > 0
+
+	--WeaponLevelLimit
+	TRUNCATE TABLE core.WeaponLevelLimit
+
+	INSERT core.WeaponLevelLimit (
+		WeaponRarity
+		,UnbindLevel
+		,MaxWeaponLevel
+		)
+	SELECT upvt.WeaponRarity
+		,REPLACE(upvt.UnbindLevel, 'LevelLimit', '') AS UnbindLevel
+		,upvt.MaxWeaponLevel
+	FROM #WeaponLimit AS src
+	UNPIVOT(MaxWeaponLevel FOR UnbindLevel IN (
+				LevelLimit0
+				,LevelLimit1
+				,LevelLimit2
+				,LevelLimit3
+				,LevelLimit4
+				,LevelLimit5
+				,LevelLimit6
+				,LevelLimit7
+				,LevelLimit8
+				,LevelLimit9
+				)) AS upvt
+	WHERE upvt.MaxWeaponLevel > 0
+
+	--Wyrmprint
+	SELECT w.WyrmprintID
+		,w.Wyrmprint
+		,w.Rarity
+		,w.RarityGroup
+		,w.AbilityID11
+		,w.AbilityID12
+		,w.AbilityID13
+		,w.AbilityID21
+		,w.AbilityID22
+		,w.AbilityID23
+		,w.AffinityID
+		,w.GroupID
+	INTO #Wyrmprint
+	FROM jsn.TableJson AS wj
+	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			WyrmprintID INT '$.title.Id'
+			,Wyrmprint NVARCHAR(50) '$.title.Name'
+			,Rarity INT '$.title.Rarity'
+			,RarityGroup INT '$.title.RarityGroup'
+			,AbilityID11 INT '$.title.Abilities11'
+			,AbilityID12 INT '$.title.Abilities12'
+			,AbilityID13 INT '$.title.Abilities13'
+			,AbilityID21 INT '$.title.Abilities21'
+			,AbilityID22 INT '$.title.Abilities22'
+			,AbilityID23 INT '$.title.Abilities23'
+			,AffinityID INT '$.title.UnionAbilityGroupId'
+			,GroupID INT '$.title.AbilityCrestBuildupGroupId'
+			) AS w
+	WHERE wj.TableName = 'Wyrmprint'
+
+	MERGE core.Wyrmprint AS trg
+	USING (
+		SELECT DISTINCT WyrmprintID
+			,Wyrmprint
+			,Rarity
+			,RarityGroup
+			,NULLIF(AffinityID, 0) AS AffinityID
+		FROM #Wyrmprint
+		) AS src
+		ON src.WyrmprintID = trg.WyrmprintID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Wyrmprint = src.Wyrmprint
+				,Rarity = src.Rarity
+				,RarityGroup = src.RarityGroup
+				,AffinityID = src.AffinityID
+				,Active = 1
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			UPDATE
+			SET Active = 0
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				WyrmprintID
+				,Wyrmprint
+				,Rarity
+				,RarityGroup
+				,AffinityID
+				)
+			VALUES (
+				src.WyrmprintID
+				,src.Wyrmprint
+				,src.Rarity
+				,src.RarityGroup
+				,src.AffinityID
+				);
+
+	--WyrmprintAbility
+	TRUNCATE TABLE core.WyrmprintAbility
+
+	INSERT core.WyrmprintAbility (
+		WyrmprintID
+		,AbilityID
+		,AbilitySlot
+		,AbilityLevel
+		)
+	SELECT wa.WyrmprintID
+		,wa.AbilityID
+		,wa.AbilitySlot
+		,wa.AbilityLevel
+	FROM (
+		SELECT WyrmprintID
+			,AbilityID11 AS AbilityID
+			,1 AS AbilitySlot
+			,1 AS AbilityLevel
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID12
+			,1
+			,2
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID13
+			,1
+			,3
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID21
+			,2
+			,1
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID22
+			,2
+			,2
+		FROM #Wyrmprint
+		
+		UNION ALL
+		
+		SELECT WyrmprintID
+			,AbilityID23
+			,2
+			,3
+		FROM #Wyrmprint
+		) AS wa
+	INNER JOIN core.Ability AS a ON a.AbilityID = wa.AbilityID
+
+	--WyrmprintUpgrade
+	SELECT w.WyrmprintID
+		,wu.UpgradeTypeID
+		,wu.Step
+		,wu.Eldwater
+		,wu.MaterialID1
+		,wu.Quantity1
+		,wu.MaterialID2
+		,wu.Quantity2
+	INTO #WyrmprintUpgrade
+	FROM jsn.TableJson AS wuj
+	CROSS APPLY OPENJSON(wuj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			Id INT '$.title.Id'
+			,GroupID INT '$.title.AbilityCrestBuildupGroupId'
+			,UpgradeTypeID INT '$.title.BuildupPieceTypeId'
+			,Step INT '$.title.Step'
+			,Eldwater INT '$.title.BuildupDewPoint'
+			,MaterialID1 NVARCHAR(50) '$.title.BuildupMaterialId1'
+			,Quantity1 INT '$.title.BuildupMaterialQuantity1'
+			,MaterialID2 NVARCHAR(50) '$.title.BuildupMaterialId2'
+			,Quantity2 INT '$.title.BuildupMaterialQuantity2'
+			) AS wu
+	INNER JOIN #Wyrmprint AS w ON w.GroupID = wu.GroupID
+	WHERE wuj.TableName = 'WyrmprintUpgrade'
+
+	TRUNCATE TABLE core.WyrmprintUpgrade
+
+	INSERT core.WyrmprintUpgrade (
+		WyrmprintID
+		,UpgradeTypeID
+		,Step
+		,MaterialID
+		,Quantity
+		)
+	SELECT wu.WyrmprintID
+		,wu.UpgradeTypeID
+		,wu.Step
+		,wu.MaterialID
+		,wu.Quantity
+	FROM (
+		SELECT WyrmprintID
+			,UpgradeTypeID
+			,Step
+			,MaterialID1 AS MaterialID
+			,Quantity1 AS Quantity
+		FROM #WyrmprintUpgrade
+		
+		UNION
+		
+		SELECT WyrmprintID
+			,UpgradeTypeID
+			,Step
+			,MaterialID2
+			,Quantity2
+		FROM #WyrmprintUpgrade
+		
+		UNION
+		
+		SELECT WyrmprintID
+			,UpgradeTypeID
+			,Step
+			,'Eldwater'
+			,Eldwater
+		FROM #WyrmprintUpgrade
+		) AS wu
+	INNER JOIN core.Material AS m ON m.MaterialID = wu.MaterialID
+
+	--WyrmprintLevel
+	SELECT wl.Rarity
+		,wl.WyrmprintLevel
+		,wl.MaterialID1
+		,wl.Quantity1
+		,wl.MaterialID2
+		,wl.Quantity2
+	INTO #WyrmprintLevel
+	FROM jsn.TableJson AS wlj
+	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			Rarity INT '$.title.RarityGroup'
+			,WyrmprintLevel INT '$.title.Level'
+			,MaterialID1 NVARCHAR(50) '$.title.BuildupMaterialId1'
+			,Quantity1 INT '$.title.BuildupMaterialQuantity1'
+			,MaterialID2 NVARCHAR(50) '$.title.BuildupMaterialId2'
+			,Quantity2 INT '$.title.BuildupMaterialQuantity2'
+			) AS wl
+	WHERE wlj.TableName = 'WyrmprintLevel'
+
+	TRUNCATE TABLE core.WyrmprintLevel
+
+	INSERT core.WyrmprintLevel (
+		Rarity
+		,WyrmprintLevel
+		,MaterialID
+		,Quantity
+		)
+	SELECT wl.Rarity
+		,wl.WyrmprintLevel
+		,wl.MaterialID
+		,wl.Quantity
+	FROM (
+		SELECT Rarity
+			,WyrmprintLevel
+			,MaterialID1 AS MaterialID
+			,Quantity1 AS Quantity
+		FROM #WyrmprintLevel
+		
+		UNION
+		
+		SELECT Rarity
+			,WyrmprintLevel
+			,MaterialID2
+			,Quantity2
+		FROM #WyrmprintLevel
+		) AS wl
+	INNER JOIN core.Material AS m ON m.MaterialID = wl.MaterialID
+
+	--WyrmprintLevelLimit
+	SELECT wl.WyrmprintRarity
+		,wl.LevelLimit0
+		,wl.LevelLimit1
+		,wl.LevelLimit2
+		,wl.LevelLimit3
+		,wl.LevelLimit4
+	INTO #WyrmprintLimit
+	FROM jsn.TableJson AS wlj
+	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			WyrmprintRarity INT '$.title.Id'
+			,LevelLimit0 INT '$.title.MaxLimitLevelByLimitBreak0'
+			,LevelLimit1 INT '$.title.MaxLimitLevelByLimitBreak1'
+			,LevelLimit2 INT '$.title.MaxLimitLevelByLimitBreak2'
+			,LevelLimit3 INT '$.title.MaxLimitLevelByLimitBreak3'
+			,LevelLimit4 INT '$.title.MaxLimitLevelByLimitBreak4'
+			) AS wl
+	WHERE wlj.TableName = 'WyrmprintLimit'
+
+	TRUNCATE TABLE core.WyrmprintLevelLimit
+
+	INSERT core.WyrmprintLevelLimit (
+		WyrmprintRarity
+		,UnbindLevel
+		,MaxWyrmprintLevel
+		)
+	SELECT upvt.WyrmprintRarity
+		,REPLACE(upvt.UnbindLevel, 'LevelLimit', '') AS UnbindLevel
+		,upvt.MaxWyrmprintLevel
+	FROM #WyrmprintLimit AS src
+	UNPIVOT(MaxWyrmprintLevel FOR UnbindLevel IN (
+				LevelLimit0
+				,LevelLimit1
+				,LevelLimit2
+				,LevelLimit3
+				,LevelLimit4
+				)) AS upvt
+	WHERE upvt.MaxWyrmprintLevel > 0
+
+	--Adventurer data
+	MERGE core.Adventurer AS trg
+	USING (
+		SELECT a.AdventurerID
+			,a.VariationID
+			,a.Adventurer
+			,a.Rarity
+			,a.ElementID
+			,a.WeaponTypeID
+			,CASE a.MaxLimitBreakCount
+				WHEN 4
+					THEN 50
+				WHEN 5
+					THEN 70
+				ELSE 0
+				END AS MCLimit
+		FROM jsn.TableJson AS aj
+		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				AdventurerID INT '$.title.IdLong'
+				,VariationID INT '$.title.VariationId'
+				,Adventurer NVARCHAR(50) '$.title.FullName'
+				,Rarity INT '$.title.Rarity'
+				,ElementID INT '$.title.ElementalTypeId'
+				,WeaponTypeID INT '$.title.WeaponTypeId'
+				,MaxLimitBreakCount INT '$.title.MaxLimitBreakCount'
+				) AS a
+		WHERE aj.TableName = 'Adventurer'
+		) AS src
+		ON src.AdventurerID = trg.AdventurerID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Adventurer = src.Adventurer
+				,Rarity = src.Rarity
+				,ElementID = src.ElementID
+				,WeaponTypeID = src.WeaponTypeID
+				,MCLimit = src.MCLimit
+				,Active = 1
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			UPDATE
+			SET Active = 0
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AdventurerID
+				,Adventurer
+				,Rarity
+				,ElementID
+				,WeaponTypeID
+				,MCLimit
+				,Active
+				)
+			VALUES (
+				src.AdventurerID
+				,src.Adventurer
+				,src.Rarity
+				,src.ElementID
+				,src.WeaponTypeID
+				,src.MCLimit
+				,1
+				);
+
+	--Mana circles (lots of it)
+	SELECT a.AdventurerID
+		,CAST(REPLACE(a.ManaCircleName, 'MC_', '') AS INT) AS MCID
+	INTO #AdventurerMC
+	FROM jsn.TableJson AS aj
+	CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			AdventurerID INT '$.title.IdLong'
+			,ManaCircleName NVARCHAR(50) '$.title.ManaCircleName'
+			) AS a
+	WHERE aj.TableName = 'Adventurer'
+
+	SELECT upvt.ManaMaterialID
+		,upvt.Element
+		,upvt.MaterialID
+	INTO #ManaMaterial
+	FROM (
+		SELECT m.ManaMaterialID
+			,m.Flame
+			,m.Water
+			,m.Wind
+			,m.Light
+			,m.Shadow
+		FROM jsn.TableJson AS mj
+		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				ManaMaterialID INT '$.title.Id'
+				,Flame NVARCHAR(50) '$.title.FireMaterialId'
+				,Water NVARCHAR(50) '$.title.WaterMaterialId'
+				,Wind NVARCHAR(50) '$.title.WindMaterialId'
+				,Light NVARCHAR(50) '$.title.LightMaterialId'
+				,Shadow NVARCHAR(50) '$.title.DarkMaterialId'
+				) AS m
+		WHERE mj.TableName = 'MCMaterials'
+		) AS src
+	UNPIVOT(MaterialID FOR Element IN (
+				Flame
+				,Water
+				,Wind
+				,Light
+				,Shadow
+				)) AS upvt
+
+	SELECT MCID
+		,ManaNode
+		,ManaPieceType
+		,ManaCost
+		,Stage = ROW_NUMBER() OVER (
+			PARTITION BY MCID
+			,ManaPieceType ORDER BY ManaNode
+			)
+	INTO #MCNodes
+	FROM (
+		SELECT CAST(REPLACE(m.ManaCircleName, 'MC_', '') AS INT) AS MCID
+			,m.ManaNode
+			,m.ManaPieceType
+			,m.ManaCost
+		FROM jsn.TableJson AS mj
+		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				ManaCircleName NVARCHAR(50) '$.title.MC'
+				,ManaNode INT '$.title.Id'
+				,ManaPieceType INT '$.title.ManaPieceType'
+				,ManaCost INT '$.title.NecessaryManaPoint'
+				) AS m
+		WHERE mj.TableName = 'MCNodes'
+		) AS d
+
+	SELECT m.MCID
+		,m.ManaPieceType
+		,m.ManaMaterialId11
+		,m.ManaMaterialId12
+		,m.ManaMaterialId13
+		,m.ManaMaterialQuantity11
+		,m.ManaMaterialQuantity12
+		,m.ManaMaterialQuantity13
+		,m.NeedDewPoint1
+		,m.ManaMaterialId21
+		,m.ManaMaterialId22
+		,m.ManaMaterialId23
+		,m.ManaMaterialQuantity21
+		,m.ManaMaterialQuantity22
+		,m.ManaMaterialQuantity23
+		,m.NeedDewPoint2
+		,m.ManaMaterialId31
+		,m.ManaMaterialId32
+		,m.ManaMaterialId33
+		,m.ManaMaterialQuantity31
+		,m.ManaMaterialQuantity32
+		,m.ManaMaterialQuantity33
+		,m.NeedDewPoint3
+		,m.ManaMaterialId41
+		,m.ManaMaterialId42
+		,m.ManaMaterialId43
+		,m.ManaMaterialQuantity41
+		,m.ManaMaterialQuantity42
+		,m.ManaMaterialQuantity43
+		,m.NeedDewPoint4
+	INTO #ManaPieceRaw
+	FROM jsn.TableJson AS mj
+	CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			MCID INT '$.title.ElementId'
+			,ManaPieceType INT '$.title.ManaPieceType'
+			,ManaMaterialId11 INT '$.title.ManaMaterialId11'
+			,ManaMaterialId12 INT '$.title.ManaMaterialId12'
+			,ManaMaterialId13 INT '$.title.ManaMaterialId13'
+			,ManaMaterialQuantity11 INT '$.title.ManaMaterialQuantity11'
+			,ManaMaterialQuantity12 INT '$.title.ManaMaterialQuantity12'
+			,ManaMaterialQuantity13 INT '$.title.ManaMaterialQuantity13'
+			,NeedDewPoint1 INT '$.title.NeedDewPoint1'
+			,ManaMaterialId21 INT '$.title.ManaMaterialId21'
+			,ManaMaterialId22 INT '$.title.ManaMaterialId22'
+			,ManaMaterialId23 INT '$.title.ManaMaterialId23'
+			,ManaMaterialQuantity21 INT '$.title.ManaMaterialQuantity21'
+			,ManaMaterialQuantity22 INT '$.title.ManaMaterialQuantity22'
+			,ManaMaterialQuantity23 INT '$.title.ManaMaterialQuantity23'
+			,NeedDewPoint2 INT '$.title.NeedDewPoint2'
+			,ManaMaterialId31 INT '$.title.ManaMaterialId31'
+			,ManaMaterialId32 INT '$.title.ManaMaterialId32'
+			,ManaMaterialId33 INT '$.title.ManaMaterialId33'
+			,ManaMaterialQuantity31 INT '$.title.ManaMaterialQuantity31'
+			,ManaMaterialQuantity32 INT '$.title.ManaMaterialQuantity32'
+			,ManaMaterialQuantity33 INT '$.title.ManaMaterialQuantity33'
+			,NeedDewPoint3 INT '$.title.NeedDewPoint3'
+			,ManaMaterialId41 INT '$.title.ManaMaterialId41'
+			,ManaMaterialId42 INT '$.title.ManaMaterialId42'
+			,ManaMaterialId43 INT '$.title.ManaMaterialId43'
+			,ManaMaterialQuantity41 INT '$.title.ManaMaterialQuantity41'
+			,ManaMaterialQuantity42 INT '$.title.ManaMaterialQuantity42'
+			,ManaMaterialQuantity43 INT '$.title.ManaMaterialQuantity43'
+			,NeedDewPoint4 INT '$.title.NeedDewPoint4'
+			) AS m
+	WHERE mj.TableName = 'ManaPieceElement'
+
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId11 AS ManaMaterialID
+		,ManaMaterialQuantity11 AS Quantity
+		,1 AS Stage
+	INTO #ManaPieceElement
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId11 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId12
+		,ManaMaterialQuantity12
+		,1
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId12 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId13
+		,ManaMaterialQuantity13
+		,1
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId13 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId21
+		,ManaMaterialQuantity21
+		,2
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId21 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId22
+		,ManaMaterialQuantity22
+		,2
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId22 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId23
+		,ManaMaterialQuantity23
+		,2
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId23 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId31
+		,ManaMaterialQuantity31
+		,3
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId31 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId32
+		,ManaMaterialQuantity32
+		,3
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId32 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId33
+		,ManaMaterialQuantity33
+		,3
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId33 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId41
+		,ManaMaterialQuantity41
+		,4
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId41 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId42
+		,ManaMaterialQuantity42
+		,4
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId42 <> 0
+	
+	UNION ALL
+	
+	SELECT MCID
+		,ManaPieceType
+		,ManaMaterialId43
+		,ManaMaterialQuantity43
+		,4
+	FROM #ManaPieceRaw
+	WHERE ManaMaterialId43 <> 0
+
+	SELECT MCID
+		,ManaPieceType
+		,CAST(REPLACE(Stage, 'NeedDewPoint', '') AS INT) AS Stage
+		,Eldwater
+	INTO #ManaPieceEldwater
+	FROM (
+		SELECT MCID
+			,ManaPieceType
+			,NeedDewPoint1
+			,NeedDewPoint2
+			,NeedDewPoint3
+			,NeedDewPoint4
+		FROM #ManaPieceRaw AS mpr
+		) AS src
+	UNPIVOT(Eldwater FOR Stage IN (
+				NeedDewPoint1
+				,NeedDewPoint2
+				,NeedDewPoint3
+				,NeedDewPoint4
+				)) AS upvt
+	WHERE Eldwater <> 0
+
+	TRUNCATE TABLE core.ManaCircle
+
+	INSERT core.ManaCircle (
+		AdventurerID
+		,ManaNode
+		,MaterialID
+		,Quantity
+		)
+	SELECT a.AdventurerID
+		,mc.ManaNode
+		,'Mana'
+		,mc.ManaCost
+	FROM core.Adventurer AS a
+	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
+	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
+	
+	UNION ALL
+	
+	SELECT a.AdventurerID
+		,mc.ManaNode
+		,'Eldwater'
+		,mpe.Eldwater
+	FROM core.Adventurer AS a
+	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
+	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
+	INNER JOIN #ManaPieceEldwater AS mpe ON mpe.MCID = mc.MCID
+		AND mpe.ManaPieceType = mc.ManaPieceType
+		AND mpe.Stage = mc.Stage
+	
+	UNION ALL
+	
+	SELECT a.AdventurerID
+		,mc.ManaNode
+		,mm.MaterialID
+		,mpe.Quantity
+	FROM core.Adventurer AS a
+	INNER JOIN core.Element AS e ON e.ElementID = a.ElementID
+	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
+	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
+	INNER JOIN #ManaPieceElement AS mpe ON mpe.MCID = mc.MCID
+		AND mpe.ManaPieceType = mc.ManaPieceType
+		AND mpe.Stage = mc.Stage
+	INNER JOIN #ManaMaterial AS mm ON mm.ManaMaterialID = mpe.ManaMaterialID
+		AND mm.Element = e.Element
+
+	INSERT core.ManaCircle (
+		AdventurerID
+		,ManaNode
+		,MaterialID
+		,Quantity
+		)
+	SELECT a.AdventurerID
+		,31
+		,'Eldwater'
+		,2500
+	FROM core.Adventurer AS a
+	WHERE a.Rarity = 3
+	
+	UNION ALL
+	
+	SELECT a.AdventurerID
+		,41
+		,'Eldwater'
+		,25000
+	FROM core.Adventurer AS a
+	WHERE a.Rarity IN (
+			3
+			,4
+			)
+
+	SELECT a.AdventurerID
+		,CONCAT (
+			'10'
+			,CASE 
+				WHEN amc.MCID IN (
+						404
+						,405
+						)
+					THEN 401
+				WHEN amc.MCID = 403
+					THEN 402
+				WHEN amc.MCID > 501
+					THEN 501
+				ELSE amc.MCID
+				END
+			,'0'
+			,a.ElementID
+			) AS UnbindID
+	INTO #AdventurerUnbind
+	FROM #AdventurerMC AS amc
+	INNER JOIN core.Adventurer AS a ON a.AdventurerID = amc.AdventurerID
+	WHERE amc.MCID <> 0
+
+	SELECT c.UnbindID
+		,c.OrbData1Id1
+		,c.OrbData2Id1
+		,c.OrbData3Id1
+		,c.OrbData4Id1
+		,c.OrbData5Id1
+		,c.OrbData1Num1
+		,c.OrbData2Num1
+		,c.OrbData3Num1
+		,c.OrbData4Num1
+		,c.OrbData5Num1
+		,c.OrbData1Id2
+		,c.OrbData2Id2
+		,c.OrbData3Id2
+		,c.OrbData4Id2
+		,c.OrbData5Id2
+		,c.OrbData1Num2
+		,c.OrbData2Num2
+		,c.OrbData3Num2
+		,c.OrbData4Num2
+		,c.OrbData5Num2
+		,c.OrbData1Id3
+		,c.OrbData2Id3
+		,c.OrbData3Id3
+		,c.OrbData4Id3
+		,c.OrbData5Id3
+		,c.OrbData1Num3
+		,c.OrbData2Num3
+		,c.OrbData3Num3
+		,c.OrbData4Num3
+		,c.OrbData5Num3
+		,c.OrbData1Id4
+		,c.OrbData2Id4
+		,c.OrbData3Id4
+		,c.OrbData4Id4
+		,c.OrbData5Id4
+		,c.OrbData1Num4
+		,c.OrbData2Num4
+		,c.OrbData3Num4
+		,c.OrbData4Num4
+		,c.OrbData5Num4
+		,c.OrbData1Id5
+		,c.OrbData2Id5
+		,c.OrbData3Id5
+		,c.OrbData4Id5
+		,c.OrbData5Id5
+		,c.OrbData1Num5
+		,c.OrbData2Num5
+		,c.OrbData3Num5
+		,c.OrbData4Num5
+		,c.OrbData5Num5
+	INTO #MCUnbind
+	FROM jsn.TableJson AS cj
+	CROSS APPLY OPENJSON(cj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+			UnbindID INT '$.title.Id'
+			,OrbData1Id1 NVARCHAR(50) '$.title.OrbData1Id1'
+			,OrbData2Id1 NVARCHAR(50) '$.title.OrbData2Id1'
+			,OrbData3Id1 NVARCHAR(50) '$.title.OrbData3Id1'
+			,OrbData4Id1 NVARCHAR(50) '$.title.OrbData4Id1'
+			,OrbData5Id1 NVARCHAR(50) '$.title.OrbData5Id1'
+			,OrbData1Num1 INT '$.title.OrbData1Num1'
+			,OrbData2Num1 INT '$.title.OrbData2Num1'
+			,OrbData3Num1 INT '$.title.OrbData3Num1'
+			,OrbData4Num1 INT '$.title.OrbData4Num1'
+			,OrbData5Num1 INT '$.title.OrbData5Num1'
+			,OrbData1Id2 NVARCHAR(50) '$.title.OrbData1Id2'
+			,OrbData2Id2 NVARCHAR(50) '$.title.OrbData2Id2'
+			,OrbData3Id2 NVARCHAR(50) '$.title.OrbData3Id2'
+			,OrbData4Id2 NVARCHAR(50) '$.title.OrbData4Id2'
+			,OrbData5Id2 NVARCHAR(50) '$.title.OrbData5Id2'
+			,OrbData1Num2 INT '$.title.OrbData1Num2'
+			,OrbData2Num2 INT '$.title.OrbData2Num2'
+			,OrbData3Num2 INT '$.title.OrbData3Num2'
+			,OrbData4Num2 INT '$.title.OrbData4Num2'
+			,OrbData5Num2 INT '$.title.OrbData5Num2'
+			,OrbData1Id3 NVARCHAR(50) '$.title.OrbData1Id3'
+			,OrbData2Id3 NVARCHAR(50) '$.title.OrbData2Id3'
+			,OrbData3Id3 NVARCHAR(50) '$.title.OrbData3Id3'
+			,OrbData4Id3 NVARCHAR(50) '$.title.OrbData4Id3'
+			,OrbData5Id3 NVARCHAR(50) '$.title.OrbData5Id3'
+			,OrbData1Num3 INT '$.title.OrbData1Num3'
+			,OrbData2Num3 INT '$.title.OrbData2Num3'
+			,OrbData3Num3 INT '$.title.OrbData3Num3'
+			,OrbData4Num3 INT '$.title.OrbData4Num3'
+			,OrbData5Num3 INT '$.title.OrbData5Num3'
+			,OrbData1Id4 NVARCHAR(50) '$.title.OrbData1Id4'
+			,OrbData2Id4 NVARCHAR(50) '$.title.OrbData2Id4'
+			,OrbData3Id4 NVARCHAR(50) '$.title.OrbData3Id4'
+			,OrbData4Id4 NVARCHAR(50) '$.title.OrbData4Id4'
+			,OrbData5Id4 NVARCHAR(50) '$.title.OrbData5Id4'
+			,OrbData1Num4 INT '$.title.OrbData1Num4'
+			,OrbData2Num4 INT '$.title.OrbData2Num4'
+			,OrbData3Num4 INT '$.title.OrbData3Num4'
+			,OrbData4Num4 INT '$.title.OrbData4Num4'
+			,OrbData5Num4 INT '$.title.OrbData5Num4'
+			,OrbData1Id5 NVARCHAR(50) '$.title.OrbData1Id5'
+			,OrbData2Id5 NVARCHAR(50) '$.title.OrbData2Id5'
+			,OrbData3Id5 NVARCHAR(50) '$.title.OrbData3Id5'
+			,OrbData4Id5 NVARCHAR(50) '$.title.OrbData4Id5'
+			,OrbData5Id5 NVARCHAR(50) '$.title.OrbData5Id5'
+			,OrbData1Num5 INT '$.title.OrbData1Num5'
+			,OrbData2Num5 INT '$.title.OrbData2Num5'
+			,OrbData3Num5 INT '$.title.OrbData3Num5'
+			,OrbData4Num5 INT '$.title.OrbData4Num5'
+			,OrbData5Num5 INT '$.title.OrbData5Num5'
+			) AS c
+	WHERE cj.TableName = 'CharaLimitBreak';
+
+	WITH cte
+	AS (
+		SELECT UnbindID
+			,11 AS ManaNode
+			,OrbData1Id1 AS MaterialID
+			,OrbData1Num1 AS Quantity
+		FROM #MCUnbind
+		WHERE OrbData1Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,11
+			,OrbData2Id1
+			,OrbData2Num1
+		FROM #MCUnbind
+		WHERE OrbData2Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,11
+			,OrbData3Id1
+			,OrbData3Num1
+		FROM #MCUnbind
+		WHERE OrbData3Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,11
+			,OrbData4Id1
+			,OrbData4Num1
+		FROM #MCUnbind
+		WHERE OrbData4Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,11
+			,OrbData5Id1
+			,OrbData5Num1
+		FROM #MCUnbind
+		WHERE OrbData5Num1 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData1Id2
+			,OrbData1Num2
+		FROM #MCUnbind
+		WHERE OrbData1Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData2Id2
+			,OrbData2Num2
+		FROM #MCUnbind
+		WHERE OrbData2Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData3Id2
+			,OrbData3Num2
+		FROM #MCUnbind
+		WHERE OrbData3Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData4Id2
+			,OrbData4Num2
+		FROM #MCUnbind
+		WHERE OrbData4Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,21
+			,OrbData5Id2
+			,OrbData5Num2
+		FROM #MCUnbind
+		WHERE OrbData5Num2 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData1Id3
+			,OrbData1Num3
+		FROM #MCUnbind
+		WHERE OrbData1Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData2Id3
+			,OrbData2Num3
+		FROM #MCUnbind
+		WHERE OrbData2Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData3Id3
+			,OrbData3Num3
+		FROM #MCUnbind
+		WHERE OrbData3Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData4Id3
+			,OrbData4Num3
+		FROM #MCUnbind
+		WHERE OrbData4Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,31
+			,OrbData5Id3
+			,OrbData5Num3
+		FROM #MCUnbind
+		WHERE OrbData5Num3 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData1Id4
+			,OrbData1Num4
+		FROM #MCUnbind
+		WHERE OrbData1Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData2Id4
+			,OrbData2Num4
+		FROM #MCUnbind
+		WHERE OrbData2Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData3Id4
+			,OrbData3Num4
+		FROM #MCUnbind
+		WHERE OrbData3Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData4Id4
+			,OrbData4Num4
+		FROM #MCUnbind
+		WHERE OrbData4Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,41
+			,OrbData5Id4
+			,OrbData5Num4
+		FROM #MCUnbind
+		WHERE OrbData5Num4 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData1Id5
+			,OrbData1Num5
+		FROM #MCUnbind
+		WHERE OrbData1Num5 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData2Id5
+			,OrbData2Num5
+		FROM #MCUnbind
+		WHERE OrbData2Num5 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData3Id5
+			,OrbData3Num5
+		FROM #MCUnbind
+		WHERE OrbData3Num5 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData4Id5
+			,OrbData4Num5
+		FROM #MCUnbind
+		WHERE OrbData4Num5 <> 0
+		
+		UNION ALL
+		
+		SELECT UnbindID
+			,51
+			,OrbData5Id5
+			,OrbData5Num5
+		FROM #MCUnbind
+		WHERE OrbData5Num5 <> 0
+		)
+	MERGE core.ManaCircle AS trg
+	USING (
+		SELECT ub.AdventurerID
+			,cte.ManaNode
+			,cte.MaterialID
+			,cte.Quantity
+		FROM cte
+		INNER JOIN #AdventurerUnbind AS ub ON ub.UnbindID = cte.UnbindID
+		) AS src
+		ON src.AdventurerID = trg.AdventurerID
+			AND src.ManaNode = trg.ManaNode
+			AND src.MaterialID = trg.MaterialID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Quantity = src.Quantity + trg.Quantity
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				AdventurerID
+				,ManaNode
+				,MaterialID
+				,Quantity
+				)
+			VALUES (
+				src.AdventurerID
+				,src.ManaNode
+				,src.MaterialID
+				,src.Quantity
+				);
+
+	DELETE mc
+	FROM core.Adventurer AS a
+	INNER JOIN core.ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
+	WHERE mc.ManaNode > a.MCLimit
+
+	--Dragons
+	MERGE core.Dragon AS trg
+	USING (
+		SELECT d.DragonID
+			,d.Dragon
+			,d.ElementID
+			,d.Rarity
+		FROM jsn.TableJson AS dj
+		CROSS APPLY OPENJSON(dj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
+		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
+				DragonID INT '$.title.Id'
+				,Dragon NVARCHAR(50) '$.title.FullName'
+				,Rarity INT '$.title.Rarity'
+				,ElementID INT '$.title.ElementalTypeId'
+				) AS d
+		WHERE dj.TableName = 'Dragon'
+		) AS src
+		ON src.DragonID = trg.DragonID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Dragon = src.Dragon
+				,Rarity = src.Rarity
+				,ElementID = src.ElementID
+				,Active = 1
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			UPDATE
+			SET Active = 0
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				DragonID
+				,Dragon
+				,Rarity
+				,ElementID
+				)
+			VALUES (
+				src.DragonID
+				,src.Dragon
+				,src.Rarity
+				,src.ElementID
+				);
+
+	TRUNCATE TABLE core.DragonEssence
+
+	INSERT core.DragonEssence (
+		DragonID
+		,MaterialID
+		)
+	SELECT d.DragonID
+		,m.MaterialID
+	FROM core.Dragon AS d
+	INNER JOIN core.Material AS m ON m.Material = CONCAT (
+			d.Dragon
+			,'''s Essence'
+			)
 END

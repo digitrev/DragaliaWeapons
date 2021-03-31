@@ -1,6 +1,8 @@
 ﻿CREATE PROCEDURE [den].[spLoadCore]
 AS
 BEGIN
+	SET NOCOUNT ON
+
 	DECLARE @MineID INT = (
 			SELECT FacilityID
 			FROM core.Facility
@@ -174,6 +176,19 @@ BEGIN
 		
 		UNION
 		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,dc.[Level]
+			,dc.Blessing
+		FROM den.DojoMats AS dm
+		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		CROSS APPLY core.Material AS m
+		CROSS APPLY den.DojoCosts AS dc
+		WHERE dc.Blessing > 0
+			AND m.Material = 'Nature''s Blessing'
+		
+		UNION
+		
 		--Altars
 		SELECT f.FacilityID
 			,'Rupie'
@@ -196,6 +211,19 @@ BEGIN
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.Rainbow > 0
 			AND m.Material = 'Rainbow Orb'
+		
+		UNION
+		
+		SELECT f.FacilityID
+			,m.MaterialID
+			,ac.[Level]
+			,ac.Blessing
+		FROM den.AltarMats AS am
+		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		CROSS APPLY core.Material AS m
+		CROSS APPLY den.AltarCosts AS ac
+		WHERE ac.Blessing > 0
+			AND m.Material = 'Nature''s Blessing'
 		
 		UNION
 		
@@ -475,6 +503,7 @@ BEGIN
 		INNER JOIN core.Facility AS f ON f.Facility = em.Facility
 		CROSS APPLY den.EventCosts AS ec
 		WHERE ec.[Level] <= em.MaxLevel
+			AND ec.Rupie > 0
 		
 		UNION
 		
@@ -487,6 +516,7 @@ BEGIN
 		INNER JOIN core.Material AS m ON m.Material = em.BronzeMat
 		CROSS APPLY den.EventCosts AS ec
 		WHERE ec.[Level] <= em.MaxLevel
+			AND ec.Bronze > 0
 		
 		UNION
 		
@@ -498,6 +528,7 @@ BEGIN
 		FROM den.HalidomSmithy AS hs
 		INNER JOIN core.Facility AS f ON f.Facility = hs.Facility
 		INNER JOIN core.Material AS m ON m.Material = hs.Material
+		WHERE hs.Quantity > 0
 		) AS src
 		ON src.FacilityID = trg.FacilityID
 			AND src.MaterialID = trg.MaterialID
@@ -506,7 +537,7 @@ BEGIN
 		THEN
 			UPDATE
 			SET Quantity = src.Quantity
-	WHEN NOT MATCHED BY source
+	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
 	WHEN NOT MATCHED
@@ -523,4 +554,72 @@ BEGIN
 				,src.FacilityLevel
 				,src.Quantity
 				);
+
+	MERGE core.Category AS trg
+	USING (
+		SELECT Category
+		FROM den.MaterialMetadata
+		
+		UNION
+		
+		SELECT Category
+		FROM den.FacilityMetadata
+		) AS src
+		ON src.Category = trg.Category
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (Category)
+			VALUES (src.Category);
+
+	UPDATE core.Material
+	SET SortPath = HIERARCHYID::GetRoot()
+
+	UPDATE m
+	SET SortPath = mm.SortPath
+		,CategoryID = c.CategoryID
+	FROM core.Material AS m
+	INNER JOIN den.MaterialMetadata AS mm ON mm.Material = m.Material
+	INNER JOIN core.Category AS c ON c.Category = mm.Category
+
+	UPDATE f
+	SET CategoryID = c.CategoryID
+	FROM core.Facility AS f
+	INNER JOIN den.FacilityMetadata AS fm ON fm.Facility = f.Facility
+	INNER JOIN core.Category AS c ON c.Category = fm.Category
+
+	MERGE core.Quest AS trg
+	USING den.QuestHierarchy AS src
+		ON src.Quest = trg.Quest
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET SortPath = src.SortPath
+	WHEN NOT MATCHED BY SOURCE
+		THEN
+			DELETE
+	WHEN NOT MATCHED
+		THEN
+			INSERT (
+				Quest
+				,SortPath
+				)
+			VALUES (
+				src.Quest
+				,src.SortPath
+				);
+
+	TRUNCATE TABLE core.MaterialQuest
+
+	INSERT core.MaterialQuest (
+		MaterialID
+		,QuestID
+		)
+	SELECT m.MaterialID
+		,q.QuestID
+	FROM den.FarmLocation AS fl
+	INNER JOIN core.Material AS m ON m.Material = fl.Material
+	INNER JOIN core.Quest AS q ON q.Quest = fl.Quest
 END

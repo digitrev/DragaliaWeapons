@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{3901b7c6-0b1b-45a0-8b0b-f6bb7a162d09}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -72,6 +72,8 @@
     <Folder Include="dbo\Functions" />
     <Folder Include="util" />
     <Folder Include="util\Functions" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="util\Table" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -119,18 +121,51 @@
     <Build Include="den\Tables\StatueCosts.sql" />
     <Build Include="den\Tables\StatueMats.sql" />
     <Build Include="dbo\Tables\Account.sql" />
-    <Build Include="dbo\Tables\Weapon.sql" />
-    <Build Include="dbo\Tables\Inventory.sql" />
-    <Build Include="dbo\Tables\Facility.sql" />
+    <Build Include="dbo\Tables\AccountWeapon.sql" />
+    <Build Include="dbo\Tables\AccountInventory.sql" />
+    <Build Include="dbo\Tables\AccountFacility.sql" />
     <Build Include="den\Tables\HalidomSmithy.sql" />
     <Build Include="den\Tables\EventCosts.sql" />
     <Build Include="den\Tables\EventMats.sql" />
     <Build Include="dbo\Functions\fnInventoryCosts.sql" />
-    <Build Include="dbo\Tables\Passive.sql" />
+    <Build Include="dbo\Tables\AccountPassive.sql" />
     <Build Include="dbo\Functions\fnPlayerInventory.sql" />
     <Build Include="Security\util.sql" />
     <Build Include="util\Functions\InlineMax.sql" />
     <Build Include="den\Stored Procedures\spInitializeDen.sql" />
+    <Build Include="core\Tables\Wyrmprint.sql" />
+    <Build Include="core\Tables\WyrmprintAbility.sql" />
+    <Build Include="core\Tables\AbilityGroup.sql" />
+    <Build Include="core\Tables\WeaponLevelLimit.sql" />
+    <Build Include="core\Tables\WeaponUnbindLimit.sql" />
+    <Build Include="core\Tables\Affinity.sql" />
+    <Build Include="core\Tables\WyrmprintUpgrade.sql" />
+    <Build Include="core\Tables\WyrmprintLevel.sql" />
+    <Build Include="core\Tables\WyrmprintLevelLimit.sql" />
+    <Build Include="dbo\Tables\AccountWyrmprint.sql" />
+    <Build Include="core\Tables\Category.sql" />
+    <Build Include="den\Tables\MaterialMetadata.sql" />
+    <Build Include="den\Tables\FacilityMetadata.sql" />
+    <Build Include="dbo\Stored Procedures\spFillInventory.sql" />
+    <Build Include="util\Table\Tally.sql" />
+    <Build Include="dbo\Stored Procedures\spFillFacility.sql" />
+    <Build Include="dbo\Stored Procedures\spFillWeapon.sql" />
+    <Build Include="core\Tables\Quest.sql" />
+    <Build Include="den\Tables\QuestHierarchy.sql" />
+    <Build Include="den\Stored Procedures\spSetQuestHierachy.sql" />
+    <Build Include="den\Tables\FarmLocation.sql" />
+    <Build Include="core\Tables\MaterialQuest.sql" />
+    <Build Include="core\Stored Procedures\spWeaponDominionSlots.sql" />
+    <Build Include="dbo\Stored Procedures\spFillPassive.sql" />
+    <Build Include="core\Tables\Adventurer.sql" />
+    <Build Include="dbo\Tables\AccountAdventurer.sql" />
+    <Build Include="core\Tables\ManaCircle.sql" />
+    <Build Include="core\Tables\Dragon.sql" />
+    <Build Include="core\Tables\DragonEssence.sql" />
+    <Build Include="dbo\Tables\AccountDragon.sql" />
+    <Build Include="dbo\Stored Procedures\spFillAdventurer.sql" />
+    <Build Include="dbo\Stored Procedures\spFillWyrmprint.sql" />
+    <Build Include="dbo\Stored Procedures\spFillDragon.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
@@ -139,6 +174,6 @@
     <None Include="DragaliaDB.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Scripts\Script.PostDeployment_den_data.sql" />
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>

@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="dragalia weapon updating.py" />
+    <Compile Include="dragalia table updates.py" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DragaliaDB\DragaliaDB.sqlproj">
