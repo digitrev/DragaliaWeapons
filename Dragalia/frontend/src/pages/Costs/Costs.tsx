@@ -57,36 +57,6 @@ export const Costs: FC<Props> = ({ data }) => {
       }, [])
       .sort((a, b) => materialComparator(a.material, b.material));
 
-  const sumByQuest = (
-    summary: SummaryTable[],
-    materialQuests: MaterialQuestData[],
-    inv: AccountInventoryData[],
-  ): FarmingTable[] =>
-    summary
-      .reduce<FarmingTable[]>((acc, cur) => {
-        const quests = materialQuests.filter(
-          (mq) => mq.materialId === cur.material.materialId,
-        );
-        quests.forEach((q) => {
-          const x = acc.find((mq) => mq.quest.questId === q.questId);
-          const owned = items.find(
-            (f) => f.materialId === cur.material.materialId,
-          );
-          const need = needed(cur.sum, owned?.quantity);
-          if (x === undefined) {
-            acc.push({
-              quest: q.quest,
-              sum: need,
-            });
-          } else {
-            x.sum += need;
-          }
-        });
-        return acc;
-      }, [])
-      .filter((f) => f.sum > 0)
-      .sort((a, b) => b.sum - a.sum);
-
   const handleDisplay = () => {
     switch (displayType) {
       case 'Breakdown':
@@ -118,13 +88,40 @@ export const Costs: FC<Props> = ({ data }) => {
     };
     doGetItems();
     doGetQuests();
-  }, [data]);
-
-  useEffect(() => {
     setSummaryData(sumByMaterial(data));
   }, [data]);
 
   useEffect(() => {
+    const sumByQuest = (
+      summary: SummaryTable[],
+      materialQuests: MaterialQuestData[],
+      inv: AccountInventoryData[],
+    ): FarmingTable[] =>
+      summary
+        .reduce<FarmingTable[]>((acc, cur) => {
+          const quests = materialQuests.filter(
+            (mq) => mq.materialId === cur.material.materialId,
+          );
+          quests.forEach((q) => {
+            const x = acc.find((mq) => mq.quest.questId === q.questId);
+            const owned = items.find(
+              (f) => f.materialId === cur.material.materialId,
+            );
+            const need = needed(cur.sum, owned?.quantity);
+            if (x === undefined) {
+              acc.push({
+                quest: q.quest,
+                sum: need,
+              });
+            } else {
+              x.sum += need;
+            }
+          });
+          return acc;
+        }, [])
+        .filter((f) => f.sum > 0)
+        .sort((a, b) => b.sum - a.sum);
+
     setFarmingData(sumByQuest(summaryData, quests, items));
   }, [summaryData, quests, items]);
 
