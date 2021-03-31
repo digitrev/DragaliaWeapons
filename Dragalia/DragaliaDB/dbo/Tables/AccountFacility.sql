@@ -12,3 +12,4 @@
 	,CONSTRAINT [FK_AccountFacility_Account] FOREIGN KEY ([AccountID]) REFERENCES [Account]([AccountID])
 	,CONSTRAINT [FK_AccountFacility_Facility] FOREIGN KEY ([FacilityID]) REFERENCES [core].[Facility]([FacilityID])
 	)
+GO

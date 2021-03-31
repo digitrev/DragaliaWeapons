@@ -10,3 +10,4 @@
 	,CONSTRAINT [FK_AccountAdventurer_Account] FOREIGN KEY ([AccountID]) REFERENCES [Account]([AccountID])
 	,CONSTRAINT [FK_AccountAdventurer_Adventurer] FOREIGN KEY ([AdventurerID]) REFERENCES [core].[Adventurer]([AdventurerID])
 	)
+GO

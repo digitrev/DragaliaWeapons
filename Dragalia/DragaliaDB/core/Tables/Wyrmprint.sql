@@ -8,3 +8,13 @@
 	,CONSTRAINT [PK_Wyrmprint] PRIMARY KEY ([WyrmprintID])
 	,CONSTRAINT [FK_Wyrmprint_Affinity] FOREIGN KEY ([AffinityID]) REFERENCES [core].[Affinity]([AffinityID]) ON DELETE CASCADE
 	)
+GO
+
+CREATE TRIGGER [core].[Trigger_Wyrmprint] ON [core].[Wyrmprint]
+AFTER INSERT
+AS
+BEGIN
+	SET NOCOUNT ON
+
+	EXEC dbo.spFillWyrmprint
+END

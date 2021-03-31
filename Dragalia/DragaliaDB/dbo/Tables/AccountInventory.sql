@@ -9,3 +9,4 @@
 	,CONSTRAINT [FK_AccountInventory_Account] FOREIGN KEY ([AccountID]) REFERENCES [Account]([AccountID])
 	,CONSTRAINT [FK_AccountInventory_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID])
 	)
+GO

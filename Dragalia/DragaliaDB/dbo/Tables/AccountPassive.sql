@@ -10,3 +10,5 @@
 	,CONSTRAINT [FK_AccountPassive_Account] FOREIGN KEY ([AccountID]) REFERENCES [Account]([AccountID])
 	,CONSTRAINT [FK_AccountPassive_Passive] FOREIGN KEY ([PassiveID]) REFERENCES [core].[Passive]([PassiveID])
 	)
+
+GO

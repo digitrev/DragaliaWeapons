@@ -10,3 +10,4 @@
 	,CONSTRAINT [FK_AccountDragon_Account] FOREIGN KEY ([AccountID]) REFERENCES [Account]([AccountID])
 	,CONSTRAINT [FK_AccountDragon_Dragon] FOREIGN KEY ([DragonID]) REFERENCES [core].[Dragon]([DragonID])
 	)
+GO

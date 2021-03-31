@@ -17,11 +17,17 @@ AS
 BEGIN
 	SET NOCOUNT ON
 
+	EXEC dbo.spFillAdventurer
+
+	EXEC dbo.spFillDragon
+
 	EXEC dbo.spFillFacility
 
 	EXEC dbo.spFillInventory
 
+	EXEC dbo.spFillPassive
+
 	EXEC dbo.spFillWeapon
 
-	EXEC dbo.spFillPassive
+	EXEC dbo.spFillWyrmprint
 END
