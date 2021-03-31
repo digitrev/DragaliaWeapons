@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background-color: #f7f8fa;
+}
+
+th {
+  vertical-align: middle;
+}
+
+td {
+  vertical-align: middle;
+}
+
+input {
+  align-self: center;
+}
