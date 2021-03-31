@@ -107,7 +107,7 @@ export interface MaterialCategoryData {
 }
 
 export interface MaterialQuestData {
-  materialId: number;
+  materialId: string;
   questId: number;
   material: MaterialData;
   quest: QuestData;

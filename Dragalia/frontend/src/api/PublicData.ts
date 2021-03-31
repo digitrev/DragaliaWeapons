@@ -62,10 +62,13 @@ export class PublicApi extends HttpClient {
   public getMaterial = (materialID: string) =>
     this.instance.get<MaterialData>(`/MaterialList/${materialID}`);
 
-  public getMaterialQuests = (materialID?: string) =>
+  public getMaterialQuests = () =>
+    this.instance.get<MaterialQuestData[]>('/MaterialList/quests');
+
+  public getMaterialQuestsFilter = (materialIDs: string[]) =>
     this.instance.get<MaterialQuestData[]>('/MaterialList/quests', {
       params: {
-        materialID: materialID,
+        materials: materialIDs.reduce((acc, cur) => `${cur},${acc}`, ''),
       },
     });
 

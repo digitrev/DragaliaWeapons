@@ -47,3 +47,14 @@ export const sortPathComparator = (sp1: string, sp2: string) => {
 export const materialComparator = (m1: MaterialData, m2: MaterialData) => {
   return sortPathComparator(m1.sortPath, m2.sortPath);
 };
+
+export const needed = (
+  cost: number | undefined,
+  inventory: number | undefined,
+): number => {
+  if (cost === undefined || inventory === undefined) {
+    return 0;
+  } else {
+    return Math.max(0, cost - inventory);
+  }
+};

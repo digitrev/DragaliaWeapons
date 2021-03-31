@@ -104,12 +104,11 @@ export class PrivateApi extends HttpClient {
     );
 
   public getItemFilter = (materialIDs: string[]) =>
-    this.instance.get<AccountInventoryData[]>(
-      `/AccountInventories?materials=${materialIDs.reduce(
-        (acc, cur) => `${cur},${acc}`,
-        '',
-      )}`,
-    );
+    this.instance.get<AccountInventoryData[]>('/AccountInventories', {
+      params: {
+        materials: materialIDs.reduce((acc, cur) => `${cur},${acc}`, ''),
+      },
+    });
 
   public putItem = (materialID: string, item: AccountInventoryData) =>
     this.instance.put(`/AccountInventories/${materialID}`, item);

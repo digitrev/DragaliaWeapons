@@ -1,37 +1,49 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react';
-import { FC, Fragment, useEffect, useState } from 'react';
-import NumberFormat from 'react-number-format';
+import React, { FC, Fragment, useEffect, useState } from 'react';
 import {
   AccountInventoryData,
   MaterialCosts,
   MaterialData,
+  MaterialQuestData,
+  QuestData,
 } from '../../api/DataInterfaces';
-import { materialComparator } from '../../api/HelperFunctions';
+import { materialComparator, needed } from '../../api/HelperFunctions';
 import { PrivateApi } from '../../api/PrivateData';
+import { PublicApi } from '../../api/PublicData';
 import { PrimaryButton } from '../../Styles';
+import { Breakdown } from './CostTables/Breakdown';
+import { Farming } from './CostTables/Farming';
+import { Summary } from './CostTables/Summary';
 
 interface Props {
   data: MaterialCosts[];
 }
 
-interface SummaryTable {
+export interface SummaryTable {
   material: MaterialData;
   sum: number;
 }
 
-type DisplayType = 'Summary' | 'Breakdown';
+export interface FarmingTable {
+  quest: QuestData;
+  sum: number;
+}
+
+type DisplayType = 'Summary' | 'Breakdown' | 'Farming';
 
 export const Costs: FC<Props> = ({ data }) => {
   const [summaryData, setSummaryData] = useState<SummaryTable[]>([]);
+  const [farmingData, setFarmingData] = useState<FarmingTable[]>([]);
   const [displayType, setDisplayType] = useState<DisplayType>('Summary');
   const [items, setItems] = useState<AccountInventoryData[]>([]);
+  const [quests, setQuests] = useState<MaterialQuestData[]>([]);
 
-  const sumByMaterial = (c: MaterialCosts[]): SummaryTable[] => {
-    return c
+  const sumByMaterial = (costs: MaterialCosts[]): SummaryTable[] =>
+    costs
       .reduce<SummaryTable[]>((acc, cur) => {
         const x = acc.find(
-          (mc) => mc.material.material === cur.material.material,
+          (m) => m.material.materialId === cur.material.materialId,
         );
         if (x === undefined) {
           acc.push({
@@ -44,7 +56,36 @@ export const Costs: FC<Props> = ({ data }) => {
         return acc;
       }, [])
       .sort((a, b) => materialComparator(a.material, b.material));
-  };
+
+  const sumByQuest = (
+    summary: SummaryTable[],
+    materialQuests: MaterialQuestData[],
+    inv: AccountInventoryData[],
+  ): FarmingTable[] =>
+    summary
+      .reduce<FarmingTable[]>((acc, cur) => {
+        const quests = materialQuests.filter(
+          (mq) => mq.materialId === cur.material.materialId,
+        );
+        quests.forEach((q) => {
+          const x = acc.find((mq) => mq.quest.questId === q.questId);
+          const owned = items.find(
+            (f) => f.materialId === cur.material.materialId,
+          );
+          const need = needed(cur.sum, owned?.quantity);
+          if (x === undefined) {
+            acc.push({
+              quest: q.quest,
+              sum: need,
+            });
+          } else {
+            x.sum += need;
+          }
+        });
+        return acc;
+      }, [])
+      .filter((f) => f.sum > 0)
+      .sort((a, b) => b.sum - a.sum);
 
   const handleDisplay = () => {
     switch (displayType) {
@@ -52,13 +93,15 @@ export const Costs: FC<Props> = ({ data }) => {
         setDisplayType('Summary');
         break;
       case 'Summary':
+        setDisplayType('Farming');
+        break;
+      case 'Farming':
         setDisplayType('Breakdown');
         break;
     }
   };
 
   useEffect(() => {
-    setSummaryData(sumByMaterial(data));
     const doGetItems = async () => {
       const api = new PrivateApi();
       const itemData = await api.getItemFilter([
@@ -66,17 +109,33 @@ export const Costs: FC<Props> = ({ data }) => {
       ]);
       setItems(itemData);
     };
+    const doGetQuests = async () => {
+      const api = new PublicApi();
+      const questData = await api.getMaterialQuestsFilter([
+        ...Array.from(new Set(data.map<string>((d) => d.material.materialId))),
+      ]);
+      setQuests(questData);
+    };
     doGetItems();
+    doGetQuests();
   }, [data]);
 
-  const needed = (
-    cost: number | undefined,
-    inventory: number | undefined,
-  ): number => {
-    if (cost === undefined || inventory === undefined) {
-      return 0;
-    } else {
-      return Math.max(0, cost - inventory);
+  useEffect(() => {
+    setSummaryData(sumByMaterial(data));
+  }, [data]);
+
+  useEffect(() => {
+    setFarmingData(sumByQuest(summaryData, quests, items));
+  }, [summaryData, quests, items]);
+
+  const tableRender = () => {
+    switch (displayType) {
+      case 'Breakdown':
+        return <Breakdown data={data} items={items} />;
+      case 'Farming':
+        return <Farming data={farmingData} />;
+      case 'Summary':
+        return <Summary data={summaryData} items={items} />;
     }
   };
 
@@ -91,97 +150,7 @@ export const Costs: FC<Props> = ({ data }) => {
       >
         {displayType}
       </PrimaryButton>
-      <table
-        css={css`
-          border-collapse: separate;
-          border-spacing: 15px 0px;
-        `}
-      >
-        <tbody>
-          <tr>
-            {displayType === 'Breakdown' && <th>Product</th>}
-            <th>Material</th>
-            <th>Cost</th>
-            <th>In Inventory</th>
-            <th>Needed</th>
-          </tr>
-          {displayType === 'Summary' &&
-            summaryData.map((sd) => (
-              <tr key={sd.material.materialId}>
-                <td>{sd.material.material}</td>
-                <td>
-                  <NumberFormat
-                    displayType="text"
-                    thousandSeparator={true}
-                    isNumericString={true}
-                    value={sd.sum}
-                  />
-                </td>
-                <td>
-                  <NumberFormat
-                    displayType="text"
-                    thousandSeparator={true}
-                    isNumericString={true}
-                    value={
-                      items.find((i) => i.materialId === sd.material.materialId)
-                        ?.quantity
-                    }
-                  />
-                </td>
-                <td>
-                  <NumberFormat
-                    displayType="text"
-                    thousandSeparator={true}
-                    isNumericString={true}
-                    value={needed(
-                      sd.sum,
-                      items.find((i) => i.materialId === sd.material.materialId)
-                        ?.quantity,
-                    )}
-                  />
-                </td>
-              </tr>
-            ))}
-          {displayType === 'Breakdown' &&
-            data.map((mc) => (
-              <tr key={`${mc.product} ${mc.material.materialId}`}>
-                <td>{mc.product}</td>
-                <td>{mc.material.material}</td>
-                <td>
-                  <NumberFormat
-                    displayType="text"
-                    thousandSeparator={true}
-                    isNumericString={true}
-                    value={mc.quantity}
-                  />
-                </td>
-                <td>
-                  <NumberFormat
-                    displayType="text"
-                    thousandSeparator={true}
-                    isNumericString={true}
-                    value={
-                      items.find((i) => i.materialId === mc.material.materialId)
-                        ?.quantity
-                    }
-                  />
-                </td>
-                <td>
-                  <NumberFormat
-                    displayType="text"
-                    thousandSeparator={true}
-                    isNumericString={true}
-                    value={needed(
-                      mc.quantity,
-                      items.find((i) => i.materialId === mc.material.materialId)
-                        ?.quantity,
-                    )}
-                  />
-                </td>
-              </tr>
-            ))}
-        </tbody>
-      </table>
+      {tableRender()}
     </Fragment>
   );
 };
