@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 using DragaliaApi.Models;
 using DragaliaApi.Data;
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace DragaliaApi
 {
@@ -51,6 +52,16 @@ namespace DragaliaApi
                         .AllowAnyHeader()
                         .WithOrigins("http://localhost:3000")
                         .AllowCredentials()));
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.Authority = Configuration["Auth0:Authority"];
+                options.Audience = Configuration["Auth0:Audience"];
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,6 +79,7 @@ namespace DragaliaApi
             app.UseRouting();
             app.UseCors("CorsPolicy");
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

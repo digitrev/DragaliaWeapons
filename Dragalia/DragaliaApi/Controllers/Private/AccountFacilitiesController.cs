@@ -14,12 +14,12 @@ namespace DragaliaApi.Controllers.Private
 {
     [Route("api/AccountFacilities")]
     [ApiController]
-    public class AccountFacilitiesController : ControllerBase
+    public class AccountFacilitiesController : AuthController
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountFacilitiesController(DragaliaContext context, IMapper mapper)
+        public AccountFacilitiesController(DragaliaContext context, IMapper mapper) : base(context, mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -29,7 +29,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountFacilityDTO>>> GetAccountFacilities()
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 return await _context.AccountFacilities.Where(af => af.AccountId == accountID)
@@ -51,7 +51,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet("{facilityID}/{copyNumber}")]
         public async Task<ActionResult<AccountFacilityDTO>> GetAccountFacility(int facilityID, int copyNumber)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 var rval = await _context.AccountFacilities.Where(af => af.AccountId == accountID && af.FacilityId == facilityID && af.CopyNumber == copyNumber)
@@ -78,7 +78,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPut("{facilityID}/{copyNumber}")]
         public async Task<IActionResult> PutAccountFacility(int facilityID, int copyNumber, AccountFacilityDTO accountFacilityDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountFacility = await _context.AccountFacilities.FindAsync(accountID, facilityID, copyNumber);
 
             accountFacility.CurrentLevel = accountFacilityDTO.CurrentLevel;
@@ -103,7 +103,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPost]
         public async Task<ActionResult<AccountFacilityDTO>> PostAccountFacility(AccountFacilityDTO accountFacilityDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountFacility = _mapper.Map<AccountFacility>(accountFacilityDTO);
             accountFacility.AccountId = accountID;
 
@@ -127,7 +127,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpDelete("{facilityID}/{copyNumber}")]
         public async Task<IActionResult> DeleteAccountFacility(int facilityID, int copyNumber)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountFacility = await _context.AccountFacilities.FindAsync(accountID, facilityID, copyNumber);
             if (accountFacility == null)
             {
@@ -145,7 +145,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
 
                 return await _context.AccountFacilities
                     .Where(af => af.AccountId == accountID

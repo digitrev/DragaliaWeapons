@@ -14,12 +14,12 @@ namespace DragaliaApi.Controllers.Private
 {
     [Route("api/AccountDragons")]
     [ApiController]
-    public class AccountDragonsController : ControllerBase
+    public class AccountDragonsController : AuthController
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountDragonsController(DragaliaContext context, IMapper mapper)
+        public AccountDragonsController(DragaliaContext context, IMapper mapper) : base(context, mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -31,7 +31,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 return await _context.AccountDragons.Where(ad => ad.AccountId == accountID)
                                                     .Include(ad => ad.Dragon)
                                                     .ThenInclude(d => d.Element)
@@ -50,7 +50,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 var rval = await _context.AccountDragons.Where(ad => ad.AccountId == accountID && ad.DragonId == dragonID)
                                                         .Include(ad => ad.Dragon)
                                                         .ThenInclude(d => d.Element)
@@ -72,7 +72,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPut("{dragonID}")]
         public async Task<IActionResult> PutAccountDragon(int dragonID, AccountDragonDTO accountDragonDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountDragon = await _context.AccountDragons.FindAsync(accountID, dragonID);
 
             accountDragon.Unbind = accountDragonDTO.Unbind;
@@ -97,7 +97,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPost]
         public async Task<ActionResult<AccountDragonDTO>> PostAccountDragon(AccountDragonDTO accountDragonDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountDragon = _mapper.Map<AccountDragon>(accountDragonDTO);
             accountDragon.AccountId = accountID;
 
@@ -122,7 +122,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpDelete("{dragonID}")]
         public async Task<IActionResult> DeleteAccountDragon(int dragonID)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountDragon = await _context.AccountDragons.FindAsync(accountID, dragonID);
             if (accountDragon == null)
             {
@@ -140,7 +140,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
 
                 return await _context.AccountDragons
                     .Where(ad => ad.AccountId == accountID

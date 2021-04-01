@@ -14,12 +14,12 @@ namespace DragaliaApi.Controllers.Private
 {
     [Route("api/AccountInventories")]
     [ApiController]
-    public class AccountInventoriesController : ControllerBase
+    public class AccountInventoriesController : AuthController
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountInventoriesController(DragaliaContext context, IMapper mapper)
+        public AccountInventoriesController(DragaliaContext context, IMapper mapper) : base(context, mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -30,7 +30,7 @@ namespace DragaliaApi.Controllers.Private
         public async Task<ActionResult<IEnumerable<AccountInventoryDTO>>> GetAccountInventories(string materials)
         {
             string[] materialArray = materials != null ? materials.Split(',') : Array.Empty<string>();
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 return await _context.AccountInventories.Where(ai => ai.AccountId == accountID
@@ -52,7 +52,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet("{materialID}")]
         public async Task<ActionResult<AccountInventoryDTO>> GetAccountInventory(string materialID)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 var rval = await _context.AccountInventories.Where(ai => ai.AccountId == accountID && ai.MaterialId == materialID)
@@ -77,7 +77,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet("untracked")]
         public async Task<ActionResult<IEnumerable<MaterialDTO>>> GetUntrackedInventory()
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 return await _context.Materials.Include(m => m.Category)
@@ -98,7 +98,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPut("{materialID}")]
         public async Task<IActionResult> PutAccountInventory(string materialID, AccountInventoryDTO accountInventoryDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountInventory = await _context.AccountInventories.FindAsync(accountID, materialID);
 
             accountInventory.Quantity = accountInventoryDTO.Quantity;
@@ -122,7 +122,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPost]
         public async Task<ActionResult<AccountInventory>> PostAccountInventory(AccountInventoryDTO accountInventoryDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountInventory = _mapper.Map<AccountInventory>(accountInventoryDTO);
             accountInventory.AccountId = accountID;
 
@@ -146,7 +146,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpDelete("{materialID}")]
         public async Task<IActionResult> DeleteAccountInventory(string materialID)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountInventory = await _context.AccountInventories.FindAsync(accountID, materialID);
             if (accountInventory == null)
             {

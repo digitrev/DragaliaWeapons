@@ -14,12 +14,12 @@ namespace DragaliaApi.Controllers.Private
 {
     [Route("api/AccountWeapons")]
     [ApiController]
-    public class AccountWeaponsController : ControllerBase
+    public class AccountWeaponsController : AuthController
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountWeaponsController(DragaliaContext context, IMapper mapper)
+        public AccountWeaponsController(DragaliaContext context, IMapper mapper) : base(context, mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -29,7 +29,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountWeaponDTO>>> GetAccountWeapons()
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 return await _context.AccountWeapons.Where(aw => aw.AccountId == accountID)
@@ -56,7 +56,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet("{weaponID}")]
         public async Task<ActionResult<AccountWeaponDTO>> GetAccountWeapon(int weaponID)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 var rval = await _context.AccountWeapons.Where(aw => aw.AccountId == accountID && aw.WeaponId == weaponID)
@@ -83,7 +83,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet("untracked")]
         public async Task<ActionResult<IEnumerable<WeaponDTO>>> GetUntrackedWeapons()
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 return await _context.Weapons.Include(w => w.Element)
@@ -109,7 +109,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPut("{weaponID}")]
         public async Task<IActionResult> PutAccountWeapon(int weaponID, AccountWeaponDTO accountWeaponDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
 
             accountWeapon.Copies = accountWeaponDTO.Copies;
@@ -146,7 +146,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPost]
         public async Task<ActionResult<AccountWeapon>> PostAccountWeapon(AccountWeaponDTO accountWeaponDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountWeapon = _mapper.Map<AccountWeapon>(accountWeaponDTO);
             accountWeapon.AccountId = accountID;
 
@@ -170,7 +170,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpDelete("{weaponID}")]
         public async Task<IActionResult> DeleteAccountWeapon(int weaponID)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountWeapon = await _context.AccountWeapons.FindAsync(accountID, weaponID);
             if (accountWeapon == null)
             {
@@ -188,7 +188,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 var materialCosts = new List<MaterialCost>();
 
                 //Weapon crafting

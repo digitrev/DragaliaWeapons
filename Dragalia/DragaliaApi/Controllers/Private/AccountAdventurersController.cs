@@ -14,12 +14,12 @@ namespace DragaliaApi.Controllers.Private
 {
     [Route("api/AccountAdventurers")]
     [ApiController]
-    public class AccountAdventurersController : ControllerBase
+    public class AccountAdventurersController : AuthController
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountAdventurersController(DragaliaContext context, IMapper mapper)
+        public AccountAdventurersController(DragaliaContext context, IMapper mapper) : base(context, mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -31,7 +31,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 return await _context.AccountAdventurers.Where(aa => aa.AccountId == accountID)
                                                         .Include(aa => aa.Adventurer)
                                                         .ThenInclude(a => a.Element)
@@ -53,7 +53,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 var rval = await _context.AccountAdventurers.Where(aa => aa.AccountId == accountID && aa.AdventurerId == adventurerID)
                                                             .Include(aa => aa.Adventurer)
                                                             .Select(aa => _mapper.Map<AccountAdventurerDTO>(aa))
@@ -74,7 +74,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPut("{adventurerID}")]
         public async Task<IActionResult> PutAccountAdventurer(int adventurerID, AccountAdventurerDTO accountAdventurerDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountAdventurer = await _context.AccountAdventurers.FindAsync(accountID, adventurerID);
 
             accountAdventurer.CurrentLevel = accountAdventurerDTO.CurrentLevel;
@@ -99,7 +99,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPost]
         public async Task<ActionResult<AccountAdventurerDTO>> PostAccountAdventurer(AccountAdventurerDTO accountAdventurerDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountAdventurer = _mapper.Map<AccountAdventurer>(accountAdventurerDTO);
             accountAdventurer.AccountId = accountID;
 
@@ -123,7 +123,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpDelete("{adventurerID}")]
         public async Task<IActionResult> DeleteAccountAdventurer(int adventurerID)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountAdventurer = await _context.AccountAdventurers.FindAsync(accountID, adventurerID);
             if (accountAdventurer == null)
             {
@@ -141,7 +141,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 return await _context.AccountAdventurers
                     .Where(aa => aa.AccountId == accountID
                                  && (adventurerID == null || aa.AdventurerId == adventurerID))
@@ -150,8 +150,8 @@ namespace DragaliaApi.Controllers.Private
                     .ThenInclude(mc => mc.Material)
                     .Include(aa => aa.Adventurer)
                     .ThenInclude(a => a.Element)
-                    .SelectMany(aa => aa.Adventurer.ManaCircles, 
-                        (accountAdventurer, manaCircle) => new { accountAdventurer, manaCircle})
+                    .SelectMany(aa => aa.Adventurer.ManaCircles,
+                        (accountAdventurer, manaCircle) => new { accountAdventurer, manaCircle })
                     .Where(x => x.accountAdventurer.CurrentLevel < x.manaCircle.ManaNode
                                 && x.manaCircle.ManaNode <= x.accountAdventurer.WantedLevel)
                     .OrderByDescending(x => x.accountAdventurer.Adventurer.Element.SortOrder)

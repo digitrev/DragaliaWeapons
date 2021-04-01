@@ -12,14 +12,36 @@ using AutoMapper;
 
 namespace DragaliaApi.Controllers.Private
 {
-    [Route("api/Accounts")]
-    [ApiController]
-    public class AccountsController : ControllerBase
+    public class AuthController: ControllerBase
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountsController(DragaliaContext context, IMapper mapper)
+        public AuthController(DragaliaContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
+
+        public async Task<int> GetAccountID()
+        {
+            string authID = "test";
+            return await _context.Accounts.Where(a => a.AuthId == authID)
+                                          .Select(a => a.AccountId)
+                                          .FirstOrDefaultAsync();
+            //return await Task.FromResult(1);
+        }
+    }
+
+
+    [Route("api/Accounts")]
+    [ApiController]
+    public class AccountsController : AuthController
+    {
+        private readonly DragaliaContext _context;
+        private readonly IMapper _mapper;
+
+        public AccountsController(DragaliaContext context, IMapper mapper) : base(context, mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -47,7 +69,7 @@ namespace DragaliaApi.Controllers.Private
         {
             var accountID = await GetAccountID();
             var account = await _context.Accounts.FindAsync(accountID);
-            
+
             account.AccountName = accountDTO.AccountName;
             account.AccountEmail = accountDTO.AccountEmail;
 
@@ -63,28 +85,6 @@ namespace DragaliaApi.Controllers.Private
             }
 
             return NoContent();
-        }
-
-        // POST: api/Accounts
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<AccountDTO>> CreateAccount(AccountDTO accountDTO)
-        {
-            var account = _mapper.Map<Account>(accountDTO);
-
-            _context.Accounts.Add(account);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(
-                nameof(GetAccount),
-                new { id = account.AccountId },
-                _mapper.Map<AccountDTO>(account));
-        }
-
-        public static async Task<int> GetAccountID()
-        {
-            //TODO - implement actual logic
-            return await Task.FromResult(1);
         }
 
         private bool AccountExists(int accountID) => _context.Accounts.Any(e => e.AccountId == accountID);

@@ -14,12 +14,12 @@ namespace DragaliaApi.Controllers.Private
 {
     [Route("api/AccountPassives")]
     [ApiController]
-    public class AccountPassivesController : ControllerBase
+    public class AccountPassivesController : AuthController
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountPassivesController(DragaliaContext context, IMapper mapper)
+        public AccountPassivesController(DragaliaContext context, IMapper mapper) : base(context, mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -29,7 +29,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AccountPassiveDTO>>> GetAccountPassives()
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 return await _context.AccountPassives.Where(ap => ap.AccountId == accountID)
@@ -55,7 +55,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpGet("{passiveID}")]
         public async Task<ActionResult<AccountPassiveDTO>> GetAccountPassive(int passiveID)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             try
             {
                 var rval = await _context.AccountPassives.Where(ap => ap.AccountId == accountID && ap.PassiveId == passiveID)
@@ -86,7 +86,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPut("{passiveID}")]
         public async Task<IActionResult> PutAccountPassive(int passiveID, AccountPassiveDTO accountPassiveDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountPassive = await _context.AccountPassives.FindAsync(accountID, passiveID);
 
             accountPassive.Owned = accountPassiveDTO.Owned;
@@ -111,7 +111,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPost]
         public async Task<ActionResult<AccountPassiveDTO>> PostAccountPassive(AccountPassiveDTO accountPassiveDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountPassive = _mapper.Map<AccountPassive>(accountPassiveDTO);
             accountPassive.AccountId = accountID;
 
@@ -136,7 +136,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAccountPassive(int passiveID)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountPassive = await _context.AccountPassives.FindAsync(accountID, passiveID);
             if (accountPassive == null)
             {
@@ -154,7 +154,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
 
                 return await _context.AccountPassives
                     .Where(ap => ap.AccountId == accountID
