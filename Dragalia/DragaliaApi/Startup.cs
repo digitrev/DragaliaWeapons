@@ -49,9 +49,9 @@ namespace DragaliaApi
             services.AddCors(options =>
                 options.AddPolicy("CorsPolicy", builder =>
                     builder.AllowAnyMethod()
-                        .AllowAnyHeader()
-                        .WithOrigins("http://localhost:3000")
-                        .AllowCredentials()));
+                           .AllowAnyHeader()
+                           .WithOrigins(Configuration["Frontend"])
+                           .AllowCredentials()));
 
             services.AddAuthentication(options =>
             {
