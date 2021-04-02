@@ -58,18 +58,8 @@ export const Costs: FC<Props> = ({ data }) => {
       }, [])
       .sort((a, b) => materialComparator(a.material, b.material));
 
-  const handleDisplay = () => {
-    switch (displayType) {
-      case 'Breakdown':
-        setDisplayType('Summary');
-        break;
-      case 'Summary':
-        setDisplayType('Farming');
-        break;
-      case 'Farming':
-        setDisplayType('Breakdown');
-        break;
-    }
+  const handleDisplay = (newDisplay: DisplayType) => {
+    setDisplayType(newDisplay);
   };
 
   useEffect(() => {
@@ -145,9 +135,27 @@ export const Costs: FC<Props> = ({ data }) => {
           margin-left: 10px;
           margin-top: 10px;
         `}
-        onClick={handleDisplay}
+        onClick={() => handleDisplay('Farming')}
       >
-        {displayType}
+        Farming
+      </PrimaryButton>
+      <PrimaryButton
+        css={css`
+          margin-left: 10px;
+          margin-top: 10px;
+        `}
+        onClick={() => handleDisplay('Summary')}
+      >
+        Summary
+      </PrimaryButton>
+      <PrimaryButton
+        css={css`
+          margin-left: 10px;
+          margin-top: 10px;
+        `}
+        onClick={() => handleDisplay('Breakdown')}
+      >
+        Breakdown
       </PrimaryButton>
       {tableRender()}
     </Fragment>
