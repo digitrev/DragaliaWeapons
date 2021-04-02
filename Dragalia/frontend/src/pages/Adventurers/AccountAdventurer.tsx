@@ -16,6 +16,7 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Adventurer } from './Adventurer';
+import { getAccessToken } from '../Auth/Auth';
 
 interface Props {
   data: AccountAdventurerData;
@@ -32,7 +33,8 @@ export const AccountAdventurer: FC<Props> = ({ data }) => {
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const costData = await api.getAdventurerCosts(adventurerId);
       if (!cancelled) {
         setCosts(costData);
@@ -48,7 +50,8 @@ export const AccountAdventurer: FC<Props> = ({ data }) => {
   }, [costsRequested, adventurerId, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const api = new PrivateApi();
+    const token = await getAccessToken();
+    const api = new PrivateApi(token);
     let res: boolean;
     try {
       const updateAdventurer: AccountAdventurerData = {

@@ -37,3 +37,7 @@ export const PrimaryButton = styled.button`
     cursor: not-allowed;
   }
 `;
+
+export const StatusText = styled.div`
+  text-align: center;
+`;

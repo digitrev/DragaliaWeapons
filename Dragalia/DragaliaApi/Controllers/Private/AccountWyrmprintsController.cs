@@ -1,25 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
 using DragaliaApi.Data;
 using DragaliaApi.Models;
 using DragaliaApi.Models.DTO;
-using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace DragaliaApi.Controllers.Private
 {
+    [Authorize]
     [Route("api/AccountWyrmprints")]
     [ApiController]
-    public class AccountWyrmprintsController : ControllerBase
+    public class AccountWyrmprintsController : AuthController
     {
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountWyrmprintsController(DragaliaContext context, IMapper mapper)
+        public AccountWyrmprintsController(DragaliaContext context, IMapper mapper, IConfiguration configuration) : base(context, mapper, configuration)
         {
             _context = context;
             _mapper = mapper;
@@ -31,7 +33,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 return await _context.AccountWyrmprints.Where(aw => aw.AccountId == accountID)
                                                        .Include(aw => aw.Wyrmprint)
                                                        .ThenInclude(w => w.WyrmprintAbilities)
@@ -54,7 +56,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 var rval = await _context.AccountWyrmprints.Where(aw => aw.AccountId == accountID && aw.WyrmprintId == wyrmprintID)
                                                            .Include(aw => aw.Wyrmprint)
                                                            .ThenInclude(w => w.WyrmprintAbilities)
@@ -80,7 +82,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPut("{wyrmprintID}")]
         public async Task<IActionResult> PutAccountWyrmprint(int wyrmprintID, AccountWyrmprintDTO accountWyrmprintDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountWyrmprint = await _context.AccountWyrmprints.FindAsync(accountID, wyrmprintID);
 
             accountWyrmprint.Unbind = accountWyrmprintDTO.Unbind;
@@ -109,7 +111,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPost]
         public async Task<ActionResult<AccountWyrmprint>> PostAccountWyrmprint(AccountWyrmprintDTO accountWyrmprintDTO)
         {
-            var accountID = await AccountsController.GetAccountID();
+            var accountID = await GetAccountID();
             var accountWyrmprint = _mapper.Map<AccountWyrmprint>(accountWyrmprintDTO);
             accountWyrmprint.AccountId = accountID;
 
@@ -150,7 +152,7 @@ namespace DragaliaApi.Controllers.Private
         {
             try
             {
-                var accountID = await AccountsController.GetAccountID();
+                var accountID = await GetAccountID();
                 var materialCosts = new List<MaterialCost>();
 
                 //Unbinding, copies

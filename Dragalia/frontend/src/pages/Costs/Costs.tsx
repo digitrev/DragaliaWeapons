@@ -12,6 +12,7 @@ import { materialComparator, needed } from '../../api/HelperFunctions';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
 import { PrimaryButton } from '../../Styles';
+import { getAccessToken } from '../Auth/Auth';
 import { Breakdown } from './CostTables/Breakdown';
 import { Farming } from './CostTables/Farming';
 import { Summary } from './CostTables/Summary';
@@ -57,23 +58,14 @@ export const Costs: FC<Props> = ({ data }) => {
       }, [])
       .sort((a, b) => materialComparator(a.material, b.material));
 
-  const handleDisplay = () => {
-    switch (displayType) {
-      case 'Breakdown':
-        setDisplayType('Summary');
-        break;
-      case 'Summary':
-        setDisplayType('Farming');
-        break;
-      case 'Farming':
-        setDisplayType('Breakdown');
-        break;
-    }
+  const handleDisplay = (newDisplay: DisplayType) => {
+    setDisplayType(newDisplay);
   };
 
   useEffect(() => {
     const doGetItems = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const itemData = await api.getItemFilter([
         ...Array.from(new Set(data.map<string>((d) => d.material.materialId))),
       ]);
@@ -143,9 +135,27 @@ export const Costs: FC<Props> = ({ data }) => {
           margin-left: 10px;
           margin-top: 10px;
         `}
-        onClick={handleDisplay}
+        onClick={() => handleDisplay('Farming')}
       >
-        {displayType}
+        Farming
+      </PrimaryButton>
+      <PrimaryButton
+        css={css`
+          margin-left: 10px;
+          margin-top: 10px;
+        `}
+        onClick={() => handleDisplay('Summary')}
+      >
+        Summary
+      </PrimaryButton>
+      <PrimaryButton
+        css={css`
+          margin-left: 10px;
+          margin-top: 10px;
+        `}
+        onClick={() => handleDisplay('Breakdown')}
+      >
+        Breakdown
       </PrimaryButton>
       {tableRender()}
     </Fragment>

@@ -4,6 +4,10 @@ import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { AccountAdventurerPage } from './pages/Adventurers/AccountAdventurerPage';
 import { AdventurerPage } from './pages/Adventurers/AdventurerPage';
+import { AuthProvider } from './pages/Auth/Auth';
+import { SignInPage } from './pages/Auth/SignInPage';
+import { SignOutPage } from './pages/Auth/SignOutPage';
+import { AuthorizedPage } from './pages/AuthorizedPage';
 import { AdventurerCostsPage } from './pages/Costs/AdventurerCostsPage';
 import { DragonCostsPage } from './pages/Costs/DragonCostsPage';
 import { FacilityCostsPage } from './pages/Costs/FacilityCostsPage';
@@ -32,52 +36,135 @@ import { fontFamily, fontSize, gray2 } from './Styles';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <link
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        rel="stylesheet"
-      ></link>
-      <div
-        css={css`
-          font-family: ${fontFamily};
-          font-size: ${fontSize};
-          color: ${gray2};
-        `}
-      >
-        <Header />
-        <Switch>
-          <Redirect from="/home" to="/" />
-          <Route exact path="/" component={HomePage} />
-          <Route path="/adventurers" component={AdventurerPage} />
-          <Route path="/dragons" component={DragonPage} />
-          <Route path="/facilities" component={FacilityPage} />
-          <Route path="/materials" component={MaterialPage} />
-          <Route path="/passives" component={PassivePage} />
-          <Route path="/quests" component={QuestPage} />
-          <Route path="/weapons" component={WeaponPage} />
-          <Route path="/wyrmprints" component={WyrmprintPage} />
-          <Route
-            path="/account/adventurers"
-            component={AccountAdventurerPage}
-          />
-          <Route path="/account/facilities" component={AccountFacilityPage} />
-          <Route path="/account/inventory" component={InventoryPage} />
-          <Route path="/account/passives" component={AccountPassivePage} />
-          <Route path="/account/dragons" component={AccountDragonPage} />
-          <Route path="/account/weapons" component={AccountWeaponPage} />
-          <Route path="/account/wyrmprints" component={AccountWyrmprintPage} />
-          <Route path="/costs/adventurers" component={AdventurerCostsPage} />
-          <Route path="/costs/dragons" component={DragonCostsPage} />
-          <Route path="/costs/facilities" component={FacilityCostsPage} />
-          <Route path="/costs/passives" component={PassiveCostsPage} />
-          <Route path="/costs/weapons" component={WeaponCostsPage} />
-          <Route path="/costs/wyrmprints" component={WyrmprintCostsPage} />
-          <Route path="/costs/totals" component={TotalCostsPage} />
-          <Route path="/example" component={Example} />
-          <Route component={NotFoundPage} />
-        </Switch>
-      </div>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <link
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          rel="stylesheet"
+        ></link>
+        <div
+          css={css`
+            font-family: ${fontFamily};
+            font-size: ${fontSize};
+            color: ${gray2};
+          `}
+        >
+          <Header />
+          <Switch>
+            <Redirect from="/home" to="/" />
+            <Route exact path="/" component={HomePage} />
+
+            {/* public stuff */}
+            <Route path="/adventurers" component={AdventurerPage} />
+            <Route path="/dragons" component={DragonPage} />
+            <Route path="/facilities" component={FacilityPage} />
+            <Route path="/materials" component={MaterialPage} />
+            <Route path="/passives" component={PassivePage} />
+            <Route path="/quests" component={QuestPage} />
+            <Route path="/weapons" component={WeaponPage} />
+            <Route path="/wyrmprints" component={WyrmprintPage} />
+
+            {/* account stuff */}
+            <Route path="/account/adventurers">
+              <AuthorizedPage>
+                <AccountAdventurerPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/account/facilities">
+              <AuthorizedPage>
+                <AccountFacilityPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/account/inventory">
+              <AuthorizedPage>
+                <InventoryPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/account/passives">
+              <AuthorizedPage>
+                <AccountPassivePage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/account/dragons">
+              <AuthorizedPage>
+                <AccountDragonPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/account/weapons">
+              <AuthorizedPage>
+                <AccountWeaponPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/account/wyrmprints">
+              <AuthorizedPage>
+                <AccountWyrmprintPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/costs/adventurers">
+              <AuthorizedPage>
+                <AdventurerCostsPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/costs/dragons">
+              <AuthorizedPage>
+                <DragonCostsPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/costs/facilities">
+              <AuthorizedPage>
+                <FacilityCostsPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/costs/passives">
+              <AuthorizedPage>
+                <PassiveCostsPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/costs/weapons">
+              <AuthorizedPage>
+                <WeaponCostsPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/costs/wyrmprints">
+              <AuthorizedPage>
+                <WyrmprintCostsPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/costs/totals">
+              <AuthorizedPage>
+                <TotalCostsPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/example">
+              <AuthorizedPage>
+                <Example />
+              </AuthorizedPage>
+            </Route>
+
+            {/* login/out */}
+            <Route
+              path="/signin"
+              render={() => <SignInPage action="signin" />}
+            />
+            <Route
+              path="/signin-callback"
+              render={() => <SignInPage action="signin-callback" />}
+            />
+            <Route
+              path="/signout"
+              render={() => <SignOutPage action="signout" />}
+            />
+            <Route
+              path="/signout-callback"
+              render={() => <SignOutPage action="signout-callback" />}
+            />
+
+            {/* fallback */}
+            <Route component={NotFoundPage} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </AuthProvider>
   );
 };
 

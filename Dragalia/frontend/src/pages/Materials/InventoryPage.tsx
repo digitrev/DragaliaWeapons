@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { AccountInventoryData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { LoadingText } from '../../Loading';
+import { getAccessToken } from '../Auth/Auth';
 import { Page } from '../Page';
 import { InventoryList } from './InventoryList';
 
@@ -16,7 +17,8 @@ export const InventoryPage = () => {
   useEffect(() => {
     let cancelled = false;
     const doGetInventory = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const weaponData = await api.getInventory();
       if (!cancelled) {
         setInventory(weaponData);

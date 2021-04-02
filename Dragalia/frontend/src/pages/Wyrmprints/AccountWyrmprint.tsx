@@ -20,6 +20,7 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Wyrmprint } from './Wyrmprint';
+import { getAccessToken } from '../Auth/Auth';
 
 interface Props {
   data: AccountWyrmprintData;
@@ -37,7 +38,8 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const costData = await api.getWyrmprintCosts(wyrmprintId);
       if (!cancelled) {
         setCosts(costData);
@@ -53,7 +55,8 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
   }, [costsRequested, wyrmprintId, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const api = new PrivateApi();
+    const token = await getAccessToken();
+    const api = new PrivateApi(token);
     let res: boolean;
     try {
       const updateWyrmprint: AccountWyrmprintData = {

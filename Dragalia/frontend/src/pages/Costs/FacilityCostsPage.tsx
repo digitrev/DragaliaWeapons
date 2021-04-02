@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { MaterialCosts } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { LoadingText } from '../../Loading';
+import { getAccessToken } from '../Auth/Auth';
 import { Page } from '../Page';
 import { Costs } from './Costs';
 
@@ -14,7 +15,8 @@ export const FacilityCostsPage = () => {
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const costData = await api.getFacilityCosts();
       if (!cancelled) {
         setFacilityCosts(costData);

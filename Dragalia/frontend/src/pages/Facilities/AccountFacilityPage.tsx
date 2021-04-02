@@ -5,6 +5,7 @@ import { AccountFacilityData, FacilityLimit } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
 import { LoadingText } from '../../Loading';
+import { getAccessToken } from '../Auth/Auth';
 import { Page } from '../Page';
 import { AccountFacilityList } from './AccountFacilityList';
 
@@ -32,7 +33,8 @@ export const AccountFacilityPage = () => {
       }
     };
     const doGetAccountFacilities = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const accountFacilityData = await api.getFacilities();
       if (!cancelled) {
         setAccountFacilities(accountFacilityData);
