@@ -42,6 +42,7 @@ export const Header = () => {
         box-shadow: 9 3px 7px 0 rgba(110, 112, 114, 0.21);
       `}
     >
+      <Link to="/about">About</Link>
       <Link
         to="/"
         css={css`
