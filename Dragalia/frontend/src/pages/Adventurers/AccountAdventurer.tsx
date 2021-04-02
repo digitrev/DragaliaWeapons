@@ -59,7 +59,7 @@ export const AccountAdventurer: FC<Props> = ({ data }) => {
         currentLevel: values.currentLevel,
         wantedLevel: values.wantedLevel,
       };
-      await api.putAdventurer(values.weaponId, updateAdventurer);
+      await api.putAdventurer(values.adventurerId, updateAdventurer);
       res = true;
       setCostUpdate(!costUpdate);
     } catch {
