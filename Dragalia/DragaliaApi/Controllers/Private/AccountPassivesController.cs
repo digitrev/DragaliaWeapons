@@ -1,17 +1,19 @@
-﻿using System;
+﻿using AutoMapper;
+using DragaliaApi.Data;
+using DragaliaApi.Models;
+using DragaliaApi.Models.DTO;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using DragaliaApi.Data;
-using DragaliaApi.Models;
-using AutoMapper;
-using DragaliaApi.Models.DTO;
 
 namespace DragaliaApi.Controllers.Private
 {
+    [Authorize]
     [Route("api/AccountPassives")]
     [ApiController]
     public class AccountPassivesController : AuthController
@@ -19,7 +21,7 @@ namespace DragaliaApi.Controllers.Private
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountPassivesController(DragaliaContext context, IMapper mapper) : base(context, mapper)
+        public AccountPassivesController(DragaliaContext context, IMapper mapper, IConfiguration configuration) : base(context, mapper, configuration)
         {
             _context = context;
             _mapper = mapper;

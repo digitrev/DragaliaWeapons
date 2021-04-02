@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
 using DragaliaApi.Data;
 using DragaliaApi.Models;
 using DragaliaApi.Models.DTO;
-using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace DragaliaApi.Controllers.Private
 {
+    [Authorize]
     [Route("api/AccountWeapons")]
     [ApiController]
     public class AccountWeaponsController : AuthController
@@ -19,7 +21,7 @@ namespace DragaliaApi.Controllers.Private
         private readonly DragaliaContext _context;
         private readonly IMapper _mapper;
 
-        public AccountWeaponsController(DragaliaContext context, IMapper mapper) : base(context, mapper)
+        public AccountWeaponsController(DragaliaContext context, IMapper mapper, IConfiguration configuration) : base(context, mapper, configuration)
         {
             _context = context;
             _mapper = mapper;
