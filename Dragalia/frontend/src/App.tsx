@@ -2,6 +2,7 @@
 import { css, jsx } from '@emotion/react';
 import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { AboutPage } from './pages/AboutPage';
 import { AccountAdventurerPage } from './pages/Adventurers/AccountAdventurerPage';
 import { AdventurerPage } from './pages/Adventurers/AdventurerPage';
 import { AuthProvider } from './pages/Auth/Auth';
@@ -158,6 +159,9 @@ const App: React.FC = () => {
               path="/signout-callback"
               render={() => <SignOutPage action="signout-callback" />}
             />
+
+            {/* other */}
+            <Route path="/about" component={AboutPage} />
 
             {/* fallback */}
             <Route component={NotFoundPage} />
