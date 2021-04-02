@@ -11,7 +11,7 @@ export const AboutPage = () => {
       </p>
       <p>
         Most data comes from{' '}
-        <a href="https://dragalialost.wiki" target="_blank">
+        <a href="https://dragalialost.wiki" target="_blank" rel="noreferrer">
           The Dragalia Lost Wiki
         </a>
         . Special thanks to the editors for keeping the data up to date, and for
