@@ -173,6 +173,7 @@
   <ItemGroup>
     <None Include="DragaliaDB.publish.xml" />
     <None Include="production.publish.xml" />
+    <None Include="staging.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />

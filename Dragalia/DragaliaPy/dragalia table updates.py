@@ -4,7 +4,8 @@ import getpass
 
 #DB parameters
 your_password_here=getpass.getpass("Password for DB: ")
-connectionString = f"Driver={{ODBC Driver 17 for SQL Server}};Server=tcp:dragaliadbdbserver.database.windows.net,1433;Database=DragaliaDB;Uid=TrevorB;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+DBName="DragaliaStaging"
+connectionString = f"Driver={{ODBC Driver 17 for SQL Server}};Server=tcp:dragaliadbdbserver.database.windows.net,1433;Database={DBName};Uid=TrevorB;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 #array of useful data?
 parameterDict = dict()
