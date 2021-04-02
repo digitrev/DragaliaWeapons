@@ -100,14 +100,7 @@ namespace DragaliaApi.Controllers.Private
                 account.AccountName = user.Name;
                 account.AccountEmail = user.Email;
                 _context.Entry(account).State = EntityState.Modified;
-                try
-                {
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException) when (!AccountExists(accountID))
-                {
-                    return NotFound();
-                }
+                await _context.SaveChangesAsync();
             }
             else
             {
