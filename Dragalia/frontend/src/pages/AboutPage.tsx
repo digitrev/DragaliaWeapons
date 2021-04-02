@@ -19,7 +19,14 @@ export const AboutPage = () => {
       </p>
       <p>
         Source code can be found at{' '}
-        <a href="https://github.com/digitrev/DragaliaWeapons">github</a>.
+        <a
+          href="https://github.com/digitrev/DragaliaWeapons"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github
+        </a>
+        .
       </p>
       <p>
         I don't have a privacy statement, but all I store is your name, email,
