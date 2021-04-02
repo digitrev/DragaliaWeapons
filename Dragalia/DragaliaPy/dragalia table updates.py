@@ -1,9 +1,11 @@
 import requests
 import pyodbc
+import getpass
 
 #DB parameters
-serverName = "TREVOR2020"
-dbName = "DragaliaV2"
+your_password_here=getpass.getpass("Password for DB: ")
+DBName="DragaliaStaging"
+connectionString = f"Driver={{ODBC Driver 17 for SQL Server}};Server=tcp:dragaliadbdbserver.database.windows.net,1433;Database={DBName};Uid=TrevorB;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 #array of useful data?
 parameterDict = dict()
@@ -45,7 +47,7 @@ baseParams["offset"] = 0
 
 #setting up connection
 print('Connecting to DB')
-conn = pyodbc.connect(f"Driver={{SQL Server}};Server={serverName};Database={dbName};Trusted_Connection=yes;")
+conn = pyodbc.connect(connectionString)
 cursor = conn.cursor()
 
 #clear out json tables
