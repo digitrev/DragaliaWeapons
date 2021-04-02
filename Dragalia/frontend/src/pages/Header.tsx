@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { UserIcon } from '../img/Icons';
 import { fontFamily, fontSize, gray1, gray2, gray5 } from '../Styles';
+import { useAuth } from './Auth/Auth';
 
 const buttonStyle = css`
   border: none;
@@ -22,36 +23,54 @@ const buttonStyle = css`
   }
 `;
 
-export const Header = () => (
-  <div
-    css={css`
-      position: fixed;
-      box-sizing: border-box;
-      top: 0;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      background-color: #fff;
-      border-bottom: 1px solid ${gray5};
-      box-shadow: 9 3px 7px 0 rgba(110, 112, 114, 0.21);
-    `}
-  >
-    <Link
-      to="/"
+export const Header = () => {
+  const { isAuthenticated, user, loading } = useAuth();
+
+  return (
+    <div
       css={css`
-        font-size: 24px;
-        font-weight: bold;
-        color: ${gray1};
-        text-decoration: none;
+        position: fixed;
+        box-sizing: border-box;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-bottom: 1px solid ${gray5};
+        box-shadow: 9 3px 7px 0 rgba(110, 112, 114, 0.21);
       `}
     >
-      Home
-    </Link>
-    <Link to="./signin" css={buttonStyle}>
-      <UserIcon />
-      <span>Sign In</span>
-    </Link>
-  </div>
-);
+      <Link
+        to="/"
+        css={css`
+          font-size: 24px;
+          font-weight: bold;
+          color: ${gray1};
+          text-decoration: none;
+        `}
+      >
+        Home
+      </Link>
+      {!loading &&
+        (isAuthenticated ? (
+          <div>
+            <span>{user!.name}</span>
+            <Link
+              to={{ pathname: '/signout', state: { local: true } }}
+              css={buttonStyle}
+            >
+              <UserIcon />
+              <span>Sign Out</span>
+            </Link>
+          </div>
+        ) : (
+          <Link to="./signin" css={buttonStyle}>
+            <UserIcon />
+            <span>Sign In</span>
+          </Link>
+        ))}
+    </div>
+  );
+};

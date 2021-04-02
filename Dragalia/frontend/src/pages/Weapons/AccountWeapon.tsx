@@ -20,6 +20,7 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Weapon } from './Weapon';
+import { getAccessToken } from '../Auth/Auth';
 
 interface Props {
   data: AccountWeaponData;
@@ -37,7 +38,8 @@ export const AccountWeapon: FC<Props> = ({ data, limits }) => {
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const costData = await api.getWeaponCosts(weaponId);
       if (!cancelled) {
         setCosts(costData);
@@ -53,7 +55,8 @@ export const AccountWeapon: FC<Props> = ({ data, limits }) => {
   }, [costsRequested, weaponId, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const api = new PrivateApi();
+    const token = await getAccessToken();
+    const api = new PrivateApi(token);
     let res: boolean;
     try {
       const updateWeapon: AccountWeaponData = {

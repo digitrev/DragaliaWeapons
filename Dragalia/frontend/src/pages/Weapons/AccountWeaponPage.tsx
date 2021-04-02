@@ -21,6 +21,7 @@ import {
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
+import { getAccessToken } from '../Auth/Auth';
 
 export const AccountWeaponPage = () => {
   const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
@@ -64,7 +65,8 @@ export const AccountWeaponPage = () => {
       }
     };
     const doGetWeapons = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const weaponData = await api.getWeapons();
       if (!cancelled) {
         setWeapons(weaponData);

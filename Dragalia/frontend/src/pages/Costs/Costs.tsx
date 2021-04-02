@@ -12,6 +12,7 @@ import { materialComparator, needed } from '../../api/HelperFunctions';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
 import { PrimaryButton } from '../../Styles';
+import { getAccessToken } from '../Auth/Auth';
 import { Breakdown } from './CostTables/Breakdown';
 import { Farming } from './CostTables/Farming';
 import { Summary } from './CostTables/Summary';
@@ -73,7 +74,8 @@ export const Costs: FC<Props> = ({ data }) => {
 
   useEffect(() => {
     const doGetItems = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const itemData = await api.getItemFilter([
         ...Array.from(new Set(data.map<string>((d) => d.material.materialId))),
       ]);

@@ -13,13 +13,19 @@ import {
 } from './DataInterfaces';
 
 export class PrivateApi extends HttpClient {
-  public constructor() {
+  public constructor(token: string) {
     super(webAPIUrl);
+    if (token) {
+      this.instance.defaults.headers.common[
+        'Authorization'
+      ] = `Bearer ${token}`;
+    }
   }
 
   //adventurers
-  public getAdventurers = () =>
-    this.instance.get<AccountAdventurerData[]>('/AccountAdventurers');
+  public getAdventurers = () => {
+    return this.instance.get<AccountAdventurerData[]>('/AccountAdventurers');
+  };
 
   public getAdventurer = (adventurerID: number) =>
     this.instance.get<AccountAdventurerData>(
@@ -170,4 +176,7 @@ export class PrivateApi extends HttpClient {
         wyrmprintID: wyrmprintID,
       },
     });
+
+  //account
+  public putAccount = () => this.instance.put('/Accounts');
 }

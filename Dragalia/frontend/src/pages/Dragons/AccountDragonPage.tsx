@@ -16,6 +16,7 @@ import {
 import { LoadingText } from '../../Loading';
 import { Page } from '../Page';
 import { AccountDragonList } from './AccountDragonList';
+import { getAccessToken } from '../Auth/Auth';
 
 export const AccountDragonPage = () => {
   const [dragons, setDragons] = useState<AccountDragonData[] | null>(null);
@@ -43,7 +44,8 @@ export const AccountDragonPage = () => {
       }
     };
     const doGetDragons = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const dragonData = await api.getDragons();
       if (!cancelled) {
         setDragons(dragonData);

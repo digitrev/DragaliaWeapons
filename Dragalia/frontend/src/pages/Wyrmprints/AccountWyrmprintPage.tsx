@@ -15,6 +15,7 @@ import {
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
+import { getAccessToken } from '../Auth/Auth';
 
 export interface Rarity {
   rarity: number;
@@ -48,7 +49,8 @@ export const AccountWyrmprintPage = () => {
       }
     };
     const doGetWyrmprints = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const wyrmprintData = await api.getWyrmprints();
       if (!cancelled) {
         setWyrmprints(wyrmprintData);

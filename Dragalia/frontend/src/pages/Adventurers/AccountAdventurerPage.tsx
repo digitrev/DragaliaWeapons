@@ -20,6 +20,7 @@ import {
 import { LoadingText } from '../../Loading';
 import { Page } from '../Page';
 import { AccountAdventurerList } from './AccountAdventurerList';
+import { getAccessToken } from '../Auth/Auth';
 
 export const AccountAdventurerPage = () => {
   const [adventurers, setAdventurers] = useState<
@@ -56,7 +57,8 @@ export const AccountAdventurerPage = () => {
       }
     };
     const doGetAdventurers = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const adventurerData = await api.getAdventurers();
       if (!cancelled) {
         setAdventurers(adventurerData);

@@ -26,12 +26,12 @@ namespace DragaliaApi.Controllers.Private
             _auth0UserInfo = $"{configuration["Auth0:Authority"]}userinfo";
         }
 
-        protected async Task<User> GetUserInfo()
+        protected User GetUserInfo()
         {
             var client = new RestClient(_auth0UserInfo);
             var request = new RestRequest(Method.GET);
             request.AddHeader("Authorization", Request.Headers["Authorization"].First());
-            var response = await client.ExecuteAsync<User>(request);
+            var response = client.Execute<User>(request);
 
             if (response.IsSuccessful)
             {
@@ -45,7 +45,7 @@ namespace DragaliaApi.Controllers.Private
 
         protected async Task<int> GetAccountID()
         {
-            var user = await GetUserInfo();
+            var user = GetUserInfo();
             var authID = user.Sub;
 
             return await _context.Accounts.Where(a => a.AuthId == authID)
@@ -89,7 +89,7 @@ namespace DragaliaApi.Controllers.Private
         [HttpPut]
         public async Task<IActionResult> UpdateAccount()
         {
-            var user = await GetUserInfo();
+            var user = GetUserInfo();
             var accountID = await GetAccountID();
 
             var account = await _context.Accounts.FindAsync(accountID);

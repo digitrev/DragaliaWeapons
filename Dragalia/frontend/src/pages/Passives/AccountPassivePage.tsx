@@ -17,6 +17,7 @@ import {
   pageRangeDisplayed,
 } from '../../AppSettings';
 import { LoadingText } from '../../Loading';
+import { getAccessToken } from '../Auth/Auth';
 import { Page } from '../Page';
 import { AccountPassiveList } from './AccountPassiveList';
 
@@ -53,7 +54,8 @@ export const AccountPassivePage = () => {
       }
     };
     const doGetPassives = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const passiveData = await api.getPassives();
       if (!cancelled) {
         setPassives(passiveData);

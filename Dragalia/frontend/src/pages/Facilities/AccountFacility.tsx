@@ -20,6 +20,7 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Facility } from './Facility';
+import { getAccessToken } from '../Auth/Auth';
 
 interface Props {
   data: AccountFacilityData;
@@ -37,7 +38,8 @@ export const AccountFacility: FC<Props> = ({ data, limits }) => {
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const api = new PrivateApi();
+      const token = await getAccessToken();
+      const api = new PrivateApi(token);
       const costData = await api.getFacilityCosts(facilityId, copyNumber);
       if (!cancelled) {
         setCosts(costData);
@@ -53,7 +55,8 @@ export const AccountFacility: FC<Props> = ({ data, limits }) => {
   }, [costsRequested, facilityId, copyNumber, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const api = new PrivateApi();
+    const token = await getAccessToken();
+    const api = new PrivateApi(token);
     let res: boolean;
     try {
       await api.putFacility(values.facilityId, values.copyNumber, {
