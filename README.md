@@ -1,2 +1,2 @@
 # DragaliaWeapons
-Dragalia Lost weapon crafting &amp; tracking database
+Dragalia Lost farming and tracking tool
