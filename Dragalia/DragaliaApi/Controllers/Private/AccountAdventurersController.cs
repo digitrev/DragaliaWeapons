@@ -37,6 +37,8 @@ namespace DragaliaApi.Controllers.Private
                 return await _context.AccountAdventurers.Where(aa => aa.AccountId == accountID)
                                                         .Include(aa => aa.Adventurer)
                                                         .ThenInclude(a => a.Element)
+                                                        .Include(aa => aa.Adventurer)
+                                                        .ThenInclude(a => a.WeaponType)
                                                         .OrderBy(aa => aa.Adventurer.Element.SortOrder)
                                                         .ThenBy(aa => aa.Adventurer.WeaponTypeId)
                                                         .ThenByDescending(aa => aa.Adventurer.Rarity)
@@ -58,6 +60,7 @@ namespace DragaliaApi.Controllers.Private
                 var accountID = await GetAccountID();
                 var rval = await _context.AccountAdventurers.Where(aa => aa.AccountId == accountID && aa.AdventurerId == adventurerID)
                                                             .Include(aa => aa.Adventurer)
+                                                            .ThenInclude(a => a.WeaponType)
                                                             .Select(aa => _mapper.Map<AccountAdventurerDTO>(aa))
                                                             .FirstOrDefaultAsync();
 

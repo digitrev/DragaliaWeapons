@@ -13,12 +13,13 @@ import {
   pageRangeDisplayed,
   marginPagesDisplayed,
 } from '../../AppSettings';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AccountDragonList } from './AccountDragonList';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 export const AccountDragonPage = () => {
+  const { getAccessToken } = useAuth();
   const [dragons, setDragons] = useState<AccountDragonData[] | null>(null);
   const [dragonsLoading, setDragonsLoading] = useState(true);
 
@@ -57,7 +58,7 @@ export const AccountDragonPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [getAccessToken]);
 
   useEffect(() => {
     let dragonFilter = dragons;

@@ -3,7 +3,7 @@ import { css, jsx } from '@emotion/react';
 import { FC } from 'react';
 import { AccountInventoryData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 import { Field } from '../Forms/Field';
 import { Form, Values, isInteger, required, nonNegative } from '../Forms/Form';
 import { Material } from './Material';
@@ -13,6 +13,7 @@ interface Props {
 }
 
 export const Inventory: FC<Props> = ({ data }) => {
+  const { getAccessToken } = useAuth();
   const handleSubmit = async (values: Values) => {
     const token = await getAccessToken();
     const api = new PrivateApi(token);

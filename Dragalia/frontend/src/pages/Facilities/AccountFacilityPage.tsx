@@ -4,12 +4,13 @@ import React, { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import { AccountFacilityData, FacilityLimit } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
-import { LoadingText } from '../../Loading';
-import { getAccessToken } from '../Auth/Auth';
+import { LoadingText } from '../Loading';
+import { useAuth } from '../Auth/Auth';
 import { Page } from '../Page';
 import { AccountFacilityList } from './AccountFacilityList';
 
 export const AccountFacilityPage = () => {
+  const { getAccessToken } = useAuth();
   const [accountFacilities, setAccountFacilities] = useState<
     AccountFacilityData[] | null
   >(null);
@@ -46,7 +47,7 @@ export const AccountFacilityPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [getAccessToken]);
 
   useEffect(() => {
     let facilityFilter = accountFacilities;

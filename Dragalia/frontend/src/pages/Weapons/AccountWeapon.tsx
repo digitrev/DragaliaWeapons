@@ -7,7 +7,7 @@ import {
   WeaponLimit,
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import {
@@ -20,7 +20,7 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Weapon } from './Weapon';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountWeaponData;
@@ -28,6 +28,7 @@ interface Props {
 }
 
 export const AccountWeapon: FC<Props> = ({ data, limits }) => {
+  const { getAccessToken } = useAuth();
   const { weaponId, weapon } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
@@ -52,7 +53,7 @@ export const AccountWeapon: FC<Props> = ({ data, limits }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, weaponId, costUpdate]);
+  }, [costsRequested, weaponId, costUpdate, getAccessToken]);
 
   const handleSubmit = async (values: Values) => {
     const token = await getAccessToken();

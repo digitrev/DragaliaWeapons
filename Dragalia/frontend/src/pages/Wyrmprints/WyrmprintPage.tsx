@@ -3,7 +3,7 @@ import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { WyrmprintData } from '../../api/DataInterfaces';
 import { PublicApi } from '../../api/PublicData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { WyrmprintList } from './WyrmprintList';
 

@@ -7,7 +7,7 @@ import {
   MaterialCosts,
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import {
@@ -20,7 +20,7 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Facility } from './Facility';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountFacilityData;
@@ -28,6 +28,7 @@ interface Props {
 }
 
 export const AccountFacility: FC<Props> = ({ data, limits }) => {
+  const { getAccessToken } = useAuth();
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
   const [costsLoading, setCostsLoading] = useState(true);
   const [costsRequested, setCostsRequested] = useState(false);
@@ -52,7 +53,7 @@ export const AccountFacility: FC<Props> = ({ data, limits }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, facilityId, copyNumber, costUpdate]);
+  }, [costsRequested, facilityId, copyNumber, costUpdate, getAccessToken]);
 
   const handleSubmit = async (values: Values) => {
     const token = await getAccessToken();

@@ -7,7 +7,8 @@ export const AboutPage = () => {
     <Page title="About">
       <p>
         This is a simple site for tracking your upgradable entites in Dragalia
-        Lost.
+        Lost. This is also my first time doing any front-end stuff, so apologies
+        if things are a little awkward and broken.
       </p>
       <p>
         Most data comes from{' '}
@@ -24,9 +25,10 @@ export const AboutPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          github
+          Github
         </a>
-        .
+        . You can also open issues there or even contribute code. I'll put a
+        little thank you here if you do.
       </p>
       <p>
         I don't have a privacy statement, but all I store is your name, email,

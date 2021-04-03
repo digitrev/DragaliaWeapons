@@ -3,7 +3,7 @@ import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { MaterialData } from '../../api/DataInterfaces';
 import { PublicApi } from '../../api/PublicData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { MaterialList } from './MaterialList';
 
