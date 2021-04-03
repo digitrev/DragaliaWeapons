@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using RestSharp;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace DragaliaApi.Controllers.Private
@@ -31,21 +32,25 @@ namespace DragaliaApi.Controllers.Private
             var client = new RestClient(_auth0UserInfo);
             var request = new RestRequest(Method.GET);
             request.AddHeader("Authorization", Request.Headers["Authorization"].First());
-            var response = await client.ExecuteAsync<User>(request);
-            if (response.IsSuccessful)
+
+            for (var i = 0; i < 5; ++i)
             {
-                return response.Data;
+                var response = await client.ExecuteAsync<User>(request);
+                if (response.IsSuccessful)
+                {
+                    return response.Data;
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.TooManyRequests)
+                {
+                    await Task.Delay(60 * 1000);
+                }
             }
-            else
-            {
-                return null;
-            }
+            return null;
         }
 
         protected async Task<int> GetAccountID()
         {
-            var user = await GetUserInfo();
-            var authID = user.Sub;
+            var authID = User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
             return await _context.Accounts.Where(a => a.AuthId == authID)
                                           .Select(a => a.AccountId)
