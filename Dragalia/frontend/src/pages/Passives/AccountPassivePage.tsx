@@ -16,12 +16,13 @@ import {
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
-import { LoadingText } from '../../Loading';
-import { getAccessToken } from '../Auth/Auth';
+import { LoadingText } from '../Loading';
+import { useAuth } from '../Auth/Auth';
 import { Page } from '../Page';
 import { AccountPassiveList } from './AccountPassiveList';
 
 export const AccountPassivePage = () => {
+  const { getAccessToken } = useAuth();
   const [passives, setPassives] = useState<AccountPassiveData[] | null>(null);
   const [passivesLoading, setPassivesLoading] = useState(true);
 
@@ -67,7 +68,7 @@ export const AccountPassivePage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [getAccessToken]);
 
   useEffect(() => {
     let passiveFilter = passives;

@@ -3,20 +3,21 @@ import { css, jsx } from '@emotion/react';
 import React, { FC, useEffect, useState } from 'react';
 import { AccountPassiveData, MaterialCosts } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import { Form, Values } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Passive } from './Passive';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountPassiveData;
 }
 
 export const AccountPassive: FC<Props> = ({ data }) => {
-  const { passiveId: passiveId, passive } = data;
+  const { getAccessToken } = useAuth();
+  const { passiveId, passive } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
   const [costsLoading, setCostsLoading] = useState(true);
@@ -40,7 +41,7 @@ export const AccountPassive: FC<Props> = ({ data }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, passiveId, costUpdate]);
+  }, [costsRequested, passiveId, costUpdate, getAccessToken]);
 
   const handleSubmit = async (values: Values) => {
     const token = await getAccessToken();

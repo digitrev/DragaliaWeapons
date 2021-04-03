@@ -17,12 +17,13 @@ import {
   pageRangeDisplayed,
   marginPagesDisplayed,
 } from '../../AppSettings';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AccountAdventurerList } from './AccountAdventurerList';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 export const AccountAdventurerPage = () => {
+  const { getAccessToken } = useAuth();
   const [adventurers, setAdventurers] = useState<
     AccountAdventurerData[] | null
   >(null);
@@ -70,7 +71,7 @@ export const AccountAdventurerPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [getAccessToken]);
 
   useEffect(() => {
     let adventurerFilter = adventurers;

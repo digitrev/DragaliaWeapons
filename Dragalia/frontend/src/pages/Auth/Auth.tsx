@@ -20,6 +20,7 @@ interface IAuth0Context {
   signIn: () => void;
   signOut: () => void;
   loading: boolean;
+  getAccessToken: () => any;
 }
 
 export const Auth0Context = createContext<IAuth0Context>({
@@ -27,6 +28,7 @@ export const Auth0Context = createContext<IAuth0Context>({
   signIn: () => {},
   signOut: () => {},
   loading: true,
+  getAccessToken: () => {},
 });
 
 export const useAuth = () => useContext(Auth0Context);
@@ -55,7 +57,7 @@ export const AuthProvider: FC = ({ children }) => {
         window.location.search.indexOf('code=') > -1
       ) {
         await auth0FromHook.handleRedirectCallback();
-        const token = await getAccessToken();
+        const token = await auth0FromHook.getTokenSilently();
         const api = new PrivateApi(token);
         await api.putAccount();
         window.location.replace(window.location.origin);
@@ -84,6 +86,7 @@ export const AuthProvider: FC = ({ children }) => {
             returnTo: window.location.origin + '/signout-callback',
           }),
         loading,
+        getAccessToken: () => getAuth0ClientFromState().getTokenSilently(),
       }}
     >
       {children}
@@ -91,8 +94,8 @@ export const AuthProvider: FC = ({ children }) => {
   );
 };
 
-export const getAccessToken = async () => {
-  const auth0FromHook = await createAuth0Client(authSettings);
-  const accessToken = await auth0FromHook.getTokenSilently();
-  return accessToken;
-};
+// export const getAccessToken = async () => {
+//   const auth0FromHook = await createAuth0Client(authSettings);
+//   const accessToken = await auth0FromHook.getTokenSilently();
+//   return accessToken;
+// };

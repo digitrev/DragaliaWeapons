@@ -6,7 +6,7 @@ import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
 import { AccountWyrmprintData, WyrmprintLimit } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AccountWyrmprintList } from './AccountWyrmprintList';
 import ReactPaginate from 'react-paginate';
@@ -15,13 +15,14 @@ import {
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 export interface Rarity {
   rarity: number;
 }
 
 export const AccountWyrmprintPage = () => {
+  const { getAccessToken } = useAuth();
   const [wyrmprints, setWyrmprints] = useState<AccountWyrmprintData[] | null>(
     null,
   );
@@ -70,7 +71,7 @@ export const AccountWyrmprintPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [getAccessToken]);
 
   useEffect(() => {
     let wyrmprintFilter = wyrmprints;

@@ -7,7 +7,6 @@ import {
 } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
 import { AccountPassiveGroup } from './AccountPassiveGroup';
-import { PassiveGroup } from './PassiveGroup';
 
 interface Props {
   data: AccountPassiveData[];

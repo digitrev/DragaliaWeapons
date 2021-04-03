@@ -12,7 +12,7 @@ import {
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AccountWeaponList } from './AccountWeaponList';
 import ReactPaginate from 'react-paginate';
@@ -21,9 +21,10 @@ import {
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 export const AccountWeaponPage = () => {
+  const { getAccessToken } = useAuth();
   const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
   const [weaponsLoading, setWeaponsLoading] = useState(true);
   const [displayWeapons, setDisplayWeapons] = useState<
@@ -78,7 +79,7 @@ export const AccountWeaponPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [getAccessToken]);
 
   useEffect(() => {
     let weaponFilter = weapons;

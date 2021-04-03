@@ -15,11 +15,7 @@ import {
 export class PrivateApi extends HttpClient {
   public constructor(token: string) {
     super(webAPIUrl);
-    if (token) {
-      this.instance.defaults.headers.common[
-        'Authorization'
-      ] = `Bearer ${token}`;
-    }
+    this.instance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   }
 
   //adventurers

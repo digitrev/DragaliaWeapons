@@ -3,19 +3,20 @@ import { css, jsx } from '@emotion/react';
 import React, { FC, useEffect, useState } from 'react';
 import { AccountDragonData, MaterialCosts } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import { Form, isInteger, nonNegative, required, Values } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Dragon } from './Dragon';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountDragonData;
 }
 
 export const AccountDragon: FC<Props> = ({ data }) => {
+  const { getAccessToken } = useAuth();
   const { dragonId, dragon } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
@@ -40,7 +41,7 @@ export const AccountDragon: FC<Props> = ({ data }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, dragonId, costUpdate]);
+  }, [costsRequested, dragonId, costUpdate, getAccessToken]);
 
   const handleSubmit = async (values: Values) => {
     const token = await getAccessToken();

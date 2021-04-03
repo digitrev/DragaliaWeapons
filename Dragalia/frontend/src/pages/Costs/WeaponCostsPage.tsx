@@ -3,12 +3,13 @@ import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { MaterialCosts } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { LoadingText } from '../../Loading';
-import { getAccessToken } from '../Auth/Auth';
+import { LoadingText } from '../Loading';
+import { useAuth } from '../Auth/Auth';
 import { Page } from '../Page';
 import { Costs } from './Costs';
 
 export const WeaponCostsPage = () => {
+  const { getAccessToken } = useAuth();
   const [weaponCosts, setWeaponCosts] = useState<MaterialCosts[]>([]);
   const [costsLoading, setCostsLoading] = useState(true);
 
@@ -27,7 +28,7 @@ export const WeaponCostsPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [getAccessToken]);
 
   return (
     <Page title="Weapon Costs">

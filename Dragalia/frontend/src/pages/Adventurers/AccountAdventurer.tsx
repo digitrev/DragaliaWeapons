@@ -3,7 +3,7 @@ import { css, jsx } from '@emotion/react';
 import React, { FC, useEffect, useState } from 'react';
 import { AccountAdventurerData, MaterialCosts } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import {
@@ -16,13 +16,14 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Adventurer } from './Adventurer';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountAdventurerData;
 }
 
 export const AccountAdventurer: FC<Props> = ({ data }) => {
+  const { getAccessToken } = useAuth();
   const { adventurerId, adventurer } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
@@ -47,7 +48,7 @@ export const AccountAdventurer: FC<Props> = ({ data }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, adventurerId, costUpdate]);
+  }, [costsRequested, adventurerId, costUpdate, getAccessToken]);
 
   const handleSubmit = async (values: Values) => {
     const token = await getAccessToken();

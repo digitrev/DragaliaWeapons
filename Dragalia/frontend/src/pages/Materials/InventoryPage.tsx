@@ -3,12 +3,13 @@ import { css, jsx } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { AccountInventoryData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { LoadingText } from '../../Loading';
-import { getAccessToken } from '../Auth/Auth';
+import { LoadingText } from '../Loading';
+import { useAuth } from '../Auth/Auth';
 import { Page } from '../Page';
 import { InventoryList } from './InventoryList';
 
 export const InventoryPage = () => {
+  const { getAccessToken } = useAuth();
   const [inventory, setInventory] = useState<AccountInventoryData[] | null>(
     null,
   );
@@ -29,7 +30,7 @@ export const InventoryPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [getAccessToken]);
 
   return (
     <Page title="Your Inventory">

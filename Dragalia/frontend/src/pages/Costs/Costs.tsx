@@ -12,7 +12,7 @@ import { materialComparator, needed } from '../../api/HelperFunctions';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';
 import { PrimaryButton } from '../../Styles';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 import { Breakdown } from './CostTables/Breakdown';
 import { Farming } from './CostTables/Farming';
 import { Summary } from './CostTables/Summary';
@@ -34,6 +34,7 @@ export interface FarmingTable {
 type DisplayType = 'Summary' | 'Breakdown' | 'Farming';
 
 export const Costs: FC<Props> = ({ data }) => {
+  const { getAccessToken } = useAuth();
   const [summaryData, setSummaryData] = useState<SummaryTable[]>([]);
   const [farmingData, setFarmingData] = useState<FarmingTable[]>([]);
   const [displayType, setDisplayType] = useState<DisplayType>('Summary');
@@ -81,7 +82,7 @@ export const Costs: FC<Props> = ({ data }) => {
     doGetItems();
     doGetQuests();
     setSummaryData(sumByMaterial(data));
-  }, [data]);
+  }, [data, getAccessToken]);
 
   useEffect(() => {
     const sumByQuest = (

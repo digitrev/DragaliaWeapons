@@ -7,7 +7,7 @@ import {
   WyrmprintLimit,
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
-import { LoadingText } from '../../Loading';
+import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
 import {
@@ -20,7 +20,7 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Wyrmprint } from './Wyrmprint';
-import { getAccessToken } from '../Auth/Auth';
+import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountWyrmprintData;
@@ -28,6 +28,7 @@ interface Props {
 }
 
 export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
+  const { getAccessToken } = useAuth();
   const { wyrmprintId, wyrmprint } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
@@ -52,7 +53,7 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, wyrmprintId, costUpdate]);
+  }, [costsRequested, wyrmprintId, costUpdate, getAccessToken]);
 
   const handleSubmit = async (values: Values) => {
     const token = await getAccessToken();

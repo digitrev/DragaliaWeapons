@@ -18,7 +18,6 @@ import { WeaponCostsPage } from './pages/Costs/WeaponCostsPage';
 import { WyrmprintCostsPage } from './pages/Costs/WyrmprintCostPage';
 import { AccountDragonPage } from './pages/Dragons/AccountDragonPage';
 import { DragonPage } from './pages/Dragons/DragonPage';
-import { Example } from './pages/Example';
 import { AccountFacilityPage } from './pages/Facilities/AccountFacilityPage';
 import { FacilityPage } from './pages/Facilities/FacilityPage';
 import { Header } from './pages/Header';
@@ -134,11 +133,6 @@ const App: React.FC = () => {
             <Route path="/costs/totals">
               <AuthorizedPage>
                 <TotalCostsPage />
-              </AuthorizedPage>
-            </Route>
-            <Route path="/example">
-              <AuthorizedPage>
-                <Example />
               </AuthorizedPage>
             </Route>
 
