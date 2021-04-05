@@ -8,11 +8,12 @@ namespace DragaliaApi.Models
 {
     public partial class WyrmprintLevel
     {
-        public int Rarity { get; set; }
+        public int WyrmprintId { get; set; }
         public int WyrmprintLevel1 { get; set; }
         public string MaterialId { get; set; }
         public int Quantity { get; set; }
 
         public virtual Material Material { get; set; }
+        public virtual Wyrmprint Wyrmprint { get; set; }
     }
 }
