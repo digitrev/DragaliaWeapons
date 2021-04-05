@@ -1297,4 +1297,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="UnbindWanted" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="f5e04be7-dc33-4e64-a9dd-b88f543c17c1" ChangeDateTime="04/05/2021 22:35:43">
+    <Property Name="ElementName" Value="[core].[WyrmprintLevel].[Rarity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[WyrmprintLevel]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WyrmprintID" />
+  </Operation>
 </Operations>

@@ -113,7 +113,8 @@ namespace DragaliaApi.Data
             {
                 entity.ToTable("Account");
 
-                entity.HasIndex(e => e.AuthId, "IX_Account_AuthID");
+                entity.HasIndex(e => e.AuthId, "AK_Account_AuthID")
+                    .IsUnique();
 
                 entity.Property(e => e.AccountId).HasColumnName("AccountID");
 
@@ -859,9 +860,11 @@ namespace DragaliaApi.Data
 
             modelBuilder.Entity<WyrmprintLevel>(entity =>
             {
-                entity.HasKey(e => new { e.Rarity, e.WyrmprintLevel1, e.MaterialId });
+                entity.HasKey(e => new { e.WyrmprintId, e.WyrmprintLevel1, e.MaterialId });
 
                 entity.ToTable("WyrmprintLevel", "core");
+
+                entity.Property(e => e.WyrmprintId).HasColumnName("WyrmprintID");
 
                 entity.Property(e => e.WyrmprintLevel1).HasColumnName("WyrmprintLevel");
 
@@ -873,6 +876,11 @@ namespace DragaliaApi.Data
                     .WithMany(p => p.WyrmprintLevels)
                     .HasForeignKey(d => d.MaterialId)
                     .HasConstraintName("FK_WyrmprintLevel_Material");
+
+                entity.HasOne(d => d.Wyrmprint)
+                    .WithMany(p => p.WyrmprintLevels)
+                    .HasForeignKey(d => d.WyrmprintId)
+                    .HasConstraintName("FK_WyrmprintLevel_Wyrmprint");
             });
 
             modelBuilder.Entity<WyrmprintLevelLimit>(entity =>

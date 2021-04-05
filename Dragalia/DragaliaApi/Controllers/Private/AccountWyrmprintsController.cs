@@ -188,10 +188,11 @@ namespace DragaliaApi.Controllers.Private
                 materialCosts.AddRange(await _context.AccountWyrmprints
                     .Where(aw => aw.AccountId == accountID
                                  && (wyrmprintID == null || aw.WyrmprintId == wyrmprintID))
-                    .Join(_context.WyrmprintLevels.Include(wl => wl.Material),
-                        aw => aw.Wyrmprint.RarityGroup,
-                        wl => wl.Rarity,
-                        (aw, wl) => new { aw, wl })
+                    .Include(aw => aw.Wyrmprint)
+                    .ThenInclude(w => w.WyrmprintLevels)
+                    .ThenInclude(wl => wl.Material)
+                    .SelectMany(aw => aw.Wyrmprint.WyrmprintLevels, 
+                        (aw, wl) => new {aw, wl})
                     .OrderByDescending(x => x.aw.Wyrmprint.Rarity)
                     .ThenBy(x => x.wl.WyrmprintLevel1)
                     .ThenBy(x => x.wl.Material.SortPath)

@@ -171,11 +171,14 @@
     <RefactorLog Include="DragaliaDB.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DragaliaDB.publish.xml" />
+    <None Include="development.publish.xml" />
     <None Include="production.publish.xml" />
     <None Include="staging.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\Script.PreDeployment.sql" />
   </ItemGroup>
 </Project>

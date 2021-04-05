@@ -1041,6 +1041,7 @@ BEGIN
 		,w.AbilityID23
 		,w.AffinityID
 		,w.GroupID
+		,w.UniqueMaterialID
 	INTO #Wyrmprint
 	FROM jsn.TableJson AS wj
 	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
@@ -1057,6 +1058,7 @@ BEGIN
 			,AbilityID23 INT '$.title.Abilities23'
 			,AffinityID INT '$.title.UnionAbilityGroupId'
 			,GroupID INT '$.title.AbilityCrestBuildupGroupId'
+			,UniqueMaterialID NVARCHAR(50) '$.title.UniqueBuildupMaterialId'
 			) AS w
 	WHERE wj.TableName = 'Wyrmprint'
 
@@ -1170,6 +1172,10 @@ BEGIN
 		,wu.Quantity1
 		,wu.MaterialID2
 		,wu.Quantity2
+		,wu.MaterialID3
+		,wu.Quantity3
+		,w.UniqueMaterialID
+		,wu.UniqueQuantity
 	INTO #WyrmprintUpgrade
 	FROM jsn.TableJson AS wuj
 	CROSS APPLY OPENJSON(wuj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
@@ -1183,6 +1189,9 @@ BEGIN
 			,Quantity1 INT '$.title.BuildupMaterialQuantity1'
 			,MaterialID2 NVARCHAR(50) '$.title.BuildupMaterialId2'
 			,Quantity2 INT '$.title.BuildupMaterialQuantity2'
+			,MaterialID3 NVARCHAR(50) '$.title.BuildupMaterialId3'
+			,Quantity3 INT '$.title.BuildupMaterialQuantity3'
+			,UniqueQuantity INT '$.title.UniqueBuildupMaterialCount'
 			) AS wu
 	INNER JOIN #Wyrmprint AS w ON w.GroupID = wu.GroupID
 	WHERE wuj.TableName = 'WyrmprintUpgrade'
@@ -1223,19 +1232,42 @@ BEGIN
 		SELECT WyrmprintID
 			,UpgradeTypeID
 			,Step
+			,MaterialID3
+			,Quantity3
+		FROM #WyrmprintUpgrade
+		
+		UNION
+		
+		SELECT WyrmprintID
+			,UpgradeTypeID
+			,Step
+			,UniqueMaterialID
+			,UniqueQuantity
+		FROM #WyrmprintUpgrade
+		
+		UNION
+		
+		SELECT WyrmprintID
+			,UpgradeTypeID
+			,Step
 			,'Eldwater'
 			,Eldwater
 		FROM #WyrmprintUpgrade
 		) AS wu
 	INNER JOIN core.Material AS m ON m.MaterialID = wu.MaterialID
+	WHERE wu.Quantity > 0
 
 	--WyrmprintLevel
-	SELECT wl.Rarity
+	SELECT w.WyrmprintID
 		,wl.WyrmprintLevel
 		,wl.MaterialID1
 		,wl.Quantity1
 		,wl.MaterialID2
 		,wl.Quantity2
+		,wl.MaterialID3
+		,wl.Quantity3
+		,w.UniqueMaterialID
+		,wl.UniqueQuantity
 	INTO #WyrmprintLevel
 	FROM jsn.TableJson AS wlj
 	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
@@ -1246,23 +1278,27 @@ BEGIN
 			,Quantity1 INT '$.title.BuildupMaterialQuantity1'
 			,MaterialID2 NVARCHAR(50) '$.title.BuildupMaterialId2'
 			,Quantity2 INT '$.title.BuildupMaterialQuantity2'
+			,MaterialID3 NVARCHAR(50) '$.title.BuildupMaterialId3'
+			,Quantity3 INT '$.title.BuildupMaterialQuantity3'
+			,UniqueQuantity NVARCHAR(50) '$.title.UniqueBuildupMaterialCount'
 			) AS wl
+	INNER JOIN #Wyrmprint AS w ON w.RarityGroup = wl.Rarity
 	WHERE wlj.TableName = 'WyrmprintLevel'
 
 	TRUNCATE TABLE core.WyrmprintLevel
 
 	INSERT core.WyrmprintLevel (
-		Rarity
+		WyrmprintID
 		,WyrmprintLevel
 		,MaterialID
 		,Quantity
 		)
-	SELECT wl.Rarity
+	SELECT wl.WyrmprintID
 		,wl.WyrmprintLevel
 		,wl.MaterialID
 		,wl.Quantity
 	FROM (
-		SELECT Rarity
+		SELECT WyrmprintID
 			,WyrmprintLevel
 			,MaterialID1 AS MaterialID
 			,Quantity1 AS Quantity
@@ -1270,13 +1306,30 @@ BEGIN
 		
 		UNION
 		
-		SELECT Rarity
+		SELECT WyrmprintID
 			,WyrmprintLevel
 			,MaterialID2
 			,Quantity2
 		FROM #WyrmprintLevel
+		
+		UNION
+		
+		SELECT WyrmprintID
+			,WyrmprintLevel
+			,MaterialID3
+			,Quantity3
+		FROM #WyrmprintLevel
+		
+		UNION
+		
+		SELECT WyrmprintID
+			,WyrmprintLevel
+			,UniqueMaterialID
+			,UniqueQuantity
+		FROM #WyrmprintLevel
 		) AS wl
 	INNER JOIN core.Material AS m ON m.MaterialID = wl.MaterialID
+	WHERE wl.Quantity > 0
 
 	--WyrmprintLevelLimit
 	SELECT wl.WyrmprintRarity
