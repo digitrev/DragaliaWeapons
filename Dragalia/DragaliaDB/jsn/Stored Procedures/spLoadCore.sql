@@ -686,7 +686,7 @@ BEGIN
 		FROM #WeaponUpgrade
 		) AS wu
 	INNER JOIN core.Material AS m ON m.MaterialID = wu.MaterialID
-	where wu.Quantity > 0
+	WHERE wu.Quantity > 0
 
 	--Passive data
 	SELECT p.PassiveID
@@ -848,7 +848,7 @@ BEGIN
 		FROM #Passive
 		) AS pc
 	INNER JOIN core.Material AS m ON m.MaterialID = pc.MaterialID
-	where pc.Quantity > 0
+	WHERE pc.Quantity > 0
 
 	--Weapon leveling
 	SELECT wl.Rarity
@@ -910,7 +910,7 @@ BEGIN
 		FROM #WeaponLevel
 		) AS l
 	INNER JOIN core.Material AS m ON m.MaterialID = l.MaterialID
-	where l.Quantity > 0
+	WHERE l.Quantity > 0
 
 	--Facilities
 	MERGE core.Facility AS trg
@@ -1069,7 +1069,7 @@ BEGIN
 	MERGE core.Wyrmprint AS trg
 	USING (
 		SELECT DISTINCT WyrmprintID
-			,Wyrmprint
+			,REPLACE(Wyrmprint, '&amp;', '&') AS Wyrmprint
 			,Rarity
 			,RarityGroup
 			,NULLIF(AffinityID, 0) AS AffinityID
@@ -1730,7 +1730,7 @@ BEGIN
 	FROM core.Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
-	where mc.ManaCost > 0
+	WHERE mc.ManaCost > 0
 	
 	UNION ALL
 	
@@ -1744,7 +1744,7 @@ BEGIN
 	INNER JOIN #ManaPieceEldwater AS mpe ON mpe.MCID = mc.MCID
 		AND mpe.ManaPieceType = mc.ManaPieceType
 		AND mpe.Stage = mc.Stage
-	where mpe.Eldwater > 0
+	WHERE mpe.Eldwater > 0
 	
 	UNION ALL
 	
@@ -2185,7 +2185,7 @@ BEGIN
 	MERGE core.Dragon AS trg
 	USING (
 		SELECT d.DragonID
-			,d.Dragon
+			,REPLACE(d.Dragon, '&amp;', '&') AS Dragon
 			,d.ElementID
 			,d.Rarity
 		FROM jsn.TableJson AS dj
