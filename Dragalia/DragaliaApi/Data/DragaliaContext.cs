@@ -33,7 +33,7 @@ namespace DragaliaApi.Data
         public virtual DbSet<Affinity> Affinities { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Dragon> Dragons { get; set; }
-        public virtual DbSet<DragonEssence> DragonEssences { get; set; }
+        public virtual DbSet<DragonUnbind> DragonUnbinds { get; set; }
         public virtual DbSet<Element> Elements { get; set; }
         public virtual DbSet<Facility> Facilities { get; set; }
         public virtual DbSet<FacilityUpgrade> FacilityUpgrades { get; set; }
@@ -391,11 +391,12 @@ namespace DragaliaApi.Data
                     .HasConstraintName("FK_Dragon_Element");
             });
 
-            modelBuilder.Entity<DragonEssence>(entity =>
+            modelBuilder.Entity<DragonUnbind>(entity =>
             {
-                entity.HasKey(e => new { e.DragonId, e.MaterialId });
+                entity.HasKey(e => new { e.DragonId, e.MaterialId })
+                    .HasName("PK_DragonEssence");
 
-                entity.ToTable("DragonEssence", "core");
+                entity.ToTable("DragonUnbind", "core");
 
                 entity.Property(e => e.DragonId).HasColumnName("DragonID");
 
@@ -406,13 +407,13 @@ namespace DragaliaApi.Data
                 entity.Property(e => e.Quantity).HasDefaultValueSql("50");
 
                 entity.HasOne(d => d.Dragon)
-                    .WithMany(p => p.DragonEssences)
+                    .WithMany(p => p.DragonUnbinds)
                     .HasForeignKey(d => d.DragonId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_DragonEssence_Dragon");
 
                 entity.HasOne(d => d.Material)
-                    .WithMany(p => p.DragonEssences)
+                    .WithMany(p => p.DragonUnbinds)
                     .HasForeignKey(d => d.MaterialId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_DragonEssence_Material");
