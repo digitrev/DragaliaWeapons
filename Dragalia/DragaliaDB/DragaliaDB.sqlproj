@@ -166,6 +166,11 @@
     <Build Include="dbo\Stored Procedures\spFillAdventurer.sql" />
     <Build Include="dbo\Stored Procedures\spFillWyrmprint.sql" />
     <Build Include="dbo\Stored Procedures\spFillDragon.sql" />
+    <Build Include="den\Tables\DragonTrialCosts.sql" />
+    <Build Include="den\Tables\DragonTrialMats.sql" />
+    <Build Include="den\Tables\DragonVoidCosts.sql" />
+    <Build Include="den\Tables\DragonAdvancedCosts.sql" />
+    <Build Include="den\Tables\DragonAdvancedMats.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
