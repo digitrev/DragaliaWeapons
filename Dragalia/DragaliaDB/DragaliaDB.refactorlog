@@ -1304,4 +1304,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="WyrmprintID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="04580b6c-c2ef-41ff-95b0-b6a82a3436a7" ChangeDateTime="04/06/2021 00:22:15">
+    <Property Name="ElementName" Value="[core].[DragonEssence]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[core]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[DragonUnbind]" />
+  </Operation>
 </Operations>
