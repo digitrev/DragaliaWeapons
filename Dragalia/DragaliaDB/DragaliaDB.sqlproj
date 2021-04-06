@@ -161,11 +161,16 @@
     <Build Include="dbo\Tables\AccountAdventurer.sql" />
     <Build Include="core\Tables\ManaCircle.sql" />
     <Build Include="core\Tables\Dragon.sql" />
-    <Build Include="core\Tables\DragonEssence.sql" />
+    <Build Include="core\Tables\DragonUnbind.sql" />
     <Build Include="dbo\Tables\AccountDragon.sql" />
     <Build Include="dbo\Stored Procedures\spFillAdventurer.sql" />
     <Build Include="dbo\Stored Procedures\spFillWyrmprint.sql" />
     <Build Include="dbo\Stored Procedures\spFillDragon.sql" />
+    <Build Include="den\Tables\DragonTrialCosts.sql" />
+    <Build Include="den\Tables\DragonTrialMats.sql" />
+    <Build Include="den\Tables\DragonVoidCosts.sql" />
+    <Build Include="den\Tables\DragonAdvancedCosts.sql" />
+    <Build Include="den\Tables\DragonAdvancedMats.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

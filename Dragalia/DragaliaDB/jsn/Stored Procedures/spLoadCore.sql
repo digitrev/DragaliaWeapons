@@ -2225,9 +2225,9 @@ BEGIN
 				,src.ElementID
 				);
 
-	TRUNCATE TABLE core.DragonEssence
+	TRUNCATE TABLE core.[DragonUnbind]
 
-	INSERT core.DragonEssence (
+	INSERT core.[DragonUnbind] (
 		DragonID
 		,MaterialID
 		)

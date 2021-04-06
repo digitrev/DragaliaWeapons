@@ -1304,4 +1304,111 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="WyrmprintID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="04580b6c-c2ef-41ff-95b0-b6a82a3436a7" ChangeDateTime="04/06/2021 00:22:15">
+    <Property Name="ElementName" Value="[core].[DragonEssence]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[core]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[DragonUnbind]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3a417672-3a44-48de-bed8-9edba2ce294a" ChangeDateTime="04/06/2021 00:33:40">
+    <Property Name="ElementName" Value="[dbo].[DragonTrade]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="898e238d-dffb-4f97-997e-c4428ee16d91" ChangeDateTime="04/06/2021 00:34:17">
+    <Property Name="ElementName" Value="[den].[DragonTrade].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[DragonTrade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Dragon" />
+  </Operation>
+  <Operation Name="Move Schema" Key="ee38d3f1-0f92-4b29-9db4-2386d19b1621" ChangeDateTime="04/06/2021 00:36:06">
+    <Property Name="ElementName" Value="[dbo].[DragonTrialMats]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b2153d92-56f2-4c52-ab80-7fb82c1483d6" ChangeDateTime="04/06/2021 00:36:10">
+    <Property Name="ElementName" Value="[den].[DragonTrialMats].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[DragonTrialMats]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Dragon" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5989d28c-382f-432e-a924-5f305c91b867" ChangeDateTime="04/06/2021 00:36:47">
+    <Property Name="ElementName" Value="[den].[DragonTrialMats].[Sphere]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[DragonTrialMats]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SphereMat" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b401ee45-5765-474d-ab1a-084f48dc429d" ChangeDateTime="04/06/2021 00:36:48">
+    <Property Name="ElementName" Value="[den].[DragonTrialMats].[Scale]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[DragonTrialMats]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ScaleMat" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="af6aa0ad-593e-4959-a006-b71a8ad463d2" ChangeDateTime="04/06/2021 00:36:55">
+    <Property Name="ElementName" Value="[den].[DragonTrade].[SphereCost]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[DragonTrade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Sphere" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f4f4fff-15ae-4aca-8d26-a6e4790ca0ba" ChangeDateTime="04/06/2021 00:37:02">
+    <Property Name="ElementName" Value="[den].[DragonTrade].[ScaleCost]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[DragonTrade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Scale" />
+  </Operation>
+  <Operation Name="Move Schema" Key="ea7c9270-33cd-442a-8bf4-44d475b32cd3" ChangeDateTime="04/06/2021 00:38:03">
+    <Property Name="ElementName" Value="[dbo].[DragonVoidCosts]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bb96ab27-051c-4fca-8ffc-faa22557fd7b" ChangeDateTime="04/06/2021 00:38:08">
+    <Property Name="ElementName" Value="[den].[DragonVoidCosts].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[DragonVoidCosts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Dragon" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0338ce7d-e837-4581-ae84-20ae4be5543c" ChangeDateTime="04/06/2021 00:38:43">
+    <Property Name="ElementName" Value="[dbo].[DragonAdvancedCosts]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7b3ac60d-7a8f-4e76-bbac-32b741cd365c" ChangeDateTime="04/06/2021 00:38:46">
+    <Property Name="ElementName" Value="[den].[DragonAdvancedCosts].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[DragonAdvancedCosts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Dragon" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9fac027a-5ec4-4d53-9780-55de520bdf09" ChangeDateTime="04/06/2021 00:39:23">
+    <Property Name="ElementName" Value="[dbo].[DragonAdvancedMats].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DragonAdvancedMats]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Dragon" />
+  </Operation>
+  <Operation Name="Move Schema" Key="4876c5d9-17c1-4dbe-b345-984e217b04fd" ChangeDateTime="04/06/2021 00:41:00">
+    <Property Name="ElementName" Value="[dbo].[DragonAdvancedMats]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="44eeaf54-2499-49e9-8748-758e2a22712a" ChangeDateTime="04/06/2021 00:44:36">
+    <Property Name="ElementName" Value="[den].[DragonTrade]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[DragonTrialCosts]" />
+  </Operation>
 </Operations>

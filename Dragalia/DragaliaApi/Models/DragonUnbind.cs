@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace DragaliaApi.Models
 {
-    public partial class DragonEssence
+    public partial class DragonUnbind
     {
         public int DragonId { get; set; }
         public string MaterialId { get; set; }
