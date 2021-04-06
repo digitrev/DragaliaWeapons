@@ -1398,4 +1398,17 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Dragon" />
   </Operation>
+  <Operation Name="Move Schema" Key="4876c5d9-17c1-4dbe-b345-984e217b04fd" ChangeDateTime="04/06/2021 00:41:00">
+    <Property Name="ElementName" Value="[dbo].[DragonAdvancedMats]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="44eeaf54-2499-49e9-8748-758e2a22712a" ChangeDateTime="04/06/2021 00:44:36">
+    <Property Name="ElementName" Value="[den].[DragonTrade]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[DragonTrialCosts]" />
+  </Operation>
 </Operations>
