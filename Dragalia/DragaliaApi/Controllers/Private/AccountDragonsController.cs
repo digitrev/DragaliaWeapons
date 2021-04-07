@@ -150,9 +150,9 @@ namespace DragaliaApi.Controllers.Private
                     .Include(ad => ad.Dragon)
                     .ThenInclude(d => d.Element)
                     .Include(ad => ad.Dragon)
-                    .ThenInclude(d => d.DragonEssences)
-                    .ThenInclude(de => de.Material)
-                    .SelectMany(ad => ad.Dragon.DragonEssences,
+                    .ThenInclude(d => d.DragonUnbinds)
+                    .ThenInclude(du => du.Material)
+                    .SelectMany(ad => ad.Dragon.DragonUnbinds,
                         (accountDragon, dragonEssence) => new { accountDragon, dragonEssence })
                     .Where(x => x.accountDragon.UnbindWanted > x.accountDragon.Unbind)
                     .OrderByDescending(x => x.accountDragon.Dragon.Rarity)

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[DragonEssence] (
+﻿CREATE TABLE [core].[DragonUnbind] (
 	[DragonID] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
 	,[Quantity] INT NOT NULL CONSTRAINT [DF_DragonEssence_Quantity] DEFAULT(50)

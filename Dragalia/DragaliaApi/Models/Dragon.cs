@@ -11,7 +11,7 @@ namespace DragaliaApi.Models
         public Dragon()
         {
             AccountDragons = new HashSet<AccountDragon>();
-            DragonEssences = new HashSet<DragonEssence>();
+            DragonUnbinds = new HashSet<DragonUnbind>();
         }
 
         public int DragonId { get; set; }
@@ -22,6 +22,6 @@ namespace DragaliaApi.Models
 
         public virtual Element Element { get; set; }
         public virtual ICollection<AccountDragon> AccountDragons { get; set; }
-        public virtual ICollection<DragonEssence> DragonEssences { get; set; }
+        public virtual ICollection<DragonUnbind> DragonUnbinds { get; set; }
     }
 }

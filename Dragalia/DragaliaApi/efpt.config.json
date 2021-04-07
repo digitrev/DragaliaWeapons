@@ -8,6 +8,7 @@
    "ModelNamespace": null,
    "OutputContextPath": "Data",
    "OutputPath": "Models",
+   "ProceduresReturnList": false,
    "ProjectRootNamespace": "DragaliaApi",
    "Schemas": null,
    "SelectedHandlebarsLanguage": 0,
@@ -38,7 +39,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[core].[DragonEssence]",
+         "Name": "[core].[DragonUnbind]",
          "ObjectType": 0
       },
       {
@@ -176,6 +177,7 @@
    "UseLegacyPluralizer": false,
    "UseNoConstructor": false,
    "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
    "UseNodaTime": false,
    "UseNullableReferences": false,
    "UseSpatial": false

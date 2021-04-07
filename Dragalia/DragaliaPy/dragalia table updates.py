@@ -1,11 +1,26 @@
 import requests
 import pyodbc
 import getpass
+import sys
 
 #DB parameters
-your_password_here=getpass.getpass("Password for DB: ")
-DBName="DragaliaStaging"
-connectionString = f"Driver={{ODBC Driver 17 for SQL Server}};Server=tcp:dragaliadbdbserver.database.windows.net,1433;Database={DBName};Uid=TrevorB;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+print("0: Development")
+print("1: Staging")
+print("2: Production")
+env=input("Enter environment number: ")
+if (env=="0"):
+    DBName="DragaliaV2"
+    serverName = "TREVOR2020"
+    connectionString=f"Driver={{SQL Server}};Server={serverName};Database={DBName};Trusted_Connection=yes;"
+else: 
+    if (env=="1"):
+        DBName="DragaliaStaging"
+    elif (env=="2"):
+        DBName="DragaliaDB"
+    else:
+        sys.exit("Invalid selection")
+    your_password_here=getpass.getpass(f"Password for {DBName}: ")
+    connectionString = f"Driver={{ODBC Driver 17 for SQL Server}};Server=tcp:dragaliadbdbserver.database.windows.net,1433;Database={DBName};Uid=TrevorB;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 #array of useful data?
 parameterDict = dict()
@@ -25,9 +40,9 @@ parameterDict["Weapon"]={"tables":"Weapons","where":"Obtain LIKE '%Crafting%'","
 parameterDict["WeaponLevel"]={"tables":"WeaponBodyBuildupLevel","fields":"Id,RarityGroup,Level,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2,BuildupMaterialId3,BuildupMaterialQuantity3"}
 parameterDict["WeaponUpgrade"]={"tables":"WeaponBodyBuildupGroup","fields":"WeaponBodyBuildupGroupId,BuildupPieceTypeId,BuildupPieceType,Step,BuildupCoin,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2,BuildupMaterialId3,BuildupMaterialQuantity3,BuildupMaterialId4,BuildupMaterialQuantity4,BuildupMaterialId5,BuildupMaterialQuantity5,BuildupMaterialId6,BuildupMaterialQuantity6,BuildupMaterialId7,BuildupMaterialQuantity7,BuildupMaterialId8,BuildupMaterialQuantity8,BuildupMaterialId9,BuildupMaterialQuantity9,BuildupMaterialId10,BuildupMaterialQuantity10"}
 parameterDict["WeaponLimit"]={"tables":"WeaponBodyRarity","fields":"Id,MaxLimitBreakCountByLimitOver0,MaxLimitBreakCountByLimitOver1,MaxLimitBreakCountByLimitOver2,MaxLimitLevelByLimitBreak0,MaxLimitLevelByLimitBreak1,MaxLimitLevelByLimitBreak2,MaxLimitLevelByLimitBreak3,MaxLimitLevelByLimitBreak4,MaxLimitLevelByLimitBreak5,MaxLimitLevelByLimitBreak6,MaxLimitLevelByLimitBreak7,MaxLimitLevelByLimitBreak8,MaxLimitLevelByLimitBreak9"}
-parameterDict["Wyrmprint"]={"tables":"Wyrmprints","fields":"Id,Name,Rarity,RarityGroup,Abilities11,Abilities12,Abilities13,Abilities21,Abilities22,Abilities23,UnionAbilityGroupId,AbilityCrestBuildupGroupId"}
-parameterDict["WyrmprintUpgrade"]={"tables":"WyrmprintBuildupGroup","fields":"Id,AbilityCrestBuildupGroupId,BuildupPieceTypeId,Step,BuildupDewPoint,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2"}
-parameterDict["WyrmprintLevel"]={"tables":"WyrmprintBuildupLevel","fields":"Id,RarityGroup,Level,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2"}
+parameterDict["Wyrmprint"]={"tables":"Wyrmprints","fields":"Id,Name,Rarity,RarityGroup,Abilities11,Abilities12,Abilities13,Abilities21,Abilities22,Abilities23,UnionAbilityGroupId,AbilityCrestBuildupGroupId,UniqueBuildupMaterialId"}
+parameterDict["WyrmprintUpgrade"]={"tables":"WyrmprintBuildupGroup","fields":"Id,AbilityCrestBuildupGroupId,BuildupPieceTypeId,Step,BuildupDewPoint,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2,BuildupMaterialId3,BuildupMaterialQuantity3,UniqueBuildupMaterialCount"}
+parameterDict["WyrmprintLevel"]={"tables":"WyrmprintBuildupLevel","fields":"Id,RarityGroup,Level,BuildupMaterialId1,BuildupMaterialQuantity1,BuildupMaterialId2,BuildupMaterialQuantity2,BuildupMaterialId3,BuildupMaterialQuantity3,UniqueBuildupMaterialCount"}
 parameterDict["WyrmprintLimit"]={"tables":"WyrmprintRarity","fields":"Id,MaxLimitLevelByLimitBreak0,MaxLimitLevelByLimitBreak1,MaxLimitLevelByLimitBreak2,MaxLimitLevelByLimitBreak3,MaxLimitLevelByLimitBreak4"}
 
 #Setting up request parameters
