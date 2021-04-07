@@ -15,7 +15,7 @@ if (env=="0"):
 else: 
     if (env=="1"):
         DBName="DragaliaStaging"
-    if (env=="2"):
+    elif (env=="2"):
         DBName="DragaliaDB"
     else:
         sys.exit("Invalid selection")
