@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React, { useState, useEffect, ChangeEvent, Fragment } from 'react';
+import { css } from '@emotion/react';
+import { useState, useEffect, ChangeEvent, Fragment } from 'react';
 import ReactPaginate from 'react-paginate';
 import { ActionMeta } from 'react-select';
 import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';

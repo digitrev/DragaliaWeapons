@@ -1,10 +1,4 @@
-import React, {
-  createContext,
-  FC,
-  useContext,
-  useEffect,
-  useState,
-} from 'react';
+import { createContext, FC, useContext, useEffect, useState } from 'react';
 import createAuth0Client, { Auth0Client, User } from '@auth0/auth0-spa-js';
 import { authSettings } from '../../AppSettings';
 import { PrivateApi } from '../../api/PrivateData';
@@ -93,9 +87,3 @@ export const AuthProvider: FC = ({ children }) => {
     </Auth0Context.Provider>
   );
 };
-
-// export const getAccessToken = async () => {
-//   const auth0FromHook = await createAuth0Client(authSettings);
-//   const accessToken = await auth0FromHook.getTokenSilently();
-//   return accessToken;
-// };

@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React, { FC } from 'react';
+import { css } from '@emotion/react';
+import { FC } from 'react';
 import { PassiveGroupData } from '../../api/DataInterfaces';
 import { gray5 } from '../../Styles';
 import { Passive } from './Passive';

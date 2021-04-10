@@ -1,6 +1,4 @@
-/** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AccountInventoryData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { LoadingText } from '../Loading';
