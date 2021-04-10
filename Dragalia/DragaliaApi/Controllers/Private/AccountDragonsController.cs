@@ -37,6 +37,9 @@ namespace DragaliaApi.Controllers.Private
                 return await _context.AccountDragons.Where(ad => ad.AccountId == accountID)
                                                     .Include(ad => ad.Dragon)
                                                     .ThenInclude(d => d.Element)
+                                                    .OrderBy(ad => ad.Dragon.Element.SortOrder)
+                                                    .ThenByDescending(ad => ad.Dragon.Rarity)
+                                                    .ThenByDescending(ad => ad.DragonId)
                                                     .Select(ad => _mapper.Map<AccountDragonDTO>(ad))
                                                     .ToListAsync();
             }

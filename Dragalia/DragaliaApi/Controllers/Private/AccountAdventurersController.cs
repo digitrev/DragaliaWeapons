@@ -42,6 +42,7 @@ namespace DragaliaApi.Controllers.Private
                                                         .OrderBy(aa => aa.Adventurer.Element.SortOrder)
                                                         .ThenBy(aa => aa.Adventurer.WeaponTypeId)
                                                         .ThenByDescending(aa => aa.Adventurer.Rarity)
+                                                        .ThenByDescending(aa => aa.AdventurerId)
                                                         .Select(aa => _mapper.Map<AccountAdventurerDTO>(aa))
                                                         .ToListAsync();
             }
