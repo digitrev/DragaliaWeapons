@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React, { ChangeEvent, Fragment, useEffect, useState } from 'react';
+import { css } from '@emotion/react';
+import { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import Select, { ActionMeta } from 'react-select';
 import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
 import { AccountWyrmprintData, WyrmprintLimit } from '../../api/DataInterfaces';

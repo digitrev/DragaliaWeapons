@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
+import { css } from '@emotion/react';
 import { FC } from 'react';
 import { AccountDragonData } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';

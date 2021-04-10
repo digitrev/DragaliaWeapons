@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React from 'react';
+import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
 import { UserIcon } from '../img/Icons';
 import { fontFamily, fontSize, gray1, gray2, gray5 } from '../Styles';

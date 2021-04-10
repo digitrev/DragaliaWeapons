@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import Axe from '../img/weapon/Axe.png';
 import Blade from '../img/weapon/Blade.png';
 import Bow from '../img/weapon/Bow.png';
@@ -36,7 +36,7 @@ const map: {
   Staff: Staff,
   Wand: Wand,
 };
-export const WeaponIcon: React.FC<WeaponIconProps> = (props) => {
+export const WeaponIcon: FC<WeaponIconProps> = (props) => {
   return (
     <img
       src={map[props.weaponType]}

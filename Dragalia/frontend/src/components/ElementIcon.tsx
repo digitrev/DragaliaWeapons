@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import Flame from '../img/element/Flame.png';
 import Water from '../img/element/Water.png';
 import Wind from '../img/element/Wind.png';
@@ -18,7 +18,7 @@ const map = {
   Light: Light,
   Shadow: Shadow,
 };
-export const ElementIcon: React.FC<ElementIconProps> = (props) => {
+export const ElementIcon: FC<ElementIconProps> = (props) => {
   return (
     <img
       src={map[props.element]}

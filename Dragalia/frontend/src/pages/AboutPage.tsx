@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
 import { Page } from './Page';
 
 export const AboutPage = () => {
@@ -33,6 +31,12 @@ export const AboutPage = () => {
       <p>
         I don't have a privacy statement, but all I store is your name, email,
         and the data you provide through the app.
+      </p>
+      <p>
+        Thanks to:
+        <ul>
+          <li>asufyani</li>
+        </ul>
       </p>
     </Page>
   );

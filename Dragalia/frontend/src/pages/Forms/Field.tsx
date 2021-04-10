@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
+import { css } from '@emotion/react';
 import { ChangeEvent, FC, useContext } from 'react';
 import { fontFamily, fontSize, gray5, gray2, gray6 } from '../../Styles';
 import { FormContext } from './Form';
