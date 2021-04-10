@@ -553,4 +553,19 @@ BEGIN
 			[Dragon] NVARCHAR(50)
 			,[Seed] INT
 			)
+
+	TRUNCATE TABLE [den].[CategoryMetadata]
+
+	SET @Json = N'[{"Category":"Halidom","SortPath":"\/1\/"},{"Category":"Production","SortPath":"\/2\/"},{"Category":"Altars","SortPath":"\/3\/"},{"Category":"Dojos","SortPath":"\/4\/"},{"Category":"Dracoliths","SortPath":"\/8\/"},{"Category":"Fafnir Statues","SortPath":"\/9\/"},{"Category":"Slime Statues","SortPath":"\/5\/"},{"Category":"Agito Trees","SortPath":"\/6\/"},{"Category":"Event Facility","SortPath":"\/7\/"},{"Category":"Decoration","SortPath":"\/10\/"}]'
+
+	INSERT [den].[CategoryMetadata] (
+		[Category]
+		,[SortPath]
+		)
+	SELECT [Category]
+		,[SortPath]
+	FROM OPENJSON(@Json) WITH (
+			[Category] NVARCHAR(50)
+			,[SortPath] HIERARCHYID
+			)
 END
