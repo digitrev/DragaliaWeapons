@@ -30,6 +30,7 @@ import { PassivePage } from './pages/Passives/PassivePage';
 import { QuestPage } from './pages/Quests/QuestPage';
 import { AccountWeaponPage } from './pages/Weapons/AccountWeaponPage';
 import { WeaponPage } from './pages/Weapons/WeaponPage';
+import { WeaponSummaryPage } from './pages/Weapons/WeaponSummaryPage';
 import { AccountWyrmprintPage } from './pages/Wyrmprints/AccountWyrmprintPage';
 import { WyrmprintPage } from './pages/Wyrmprints/WyrmprintPage';
 import { fontFamily, fontSize, gray2 } from './Styles';
@@ -93,6 +94,11 @@ const App: React.FC = () => {
             <Route path="/account/weapons">
               <AuthorizedPage>
                 <AccountWeaponPage />
+              </AuthorizedPage>
+            </Route>
+            <Route path="/summary/weapons">
+              <AuthorizedPage>
+                <WeaponSummaryPage />
               </AuthorizedPage>
             </Route>
             <Route path="/account/wyrmprints">

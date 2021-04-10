@@ -65,6 +65,9 @@ export const HomePage = () => {
                   <Link to="/account/weapons">Your Weapons</Link>
                 </li>
                 <li>
+                  <Link to="/summary/weapons">Weapon Summary</Link>
+                </li>
+                <li>
                   <Link to="/costs/weapons">Weapon Costs</Link>
                 </li>
               </Fragment>
