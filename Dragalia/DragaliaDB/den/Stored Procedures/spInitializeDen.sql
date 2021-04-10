@@ -566,6 +566,6 @@ BEGIN
 		,[SortPath]
 	FROM OPENJSON(@Json) WITH (
 			[Category] NVARCHAR(50)
-			,[SortPath] HIERARCHYID
+			,[SortPath] NVARCHAR(255)
 			)
 END
