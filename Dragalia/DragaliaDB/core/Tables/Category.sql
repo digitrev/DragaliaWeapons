@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [core].[Category] (
 	[CategoryID] INT NOT NULL IDENTITY
 	,[Category] NVARCHAR(50) NOT NULL
+	,[SortPath] HIERARCHYID NOT NULL CONSTRAINT DF_Category_SortPath DEFAULT(HIERARCHYID::GetRoot())
 	,CONSTRAINT [PK_Category] PRIMARY KEY ([CategoryID])
 	)

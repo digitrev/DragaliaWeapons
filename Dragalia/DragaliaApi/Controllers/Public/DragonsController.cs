@@ -32,8 +32,9 @@ namespace DragaliaApi.Controllers.Public
             try
             {
                 return await _context.Dragons.Include(d => d.Element)
-                                             .OrderByDescending(d => d.Rarity)
-                                             .ThenBy(d => d.Element.SortOrder)
+                                             .OrderBy(d => d.Element.SortOrder)
+                                             .ThenByDescending(d => d.Rarity)
+                                             .ThenByDescending(d => d.DragonId)
                                              .Select(d => _mapper.Map<DragonDTO>(d))
                                              .ToListAsync();
 
@@ -52,8 +53,6 @@ namespace DragaliaApi.Controllers.Public
             {
                 return await _context.Dragons.Where(d => d.DragonId == dragonID)
                                              .Include(d => d.Element)
-                                             .OrderByDescending(d => d.Rarity)
-                                             .ThenBy(d => d.Element.SortOrder)
                                              .Select(d => _mapper.Map<DragonDTO>(d))
                                              .FirstOrDefaultAsync();
 

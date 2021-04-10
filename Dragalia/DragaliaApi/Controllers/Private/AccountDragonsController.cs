@@ -37,6 +37,9 @@ namespace DragaliaApi.Controllers.Private
                 return await _context.AccountDragons.Where(ad => ad.AccountId == accountID)
                                                     .Include(ad => ad.Dragon)
                                                     .ThenInclude(d => d.Element)
+                                                    .OrderBy(ad => ad.Dragon.Element.SortOrder)
+                                                    .ThenByDescending(ad => ad.Dragon.Rarity)
+                                                    .ThenByDescending(ad => ad.DragonId)
                                                     .Select(ad => _mapper.Map<AccountDragonDTO>(ad))
                                                     .ToListAsync();
             }
@@ -155,8 +158,9 @@ namespace DragaliaApi.Controllers.Private
                     .SelectMany(ad => ad.Dragon.DragonUnbinds,
                         (accountDragon, dragonEssence) => new { accountDragon, dragonEssence })
                     .Where(x => x.accountDragon.UnbindWanted > x.accountDragon.Unbind)
-                    .OrderByDescending(x => x.accountDragon.Dragon.Rarity)
-                    .ThenBy(x => x.accountDragon.Dragon.Element.SortOrder)
+                    .OrderBy(x => x.accountDragon.Dragon.Element.SortOrder)
+                    .ThenByDescending(x => x.accountDragon.Dragon.Rarity)
+                    .ThenByDescending(x => x.accountDragon.DragonId)
                     .ThenBy(x => x.dragonEssence.Material.SortPath)
                     .Select(x => new MaterialCost
                     {

@@ -1411,4 +1411,17 @@
     <Property Name="ParentElementType" Value="SqlSchema" />
     <Property Name="NewName" Value="[DragonTrialCosts]" />
   </Operation>
+  <Operation Name="Move Schema" Key="9af1761a-a4ff-42d2-aa57-5db7326edc4c" ChangeDateTime="04/10/2021 17:25:31">
+    <Property Name="ElementName" Value="[dbo].[CategoryMetadata]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6ab29449-dcc9-4245-97fc-0a2c75877ec6" ChangeDateTime="04/10/2021 17:25:36">
+    <Property Name="ElementName" Value="[den].[CategoryMetadata].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[CategoryMetadata]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Category" />
+  </Operation>
 </Operations>
