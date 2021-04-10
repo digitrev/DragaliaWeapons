@@ -1,7 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { AdventurerData } from '../../api/DataInterfaces';
+import { ElementIcon, ElementString } from '../../components/ElementIcon';
+import { WeaponIcon, WeaponString } from '../../components/WeaponIcon';
 
 interface Props {
   data: AdventurerData;
@@ -22,7 +24,11 @@ export const Adventurer: FC<Props> = ({
           font-size: 19px;
         `}
       >
-        {adventurer}
+        {adventurer}{' '}
+        {element !== 'None' && (
+          <ElementIcon element={element as ElementString} />
+        )}{' '}
+        {weaponType && <WeaponIcon weaponType={weaponType as WeaponString} />}
       </div>
       <div>
         {rarity}⭐ {element === 'None' ? '' : element} {weaponType}

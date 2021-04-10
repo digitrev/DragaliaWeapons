@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { DragonData } from '../../api/DataInterfaces';
+import { ElementIcon, ElementString } from '../../components/ElementIcon';
 
 interface Props {
   data: DragonData;
@@ -20,7 +21,10 @@ export const Dragon: FC<Props> = ({ data: { dragon, rarity, element } }) => {
           font-size: 19px;
         `}
       >
-        {dragon}
+        {dragon}{' '}
+        {element !== 'None' && (
+          <ElementIcon element={element as ElementString} />
+        )}
       </div>
       <div>
         {rarity}⭐ {element === 'None' ? '' : element} Dragon
