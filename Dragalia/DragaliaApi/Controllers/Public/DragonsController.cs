@@ -53,8 +53,6 @@ namespace DragaliaApi.Controllers.Public
             {
                 return await _context.Dragons.Where(d => d.DragonId == dragonID)
                                              .Include(d => d.Element)
-                                             .OrderByDescending(d => d.Rarity)
-                                             .ThenBy(d => d.Element.SortOrder)
                                              .Select(d => _mapper.Map<DragonDTO>(d))
                                              .FirstOrDefaultAsync();
 

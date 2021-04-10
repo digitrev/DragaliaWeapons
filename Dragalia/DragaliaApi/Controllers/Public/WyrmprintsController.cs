@@ -35,6 +35,7 @@ namespace DragaliaApi.Controllers.Public
                                                 .Include(wp => wp.WyrmprintAbilities)
                                                 .ThenInclude(wa => wa.Ability)
                                                 .OrderByDescending(wp => wp.Rarity)
+                                                .ThenByDescending(wp => wp.WyrmprintId)
                                                 .Select(wp => _mapper.Map<WyrmprintDTO>(wp))
                                                 .ToListAsync();
             }
@@ -54,7 +55,6 @@ namespace DragaliaApi.Controllers.Public
                                                 .Include(wp => wp.Affinity)
                                                 .Include(wp => wp.WyrmprintAbilities)
                                                 .ThenInclude(wa => wa.Ability)
-                                                .OrderByDescending(wp => wp.Rarity)
                                                 .Select(wp => _mapper.Map<WyrmprintDTO>(wp))
                                                 .FirstOrDefaultAsync();
             }
