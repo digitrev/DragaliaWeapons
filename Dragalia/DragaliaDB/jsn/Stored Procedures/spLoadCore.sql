@@ -1730,9 +1730,23 @@ BEGIN
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	WHERE mc.ManaCost > 0
-	
-	UNION ALL
-	
+
+	--Temporary hard code for gala prince
+	INSERT #AdventurerMC (
+		AdventurerID
+		,MCID
+		)
+	VALUES (
+		10150403
+		,504
+		)
+
+	INSERT core.ManaCircle (
+		AdventurerID
+		,ManaNode
+		,MaterialID
+		,Quantity
+		)
 	SELECT a.AdventurerID
 		,mc.ManaNode
 		,'Eldwater'
@@ -1786,7 +1800,6 @@ BEGIN
 			3
 			,4
 			)
-
 
 	SELECT c.UnbindID
 		,c.OrbData1Id1
