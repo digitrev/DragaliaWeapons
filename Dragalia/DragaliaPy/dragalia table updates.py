@@ -24,6 +24,8 @@ else:
 
 #array of useful data?
 parameterDict = dict()
+#temporary, probably get rid of this later`
+parameterDict["Quests"]={"tables":"Quests","fields":"QuestType,Id,QuestGroupName,GroupType,EventName,SectionName,QuestViewName,NormalStaminaCost,GetherwingCost"}
 parameterDict["Ability"]={"tables":"Abilities","fields":"GenericName,Name,Id,AbilityGroup"}
 parameterDict["AbilityGroup"]={"tables":"AbilityGroup","fields":"Id,GroupName"}
 parameterDict["Adventurer"]={"tables":"Adventurers","fields":"IdLong,VariationId,FullName,Rarity,ElementalTypeId,WeaponTypeId,ManaCircleName,MaxLimitBreakCount","order_by":"IdLong"}
