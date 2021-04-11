@@ -1431,4 +1431,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="MinDrops" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="31185f13-cc65-4bcf-ab58-adcb2aa276cf" ChangeDateTime="04/11/2021 16:53:51">
+    <Property Name="ElementName" Value="[core].[Quest].[x]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Quest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StaminaCost" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="84b1352f-954f-4da0-af04-f3d25e946c8c" ChangeDateTime="04/11/2021 16:55:29">
+    <Property Name="ElementName" Value="[core].[MaterialQuest].[MinDrops]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[MaterialQuest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SoloDrops" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="554ea1e5-7488-49f3-9df3-f7d3d8921b5b" ChangeDateTime="04/11/2021 16:55:33">
+    <Property Name="ElementName" Value="[core].[MaterialQuest].[MaxDrops]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[MaterialQuest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CoopDrops" />
+  </Operation>
 </Operations>
