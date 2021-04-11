@@ -48,9 +48,6 @@ BEGIN
 	IF OBJECT_ID('tempdb..#ManaPieceEldwater') IS NOT NULL
 		DROP TABLE #ManaPieceEldwater
 
-	IF OBJECT_ID('tempdb..#AdventurerUnbind') IS NOT NULL
-		DROP TABLE #AdventurerUnbind
-
 	IF OBJECT_ID('tempdb..#MCUnbind') IS NOT NULL
 		DROP TABLE #MCUnbind
 
@@ -1442,12 +1439,14 @@ BEGIN
 	--Mana circles (lots of it)
 	SELECT a.AdventurerID
 		,CAST(REPLACE(a.ManaCircleName, 'MC_', '') AS INT) AS MCID
+		,a.UnbindID
 	INTO #AdventurerMC
 	FROM jsn.TableJson AS aj
 	CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			AdventurerID INT '$.title.IdLong'
 			,ManaCircleName NVARCHAR(50) '$.title.ManaCircleName'
+			,UnbindID NVARCHAR(50) '$.title.CharaLimitBreakId'
 			) AS a
 	WHERE aj.TableName = 'Adventurer'
 
@@ -1788,28 +1787,6 @@ BEGIN
 			,4
 			)
 
-	SELECT a.AdventurerID
-		,CONCAT (
-			'10'
-			,CASE 
-				WHEN amc.MCID IN (
-						404
-						,405
-						)
-					THEN 401
-				WHEN amc.MCID = 403
-					THEN 402
-				WHEN amc.MCID > 501
-					THEN 501
-				ELSE amc.MCID
-				END
-			,'0'
-			,a.ElementID
-			) AS UnbindID
-	INTO #AdventurerUnbind
-	FROM #AdventurerMC AS amc
-	INNER JOIN core.Adventurer AS a ON a.AdventurerID = amc.AdventurerID
-	WHERE amc.MCID <> 0
 
 	SELECT c.UnbindID
 		,c.OrbData1Id1
@@ -2152,7 +2129,7 @@ BEGIN
 			,cte.MaterialID
 			,cte.Quantity
 		FROM cte
-		INNER JOIN #AdventurerUnbind AS ub ON ub.UnbindID = cte.UnbindID
+		INNER JOIN #AdventurerMC AS ub ON ub.UnbindID = cte.UnbindID
 		) AS src
 		ON src.AdventurerID = trg.AdventurerID
 			AND src.ManaNode = trg.ManaNode
