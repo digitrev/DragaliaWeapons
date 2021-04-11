@@ -74,6 +74,7 @@
     <Folder Include="util\Functions" />
     <Folder Include="dbo\Stored Procedures" />
     <Folder Include="util\Table" />
+    <Folder Include="jsn\Data Files" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -101,7 +102,7 @@
     <Build Include="core\Stored Procedures\spPassiveList.sql" />
     <Build Include="core\Stored Procedures\spPassiveCrafting.sql" />
     <Build Include="Security\core.sql" />
-    <Build Include="jsn\Tables\TableJson.sql" />
+    <Build Include="jsn\Tables\WikiData.sql" />
     <Build Include="core\Tables\Facility.sql" />
     <Build Include="core\Tables\FacilityUpgrade.sql" />
     <Build Include="Security\den.sql" />
@@ -172,6 +173,7 @@
     <Build Include="den\Tables\DragonAdvancedCosts.sql" />
     <Build Include="den\Tables\DragonAdvancedMats.sql" />
     <Build Include="den\Tables\CategoryMetadata.sql" />
+    <Build Include="jsn\Tables\DenData.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
@@ -180,6 +182,7 @@
     <None Include="development.publish.xml" />
     <None Include="production.publish.xml" />
     <None Include="staging.publish.xml" />
+    <None Include="jsn\Data Files\TreeCosts.json" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />

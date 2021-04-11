@@ -1,4 +1,4 @@
-﻿CREATE TABLE [jsn].[TableJson]
+﻿CREATE TABLE [jsn].[WikiData]
 (
 	[JsonID] INT NOT NULL IDENTITY, 
     [JsonText] NVARCHAR(MAX) NOT NULL, 

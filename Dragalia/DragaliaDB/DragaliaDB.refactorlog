@@ -1424,4 +1424,24 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Category" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="91d2efa6-92af-4089-b9cb-9d7dc60181a5" ChangeDateTime="04/11/2021 18:23:14">
+    <Property Name="ElementName" Value="[jsn].[TableJson]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[jsn]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[WikiData]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="d0172966-1f35-4435-ad3f-b99a43c3534c" ChangeDateTime="04/11/2021 18:25:09">
+    <Property Name="ElementName" Value="[dbo].[DenData]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="jsn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="81941012-48c8-47a1-bfd1-1407b7f052a2" ChangeDateTime="04/11/2021 18:25:19">
+    <Property Name="ElementName" Value="[jsn].[DenData].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[jsn].[DenData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="JsonID" />
+  </Operation>
 </Operations>

@@ -59,7 +59,7 @@ BEGIN
 	USING (
 		SELECT ag.AbilityGroupID
 			,REPLACE(ag.AbilityGroup, '&amp;', '&') AS AbilityGroup
-		FROM jsn.TableJson AS agj
+		FROM jsn.[WikiData] AS agj
 		CROSS APPLY OPENJSON(agj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				AbilityGroupID INT '$.title.Id'
@@ -95,7 +95,7 @@ BEGIN
 			,REPLACE(a.Ability, '&amp;', '&') AS Ability
 			,REPLACE(a.GenericName, '&amp;', '&') AS GenericName
 			,a.AbilityGroupID
-		FROM jsn.TableJson AS aj
+		FROM jsn.[WikiData] AS aj
 		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				AbilityID INT '$.title.Id'
@@ -137,7 +137,7 @@ BEGIN
 	USING (
 		SELECT a.AffinityID
 			,REPLACE(a.[Affinity], '&amp;', '&') AS [Affinity]
-		FROM jsn.TableJson AS aj
+		FROM jsn.[WikiData] AS aj
 		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				AffinityID INT '$.title.Id'
@@ -171,7 +171,7 @@ BEGIN
 	USING (
 		SELECT m.MaterialID
 			,m.MaterialName
-		FROM jsn.TableJson AS mj
+		FROM jsn.[WikiData] AS mj
 		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				MaterialID NVARCHAR(50) '$.title.Id'
@@ -241,7 +241,7 @@ BEGIN
 		,w.CreateEntityQuantity5
 		,w.GroupID
 	INTO #Weapon
-	FROM jsn.TableJson AS wj
+	FROM jsn.[WikiData] AS wj
 	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			WeaponID INT '$.title.Id'
@@ -514,7 +514,7 @@ BEGIN
 		,wu.BuildupMaterialID10
 		,wu.BuildupMaterialQuantity10
 	INTO #WeaponUpgrade
-	FROM jsn.TableJson AS wuj
+	FROM jsn.[WikiData] AS wuj
 	CROSS APPLY OPENJSON(JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			GroupID NVARCHAR(50) '$.title.WeaponBodyBuildupGroupId'
@@ -707,7 +707,7 @@ BEGIN
 		,p.UnlockMaterialId5
 		,p.UnlockMaterialQuantity5
 	INTO #Passive
-	FROM jsn.TableJson AS pj
+	FROM jsn.[WikiData] AS pj
 	CROSS APPLY OPENJSON(pj.JsonText) WITH (cargoquery NVARCHAR(max) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			PassiveID INT '$.title.Id'
@@ -860,7 +860,7 @@ BEGIN
 		,wl.BuildupMaterialId3
 		,wl.BuildupMaterialQuantity3
 	INTO #WeaponLevel
-	FROM jsn.TableJson AS wlj
+	FROM jsn.[WikiData] AS wlj
 	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			Rarity INT '$.title.RarityGroup'
@@ -918,7 +918,7 @@ BEGIN
 		SELECT f.FacilityID
 			,f.FacilityName
 			,f.FacilityCount
-		FROM jsn.TableJson AS fj
+		FROM jsn.[WikiData] AS fj
 		CROSS APPLY OPENJSON(fj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				FacilityID INT '$.title.Id'
@@ -967,7 +967,7 @@ BEGIN
 		,wl.LevelLimit8
 		,wl.LevelLimit9
 	INTO #WeaponLimit
-	FROM jsn.TableJson AS wlj
+	FROM jsn.[WikiData] AS wlj
 	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			WeaponRarity INT '$.title.Id'
@@ -1047,7 +1047,7 @@ BEGIN
 		,w.GroupID
 		,w.UniqueMaterialID
 	INTO #Wyrmprint
-	FROM jsn.TableJson AS wj
+	FROM jsn.[WikiData] AS wj
 	CROSS APPLY OPENJSON(wj.JsonText) WITH (cargoquery NVARCHAR(max) AS json) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			WyrmprintID INT '$.title.Id'
@@ -1181,7 +1181,7 @@ BEGIN
 		,w.UniqueMaterialID
 		,wu.UniqueQuantity
 	INTO #WyrmprintUpgrade
-	FROM jsn.TableJson AS wuj
+	FROM jsn.[WikiData] AS wuj
 	CROSS APPLY OPENJSON(wuj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			Id INT '$.title.Id'
@@ -1273,7 +1273,7 @@ BEGIN
 		,w.UniqueMaterialID
 		,wl.UniqueQuantity
 	INTO #WyrmprintLevel
-	FROM jsn.TableJson AS wlj
+	FROM jsn.[WikiData] AS wlj
 	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			Rarity INT '$.title.RarityGroup'
@@ -1343,7 +1343,7 @@ BEGIN
 		,wl.LevelLimit3
 		,wl.LevelLimit4
 	INTO #WyrmprintLimit
-	FROM jsn.TableJson AS wlj
+	FROM jsn.[WikiData] AS wlj
 	CROSS APPLY OPENJSON(wlj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			WyrmprintRarity INT '$.title.Id'
@@ -1391,7 +1391,7 @@ BEGIN
 					THEN 70
 				ELSE 0
 				END AS MCLimit
-		FROM jsn.TableJson AS aj
+		FROM jsn.[WikiData] AS aj
 		CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				AdventurerID INT '$.title.IdLong'
@@ -1443,7 +1443,7 @@ BEGIN
 	SELECT a.AdventurerID
 		,CAST(REPLACE(a.ManaCircleName, 'MC_', '') AS INT) AS MCID
 	INTO #AdventurerMC
-	FROM jsn.TableJson AS aj
+	FROM jsn.[WikiData] AS aj
 	CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			AdventurerID INT '$.title.IdLong'
@@ -1462,7 +1462,7 @@ BEGIN
 			,m.Wind
 			,m.Light
 			,m.Shadow
-		FROM jsn.TableJson AS mj
+		FROM jsn.[WikiData] AS mj
 		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				ManaMaterialID INT '$.title.Id'
@@ -1496,7 +1496,7 @@ BEGIN
 			,m.ManaNode
 			,m.ManaPieceType
 			,m.ManaCost
-		FROM jsn.TableJson AS mj
+		FROM jsn.[WikiData] AS mj
 		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				ManaCircleName NVARCHAR(50) '$.title.MC'
@@ -1538,7 +1538,7 @@ BEGIN
 		,m.ManaMaterialQuantity43
 		,m.NeedDewPoint4
 	INTO #ManaPieceRaw
-	FROM jsn.TableJson AS mj
+	FROM jsn.[WikiData] AS mj
 	CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			MCID INT '$.title.ElementId'
@@ -1863,7 +1863,7 @@ BEGIN
 		,c.OrbData4Num5
 		,c.OrbData5Num5
 	INTO #MCUnbind
-	FROM jsn.TableJson AS cj
+	FROM jsn.[WikiData] AS cj
 	CROSS APPLY OPENJSON(cj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 			UnbindID INT '$.title.Id'
@@ -2188,7 +2188,7 @@ BEGIN
 			,REPLACE(d.Dragon, '&amp;', '&') AS Dragon
 			,d.ElementID
 			,d.Rarity
-		FROM jsn.TableJson AS dj
+		FROM jsn.[WikiData] AS dj
 		CROSS APPLY OPENJSON(dj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
 				DragonID INT '$.title.Id'

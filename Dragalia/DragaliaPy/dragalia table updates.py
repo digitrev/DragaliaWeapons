@@ -84,7 +84,7 @@ for table,params in parameterDict.items():
     while (tableParams["offset"] < count):
         tableRequest = requests.get(apiUrl, params=tableParams)
         cursor.execute('''
-            INSERT jsn.TableJson(JsonText, TableName)
+            INSERT jsn.WikiData(JsonText, TableName)
             VALUES (?, ?)
         ''', tableRequest.text, table)
         cursor.commit()
