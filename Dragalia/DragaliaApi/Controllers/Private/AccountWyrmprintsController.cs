@@ -41,6 +41,7 @@ namespace DragaliaApi.Controllers.Private
                                                        .Include(aw => aw.Wyrmprint)
                                                        .ThenInclude(w => w.Affinity)
                                                        .OrderByDescending(aw => aw.Wyrmprint.Rarity)
+                                                       .ThenByDescending(aw => aw.WyrmprintId)
                                                        .Select(aw => _mapper.Map<AccountWyrmprintDTO>(aw))
                                                        .ToListAsync();
             }
@@ -64,6 +65,7 @@ namespace DragaliaApi.Controllers.Private
                                                            .Include(aw => aw.Wyrmprint)
                                                            .ThenInclude(w => w.Affinity)
                                                            .OrderByDescending(aw => aw.Wyrmprint.Rarity)
+                                                           .ThenByDescending(aw => aw.WyrmprintId)
                                                            .Select(aw => _mapper.Map<AccountWyrmprintDTO>(aw))
                                                            .FirstOrDefaultAsync();
 
@@ -165,6 +167,7 @@ namespace DragaliaApi.Controllers.Private
                     .SelectMany(aw => aw.Wyrmprint.WyrmprintUpgrades,
                         (aw, wu) => new { aw, wu })
                     .OrderByDescending(x => x.aw.Wyrmprint.Rarity)
+                    .ThenByDescending(x => x.aw.WyrmprintId)
                     .ThenBy(x => x.wu.UpgradeType.UpgradeType1)
                     .ThenBy(x => x.wu.Step)
                     .ThenBy(x => x.wu.Material.SortPath)
@@ -194,6 +197,7 @@ namespace DragaliaApi.Controllers.Private
                     .SelectMany(aw => aw.Wyrmprint.WyrmprintLevels, 
                         (aw, wl) => new {aw, wl})
                     .OrderByDescending(x => x.aw.Wyrmprint.Rarity)
+                    .ThenByDescending(x => x.aw.WyrmprintId)
                     .ThenBy(x => x.wl.WyrmprintLevel1)
                     .ThenBy(x => x.wl.Material.SortPath)
                     .Where(x => x.aw.WyrmprintLevel < x.wl.WyrmprintLevel1

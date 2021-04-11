@@ -1,12 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React, {
-  createContext,
-  FC,
-  FocusEvent,
-  FormEvent,
-  useState,
-} from 'react';
+import { css } from '@emotion/react';
+import { createContext, FC, FocusEvent, FormEvent, useState } from 'react';
 import { submitDelay } from '../../AppSettings';
 import { gray6, gray5, PrimaryButton } from '../../Styles';
 

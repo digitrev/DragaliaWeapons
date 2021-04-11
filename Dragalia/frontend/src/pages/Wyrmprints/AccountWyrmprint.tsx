@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React, { FC, useEffect, useState } from 'react';
+import { css } from '@emotion/react';
+import { FC, useEffect, useState } from 'react';
 import {
   AccountWyrmprintData,
   MaterialCosts,

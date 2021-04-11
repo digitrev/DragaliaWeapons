@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react';
+import { FC, Fragment } from 'react';
 import { useAuth } from './Auth/Auth';
 import { Page } from './Page';
 

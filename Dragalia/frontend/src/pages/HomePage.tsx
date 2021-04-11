@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from './Auth/Auth';
 import { Page } from './Page';
@@ -63,6 +63,9 @@ export const HomePage = () => {
               <Fragment>
                 <li>
                   <Link to="/account/weapons">Your Weapons</Link>
+                </li>
+                <li>
+                  <Link to="/summary/weapons">Weapon Summary</Link>
                 </li>
                 <li>
                   <Link to="/costs/weapons">Weapon Costs</Link>

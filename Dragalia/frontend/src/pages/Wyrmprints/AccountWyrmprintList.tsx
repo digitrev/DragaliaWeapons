@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React, { FC } from 'react';
+import { css } from '@emotion/react';
+import { FC } from 'react';
 import { AccountWyrmprintData, WyrmprintLimit } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
 import { AccountWyrmprint } from './AccountWyrmprint';

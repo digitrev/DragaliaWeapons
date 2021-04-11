@@ -38,8 +38,9 @@ namespace DragaliaApi.Controllers.Private
                                                        .Include(af => af.Facility)
                                                        .ThenInclude(f => f.Category)
                                                        .Where(af => af.Facility.Category.Category1 != "Decoration")
-                                                       .OrderBy(af => af.Facility.CategoryId)
-                                                       .ThenBy(af => af.Facility.Facility1)
+                                                       .OrderBy(af => af.Facility.Category.SortPath)
+                                                       .ThenBy(af => af.FacilityId)
+                                                       .ThenBy(af => af.CopyNumber)
                                                        .Select(af => _mapper.Map<AccountFacilityDTO>(af))
                                                        .ToListAsync();
             }
@@ -60,8 +61,6 @@ namespace DragaliaApi.Controllers.Private
                                                            .Include(af => af.Facility)
                                                            .ThenInclude(f => f.Category)
                                                            .Where(af => af.Facility.Category.Category1 != "Decoration")
-                                                           .OrderBy(af => af.Facility.CategoryId)
-                                                           .ThenBy(af => af.Facility.Facility1)
                                                            .Select(af => _mapper.Map<AccountFacilityDTO>(af))
                                                            .FirstAsync();
 
@@ -156,12 +155,14 @@ namespace DragaliaApi.Controllers.Private
                     .Include(af => af.Facility)
                     .ThenInclude(f => f.FacilityUpgrades)
                     .ThenInclude(fu => fu.Material)
+                    .Include(af => af.Facility)
+                    .ThenInclude(f => f.Category)
                     .SelectMany(af => af.Facility.FacilityUpgrades,
                         (accountFacility, facilityUpgrade) => new { accountFacility, facilityUpgrade })
                     .Where(x => x.accountFacility.CurrentLevel < x.facilityUpgrade.FacilityLevel
                         && x.facilityUpgrade.FacilityLevel <= x.accountFacility.WantedLevel)
-                    .OrderBy(x => x.accountFacility.Facility.Category)
-                    .ThenBy(x => x.accountFacility.Facility.Facility1)
+                    .OrderBy(x => x.accountFacility.Facility.Category.SortPath)
+                    .ThenBy(x => x.accountFacility.FacilityId)
                     .ThenBy(x => x.accountFacility.CopyNumber)
                     .ThenBy(x => x.facilityUpgrade.FacilityLevel)
                     .ThenBy(x => x.facilityUpgrade.Material.SortPath)

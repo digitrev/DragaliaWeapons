@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react';
-import React, { ChangeEvent, Fragment, useEffect, useState } from 'react';
+import { css } from '@emotion/react';
+import { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import { AccountFacilityData, FacilityLimit } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/PrivateData';
 import { PublicApi } from '../../api/PublicData';

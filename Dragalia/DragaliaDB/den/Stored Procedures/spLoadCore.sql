@@ -574,6 +574,11 @@ BEGIN
 			INSERT (Category)
 			VALUES (src.Category);
 
+	UPDATE c
+	SET SortPath = cm.SortPath
+	FROM core.Category AS c
+	INNER JOIN den.CategoryMetadata AS cm ON cm.Category = c.Category
+
 	UPDATE core.Material
 	SET SortPath = HIERARCHYID::GetRoot()
 

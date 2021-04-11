@@ -42,6 +42,7 @@ namespace DragaliaApi.Controllers.Private
                                                         .OrderBy(aa => aa.Adventurer.Element.SortOrder)
                                                         .ThenBy(aa => aa.Adventurer.WeaponTypeId)
                                                         .ThenByDescending(aa => aa.Adventurer.Rarity)
+                                                        .ThenByDescending(aa => aa.AdventurerId)
                                                         .Select(aa => _mapper.Map<AccountAdventurerDTO>(aa))
                                                         .ToListAsync();
             }
@@ -159,9 +160,12 @@ namespace DragaliaApi.Controllers.Private
                         (accountAdventurer, manaCircle) => new { accountAdventurer, manaCircle })
                     .Where(x => x.accountAdventurer.CurrentLevel < x.manaCircle.ManaNode
                                 && x.manaCircle.ManaNode <= x.accountAdventurer.WantedLevel)
-                    .OrderByDescending(x => x.accountAdventurer.Adventurer.Element.SortOrder)
+                    .OrderBy(x => x.accountAdventurer.Adventurer.Element.SortOrder)
                     .ThenBy(x => x.accountAdventurer.Adventurer.WeaponTypeId)
                     .ThenByDescending(x => x.accountAdventurer.Adventurer.Rarity)
+                    .ThenByDescending(x => x.accountAdventurer.AdventurerId)
+                    .ThenBy(x => x.manaCircle.ManaNode)
+                    .ThenBy(x => x.manaCircle.Material.SortPath)
                     .Select(x => new MaterialCost
                     {
                         Product = $"{x.accountAdventurer.Adventurer.Adventurer1} MC #{x.manaCircle.ManaNode}",

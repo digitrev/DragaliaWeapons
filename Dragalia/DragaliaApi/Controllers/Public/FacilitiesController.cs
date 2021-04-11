@@ -32,7 +32,7 @@ namespace DragaliaApi.Controllers.Public
             try
             {
                 return await _context.Facilities.Include(f => f.Category)
-                                                .OrderBy(f => f.CategoryId)
+                                                .OrderBy(f => f.Category.SortPath)
                                                 .ThenBy(f => f.FacilityId)
                                                 .Select(f => _mapper.Map<FacilityDTO>(f))
                                                 .ToListAsync();

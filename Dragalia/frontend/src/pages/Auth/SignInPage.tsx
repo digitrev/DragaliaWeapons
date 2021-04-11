@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { StatusText } from '../../Styles';
 import { Page } from '../Page';
 import { useAuth } from './Auth';
