@@ -33,17 +33,14 @@ BEGIN
 	IF OBJECT_ID('tempdb..#AdventurerMC') IS NOT NULL
 		DROP TABLE #AdventurerMC
 
-	IF OBJECT_ID('tempdb..#ManaMaterial') IS NOT NULL
-		DROP TABLE #ManaMaterial
-
 	IF OBJECT_ID('tempdb..#MCNodes') IS NOT NULL
 		DROP TABLE #MCNodes
 
 	IF OBJECT_ID('tempdb..#ManaPieceRaw') IS NOT NULL
 		DROP TABLE #ManaPieceRaw
 
-	IF OBJECT_ID('tempdb..#ManaPieceElement') IS NOT NULL
-		DROP TABLE #ManaPieceElement
+	IF OBJECT_ID('tempdb..#ManaPieceMaterial') IS NOT NULL
+		DROP TABLE #ManaPieceMaterial
 
 	IF OBJECT_ID('tempdb..#ManaPieceEldwater') IS NOT NULL
 		DROP TABLE #ManaPieceEldwater
@@ -1440,6 +1437,9 @@ BEGIN
 	SELECT a.AdventurerID
 		,CAST(REPLACE(a.ManaCircleName, 'MC_', '') AS INT) AS MCID
 		,a.UnbindID
+		,a.PieceMaterialElementId
+		,a.UniqueGrowMaterialId1
+		,a.UniqueGrowMaterialId2
 	INTO #AdventurerMC
 	FROM jsn.TableJson AS aj
 	CROSS APPLY OPENJSON(aj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
@@ -1447,44 +1447,18 @@ BEGIN
 			AdventurerID INT '$.title.IdLong'
 			,ManaCircleName NVARCHAR(50) '$.title.ManaCircleName'
 			,UnbindID NVARCHAR(50) '$.title.CharaLimitBreakId'
+			,PieceMaterialElementId INT '$.title.PieceMaterialElementId'
+			,UniqueGrowMaterialId1 NVARCHAR(50) '$.title.UniqueGrowMaterialId1'
+			,UniqueGrowMaterialId2 NVARCHAR(50) '$.title.UniqueGrowMaterialId2'
 			) AS a
 	WHERE aj.TableName = 'Adventurer'
-
-	SELECT upvt.ManaMaterialID
-		,upvt.Element
-		,upvt.MaterialID
-	INTO #ManaMaterial
-	FROM (
-		SELECT m.ManaMaterialID
-			,m.Flame
-			,m.Water
-			,m.Wind
-			,m.Light
-			,m.Shadow
-		FROM jsn.TableJson AS mj
-		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
-		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
-				ManaMaterialID INT '$.title.Id'
-				,Flame NVARCHAR(50) '$.title.FireMaterialId'
-				,Water NVARCHAR(50) '$.title.WaterMaterialId'
-				,Wind NVARCHAR(50) '$.title.WindMaterialId'
-				,Light NVARCHAR(50) '$.title.LightMaterialId'
-				,Shadow NVARCHAR(50) '$.title.DarkMaterialId'
-				) AS m
-		WHERE mj.TableName = 'MCMaterials'
-		) AS src
-	UNPIVOT(MaterialID FOR Element IN (
-				Flame
-				,Water
-				,Wind
-				,Light
-				,Shadow
-				)) AS upvt
 
 	SELECT MCID
 		,ManaNode
 		,ManaPieceType
 		,ManaCost
+		,UniqueGrowMaterialCount1
+		,UniqueGrowMaterialCount2
 		,Stage = ROW_NUMBER() OVER (
 			PARTITION BY MCID
 			,ManaPieceType ORDER BY ManaNode
@@ -1495,6 +1469,8 @@ BEGIN
 			,m.ManaNode
 			,m.ManaPieceType
 			,m.ManaCost
+			,m.UniqueGrowMaterialCount1
+			,m.UniqueGrowMaterialCount2
 		FROM jsn.TableJson AS mj
 		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
@@ -1502,217 +1478,75 @@ BEGIN
 				,ManaNode INT '$.title.Id'
 				,ManaPieceType INT '$.title.ManaPieceType'
 				,ManaCost INT '$.title.NecessaryManaPoint'
+				,UniqueGrowMaterialCount1 INT '$.title.UniqueGrowMaterialCount1'
+				,UniqueGrowMaterialCount2 INT '$.title.UniqueGrowMaterialCount2'
 				) AS m
 		WHERE mj.TableName = 'MCNodes'
 		) AS d
 
-	SELECT m.MCID
+	SELECT m.PieceMaterialElementId
+		,m.Step
 		,m.ManaPieceType
-		,m.ManaMaterialId11
-		,m.ManaMaterialId12
-		,m.ManaMaterialId13
-		,m.ManaMaterialQuantity11
-		,m.ManaMaterialQuantity12
-		,m.ManaMaterialQuantity13
-		,m.NeedDewPoint1
-		,m.ManaMaterialId21
-		,m.ManaMaterialId22
-		,m.ManaMaterialId23
-		,m.ManaMaterialQuantity21
-		,m.ManaMaterialQuantity22
-		,m.ManaMaterialQuantity23
-		,m.NeedDewPoint2
-		,m.ManaMaterialId31
-		,m.ManaMaterialId32
-		,m.ManaMaterialId33
-		,m.ManaMaterialQuantity31
-		,m.ManaMaterialQuantity32
-		,m.ManaMaterialQuantity33
-		,m.NeedDewPoint3
-		,m.ManaMaterialId41
-		,m.ManaMaterialId42
-		,m.ManaMaterialId43
-		,m.ManaMaterialQuantity41
-		,m.ManaMaterialQuantity42
-		,m.ManaMaterialQuantity43
-		,m.NeedDewPoint4
+		,m.MaterialId1
+		,m.MaterialId2
+		,m.MaterialId3
+		,m.MaterialQuantity1
+		,m.MaterialQuantity2
+		,m.MaterialQuantity3
+		,m.DewPoint
 	INTO #ManaPieceRaw
 	FROM jsn.TableJson AS mj
 	CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 	CROSS APPLY OPENJSON(cq.cargoquery) WITH (
-			MCID INT '$.title.ElementId'
+			PieceMaterialElementId INT '$.title.ElementId'
+			,Step INT '$.title.Step'
 			,ManaPieceType INT '$.title.ManaPieceType'
-			,ManaMaterialId11 INT '$.title.ManaMaterialId11'
-			,ManaMaterialId12 INT '$.title.ManaMaterialId12'
-			,ManaMaterialId13 INT '$.title.ManaMaterialId13'
-			,ManaMaterialQuantity11 INT '$.title.ManaMaterialQuantity11'
-			,ManaMaterialQuantity12 INT '$.title.ManaMaterialQuantity12'
-			,ManaMaterialQuantity13 INT '$.title.ManaMaterialQuantity13'
-			,NeedDewPoint1 INT '$.title.NeedDewPoint1'
-			,ManaMaterialId21 INT '$.title.ManaMaterialId21'
-			,ManaMaterialId22 INT '$.title.ManaMaterialId22'
-			,ManaMaterialId23 INT '$.title.ManaMaterialId23'
-			,ManaMaterialQuantity21 INT '$.title.ManaMaterialQuantity21'
-			,ManaMaterialQuantity22 INT '$.title.ManaMaterialQuantity22'
-			,ManaMaterialQuantity23 INT '$.title.ManaMaterialQuantity23'
-			,NeedDewPoint2 INT '$.title.NeedDewPoint2'
-			,ManaMaterialId31 INT '$.title.ManaMaterialId31'
-			,ManaMaterialId32 INT '$.title.ManaMaterialId32'
-			,ManaMaterialId33 INT '$.title.ManaMaterialId33'
-			,ManaMaterialQuantity31 INT '$.title.ManaMaterialQuantity31'
-			,ManaMaterialQuantity32 INT '$.title.ManaMaterialQuantity32'
-			,ManaMaterialQuantity33 INT '$.title.ManaMaterialQuantity33'
-			,NeedDewPoint3 INT '$.title.NeedDewPoint3'
-			,ManaMaterialId41 INT '$.title.ManaMaterialId41'
-			,ManaMaterialId42 INT '$.title.ManaMaterialId42'
-			,ManaMaterialId43 INT '$.title.ManaMaterialId43'
-			,ManaMaterialQuantity41 INT '$.title.ManaMaterialQuantity41'
-			,ManaMaterialQuantity42 INT '$.title.ManaMaterialQuantity42'
-			,ManaMaterialQuantity43 INT '$.title.ManaMaterialQuantity43'
-			,NeedDewPoint4 INT '$.title.NeedDewPoint4'
+			,MaterialId1 NVARCHAR(50) '$.title.MaterialId1'
+			,MaterialId2 NVARCHAR(50) '$.title.MaterialId2'
+			,MaterialId3 NVARCHAR(50) '$.title.MaterialId3'
+			,MaterialQuantity1 INT '$.title.MaterialQuantity1'
+			,MaterialQuantity2 INT '$.title.MaterialQuantity2'
+			,MaterialQuantity3 INT '$.title.MaterialQuantity3'
+			,DewPoint INT '$.title.DewPoint'
 			) AS m
-	WHERE mj.TableName = 'ManaPieceElement'
+	WHERE mj.TableName = 'ManaPieceMaterial'
 
-	SELECT MCID
+	SELECT PieceMaterialElementId
 		,ManaPieceType
-		,ManaMaterialId11 AS ManaMaterialID
-		,ManaMaterialQuantity11 AS Quantity
-		,1 AS Stage
-	INTO #ManaPieceElement
+		,MaterialId1 AS MaterialID
+		,MaterialQuantity1 AS Quantity
+		,Step AS Stage
+	INTO #ManaPieceMaterial
 	FROM #ManaPieceRaw
-	WHERE ManaMaterialId11 <> 0
+	WHERE MaterialId1 <> '0'
 	
 	UNION ALL
 	
-	SELECT MCID
+	SELECT PieceMaterialElementId
 		,ManaPieceType
-		,ManaMaterialId12
-		,ManaMaterialQuantity12
-		,1
+		,MaterialId2
+		,MaterialQuantity2
+		,Step
 	FROM #ManaPieceRaw
-	WHERE ManaMaterialId12 <> 0
+	WHERE MaterialId2 <> '0'
 	
 	UNION ALL
 	
-	SELECT MCID
+	SELECT PieceMaterialElementId
 		,ManaPieceType
-		,ManaMaterialId13
-		,ManaMaterialQuantity13
-		,1
+		,MaterialId3
+		,MaterialQuantity3
+		,Step
 	FROM #ManaPieceRaw
-	WHERE ManaMaterialId13 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId21
-		,ManaMaterialQuantity21
-		,2
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId21 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId22
-		,ManaMaterialQuantity22
-		,2
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId22 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId23
-		,ManaMaterialQuantity23
-		,2
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId23 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId31
-		,ManaMaterialQuantity31
-		,3
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId31 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId32
-		,ManaMaterialQuantity32
-		,3
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId32 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId33
-		,ManaMaterialQuantity33
-		,3
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId33 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId41
-		,ManaMaterialQuantity41
-		,4
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId41 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId42
-		,ManaMaterialQuantity42
-		,4
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId42 <> 0
-	
-	UNION ALL
-	
-	SELECT MCID
-		,ManaPieceType
-		,ManaMaterialId43
-		,ManaMaterialQuantity43
-		,4
-	FROM #ManaPieceRaw
-	WHERE ManaMaterialId43 <> 0
+	WHERE MaterialId3 <> '0'
 
-	SELECT MCID
+	SELECT PieceMaterialElementId
 		,ManaPieceType
-		,CAST(REPLACE(Stage, 'NeedDewPoint', '') AS INT) AS Stage
-		,Eldwater
+		,Step AS Stage
+		,DewPoint AS Eldwater
 	INTO #ManaPieceEldwater
-	FROM (
-		SELECT MCID
-			,ManaPieceType
-			,NeedDewPoint1
-			,NeedDewPoint2
-			,NeedDewPoint3
-			,NeedDewPoint4
-		FROM #ManaPieceRaw AS mpr
-		) AS src
-	UNPIVOT(Eldwater FOR Stage IN (
-				NeedDewPoint1
-				,NeedDewPoint2
-				,NeedDewPoint3
-				,NeedDewPoint4
-				)) AS upvt
-	WHERE Eldwater <> 0
+	FROM #ManaPieceRaw AS mpr
+	WHERE DewPoint <> 0
 
 	TRUNCATE TABLE core.ManaCircle
 
@@ -1722,6 +1556,7 @@ BEGIN
 		,MaterialID
 		,Quantity
 		)
+	--basic mana cost
 	SELECT a.AdventurerID
 		,mc.ManaNode
 		,'Mana'
@@ -1730,23 +1565,34 @@ BEGIN
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	WHERE mc.ManaCost > 0
-
-	--Temporary hard code for gala prince
-	INSERT #AdventurerMC (
-		AdventurerID
-		,MCID
-		)
-	VALUES (
-		10150403
-		,504
-		)
-
-	INSERT core.ManaCircle (
-		AdventurerID
-		,ManaNode
-		,MaterialID
-		,Quantity
-		)
+	
+	UNION ALL
+	
+	--devotions 
+	SELECT a.AdventurerID
+		,mc.ManaNode
+		,amc.UniqueGrowMaterialId1
+		,mc.UniqueGrowMaterialCount1
+	FROM core.Adventurer AS a
+	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
+	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
+	WHERE mc.UniqueGrowMaterialCount1 > 0
+	
+	UNION ALL
+	
+	-- convictions 
+	SELECT a.AdventurerID
+		,mc.ManaNode
+		,amc.UniqueGrowMaterialId2
+		,mc.UniqueGrowMaterialCount2
+	FROM core.Adventurer AS a
+	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
+	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
+	WHERE mc.UniqueGrowMaterialCount2 > 0
+	
+	UNION ALL
+	
+	--eldwater cost
 	SELECT a.AdventurerID
 		,mc.ManaNode
 		,'Eldwater'
@@ -1754,28 +1600,28 @@ BEGIN
 	FROM core.Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
-	INNER JOIN #ManaPieceEldwater AS mpe ON mpe.MCID = mc.MCID
+	INNER JOIN #ManaPieceEldwater AS mpe ON mpe.PieceMaterialElementId = amc.PieceMaterialElementId
 		AND mpe.ManaPieceType = mc.ManaPieceType
 		AND mpe.Stage = mc.Stage
 	WHERE mpe.Eldwater > 0
 	
 	UNION ALL
 	
+	--other costs
 	SELECT a.AdventurerID
 		,mc.ManaNode
-		,mm.MaterialID
-		,mpe.Quantity
+		,mpm.MaterialID
+		,mpm.Quantity
 	FROM core.Adventurer AS a
 	INNER JOIN core.Element AS e ON e.ElementID = a.ElementID
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
-	INNER JOIN #ManaPieceElement AS mpe ON mpe.MCID = mc.MCID
-		AND mpe.ManaPieceType = mc.ManaPieceType
-		AND mpe.Stage = mc.Stage
-	INNER JOIN #ManaMaterial AS mm ON mm.ManaMaterialID = mpe.ManaMaterialID
-		AND mm.Element = e.Element
-	WHERE mpe.Quantity > 0
+	INNER JOIN #ManaPieceMaterial AS mpm ON mpm.PieceMaterialElementId = amc.PieceMaterialElementId
+		AND mpm.ManaPieceType = mc.ManaPieceType
+		AND mpm.Stage = mc.Stage
+	WHERE mpm.Quantity > 0
 
+	--3 & 4⭐ unbinds
 	INSERT core.ManaCircle (
 		AdventurerID
 		,ManaNode
