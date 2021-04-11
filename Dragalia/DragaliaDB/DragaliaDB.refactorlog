@@ -1424,4 +1424,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Category" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="67345a61-eaac-4040-ae72-37af0f9f0a39" ChangeDateTime="04/11/2021 16:52:08">
+    <Property Name="ElementName" Value="[core].[MaterialQuest].[AverageDrops]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[MaterialQuest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MinDrops" />
+  </Operation>
 </Operations>
