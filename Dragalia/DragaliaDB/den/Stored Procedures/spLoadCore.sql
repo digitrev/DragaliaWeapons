@@ -602,6 +602,8 @@ BEGIN
 		THEN
 			UPDATE
 			SET SortPath = src.SortPath
+				,Stamina = src.Stamina
+				,Getherwing = src.Getherwing
 	WHEN NOT MATCHED BY SOURCE
 		THEN
 			DELETE
@@ -610,10 +612,14 @@ BEGIN
 			INSERT (
 				Quest
 				,SortPath
+				,Stamina
+				,Getherwing
 				)
 			VALUES (
 				src.Quest
 				,src.SortPath
+				,src.Stamina
+				,src.Getherwing
 				);
 
 	TRUNCATE TABLE core.MaterialQuest
