@@ -37,12 +37,5 @@ const map: {
   Wand: Wand,
 };
 export const WeaponIcon: FC<WeaponIconProps> = (props) => {
-  return (
-    <img
-      src={map[props.weaponType]}
-      alt={props.weaponType}
-      height={17}
-      style={{ marginBottom: '-3px' }}
-    />
-  );
+  return <img src={map[props.weaponType]} alt={props.weaponType} height={17} />;
 };
