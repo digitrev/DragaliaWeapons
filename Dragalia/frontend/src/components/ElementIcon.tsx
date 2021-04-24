@@ -19,12 +19,5 @@ const map = {
   Shadow: Shadow,
 };
 export const ElementIcon: FC<ElementIconProps> = (props) => {
-  return (
-    <img
-      src={map[props.element]}
-      alt={props.element}
-      height={17}
-      style={{ marginBottom: '-3px' }}
-    />
-  );
+  return <img src={map[props.element]} alt={props.element} height={17} />;
 };
