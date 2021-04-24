@@ -21,13 +21,24 @@ import {
 import { Costs } from '../Costs/Costs';
 import { Wyrmprint } from './Wyrmprint';
 import { useAuth } from '../Auth/Auth';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 interface Props {
   data: AccountWyrmprintData;
   limits: WyrmprintLimit;
+  accordionStatus?: { [key: number]: boolean };
+  updateAccordion?: (id: number, status: boolean) => void;
 }
 
-export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
+export const AccountWyrmprint: FC<Props> = ({
+  data,
+  limits,
+  accordionStatus,
+  updateAccordion,
+}) => {
   const { getAccessToken } = useAuth();
   const { wyrmprintId, wyrmprint } = data;
 
@@ -89,106 +100,121 @@ export const AccountWyrmprint: FC<Props> = ({ data, limits }) => {
         padding-bottom: 10px;
       `}
     >
-      {wyrmprint ? <Wyrmprint data={wyrmprint} /> : ''}
-      <Form
-        submitCaption="Update"
-        onSubmit={handleSubmit}
-        defaultValues={data}
-        showSubmit={true}
-        successMessage={'✔'}
-        failureMessage={'❌'}
-        validationRules={{
-          copies: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: 4 },
-          ],
-          copiesWanted: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: 4 },
-          ],
-          wyrmprintLevel: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.level },
-          ],
-          wyrmprintLevelWanted: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: limits?.level },
-          ],
-          unbind: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: 4 },
-          ],
-          unbindWanted: [
-            { validator: isInteger },
-            { validator: required },
-            { validator: nonNegative },
-            { validator: maxValue, arg: 4 },
-          ],
-        }}
+      <Accordion
+        expanded={(accordionStatus && accordionStatus[wyrmprintId]) || false}
+        onChange={(event, expanded) =>
+          updateAccordion && updateAccordion(wyrmprintId, expanded)
+        }
       >
-        <table>
-          <tbody>
-            <tr>
-              <th />
-              <th>Copies</th>
-              <th>Wyrmprint Level</th>
-              <th>Unbind</th>
-            </tr>
-            <tr>
-              <th>Current</th>
-              <td>
-                <Field name="copies" type="Number" />
-              </td>
-              <td>
-                <Field name="wyrmprintLevel" type="Number" />
-              </td>
-              <td>
-                <Field name="unbind" type="Number" />
-              </td>
-            </tr>
-            <tr>
-              <th>Wanted</th>
-              <td>
-                <Field name="copiesWanted" type="Number" />
-              </td>
-              {
-                <td>
-                  <Field name="wyrmprintLevelWanted" type="Number" />
-                </td>
-              }
-              <td>
-                <Field name="unbindWanted" type="Number" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </Form>
-      {costsRequested ? (
-        costsLoading ? (
-          <LoadingText />
-        ) : (
-          <Costs data={costs || []} />
-        )
-      ) : (
-        <PrimaryButton
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          {wyrmprint ? <Wyrmprint data={wyrmprint} /> : ''}
+        </AccordionSummary>
+        <AccordionDetails
           css={css`
-            margin-top: 10px;
+            flex-direction: column;
           `}
-          onClick={handleCosts}
         >
-          Costs
-        </PrimaryButton>
-      )}
+          <Form
+            submitCaption="Update"
+            onSubmit={handleSubmit}
+            defaultValues={data}
+            showSubmit={true}
+            successMessage={'✔'}
+            failureMessage={'❌'}
+            validationRules={{
+              copies: [
+                { validator: isInteger },
+                { validator: required },
+                { validator: nonNegative },
+                { validator: maxValue, arg: 4 },
+              ],
+              copiesWanted: [
+                { validator: isInteger },
+                { validator: required },
+                { validator: nonNegative },
+                { validator: maxValue, arg: 4 },
+              ],
+              wyrmprintLevel: [
+                { validator: isInteger },
+                { validator: required },
+                { validator: nonNegative },
+                { validator: maxValue, arg: limits?.level },
+              ],
+              wyrmprintLevelWanted: [
+                { validator: isInteger },
+                { validator: required },
+                { validator: nonNegative },
+                { validator: maxValue, arg: limits?.level },
+              ],
+              unbind: [
+                { validator: isInteger },
+                { validator: required },
+                { validator: nonNegative },
+                { validator: maxValue, arg: 4 },
+              ],
+              unbindWanted: [
+                { validator: isInteger },
+                { validator: required },
+                { validator: nonNegative },
+                { validator: maxValue, arg: 4 },
+              ],
+            }}
+          >
+            <table>
+              <tbody>
+                <tr>
+                  <th />
+                  <th>Copies</th>
+                  <th>Wyrmprint Level</th>
+                  <th>Unbind</th>
+                </tr>
+                <tr>
+                  <th>Current</th>
+                  <td>
+                    <Field name="copies" type="Number" />
+                  </td>
+                  <td>
+                    <Field name="wyrmprintLevel" type="Number" />
+                  </td>
+                  <td>
+                    <Field name="unbind" type="Number" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Wanted</th>
+                  <td>
+                    <Field name="copiesWanted" type="Number" />
+                  </td>
+                  {
+                    <td>
+                      <Field name="wyrmprintLevelWanted" type="Number" />
+                    </td>
+                  }
+                  <td>
+                    <Field name="unbindWanted" type="Number" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </Form>
+          {costsRequested ? (
+            costsLoading ? (
+              <LoadingText />
+            ) : (
+              <Costs data={costs || []} />
+            )
+          ) : (
+            <PrimaryButton
+              css={css`
+                margin-top: 10px;
+              `}
+              onClick={handleCosts}
+            >
+              Costs
+            </PrimaryButton>
+          )}
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
 };
