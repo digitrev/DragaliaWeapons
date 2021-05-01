@@ -1,8 +1,0 @@
-[
-  { "UpgradeTypeID": 1, "UpgradeType": "Unbind", "Active": true },
-  { "UpgradeTypeID": 2, "UpgradeType": "Refinement", "Active": true },
-  { "UpgradeTypeID": 3, "UpgradeType": "Slots", "Active": true },
-  { "UpgradeTypeID": 5, "UpgradeType": "Weapon Bonus", "Active": true },
-  { "UpgradeTypeID": 6, "UpgradeType": "Copies", "Active": true },
-  { "UpgradeTypeID": 9, "UpgradeType": "Dominion", "Active": true }
-]

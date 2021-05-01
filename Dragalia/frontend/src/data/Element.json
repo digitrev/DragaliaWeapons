@@ -1,8 +1,0 @@
-[
-  { "ElementID": 1, "Element": "Flame", "SortOrder": 1, "Active": true },
-  { "ElementID": 2, "Element": "Water", "SortOrder": 2, "Active": true },
-  { "ElementID": 3, "Element": "Wind", "SortOrder": 3, "Active": true },
-  { "ElementID": 4, "Element": "Light", "SortOrder": 4, "Active": true },
-  { "ElementID": 5, "Element": "Shadow", "SortOrder": 5, "Active": true },
-  { "ElementID": 99, "Element": "None", "SortOrder": -99, "Active": true }
-]

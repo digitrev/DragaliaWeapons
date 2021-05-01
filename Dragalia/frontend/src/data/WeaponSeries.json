@@ -1,32 +1,22 @@
 [
   {
-    "WeaponSeriesID": 1,
-    "WeaponSeries": "Core",
-    "SortOrder": 1,
-    "Active": true
+    "weaponSeriesId": 1,
+    "weaponSeries": "Core"
   },
   {
-    "WeaponSeriesID": 2,
-    "WeaponSeries": "Void",
-    "SortOrder": 2,
-    "Active": true
+    "weaponSeriesId": 2,
+    "weaponSeries": "Void"
   },
   {
-    "WeaponSeriesID": 3,
-    "WeaponSeries": "High Dragon",
-    "SortOrder": 4,
-    "Active": true
+    "weaponSeriesId": 5,
+    "weaponSeries": "Chimeratech"
   },
   {
-    "WeaponSeriesID": 4,
-    "WeaponSeries": "Agito",
-    "SortOrder": 5,
-    "Active": true
+    "weaponSeriesId": 3,
+    "weaponSeries": "High Dragon"
   },
   {
-    "WeaponSeriesID": 5,
-    "WeaponSeries": "Chimeratech",
-    "SortOrder": 3,
-    "Active": true
+    "weaponSeriesId": 4,
+    "weaponSeries": "Agito"
   }
 ]

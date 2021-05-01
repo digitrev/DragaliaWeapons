@@ -11,9 +11,9 @@ export const AdventurerPage = () => {
 
   useEffect(() => {
     let cancelled = false;
-    const doGetAdventurers = async () => {
+    const doGetAdventurers = () => {
       const api = new PublicApi();
-      const adventurerData = await api.getAdventurers();
+      const adventurerData = api.getAdventurers();
       if (!cancelled) {
         setAdventurers(adventurerData);
         setAdventurersLoading(false);

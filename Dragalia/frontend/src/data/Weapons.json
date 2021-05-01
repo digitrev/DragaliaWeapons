@@ -1,0 +1,1970 @@
+[
+  {
+    "weaponId": 30139901,
+    "weapon": "Knight's Sword",
+    "weaponSeries": "Core",
+    "weaponType": "Sword",
+    "rarity": 3,
+    "element": "None"
+  },
+  {
+    "weaponId": 30149901,
+    "weapon": "Knights' Grace",
+    "weaponSeries": "Core",
+    "weaponType": "Sword",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30159901,
+    "weapon": "Hero's Sword",
+    "weaponSeries": "Core",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30150101,
+    "weapon": "Levatein",
+    "weaponSeries": "Core",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30150202,
+    "weapon": "Eoantide",
+    "weaponSeries": "Core",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30150301,
+    "weapon": "Durandal",
+    "weaponSeries": "Core",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30150401,
+    "weapon": "Zex's End",
+    "weaponSeries": "Core",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30150501,
+    "weapon": "Dáinsleif",
+    "weaponSeries": "Core",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30239901,
+    "weapon": "Subjugator",
+    "weaponSeries": "Core",
+    "weaponType": "Blade",
+    "rarity": 3,
+    "element": "None"
+  },
+  {
+    "weaponId": 30249901,
+    "weapon": "Guardian Seal",
+    "weaponSeries": "Core",
+    "weaponType": "Blade",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30259901,
+    "weapon": "Dane's Favor",
+    "weaponSeries": "Core",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30250101,
+    "weapon": "Heaven's Acuity",
+    "weaponSeries": "Core",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30250201,
+    "weapon": "Maar Oasis",
+    "weaponSeries": "Core",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30250301,
+    "weapon": "Anemone",
+    "weaponSeries": "Core",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30250401,
+    "weapon": "Heavenwing",
+    "weaponSeries": "Core",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30250501,
+    "weapon": "Blackwing",
+    "weaponSeries": "Core",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30339901,
+    "weapon": "Bejeweled Dagger",
+    "weaponSeries": "Core",
+    "weaponType": "Dagger",
+    "rarity": 3,
+    "element": "None"
+  },
+  {
+    "weaponId": 30349901,
+    "weapon": "Hardbreaker",
+    "weaponSeries": "Core",
+    "weaponType": "Dagger",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30359901,
+    "weapon": "Kris Naga",
+    "weaponSeries": "Core",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30350102,
+    "weapon": "Aeternal Flame",
+    "weaponSeries": "Core",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30350201,
+    "weapon": "Lux Lamina",
+    "weaponSeries": "Core",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30350301,
+    "weapon": "Karlsnautr",
+    "weaponSeries": "Core",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30350401,
+    "weapon": "Thunderblade Sugaar",
+    "weaponSeries": "Core",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30350501,
+    "weapon": "Honor Edge",
+    "weaponSeries": "Core",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30439901,
+    "weapon": "Warrior's Axe",
+    "weaponSeries": "Core",
+    "weaponType": "Axe",
+    "rarity": 3,
+    "element": "None"
+  },
+  {
+    "weaponId": 30449901,
+    "weapon": "Plain Axe",
+    "weaponSeries": "Core",
+    "weaponType": "Axe",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30459901,
+    "weapon": "Victory Axe",
+    "weaponSeries": "Core",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30450101,
+    "weapon": "Axe of the Blazing King",
+    "weaponSeries": "Core",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30450201,
+    "weapon": "Grand Seadragon",
+    "weaponSeries": "Core",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30450301,
+    "weapon": "Axe of the Southern Cross",
+    "weaponSeries": "Core",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30450401,
+    "weapon": "Radiant Swath",
+    "weaponSeries": "Core",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30450501,
+    "weapon": "Primordial Titan",
+    "weaponSeries": "Core",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30539901,
+    "weapon": "Trident",
+    "weaponSeries": "Core",
+    "weaponType": "Lance",
+    "rarity": 3,
+    "element": "None"
+  },
+  {
+    "weaponId": 30549901,
+    "weapon": "Strong Halberd",
+    "weaponSeries": "Core",
+    "weaponType": "Lance",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30559901,
+    "weapon": "Pactspear",
+    "weaponSeries": "Core",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30550101,
+    "weapon": "Calamity Trigger",
+    "weaponSeries": "Core",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30550201,
+    "weapon": "Ocean Lord",
+    "weaponSeries": "Core",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30550301,
+    "weapon": "Spear of the Northern Cross",
+    "weaponSeries": "Core",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30550402,
+    "weapon": "Thunder King's Greatspear",
+    "weaponSeries": "Core",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30550501,
+    "weapon": "Mistilteinn",
+    "weaponSeries": "Core",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30639901,
+    "weapon": "Composite Bow",
+    "weaponSeries": "Core",
+    "weaponType": "Bow",
+    "rarity": 3,
+    "element": "None"
+  },
+  {
+    "weaponId": 30649901,
+    "weapon": "Executor",
+    "weaponSeries": "Core",
+    "weaponType": "Bow",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30659901,
+    "weapon": "Nitralica's Koto",
+    "weaponSeries": "Core",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30650101,
+    "weapon": "Lupis Solis",
+    "weaponSeries": "Core",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30650201,
+    "weapon": "Peacock's Whorl",
+    "weaponSeries": "Core",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30650302,
+    "weapon": "Stellar Pegasus",
+    "weaponSeries": "Core",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30650402,
+    "weapon": "Thunderbow",
+    "weaponSeries": "Core",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30650501,
+    "weapon": "Necro Arcus",
+    "weaponSeries": "Core",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30739901,
+    "weapon": "Wizard's Rod",
+    "weaponSeries": "Core",
+    "weaponType": "Wand",
+    "rarity": 3,
+    "element": "None"
+  },
+  {
+    "weaponId": 30749901,
+    "weapon": "Latchkey",
+    "weaponSeries": "Core",
+    "weaponType": "Wand",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30759901,
+    "weapon": "Wand of the Torrent",
+    "weaponSeries": "Core",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30750101,
+    "weapon": "Terranigmus",
+    "weaponSeries": "Core",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30750202,
+    "weapon": "Ocean Monarch",
+    "weaponSeries": "Core",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30750301,
+    "weapon": "Phytalmios",
+    "weaponSeries": "Core",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30750401,
+    "weapon": "Twilight Shimmer",
+    "weaponSeries": "Core",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30750501,
+    "weapon": "Underworld Despair",
+    "weaponSeries": "Core",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30839901,
+    "weapon": "Staff of Grace",
+    "weaponSeries": "Core",
+    "weaponType": "Staff",
+    "rarity": 3,
+    "element": "None"
+  },
+  {
+    "weaponId": 30849901,
+    "weapon": "Staff of Life",
+    "weaponSeries": "Core",
+    "weaponType": "Staff",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30859901,
+    "weapon": "Cane of Soul's Repose",
+    "weaponSeries": "Core",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30850101,
+    "weapon": "Staff of the Red Emperor",
+    "weaponSeries": "Core",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30850201,
+    "weapon": "Bracing Waters",
+    "weaponSeries": "Core",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30850301,
+    "weapon": "Ancient Mage's Windcane",
+    "weaponSeries": "Core",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30850401,
+    "weapon": "Light of Judgment",
+    "weaponSeries": "Core",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30850501,
+    "weapon": "Caduceus",
+    "weaponSeries": "Core",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30949901,
+    "weapon": "Antique Manacaster",
+    "weaponSeries": "Core",
+    "weaponType": "Manacaster",
+    "rarity": 4,
+    "element": "None"
+  },
+  {
+    "weaponId": 30959901,
+    "weapon": "Chanzelian Caster",
+    "weaponSeries": "Core",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "None"
+  },
+  {
+    "weaponId": 30950102,
+    "weapon": "Chanzelian Caster Mk. 65",
+    "weaponSeries": "Core",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30950202,
+    "weapon": "Chanzelian Caster Mk. 72",
+    "weaponSeries": "Core",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30950302,
+    "weapon": "Chanzelian Caster Mk. 21",
+    "weaponSeries": "Core",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30950402,
+    "weapon": "Chanzelian Caster Mk. 62",
+    "weaponSeries": "Core",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30950502,
+    "weapon": "Chanzelian Caster Mk. 81",
+    "weaponSeries": "Core",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30150102,
+    "weapon": "Inferno Apogee",
+    "weaponSeries": "Void",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30150203,
+    "weapon": "Judge of Oceans",
+    "weaponSeries": "Void",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30150303,
+    "weapon": "Roaring Weald",
+    "weaponSeries": "Void",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30150408,
+    "weapon": "Death Aeon",
+    "weaponSeries": "Void",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30150502,
+    "weapon": "Abyssbringer",
+    "weaponSeries": "Void",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30250102,
+    "weapon": "Skyrender",
+    "weaponSeries": "Void",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30250202,
+    "weapon": "Highwater Slicer",
+    "weaponSeries": "Void",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30250303,
+    "weapon": "Stormsquall Crash",
+    "weaponSeries": "Void",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30250407,
+    "weapon": "Hollow Lightning",
+    "weaponSeries": "Void",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30250502,
+    "weapon": "Nightsky Ripper",
+    "weaponSeries": "Void",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30350103,
+    "weapon": "Vermillion Pain",
+    "weaponSeries": "Void",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30350203,
+    "weapon": "Frigid Sting",
+    "weaponSeries": "Void",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30350303,
+    "weapon": "The Gale",
+    "weaponSeries": "Void",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30350406,
+    "weapon": "Merciful Claw",
+    "weaponSeries": "Void",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30350503,
+    "weapon": "Death Seeker",
+    "weaponSeries": "Void",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30450102,
+    "weapon": "Heavenwrath Gaze",
+    "weaponSeries": "Void",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30450203,
+    "weapon": "Permafrost Crash",
+    "weaponSeries": "Void",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30450303,
+    "weapon": "Jagged Bolt",
+    "weaponSeries": "Void",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30450407,
+    "weapon": "Blitzfang",
+    "weaponSeries": "Void",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30450503,
+    "weapon": "Genocide Cleaver",
+    "weaponSeries": "Void",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30550102,
+    "weapon": "Flamedance Lance",
+    "weaponSeries": "Void",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30550203,
+    "weapon": "Strohm Mare",
+    "weaponSeries": "Void",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30550303,
+    "weapon": "Windsovereign Trident",
+    "weaponSeries": "Void",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30550408,
+    "weapon": "Starpiercer",
+    "weaponSeries": "Void",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30550503,
+    "weapon": "Final Eclipse",
+    "weaponSeries": "Void",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30650102,
+    "weapon": "Vulcanrage",
+    "weaponSeries": "Void",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30650202,
+    "weapon": "Everfrost Bow",
+    "weaponSeries": "Void",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30650304,
+    "weapon": "Firmament Auger",
+    "weaponSeries": "Void",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30650407,
+    "weapon": "Astral Echo",
+    "weaponSeries": "Void",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30650502,
+    "weapon": "Black Dahlia Bow",
+    "weaponSeries": "Void",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30750102,
+    "weapon": "Scepter of Infinite Fire",
+    "weaponSeries": "Void",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30750204,
+    "weapon": "Spirit Breaker",
+    "weaponSeries": "Void",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30750303,
+    "weapon": "Typhoon's Rule",
+    "weaponSeries": "Void",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30750406,
+    "weapon": "Worldshaker",
+    "weaponSeries": "Void",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30750503,
+    "weapon": "Dirge of Desperation",
+    "weaponSeries": "Void",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30850102,
+    "weapon": "Endless Demise",
+    "weaponSeries": "Void",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30850202,
+    "weapon": "Endless Azure Core",
+    "weaponSeries": "Void",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30850303,
+    "weapon": "Skypainter Staff",
+    "weaponSeries": "Void",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30850406,
+    "weapon": "Dominus of Ever",
+    "weaponSeries": "Void",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30850502,
+    "weapon": "Aria of Lamentation",
+    "weaponSeries": "Void",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30150111,
+    "weapon": "Chimeratech Commander",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30150212,
+    "weapon": "Chimeratech Anomalocaris",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30150310,
+    "weapon": "Chimeratech Cypress",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30150414,
+    "weapon": "Chimeratech Sirius",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30150510,
+    "weapon": "Chimeratech Nocturne",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30250108,
+    "weapon": "Chimeratech Lord",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30250209,
+    "weapon": "Chimeratech Hadranax",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30250307,
+    "weapon": "Chimeratech Benzoin",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30250410,
+    "weapon": "Chimeratech Canopus",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30250507,
+    "weapon": "Chimeratech Requiem",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30350108,
+    "weapon": "Chimeratech Elite",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30350208,
+    "weapon": "Chimeratech Vetulicola",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30350307,
+    "weapon": "Chimeratech Tea Tree",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30350409,
+    "weapon": "Chimeratech Capella",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30350508,
+    "weapon": "Chimeratech Rhapsody",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30450108,
+    "weapon": "Chimeratech Warlord",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30450209,
+    "weapon": "Chimeratech Helmetia",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30450307,
+    "weapon": "Chimeratech Palmarosa",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30450410,
+    "weapon": "Chimeratech Rigel",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30450508,
+    "weapon": "Chimeratech Fugue",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30550108,
+    "weapon": "Chimeratech Lancemaster",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30550209,
+    "weapon": "Chimeratech Takakkawia",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30550307,
+    "weapon": "Chimeratech Caraway",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30550412,
+    "weapon": "Chimeratech Arcturus",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30550508,
+    "weapon": "Chimeratech Elegy",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30650107,
+    "weapon": "Chimeratech Sniper",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30650208,
+    "weapon": "Chimeratech Hallucigenia",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30650308,
+    "weapon": "Chimeratech Ajwain",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30650410,
+    "weapon": "Chimeratech Vega",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30650507,
+    "weapon": "Chimeratech Concerto",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30750107,
+    "weapon": "Chimeratech Archmage",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30750208,
+    "weapon": "Chimeratech Hurdia",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30750307,
+    "weapon": "Chimeratech Frankin",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30750409,
+    "weapon": "Chimeratech Betelgeuse",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30750508,
+    "weapon": "Chimeratech Oratorio",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30850107,
+    "weapon": "Chimeratech Cardinal",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30850208,
+    "weapon": "Chimeratech Metaldetes",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30850307,
+    "weapon": "Chimeratech Marjoram",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30850409,
+    "weapon": "Chimeratech Procyon",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30850507,
+    "weapon": "Chimeratech Coda",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30950110,
+    "weapon": "Chimeratech Gunner",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30950210,
+    "weapon": "Chimeratech Marella",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30950310,
+    "weapon": "Chimeratech Fennel",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30950410,
+    "weapon": "Chimeratech Al Nasr",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30950510,
+    "weapon": "Chimeratech Cantata",
+    "weaponSeries": "Chimeratech",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30150107,
+    "weapon": "Absolute Crimson",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30150208,
+    "weapon": "Absolute Aqua",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30150307,
+    "weapon": "Absolute Tempest",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30150410,
+    "weapon": "Absolute Lightning",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30150503,
+    "weapon": "Absolute Hex",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Sword",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30250104,
+    "weapon": "Blinding Conflagration",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30250204,
+    "weapon": "Ruinous Torrent",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30250304,
+    "weapon": "Endless Horizon",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30250404,
+    "weapon": "Brilliant Flash",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30250503,
+    "weapon": "True Abyss",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Blade",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30350105,
+    "weapon": "Flameruler's Maw",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30350205,
+    "weapon": "Tideruler's Maw",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30350305,
+    "weapon": "Windruler's Maw",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30350404,
+    "weapon": "Fulminator's Maw",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30350504,
+    "weapon": "Shaderuler's Maw",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Dagger",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30450104,
+    "weapon": "Royal Crimson Heat",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30450205,
+    "weapon": "Mercy's Azure Tide",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30450305,
+    "weapon": "Glorystorm's Guide",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30450404,
+    "weapon": "Mighty Thundercrash",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30450504,
+    "weapon": "Shadowy Darkbite Axe",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Axe",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30550104,
+    "weapon": "Pureflame Lance",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30550205,
+    "weapon": "Limpid Rush",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30550305,
+    "weapon": "Guiding Gale",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30550405,
+    "weapon": "Brilliant Lightflash",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30550504,
+    "weapon": "Ebon Scourge Lance",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Lance",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30650104,
+    "weapon": "Valkyrie's Fire",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30650204,
+    "weapon": "Azure Mercurius",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30650305,
+    "weapon": "Jormungand's Fury",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30650405,
+    "weapon": "Jupiter's Sky",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30650503,
+    "weapon": "Hellish Prophecy",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Bow",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30750104,
+    "weapon": "Infernoblaze",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30750206,
+    "weapon": "Aquatic Spiral",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30750305,
+    "weapon": "Grand Tempest",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30750404,
+    "weapon": "Primeval Thunder",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30750504,
+    "weapon": "Darkbinder",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Wand",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30850104,
+    "weapon": "Blazegambol",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30850204,
+    "weapon": "Ocean's Embrace",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30850304,
+    "weapon": "Stormruler",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30850404,
+    "weapon": "Heavensneer",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30850503,
+    "weapon": "Dark Hunger",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Staff",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30950103,
+    "weapon": "Crimson Trigger",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30950203,
+    "weapon": "Aqua Trigger",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30950303,
+    "weapon": "Tempest Trigger",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30950403,
+    "weapon": "Thunder Trigger",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30950503,
+    "weapon": "Curse Trigger",
+    "weaponSeries": "High Dragon",
+    "weaponType": "Manacaster",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30160101,
+    "weapon": "Nothung",
+    "weaponSeries": "Agito",
+    "weaponType": "Sword",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30160201,
+    "weapon": "Ame no Murakumo",
+    "weaponSeries": "Agito",
+    "weaponType": "Sword",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30160301,
+    "weapon": "Excalibur",
+    "weaponSeries": "Agito",
+    "weaponType": "Sword",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30160401,
+    "weapon": "Caladbolg",
+    "weaponSeries": "Agito",
+    "weaponType": "Sword",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30160501,
+    "weapon": "Yitian Jian",
+    "weaponSeries": "Agito",
+    "weaponType": "Sword",
+    "rarity": 6,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30260101,
+    "weapon": "Tyrfing",
+    "weaponSeries": "Agito",
+    "weaponType": "Blade",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30260201,
+    "weapon": "Ame no Habakiri",
+    "weaponSeries": "Agito",
+    "weaponType": "Blade",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30260301,
+    "weapon": "Arondight",
+    "weaponSeries": "Agito",
+    "weaponType": "Blade",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30260401,
+    "weapon": "Fragarach",
+    "weaponSeries": "Agito",
+    "weaponType": "Blade",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30260501,
+    "weapon": "Qixing Baodao",
+    "weaponSeries": "Agito",
+    "weaponType": "Blade",
+    "rarity": 6,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30360101,
+    "weapon": "Hrotti",
+    "weaponSeries": "Agito",
+    "weaponType": "Dagger",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30360201,
+    "weapon": "Futsu no Mitama",
+    "weaponSeries": "Agito",
+    "weaponType": "Dagger",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30360301,
+    "weapon": "Carnwennan",
+    "weaponSeries": "Agito",
+    "weaponType": "Dagger",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30360401,
+    "weapon": "Claíomh Solais",
+    "weaponSeries": "Agito",
+    "weaponType": "Dagger",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30360501,
+    "weapon": "Qinghong Jian",
+    "weaponSeries": "Agito",
+    "weaponType": "Dagger",
+    "rarity": 6,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30460101,
+    "weapon": "Mjölnir",
+    "weaponSeries": "Agito",
+    "weaponType": "Axe",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30460201,
+    "weapon": "Ohohagari",
+    "weaponSeries": "Agito",
+    "weaponType": "Axe",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30460301,
+    "weapon": "Marmyadose",
+    "weaponSeries": "Agito",
+    "weaponType": "Axe",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30460401,
+    "weapon": "Rog Mol",
+    "weaponSeries": "Agito",
+    "weaponType": "Axe",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30460501,
+    "weapon": "Fangtian Huaji",
+    "weaponSeries": "Agito",
+    "weaponType": "Axe",
+    "rarity": 6,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30560101,
+    "weapon": "Gungnir",
+    "weaponSeries": "Agito",
+    "weaponType": "Lance",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30560201,
+    "weapon": "Ame no Nuhoko",
+    "weaponSeries": "Agito",
+    "weaponType": "Lance",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30560301,
+    "weapon": "Rhongomyniad",
+    "weaponSeries": "Agito",
+    "weaponType": "Lance",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30560401,
+    "weapon": "Areadbhar",
+    "weaponSeries": "Agito",
+    "weaponType": "Lance",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30560501,
+    "weapon": "Qinglong Yanyuedao",
+    "weaponSeries": "Agito",
+    "weaponType": "Lance",
+    "rarity": 6,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30660101,
+    "weapon": "Ýdalir",
+    "weaponSeries": "Agito",
+    "weaponType": "Bow",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30660201,
+    "weapon": "Ame no Hajiyumi",
+    "weaponSeries": "Agito",
+    "weaponType": "Bow",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30660301,
+    "weapon": "Failnaught",
+    "weaponSeries": "Agito",
+    "weaponType": "Bow",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30660401,
+    "weapon": "Tathlum",
+    "weaponSeries": "Agito",
+    "weaponType": "Bow",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30660501,
+    "weapon": "Longshe Gong",
+    "weaponSeries": "Agito",
+    "weaponType": "Bow",
+    "rarity": 6,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30760101,
+    "weapon": "Brísingr",
+    "weaponSeries": "Agito",
+    "weaponType": "Wand",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30760201,
+    "weapon": "Omizununo",
+    "weaponSeries": "Agito",
+    "weaponType": "Wand",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30760301,
+    "weapon": "Camelot",
+    "weaponSeries": "Agito",
+    "weaponType": "Wand",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30760401,
+    "weapon": "Brionac",
+    "weaponSeries": "Agito",
+    "weaponType": "Wand",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30760501,
+    "weapon": "Jiu Ci",
+    "weaponSeries": "Agito",
+    "weaponType": "Wand",
+    "rarity": 6,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30860101,
+    "weapon": "Gjallarhorn",
+    "weaponSeries": "Agito",
+    "weaponType": "Staff",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30860201,
+    "weapon": "Kunado",
+    "weaponSeries": "Agito",
+    "weaponType": "Staff",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30860301,
+    "weapon": "Avalon",
+    "weaponSeries": "Agito",
+    "weaponType": "Staff",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30860401,
+    "weapon": "Del Frith",
+    "weaponSeries": "Agito",
+    "weaponType": "Staff",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30860501,
+    "weapon": "Li Zhang",
+    "weaponSeries": "Agito",
+    "weaponType": "Staff",
+    "rarity": 6,
+    "element": "Shadow"
+  },
+  {
+    "weaponId": 30960101,
+    "weapon": "Draupnir",
+    "weaponSeries": "Agito",
+    "weaponType": "Manacaster",
+    "rarity": 6,
+    "element": "Flame"
+  },
+  {
+    "weaponId": 30960201,
+    "weapon": "Ame no Torifune",
+    "weaponSeries": "Agito",
+    "weaponType": "Manacaster",
+    "rarity": 6,
+    "element": "Water"
+  },
+  {
+    "weaponId": 30960301,
+    "weapon": "Gallatin",
+    "weaponSeries": "Agito",
+    "weaponType": "Manacaster",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30960401,
+    "weapon": "Gae Assail",
+    "weaponSeries": "Agito",
+    "weaponType": "Manacaster",
+    "rarity": 6,
+    "element": "Light"
+  },
+  {
+    "weaponId": 30960501,
+    "weapon": "Wanli Qi Yunyan",
+    "weaponSeries": "Agito",
+    "weaponType": "Manacaster",
+    "rarity": 6,
+    "element": "Shadow"
+  }
+]

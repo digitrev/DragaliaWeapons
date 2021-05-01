@@ -1,5 +1,3 @@
-import HttpClient from './HttpClient';
-import { webAPIUrl } from '../AppSettings';
 import {
   AdventurerData,
   DragonData,
@@ -11,124 +9,74 @@ import {
   PassiveData,
   QuestData,
   WeaponData,
-  WeaponLevelLimit,
   WeaponLimit,
   WeaponSeriesData,
   WeaponTypeData,
-  WeaponUnbindLimit,
   WyrmprintData,
   WyrmprintLimit,
 } from './DataInterfaces';
+import adventurersJson from '../data/Adventurers.json';
+import dragonsJson from '../data/Dragons.json';
+import elementsJson from '../data/Elements.json';
+import facilitiesJson from '../data/Facilities.json';
+import facilityLimitsJson from '../data/FacilityLimits.json';
+import materialsJson from '../data/Materials.json';
+import materialQuestsJson from '../data/MaterialQuests.json';
+import passivesJson from '../data/Passives.json';
+import questsJson from '../data/Quests.json';
+import weaponsJson from '../data/Weapons.json';
+import weaponLimitsJson from '../data/WeaponLimits.json';
+import weaponSeriesJson from '../data/WeaponSeries.json';
+import weaponTypesJson from '../data/WeaponTypes.json';
+import wyrmprintLevelLimitsJson from '../data/WyrmprintLevelLimits.json';
+import wyrmprintsJson from '../data/Wyrmprints.json';
 
-export class PublicApi extends HttpClient {
-  public constructor() {
-    super(webAPIUrl);
-  }
-
+export class PublicApi {
   //adventurers
-  public getAdventurers = () =>
-    this.instance.get<AdventurerData[]>('/Adventurers');
-
-  public getAdventurer = (adventurerID: number) =>
-    this.instance.get<AdventurerData>(`/Adventurers/${adventurerID}`);
+  public getAdventurers = (): AdventurerData[] => adventurersJson;
 
   //dragons
-  public getDragons = () => this.instance.get<DragonData[]>('/Dragons');
-
-  public getDragon = (dragonID: number) =>
-    this.instance.get<DragonData>(`/Dragons/${dragonID}`);
+  public getDragons = (): DragonData[] => dragonsJson;
 
   //elements
-  public getElements = () => this.instance.get<ElementData[]>('/Elements');
+  public getElements = (): ElementData[] => elementsJson;
 
   //facilities
-  public getFacilities = () =>
-    this.instance.get<FacilityData[]>('/FacilityList');
-
-  public getFacility = (facilityID: number) =>
-    this.instance.get<FacilityData>(`/FacilityList/${facilityID}`);
+  public getFacilities = (): FacilityData[] => facilitiesJson;
 
   //facility limits
-  public getAllFacilityLimits = () =>
-    this.instance.get<FacilityLimit[]>('/FacilityLimits');
-
-  public getFacilityLimits = (facilityID: number) =>
-    this.instance.get<FacilityLimit>(`/FacilityLimits/${facilityID}`);
+  public getAllFacilityLimits = (): FacilityLimit[] => facilityLimitsJson;
 
   //materials
-  public getMaterials = () =>
-    this.instance.get<MaterialData[]>('/MaterialList');
+  public getMaterials = (): MaterialData[] => materialsJson;
 
-  public getMaterial = (materialID: string) =>
-    this.instance.get<MaterialData>(`/MaterialList/${materialID}`);
-
-  public getMaterialQuests = () =>
-    this.instance.get<MaterialQuestData[]>('/MaterialList/quests');
+  public getMaterialQuests = (): MaterialQuestData[] => materialQuestsJson;
 
   public getMaterialQuestsFilter = (materialIDs: string[]) =>
-    this.instance.get<MaterialQuestData[]>('/MaterialList/quests', {
-      params: {
-        materials: materialIDs.reduce((acc, cur) => `${cur},${acc}`, ''),
-      },
-    });
+    this.getMaterialQuests().filter((mq) =>
+      materialIDs.some((m) => m === mq.materialId),
+    );
 
   //passive apis
-  public getPassives = () => this.instance.get<PassiveData[]>('/Passives');
-
-  public getPassive = (passiveID: number) =>
-    this.instance.get<PassiveData>(`/Passives/${passiveID}`);
+  public getPassives = (): PassiveData[] => passivesJson;
 
   //quests
-  public getQuests = () => this.instance.get<QuestData[]>('/Quests');
-
-  public getQuest = (questID: number) =>
-    this.instance.get<QuestData>(`/Quests/${questID}`);
+  public getQuests = (): QuestData[] => questsJson;
 
   //weapon limits
-  public getAllWeaponLimits = () =>
-    this.instance.get<WeaponLimit[]>('/WeaponLimits');
-
-  public getWeaponLimits = (weaponID: number) =>
-    this.instance.get<WeaponLimit>(`/WeaponLimits/${weaponID}`);
-
-  public getWeaponUnbindLimits = (rarity?: number) =>
-    this.instance.get<WeaponUnbindLimit[]>('/WeaponLimits/unbind', {
-      params: {
-        rarity: rarity,
-      },
-    });
-
-  public getWeaponLevelLimits = (rarity?: number) =>
-    this.instance.get<WeaponLevelLimit[]>('/WeaponLimits/level', {
-      params: {
-        rarity: rarity,
-      },
-    });
+  public getAllWeaponLimits = (): WeaponLimit[] => weaponLimitsJson;
 
   //weapons
-  public getWeapons = () => this.instance.get<WeaponData[]>('/WeaponList');
-
-  public getWeapon = (id: number) =>
-    this.instance.get<WeaponData>(`/WeaponList/${id}`);
+  public getWeapons = (): WeaponData[] => weaponsJson;
 
   //weapon series
-  public getWeaponSeries = () =>
-    this.instance.get<WeaponSeriesData[]>('/WeaponSeries');
+  public getWeaponSeries = (): WeaponSeriesData[] => weaponSeriesJson;
 
   //weapon types
-  public getWeaponTypes = () =>
-    this.instance.get<WeaponTypeData[]>('/WeaponTypes');
+  public getWeaponTypes = (): WeaponTypeData[] => weaponTypesJson;
 
   //wyrmprints
-  public getWyrmprints = () =>
-    this.instance.get<WyrmprintData[]>('/Wyrmprints');
+  public getWyrmprints = (): WyrmprintData[] => wyrmprintsJson;
 
-  public getWyrmprint = (wyrmprintID: number) =>
-    this.instance.get<WyrmprintData>(`/Wyrmprints/${wyrmprintID}`);
-
-  public getWyrmprintLimits = () =>
-    this.instance.get<WyrmprintLimit[]>('/WyrmprintLevelLimits');
-
-  public getWyrmprintLimitByRarity = (rarity: number) =>
-    this.instance.get<WyrmprintLimit[]>(`/WyrmprintLevelLimits/${rarity}`);
+  public getWyrmprintLimits = (): WyrmprintLimit[] => wyrmprintLevelLimitsJson;
 }

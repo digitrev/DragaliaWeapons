@@ -1,0 +1,1542 @@
+[
+  {
+    "questId": 278,
+    "quest": "Quests",
+    "sortPath": "/"
+  },
+  {
+    "questId": 279,
+    "quest": "Campaign Quests",
+    "sortPath": "/1/"
+  },
+  {
+    "questId": 280,
+    "quest": "Campaign Quests: Normal",
+    "sortPath": "/1/1/"
+  },
+  {
+    "questId": 281,
+    "quest": "Chapter 1 Normal",
+    "sortPath": "/1/1/1/"
+  },
+  {
+    "questId": 282,
+    "quest": "Chapter 2 Normal",
+    "sortPath": "/1/1/2/"
+  },
+  {
+    "questId": 283,
+    "quest": "Chapter 3 Normal",
+    "sortPath": "/1/1/3/"
+  },
+  {
+    "questId": 284,
+    "quest": "Chapter 4 Normal",
+    "sortPath": "/1/1/4/"
+  },
+  {
+    "questId": 285,
+    "quest": "Chapter 5 Normal",
+    "sortPath": "/1/1/5/"
+  },
+  {
+    "questId": 286,
+    "quest": "Chapter 6 Normal",
+    "sortPath": "/1/1/6/"
+  },
+  {
+    "questId": 287,
+    "quest": "Chapter 7 Normal",
+    "sortPath": "/1/1/7/"
+  },
+  {
+    "questId": 288,
+    "quest": "Chapter 8 Normal",
+    "sortPath": "/1/1/8/"
+  },
+  {
+    "questId": 289,
+    "quest": "Chapter 9 Normal",
+    "sortPath": "/1/1/9/"
+  },
+  {
+    "questId": 290,
+    "quest": "Chapter 10 Normal",
+    "sortPath": "/1/1/10/"
+  },
+  {
+    "questId": 291,
+    "quest": "Chapter 11 Normal",
+    "sortPath": "/1/1/11/"
+  },
+  {
+    "questId": 292,
+    "quest": "Chapter 12 Normal",
+    "sortPath": "/1/1/12/"
+  },
+  {
+    "questId": 293,
+    "quest": "Chapter 13 Normal",
+    "sortPath": "/1/1/13/"
+  },
+  {
+    "questId": 294,
+    "quest": "Chapter 14 Normal",
+    "sortPath": "/1/1/14/"
+  },
+  {
+    "questId": 295,
+    "quest": "Chapter 15 Normal",
+    "sortPath": "/1/1/15/"
+  },
+  {
+    "questId": 296,
+    "quest": "Chapter 16 Normal",
+    "sortPath": "/1/1/16/"
+  },
+  {
+    "questId": 297,
+    "quest": "Chapter 17 Normal",
+    "sortPath": "/1/1/17/"
+  },
+  {
+    "questId": 298,
+    "quest": "Chapter 18 Normal",
+    "sortPath": "/1/1/18/"
+  },
+  {
+    "questId": 569,
+    "quest": "Chapter 19 Normal",
+    "sortPath": "/1/1/19/"
+  },
+  {
+    "questId": 299,
+    "quest": "Campaign Quests: Hard",
+    "sortPath": "/1/2/"
+  },
+  {
+    "questId": 300,
+    "quest": "Chapter 1 Hard",
+    "sortPath": "/1/2/1/"
+  },
+  {
+    "questId": 301,
+    "quest": "Ch. 1 / 1-2 Hard",
+    "sortPath": "/1/2/1/1/"
+  },
+  {
+    "questId": 302,
+    "quest": "Ch. 1 / 2-2 Hard",
+    "sortPath": "/1/2/1/2/"
+  },
+  {
+    "questId": 303,
+    "quest": "Ch. 1 / 4-5 Hard",
+    "sortPath": "/1/2/1/3/"
+  },
+  {
+    "questId": 304,
+    "quest": "Chapter 2 Hard",
+    "sortPath": "/1/2/2/"
+  },
+  {
+    "questId": 305,
+    "quest": "Ch. 2 / 1-3 Hard",
+    "sortPath": "/1/2/2/1/"
+  },
+  {
+    "questId": 306,
+    "quest": "Ch. 2 / 3-3 Hard",
+    "sortPath": "/1/2/2/2/"
+  },
+  {
+    "questId": 307,
+    "quest": "Ch. 2 / 4-2 Hard",
+    "sortPath": "/1/2/2/3/"
+  },
+  {
+    "questId": 308,
+    "quest": "Ch. 2 / 5-1 Hard",
+    "sortPath": "/1/2/2/4/"
+  },
+  {
+    "questId": 309,
+    "quest": "Ch. 2 / 6-1 Hard",
+    "sortPath": "/1/2/2/5/"
+  },
+  {
+    "questId": 310,
+    "quest": "Chapter 3 Hard",
+    "sortPath": "/1/2/3/"
+  },
+  {
+    "questId": 311,
+    "quest": "Ch. 3 / 1-3 Hard",
+    "sortPath": "/1/2/3/1/"
+  },
+  {
+    "questId": 312,
+    "quest": "Ch. 3 / 2-3 Hard",
+    "sortPath": "/1/2/3/2/"
+  },
+  {
+    "questId": 313,
+    "quest": "Ch. 3 / 3-5 Hard",
+    "sortPath": "/1/2/3/3/"
+  },
+  {
+    "questId": 314,
+    "quest": "Ch. 3 / 4-3 Hard",
+    "sortPath": "/1/2/3/4/"
+  },
+  {
+    "questId": 315,
+    "quest": "Chapter 4 Hard",
+    "sortPath": "/1/2/4/"
+  },
+  {
+    "questId": 316,
+    "quest": "Ch. 4 / 1-4 Hard",
+    "sortPath": "/1/2/4/1/"
+  },
+  {
+    "questId": 317,
+    "quest": "Ch. 4 / 3-5 Hard",
+    "sortPath": "/1/2/4/2/"
+  },
+  {
+    "questId": 318,
+    "quest": "Ch. 4 / 4-2 Hard",
+    "sortPath": "/1/2/4/3/"
+  },
+  {
+    "questId": 319,
+    "quest": "Ch. 4 / 5-2 Hard",
+    "sortPath": "/1/2/4/4/"
+  },
+  {
+    "questId": 320,
+    "quest": "Chapter 5 Hard",
+    "sortPath": "/1/2/5/"
+  },
+  {
+    "questId": 321,
+    "quest": "Ch. 5 / 1-3 Hard",
+    "sortPath": "/1/2/5/1/"
+  },
+  {
+    "questId": 322,
+    "quest": "Ch. 5 / 2-4 Hard",
+    "sortPath": "/1/2/5/2/"
+  },
+  {
+    "questId": 323,
+    "quest": "Ch. 5 / 3-3 Hard",
+    "sortPath": "/1/2/5/3/"
+  },
+  {
+    "questId": 324,
+    "quest": "Ch. 5 / 4-3 Hard",
+    "sortPath": "/1/2/5/4/"
+  },
+  {
+    "questId": 325,
+    "quest": "Chapter 6 Hard",
+    "sortPath": "/1/2/6/"
+  },
+  {
+    "questId": 326,
+    "quest": "Ch. 6 / 1-6 Hard",
+    "sortPath": "/1/2/6/1/"
+  },
+  {
+    "questId": 327,
+    "quest": "Ch. 6 / 3-3 Hard",
+    "sortPath": "/1/2/6/2/"
+  },
+  {
+    "questId": 328,
+    "quest": "Ch. 6 / 4-2 Hard",
+    "sortPath": "/1/2/6/3/"
+  },
+  {
+    "questId": 329,
+    "quest": "Chapter 7 Hard",
+    "sortPath": "/1/2/7/"
+  },
+  {
+    "questId": 330,
+    "quest": "Ch. 7 / 1-3 Hard",
+    "sortPath": "/1/2/7/1/"
+  },
+  {
+    "questId": 570,
+    "quest": "Ch. 7 / 2-3 Hard",
+    "sortPath": "/1/2/7/2/"
+  },
+  {
+    "questId": 331,
+    "quest": "Chapter 8 Hard",
+    "sortPath": "/1/2/8/"
+  },
+  {
+    "questId": 332,
+    "quest": "Ch. 8 / 1-4 Hard",
+    "sortPath": "/1/2/8/1/"
+  },
+  {
+    "questId": 333,
+    "quest": "Ch. 8 / 2-3 Hard",
+    "sortPath": "/1/2/8/2/"
+  },
+  {
+    "questId": 571,
+    "quest": "Ch. 8 / 3-4 Hard",
+    "sortPath": "/1/2/8/3/"
+  },
+  {
+    "questId": 334,
+    "quest": "Chapter 9 Hard",
+    "sortPath": "/1/2/9/"
+  },
+  {
+    "questId": 335,
+    "quest": "Ch. 9 / 1-2 Hard",
+    "sortPath": "/1/2/9/1/"
+  },
+  {
+    "questId": 336,
+    "quest": "Ch. 9 / 2-2 Hard",
+    "sortPath": "/1/2/9/2/"
+  },
+  {
+    "questId": 572,
+    "quest": "Ch. 9 / 3-2 Hard",
+    "sortPath": "/1/2/9/3/"
+  },
+  {
+    "questId": 337,
+    "quest": "Chapter 10 Hard",
+    "sortPath": "/1/2/10/"
+  },
+  {
+    "questId": 338,
+    "quest": "Ch. 10 / 1-2 Hard",
+    "sortPath": "/1/2/10/1/"
+  },
+  {
+    "questId": 339,
+    "quest": "Ch. 10 / 2-2 Hard",
+    "sortPath": "/1/2/10/2/"
+  },
+  {
+    "questId": 573,
+    "quest": "Ch. 10 / 3-2 Hard",
+    "sortPath": "/1/2/10/3/"
+  },
+  {
+    "questId": 340,
+    "quest": "Chapter 11 Hard",
+    "sortPath": "/1/2/11/"
+  },
+  {
+    "questId": 341,
+    "quest": "Chapter 12 Hard",
+    "sortPath": "/1/2/12/"
+  },
+  {
+    "questId": 342,
+    "quest": "Chapter 13 Hard",
+    "sortPath": "/1/2/13/"
+  },
+  {
+    "questId": 343,
+    "quest": "Chapter 14 Hard",
+    "sortPath": "/1/2/14/"
+  },
+  {
+    "questId": 574,
+    "quest": "Ch. 14 / 1-2 Hard",
+    "sortPath": "/1/2/14/1/"
+  },
+  {
+    "questId": 344,
+    "quest": "Chapter 15 Hard",
+    "sortPath": "/1/2/15/"
+  },
+  {
+    "questId": 345,
+    "quest": "Chapter 16 Hard",
+    "sortPath": "/1/2/16/"
+  },
+  {
+    "questId": 346,
+    "quest": "Chapter 17 Hard",
+    "sortPath": "/1/2/17/"
+  },
+  {
+    "questId": 347,
+    "quest": "Chapter 18 Hard",
+    "sortPath": "/1/2/18/"
+  },
+  {
+    "questId": 575,
+    "quest": "Chapter 19 Hard",
+    "sortPath": "/1/2/19/"
+  },
+  {
+    "questId": 348,
+    "quest": "Campaign Quests: Very Hard",
+    "sortPath": "/1/3/"
+  },
+  {
+    "questId": 349,
+    "quest": "Chapter 1 Very Hard",
+    "sortPath": "/1/3/1/"
+  },
+  {
+    "questId": 350,
+    "quest": "Ch. 1 / 1-2 Very Hard",
+    "sortPath": "/1/3/1/1/"
+  },
+  {
+    "questId": 351,
+    "quest": "Ch. 1 / 2-2 Very Hard",
+    "sortPath": "/1/3/1/2/"
+  },
+  {
+    "questId": 352,
+    "quest": "Ch. 1 / 4-5 Very Hard",
+    "sortPath": "/1/3/1/3/"
+  },
+  {
+    "questId": 353,
+    "quest": "Chapter 2 Very Hard",
+    "sortPath": "/1/3/2/"
+  },
+  {
+    "questId": 354,
+    "quest": "Ch. 2 / 1-3 Very Hard",
+    "sortPath": "/1/3/2/1/"
+  },
+  {
+    "questId": 355,
+    "quest": "Ch. 2 / 3-3 Very Hard",
+    "sortPath": "/1/3/2/2/"
+  },
+  {
+    "questId": 356,
+    "quest": "Ch. 2 / 4-2 Very Hard",
+    "sortPath": "/1/3/2/3/"
+  },
+  {
+    "questId": 357,
+    "quest": "Ch. 2 / 5-1 Very Hard",
+    "sortPath": "/1/3/2/4/"
+  },
+  {
+    "questId": 358,
+    "quest": "Ch. 2 / 6-1 Very Hard",
+    "sortPath": "/1/3/2/5/"
+  },
+  {
+    "questId": 359,
+    "quest": "Chapter 3 Very Hard",
+    "sortPath": "/1/3/3/"
+  },
+  {
+    "questId": 360,
+    "quest": "Ch. 3 / 1-3 Very Hard",
+    "sortPath": "/1/3/3/1/"
+  },
+  {
+    "questId": 361,
+    "quest": "Ch. 3 / 2-3 Very Hard",
+    "sortPath": "/1/3/3/2/"
+  },
+  {
+    "questId": 362,
+    "quest": "Ch. 3 / 3-5 Very Hard",
+    "sortPath": "/1/3/3/3/"
+  },
+  {
+    "questId": 363,
+    "quest": "Ch. 3 / 4-3 Very Hard",
+    "sortPath": "/1/3/3/4/"
+  },
+  {
+    "questId": 364,
+    "quest": "Chapter 4 Very Hard",
+    "sortPath": "/1/3/4/"
+  },
+  {
+    "questId": 365,
+    "quest": "Ch. 4 / 1-4 Very Hard",
+    "sortPath": "/1/3/4/1/"
+  },
+  {
+    "questId": 366,
+    "quest": "Ch. 4 / 3-5 Very Hard",
+    "sortPath": "/1/3/4/2/"
+  },
+  {
+    "questId": 367,
+    "quest": "Ch. 4 / 4-2 Very Hard",
+    "sortPath": "/1/3/4/3/"
+  },
+  {
+    "questId": 368,
+    "quest": "Ch. 4 / 5-2 Very Hard",
+    "sortPath": "/1/3/4/4/"
+  },
+  {
+    "questId": 369,
+    "quest": "Chapter 5 Very Hard",
+    "sortPath": "/1/3/5/"
+  },
+  {
+    "questId": 370,
+    "quest": "Ch. 5 / 1-3 Very Hard",
+    "sortPath": "/1/3/5/1/"
+  },
+  {
+    "questId": 371,
+    "quest": "Ch. 5 / 2-4 Very Hard",
+    "sortPath": "/1/3/5/2/"
+  },
+  {
+    "questId": 372,
+    "quest": "Ch. 5 / 3-3 Very Hard",
+    "sortPath": "/1/3/5/3/"
+  },
+  {
+    "questId": 373,
+    "quest": "Ch. 5 / 4-3 Very Hard",
+    "sortPath": "/1/3/5/4/"
+  },
+  {
+    "questId": 374,
+    "quest": "Chapter 6 Very Hard",
+    "sortPath": "/1/3/6/"
+  },
+  {
+    "questId": 375,
+    "quest": "Ch. 6 / 1-6 Very Hard",
+    "sortPath": "/1/3/6/1/"
+  },
+  {
+    "questId": 376,
+    "quest": "Ch. 6 / 3-3 Very Hard",
+    "sortPath": "/1/3/6/2/"
+  },
+  {
+    "questId": 377,
+    "quest": "Ch. 6 / 4-2 Very Hard",
+    "sortPath": "/1/3/6/3/"
+  },
+  {
+    "questId": 378,
+    "quest": "Chapter 7 Very Hard",
+    "sortPath": "/1/3/7/"
+  },
+  {
+    "questId": 379,
+    "quest": "Ch. 7 / 1-3 Very Hard",
+    "sortPath": "/1/3/7/1/"
+  },
+  {
+    "questId": 576,
+    "quest": "Ch. 7 / 2-3 Very Hard",
+    "sortPath": "/1/3/7/2/"
+  },
+  {
+    "questId": 380,
+    "quest": "Chapter 8 Very Hard",
+    "sortPath": "/1/3/8/"
+  },
+  {
+    "questId": 381,
+    "quest": "Ch. 8 / 1-4 Very Hard",
+    "sortPath": "/1/3/8/1/"
+  },
+  {
+    "questId": 382,
+    "quest": "Ch. 8 / 2-3 Very Hard",
+    "sortPath": "/1/3/8/2/"
+  },
+  {
+    "questId": 577,
+    "quest": "Ch. 8 / 3-4 Very Hard",
+    "sortPath": "/1/3/8/3/"
+  },
+  {
+    "questId": 383,
+    "quest": "Chapter 9 Very Hard",
+    "sortPath": "/1/3/9/"
+  },
+  {
+    "questId": 384,
+    "quest": "Ch. 9 / 1-2 Very Hard",
+    "sortPath": "/1/3/9/1/"
+  },
+  {
+    "questId": 385,
+    "quest": "Ch. 9 / 2-2 Very Hard",
+    "sortPath": "/1/3/9/2/"
+  },
+  {
+    "questId": 578,
+    "quest": "Ch. 9 / 3-2 Very Hard",
+    "sortPath": "/1/3/9/3/"
+  },
+  {
+    "questId": 386,
+    "quest": "Chapter 10 Very Hard",
+    "sortPath": "/1/3/10/"
+  },
+  {
+    "questId": 387,
+    "quest": "Ch. 10 / 1-2 Very Hard",
+    "sortPath": "/1/3/10/1/"
+  },
+  {
+    "questId": 388,
+    "quest": "Ch. 10 / 2-2 Very Hard",
+    "sortPath": "/1/3/10/2/"
+  },
+  {
+    "questId": 579,
+    "quest": "Ch. 10 / 3-2 Very Hard",
+    "sortPath": "/1/3/10/3/"
+  },
+  {
+    "questId": 389,
+    "quest": "Chapter 11 Very Hard",
+    "sortPath": "/1/3/11/"
+  },
+  {
+    "questId": 390,
+    "quest": "Chapter 12 Very Hard",
+    "sortPath": "/1/3/12/"
+  },
+  {
+    "questId": 391,
+    "quest": "Chapter 13 Very Hard",
+    "sortPath": "/1/3/13/"
+  },
+  {
+    "questId": 392,
+    "quest": "Chapter 14 Very Hard",
+    "sortPath": "/1/3/14/"
+  },
+  {
+    "questId": 580,
+    "quest": "Ch. 14 / 1-2 Very Hard",
+    "sortPath": "/1/3/14/1/"
+  },
+  {
+    "questId": 393,
+    "quest": "Chapter 15 Very Hard",
+    "sortPath": "/1/3/15/"
+  },
+  {
+    "questId": 394,
+    "quest": "Chapter 16 Very Hard",
+    "sortPath": "/1/3/16/"
+  },
+  {
+    "questId": 395,
+    "quest": "Chapter 17 Very Hard",
+    "sortPath": "/1/3/17/"
+  },
+  {
+    "questId": 396,
+    "quest": "Chapter 18 Very Hard",
+    "sortPath": "/1/3/18/"
+  },
+  {
+    "questId": 581,
+    "quest": "Chapter 19 Very Hard",
+    "sortPath": "/1/3/19/"
+  },
+  {
+    "questId": 397,
+    "quest": "Special Events",
+    "sortPath": "/2/"
+  },
+  {
+    "questId": 398,
+    "quest": "Astral Raids",
+    "sortPath": "/2/1/"
+  },
+  {
+    "questId": 556,
+    "quest": "Trials of the Mighty",
+    "sortPath": "/2/2/"
+  },
+  {
+    "questId": 565,
+    "quest": "Zephyr's Trial",
+    "sortPath": "/2/2/1/"
+  },
+  {
+    "questId": 566,
+    "quest": "Zephyr's Trial: Master",
+    "sortPath": "/2/2/1/1/"
+  },
+  {
+    "questId": 567,
+    "quest": "Zephyr's Trial: Expert",
+    "sortPath": "/2/2/1/2/"
+  },
+  {
+    "questId": 568,
+    "quest": "Zephyr's Trial: Standard",
+    "sortPath": "/2/2/1/3/"
+  },
+  {
+    "questId": 561,
+    "quest": "Poseidon's Trial",
+    "sortPath": "/2/2/2/"
+  },
+  {
+    "questId": 562,
+    "quest": "Poseidon's Trial: Master",
+    "sortPath": "/2/2/2/1/"
+  },
+  {
+    "questId": 563,
+    "quest": "Poseidon's Trial: Expert",
+    "sortPath": "/2/2/2/2/"
+  },
+  {
+    "questId": 564,
+    "quest": "Poseidon's Trial: Standard",
+    "sortPath": "/2/2/2/3/"
+  },
+  {
+    "questId": 557,
+    "quest": "Thor's Trial",
+    "sortPath": "/2/2/3/"
+  },
+  {
+    "questId": 558,
+    "quest": "Thor's Trial: Master",
+    "sortPath": "/2/2/3/1/"
+  },
+  {
+    "questId": 559,
+    "quest": "Thor's Trial: Expert",
+    "sortPath": "/2/2/3/2/"
+  },
+  {
+    "questId": 560,
+    "quest": "Thor's Trial: Standard",
+    "sortPath": "/2/2/3/3/"
+  },
+  {
+    "questId": 399,
+    "quest": "Void Battles",
+    "sortPath": "/2/3/"
+  },
+  {
+    "questId": 400,
+    "quest": "Shroom Strikes",
+    "sortPath": "/2/3/1/"
+  },
+  {
+    "questId": 401,
+    "quest": "Scalding Shroom Strike",
+    "sortPath": "/2/3/1/1/"
+  },
+  {
+    "questId": 402,
+    "quest": "Gust Shroom Strike",
+    "sortPath": "/2/3/1/2/"
+  },
+  {
+    "questId": 403,
+    "quest": "Wandering Shroom Strike",
+    "sortPath": "/2/3/1/3/"
+  },
+  {
+    "questId": 404,
+    "quest": "Ghost Strikes",
+    "sortPath": "/2/3/2/"
+  },
+  {
+    "questId": 405,
+    "quest": "Blazing Ghost Strike",
+    "sortPath": "/2/3/2/1/"
+  },
+  {
+    "questId": 406,
+    "quest": "Cerulean Ghost Strike",
+    "sortPath": "/2/3/2/2/"
+  },
+  {
+    "questId": 407,
+    "quest": "Lambent Ghost Strike",
+    "sortPath": "/2/3/2/3/"
+  },
+  {
+    "questId": 408,
+    "quest": "Violet Ghost Strike",
+    "sortPath": "/2/3/2/4/"
+  },
+  {
+    "questId": 409,
+    "quest": "Hermit Strikes",
+    "sortPath": "/2/3/3/"
+  },
+  {
+    "questId": 410,
+    "quest": "Frost Hermit Strike",
+    "sortPath": "/2/3/3/1/"
+  },
+  {
+    "questId": 411,
+    "quest": "Twilight Hermit Strike",
+    "sortPath": "/2/3/3/2/"
+  },
+  {
+    "questId": 412,
+    "quest": "Golem Strikes",
+    "sortPath": "/2/3/4/"
+  },
+  {
+    "questId": 413,
+    "quest": "Steel Golem Strike",
+    "sortPath": "/2/3/4/1/"
+  },
+  {
+    "questId": 414,
+    "quest": "Amber Golem Strike",
+    "sortPath": "/2/3/4/2/"
+  },
+  {
+    "questId": 415,
+    "quest": "Obsidian Golem Strike",
+    "sortPath": "/2/3/4/3/"
+  },
+  {
+    "questId": 416,
+    "quest": "Catoblepas Strikes",
+    "sortPath": "/2/3/5/"
+  },
+  {
+    "questId": 417,
+    "quest": "Catoblepas Fotia Strike",
+    "sortPath": "/2/3/5/1/"
+  },
+  {
+    "questId": 418,
+    "quest": "Catoblepas Anemos Strike",
+    "sortPath": "/2/3/5/2/"
+  },
+  {
+    "questId": 419,
+    "quest": "Catoblepas Skia Strike",
+    "sortPath": "/2/3/5/3/"
+  },
+  {
+    "questId": 420,
+    "quest": "Phantom Strikes",
+    "sortPath": "/2/3/6/"
+  },
+  {
+    "questId": 421,
+    "quest": "Infernal Phantom Strike",
+    "sortPath": "/2/3/6/1/"
+  },
+  {
+    "questId": 422,
+    "quest": "Abyssal Phantom Strike",
+    "sortPath": "/2/3/6/2/"
+  },
+  {
+    "questId": 423,
+    "quest": "Eolian Phantom Strike",
+    "sortPath": "/2/3/6/3/"
+  },
+  {
+    "questId": 424,
+    "quest": "Manticore Strikes",
+    "sortPath": "/2/3/7/"
+  },
+  {
+    "questId": 425,
+    "quest": "Smoldering Manticore Strike",
+    "sortPath": "/2/3/7/1/"
+  },
+  {
+    "questId": 426,
+    "quest": "Greedy Manticore Strike",
+    "sortPath": "/2/3/7/2/"
+  },
+  {
+    "questId": 427,
+    "quest": "Proud Manticore Strike",
+    "sortPath": "/2/3/7/3/"
+  },
+  {
+    "questId": 428,
+    "quest": "Raging Manticore Strike",
+    "sortPath": "/2/3/7/4/"
+  },
+  {
+    "questId": 429,
+    "quest": "Void Dragon Strikes",
+    "sortPath": "/2/3/8/"
+  },
+  {
+    "questId": 430,
+    "quest": "Void Zephyr Strike",
+    "sortPath": "/2/3/8/1/"
+  },
+  {
+    "questId": 431,
+    "quest": "Void Zephyr Strike: Expert",
+    "sortPath": "/2/3/8/1/1/"
+  },
+  {
+    "questId": 432,
+    "quest": "Void Zephyr Strike: Standard",
+    "sortPath": "/2/3/8/1/2/"
+  },
+  {
+    "questId": 433,
+    "quest": "Void Poseidon Strike",
+    "sortPath": "/2/3/8/2/"
+  },
+  {
+    "questId": 434,
+    "quest": "Void Poseidon Strike: Expert",
+    "sortPath": "/2/3/8/2/1/"
+  },
+  {
+    "questId": 435,
+    "quest": "Void Poseidon Strike: Standard",
+    "sortPath": "/2/3/8/2/2/"
+  },
+  {
+    "questId": 436,
+    "quest": "Void Jeanne d'Arc Strike",
+    "sortPath": "/2/3/8/3/"
+  },
+  {
+    "questId": 437,
+    "quest": "Void Jeanne d'Arc Strike: Expert",
+    "sortPath": "/2/3/8/3/1/"
+  },
+  {
+    "questId": 438,
+    "quest": "Void Jeanne d'Arc Strike: Standard",
+    "sortPath": "/2/3/8/3/2/"
+  },
+  {
+    "questId": 439,
+    "quest": "Void Nidhogg Strike",
+    "sortPath": "/2/3/8/4/"
+  },
+  {
+    "questId": 440,
+    "quest": "Void Nidhogg Strike: Expert",
+    "sortPath": "/2/3/8/4/1/"
+  },
+  {
+    "questId": 441,
+    "quest": "Void Nidhogg Strike: Standard",
+    "sortPath": "/2/3/8/4/2/"
+  },
+  {
+    "questId": 442,
+    "quest": "Void Agni Strike",
+    "sortPath": "/2/3/8/5/"
+  },
+  {
+    "questId": 443,
+    "quest": "Void Agni Strike: Expert",
+    "sortPath": "/2/3/8/5/1/"
+  },
+  {
+    "questId": 444,
+    "quest": "Void Agni Strike: Standard",
+    "sortPath": "/2/3/8/5/2/"
+  },
+  {
+    "questId": 445,
+    "quest": "Chimera Strikes",
+    "sortPath": "/2/3/9/"
+  },
+  {
+    "questId": 446,
+    "quest": "Volcanic Chimera Strike",
+    "sortPath": "/2/3/9/1/"
+  },
+  {
+    "questId": 447,
+    "quest": "Volcanic Chimera Strike: Expert",
+    "sortPath": "/2/3/9/1/1/"
+  },
+  {
+    "questId": 448,
+    "quest": "Volcanic Chimera Strike: Standard",
+    "sortPath": "/2/3/9/1/2/"
+  },
+  {
+    "questId": 449,
+    "quest": "Tidal Chimera Strike",
+    "sortPath": "/2/3/9/2/"
+  },
+  {
+    "questId": 450,
+    "quest": "Tidal Chimera Strike: Expert",
+    "sortPath": "/2/3/9/2/1/"
+  },
+  {
+    "questId": 451,
+    "quest": "Tidal Chimera Strike: Standard",
+    "sortPath": "/2/3/9/2/2/"
+  },
+  {
+    "questId": 452,
+    "quest": "Tempest Chimera Strike",
+    "sortPath": "/2/3/9/3/"
+  },
+  {
+    "questId": 453,
+    "quest": "Tempest Chimera Strike: Expert",
+    "sortPath": "/2/3/9/3/1/"
+  },
+  {
+    "questId": 454,
+    "quest": "Tempest Chimera Strike: Standard",
+    "sortPath": "/2/3/9/3/2/"
+  },
+  {
+    "questId": 455,
+    "quest": "Luminous Chimera Strike",
+    "sortPath": "/2/3/9/4/"
+  },
+  {
+    "questId": 456,
+    "quest": "Luminous Chimera Strike: Expert",
+    "sortPath": "/2/3/9/4/1/"
+  },
+  {
+    "questId": 457,
+    "quest": "Luminous Chimera Strike: Standard",
+    "sortPath": "/2/3/9/4/2/"
+  },
+  {
+    "questId": 458,
+    "quest": "Ebon Chimera Strike",
+    "sortPath": "/2/3/9/5/"
+  },
+  {
+    "questId": 459,
+    "quest": "Ebon Chimera Strike: Expert",
+    "sortPath": "/2/3/9/5/1/"
+  },
+  {
+    "questId": 460,
+    "quest": "Ebon Chimera Strike: Standard",
+    "sortPath": "/2/3/9/5/2/"
+  },
+  {
+    "questId": 461,
+    "quest": "Recurring Events",
+    "sortPath": "/3/"
+  },
+  {
+    "questId": 462,
+    "quest": "Avenue to Power",
+    "sortPath": "/3/1/"
+  },
+  {
+    "questId": 463,
+    "quest": "Avenue to Fortune",
+    "sortPath": "/3/2/"
+  },
+  {
+    "questId": 464,
+    "quest": "Elemental Ruins",
+    "sortPath": "/3/3/"
+  },
+  {
+    "questId": 465,
+    "quest": "Flamehowl Ruins",
+    "sortPath": "/3/3/1/"
+  },
+  {
+    "questId": 466,
+    "quest": "Waterscour Ruins",
+    "sortPath": "/3/3/2/"
+  },
+  {
+    "questId": 467,
+    "quest": "Windmaul Ruins",
+    "sortPath": "/3/3/3/"
+  },
+  {
+    "questId": 468,
+    "quest": "Lightsunder Ruins",
+    "sortPath": "/3/3/4/"
+  },
+  {
+    "questId": 469,
+    "quest": "Shadowsteep Ruins",
+    "sortPath": "/3/3/5/"
+  },
+  {
+    "questId": 470,
+    "quest": "Event Compendium",
+    "sortPath": "/3/4/"
+  },
+  {
+    "questId": 471,
+    "quest": "Facility Events",
+    "sortPath": "/3/4/1/"
+  },
+  {
+    "questId": 472,
+    "quest": "Flames of Reflection",
+    "sortPath": "/3/4/1/1/"
+  },
+  {
+    "questId": 473,
+    "quest": "The Miracle of Dragonyule",
+    "sortPath": "/3/4/1/2/"
+  },
+  {
+    "questId": 474,
+    "quest": "A Wish to the Winds",
+    "sortPath": "/3/4/1/3/"
+  },
+  {
+    "questId": 475,
+    "quest": "Dream Big Under the Big Top",
+    "sortPath": "/3/4/1/4/"
+  },
+  {
+    "questId": 476,
+    "quest": "The Hunt for Harmony",
+    "sortPath": "/3/4/1/5/"
+  },
+  {
+    "questId": 477,
+    "quest": "Trick or Treasure",
+    "sortPath": "/3/4/1/6/"
+  },
+  {
+    "questId": 478,
+    "quest": "A Crescendo of Courage",
+    "sortPath": "/3/4/1/7/"
+  },
+  {
+    "questId": 479,
+    "quest": "The Accursed Archives",
+    "sortPath": "/3/4/1/8/"
+  },
+  {
+    "questId": 480,
+    "quest": "Raid Events",
+    "sortPath": "/3/4/2/"
+  },
+  {
+    "questId": 481,
+    "quest": "Fractured Futures",
+    "sortPath": "/3/4/2/1/"
+  },
+  {
+    "questId": 482,
+    "quest": "Forgotten Truths",
+    "sortPath": "/3/4/2/2/"
+  },
+  {
+    "questId": 483,
+    "quest": "Challenge Events",
+    "sortPath": "/4/"
+  },
+  {
+    "questId": 484,
+    "quest": "The Mercurial Gauntlet",
+    "sortPath": "/4/1/"
+  },
+  {
+    "questId": 485,
+    "quest": "Dragon Trials",
+    "sortPath": "/4/2/"
+  },
+  {
+    "questId": 486,
+    "quest": "Midgardsormr's Trial",
+    "sortPath": "/4/2/1/"
+  },
+  {
+    "questId": 487,
+    "quest": "Mercury's Trial",
+    "sortPath": "/4/2/2/"
+  },
+  {
+    "questId": 488,
+    "quest": "Brunhilda's Trial",
+    "sortPath": "/4/2/3/"
+  },
+  {
+    "questId": 489,
+    "quest": "Jupiter's Trial",
+    "sortPath": "/4/2/4/"
+  },
+  {
+    "questId": 490,
+    "quest": "Zodiark's Trial",
+    "sortPath": "/4/2/5/"
+  },
+  {
+    "questId": 491,
+    "quest": "The Imperial Onslaught",
+    "sortPath": "/4/3/"
+  },
+  {
+    "questId": 492,
+    "quest": "Battle at Mount Adolla",
+    "sortPath": "/4/3/1/"
+  },
+  {
+    "questId": 493,
+    "quest": "Battle at Myriage Lake",
+    "sortPath": "/4/3/2/"
+  },
+  {
+    "questId": 494,
+    "quest": "Battle in Rovetelle Forest",
+    "sortPath": "/4/3/3/"
+  },
+  {
+    "questId": 495,
+    "quest": "Battle in the Dornith Mountains",
+    "sortPath": "/4/3/4/"
+  },
+  {
+    "questId": 496,
+    "quest": "Battle at the Wartarch Ruins",
+    "sortPath": "/4/3/5/"
+  },
+  {
+    "questId": 497,
+    "quest": "Advanced Dragon Trials",
+    "sortPath": "/4/4/"
+  },
+  {
+    "questId": 498,
+    "quest": "High Midgardsormr's Trial",
+    "sortPath": "/4/4/1/"
+  },
+  {
+    "questId": 499,
+    "quest": "High Midgardsormr's Trial: Master",
+    "sortPath": "/4/4/1/1/"
+  },
+  {
+    "questId": 500,
+    "quest": "High Midgardsormr's Trial: Expert",
+    "sortPath": "/4/4/1/2/"
+  },
+  {
+    "questId": 501,
+    "quest": "High Midgardsormr's Trial: Standard",
+    "sortPath": "/4/4/1/3/"
+  },
+  {
+    "questId": 502,
+    "quest": "High Midgardsormr's Trial: Prelude",
+    "sortPath": "/4/4/1/4/"
+  },
+  {
+    "questId": 503,
+    "quest": "High Mercury's Trial",
+    "sortPath": "/4/4/2/"
+  },
+  {
+    "questId": 504,
+    "quest": "High Mercury's Trial: Master",
+    "sortPath": "/4/4/2/1/"
+  },
+  {
+    "questId": 505,
+    "quest": "High Mercury's Trial: Expert",
+    "sortPath": "/4/4/2/2/"
+  },
+  {
+    "questId": 506,
+    "quest": "High Mercury's Trial: Standard",
+    "sortPath": "/4/4/2/3/"
+  },
+  {
+    "questId": 507,
+    "quest": "High Mercury's Trial: Prelude",
+    "sortPath": "/4/4/2/4/"
+  },
+  {
+    "questId": 508,
+    "quest": "High Brunhilda's Trial",
+    "sortPath": "/4/4/3/"
+  },
+  {
+    "questId": 509,
+    "quest": "High Brunhilda's Trial: Master",
+    "sortPath": "/4/4/3/1/"
+  },
+  {
+    "questId": 510,
+    "quest": "High Brunhilda's Trial: Expert",
+    "sortPath": "/4/4/3/2/"
+  },
+  {
+    "questId": 511,
+    "quest": "High Brunhilda's Trial: Standard",
+    "sortPath": "/4/4/3/3/"
+  },
+  {
+    "questId": 512,
+    "quest": "High Brunhilda's Trial: Prelude",
+    "sortPath": "/4/4/3/4/"
+  },
+  {
+    "questId": 513,
+    "quest": "High Jupiter's Trial",
+    "sortPath": "/4/4/4/"
+  },
+  {
+    "questId": 514,
+    "quest": "High Jupiter's Trial: Master",
+    "sortPath": "/4/4/4/1/"
+  },
+  {
+    "questId": 515,
+    "quest": "High Jupiter's Trial: Expert",
+    "sortPath": "/4/4/4/2/"
+  },
+  {
+    "questId": 516,
+    "quest": "High Jupiter's Trial: Standard",
+    "sortPath": "/4/4/4/3/"
+  },
+  {
+    "questId": 517,
+    "quest": "High Jupiter's Trial: Prelude",
+    "sortPath": "/4/4/4/4/"
+  },
+  {
+    "questId": 518,
+    "quest": "High Zodiark's Trial",
+    "sortPath": "/4/4/5/"
+  },
+  {
+    "questId": 519,
+    "quest": "High Zodiark's Trial: Master",
+    "sortPath": "/4/4/5/1/"
+  },
+  {
+    "questId": 520,
+    "quest": "High Zodiark's Trial: Expert",
+    "sortPath": "/4/4/5/2/"
+  },
+  {
+    "questId": 521,
+    "quest": "High Zodiark's Trial: Standard",
+    "sortPath": "/4/4/5/3/"
+  },
+  {
+    "questId": 522,
+    "quest": "High Zodiark's Trial: Prelude",
+    "sortPath": "/4/4/5/4/"
+  },
+  {
+    "questId": 523,
+    "quest": "The Agito Uprising",
+    "sortPath": "/4/5/"
+  },
+  {
+    "questId": 524,
+    "quest": "Volk's Wrath",
+    "sortPath": "/4/5/1/"
+  },
+  {
+    "questId": 525,
+    "quest": "Volk's Wrath: Master",
+    "sortPath": "/4/5/1/1/"
+  },
+  {
+    "questId": 526,
+    "quest": "Volk's Wrath: Expert",
+    "sortPath": "/4/5/1/2/"
+  },
+  {
+    "questId": 527,
+    "quest": "Volk's Wrath: Standard",
+    "sortPath": "/4/5/1/3/"
+  },
+  {
+    "questId": 528,
+    "quest": "Ciella's Wrath",
+    "sortPath": "/4/5/2/"
+  },
+  {
+    "questId": 529,
+    "quest": "Ciella's Wrath: Master",
+    "sortPath": "/4/5/2/1/"
+  },
+  {
+    "questId": 530,
+    "quest": "Ciella's Wrath: Expert",
+    "sortPath": "/4/5/2/2/"
+  },
+  {
+    "questId": 531,
+    "quest": "Ciella's Wrath: Standard",
+    "sortPath": "/4/5/2/3/"
+  },
+  {
+    "questId": 532,
+    "quest": "Ayaha & Otoha's Wrath",
+    "sortPath": "/4/5/3/"
+  },
+  {
+    "questId": 533,
+    "quest": "Ayaha & Otoha's Wrath: Master",
+    "sortPath": "/4/5/3/1/"
+  },
+  {
+    "questId": 534,
+    "quest": "Ayaha & Otoha's Wrath: Expert",
+    "sortPath": "/4/5/3/2/"
+  },
+  {
+    "questId": 535,
+    "quest": "Ayaha & Otoha's Wrath: Standard",
+    "sortPath": "/4/5/3/3/"
+  },
+  {
+    "questId": 536,
+    "quest": "Kai Yan's Wrath",
+    "sortPath": "/4/5/4/"
+  },
+  {
+    "questId": 537,
+    "quest": "Kai Yan's Wrath: Master",
+    "sortPath": "/4/5/4/1/"
+  },
+  {
+    "questId": 538,
+    "quest": "Kai Yan's Wrath: Expert",
+    "sortPath": "/4/5/4/2/"
+  },
+  {
+    "questId": 539,
+    "quest": "Kai Yan's Wrath: Standard",
+    "sortPath": "/4/5/4/3/"
+  },
+  {
+    "questId": 540,
+    "quest": "Tartarus's Wrath",
+    "sortPath": "/4/5/5/"
+  },
+  {
+    "questId": 541,
+    "quest": "Tartarus's Wrath: Master",
+    "sortPath": "/4/5/5/1/"
+  },
+  {
+    "questId": 542,
+    "quest": "Tartarus's Wrath: Expert",
+    "sortPath": "/4/5/5/2/"
+  },
+  {
+    "questId": 543,
+    "quest": "Tartarus's Wrath: Standard",
+    "sortPath": "/4/5/5/3/"
+  },
+  {
+    "questId": 544,
+    "quest": "Rise of the Sinister Dominion",
+    "sortPath": "/4/6/"
+  },
+  {
+    "questId": 589,
+    "quest": "Jaldabaoth's Piercing Gale",
+    "sortPath": "/4/6/1/"
+  },
+  {
+    "questId": 588,
+    "quest": "Jaldabaoth's Piercing Gale: Master",
+    "sortPath": "/4/6/1/1/"
+  },
+  {
+    "questId": 586,
+    "quest": "Jaldabaoth's Piercing Gale: Expert",
+    "sortPath": "/4/6/1/2/"
+  },
+  {
+    "questId": 587,
+    "quest": "Jaldabaoth's Piercing Gale: Standard",
+    "sortPath": "/4/6/1/3/"
+  },
+  {
+    "questId": 545,
+    "quest": "Lilith's Encroaching Shadow",
+    "sortPath": "/4/6/2/"
+  },
+  {
+    "questId": 546,
+    "quest": "Lilith's Encroaching Shadow: Master",
+    "sortPath": "/4/6/2/1/"
+  },
+  {
+    "questId": 547,
+    "quest": "Lilith's Encroaching Shadow: Expert",
+    "sortPath": "/4/6/2/2/"
+  },
+  {
+    "questId": 548,
+    "quest": "Lilith's Encroaching Shadow: Standard",
+    "sortPath": "/4/6/2/3/"
+  },
+  {
+    "questId": 549,
+    "quest": "Exceptionally Difficult Quests",
+    "sortPath": "/5/"
+  },
+  {
+    "questId": 550,
+    "quest": "The Agito Uprising: Legend Difficulty",
+    "sortPath": "/5/1/"
+  },
+  {
+    "questId": 551,
+    "quest": "Volk's Wrath: Legend Difficulty",
+    "sortPath": "/5/1/1/"
+  },
+  {
+    "questId": 555,
+    "quest": "Ciella's Wrath: Legend Difficulty",
+    "sortPath": "/5/1/2/"
+  },
+  {
+    "questId": 552,
+    "quest": "Kai Yan's Wrath: Legend Difficulty",
+    "sortPath": "/5/1/3/"
+  },
+  {
+    "questId": 553,
+    "quest": "Forgotten Truths: Morsayati Reckoning",
+    "sortPath": "/5/2/"
+  },
+  {
+    "questId": 554,
+    "quest": "Morsayati Reckoning",
+    "sortPath": "/5/2/1/"
+  }
+]
