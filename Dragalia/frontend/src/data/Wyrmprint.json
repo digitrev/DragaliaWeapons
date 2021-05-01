@@ -1,0 +1,2070 @@
+[
+  {
+    "WyrmprintID": 40020001,
+    "Wyrmprint": "Ring of Exaltation",
+    "Rarity": 2,
+    "RarityGroup": 2,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40020002,
+    "Wyrmprint": "Seafood Soup",
+    "Rarity": 2,
+    "RarityGroup": 2,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40020003,
+    "Wyrmprint": "Dragon Arcanum",
+    "Rarity": 2,
+    "RarityGroup": 2,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40020004,
+    "Wyrmprint": "Mana Fount",
+    "Rarity": 2,
+    "RarityGroup": 2,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40020005,
+    "Wyrmprint": "Old Harp",
+    "Rarity": 2,
+    "RarityGroup": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030001,
+    "Wyrmprint": "Scorn the Destrier",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030002,
+    "Wyrmprint": "Halo",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030003,
+    "Wyrmprint": "Teatime",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030004,
+    "Wyrmprint": "Bellathorna",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030005,
+    "Wyrmprint": "Alberian Banner",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030006,
+    "Wyrmprint": "Cry of the Horn",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030007,
+    "Wyrmprint": "Howling Predator",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030008,
+    "Wyrmprint": "Syndicate Mask",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030009,
+    "Wyrmprint": "Hallowed Mountains",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030010,
+    "Wyrmprint": "Lakeside Euphony",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030011,
+    "Wyrmprint": "Dragon's Nest",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030012,
+    "Wyrmprint": "Enchiridion",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030013,
+    "Wyrmprint": "Ironside Shield",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030014,
+    "Wyrmprint": "Winds of Saint Lotier",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030015,
+    "Wyrmprint": "Aromatherapy",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030016,
+    "Wyrmprint": "Eight-Leaf Clover",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030017,
+    "Wyrmprint": "Forbidden Relic",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030018,
+    "Wyrmprint": "Unfulfilled Visions",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 8,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030019,
+    "Wyrmprint": "Liber Grimortis",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030020,
+    "Wyrmprint": "Night Harbinger",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030021,
+    "Wyrmprint": "Tracks of Hope",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030022,
+    "Wyrmprint": "Vio Rhyse Alberia!",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030023,
+    "Wyrmprint": "Potiongrass",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030024,
+    "Wyrmprint": "Crown of Yore",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030026,
+    "Wyrmprint": "Nevermelt Ice",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030027,
+    "Wyrmprint": "Pumpkin Pail",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030029,
+    "Wyrmprint": "The Halidom's Picnic",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030030,
+    "Wyrmprint": "Garuda's Feathers",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030031,
+    "Wyrmprint": "Secret Friend",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 10,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030032,
+    "Wyrmprint": "Roast Feast",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030033,
+    "Wyrmprint": "Welcome, One and All",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030034,
+    "Wyrmprint": "Blossoms Ablaze",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030035,
+    "Wyrmprint": "To My Beloved",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "AffinityID": 7,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030036,
+    "Wyrmprint": "The Davian Wetlands",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030037,
+    "Wyrmprint": "The Heretic's Laboratory",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030038,
+    "Wyrmprint": "Tiny Dragoñatas",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40030039,
+    "Wyrmprint": "The Order's Messenger Owl",
+    "Rarity": 3,
+    "RarityGroup": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040001,
+    "Wyrmprint": "Flower in the Fray",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040002,
+    "Wyrmprint": "Destiny's Hand",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040003,
+    "Wyrmprint": "Sniper's Allure",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040004,
+    "Wyrmprint": "Promises in the Rain",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040005,
+    "Wyrmprint": "Fireside Gathering",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040006,
+    "Wyrmprint": "Trove of Knowledge",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040007,
+    "Wyrmprint": "Castaway's Journal",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040008,
+    "Wyrmprint": "Lord of the Skies",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040009,
+    "Wyrmprint": "King's Countenance",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040010,
+    "Wyrmprint": "Braving the Unknown",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040011,
+    "Wyrmprint": "What a Handful!",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040012,
+    "Wyrmprint": "How to Flee Properly",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040013,
+    "Wyrmprint": "One with the Shadows",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040014,
+    "Wyrmprint": "Warlust",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040015,
+    "Wyrmprint": "Armorer's Aspirations",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040016,
+    "Wyrmprint": "Revolutionary Magic",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040017,
+    "Wyrmprint": "Sisters of the Anvil",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040018,
+    "Wyrmprint": "Dueling Dancers",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040019,
+    "Wyrmprint": "Together We Stand",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040020,
+    "Wyrmprint": "Happier Times",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040021,
+    "Wyrmprint": "Paladyn Defender",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040022,
+    "Wyrmprint": "Pipe Down",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040023,
+    "Wyrmprint": "Greatwyrm Midgardsormr",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040024,
+    "Wyrmprint": "Greatwyrm Mercury",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040025,
+    "Wyrmprint": "Greatwyrm Brunhilda",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040026,
+    "Wyrmprint": "Greatwyrm Jupiter",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040027,
+    "Wyrmprint": "Greatwyrm Zodiark",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040028,
+    "Wyrmprint": "The Warrioresses",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040029,
+    "Wyrmprint": "Silke Lends a Hand",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040030,
+    "Wyrmprint": "Beauty's Secret",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040031,
+    "Wyrmprint": "Samurai Siesta",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040032,
+    "Wyrmprint": "Better Together",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040033,
+    "Wyrmprint": "Fresh Perspective",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040034,
+    "Wyrmprint": "Kicking Back",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040035,
+    "Wyrmprint": "As the Snow Falls",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040036,
+    "Wyrmprint": "Saintly Delivery",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040037,
+    "Wyrmprint": "Hanetsuki Rally",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040038,
+    "Wyrmprint": "Luck of the Draw",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040039,
+    "Wyrmprint": "Slow and Steady",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040040,
+    "Wyrmprint": "Lunar Festivities",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040041,
+    "Wyrmprint": "Dragon Dance",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040042,
+    "Wyrmprint": "Entwined Flames",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040043,
+    "Wyrmprint": "New World Escort",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 9,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040044,
+    "Wyrmprint": "Delightful Dancer",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040046,
+    "Wyrmprint": "First-Rate Hospitality",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040047,
+    "Wyrmprint": "Egg-Shaped Dreams",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040048,
+    "Wyrmprint": "His Clever Brother",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040049,
+    "Wyrmprint": "A Brief Repose",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040050,
+    "Wyrmprint": "A Maddened Master",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040051,
+    "Wyrmprint": "Halidom Grooms",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040052,
+    "Wyrmprint": "Taiko Tandem",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040053,
+    "Wyrmprint": "To the Extreme!",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040054,
+    "Wyrmprint": "Beach Battle",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 7,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040055,
+    "Wyrmprint": "Preacher's Vacation",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040056,
+    "Wyrmprint": "The Bustling Hut",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040057,
+    "Wyrmprint": "Hastened Squall",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040058,
+    "Wyrmprint": "Beautiful Nothingness",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040059,
+    "Wyrmprint": "Odd Sparrows",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040060,
+    "Wyrmprint": "Masquerade Mission",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040061,
+    "Wyrmprint": "The Bewitching Magician",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040062,
+    "Wyrmprint": "From Whence He Comes",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040063,
+    "Wyrmprint": "Chariot Drift",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040064,
+    "Wyrmprint": "Fluff Aplenty",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040065,
+    "Wyrmprint": "Glittering Dragonyule",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040066,
+    "Wyrmprint": "A New Year's Battle",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040067,
+    "Wyrmprint": "A Game of Cat and Boar",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040068,
+    "Wyrmprint": "The Plaguebringer",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040069,
+    "Wyrmprint": "Soaring Terror",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040070,
+    "Wyrmprint": "The Maid Crusade",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040071,
+    "Wyrmprint": "The Queen of the Knife",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040072,
+    "Wyrmprint": "A Small Courage",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040073,
+    "Wyrmprint": "A Widow's Lament",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040074,
+    "Wyrmprint": "A Pledge of Protection",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040075,
+    "Wyrmprint": "Fallen Wings",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040076,
+    "Wyrmprint": "Happy Times",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040077,
+    "Wyrmprint": "A Bouquet",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040078,
+    "Wyrmprint": "Flowers Under the Moon",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040079,
+    "Wyrmprint": "Catch Me in the Sunflowers",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040080,
+    "Wyrmprint": "Such High Spirits!",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040081,
+    "Wyrmprint": "Fun in the Sun",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040082,
+    "Wyrmprint": "Seaside Memory",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040083,
+    "Wyrmprint": "A Passion for Produce",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040084,
+    "Wyrmprint": "Treasury of Knowledge",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040085,
+    "Wyrmprint": "Dance of the Twin Blossoms",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040086,
+    "Wyrmprint": "To My Dear Child",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040087,
+    "Wyrmprint": "Blessed Days",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040088,
+    "Wyrmprint": "A Perfect Faerie Tale",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040089,
+    "Wyrmprint": "Rogues' Banquet",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040090,
+    "Wyrmprint": "Enter the Blue Rose!",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040091,
+    "Wyrmprint": "Beautiful Gunman",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040092,
+    "Wyrmprint": "Amaterasu Oblation",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040093,
+    "Wyrmprint": "Humanity's Companions",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40040094,
+    "Wyrmprint": "Two Myms",
+    "Rarity": 4,
+    "RarityGroup": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050001,
+    "Wyrmprint": "Valiant Crown",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050002,
+    "Wyrmprint": "Flash of Genius",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050003,
+    "Wyrmprint": "Evening of Luxury",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050004,
+    "Wyrmprint": "Worthy Rivals",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050005,
+    "Wyrmprint": "Auspex's Prayer",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050006,
+    "Wyrmprint": "Dragon Brethren",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050007,
+    "Wyrmprint": "Luca's Prank",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050008,
+    "Wyrmprint": "Give Me Your Wounded",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050009,
+    "Wyrmprint": "Levin's Champion",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050010,
+    "Wyrmprint": "Nightstalker",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050011,
+    "Wyrmprint": "Glorious Tempest",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050012,
+    "Wyrmprint": "United by One Vision",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050013,
+    "Wyrmprint": "Cleo's Ruse",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050014,
+    "Wyrmprint": "Tough Love",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050015,
+    "Wyrmprint": "Crystalian Envoy",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050016,
+    "Wyrmprint": "Witch's Kitchen",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050017,
+    "Wyrmprint": "Of Tricks and Treats",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050018,
+    "Wyrmprint": "Plunder Pals",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050019,
+    "Wyrmprint": "Candy Couriers",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050020,
+    "Wyrmprint": "Jewels of the Sun",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050021,
+    "Wyrmprint": "Gentle Winds",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050022,
+    "Wyrmprint": "Gale of Beauty",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050023,
+    "Wyrmprint": "Louise's Hobbies",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050024,
+    "Wyrmprint": "Volcanic Queen",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050026,
+    "Wyrmprint": "Resounding Rendition",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050027,
+    "Wyrmprint": "Heavenly Holiday",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050028,
+    "Wyrmprint": "A Wish Upon the Yuletree",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050029,
+    "Wyrmprint": "The Prince of Dragonyule",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050030,
+    "Wyrmprint": "A Slice of Dragonyule",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050031,
+    "Wyrmprint": "The Greatest Gift",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050032,
+    "Wyrmprint": "Happy New Year!",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050033,
+    "Wyrmprint": "Heralds of Hinomoto",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050034,
+    "Wyrmprint": "Dragon and Tamer",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050035,
+    "Wyrmprint": "Stellar Show",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050036,
+    "Wyrmprint": "Astounding Trick",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050037,
+    "Wyrmprint": "Warrior Maiden",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050038,
+    "Wyrmprint": "Kung Fu Masters",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050039,
+    "Wyrmprint": "The Chocolatiers",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050040,
+    "Wyrmprint": "The Rose Prince",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 8,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050041,
+    "Wyrmprint": "The Petal Queen",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050042,
+    "Wyrmprint": "The Shining Overlord",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050043,
+    "Wyrmprint": "A Solitary Light",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 10,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050044,
+    "Wyrmprint": "Partners in Truth",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050045,
+    "Wyrmprint": "The Fleeting Girl",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050046,
+    "Wyrmprint": "Hitting the Books",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050047,
+    "Wyrmprint": "A Heartfelt Gift",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050048,
+    "Wyrmprint": "Valentine's Venture",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050049,
+    "Wyrmprint": "An Indelible Date",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050050,
+    "Wyrmprint": "Elegant Escort",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050051,
+    "Wyrmprint": "Take My Hand",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050052,
+    "Wyrmprint": "Honest Repose",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050053,
+    "Wyrmprint": "Forest Bonds",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050054,
+    "Wyrmprint": "A Mother's Love",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050056,
+    "Wyrmprint": "Queen of the Blue Seas",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050057,
+    "Wyrmprint": "The Heroes Arrive",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050058,
+    "Wyrmprint": "Bonds Between Worlds",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050059,
+    "Wyrmprint": "After an Eternity",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 9,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050060,
+    "Wyrmprint": "Study Rabbits",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050061,
+    "Wyrmprint": "The Bridal Dragon",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050062,
+    "Wyrmprint": "Indelible Summer",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 8,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050063,
+    "Wyrmprint": "Sisters' Day Out",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050064,
+    "Wyrmprint": "The Dragon Smiths",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050065,
+    "Wyrmprint": "King of the Skies",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050066,
+    "Wyrmprint": "Summer Paladyns",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050067,
+    "Wyrmprint": "Seaside Princess",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050068,
+    "Wyrmprint": "Surfing Siblings",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050069,
+    "Wyrmprint": "Twinfold Bonds",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050070,
+    "Wyrmprint": "Castle Cheer Corps",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050071,
+    "Wyrmprint": "Ruler of Darkness",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050072,
+    "Wyrmprint": "Endless Waltz",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050073,
+    "Wyrmprint": "An Ancient Oath",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050074,
+    "Wyrmprint": "In an Unending World",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050075,
+    "Wyrmprint": "Prayers Unto Him",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050076,
+    "Wyrmprint": "Dear Diary",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050077,
+    "Wyrmprint": "Wily Warriors: Bubble & Wood",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050078,
+    "Wyrmprint": "Wily Warriors: Air & Crash",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050079,
+    "Wyrmprint": "Wily Warriors: Metal & Quick",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050080,
+    "Wyrmprint": "Wily Warriors: Flash & Heat",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050081,
+    "Wyrmprint": "Roll On",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050082,
+    "Wyrmprint": "Mega Friends",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050083,
+    "Wyrmprint": "Howling to the Heavens",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050084,
+    "Wyrmprint": "Spirit of the Season",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050085,
+    "Wyrmprint": "The Wyrmclan Duo",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050086,
+    "Wyrmprint": "A Dog's Day",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050087,
+    "Wyrmprint": "Blossoms in a New Year's Sky",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050088,
+    "Wyrmprint": "Felyne Hospitality",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050089,
+    "Wyrmprint": "Unexpected Requests",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050090,
+    "Wyrmprint": "Primal Crisis",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050091,
+    "Wyrmprint": "The Lurker in the Woods",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050092,
+    "Wyrmprint": "A Suit of Midnight",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050093,
+    "Wyrmprint": "The Fires of Hate",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050094,
+    "Wyrmprint": "Berry Lovable Friends",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050095,
+    "Wyrmprint": "Breakfast at Valerio's",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050096,
+    "Wyrmprint": "The Ilian Faithful",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050097,
+    "Wyrmprint": "Dazzling Duet!",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050098,
+    "Wyrmprint": "Brothers in Arms",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050099,
+    "Wyrmprint": "The Synthetic Dragon",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 7,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050100,
+    "Wyrmprint": "Proper Maintenance",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050101,
+    "Wyrmprint": "The Red Impulse",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050102,
+    "Wyrmprint": "Memories of Youth",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050103,
+    "Wyrmprint": "Welcome to the Halidom!",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050104,
+    "Wyrmprint": "A New Look",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050105,
+    "Wyrmprint": "Memory of a Friend",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050106,
+    "Wyrmprint": "Here Come the Sealers!",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050107,
+    "Wyrmprint": "Me and My Bestie!",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050108,
+    "Wyrmprint": "Best Buds",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050109,
+    "Wyrmprint": "Once in a Lifetime",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050110,
+    "Wyrmprint": "Summertime, Feeling Feline",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050111,
+    "Wyrmprint": "Blossoms on the Water's Edge",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050112,
+    "Wyrmprint": "Memories of Summer's Dusk",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050113,
+    "Wyrmprint": "Wings in the Night",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050114,
+    "Wyrmprint": "A Day in Her Life",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050115,
+    "Wyrmprint": "Moonlight Party",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050116,
+    "Wyrmprint": "Second Anniversary",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050117,
+    "Wyrmprint": "Guardian of the Bond",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050118,
+    "Wyrmprint": "Secret Nightmare",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050119,
+    "Wyrmprint": "Free-Spirited Opera",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050120,
+    "Wyrmprint": "Welcome to the Opera!",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050121,
+    "Wyrmprint": "A Man Unchanging",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050122,
+    "Wyrmprint": "Pecorine's Grand Adventure",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050123,
+    "Wyrmprint": "Meanwhile, in Landosol...",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050124,
+    "Wyrmprint": "Dragonyule Dreaming",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050125,
+    "Wyrmprint": "The Cutie Competition",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050126,
+    "Wyrmprint": "Caged Desire",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050127,
+    "Wyrmprint": "Showtime!",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050128,
+    "Wyrmprint": "Sweet Surprise",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 7,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050129,
+    "Wyrmprint": "Rivalry of Kings",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "AffinityID": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050130,
+    "Wyrmprint": "Extreme Teamwork",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050131,
+    "Wyrmprint": "Holywyrm's Advent",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050132,
+    "Wyrmprint": "Springtime Breeze",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050133,
+    "Wyrmprint": "Bloody Little Queen",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40050134,
+    "Wyrmprint": "Advent of the War God",
+    "Rarity": 5,
+    "RarityGroup": 5,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090001,
+    "Wyrmprint": "Crown of Light (Serpent's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 10,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090002,
+    "Wyrmprint": "Tutelary's Destiny (Wolf's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 8,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090003,
+    "Wyrmprint": "Her Beloved (Sword's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 3,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090004,
+    "Wyrmprint": "Mask of Determination (Lance's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 6,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090005,
+    "Wyrmprint": "Her Beloved (Crown's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 1,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090006,
+    "Wyrmprint": "Mask of Determination (Bow's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090007,
+    "Wyrmprint": "\"A Knight's Dream\" (Axe's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 2,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090008,
+    "Wyrmprint": "Wind of Oaths (Eagle's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 7,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090009,
+    "Wyrmprint": "Beneath the Boughs (Wolf's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 8,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090010,
+    "Wyrmprint": "Savage Hawk (Bow's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 4,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090011,
+    "Wyrmprint": "Beneath the Boughs (Staff's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 11,
+    "Active": true
+  },
+  {
+    "WyrmprintID": 40090012,
+    "Wyrmprint": "Savage Hawk (Lance's Boon)",
+    "Rarity": 9,
+    "RarityGroup": 901,
+    "AffinityID": 6,
+    "Active": true
+  }
+]

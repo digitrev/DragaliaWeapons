@@ -1,0 +1,3809 @@
+[
+  {
+    "PassiveID": 1010101,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 10301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010102,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 10401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010103,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 10501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010104,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 10201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010105,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 10701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010106,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 11301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010107,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 11401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010108,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 11501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010109,
+    "WeaponTypeID": 1,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 11601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010201,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 10202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010202,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 10302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010203,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 10402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010204,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 10502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010205,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 10602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010206,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 10802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010207,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 11202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010208,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 11302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010209,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 11402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010210,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 11502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010211,
+    "WeaponTypeID": 1,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 11602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010301,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 10103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010302,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 10403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010303,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 10503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010304,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 10603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010305,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 10803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010306,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 10903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010307,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 11303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010308,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 11403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010309,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 11503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010310,
+    "WeaponTypeID": 1,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 11603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010401,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 10104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010402,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 10204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010403,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 10304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010404,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 10604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010405,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 11104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010406,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 11304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010407,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 11404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010408,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 11504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010409,
+    "WeaponTypeID": 1,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 11604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010501,
+    "WeaponTypeID": 1,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 10205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010502,
+    "WeaponTypeID": 1,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 10605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010503,
+    "WeaponTypeID": 1,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 10705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010504,
+    "WeaponTypeID": 1,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 11005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010505,
+    "WeaponTypeID": 1,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 11305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010506,
+    "WeaponTypeID": 1,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 11405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010507,
+    "WeaponTypeID": 1,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 11505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1010508,
+    "WeaponTypeID": 1,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 11605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020101,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 20301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020102,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 20401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020103,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 20501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020104,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 20201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020105,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 20701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020106,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 21301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020107,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 21401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020108,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 21501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020109,
+    "WeaponTypeID": 2,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 21601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020201,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 20202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020202,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 20302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020203,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 20402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020204,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 20502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020205,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 20602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020206,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 20802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020207,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 21202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020208,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 21302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020209,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 21402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020210,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 21502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020211,
+    "WeaponTypeID": 2,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 21602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020301,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 20103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020302,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 20403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020303,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 20503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020304,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 20603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020305,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 20803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020306,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 20903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020307,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 21303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020308,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 21403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020309,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 21503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020310,
+    "WeaponTypeID": 2,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 21603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020401,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 20104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020402,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 20204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020403,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 20304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020404,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 20604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020405,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 21104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020406,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 21304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020407,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 21404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020408,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 21504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020409,
+    "WeaponTypeID": 2,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 21604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020501,
+    "WeaponTypeID": 2,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 20205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020502,
+    "WeaponTypeID": 2,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 20605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020503,
+    "WeaponTypeID": 2,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 20705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020504,
+    "WeaponTypeID": 2,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 21005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020505,
+    "WeaponTypeID": 2,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 21305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020506,
+    "WeaponTypeID": 2,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 21405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020507,
+    "WeaponTypeID": 2,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 21505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1020508,
+    "WeaponTypeID": 2,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 21605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030101,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 30301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030102,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 30401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030103,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 30501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030104,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 30201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030105,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 30701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030106,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 31301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030107,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 31401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030108,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 31501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030109,
+    "WeaponTypeID": 3,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 31601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030201,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 30202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030202,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 30302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030203,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 30402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030204,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 30502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030205,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 30602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030206,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 30802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030207,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 31202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030208,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 31302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030209,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 31402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030210,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 31502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030211,
+    "WeaponTypeID": 3,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 31602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030301,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 30103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030302,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 30403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030303,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 30503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030304,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 30603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030305,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 30803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030306,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 30903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030307,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 31303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030308,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 31403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030309,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 31503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030310,
+    "WeaponTypeID": 3,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 31603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030401,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 30104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030402,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 30204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030403,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 30304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030404,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 30604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030405,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 31104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030406,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 31304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030407,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 31404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030408,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 31504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030409,
+    "WeaponTypeID": 3,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 31604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030501,
+    "WeaponTypeID": 3,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 30205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030502,
+    "WeaponTypeID": 3,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 30605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030503,
+    "WeaponTypeID": 3,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 30705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030504,
+    "WeaponTypeID": 3,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 31005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030505,
+    "WeaponTypeID": 3,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 31305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030506,
+    "WeaponTypeID": 3,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 31405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030507,
+    "WeaponTypeID": 3,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 31505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1030508,
+    "WeaponTypeID": 3,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 31605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040101,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 40301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040102,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 40401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040103,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 40501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040104,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 40201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040105,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 40701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040106,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 41301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040107,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 41401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040108,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 41501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040109,
+    "WeaponTypeID": 4,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 41601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040201,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 40202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040202,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 40302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040203,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 40402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040204,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 40502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040205,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 40602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040206,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 40802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040207,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 41202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040208,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 41302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040209,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 41402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040210,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 41502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040211,
+    "WeaponTypeID": 4,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 41602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040301,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 40103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040302,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 40403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040303,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 40503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040304,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 40603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040305,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 40803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040306,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 40903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040307,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 41303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040308,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 41403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040309,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 41503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040310,
+    "WeaponTypeID": 4,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 41603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040401,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 40104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040402,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 40204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040403,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 40304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040404,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 40604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040405,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 41104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040406,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 41304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040407,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 41404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040408,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 41504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040409,
+    "WeaponTypeID": 4,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 41604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040501,
+    "WeaponTypeID": 4,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 40205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040502,
+    "WeaponTypeID": 4,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 40605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040503,
+    "WeaponTypeID": 4,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 40705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040504,
+    "WeaponTypeID": 4,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 41005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040505,
+    "WeaponTypeID": 4,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 41305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040506,
+    "WeaponTypeID": 4,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 41405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040507,
+    "WeaponTypeID": 4,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 41505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1040508,
+    "WeaponTypeID": 4,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 41605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050101,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 50301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050102,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 50401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050103,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 50501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050104,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 50201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050105,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 50701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050106,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 51301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050107,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 51401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050108,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 51501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050109,
+    "WeaponTypeID": 5,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 51601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050201,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 50202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050202,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 50302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050203,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 50402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050204,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 50502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050205,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 50602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050206,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 50802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050207,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 51202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050208,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 51302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050209,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 51402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050210,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 51502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050211,
+    "WeaponTypeID": 5,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 51602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050301,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 50103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050302,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 50403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050303,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 50503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050304,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 50603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050305,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 50803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050306,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 50903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050307,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 51303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050308,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 51403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050309,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 51503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050310,
+    "WeaponTypeID": 5,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 51603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050401,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 50104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050402,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 50204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050403,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 50304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050404,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 50604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050405,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 51104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050406,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 51304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050407,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 51404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050408,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 51504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050409,
+    "WeaponTypeID": 5,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 51604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050501,
+    "WeaponTypeID": 5,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 50205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050502,
+    "WeaponTypeID": 5,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 50605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050503,
+    "WeaponTypeID": 5,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 50705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050504,
+    "WeaponTypeID": 5,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 51005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050505,
+    "WeaponTypeID": 5,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 51305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050506,
+    "WeaponTypeID": 5,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 51405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050507,
+    "WeaponTypeID": 5,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 51505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1050508,
+    "WeaponTypeID": 5,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 51605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060101,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 60301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060102,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 60401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060103,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 60501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060104,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 60201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060105,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 60701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060106,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 61301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060107,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 61401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060108,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 61501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060109,
+    "WeaponTypeID": 6,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 61601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060201,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 60202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060202,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 60302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060203,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 60402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060204,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 60502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060205,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 60602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060206,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 60802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060207,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 61202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060208,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 61302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060209,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 61402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060210,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 61502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060211,
+    "WeaponTypeID": 6,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 61602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060301,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 60103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060302,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 60403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060303,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 60503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060304,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 60603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060305,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 60803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060306,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 60903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060307,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 61303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060308,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 61403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060309,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 61503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060310,
+    "WeaponTypeID": 6,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 61603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060401,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 60104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060402,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 60204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060403,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 60304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060404,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 60604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060405,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 61104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060406,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 61304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060407,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 61404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060408,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 61504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060409,
+    "WeaponTypeID": 6,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 61604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060501,
+    "WeaponTypeID": 6,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 60205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060502,
+    "WeaponTypeID": 6,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 60605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060503,
+    "WeaponTypeID": 6,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 60705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060504,
+    "WeaponTypeID": 6,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 61005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060505,
+    "WeaponTypeID": 6,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 61305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060506,
+    "WeaponTypeID": 6,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 61405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060507,
+    "WeaponTypeID": 6,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 61505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1060508,
+    "WeaponTypeID": 6,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 61605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070101,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 70301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070102,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 70401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070103,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 70501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070104,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 70201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070105,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 70701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070106,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 71301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070107,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 71401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070108,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 71501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070109,
+    "WeaponTypeID": 7,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 71601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070201,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 70202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070202,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 70302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070203,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 70402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070204,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 70502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070205,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 70602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070206,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 70802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070207,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 71202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070208,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 71302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070209,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 71402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070210,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 71502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070211,
+    "WeaponTypeID": 7,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 71602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070301,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 70103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070302,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 70403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070303,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 70503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070304,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 70603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070305,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 70803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070306,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 70903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070307,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 71303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070308,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 71403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070309,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 71503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070310,
+    "WeaponTypeID": 7,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 71603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070401,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 70104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070402,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 70204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070403,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 70304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070404,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 70604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070405,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 71104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070406,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 71304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070407,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 71404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070408,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 71504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070409,
+    "WeaponTypeID": 7,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 71604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070501,
+    "WeaponTypeID": 7,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 70205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070502,
+    "WeaponTypeID": 7,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 70605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070503,
+    "WeaponTypeID": 7,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 70705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070504,
+    "WeaponTypeID": 7,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 71005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070505,
+    "WeaponTypeID": 7,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 71305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070506,
+    "WeaponTypeID": 7,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 71405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070507,
+    "WeaponTypeID": 7,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 71505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1070508,
+    "WeaponTypeID": 7,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 71605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080101,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 80301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080102,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 80401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080103,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 80501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080104,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 80201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080105,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 80701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080106,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 81301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080107,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 81401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080108,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 81501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080109,
+    "WeaponTypeID": 8,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 81601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080201,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 80202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080202,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 80302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080203,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 80402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080204,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 80502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080205,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 80602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080206,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 80802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080207,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 81202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080208,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 81302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080209,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 81402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080210,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 81502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080211,
+    "WeaponTypeID": 8,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 81602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080301,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 80103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080302,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 80403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080303,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 80503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080304,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 80603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080305,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 80803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080306,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 80903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080307,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 81303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080308,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 81403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080309,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 81503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080310,
+    "WeaponTypeID": 8,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 81603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080401,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 80104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080402,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 80204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080403,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 80304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080404,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 80604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080405,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 81104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080406,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 81304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080407,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 81404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080408,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 81504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080409,
+    "WeaponTypeID": 8,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 81604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080501,
+    "WeaponTypeID": 8,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 80205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080502,
+    "WeaponTypeID": 8,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 80605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080503,
+    "WeaponTypeID": 8,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 80705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080504,
+    "WeaponTypeID": 8,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 81005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080505,
+    "WeaponTypeID": 8,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 81305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080506,
+    "WeaponTypeID": 8,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 81405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080507,
+    "WeaponTypeID": 8,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 81505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1080508,
+    "WeaponTypeID": 8,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 81605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090101,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 389,
+    "AbilityNumber": 1,
+    "SortOrder": 90301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090102,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 585,
+    "AbilityNumber": 2,
+    "SortOrder": 90401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090103,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 584,
+    "AbilityNumber": 3,
+    "SortOrder": 90501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090104,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 11,
+    "AbilityNumber": 4,
+    "SortOrder": 90201,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090105,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 13,
+    "AbilityNumber": 5,
+    "SortOrder": 90701,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090106,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 904,
+    "AbilityNumber": 6,
+    "SortOrder": 91301,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090107,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 905,
+    "AbilityNumber": 7,
+    "SortOrder": 91401,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090108,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 595,
+    "AbilityNumber": 8,
+    "SortOrder": 91501,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090109,
+    "WeaponTypeID": 9,
+    "ElementID": 1,
+    "AbilityID": 561,
+    "AbilityNumber": 9,
+    "SortOrder": 91601,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090201,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 12,
+    "AbilityNumber": 1,
+    "SortOrder": 90202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090202,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 474,
+    "AbilityNumber": 2,
+    "SortOrder": 90302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090203,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 1371,
+    "AbilityNumber": 3,
+    "SortOrder": 90402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090204,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 835,
+    "AbilityNumber": 4,
+    "SortOrder": 90502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090205,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 1373,
+    "AbilityNumber": 5,
+    "SortOrder": 90602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090206,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 609,
+    "AbilityNumber": 6,
+    "SortOrder": 90802,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090207,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 109,
+    "AbilityNumber": 7,
+    "SortOrder": 91202,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090208,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 607,
+    "AbilityNumber": 8,
+    "SortOrder": 91302,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090209,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 608,
+    "AbilityNumber": 9,
+    "SortOrder": 91402,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090210,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 596,
+    "AbilityNumber": 10,
+    "SortOrder": 91502,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090211,
+    "WeaponTypeID": 9,
+    "ElementID": 2,
+    "AbilityID": 562,
+    "AbilityNumber": 11,
+    "SortOrder": 91602,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090301,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 102,
+    "AbilityNumber": 1,
+    "SortOrder": 90103,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090302,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 1372,
+    "AbilityNumber": 2,
+    "SortOrder": 90403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090303,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 976,
+    "AbilityNumber": 3,
+    "SortOrder": 90503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090304,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 230,
+    "AbilityNumber": 4,
+    "SortOrder": 90603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090305,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 269,
+    "AbilityNumber": 5,
+    "SortOrder": 90803,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090306,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 251,
+    "AbilityNumber": 6,
+    "SortOrder": 90903,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090307,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 978,
+    "AbilityNumber": 7,
+    "SortOrder": 91303,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090308,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 979,
+    "AbilityNumber": 8,
+    "SortOrder": 91403,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090309,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 597,
+    "AbilityNumber": 9,
+    "SortOrder": 91503,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090310,
+    "WeaponTypeID": 9,
+    "ElementID": 3,
+    "AbilityID": 563,
+    "AbilityNumber": 10,
+    "SortOrder": 91603,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090401,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 228,
+    "AbilityNumber": 1,
+    "SortOrder": 90104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090402,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 99,
+    "AbilityNumber": 2,
+    "SortOrder": 90204,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090403,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 833,
+    "AbilityNumber": 3,
+    "SortOrder": 90304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090404,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 103,
+    "AbilityNumber": 4,
+    "SortOrder": 90604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090405,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 409,
+    "AbilityNumber": 5,
+    "SortOrder": 91104,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090406,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 797,
+    "AbilityNumber": 6,
+    "SortOrder": 91304,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090407,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 798,
+    "AbilityNumber": 7,
+    "SortOrder": 91404,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090408,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 598,
+    "AbilityNumber": 8,
+    "SortOrder": 91504,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090409,
+    "WeaponTypeID": 9,
+    "ElementID": 4,
+    "AbilityID": 564,
+    "AbilityNumber": 9,
+    "SortOrder": 91604,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090501,
+    "WeaponTypeID": 9,
+    "ElementID": 5,
+    "AbilityID": 76,
+    "AbilityNumber": 1,
+    "SortOrder": 90205,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090502,
+    "WeaponTypeID": 9,
+    "ElementID": 5,
+    "AbilityID": 401,
+    "AbilityNumber": 2,
+    "SortOrder": 90605,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090503,
+    "WeaponTypeID": 9,
+    "ElementID": 5,
+    "AbilityID": 346,
+    "AbilityNumber": 3,
+    "SortOrder": 90705,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090504,
+    "WeaponTypeID": 9,
+    "ElementID": 5,
+    "AbilityID": 286,
+    "AbilityNumber": 4,
+    "SortOrder": 91005,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090505,
+    "WeaponTypeID": 9,
+    "ElementID": 5,
+    "AbilityID": 1045,
+    "AbilityNumber": 5,
+    "SortOrder": 91305,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090506,
+    "WeaponTypeID": 9,
+    "ElementID": 5,
+    "AbilityID": 1050,
+    "AbilityNumber": 6,
+    "SortOrder": 91405,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090507,
+    "WeaponTypeID": 9,
+    "ElementID": 5,
+    "AbilityID": 599,
+    "AbilityNumber": 7,
+    "SortOrder": 91505,
+    "Active": true
+  },
+  {
+    "PassiveID": 1090508,
+    "WeaponTypeID": 9,
+    "ElementID": 5,
+    "AbilityID": 565,
+    "AbilityNumber": 8,
+    "SortOrder": 91605,
+    "Active": true
+  }
+]

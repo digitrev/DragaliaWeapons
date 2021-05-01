@@ -1,0 +1,11 @@
+[
+  { "WeaponTypeID": 1, "WeaponType": "Sword", "Active": true },
+  { "WeaponTypeID": 2, "WeaponType": "Blade", "Active": true },
+  { "WeaponTypeID": 3, "WeaponType": "Dagger", "Active": true },
+  { "WeaponTypeID": 4, "WeaponType": "Axe", "Active": true },
+  { "WeaponTypeID": 5, "WeaponType": "Lance", "Active": true },
+  { "WeaponTypeID": 6, "WeaponType": "Bow", "Active": true },
+  { "WeaponTypeID": 7, "WeaponType": "Wand", "Active": true },
+  { "WeaponTypeID": 8, "WeaponType": "Staff", "Active": true },
+  { "WeaponTypeID": 9, "WeaponType": "Manacaster", "Active": true }
+]

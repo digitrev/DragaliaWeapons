@@ -1,0 +1,2252 @@
+[
+  {
+    "AdventurerID": 10130102,
+    "Adventurer": "Marty",
+    "Rarity": 3,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10130103,
+    "Adventurer": "Valentine's Orion",
+    "Rarity": 3,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10130201,
+    "Adventurer": "Zardin",
+    "Rarity": 3,
+    "ElementID": 2,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10130401,
+    "Adventurer": "Raemond",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10130501,
+    "Adventurer": "Rodrigo",
+    "Rarity": 3,
+    "ElementID": 5,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140101,
+    "Adventurer": "The Prince",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140102,
+    "Adventurer": "Karl",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140103,
+    "Adventurer": "Serena",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140201,
+    "Adventurer": "Halloween Odetta",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140301,
+    "Adventurer": "Ku Hai",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140302,
+    "Adventurer": "Templar Hope",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140401,
+    "Adventurer": "Odetta",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140501,
+    "Adventurer": "Berserker",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10140503,
+    "Adventurer": "Audric",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150101,
+    "Adventurer": "Naveed",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150102,
+    "Adventurer": "Marth",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150103,
+    "Adventurer": "Lea",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150104,
+    "Adventurer": "Hunter Berserker",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150105,
+    "Adventurer": "Chrom",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150201,
+    "Adventurer": "Xander",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150202,
+    "Adventurer": "Summer Celliera",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150203,
+    "Adventurer": "Eugene",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150301,
+    "Adventurer": "Gala Ranzal",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150302,
+    "Adventurer": "Wedding Elisanne",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150303,
+    "Adventurer": "Gala Leif",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150304,
+    "Adventurer": "Mona",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150401,
+    "Adventurer": "Albert",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150402,
+    "Adventurer": "Alfonse",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150403,
+    "Adventurer": "Gala Prince",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 1,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150404,
+    "Adventurer": "Pecorine",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150501,
+    "Adventurer": "Yaten",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150502,
+    "Adventurer": "Gala Alex",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10150503,
+    "Adventurer": "Alberius",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10230101,
+    "Adventurer": "Aoi",
+    "Rarity": 3,
+    "ElementID": 1,
+    "WeaponTypeID": 2,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10230201,
+    "Adventurer": "Jurota",
+    "Rarity": 3,
+    "ElementID": 2,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10230301,
+    "Adventurer": "Melody",
+    "Rarity": 3,
+    "ElementID": 3,
+    "WeaponTypeID": 2,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10230401,
+    "Adventurer": "Halloween Edward",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 2,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10230501,
+    "Adventurer": "Taro",
+    "Rarity": 3,
+    "ElementID": 5,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240101,
+    "Adventurer": "Laxi",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240201,
+    "Adventurer": "Celliera",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 2,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240202,
+    "Adventurer": "Summer Ranzal",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240301,
+    "Adventurer": "Musashi",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240302,
+    "Adventurer": "Addis",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240401,
+    "Adventurer": "Yachiyo",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240402,
+    "Adventurer": "Hanabusa",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240502,
+    "Adventurer": "Durant",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10240503,
+    "Adventurer": "Aldred",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250101,
+    "Adventurer": "Mikoto",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 2,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250102,
+    "Adventurer": "Rena",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250103,
+    "Adventurer": "Nobunaga",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250201,
+    "Adventurer": "Valerio",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250202,
+    "Adventurer": "Halloween Akasha",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250301,
+    "Adventurer": "Victor",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250302,
+    "Adventurer": "Tobias",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250303,
+    "Adventurer": "Forager Mitsuba",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250401,
+    "Adventurer": "Beautician Zardin",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250402,
+    "Adventurer": "Gala Luca",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250403,
+    "Adventurer": "Mordecai",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250501,
+    "Adventurer": "Ieyasu",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 2,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250502,
+    "Adventurer": "Natalie",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10250503,
+    "Adventurer": "Linnea",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 2,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10330101,
+    "Adventurer": "Renelle",
+    "Rarity": 3,
+    "ElementID": 1,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10330301,
+    "Adventurer": "Francesca",
+    "Rarity": 3,
+    "ElementID": 3,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10330401,
+    "Adventurer": "Irfan",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10330501,
+    "Adventurer": "Vice",
+    "Rarity": 3,
+    "ElementID": 5,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10330502,
+    "Adventurer": "Vida",
+    "Rarity": 3,
+    "ElementID": 5,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340101,
+    "Adventurer": "Melsa",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340102,
+    "Adventurer": "Yuya",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340201,
+    "Adventurer": "Luther",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340202,
+    "Adventurer": "Orsem",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340203,
+    "Adventurer": "Renee",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340301,
+    "Adventurer": "Su Fang",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340401,
+    "Adventurer": "Fritz",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340402,
+    "Adventurer": "Fleur",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340501,
+    "Adventurer": "Orion",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10340502,
+    "Adventurer": "Alex",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350101,
+    "Adventurer": "Ezelith",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350102,
+    "Adventurer": "Gala Laxi",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350201,
+    "Adventurer": "Dragonyule Cleo",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350202,
+    "Adventurer": "Mitsuba",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350203,
+    "Adventurer": "Tiki",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350204,
+    "Adventurer": "Humanoid Mercury",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350301,
+    "Adventurer": "Wedding Aoi",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350302,
+    "Adventurer": "Summer Norwin",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350303,
+    "Adventurer": "Gala Notte",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350402,
+    "Adventurer": "Mitsuhide",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350403,
+    "Adventurer": "Wu Kong",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350404,
+    "Adventurer": "Yukata Curran",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350502,
+    "Adventurer": "Delphi",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 3,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350503,
+    "Adventurer": "Bellina",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350504,
+    "Adventurer": "Nevin",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10350505,
+    "Adventurer": "Joker",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 3,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10430201,
+    "Adventurer": "Rex",
+    "Rarity": 3,
+    "ElementID": 2,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10430202,
+    "Adventurer": "Pietro",
+    "Rarity": 3,
+    "ElementID": 2,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10430301,
+    "Adventurer": "Johanna",
+    "Rarity": 3,
+    "ElementID": 3,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10430401,
+    "Adventurer": "Linus",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10430501,
+    "Adventurer": "Erik",
+    "Rarity": 3,
+    "ElementID": 5,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10440101,
+    "Adventurer": "Vanessa",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10440102,
+    "Adventurer": "Yue",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10440201,
+    "Adventurer": "Karina",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10440301,
+    "Adventurer": "Ranzal",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10440401,
+    "Adventurer": "Summer Luca",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10440501,
+    "Adventurer": "Sazanka",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450101,
+    "Adventurer": "Ramona",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450102,
+    "Adventurer": "Halloween Mym",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450103,
+    "Adventurer": "Child Ranzal",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450201,
+    "Adventurer": "Summer Julietta",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450202,
+    "Adventurer": "Gala Elisanne",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450203,
+    "Adventurer": "Lazry",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450204,
+    "Adventurer": "Finni",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450301,
+    "Adventurer": "Lin You",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450302,
+    "Adventurer": "Valentine's Melody",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450303,
+    "Adventurer": "Summer Amane",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450304,
+    "Adventurer": "Kimono Luca",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450401,
+    "Adventurer": "Julietta",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450402,
+    "Adventurer": "Dragonyule Malora",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450403,
+    "Adventurer": "Zhu Bajie",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450404,
+    "Adventurer": "Sophie (Persona)",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450501,
+    "Adventurer": "Curran",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 4,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450502,
+    "Adventurer": "Summer Patia",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10450503,
+    "Adventurer": "Dragonyule Victor",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 4,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10530101,
+    "Adventurer": "Alain",
+    "Rarity": 3,
+    "ElementID": 1,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10530201,
+    "Adventurer": "Cibella",
+    "Rarity": 3,
+    "ElementID": 2,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10530202,
+    "Adventurer": "Jakob",
+    "Rarity": 3,
+    "ElementID": 2,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10530401,
+    "Adventurer": "Malka",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10530501,
+    "Adventurer": "Zace",
+    "Rarity": 3,
+    "ElementID": 5,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540102,
+    "Adventurer": "Xuan Zang",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540103,
+    "Adventurer": "Emma",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540201,
+    "Adventurer": "Elisanne",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540202,
+    "Adventurer": "Gauld",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540301,
+    "Adventurer": "Aeleen",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540302,
+    "Adventurer": "Pia",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540401,
+    "Adventurer": "Ryozen",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540402,
+    "Adventurer": "Sha Wujing",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540501,
+    "Adventurer": "Botan",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10540502,
+    "Adventurer": "Patia",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550101,
+    "Adventurer": "Gala Mym",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550102,
+    "Adventurer": "Nadine",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550103,
+    "Adventurer": "Kimono Elisanne",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550104,
+    "Adventurer": "Panther",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550201,
+    "Adventurer": "Xainfried",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550203,
+    "Adventurer": "Fjorm",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550204,
+    "Adventurer": "Catherine",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550301,
+    "Adventurer": "Sylas",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550302,
+    "Adventurer": "Kirsty",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550303,
+    "Adventurer": "Halloween Melsa",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550401,
+    "Adventurer": "Annelie",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550402,
+    "Adventurer": "Halloween Elisanne",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550403,
+    "Adventurer": "Hunter Vanessa",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550404,
+    "Adventurer": "Sharena",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550405,
+    "Adventurer": "Ryszarda",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550501,
+    "Adventurer": "Forte",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 5,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10550502,
+    "Adventurer": "Lathna",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 5,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10630101,
+    "Adventurer": "Joe",
+    "Rarity": 3,
+    "ElementID": 1,
+    "WeaponTypeID": 6,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10630201,
+    "Adventurer": "Waike",
+    "Rarity": 3,
+    "ElementID": 2,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10630301,
+    "Adventurer": "Philia",
+    "Rarity": 3,
+    "ElementID": 3,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10630401,
+    "Adventurer": "Malora",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10640101,
+    "Adventurer": "Valentine's Ezelith",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10640202,
+    "Adventurer": "Dragonyule Nefaria",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 6,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10640301,
+    "Adventurer": "Eleonora",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10640302,
+    "Adventurer": "Joachim",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10640401,
+    "Adventurer": "Luca",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 6,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10640402,
+    "Adventurer": "Rawn",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10640403,
+    "Adventurer": "Elias",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10640501,
+    "Adventurer": "Norwin",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650101,
+    "Adventurer": "Gala Sarisse",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650102,
+    "Adventurer": "Chelsea",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650201,
+    "Adventurer": "Laranoa",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 6,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650202,
+    "Adventurer": "Hunter Sarisse",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650203,
+    "Adventurer": "Pinon",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650301,
+    "Adventurer": "Louise",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 6,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650302,
+    "Adventurer": "Hawk",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 6,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650303,
+    "Adventurer": "Meene",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650304,
+    "Adventurer": "Valentine's Chelsea",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650305,
+    "Adventurer": "Humanoid Midgardsormr",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650401,
+    "Adventurer": "Summer Cleo",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 6,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650402,
+    "Adventurer": "Summer Mikoto",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650501,
+    "Adventurer": "Nefaria",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 6,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650502,
+    "Adventurer": "Valentine's Addis",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650503,
+    "Adventurer": "Chelle",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10650504,
+    "Adventurer": "Opera Karina",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 6,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10730101,
+    "Adventurer": "Xania",
+    "Rarity": 3,
+    "ElementID": 1,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10730301,
+    "Adventurer": "Nicolas",
+    "Rarity": 3,
+    "ElementID": 3,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10730401,
+    "Adventurer": "Xiao Lei",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10730501,
+    "Adventurer": "Althemia",
+    "Rarity": 3,
+    "ElementID": 5,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740101,
+    "Adventurer": "Sinoa",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740201,
+    "Adventurer": "Dragonyule Xander",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740202,
+    "Adventurer": "Summer Estelle",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740203,
+    "Adventurer": "Pipple",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740301,
+    "Adventurer": "Noelle",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740302,
+    "Adventurer": "Dragonyule Xainfried",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740401,
+    "Adventurer": "Amane",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740402,
+    "Adventurer": "Chitose",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10740501,
+    "Adventurer": "Kleimann",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750101,
+    "Adventurer": "Student Maribelle",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750102,
+    "Adventurer": "Mega Man",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750103,
+    "Adventurer": "Incognito Nefaria",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750104,
+    "Adventurer": "Seimei",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750201,
+    "Adventurer": "Lily",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750202,
+    "Adventurer": "Yurius",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750203,
+    "Adventurer": "Forager Cleo",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750301,
+    "Adventurer": "Maribelle",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750302,
+    "Adventurer": "Summer Sinoa",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750303,
+    "Adventurer": "Myriam",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750401,
+    "Adventurer": "Lucretia",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750402,
+    "Adventurer": "Peony",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750403,
+    "Adventurer": "Radiant Xuan Zang",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750501,
+    "Adventurer": "Veronica",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750502,
+    "Adventurer": "Gala Cleo",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750503,
+    "Adventurer": "Cassandra",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 7,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750504,
+    "Adventurer": "Zena",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10750505,
+    "Adventurer": "Vania",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 7,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10830101,
+    "Adventurer": "Aurien",
+    "Rarity": 3,
+    "ElementID": 1,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10830201,
+    "Adventurer": "Ricardt",
+    "Rarity": 3,
+    "ElementID": 2,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10830301,
+    "Adventurer": "Sophie",
+    "Rarity": 3,
+    "ElementID": 3,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10830401,
+    "Adventurer": "Hope",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10830402,
+    "Adventurer": "Estelle",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10830501,
+    "Adventurer": "Edward",
+    "Rarity": 3,
+    "ElementID": 5,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840101,
+    "Adventurer": "Verica",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840102,
+    "Adventurer": "Halloween Lowen",
+    "Rarity": 4,
+    "ElementID": 1,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840201,
+    "Adventurer": "Thaniel",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840202,
+    "Adventurer": "Nurse Aeleen",
+    "Rarity": 4,
+    "ElementID": 2,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840301,
+    "Adventurer": "Lowen",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840302,
+    "Adventurer": "Wedding Xania",
+    "Rarity": 4,
+    "ElementID": 3,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840401,
+    "Adventurer": "Halloween Althemia",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840402,
+    "Adventurer": "Vixel",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840403,
+    "Adventurer": "Felicia",
+    "Rarity": 4,
+    "ElementID": 4,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10840501,
+    "Adventurer": "Cleo",
+    "Rarity": 4,
+    "ElementID": 5,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850101,
+    "Adventurer": "Valentine's Hildegarde",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850102,
+    "Adventurer": "Yukata Cassandra",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850103,
+    "Adventurer": "Kuzunoha",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850201,
+    "Adventurer": "Jiang Ziya",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850202,
+    "Adventurer": "Dragonyule Lily",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850301,
+    "Adventurer": "Akasha",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850302,
+    "Adventurer": "Formal Noelle",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850401,
+    "Adventurer": "Hildegarde",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850402,
+    "Adventurer": "Gala Zena",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850501,
+    "Adventurer": "Heinwald",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 8,
+    "MCLimit": 70,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850502,
+    "Adventurer": "Summer Verica",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10850503,
+    "Adventurer": "Grace",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 8,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10930401,
+    "Adventurer": "Sharpshooter Joe",
+    "Rarity": 3,
+    "ElementID": 4,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10950101,
+    "Adventurer": "Gala Leonidas",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10950102,
+    "Adventurer": "Faris",
+    "Rarity": 5,
+    "ElementID": 1,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10950201,
+    "Adventurer": "Lapis",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10950202,
+    "Adventurer": "Yoshitsune",
+    "Rarity": 5,
+    "ElementID": 2,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10950301,
+    "Adventurer": "Formal Joachim",
+    "Rarity": 5,
+    "ElementID": 3,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10950401,
+    "Adventurer": "Ilia",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10950402,
+    "Adventurer": "Eirene",
+    "Rarity": 5,
+    "ElementID": 4,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 10950501,
+    "Adventurer": "Gala Chelle",
+    "Rarity": 5,
+    "ElementID": 5,
+    "WeaponTypeID": 9,
+    "MCLimit": 50,
+    "Active": true
+  },
+  {
+    "AdventurerID": 19900004,
+    "Adventurer": "Puppy",
+    "Rarity": 5,
+    "ElementID": 99,
+    "WeaponTypeID": 1,
+    "MCLimit": 50,
+    "Active": true
+  }
+]

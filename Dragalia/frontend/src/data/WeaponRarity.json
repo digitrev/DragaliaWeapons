@@ -1,0 +1,17 @@
+[
+  { "WeaponRarity": 2, "RefinementLevel": 0, "MaxUnbindLevel": 4 },
+  { "WeaponRarity": 2, "RefinementLevel": 1, "MaxUnbindLevel": 8 },
+  { "WeaponRarity": 2, "RefinementLevel": 2, "MaxUnbindLevel": 12 },
+  { "WeaponRarity": 3, "RefinementLevel": 0, "MaxUnbindLevel": 4 },
+  { "WeaponRarity": 3, "RefinementLevel": 1, "MaxUnbindLevel": 8 },
+  { "WeaponRarity": 3, "RefinementLevel": 2, "MaxUnbindLevel": 12 },
+  { "WeaponRarity": 4, "RefinementLevel": 0, "MaxUnbindLevel": 4 },
+  { "WeaponRarity": 4, "RefinementLevel": 1, "MaxUnbindLevel": 8 },
+  { "WeaponRarity": 4, "RefinementLevel": 2, "MaxUnbindLevel": 12 },
+  { "WeaponRarity": 5, "RefinementLevel": 0, "MaxUnbindLevel": 4 },
+  { "WeaponRarity": 5, "RefinementLevel": 1, "MaxUnbindLevel": 8 },
+  { "WeaponRarity": 5, "RefinementLevel": 2, "MaxUnbindLevel": 12 },
+  { "WeaponRarity": 6, "RefinementLevel": 0, "MaxUnbindLevel": 4 },
+  { "WeaponRarity": 6, "RefinementLevel": 1, "MaxUnbindLevel": 8 },
+  { "WeaponRarity": 6, "RefinementLevel": 2, "MaxUnbindLevel": 9 }
+]

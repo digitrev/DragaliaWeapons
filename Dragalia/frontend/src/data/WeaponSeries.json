@@ -1,0 +1,32 @@
+[
+  {
+    "WeaponSeriesID": 1,
+    "WeaponSeries": "Core",
+    "SortOrder": 1,
+    "Active": true
+  },
+  {
+    "WeaponSeriesID": 2,
+    "WeaponSeries": "Void",
+    "SortOrder": 2,
+    "Active": true
+  },
+  {
+    "WeaponSeriesID": 3,
+    "WeaponSeries": "High Dragon",
+    "SortOrder": 4,
+    "Active": true
+  },
+  {
+    "WeaponSeriesID": 4,
+    "WeaponSeries": "Agito",
+    "SortOrder": 5,
+    "Active": true
+  },
+  {
+    "WeaponSeriesID": 5,
+    "WeaponSeries": "Chimeratech",
+    "SortOrder": 3,
+    "Active": true
+  }
+]

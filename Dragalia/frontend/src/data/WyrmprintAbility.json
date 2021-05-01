@@ -1,0 +1,6104 @@
+[
+  {
+    "WyrmprintID": 40020001,
+    "AbilityID": 110090001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40020001,
+    "AbilityID": 110090002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40020001,
+    "AbilityID": 110090003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40020002,
+    "AbilityID": 110120005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40020002,
+    "AbilityID": 110120006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40020002,
+    "AbilityID": 110120007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40020003,
+    "AbilityID": 110220001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40020003,
+    "AbilityID": 110220002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40020003,
+    "AbilityID": 110220003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40020004,
+    "AbilityID": 110060001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40020004,
+    "AbilityID": 110060002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40020004,
+    "AbilityID": 110060003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40020005,
+    "AbilityID": 110100001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40020005,
+    "AbilityID": 110100002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40020005,
+    "AbilityID": 110100003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030001,
+    "AbilityID": 110080002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030001,
+    "AbilityID": 110080003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030001,
+    "AbilityID": 110080004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030002,
+    "AbilityID": 110100002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030002,
+    "AbilityID": 110100003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030002,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030003,
+    "AbilityID": 110120006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030003,
+    "AbilityID": 110120007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030003,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030004,
+    "AbilityID": 110130002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030004,
+    "AbilityID": 110130003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030004,
+    "AbilityID": 110130004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030005,
+    "AbilityID": 110070002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030005,
+    "AbilityID": 110070003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030005,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030006,
+    "AbilityID": 110390002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030006,
+    "AbilityID": 110390003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030006,
+    "AbilityID": 110390004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030007,
+    "AbilityID": 110090002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030007,
+    "AbilityID": 110090003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030007,
+    "AbilityID": 110090004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030008,
+    "AbilityID": 110020501,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030008,
+    "AbilityID": 110020502,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030008,
+    "AbilityID": 110020503,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030009,
+    "AbilityID": 110020401,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030009,
+    "AbilityID": 110020402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030009,
+    "AbilityID": 110020403,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030010,
+    "AbilityID": 110020901,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030010,
+    "AbilityID": 110020902,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030010,
+    "AbilityID": 110020903,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030011,
+    "AbilityID": 110220002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030011,
+    "AbilityID": 165,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030011,
+    "AbilityID": 110220003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030012,
+    "AbilityID": 110010402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030012,
+    "AbilityID": 110010403,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030012,
+    "AbilityID": 110010404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030013,
+    "AbilityID": 210001702,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030013,
+    "AbilityID": 210001703,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030013,
+    "AbilityID": 210001704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030014,
+    "AbilityID": 110100002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030014,
+    "AbilityID": 110100003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030014,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030015,
+    "AbilityID": 110020201,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030015,
+    "AbilityID": 110020202,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030015,
+    "AbilityID": 110020203,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030016,
+    "AbilityID": 110390002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030016,
+    "AbilityID": 110390003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030016,
+    "AbilityID": 110390005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030017,
+    "AbilityID": 110360002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030017,
+    "AbilityID": 110360003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030017,
+    "AbilityID": 110360004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030018,
+    "AbilityID": 210000802,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030018,
+    "AbilityID": 210000803,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030018,
+    "AbilityID": 210000804,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030019,
+    "AbilityID": 110060002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030019,
+    "AbilityID": 110060003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030019,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030020,
+    "AbilityID": 210000302,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030020,
+    "AbilityID": 210000303,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030020,
+    "AbilityID": 210000304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030021,
+    "AbilityID": 110020601,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030021,
+    "AbilityID": 110020602,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030021,
+    "AbilityID": 110020603,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030022,
+    "AbilityID": 210000802,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030022,
+    "AbilityID": 210000803,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030022,
+    "AbilityID": 210000804,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030023,
+    "AbilityID": 110020101,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030023,
+    "AbilityID": 110020102,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030023,
+    "AbilityID": 110020103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030024,
+    "AbilityID": 110120006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030024,
+    "AbilityID": 110120007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030024,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030026,
+    "AbilityID": 110020301,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030026,
+    "AbilityID": 110020302,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030026,
+    "AbilityID": 110020303,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030027,
+    "AbilityID": 110020701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030027,
+    "AbilityID": 110200001,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030027,
+    "AbilityID": 558,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030027,
+    "AbilityID": 110020702,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030027,
+    "AbilityID": 110020703,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030027,
+    "AbilityID": 110200002,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030029,
+    "AbilityID": 110021001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030029,
+    "AbilityID": 110021002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030029,
+    "AbilityID": 110021003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030030,
+    "AbilityID": 110200004,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030030,
+    "AbilityID": 210001802,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030030,
+    "AbilityID": 334,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030030,
+    "AbilityID": 210001803,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030030,
+    "AbilityID": 110200005,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030030,
+    "AbilityID": 210001804,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030031,
+    "AbilityID": 110010408,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030031,
+    "AbilityID": 110010409,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030031,
+    "AbilityID": 110010410,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030032,
+    "AbilityID": 110100002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030032,
+    "AbilityID": 110200007,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030032,
+    "AbilityID": 590,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030032,
+    "AbilityID": 110100003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030032,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030032,
+    "AbilityID": 110200008,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030033,
+    "AbilityID": 110120006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030033,
+    "AbilityID": 110200010,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030033,
+    "AbilityID": 1016,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030033,
+    "AbilityID": 110120007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030033,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030033,
+    "AbilityID": 110200011,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030034,
+    "AbilityID": 110080007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030034,
+    "AbilityID": 110080008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030034,
+    "AbilityID": 143,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030035,
+    "AbilityID": 110120006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030035,
+    "AbilityID": 110120007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030035,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030036,
+    "AbilityID": 110020901,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030036,
+    "AbilityID": 110020902,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030036,
+    "AbilityID": 110020903,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030037,
+    "AbilityID": 27,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030037,
+    "AbilityID": 36,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030037,
+    "AbilityID": 28,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030037,
+    "AbilityID": 586,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030037,
+    "AbilityID": 37,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030037,
+    "AbilityID": 144,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030038,
+    "AbilityID": 117,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030038,
+    "AbilityID": 132,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030038,
+    "AbilityID": 118,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030038,
+    "AbilityID": 944,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030038,
+    "AbilityID": 133,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030038,
+    "AbilityID": 145,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030039,
+    "AbilityID": 158,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030039,
+    "AbilityID": 110010802,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40030039,
+    "AbilityID": 159,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030039,
+    "AbilityID": 110010803,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40030039,
+    "AbilityID": 160,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40030039,
+    "AbilityID": 110010804,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040001,
+    "AbilityID": 210002102,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040001,
+    "AbilityID": 210002103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040001,
+    "AbilityID": 210002104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040002,
+    "AbilityID": 110100003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040002,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040002,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040003,
+    "AbilityID": 110080003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040003,
+    "AbilityID": 110080004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040003,
+    "AbilityID": 110080005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040004,
+    "AbilityID": 110020902,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040004,
+    "AbilityID": 110020903,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040004,
+    "AbilityID": 110020904,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040005,
+    "AbilityID": 110020202,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040005,
+    "AbilityID": 110020203,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040005,
+    "AbilityID": 110020204,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040006,
+    "AbilityID": 110020602,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040006,
+    "AbilityID": 110020603,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040006,
+    "AbilityID": 110020604,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040007,
+    "AbilityID": 110020402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040007,
+    "AbilityID": 110020403,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040007,
+    "AbilityID": 110020404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040008,
+    "AbilityID": 110350003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040008,
+    "AbilityID": 110350004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040008,
+    "AbilityID": 110350005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040009,
+    "AbilityID": 110020702,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040009,
+    "AbilityID": 110020703,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040009,
+    "AbilityID": 110020704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040010,
+    "AbilityID": 110020102,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040010,
+    "AbilityID": 110020103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040010,
+    "AbilityID": 110020104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040011,
+    "AbilityID": 110100003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040011,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040011,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040012,
+    "AbilityID": 210001703,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040012,
+    "AbilityID": 210001704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040012,
+    "AbilityID": 210001705,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040013,
+    "AbilityID": 110090003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040013,
+    "AbilityID": 110090004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040013,
+    "AbilityID": 110090005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040014,
+    "AbilityID": 210001303,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040014,
+    "AbilityID": 210001304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040014,
+    "AbilityID": 210001305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040015,
+    "AbilityID": 210001803,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040015,
+    "AbilityID": 204,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040015,
+    "AbilityID": 210001804,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040016,
+    "AbilityID": 110020401,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040016,
+    "AbilityID": 110020402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040016,
+    "AbilityID": 110020403,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040017,
+    "AbilityID": 210000603,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040017,
+    "AbilityID": 210000604,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040017,
+    "AbilityID": 210000605,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040018,
+    "AbilityID": 310000503,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040018,
+    "AbilityID": 310000504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040018,
+    "AbilityID": 310000505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040019,
+    "AbilityID": 210000703,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040019,
+    "AbilityID": 210000704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040019,
+    "AbilityID": 210000705,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040020,
+    "AbilityID": 210000403,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040020,
+    "AbilityID": 210000404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040020,
+    "AbilityID": 210000405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040021,
+    "AbilityID": 110020201,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040021,
+    "AbilityID": 110020202,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040021,
+    "AbilityID": 110020203,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040022,
+    "AbilityID": 110100003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040022,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040022,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040023,
+    "AbilityID": 110250201,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040023,
+    "AbilityID": 171,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040023,
+    "AbilityID": 110250202,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040024,
+    "AbilityID": 110270401,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040024,
+    "AbilityID": 172,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040024,
+    "AbilityID": 110270402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040025,
+    "AbilityID": 110290601,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040025,
+    "AbilityID": 173,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040025,
+    "AbilityID": 110290602,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040026,
+    "AbilityID": 110310801,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040026,
+    "AbilityID": 174,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040026,
+    "AbilityID": 110310802,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040027,
+    "AbilityID": 110331001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040027,
+    "AbilityID": 175,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040027,
+    "AbilityID": 110331002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040028,
+    "AbilityID": 110070003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040028,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040028,
+    "AbilityID": 110070005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040029,
+    "AbilityID": 110020502,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040029,
+    "AbilityID": 110200001,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040029,
+    "AbilityID": 558,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040029,
+    "AbilityID": 110020503,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040029,
+    "AbilityID": 110020504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040029,
+    "AbilityID": 110200002,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040030,
+    "AbilityID": 212,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040030,
+    "AbilityID": 210000104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040030,
+    "AbilityID": 210000105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040031,
+    "AbilityID": 110021007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040031,
+    "AbilityID": 110021004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040031,
+    "AbilityID": 110021005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040032,
+    "AbilityID": 110021001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040032,
+    "AbilityID": 110021002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040032,
+    "AbilityID": 110021003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040033,
+    "AbilityID": 110070003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040033,
+    "AbilityID": 110200004,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040033,
+    "AbilityID": 334,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040033,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040033,
+    "AbilityID": 110070005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040033,
+    "AbilityID": 110200005,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040034,
+    "AbilityID": 110090009,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040034,
+    "AbilityID": 110090010,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040034,
+    "AbilityID": 110090011,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040035,
+    "AbilityID": 110020701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040035,
+    "AbilityID": 110020702,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040035,
+    "AbilityID": 110020703,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040036,
+    "AbilityID": 110020602,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040036,
+    "AbilityID": 110200007,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040036,
+    "AbilityID": 590,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040036,
+    "AbilityID": 110020603,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040036,
+    "AbilityID": 110020604,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040036,
+    "AbilityID": 110200008,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040037,
+    "AbilityID": 210001303,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040037,
+    "AbilityID": 210001304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040037,
+    "AbilityID": 210001305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040038,
+    "AbilityID": 110130007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040038,
+    "AbilityID": 110130008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040038,
+    "AbilityID": 152,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040039,
+    "AbilityID": 110020102,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040039,
+    "AbilityID": 110200010,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040039,
+    "AbilityID": 1016,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040039,
+    "AbilityID": 110020103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040039,
+    "AbilityID": 110020104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040039,
+    "AbilityID": 110200011,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040040,
+    "AbilityID": 110070003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040040,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040040,
+    "AbilityID": 110070005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040041,
+    "AbilityID": 110020907,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040041,
+    "AbilityID": 110020904,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040041,
+    "AbilityID": 110020905,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040042,
+    "AbilityID": 7,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040042,
+    "AbilityID": 8,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040042,
+    "AbilityID": 146,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040043,
+    "AbilityID": 110120007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040043,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040043,
+    "AbilityID": 110120001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040044,
+    "AbilityID": 110020101,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040044,
+    "AbilityID": 110020102,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040044,
+    "AbilityID": 110020103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040046,
+    "AbilityID": 32,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040046,
+    "AbilityID": 210000603,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040046,
+    "AbilityID": 591,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040046,
+    "AbilityID": 210000604,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040046,
+    "AbilityID": 33,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040046,
+    "AbilityID": 210000605,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040047,
+    "AbilityID": 128,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040047,
+    "AbilityID": 210000203,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040047,
+    "AbilityID": 942,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040047,
+    "AbilityID": 210000204,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040047,
+    "AbilityID": 129,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040047,
+    "AbilityID": 210000205,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040048,
+    "AbilityID": 878,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040048,
+    "AbilityID": 879,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040048,
+    "AbilityID": 880,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040049,
+    "AbilityID": 1,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040049,
+    "AbilityID": 160,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040049,
+    "AbilityID": 2,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040049,
+    "AbilityID": 161,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040049,
+    "AbilityID": 162,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040049,
+    "AbilityID": 192,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040050,
+    "AbilityID": 110210303,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040050,
+    "AbilityID": 110210304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040050,
+    "AbilityID": 110210305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040051,
+    "AbilityID": 210002701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040051,
+    "AbilityID": 210002701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040051,
+    "AbilityID": 210002701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040052,
+    "AbilityID": 317,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040052,
+    "AbilityID": 318,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040052,
+    "AbilityID": 319,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040053,
+    "AbilityID": 264,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040053,
+    "AbilityID": 322,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040053,
+    "AbilityID": 265,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040053,
+    "AbilityID": 323,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040053,
+    "AbilityID": 266,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040053,
+    "AbilityID": 324,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040054,
+    "AbilityID": 118,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040054,
+    "AbilityID": 145,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040054,
+    "AbilityID": 262,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040055,
+    "AbilityID": 110210103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040055,
+    "AbilityID": 110210104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040055,
+    "AbilityID": 110210105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040056,
+    "AbilityID": 365,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040056,
+    "AbilityID": 110010409,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040056,
+    "AbilityID": 366,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040056,
+    "AbilityID": 110010410,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040056,
+    "AbilityID": 353,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040056,
+    "AbilityID": 367,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040057,
+    "AbilityID": 397,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040057,
+    "AbilityID": 398,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040057,
+    "AbilityID": 399,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040058,
+    "AbilityID": 210000103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040058,
+    "AbilityID": 210000104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040058,
+    "AbilityID": 210000105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040059,
+    "AbilityID": 210001191,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040059,
+    "AbilityID": 210001192,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040059,
+    "AbilityID": 210001193,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040060,
+    "AbilityID": 110210503,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040060,
+    "AbilityID": 110210504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040060,
+    "AbilityID": 110210505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040061,
+    "AbilityID": 110210403,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040061,
+    "AbilityID": 110210404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040061,
+    "AbilityID": 110210405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040062,
+    "AbilityID": 110130002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040062,
+    "AbilityID": 110130003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040062,
+    "AbilityID": 110130004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040063,
+    "AbilityID": 110390003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040063,
+    "AbilityID": 110390004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040063,
+    "AbilityID": 110390005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040064,
+    "AbilityID": 613,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040064,
+    "AbilityID": 110020304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040064,
+    "AbilityID": 110020305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040065,
+    "AbilityID": 110200007,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040065,
+    "AbilityID": 110210103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040065,
+    "AbilityID": 590,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040065,
+    "AbilityID": 110210104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040065,
+    "AbilityID": 110200008,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040065,
+    "AbilityID": 110210105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040066,
+    "AbilityID": 310000503,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040066,
+    "AbilityID": 310000504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040066,
+    "AbilityID": 310000505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040067,
+    "AbilityID": 654,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040067,
+    "AbilityID": 655,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040067,
+    "AbilityID": 656,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040068,
+    "AbilityID": 110160103,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040068,
+    "AbilityID": 110160104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040068,
+    "AbilityID": 110160105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040069,
+    "AbilityID": 210000203,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040069,
+    "AbilityID": 210000204,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040069,
+    "AbilityID": 210000205,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040070,
+    "AbilityID": 110100003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040070,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040070,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040071,
+    "AbilityID": 776,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040071,
+    "AbilityID": 310000503,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040071,
+    "AbilityID": 777,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040071,
+    "AbilityID": 310000504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040071,
+    "AbilityID": 778,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040071,
+    "AbilityID": 310000505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040072,
+    "AbilityID": 110060002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040072,
+    "AbilityID": 110060003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040072,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040073,
+    "AbilityID": 210001702,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040073,
+    "AbilityID": 210001703,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040073,
+    "AbilityID": 210001704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040074,
+    "AbilityID": 110020502,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040074,
+    "AbilityID": 110020503,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040074,
+    "AbilityID": 110020504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040075,
+    "AbilityID": 7,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040075,
+    "AbilityID": 8,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040075,
+    "AbilityID": 146,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040076,
+    "AbilityID": 210000602,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040076,
+    "AbilityID": 210000603,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040076,
+    "AbilityID": 210000604,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040077,
+    "AbilityID": 995,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040077,
+    "AbilityID": 996,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040077,
+    "AbilityID": 997,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040078,
+    "AbilityID": 210003301,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040078,
+    "AbilityID": 210003302,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040078,
+    "AbilityID": 116,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040079,
+    "AbilityID": 1083,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040079,
+    "AbilityID": 1090,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040079,
+    "AbilityID": 1084,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040079,
+    "AbilityID": 110400001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040079,
+    "AbilityID": 1085,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040079,
+    "AbilityID": 1091,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040080,
+    "AbilityID": 110010803,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040080,
+    "AbilityID": 110010804,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040080,
+    "AbilityID": 110010805,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040081,
+    "AbilityID": 110210203,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040081,
+    "AbilityID": 110210204,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040081,
+    "AbilityID": 110210205,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040082,
+    "AbilityID": 110010403,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040082,
+    "AbilityID": 110010404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040082,
+    "AbilityID": 110010405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040083,
+    "AbilityID": 110090015,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040083,
+    "AbilityID": 110090016,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040083,
+    "AbilityID": 110090017,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040084,
+    "AbilityID": 1263,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040084,
+    "AbilityID": 110391002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040084,
+    "AbilityID": 1264,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040084,
+    "AbilityID": 110391003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040084,
+    "AbilityID": 1265,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040084,
+    "AbilityID": 110391004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040085,
+    "AbilityID": 210001903,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040085,
+    "AbilityID": 210001904,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040085,
+    "AbilityID": 210001905,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040086,
+    "AbilityID": 110160601,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040086,
+    "AbilityID": 110160602,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040086,
+    "AbilityID": 110160603,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040087,
+    "AbilityID": 1405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040087,
+    "AbilityID": 1406,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040087,
+    "AbilityID": 1407,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040088,
+    "AbilityID": 110120007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040088,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040088,
+    "AbilityID": 110120001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040089,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040089,
+    "AbilityID": 110120001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040089,
+    "AbilityID": 110120002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040090,
+    "AbilityID": 1467,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040090,
+    "AbilityID": 1481,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040090,
+    "AbilityID": 1468,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040090,
+    "AbilityID": 1482,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040090,
+    "AbilityID": 1469,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040090,
+    "AbilityID": 1483,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040091,
+    "AbilityID": 1520,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040091,
+    "AbilityID": 1521,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040091,
+    "AbilityID": 1522,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040092,
+    "AbilityID": 1658,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040092,
+    "AbilityID": 1659,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040092,
+    "AbilityID": 1660,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040093,
+    "AbilityID": 210000703,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040093,
+    "AbilityID": 210000704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040093,
+    "AbilityID": 210000705,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40040094,
+    "AbilityID": 1898,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40040094,
+    "AbilityID": 1899,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40040094,
+    "AbilityID": 1900,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050001,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050001,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050001,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050002,
+    "AbilityID": 210000504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050002,
+    "AbilityID": 210000505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050002,
+    "AbilityID": 210000506,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050003,
+    "AbilityID": 210000304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050003,
+    "AbilityID": 210000305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050003,
+    "AbilityID": 210000306,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050004,
+    "AbilityID": 110080004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050004,
+    "AbilityID": 110080005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050004,
+    "AbilityID": 110080006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050005,
+    "AbilityID": 210001904,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050005,
+    "AbilityID": 210001905,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050005,
+    "AbilityID": 210001906,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050006,
+    "AbilityID": 110010804,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050006,
+    "AbilityID": 110010805,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050006,
+    "AbilityID": 110010806,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050007,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050007,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050007,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050008,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050008,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050008,
+    "AbilityID": 110100006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050009,
+    "AbilityID": 210001604,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050009,
+    "AbilityID": 210001605,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050009,
+    "AbilityID": 210001606,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050010,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050010,
+    "AbilityID": 110070005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050010,
+    "AbilityID": 110070006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050011,
+    "AbilityID": 110260301,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050011,
+    "AbilityID": 176,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050011,
+    "AbilityID": 110260302,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050012,
+    "AbilityID": 448,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050012,
+    "AbilityID": 448,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050012,
+    "AbilityID": 448,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050013,
+    "AbilityID": 210002204,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050013,
+    "AbilityID": 210002205,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050013,
+    "AbilityID": 210002206,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050014,
+    "AbilityID": 210001304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050014,
+    "AbilityID": 210001305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050014,
+    "AbilityID": 210001306,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050015,
+    "AbilityID": 210000104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050015,
+    "AbilityID": 210000105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050015,
+    "AbilityID": 210000106,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050016,
+    "AbilityID": 110190002,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050016,
+    "AbilityID": 210000404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050016,
+    "AbilityID": 560,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050016,
+    "AbilityID": 210000405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050016,
+    "AbilityID": 110190003,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050016,
+    "AbilityID": 210000406,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050017,
+    "AbilityID": 110190002,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050017,
+    "AbilityID": 110210503,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050017,
+    "AbilityID": 560,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050017,
+    "AbilityID": 110210504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050017,
+    "AbilityID": 110190003,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050017,
+    "AbilityID": 110210505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050018,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050018,
+    "AbilityID": 110190002,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050018,
+    "AbilityID": 560,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050018,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050018,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050018,
+    "AbilityID": 110190003,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050019,
+    "AbilityID": 438,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050019,
+    "AbilityID": 439,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050019,
+    "AbilityID": 440,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050020,
+    "AbilityID": 110010404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050020,
+    "AbilityID": 110010405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050020,
+    "AbilityID": 110010406,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050021,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050021,
+    "AbilityID": 110190006,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050021,
+    "AbilityID": 332,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050021,
+    "AbilityID": 110120001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050021,
+    "AbilityID": 110120002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050021,
+    "AbilityID": 110190007,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050022,
+    "AbilityID": 110080004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050022,
+    "AbilityID": 110190006,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050022,
+    "AbilityID": 332,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050022,
+    "AbilityID": 110080005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050022,
+    "AbilityID": 110080006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050022,
+    "AbilityID": 110190007,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050023,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050023,
+    "AbilityID": 110190006,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050023,
+    "AbilityID": 332,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050023,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050023,
+    "AbilityID": 110100006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050023,
+    "AbilityID": 110190007,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050024,
+    "AbilityID": 110300701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050024,
+    "AbilityID": 178,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050024,
+    "AbilityID": 110300702,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050026,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050026,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050026,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050027,
+    "AbilityID": 110020704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050027,
+    "AbilityID": 181,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050027,
+    "AbilityID": 110020707,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050028,
+    "AbilityID": 110190010,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050028,
+    "AbilityID": 210000204,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050028,
+    "AbilityID": 588,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050028,
+    "AbilityID": 210000205,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050028,
+    "AbilityID": 110190011,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050028,
+    "AbilityID": 210000206,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050029,
+    "AbilityID": 110190010,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050029,
+    "AbilityID": 310000507,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050029,
+    "AbilityID": 588,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050029,
+    "AbilityID": 310000508,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050029,
+    "AbilityID": 153,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050029,
+    "AbilityID": 110190011,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050030,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050030,
+    "AbilityID": 110190010,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050030,
+    "AbilityID": 588,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050030,
+    "AbilityID": 110120001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050030,
+    "AbilityID": 110120002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050030,
+    "AbilityID": 110190011,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050031,
+    "AbilityID": 110150005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050031,
+    "AbilityID": 110150005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050031,
+    "AbilityID": 110150005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050032,
+    "AbilityID": 110210404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050032,
+    "AbilityID": 110210405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050032,
+    "AbilityID": 110210406,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050033,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050033,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050033,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050034,
+    "AbilityID": 110060007,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050034,
+    "AbilityID": 110190014,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050034,
+    "AbilityID": 1018,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050034,
+    "AbilityID": 110060008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050034,
+    "AbilityID": 147,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050034,
+    "AbilityID": 110190015,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050035,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050035,
+    "AbilityID": 110190014,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050035,
+    "AbilityID": 1018,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050035,
+    "AbilityID": 110070005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050035,
+    "AbilityID": 110070006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050035,
+    "AbilityID": 110190015,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050036,
+    "AbilityID": 659,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050036,
+    "AbilityID": 110190014,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050036,
+    "AbilityID": 660,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050036,
+    "AbilityID": 1018,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050036,
+    "AbilityID": 661,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050036,
+    "AbilityID": 110190015,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050037,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050037,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050037,
+    "AbilityID": 110100006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050038,
+    "AbilityID": 110090013,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050038,
+    "AbilityID": 110090014,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050038,
+    "AbilityID": 148,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050039,
+    "AbilityID": 110120008,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050039,
+    "AbilityID": 110120001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050039,
+    "AbilityID": 110120002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050040,
+    "AbilityID": 5,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050040,
+    "AbilityID": 196,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050040,
+    "AbilityID": 202,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050041,
+    "AbilityID": 3,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050041,
+    "AbilityID": 193,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050041,
+    "AbilityID": 4,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050042,
+    "AbilityID": 23,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050042,
+    "AbilityID": 24,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050042,
+    "AbilityID": 149,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050043,
+    "AbilityID": 25,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050043,
+    "AbilityID": 197,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050043,
+    "AbilityID": 203,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050044,
+    "AbilityID": 110020904,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050044,
+    "AbilityID": 183,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050044,
+    "AbilityID": 184,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050045,
+    "AbilityID": 33,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050045,
+    "AbilityID": 210001292,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050045,
+    "AbilityID": 583,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050045,
+    "AbilityID": 210001293,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050045,
+    "AbilityID": 34,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050045,
+    "AbilityID": 210001294,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050046,
+    "AbilityID": 33,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050046,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050046,
+    "AbilityID": 583,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050046,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050046,
+    "AbilityID": 34,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050046,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050047,
+    "AbilityID": 16,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050047,
+    "AbilityID": 16,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050047,
+    "AbilityID": 16,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050048,
+    "AbilityID": 210001305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050048,
+    "AbilityID": 210001305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050048,
+    "AbilityID": 210001306,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050049,
+    "AbilityID": 110080005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050049,
+    "AbilityID": 110080005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050049,
+    "AbilityID": 110080006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050050,
+    "AbilityID": 17,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050050,
+    "AbilityID": 17,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050050,
+    "AbilityID": 156,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050051,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050051,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050051,
+    "AbilityID": 110100006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050052,
+    "AbilityID": 18,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050052,
+    "AbilityID": 18,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050052,
+    "AbilityID": 150,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050053,
+    "AbilityID": 119,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050053,
+    "AbilityID": 129,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050053,
+    "AbilityID": 120,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050053,
+    "AbilityID": 941,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050053,
+    "AbilityID": 130,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050053,
+    "AbilityID": 151,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050054,
+    "AbilityID": 129,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050054,
+    "AbilityID": 110370004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050054,
+    "AbilityID": 941,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050054,
+    "AbilityID": 110370005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050054,
+    "AbilityID": 130,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050054,
+    "AbilityID": 110370006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050056,
+    "AbilityID": 110280501,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050056,
+    "AbilityID": 177,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050056,
+    "AbilityID": 110280502,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050057,
+    "AbilityID": 161,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050057,
+    "AbilityID": 210000804,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050057,
+    "AbilityID": 163,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050057,
+    "AbilityID": 210000805,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050057,
+    "AbilityID": 164,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050057,
+    "AbilityID": 210000806,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050058,
+    "AbilityID": 210000104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050058,
+    "AbilityID": 210000104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050058,
+    "AbilityID": 210000106,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050059,
+    "AbilityID": 139,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050059,
+    "AbilityID": 199,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050059,
+    "AbilityID": 140,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050060,
+    "AbilityID": 207,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050060,
+    "AbilityID": 208,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050060,
+    "AbilityID": 209,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050061,
+    "AbilityID": 8,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050061,
+    "AbilityID": 146,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050061,
+    "AbilityID": 211,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050062,
+    "AbilityID": 259,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050062,
+    "AbilityID": 260,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050062,
+    "AbilityID": 261,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050063,
+    "AbilityID": 287,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050063,
+    "AbilityID": 324,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050063,
+    "AbilityID": 306,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050063,
+    "AbilityID": 325,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050063,
+    "AbilityID": 307,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050063,
+    "AbilityID": 326,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050064,
+    "AbilityID": 329,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050064,
+    "AbilityID": 210001191,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050064,
+    "AbilityID": 330,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050064,
+    "AbilityID": 210001192,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050064,
+    "AbilityID": 331,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050064,
+    "AbilityID": 210001193,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050065,
+    "AbilityID": 110320901,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050065,
+    "AbilityID": 179,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050065,
+    "AbilityID": 110320902,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050066,
+    "AbilityID": 336,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050066,
+    "AbilityID": 337,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050066,
+    "AbilityID": 338,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050067,
+    "AbilityID": 367,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050067,
+    "AbilityID": 110390004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050067,
+    "AbilityID": 368,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050067,
+    "AbilityID": 110390005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050067,
+    "AbilityID": 369,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050067,
+    "AbilityID": 110390006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050068,
+    "AbilityID": 339,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050068,
+    "AbilityID": 372,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050068,
+    "AbilityID": 340,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050068,
+    "AbilityID": 373,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050068,
+    "AbilityID": 341,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050068,
+    "AbilityID": 374,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050069,
+    "AbilityID": 394,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050069,
+    "AbilityID": 395,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050069,
+    "AbilityID": 396,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050070,
+    "AbilityID": 287,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050070,
+    "AbilityID": 306,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050070,
+    "AbilityID": 307,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050071,
+    "AbilityID": 110341101,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050071,
+    "AbilityID": 180,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050071,
+    "AbilityID": 110341102,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050072,
+    "AbilityID": 210000304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050072,
+    "AbilityID": 210000305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050072,
+    "AbilityID": 210000306,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050073,
+    "AbilityID": 110140301,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050073,
+    "AbilityID": 110140302,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050073,
+    "AbilityID": 110140303,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050074,
+    "AbilityID": 580,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050074,
+    "AbilityID": 580,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050074,
+    "AbilityID": 580,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050075,
+    "AbilityID": 8,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050075,
+    "AbilityID": 146,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050075,
+    "AbilityID": 211,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050076,
+    "AbilityID": 566,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050076,
+    "AbilityID": 567,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050076,
+    "AbilityID": 568,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050077,
+    "AbilityID": 502,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050077,
+    "AbilityID": 210000104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050077,
+    "AbilityID": 503,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050077,
+    "AbilityID": 210000105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050077,
+    "AbilityID": 504,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050077,
+    "AbilityID": 210000106,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050078,
+    "AbilityID": 499,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050078,
+    "AbilityID": 210000504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050078,
+    "AbilityID": 500,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050078,
+    "AbilityID": 210000505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050078,
+    "AbilityID": 501,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050078,
+    "AbilityID": 210000506,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050079,
+    "AbilityID": 496,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050079,
+    "AbilityID": 210003201,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050079,
+    "AbilityID": 342,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050079,
+    "AbilityID": 497,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050079,
+    "AbilityID": 343,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050079,
+    "AbilityID": 498,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050080,
+    "AbilityID": 493,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050080,
+    "AbilityID": 110010404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050080,
+    "AbilityID": 494,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050080,
+    "AbilityID": 110010405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050080,
+    "AbilityID": 495,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050080,
+    "AbilityID": 110010406,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050081,
+    "AbilityID": 110100004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050081,
+    "AbilityID": 110100005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050081,
+    "AbilityID": 110100006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050082,
+    "AbilityID": 490,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050082,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050082,
+    "AbilityID": 491,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050082,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050082,
+    "AbilityID": 492,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050082,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050083,
+    "AbilityID": 610,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050083,
+    "AbilityID": 611,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050083,
+    "AbilityID": 612,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050084,
+    "AbilityID": 110160402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050084,
+    "AbilityID": 110190010,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050084,
+    "AbilityID": 588,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050084,
+    "AbilityID": 110160403,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050084,
+    "AbilityID": 110160404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050084,
+    "AbilityID": 110190011,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050085,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050085,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050085,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050086,
+    "AbilityID": 750,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050086,
+    "AbilityID": 657,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050086,
+    "AbilityID": 658,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050087,
+    "AbilityID": 210002701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050087,
+    "AbilityID": 210002701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050087,
+    "AbilityID": 210002701,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050088,
+    "AbilityID": 727,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050088,
+    "AbilityID": 728,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050088,
+    "AbilityID": 729,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050089,
+    "AbilityID": 730,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050089,
+    "AbilityID": 731,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050089,
+    "AbilityID": 732,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050090,
+    "AbilityID": 210000504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050090,
+    "AbilityID": 210000505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050090,
+    "AbilityID": 210000506,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050091,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050091,
+    "AbilityID": 110070005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050091,
+    "AbilityID": 110070006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050092,
+    "AbilityID": 139,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050092,
+    "AbilityID": 199,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050092,
+    "AbilityID": 140,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050093,
+    "AbilityID": 210000304,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050093,
+    "AbilityID": 210000305,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050093,
+    "AbilityID": 210000306,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050094,
+    "AbilityID": 783,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050094,
+    "AbilityID": 210000404,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050094,
+    "AbilityID": 1374,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050094,
+    "AbilityID": 210000405,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050094,
+    "AbilityID": 1375,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050094,
+    "AbilityID": 210000406,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050095,
+    "AbilityID": 778,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050095,
+    "AbilityID": 210000504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050095,
+    "AbilityID": 779,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050095,
+    "AbilityID": 210000505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050095,
+    "AbilityID": 780,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050095,
+    "AbilityID": 210000506,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050096,
+    "AbilityID": 121,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050096,
+    "AbilityID": 198,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050096,
+    "AbilityID": 122,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050097,
+    "AbilityID": 116,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050097,
+    "AbilityID": 155,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050097,
+    "AbilityID": 820,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050098,
+    "AbilityID": 210000604,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050098,
+    "AbilityID": 210000605,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050098,
+    "AbilityID": 210000606,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050099,
+    "AbilityID": 569,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050099,
+    "AbilityID": 570,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050099,
+    "AbilityID": 571,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050100,
+    "AbilityID": 110130002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050100,
+    "AbilityID": 110130003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050100,
+    "AbilityID": 110130004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050101,
+    "AbilityID": 890,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050101,
+    "AbilityID": 891,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050101,
+    "AbilityID": 892,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050102,
+    "AbilityID": 210000704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050102,
+    "AbilityID": 210000705,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050102,
+    "AbilityID": 210000706,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050103,
+    "AbilityID": 920,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050103,
+    "AbilityID": 210001292,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050103,
+    "AbilityID": 921,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050103,
+    "AbilityID": 210001293,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050103,
+    "AbilityID": 922,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050103,
+    "AbilityID": 210001294,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050104,
+    "AbilityID": 920,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050104,
+    "AbilityID": 948,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050104,
+    "AbilityID": 921,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050104,
+    "AbilityID": 949,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050104,
+    "AbilityID": 922,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050104,
+    "AbilityID": 950,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050105,
+    "AbilityID": 210000504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050105,
+    "AbilityID": 210000505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050105,
+    "AbilityID": 210000506,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050106,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050106,
+    "AbilityID": 110070005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050106,
+    "AbilityID": 110070006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050107,
+    "AbilityID": 998,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050107,
+    "AbilityID": 17,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050107,
+    "AbilityID": 156,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050108,
+    "AbilityID": 1105,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050108,
+    "AbilityID": 110090004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050108,
+    "AbilityID": 1106,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050108,
+    "AbilityID": 110090005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050108,
+    "AbilityID": 1107,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050108,
+    "AbilityID": 110090006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050109,
+    "AbilityID": 145,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050109,
+    "AbilityID": 1085,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050109,
+    "AbilityID": 262,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050109,
+    "AbilityID": 1086,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050109,
+    "AbilityID": 263,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050109,
+    "AbilityID": 1087,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050110,
+    "AbilityID": 210000704,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050110,
+    "AbilityID": 210000705,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050110,
+    "AbilityID": 210000706,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050111,
+    "AbilityID": 110010504,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050111,
+    "AbilityID": 110010505,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050111,
+    "AbilityID": 110010506,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050112,
+    "AbilityID": 110160602,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050112,
+    "AbilityID": 110160603,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050112,
+    "AbilityID": 110160604,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050113,
+    "AbilityID": 1286,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050113,
+    "AbilityID": 210003302,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050113,
+    "AbilityID": 116,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050113,
+    "AbilityID": 1287,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050113,
+    "AbilityID": 155,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050113,
+    "AbilityID": 1288,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050114,
+    "AbilityID": 1265,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050114,
+    "AbilityID": 110020407,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050114,
+    "AbilityID": 141,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050114,
+    "AbilityID": 1266,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050114,
+    "AbilityID": 154,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050114,
+    "AbilityID": 1267,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050115,
+    "AbilityID": 210003201,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050115,
+    "AbilityID": 342,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050115,
+    "AbilityID": 343,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050116,
+    "AbilityID": 1402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050116,
+    "AbilityID": 1402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050116,
+    "AbilityID": 1402,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050117,
+    "AbilityID": 110140201,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050117,
+    "AbilityID": 110140202,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050117,
+    "AbilityID": 110140203,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050118,
+    "AbilityID": 1436,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050118,
+    "AbilityID": 1437,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050118,
+    "AbilityID": 1438,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050119,
+    "AbilityID": 1472,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050119,
+    "AbilityID": 1475,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050119,
+    "AbilityID": 1473,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050119,
+    "AbilityID": 1476,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050119,
+    "AbilityID": 1474,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050119,
+    "AbilityID": 1477,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050120,
+    "AbilityID": 1469,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050120,
+    "AbilityID": 1515,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050120,
+    "AbilityID": 1470,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050120,
+    "AbilityID": 1516,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050120,
+    "AbilityID": 1471,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050120,
+    "AbilityID": 1517,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050121,
+    "AbilityID": 110160104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050121,
+    "AbilityID": 110160105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050121,
+    "AbilityID": 110160106,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050122,
+    "AbilityID": 210000104,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050122,
+    "AbilityID": 210000105,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050122,
+    "AbilityID": 210000106,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050123,
+    "AbilityID": 116,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050123,
+    "AbilityID": 155,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050123,
+    "AbilityID": 820,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050124,
+    "AbilityID": 110400002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050124,
+    "AbilityID": 110400003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050124,
+    "AbilityID": 110400004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050125,
+    "AbilityID": 1655,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050125,
+    "AbilityID": 1656,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050125,
+    "AbilityID": 1657,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050126,
+    "AbilityID": 110060004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050126,
+    "AbilityID": 110060005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050126,
+    "AbilityID": 110060006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050127,
+    "AbilityID": 110070004,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050127,
+    "AbilityID": 110070005,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050127,
+    "AbilityID": 110070006,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050128,
+    "AbilityID": 1706,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050128,
+    "AbilityID": 1707,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050128,
+    "AbilityID": 1708,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050129,
+    "AbilityID": 1767,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050129,
+    "AbilityID": 1811,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050129,
+    "AbilityID": 1768,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050129,
+    "AbilityID": 1812,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050129,
+    "AbilityID": 1769,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050129,
+    "AbilityID": 1813,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050130,
+    "AbilityID": 1770,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050130,
+    "AbilityID": 1814,
+    "AbilitySlot": 2,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050130,
+    "AbilityID": 1771,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050130,
+    "AbilityID": 1815,
+    "AbilitySlot": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050130,
+    "AbilityID": 1772,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050130,
+    "AbilityID": 1816,
+    "AbilitySlot": 2,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050131,
+    "AbilityID": 1901,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050131,
+    "AbilityID": 1902,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050131,
+    "AbilityID": 1903,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050132,
+    "AbilityID": 1895,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050132,
+    "AbilityID": 1896,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050132,
+    "AbilityID": 1897,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050133,
+    "AbilityID": 1992,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050133,
+    "AbilityID": 1993,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050133,
+    "AbilityID": 1994,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40050134,
+    "AbilityID": 1995,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40050134,
+    "AbilityID": 1996,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40050134,
+    "AbilityID": 1997,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090001,
+    "AbilityID": 1871,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090001,
+    "AbilityID": 1872,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090001,
+    "AbilityID": 1863,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090002,
+    "AbilityID": 1871,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090002,
+    "AbilityID": 1872,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090002,
+    "AbilityID": 1863,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090003,
+    "AbilityID": 1867,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090003,
+    "AbilityID": 1868,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090003,
+    "AbilityID": 1775,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090004,
+    "AbilityID": 1873,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090004,
+    "AbilityID": 1874,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090004,
+    "AbilityID": 1864,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090005,
+    "AbilityID": 1867,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090005,
+    "AbilityID": 1868,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090005,
+    "AbilityID": 1775,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090006,
+    "AbilityID": 1865,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090006,
+    "AbilityID": 1866,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090006,
+    "AbilityID": 1774,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090007,
+    "AbilityID": 1871,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090007,
+    "AbilityID": 1872,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090007,
+    "AbilityID": 1863,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090008,
+    "AbilityID": 1998,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090008,
+    "AbilityID": 1999,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090008,
+    "AbilityID": 2000,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090009,
+    "AbilityID": 1951,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090009,
+    "AbilityID": 1952,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090009,
+    "AbilityID": 1953,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090010,
+    "AbilityID": 2001,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090010,
+    "AbilityID": 2002,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090010,
+    "AbilityID": 2003,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090011,
+    "AbilityID": 1951,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090011,
+    "AbilityID": 1952,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090011,
+    "AbilityID": 1953,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  },
+  {
+    "WyrmprintID": 40090012,
+    "AbilityID": 1865,
+    "AbilitySlot": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "WyrmprintID": 40090012,
+    "AbilityID": 1866,
+    "AbilitySlot": 1,
+    "AbilityLevel": 2
+  },
+  {
+    "WyrmprintID": 40090012,
+    "AbilityID": 1774,
+    "AbilitySlot": 1,
+    "AbilityLevel": 3
+  }
+]
