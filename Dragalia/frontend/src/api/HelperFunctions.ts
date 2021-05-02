@@ -58,3 +58,14 @@ export const needed = (
     return Math.max(0, cost - inventory);
   }
 };
+
+export function ensure<T>(
+  arg: T | undefined | null,
+  msg = 'Value was promised',
+) {
+  if (arg === undefined || arg === null) {
+    throw new TypeError(msg);
+  }
+
+  return arg;
+}

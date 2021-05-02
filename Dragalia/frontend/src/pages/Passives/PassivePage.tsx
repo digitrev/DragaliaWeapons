@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { PassiveData } from '../../api/DataInterfaces';
-import { PublicApi } from '../../api/PublicData';
+import { PublicApi } from '../../api/GameData';
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { PassiveList } from './PassiveList';

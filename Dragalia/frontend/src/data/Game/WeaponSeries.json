@@ -1,0 +1,22 @@
+[
+  {
+    "weaponSeriesId": 1,
+    "weaponSeries": "Core"
+  },
+  {
+    "weaponSeriesId": 2,
+    "weaponSeries": "Void"
+  },
+  {
+    "weaponSeriesId": 5,
+    "weaponSeries": "Chimeratech"
+  },
+  {
+    "weaponSeriesId": 3,
+    "weaponSeries": "High Dragon"
+  },
+  {
+    "weaponSeriesId": 4,
+    "weaponSeries": "Agito"
+  }
+]

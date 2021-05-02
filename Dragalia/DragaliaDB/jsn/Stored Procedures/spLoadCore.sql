@@ -164,7 +164,7 @@ BEGIN
 	MERGE core.Material AS trg
 	USING (
 		SELECT m.MaterialID
-			,m.MaterialName
+			,REPLACE(m.MaterialName, '&amp;', '&') AS MaterialName
 		FROM jsn.TableJson AS mj
 		CROSS APPLY OPENJSON(mj.JsonText) WITH (cargoquery NVARCHAR(MAX) AS JSON) AS cq
 		CROSS APPLY OPENJSON(cq.cargoquery) WITH (
@@ -1028,7 +1028,7 @@ BEGIN
 
 	--Wyrmprint
 	SELECT w.WyrmprintID
-		,w.Wyrmprint
+		,REPLACE(w.Wyrmprint, '&quot;', '"') AS Wyrmprint
 		,w.Rarity
 		,w.RarityGroup
 		,w.AbilityID11

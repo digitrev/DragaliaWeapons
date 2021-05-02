@@ -9,20 +9,18 @@ import {
   ElementData,
   WeaponTypeData,
 } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import {
   displayLimit,
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
 import { LoadingText } from '../Loading';
-import { useAuth } from '../Auth/Auth';
 import { Page } from '../Page';
 import { AccountPassiveList } from './AccountPassiveList';
 
 export const AccountPassivePage = () => {
-  const { getAccessToken } = useAuth();
   const [passives, setPassives] = useState<AccountPassiveData[] | null>(null);
   const [passivesLoading, setPassivesLoading] = useState(true);
 
@@ -55,8 +53,7 @@ export const AccountPassivePage = () => {
       }
     };
     const doGetPassives = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const passiveData = await api.getPassives();
       if (!cancelled) {
         setPassives(passiveData);
@@ -68,7 +65,7 @@ export const AccountPassivePage = () => {
     return () => {
       cancelled = true;
     };
-  }, [getAccessToken]);
+  }, []);
 
   useEffect(() => {
     let passiveFilter = passives;
