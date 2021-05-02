@@ -9,10 +9,9 @@ import {
   QuestData,
 } from '../../api/DataInterfaces';
 import { materialComparator, needed } from '../../api/HelperFunctions';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import { PrimaryButton } from '../../Styles';
-import { useAuth } from '../Auth/Auth';
 import { Breakdown } from './CostTables/Breakdown';
 import { Farming } from './CostTables/Farming';
 import { Summary } from './CostTables/Summary';
@@ -34,7 +33,6 @@ export interface FarmingTable {
 type DisplayType = 'Summary' | 'Breakdown' | 'Farming';
 
 export const Costs: FC<Props> = ({ data }) => {
-  const { getAccessToken } = useAuth();
   const [summaryData, setSummaryData] = useState<SummaryTable[]>([]);
   const [farmingData, setFarmingData] = useState<FarmingTable[]>([]);
   const [displayType, setDisplayType] = useState<DisplayType>('Summary');
@@ -65,8 +63,7 @@ export const Costs: FC<Props> = ({ data }) => {
 
   useEffect(() => {
     const doGetItems = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const itemData = await api.getItemFilter([
         ...Array.from(new Set(data.map<string>((d) => d.material.materialId))),
       ]);
@@ -82,7 +79,7 @@ export const Costs: FC<Props> = ({ data }) => {
     doGetItems();
     doGetQuests();
     setSummaryData(sumByMaterial(data));
-  }, [data, getAccessToken]);
+  }, [data]);
 
   useEffect(() => {
     const sumByQuest = (

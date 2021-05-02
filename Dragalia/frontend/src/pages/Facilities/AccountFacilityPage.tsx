@@ -2,15 +2,13 @@
 import { css } from '@emotion/react';
 import { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import { AccountFacilityData, FacilityLimit } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import { LoadingText } from '../Loading';
-import { useAuth } from '../Auth/Auth';
 import { Page } from '../Page';
 import { AccountFacilityList } from './AccountFacilityList';
 
 export const AccountFacilityPage = () => {
-  const { getAccessToken } = useAuth();
   const [accountFacilities, setAccountFacilities] = useState<
     AccountFacilityData[] | null
   >(null);
@@ -34,8 +32,7 @@ export const AccountFacilityPage = () => {
       }
     };
     const doGetAccountFacilities = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const accountFacilityData = await api.getFacilities();
       if (!cancelled) {
         setAccountFacilities(accountFacilityData);
@@ -47,7 +44,7 @@ export const AccountFacilityPage = () => {
     return () => {
       cancelled = true;
     };
-  }, [getAccessToken]);
+  }, []);
 
   useEffect(() => {
     let facilityFilter = accountFacilities;

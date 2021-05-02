@@ -1,4 +1,5 @@
 {
+  "homepage": "https://digitrev.github.io/DragaliaWeapons",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -35,14 +36,15 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "react-select": "^4.1.0",
+    "store": "^2.0.12",
     "typescript": "^4.1.5",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:production": "cross-env REACT_APP_ENV=production npm run build",
-    "build:staging": "cross-env REACT_APP_ENV=staging npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -86,10 +88,12 @@
     "@types/react-paginate": "^6.2.1",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-select": "^4.0.13",
+    "@types/store": "^2.0.2",
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.2.1"
   }
 }

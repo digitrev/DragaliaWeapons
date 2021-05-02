@@ -1,0 +1,710 @@
+[
+  {
+    "dragonId": 20050117,
+    "dragon": "Gala Reborn Agni",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050116,
+    "dragon": "Gozu Tenno",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050115,
+    "dragon": "Mini Hildy",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050114,
+    "dragon": "Horus",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050113,
+    "dragon": "Gala Mars",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050112,
+    "dragon": "Dreadking Rathalos",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050111,
+    "dragon": "Rathalos",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050110,
+    "dragon": "Kagutsuchi",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050109,
+    "dragon": "Apollo",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050108,
+    "dragon": "Arctos",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050107,
+    "dragon": "Konohana Sakuya",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050106,
+    "dragon": "Prometheus",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050105,
+    "dragon": "Erasmus",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050104,
+    "dragon": "Cerberus",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050103,
+    "dragon": "Pele",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050102,
+    "dragon": "High Brunhilda",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050101,
+    "dragon": "Agni",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20040103,
+    "dragon": "Ifrit",
+    "rarity": 4,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20040102,
+    "dragon": "Phoenix",
+    "rarity": 4,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20040101,
+    "dragon": "Brunhilda",
+    "rarity": 4,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20030103,
+    "dragon": "Kindling Imp",
+    "rarity": 3,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20030102,
+    "dragon": "Cinder Drake",
+    "rarity": 3,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20030101,
+    "dragon": "Homura",
+    "rarity": 3,
+    "element": "Flame"
+  },
+  {
+    "dragonId": 20050215,
+    "dragon": "Mini Mercs",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050214,
+    "dragon": "Gabriel",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050213,
+    "dragon": "Gala Reborn Poseidon",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050212,
+    "dragon": "Styx",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050211,
+    "dragon": "Gaibhne & Creidhne",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050210,
+    "dragon": "Nimis",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050209,
+    "dragon": "Kamuy",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050208,
+    "dragon": "Halloween Maritimus",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050207,
+    "dragon": "Simurgh",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050206,
+    "dragon": "Peng Lai",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050205,
+    "dragon": "Dragonyule Jeanne",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050204,
+    "dragon": "Siren",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050203,
+    "dragon": "Leviathan",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050202,
+    "dragon": "High Mercury",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050201,
+    "dragon": "Poseidon",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20040203,
+    "dragon": "Vodyanoy",
+    "rarity": 4,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20040202,
+    "dragon": "Poliʻahu",
+    "rarity": 4,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20040201,
+    "dragon": "Mercury",
+    "rarity": 4,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20030203,
+    "dragon": "Wellspring Imp",
+    "rarity": 3,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20030202,
+    "dragon": "Snow Drake",
+    "rarity": 3,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20030201,
+    "dragon": "Fubuki",
+    "rarity": 3,
+    "element": "Water"
+  },
+  {
+    "dragonId": 20050317,
+    "dragon": "Menoetius",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050316,
+    "dragon": "Gala Reborn Zephyr",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050315,
+    "dragon": "Midgardsormr Zero",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050314,
+    "dragon": "Summer Konohana Sakuya",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050313,
+    "dragon": "Ariel",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050312,
+    "dragon": "AC-011 Garland",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050311,
+    "dragon": "Hastur",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050310,
+    "dragon": "Mini Mids",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050309,
+    "dragon": "Vayu",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050308,
+    "dragon": "Freyja",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050307,
+    "dragon": "Yulong",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050306,
+    "dragon": "Pazuzu",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050305,
+    "dragon": "Long Long",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050304,
+    "dragon": "Garuda",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050303,
+    "dragon": "Sylvia",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050302,
+    "dragon": "High Midgardsormr",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050301,
+    "dragon": "Zephyr",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20040303,
+    "dragon": "Stribog",
+    "rarity": 4,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20040302,
+    "dragon": "Roc",
+    "rarity": 4,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20040301,
+    "dragon": "Midgardsormr",
+    "rarity": 4,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20030303,
+    "dragon": "Zephyr Imp",
+    "rarity": 3,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20030302,
+    "dragon": "Gust Drake",
+    "rarity": 3,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20030301,
+    "dragon": "Tsumuji",
+    "rarity": 3,
+    "element": "Wind"
+  },
+  {
+    "dragonId": 20050414,
+    "dragon": "Gala Reborn Jeanne",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050413,
+    "dragon": "Lumière Pandora",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050412,
+    "dragon": "Gala Thor",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050411,
+    "dragon": "Tie Shan Gongzhu",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050410,
+    "dragon": "Daikokuten",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050409,
+    "dragon": "Pop-Star Siren",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050408,
+    "dragon": "Takemikazuchi",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050407,
+    "dragon": "Liger",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050406,
+    "dragon": "Shishimai",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050405,
+    "dragon": "Cupid",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050404,
+    "dragon": "Gilgamesh",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050403,
+    "dragon": "Corsaint Phoenix",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050402,
+    "dragon": "High Jupiter",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050401,
+    "dragon": "Jeanne d'Arc",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20040405,
+    "dragon": "Halloween Silke",
+    "rarity": 4,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20040403,
+    "dragon": "Lindworm",
+    "rarity": 4,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20040402,
+    "dragon": "Unicorn",
+    "rarity": 4,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20040401,
+    "dragon": "Jupiter",
+    "rarity": 4,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20030403,
+    "dragon": "Astral Imp",
+    "rarity": 3,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20030402,
+    "dragon": "Moon Drake",
+    "rarity": 3,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20030401,
+    "dragon": "Hinata",
+    "rarity": 3,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050523,
+    "dragon": "High Chthonius",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050522,
+    "dragon": "Arsène",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050521,
+    "dragon": "Giovanni",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050520,
+    "dragon": "Ramiel",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050519,
+    "dragon": "Gala Cat Sìth",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050518,
+    "dragon": "Azazel",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050517,
+    "dragon": "Barbatos",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050516,
+    "dragon": "Andromeda",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050515,
+    "dragon": "Mini Zodi",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050514,
+    "dragon": "Epimetheus",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050513,
+    "dragon": "Fatalis",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050512,
+    "dragon": "Ebisu",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050511,
+    "dragon": "Parallel Zodiark",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050510,
+    "dragon": "Chthonius",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050509,
+    "dragon": "Shinobi",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050508,
+    "dragon": "Nyarlathotep",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050507,
+    "dragon": "Gold Fafnir",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050506,
+    "dragon": "Marishiten",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050505,
+    "dragon": "Maritimus",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050504,
+    "dragon": "Phantom",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050502,
+    "dragon": "High Zodiark",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050501,
+    "dragon": "Nidhogg",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20040505,
+    "dragon": "Silver Fafnir",
+    "rarity": 4,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20040504,
+    "dragon": "Bronze Fafnir",
+    "rarity": 4,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20040503,
+    "dragon": "Silke",
+    "rarity": 4,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20040502,
+    "dragon": "Juggernaut",
+    "rarity": 4,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20040501,
+    "dragon": "Zodiark",
+    "rarity": 4,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20030503,
+    "dragon": "Pallid Imp",
+    "rarity": 3,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20030502,
+    "dragon": "Gloom Drake",
+    "rarity": 3,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20030501,
+    "dragon": "Hikage",
+    "rarity": 3,
+    "element": "Shadow"
+  }
+]

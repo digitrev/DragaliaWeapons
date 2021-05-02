@@ -1,0 +1,38 @@
+[
+  {
+    "weaponTypeId": 1,
+    "weaponType": "Sword"
+  },
+  {
+    "weaponTypeId": 2,
+    "weaponType": "Blade"
+  },
+  {
+    "weaponTypeId": 3,
+    "weaponType": "Dagger"
+  },
+  {
+    "weaponTypeId": 4,
+    "weaponType": "Axe"
+  },
+  {
+    "weaponTypeId": 5,
+    "weaponType": "Lance"
+  },
+  {
+    "weaponTypeId": 6,
+    "weaponType": "Bow"
+  },
+  {
+    "weaponTypeId": 7,
+    "weaponType": "Wand"
+  },
+  {
+    "weaponTypeId": 8,
+    "weaponType": "Staff"
+  },
+  {
+    "weaponTypeId": 9,
+    "weaponType": "Manacaster"
+  }
+]

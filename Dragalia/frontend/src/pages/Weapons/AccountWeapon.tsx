@@ -6,7 +6,7 @@ import {
   MaterialCosts,
   WeaponLimit,
 } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
+import { PrivateApi } from '../../api/UserData';
 import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
@@ -20,7 +20,6 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Weapon } from './Weapon';
-import { useAuth } from '../Auth/Auth';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
@@ -39,7 +38,6 @@ export const AccountWeapon: FC<Props> = ({
   accordionStatus,
   updateAccordion,
 }) => {
-  const { getAccessToken } = useAuth();
   const { weaponId, weapon } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
@@ -50,8 +48,7 @@ export const AccountWeapon: FC<Props> = ({
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const costData = await api.getWeaponCosts(weaponId);
       if (!cancelled) {
         setCosts(costData);
@@ -64,11 +61,10 @@ export const AccountWeapon: FC<Props> = ({
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, weaponId, costUpdate, getAccessToken]);
+  }, [costsRequested, weaponId, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const token = await getAccessToken();
-    const api = new PrivateApi(token);
+    const api = new PrivateApi();
     let res: boolean;
     try {
       const updateWeapon: AccountWeaponData = {

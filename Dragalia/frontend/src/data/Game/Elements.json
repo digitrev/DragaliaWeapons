@@ -1,0 +1,26 @@
+[
+  {
+    "elementId": 99,
+    "element": "None"
+  },
+  {
+    "elementId": 1,
+    "element": "Flame"
+  },
+  {
+    "elementId": 2,
+    "element": "Water"
+  },
+  {
+    "elementId": 3,
+    "element": "Wind"
+  },
+  {
+    "elementId": 4,
+    "element": "Light"
+  },
+  {
+    "elementId": 5,
+    "element": "Shadow"
+  }
+]

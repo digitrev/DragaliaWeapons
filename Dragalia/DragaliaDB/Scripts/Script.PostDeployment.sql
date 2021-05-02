@@ -9,21 +9,34 @@ Post-Deployment Script Template
 			   SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-PRINT 'Initializing denormalized tables'
+PRINT 'Loading data tables from json tables'
 
-EXEC [den].[spInitializeDen]
+EXECUTE jsn.spLoadCore
 
-PRINT 'Initializing tally table'
+PRINT 'Loading data tables from denomralized tables'
 
-TRUNCATE TABLE util.Tally
+EXECUTE den.spInitializeDen
 
-SET IDENTITY_INSERT util.Tally ON
+EXECUTE den.spLoadCore
 
-INSERT util.Tally (N)
-SELECT TOP 100000 ROW_NUMBER() OVER (
-		ORDER BY c1.column_id
+IF NOT EXISTS (
+		SELECT *
+		FROM util.Tally
+		WHERE N = 100000
 		)
-FROM sys.all_columns c1
-	,sys.all_columns c2
+BEGIN
+	PRINT 'Initializing tally table'
 
-SET IDENTITY_INSERT util.Tally OFF
+	TRUNCATE TABLE util.Tally
+
+	SET IDENTITY_INSERT util.Tally ON
+
+	INSERT util.Tally (N)
+	SELECT TOP 100000 ROW_NUMBER() OVER (
+			ORDER BY c1.column_id
+			)
+	FROM sys.all_columns c1
+		,sys.all_columns c2
+
+	SET IDENTITY_INSERT util.Tally OFF
+END

@@ -81,22 +81,27 @@ namespace DragaliaApi.Controllers.Public
                 var allQuests = await _context.Quests.ToListAsync();
 
                 var newMqs = new List<MaterialQuest>();
+                var toRemove = new List<MaterialQuest>();
 
                 foreach (var mq in mqs)
                 {
-                    newMqs.AddRange(allQuests.Where(q => q.QuestId != mq.QuestId
-                                                         && q.SortPath.IsDescendantOf(mq.Quest.SortPath))
-                                       .Select(q => new MaterialQuest
-                                       {
-                                           Material = mq.Material,
-                                           MaterialId = mq.MaterialId,
-                                           Quest = q,
-                                           QuestId = q.QuestId
-                                       })
-                                       .ToList());
+                    var toAdd = allQuests.Where(q => q.QuestId != mq.QuestId
+                                                     && q.SortPath.IsDescendantOf(mq.Quest.SortPath))
+                                         .Select(q => new MaterialQuest
+                                         {
+                                             Material = mq.Material,
+                                             MaterialId = mq.MaterialId,
+                                             Quest = q,
+                                             QuestId = q.QuestId
+                                         }).ToList();
+                    newMqs.AddRange(toAdd);
+
+                    if (toAdd.Any())
+                        toRemove.Add(mq);
                 }
 
                 mqs.AddRange(newMqs);
+                mqs = mqs.Except(toRemove).ToList();
 
                 return mqs.OrderBy(mq => mq.Quest.SortPath)
                           .ThenBy(mq => mq.Material.SortPath)
