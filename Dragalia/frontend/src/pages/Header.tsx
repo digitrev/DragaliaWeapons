@@ -1,25 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
-import { UserIcon } from '../img/Icons';
-import { fontFamily, fontSize, gray1, gray2, gray5 } from '../Styles';
-
-const buttonStyle = css`
-  border: none;
-  font-family: ${fontFamily};
-  font-size: ${fontSize};
-  padding: 5px 10px;
-  background-color: transparent;
-  color: ${gray2};
-  text-decoration: none;
-  cursor: pointer;
-  span {
-    margin-left: 10px;
-  }
-  :focus {
-    outline-color: ${gray5};
-  }
-`;
+import { gray1, gray5 } from '../Styles';
 
 export const Header = () => {
   return (
@@ -36,6 +18,7 @@ export const Header = () => {
         background-color: #fff;
         border-bottom: 1px solid ${gray5};
         box-shadow: 9 3px 7px 0 rgba(110, 112, 114, 0.21);
+        z-index: 99;
       `}
     >
       <Link
