@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DragaliaWeapons/static/css/main.82598d6d.chunk.css",
-    "main.js": "/DragaliaWeapons/static/js/main.84050819.chunk.js",
-    "main.js.map": "/DragaliaWeapons/static/js/main.84050819.chunk.js.map",
+    "main.js": "/DragaliaWeapons/static/js/main.5cb64968.chunk.js",
+    "main.js.map": "/DragaliaWeapons/static/js/main.5cb64968.chunk.js.map",
     "runtime-main.js": "/DragaliaWeapons/static/js/runtime-main.ed7953de.js",
     "runtime-main.js.map": "/DragaliaWeapons/static/js/runtime-main.ed7953de.js.map",
     "static/js/2.0ba4645e.chunk.js": "/DragaliaWeapons/static/js/2.0ba4645e.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ed7953de.js",
     "static/js/2.0ba4645e.chunk.js",
     "static/css/main.82598d6d.chunk.css",
-    "static/js/main.84050819.chunk.js"
+    "static/js/main.5cb64968.chunk.js"
   ]
 }
