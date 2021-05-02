@@ -10,15 +10,15 @@ import {
 } from './DataInterfaces';
 import { PublicApi } from './GameData';
 import Store from 'store';
-import manaCircleJson from '../data/Private/ManaCircles.json';
-import dragonUnbindJson from '../data/Private/DragonUnbind.json';
-import facilityUpgradeJson from '../data/Private/FacilityUpgrade.json';
-import passiveCraftingJson from '../data/Private/PassiveCrafting,.json';
-import weaponCraftingJson from '../data/Private/WeaponCrafting.json';
-import weaponUpgradeJson from '../data/Private/WeaponUpgrade.json';
-import weaponLevelJson from '../data/Private/WeaponLevel.json';
-import wyrmprintUpgradeJson from '../data/Private/WyrmprintUpgrade.json';
-import wyrmprintLevelJson from '../data/Private/WyrmprintLevel.json';
+import manaCircleJson from '../data/Upgrade/ManaCircles.json';
+import dragonUnbindJson from '../data/Upgrade/DragonUnbind.json';
+import facilityUpgradeJson from '../data/Upgrade/FacilityUpgrade.json';
+import passiveCraftingJson from '../data/Upgrade/PassiveCrafting,.json';
+import weaponCraftingJson from '../data/Upgrade/WeaponCrafting.json';
+import weaponUpgradeJson from '../data/Upgrade/WeaponUpgrade.json';
+import weaponLevelJson from '../data/Upgrade/WeaponLevel.json';
+import wyrmprintUpgradeJson from '../data/Upgrade/WyrmprintUpgrade.json';
+import wyrmprintLevelJson from '../data/Upgrade/WyrmprintLevel.json';
 
 export class PrivateApi {
   public constructor(token: string) {}

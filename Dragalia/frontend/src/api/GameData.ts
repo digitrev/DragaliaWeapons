@@ -15,21 +15,21 @@ import {
   WyrmprintData,
   WyrmprintLimit,
 } from './DataInterfaces';
-import adventurersJson from '../data/Public/Adventurers.json';
-import dragonsJson from '../data/Public/Dragons.json';
-import elementsJson from '../data/Public/Elements.json';
-import facilitiesJson from '../data/Public/Facilities.json';
-import facilityLimitsJson from '../data/Public/FacilityLimits.json';
-import materialsJson from '../data/Public/Materials.json';
-import materialQuestsJson from '../data/Public/MaterialQuests.json';
-import passivesJson from '../data/Public/Passives.json';
-import questsJson from '../data/Public/Quests.json';
-import weaponsJson from '../data/Public/Weapons.json';
-import weaponLimitsJson from '../data/Public/WeaponLimits.json';
-import weaponSeriesJson from '../data/Public/WeaponSeries.json';
-import weaponTypesJson from '../data/Public/WeaponTypes.json';
-import wyrmprintLevelLimitsJson from '../data/Public/WyrmprintLevelLimits.json';
-import wyrmprintsJson from '../data/Public/Wyrmprints.json';
+import adventurersJson from '../data/Game/Adventurers.json';
+import dragonsJson from '../data/Game/Dragons.json';
+import elementsJson from '../data/Game/Elements.json';
+import facilitiesJson from '../data/Game/Facilities.json';
+import facilityLimitsJson from '../data/Game/FacilityLimits.json';
+import materialsJson from '../data/Game/Materials.json';
+import materialQuestsJson from '../data/Game/MaterialQuests.json';
+import passivesJson from '../data/Game/Passives.json';
+import questsJson from '../data/Game/Quests.json';
+import weaponsJson from '../data/Game/Weapons.json';
+import weaponLimitsJson from '../data/Game/WeaponLimits.json';
+import weaponSeriesJson from '../data/Game/WeaponSeries.json';
+import weaponTypesJson from '../data/Game/WeaponTypes.json';
+import wyrmprintLevelLimitsJson from '../data/Game/WyrmprintLevelLimits.json';
+import wyrmprintsJson from '../data/Game/Wyrmprints.json';
 import { ensure } from './HelperFunctions';
 
 export class PublicApi {
