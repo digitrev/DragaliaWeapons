@@ -21,10 +21,8 @@ import {
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
-import { useAuth } from '../Auth/Auth';
 
 export const AccountWeaponPage = () => {
-  const { getAccessToken } = useAuth();
   const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
   const [weaponsLoading, setWeaponsLoading] = useState(true);
   const [displayWeapons, setDisplayWeapons] = useState<
@@ -66,8 +64,7 @@ export const AccountWeaponPage = () => {
       }
     };
     const doGetWeapons = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const weaponData = await api.getWeapons();
       if (!cancelled) {
         setWeapons(weaponData);
@@ -79,7 +76,7 @@ export const AccountWeaponPage = () => {
     return () => {
       cancelled = true;
     };
-  }, [getAccessToken]);
+  }, []);
 
   useEffect(() => {
     let weaponFilter = weapons;

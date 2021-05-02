@@ -21,8 +21,6 @@ import wyrmprintUpgradeJson from '../data/Upgrade/WyrmprintUpgrade.json';
 import wyrmprintLevelJson from '../data/Upgrade/WyrmprintLevel.json';
 
 export class PrivateApi {
-  public constructor(token: string) {}
-
   private readonly adv = 'adventurers';
   private readonly drg = 'dragons';
   private readonly fcl = 'facilities';

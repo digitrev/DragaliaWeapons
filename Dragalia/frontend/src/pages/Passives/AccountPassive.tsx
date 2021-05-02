@@ -9,14 +9,12 @@ import { Field } from '../Forms/Field';
 import { Form, Values } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Passive } from './Passive';
-import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountPassiveData;
 }
 
 export const AccountPassive: FC<Props> = ({ data }) => {
-  const { getAccessToken } = useAuth();
   const { passiveId, passive } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
@@ -27,8 +25,7 @@ export const AccountPassive: FC<Props> = ({ data }) => {
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const costData = await api.getPassiveCosts(passiveId);
       if (!cancelled) {
         setCosts(costData);
@@ -41,11 +38,10 @@ export const AccountPassive: FC<Props> = ({ data }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, passiveId, costUpdate, getAccessToken]);
+  }, [costsRequested, passiveId, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const token = await getAccessToken();
-    const api = new PrivateApi(token);
+    const api = new PrivateApi();
     let res: boolean;
     try {
       await api.putPassive(values.passiveId, {

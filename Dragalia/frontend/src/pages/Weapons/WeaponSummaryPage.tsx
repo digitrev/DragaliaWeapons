@@ -7,13 +7,11 @@ import {
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/UserData';
 import { PublicApi } from '../../api/GameData';
-import { useAuth } from '../Auth/Auth';
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { WeaponSummaryList } from './WeaponSummaryList';
 
 export const WeaponSummaryPage = () => {
-  const { getAccessToken } = useAuth();
   const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
   const [weaponsLoading, setWeaponsLoading] = useState(true);
 
@@ -35,8 +33,7 @@ export const WeaponSummaryPage = () => {
       }
     };
     const doGetWeapons = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const weaponData = await api.getWeapons();
       if (!cancelled) {
         setWeapons(weaponData);
@@ -48,7 +45,7 @@ export const WeaponSummaryPage = () => {
     return () => {
       cancelled = true;
     };
-  }, [getAccessToken]);
+  }, []);
 
   return (
     <Page title="Weapon Summary">

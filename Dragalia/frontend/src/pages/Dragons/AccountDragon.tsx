@@ -9,14 +9,12 @@ import { Field } from '../Forms/Field';
 import { Form, isInteger, nonNegative, required, Values } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Dragon } from './Dragon';
-import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountDragonData;
 }
 
 export const AccountDragon: FC<Props> = ({ data }) => {
-  const { getAccessToken } = useAuth();
   const { dragonId, dragon } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
@@ -27,8 +25,7 @@ export const AccountDragon: FC<Props> = ({ data }) => {
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const costData = await api.getDragonCosts(dragonId);
       if (!cancelled) {
         setCosts(costData);
@@ -41,11 +38,10 @@ export const AccountDragon: FC<Props> = ({ data }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, dragonId, costUpdate, getAccessToken]);
+  }, [costsRequested, dragonId, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const token = await getAccessToken();
-    const api = new PrivateApi(token);
+    const api = new PrivateApi();
     let res: boolean;
     try {
       const updateDragon: AccountDragonData = {

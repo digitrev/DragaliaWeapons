@@ -20,7 +20,6 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Facility } from './Facility';
-import { useAuth } from '../Auth/Auth';
 
 interface Props {
   data: AccountFacilityData;
@@ -28,7 +27,6 @@ interface Props {
 }
 
 export const AccountFacility: FC<Props> = ({ data, limits }) => {
-  const { getAccessToken } = useAuth();
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
   const [costsLoading, setCostsLoading] = useState(true);
   const [costsRequested, setCostsRequested] = useState(false);
@@ -39,8 +37,7 @@ export const AccountFacility: FC<Props> = ({ data, limits }) => {
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const costData = await api.getFacilityCosts(facilityId, copyNumber);
       if (!cancelled) {
         setCosts(costData);
@@ -53,11 +50,10 @@ export const AccountFacility: FC<Props> = ({ data, limits }) => {
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, facilityId, copyNumber, costUpdate, getAccessToken]);
+  }, [costsRequested, facilityId, copyNumber, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const token = await getAccessToken();
-    const api = new PrivateApi(token);
+    const api = new PrivateApi();
     let res: boolean;
     try {
       await api.putFacility(values.facilityId, values.copyNumber, {

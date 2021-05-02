@@ -20,7 +20,6 @@ import {
 } from '../Forms/Form';
 import { Costs } from '../Costs/Costs';
 import { Wyrmprint } from './Wyrmprint';
-import { useAuth } from '../Auth/Auth';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
@@ -39,7 +38,6 @@ export const AccountWyrmprint: FC<Props> = ({
   accordionStatus,
   updateAccordion,
 }) => {
-  const { getAccessToken } = useAuth();
   const { wyrmprintId, wyrmprint } = data;
 
   const [costs, setCosts] = useState<MaterialCosts[] | null>(null);
@@ -50,8 +48,7 @@ export const AccountWyrmprint: FC<Props> = ({
   useEffect(() => {
     let cancelled = false;
     const doGetCosts = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const costData = await api.getWyrmprintCosts(wyrmprintId);
       if (!cancelled) {
         setCosts(costData);
@@ -64,11 +61,10 @@ export const AccountWyrmprint: FC<Props> = ({
     return () => {
       cancelled = true;
     };
-  }, [costsRequested, wyrmprintId, costUpdate, getAccessToken]);
+  }, [costsRequested, wyrmprintId, costUpdate]);
 
   const handleSubmit = async (values: Values) => {
-    const token = await getAccessToken();
-    const api = new PrivateApi(token);
+    const api = new PrivateApi();
     let res: boolean;
     try {
       const updateWyrmprint: AccountWyrmprintData = {

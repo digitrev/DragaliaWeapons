@@ -20,10 +20,8 @@ import {
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AccountAdventurerList } from './AccountAdventurerList';
-import { useAuth } from '../Auth/Auth';
 
 export const AccountAdventurerPage = () => {
-  const { getAccessToken } = useAuth();
   const [adventurers, setAdventurers] = useState<
     AccountAdventurerData[] | null
   >(null);
@@ -58,8 +56,7 @@ export const AccountAdventurerPage = () => {
       }
     };
     const doGetAdventurers = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const adventurerData = await api.getAdventurers();
       if (!cancelled) {
         setAdventurers(adventurerData);
@@ -71,7 +68,7 @@ export const AccountAdventurerPage = () => {
     return () => {
       cancelled = true;
     };
-  }, [getAccessToken]);
+  }, []);
 
   useEffect(() => {
     let adventurerFilter = adventurers;

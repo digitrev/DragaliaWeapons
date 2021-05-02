@@ -15,14 +15,12 @@ import {
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
-import { useAuth } from '../Auth/Auth';
 
 export interface Rarity {
   rarity: number;
 }
 
 export const AccountWyrmprintPage = () => {
-  const { getAccessToken } = useAuth();
   const [wyrmprints, setWyrmprints] = useState<AccountWyrmprintData[] | null>(
     null,
   );
@@ -50,8 +48,7 @@ export const AccountWyrmprintPage = () => {
       }
     };
     const doGetWyrmprints = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const wyrmprintData = await api.getWyrmprints();
       if (!cancelled) {
         setWyrmprints(wyrmprintData);
@@ -71,7 +68,7 @@ export const AccountWyrmprintPage = () => {
     return () => {
       cancelled = true;
     };
-  }, [getAccessToken]);
+  }, []);
 
   useEffect(() => {
     let wyrmprintFilter = wyrmprints;
