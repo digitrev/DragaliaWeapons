@@ -6,8 +6,8 @@ import { ActionMeta } from 'react-select';
 import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
 import Select from 'react-select';
 import { AccountDragonData, ElementData } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import {
   displayLimit,
   pageRangeDisplayed,
@@ -16,10 +16,8 @@ import {
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AccountDragonList } from './AccountDragonList';
-import { useAuth } from '../Auth/Auth';
 
 export const AccountDragonPage = () => {
-  const { getAccessToken } = useAuth();
   const [dragons, setDragons] = useState<AccountDragonData[] | null>(null);
   const [dragonsLoading, setDragonsLoading] = useState(true);
 
@@ -45,8 +43,7 @@ export const AccountDragonPage = () => {
       }
     };
     const doGetDragons = async () => {
-      const token = await getAccessToken();
-      const api = new PrivateApi(token);
+      const api = new PrivateApi();
       const dragonData = await api.getDragons();
       if (!cancelled) {
         setDragons(dragonData);
@@ -58,7 +55,7 @@ export const AccountDragonPage = () => {
     return () => {
       cancelled = true;
     };
-  }, [getAccessToken]);
+  }, []);
 
   useEffect(() => {
     let dragonFilter = dragons;

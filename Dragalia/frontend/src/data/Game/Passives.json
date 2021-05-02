@@ -1,0 +1,2963 @@
+[
+  {
+    "passiveId": 1010104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1010508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Sword"
+  },
+  {
+    "passiveId": 1020104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1020508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Blade"
+  },
+  {
+    "passiveId": 1030104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1030508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Dagger"
+  },
+  {
+    "passiveId": 1040104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1040508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Axe"
+  },
+  {
+    "passiveId": 1050104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1050508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Lance"
+  },
+  {
+    "passiveId": 1060104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1060508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Bow"
+  },
+  {
+    "passiveId": 1070104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1070508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Wand"
+  },
+  {
+    "passiveId": 1080104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1080508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Staff"
+  },
+  {
+    "passiveId": 1090104,
+    "abilityNumber": 4,
+    "ability": "(Flame) Dull Res",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090101,
+    "abilityNumber": 1,
+    "ability": "(Flame) Petrify Res",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090102,
+    "abilityNumber": 2,
+    "ability": "(Flame) Soul Eater Res",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090103,
+    "abilityNumber": 3,
+    "ability": "(Flame) Spectral Shield Penetrator",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090105,
+    "abilityNumber": 5,
+    "ability": "(Flame) Dragon Delay Res",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090106,
+    "abilityNumber": 6,
+    "ability": "(Flame) Tempest Chimera's Bane",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090107,
+    "abilityNumber": 7,
+    "ability": "(Flame) Frenzy Res",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090108,
+    "abilityNumber": 8,
+    "ability": "(Flame) Astral's Bane",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090109,
+    "abilityNumber": 9,
+    "ability": "(Flame) High Midgardsormr's Bane",
+    "element": "Flame",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090201,
+    "abilityNumber": 1,
+    "ability": "(Water) Dull Res",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090202,
+    "abilityNumber": 2,
+    "ability": "(Water) Petrify Res",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090203,
+    "abilityNumber": 3,
+    "ability": "(Water) Soul Eater Res",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090204,
+    "abilityNumber": 4,
+    "ability": "(Water) Spectral Shield Penetrator",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090205,
+    "abilityNumber": 5,
+    "ability": "(Water) Fury Penetrator",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090206,
+    "abilityNumber": 6,
+    "ability": "(Water) Skill Resistance Penetrator",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090207,
+    "abilityNumber": 7,
+    "ability": "(Water) Scorching Air Res",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090208,
+    "abilityNumber": 8,
+    "ability": "(Water) Volcanic Chimera's Bane",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090209,
+    "abilityNumber": 9,
+    "ability": "(Water) Frenzy Res",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090210,
+    "abilityNumber": 10,
+    "ability": "(Water) Astral's Bane",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090211,
+    "abilityNumber": 11,
+    "ability": "(Water) High Brunhilda's Bane",
+    "element": "Water",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090301,
+    "abilityNumber": 1,
+    "ability": "(Wind) Copy Punisher",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090302,
+    "abilityNumber": 2,
+    "ability": "(Wind) Soul Eater Res",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090303,
+    "abilityNumber": 3,
+    "ability": "(Wind) Spectral Shield Penetrator",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090304,
+    "abilityNumber": 4,
+    "ability": "(Wind) Fury Penetrator",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090305,
+    "abilityNumber": 5,
+    "ability": "(Wind) Skill Resistance Penetrator",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090306,
+    "abilityNumber": 6,
+    "ability": "(Wind) Whirlpool Res",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090307,
+    "abilityNumber": 7,
+    "ability": "(Wind) Tidal Chimera's Bane",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090308,
+    "abilityNumber": 8,
+    "ability": "(Wind) Frenzy Res",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090309,
+    "abilityNumber": 9,
+    "ability": "(Wind) Astral's Bane",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090310,
+    "abilityNumber": 10,
+    "ability": "(Wind) High Mercury's Bane",
+    "element": "Wind",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090401,
+    "abilityNumber": 1,
+    "ability": "(Light) Copy Punisher",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090402,
+    "abilityNumber": 2,
+    "ability": "(Light) Dull Res",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090403,
+    "abilityNumber": 3,
+    "ability": "(Light) Petrify Res",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090404,
+    "abilityNumber": 4,
+    "ability": "(Light) Fury Penetrator",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090405,
+    "abilityNumber": 5,
+    "ability": "(Light) Enervation Res",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090406,
+    "abilityNumber": 6,
+    "ability": "(Light) Ebon Chimera's Bane",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090407,
+    "abilityNumber": 7,
+    "ability": "(Light) Frenzy Res",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090408,
+    "abilityNumber": 8,
+    "ability": "(Light) Astral's Bane",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090409,
+    "abilityNumber": 9,
+    "ability": "(Light) High Zodiark's Bane",
+    "element": "Light",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090501,
+    "abilityNumber": 1,
+    "ability": "(Shadow) Dull Res",
+    "element": "Shadow",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090502,
+    "abilityNumber": 2,
+    "ability": "(Shadow) Fury Penetrator",
+    "element": "Shadow",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090503,
+    "abilityNumber": 3,
+    "ability": "(Shadow) Dragon Delay Res",
+    "element": "Shadow",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090504,
+    "abilityNumber": 4,
+    "ability": "(Shadow) Divinity Penetrator",
+    "element": "Shadow",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090505,
+    "abilityNumber": 5,
+    "ability": "(Shadow) Luminous Chimera's Bane",
+    "element": "Shadow",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090506,
+    "abilityNumber": 6,
+    "ability": "(Shadow) Frenzy Res",
+    "element": "Shadow",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090507,
+    "abilityNumber": 7,
+    "ability": "(Shadow) Astral's Bane",
+    "element": "Shadow",
+    "weaponType": "Manacaster"
+  },
+  {
+    "passiveId": 1090508,
+    "abilityNumber": 8,
+    "ability": "(Shadow) High Jupiter's Bane",
+    "element": "Shadow",
+    "weaponType": "Manacaster"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "rarity": 2,
+    "level": 10
+  },
+  {
+    "rarity": 3,
+    "level": 20
+  },
+  {
+    "rarity": 4,
+    "level": 40
+  },
+  {
+    "rarity": 5,
+    "level": 50
+  },
+  {
+    "rarity": 9,
+    "level": 30
+  }
+]

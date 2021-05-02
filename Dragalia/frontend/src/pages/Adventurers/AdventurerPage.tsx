@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AdventurerData } from '../../api/DataInterfaces';
-import { PublicApi } from '../../api/PublicData';
+import { PublicApi } from '../../api/GameData';
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AdventurerList } from './AdventurerList';
@@ -11,9 +11,9 @@ export const AdventurerPage = () => {
 
   useEffect(() => {
     let cancelled = false;
-    const doGetAdventurers = async () => {
+    const doGetAdventurers = () => {
       const api = new PublicApi();
-      const adventurerData = await api.getAdventurers();
+      const adventurerData = api.getAdventurers();
       if (!cancelled) {
         setAdventurers(adventurerData);
         setAdventurersLoading(false);

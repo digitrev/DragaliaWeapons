@@ -1,0 +1,1766 @@
+[
+  {
+    "materialId": "Rupie",
+    "material": "Rupies",
+    "category": "Currency",
+    "sortPath": "/1/1/"
+  },
+  {
+    "materialId": "Mana",
+    "material": "Mana",
+    "category": "Currency",
+    "sortPath": "/1/2/"
+  },
+  {
+    "materialId": "Eldwater",
+    "material": "Eldwater",
+    "category": "Currency",
+    "sortPath": "/1/3/"
+  },
+  {
+    "materialId": "101001001",
+    "material": "Bronze Crystal",
+    "category": "Adventurer Upgrade Items",
+    "sortPath": "/2/1/"
+  },
+  {
+    "materialId": "101001002",
+    "material": "Silver Crystal",
+    "category": "Adventurer Upgrade Items",
+    "sortPath": "/2/2/"
+  },
+  {
+    "materialId": "101001003",
+    "material": "Gold Crystal",
+    "category": "Adventurer Upgrade Items",
+    "sortPath": "/2/3/"
+  },
+  {
+    "materialId": "116001001",
+    "material": "Fortifying Crystal",
+    "category": "Adventurer Upgrade Items",
+    "sortPath": "/3/1/"
+  },
+  {
+    "materialId": "117001001",
+    "material": "Amplifying Crystal",
+    "category": "Adventurer Upgrade Items",
+    "sortPath": "/3/2/"
+  },
+  {
+    "materialId": "102001001",
+    "material": "Dragonfruit",
+    "category": "Dragon Upgrade Items",
+    "sortPath": "/4/1/"
+  },
+  {
+    "materialId": "102001002",
+    "material": "Ripe Dragonfruit",
+    "category": "Dragon Upgrade Items",
+    "sortPath": "/4/2/"
+  },
+  {
+    "materialId": "102001003",
+    "material": "Succulent Dragonfruit",
+    "category": "Dragon Upgrade Items",
+    "sortPath": "/4/3/"
+  },
+  {
+    "materialId": "118001001",
+    "material": "Fortifying Dragonscale",
+    "category": "Dragon Upgrade Items",
+    "sortPath": "/5/1/"
+  },
+  {
+    "materialId": "119001001",
+    "material": "Amplifying Dragonscale",
+    "category": "Dragon Upgrade Items",
+    "sortPath": "/5/2/"
+  },
+  {
+    "materialId": "103001001",
+    "material": "Bronze Whetstone",
+    "category": "Weapon Upgrade Items",
+    "sortPath": "/6/1/"
+  },
+  {
+    "materialId": "103001002",
+    "material": "Silver Whetstone",
+    "category": "Weapon Upgrade Items",
+    "sortPath": "/6/2/"
+  },
+  {
+    "materialId": "103001003",
+    "material": "Gold Whetstone",
+    "category": "Weapon Upgrade Items",
+    "sortPath": "/6/3/"
+  },
+  {
+    "materialId": "113001001",
+    "material": "Holy Water",
+    "category": "Wyrmprint Upgrade Items",
+    "sortPath": "/7/1/"
+  },
+  {
+    "materialId": "113001002",
+    "material": "Blessed Water",
+    "category": "Wyrmprint Upgrade Items",
+    "sortPath": "/7/2/"
+  },
+  {
+    "materialId": "113001003",
+    "material": "Consecrated Water",
+    "category": "Wyrmprint Upgrade Items",
+    "sortPath": "/7/3/"
+  },
+  {
+    "materialId": "122001001",
+    "material": "Fortifying Gemstone",
+    "category": "Wyrmprint Upgrade Items",
+    "sortPath": "/8/1/"
+  },
+  {
+    "materialId": "123001001",
+    "material": "Amplifying Gemstone",
+    "category": "Wyrmprint Upgrade Items",
+    "sortPath": "/8/2/"
+  },
+  {
+    "materialId": "104001011",
+    "material": "Flame Orb",
+    "category": "Orbs",
+    "sortPath": "/9/1/1/"
+  },
+  {
+    "materialId": "104001012",
+    "material": "Blaze Orb",
+    "category": "Orbs",
+    "sortPath": "/9/1/2/"
+  },
+  {
+    "materialId": "104001013",
+    "material": "Inferno Orb",
+    "category": "Orbs",
+    "sortPath": "/9/1/3/"
+  },
+  {
+    "materialId": "104001014",
+    "material": "Incandescence Orb",
+    "category": "Orbs",
+    "sortPath": "/9/1/4/"
+  },
+  {
+    "materialId": "104001021",
+    "material": "Water Orb",
+    "category": "Orbs",
+    "sortPath": "/9/2/1/"
+  },
+  {
+    "materialId": "104001022",
+    "material": "Stream Orb",
+    "category": "Orbs",
+    "sortPath": "/9/2/2/"
+  },
+  {
+    "materialId": "104001023",
+    "material": "Deluge Orb",
+    "category": "Orbs",
+    "sortPath": "/9/2/3/"
+  },
+  {
+    "materialId": "104001024",
+    "material": "Tsunami Orb",
+    "category": "Orbs",
+    "sortPath": "/9/2/4/"
+  },
+  {
+    "materialId": "104001031",
+    "material": "Wind Orb",
+    "category": "Orbs",
+    "sortPath": "/9/3/1/"
+  },
+  {
+    "materialId": "104001032",
+    "material": "Storm Orb",
+    "category": "Orbs",
+    "sortPath": "/9/3/2/"
+  },
+  {
+    "materialId": "104001033",
+    "material": "Maelstrom Orb",
+    "category": "Orbs",
+    "sortPath": "/9/3/3/"
+  },
+  {
+    "materialId": "104001034",
+    "material": "Tempest Orb",
+    "category": "Orbs",
+    "sortPath": "/9/3/4/"
+  },
+  {
+    "materialId": "104001041",
+    "material": "Light Orb",
+    "category": "Orbs",
+    "sortPath": "/9/4/1/"
+  },
+  {
+    "materialId": "104001042",
+    "material": "Radiance Orb",
+    "category": "Orbs",
+    "sortPath": "/9/4/2/"
+  },
+  {
+    "materialId": "104001043",
+    "material": "Refulgence Orb",
+    "category": "Orbs",
+    "sortPath": "/9/4/3/"
+  },
+  {
+    "materialId": "104001044",
+    "material": "Resplendence Orb",
+    "category": "Orbs",
+    "sortPath": "/9/4/4/"
+  },
+  {
+    "materialId": "104001051",
+    "material": "Shadow Orb",
+    "category": "Orbs",
+    "sortPath": "/9/5/1/"
+  },
+  {
+    "materialId": "104001052",
+    "material": "Nightfall Orb",
+    "category": "Orbs",
+    "sortPath": "/9/5/2/"
+  },
+  {
+    "materialId": "104001053",
+    "material": "Nether Orb",
+    "category": "Orbs",
+    "sortPath": "/9/5/3/"
+  },
+  {
+    "materialId": "104001054",
+    "material": "Abaddon Orb",
+    "category": "Orbs",
+    "sortPath": "/9/5/4/"
+  },
+  {
+    "materialId": "104001001",
+    "material": "Rainbow Orb",
+    "category": "Orbs",
+    "sortPath": "/9/6/"
+  },
+  {
+    "materialId": "104002011",
+    "material": "Flamewyrm's Scale",
+    "category": "Scales",
+    "sortPath": "/10/1/1/"
+  },
+  {
+    "materialId": "104002012",
+    "material": "Flamewyrm's Scaldscale",
+    "category": "Scales",
+    "sortPath": "/10/1/2/"
+  },
+  {
+    "materialId": "104002021",
+    "material": "Waterwyrm's Scale",
+    "category": "Scales",
+    "sortPath": "/10/2/1/"
+  },
+  {
+    "materialId": "104002022",
+    "material": "Waterwyrm's Glistscale",
+    "category": "Scales",
+    "sortPath": "/10/2/2/"
+  },
+  {
+    "materialId": "104002031",
+    "material": "Windwyrm's Scale",
+    "category": "Scales",
+    "sortPath": "/10/3/1/"
+  },
+  {
+    "materialId": "104002032",
+    "material": "Windwyrm's Squallscale",
+    "category": "Scales",
+    "sortPath": "/10/3/1/"
+  },
+  {
+    "materialId": "104002041",
+    "material": "Lightwyrm's Scale",
+    "category": "Scales",
+    "sortPath": "/10/4/1/"
+  },
+  {
+    "materialId": "104002042",
+    "material": "Lightwyrm's Glowscale",
+    "category": "Scales",
+    "sortPath": "/10/4/2/"
+  },
+  {
+    "materialId": "104002051",
+    "material": "Shadowwyrm's Scale",
+    "category": "Scales",
+    "sortPath": "/10/5/1/"
+  },
+  {
+    "materialId": "104002052",
+    "material": "Shadowwyrm's Darkscale",
+    "category": "Scales",
+    "sortPath": "/10/5/2/"
+  },
+  {
+    "materialId": "104003001",
+    "material": "Knight's Testament",
+    "category": "Testaments",
+    "sortPath": "/11/1/"
+  },
+  {
+    "materialId": "104003002",
+    "material": "Champion's Testament",
+    "category": "Testaments",
+    "sortPath": "/11/2/"
+  },
+  {
+    "materialId": "111001001",
+    "material": "Moonlight Stone",
+    "category": "Stones",
+    "sortPath": "/12/1/"
+  },
+  {
+    "materialId": "111002001",
+    "material": "Sunlight Stone",
+    "category": "Stones",
+    "sortPath": "/12/2/"
+  },
+  {
+    "materialId": "112001001",
+    "material": "Steel Brick",
+    "category": "Ingots",
+    "sortPath": "/13/1/"
+  },
+  {
+    "materialId": "112002001",
+    "material": "Damascus Ingot",
+    "category": "Ingots",
+    "sortPath": "/13/2/"
+  },
+  {
+    "materialId": "112003001",
+    "material": "Adamantite Ingot",
+    "category": "Ingots",
+    "sortPath": "/13/3/"
+  },
+  {
+    "materialId": "114001001",
+    "material": "Silver Key",
+    "category": "Keys",
+    "sortPath": "/14/1/"
+  },
+  {
+    "materialId": "114002001",
+    "material": "Golden Key",
+    "category": "Keys",
+    "sortPath": "/14/2/"
+  },
+  {
+    "materialId": "201002011",
+    "material": "Flamewyrm's Sphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/1/1/"
+  },
+  {
+    "materialId": "201002012",
+    "material": "Flamewyrm's Greatsphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/1/2/"
+  },
+  {
+    "materialId": "201002021",
+    "material": "Waterwyrm's Sphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/2/1/"
+  },
+  {
+    "materialId": "201002022",
+    "material": "Waterwyrm's Greatsphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/2/2/"
+  },
+  {
+    "materialId": "201002031",
+    "material": "Windwyrm's Sphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/3/1/"
+  },
+  {
+    "materialId": "201002032",
+    "material": "Windwyrm's Greatsphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/3/2/"
+  },
+  {
+    "materialId": "201002041",
+    "material": "Lightwyrm's Sphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/4/1/"
+  },
+  {
+    "materialId": "201002042",
+    "material": "Lightwyrm's Greatsphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/4/2/"
+  },
+  {
+    "materialId": "201002051",
+    "material": "Shadowwyrm's Sphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/5/1/"
+  },
+  {
+    "materialId": "201002052",
+    "material": "Shadowwyrm's Greatsphere",
+    "category": "Dragon Spheres",
+    "sortPath": "/15/5/2/"
+  },
+  {
+    "materialId": "202008011",
+    "material": "High Flamewyrm's Tail",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/1/1/"
+  },
+  {
+    "materialId": "202009011",
+    "material": "High Flamewyrm's Horn",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/1/2/"
+  },
+  {
+    "materialId": "202008021",
+    "material": "High Waterwyrm's Tail",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/2/1/"
+  },
+  {
+    "materialId": "202009021",
+    "material": "High Waterwyrm's Horn",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/2/2/"
+  },
+  {
+    "materialId": "202008031",
+    "material": "High Windwyrm's Tail",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/3/1/"
+  },
+  {
+    "materialId": "202009031",
+    "material": "High Windwyrm's Horn",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/3/2/"
+  },
+  {
+    "materialId": "202008041",
+    "material": "High Lightwyrm's Tail",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/4/1/"
+  },
+  {
+    "materialId": "202009041",
+    "material": "High Lightwyrm's Horn",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/4/2/"
+  },
+  {
+    "materialId": "202008051",
+    "material": "High Shadowwyrm's Tail",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/5/1/"
+  },
+  {
+    "materialId": "202009051",
+    "material": "High Shadowwyrm's Horn",
+    "category": "High Dragon Materials",
+    "sortPath": "/16/5/2/"
+  },
+  {
+    "materialId": "201009001",
+    "material": "Dyrenell Aes",
+    "category": "Dyrenell Coins",
+    "sortPath": "/17/1/"
+  },
+  {
+    "materialId": "201009002",
+    "material": "Dyrenell Argenteus",
+    "category": "Dyrenell Coins",
+    "sortPath": "/17/2/"
+  },
+  {
+    "materialId": "201009003",
+    "material": "Dyrenell Aureus",
+    "category": "Dyrenell Coins",
+    "sortPath": "/17/3/"
+  },
+  {
+    "materialId": "201010011",
+    "material": "Vermilion Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/1/1/"
+  },
+  {
+    "materialId": "201010012",
+    "material": "Royal Vermilion Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/1/2/"
+  },
+  {
+    "materialId": "201010021",
+    "material": "Azure Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/2/1/"
+  },
+  {
+    "materialId": "201010022",
+    "material": "Royal Azure Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/2/2/"
+  },
+  {
+    "materialId": "201010031",
+    "material": "Jade Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/3/1/"
+  },
+  {
+    "materialId": "201010032",
+    "material": "Royal Jade Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/3/2/"
+  },
+  {
+    "materialId": "201010041",
+    "material": "Amber Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/4/1/"
+  },
+  {
+    "materialId": "201010042",
+    "material": "Royal Amber Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/4/2/"
+  },
+  {
+    "materialId": "201010051",
+    "material": "Violet Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/5/1/"
+  },
+  {
+    "materialId": "201010052",
+    "material": "Royal Violet Insignia",
+    "category": "Insignia",
+    "sortPath": "/18/5/2/"
+  },
+  {
+    "materialId": "201017011",
+    "material": "Soaring Ones' Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/1/1/"
+  },
+  {
+    "materialId": "201017012",
+    "material": "Liberated One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/1/2/"
+  },
+  {
+    "materialId": "201017013",
+    "material": "Rebellious One's Cruelty",
+    "category": "Agito Fragments",
+    "sortPath": "/19/1/3/"
+  },
+  {
+    "materialId": "201017021",
+    "material": "Eliminating One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/2/1/"
+  },
+  {
+    "materialId": "201017022",
+    "material": "Despairing One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/2/2/"
+  },
+  {
+    "materialId": "201017023",
+    "material": "Rebellious One's Desperation",
+    "category": "Agito Fragments",
+    "sortPath": "/19/2/3/"
+  },
+  {
+    "materialId": "201017024",
+    "material": "Rebellious Bird's Tide",
+    "category": "Agito Fragments",
+    "sortPath": "/19/2/4/"
+  },
+  {
+    "materialId": "201017031",
+    "material": "Destitute One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/3/1/"
+  },
+  {
+    "materialId": "201017032",
+    "material": "Plagued One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/3/2/"
+  },
+  {
+    "materialId": "201017033",
+    "material": "Rebellious One's Insanity",
+    "category": "Agito Fragments",
+    "sortPath": "/19/3/3/"
+  },
+  {
+    "materialId": "201017034",
+    "material": "Rebellious Wolf's Gale",
+    "category": "Agito Fragments",
+    "sortPath": "/19/3/4/"
+  },
+  {
+    "materialId": "201017041",
+    "material": "Almighty One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/4/1/"
+  },
+  {
+    "materialId": "201017042",
+    "material": "Uprooting One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/4/2/"
+  },
+  {
+    "materialId": "201017043",
+    "material": "Rebellious One's Arrogance",
+    "category": "Agito Fragments",
+    "sortPath": "/19/4/3/"
+  },
+  {
+    "materialId": "201017044",
+    "material": "Rebellious Ox's Lightning",
+    "category": "Agito Fragments",
+    "sortPath": "/19/4/4/"
+  },
+  {
+    "materialId": "201017051",
+    "material": "Remaining One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/5/1/"
+  },
+  {
+    "materialId": "201017052",
+    "material": "Vengeful One's Mask Fragment",
+    "category": "Agito Fragments",
+    "sortPath": "/19/5/2/"
+  },
+  {
+    "materialId": "201017053",
+    "material": "Rebellious One's Loyalty",
+    "category": "Agito Fragments",
+    "sortPath": "/19/5/3/"
+  },
+  {
+    "materialId": "201005001",
+    "material": "Talonstone",
+    "category": "Other Items",
+    "sortPath": "/20/1/"
+  },
+  {
+    "materialId": "201008001",
+    "material": "Looking Glass",
+    "category": "Other Items",
+    "sortPath": "/20/2/"
+  },
+  {
+    "materialId": "201007001",
+    "material": "Damascus Crystal",
+    "category": "Treasure Trade Fragments",
+    "sortPath": "/21/1/"
+  },
+  {
+    "materialId": "201011001",
+    "material": "Sunlight Ore",
+    "category": "Treasure Trade Fragments",
+    "sortPath": "/21/2/"
+  },
+  {
+    "materialId": "201012001",
+    "material": "Golden Fragment",
+    "category": "Treasure Trade Fragments",
+    "sortPath": "/21/3/"
+  },
+  {
+    "materialId": "201015001",
+    "material": "Twinkling Grains",
+    "category": "Treasure Trade Fragments",
+    "sortPath": "/21/4/"
+  },
+  {
+    "materialId": "201014001",
+    "material": "Void Leaf",
+    "category": "Universal Void Drops",
+    "sortPath": "/22/1/"
+  },
+  {
+    "materialId": "201014002",
+    "material": "Void Seed",
+    "category": "Universal Void Drops",
+    "sortPath": "/22/2/"
+  },
+  {
+    "materialId": "201014003",
+    "material": "Squishums",
+    "category": "Squishums and Other Jokes",
+    "sortPath": "/23/1/"
+  },
+  {
+    "materialId": "201014004",
+    "material": "Imitation Squish",
+    "category": "Squishums and Other Jokes",
+    "sortPath": "/23/2/"
+  },
+  {
+    "materialId": "201018001",
+    "material": "Half-Eaten Bread",
+    "category": "Squishums and Other Jokes",
+    "sortPath": "/23/3/"
+  },
+  {
+    "materialId": "201019011",
+    "material": "Flame Tome",
+    "category": "Tomes",
+    "sortPath": "/24/1/"
+  },
+  {
+    "materialId": "201019021",
+    "material": "Water Tome",
+    "category": "Tomes",
+    "sortPath": "/24/2/"
+  },
+  {
+    "materialId": "201019031",
+    "material": "Wind Tome",
+    "category": "Tomes",
+    "sortPath": "/24/3/"
+  },
+  {
+    "materialId": "201019041",
+    "material": "Light Tome",
+    "category": "Tomes",
+    "sortPath": "/24/4/"
+  },
+  {
+    "materialId": "201019051",
+    "material": "Shadow Tome",
+    "category": "Tomes",
+    "sortPath": "/24/5/"
+  },
+  {
+    "materialId": "201016001",
+    "material": "Astral Shard",
+    "category": "Astral Shards",
+    "sortPath": "/25/"
+  },
+  {
+    "materialId": "201020001",
+    "material": "Appearance Ticket",
+    "category": "Alberian Battle Royale",
+    "sortPath": "/26/"
+  },
+  {
+    "materialId": "201021001",
+    "material": "Nature's Blessing",
+    "category": "Nature's Blessing",
+    "sortPath": "/27/"
+  },
+  {
+    "materialId": "201022031",
+    "material": "Cyclone Shard",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/1/1/"
+  },
+  {
+    "materialId": "201022051",
+    "material": "Twilight Shard",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/1/2/"
+  },
+  {
+    "materialId": "201022032",
+    "material": "Cyclone Prism",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/2/1/"
+  },
+  {
+    "materialId": "201022052",
+    "material": "Twilight Prism",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/2/2/"
+  },
+  {
+    "materialId": "202001001",
+    "material": "Iron Ore",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/1/1/"
+  },
+  {
+    "materialId": "202001002",
+    "material": "Granite",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/1/2/"
+  },
+  {
+    "materialId": "202001003",
+    "material": "Meteorite",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/1/3/"
+  },
+  {
+    "materialId": "202002001",
+    "material": "Fiend's Claw",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/2/1/"
+  },
+  {
+    "materialId": "202002002",
+    "material": "Fiend's Horn",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/2/2/"
+  },
+  {
+    "materialId": "202002003",
+    "material": "Fiend's Eye",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/2/3/"
+  },
+  {
+    "materialId": "202003001",
+    "material": "Bat's Wing",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/3/1/"
+  },
+  {
+    "materialId": "202003002",
+    "material": "Ancient Bird's Feather",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/3/2/"
+  },
+  {
+    "materialId": "202003003",
+    "material": "Bewitching Wings",
+    "category": "Weapon Upgrade Materials",
+    "sortPath": "/28/3/3/"
+  },
+  {
+    "materialId": "202004001",
+    "material": "Light Metal",
+    "category": "Special Weapon Upgrade Materials",
+    "sortPath": "/29/1/1/"
+  },
+  {
+    "materialId": "202004002",
+    "material": "Abyss Stone",
+    "category": "Special Weapon Upgrade Materials",
+    "sortPath": "/29/1/2/"
+  },
+  {
+    "materialId": "202004003",
+    "material": "Crimson Core",
+    "category": "Special Weapon Upgrade Materials",
+    "sortPath": "/29/1/3/"
+  },
+  {
+    "materialId": "202004004",
+    "material": "Twinkling Sand",
+    "category": "Special Weapon Upgrade Materials",
+    "sortPath": "/29/2/1/"
+  },
+  {
+    "materialId": "202004005",
+    "material": "Orichalcum",
+    "category": "Special Weapon Upgrade Materials",
+    "sortPath": "/29/2/2/"
+  },
+  {
+    "materialId": "202005011",
+    "material": "Sword Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/1/"
+  },
+  {
+    "materialId": "202005021",
+    "material": "Blade Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/2/"
+  },
+  {
+    "materialId": "202005031",
+    "material": "Dagger Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/3/"
+  },
+  {
+    "materialId": "202005041",
+    "material": "Axe Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/4/"
+  },
+  {
+    "materialId": "202005051",
+    "material": "Lance Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/5/"
+  },
+  {
+    "materialId": "202005061",
+    "material": "Bow Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/6/"
+  },
+  {
+    "materialId": "202005071",
+    "material": "Wand Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/7/"
+  },
+  {
+    "materialId": "202005081",
+    "material": "Staff Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/8/"
+  },
+  {
+    "materialId": "202005091",
+    "material": "Manacaster Tablet",
+    "category": "Tablet",
+    "sortPath": "/30/9/"
+  },
+  {
+    "materialId": "203001001",
+    "material": "Snack-o'-Lantern",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/1/"
+  },
+  {
+    "materialId": "203002001",
+    "material": "Windwhistle Grass",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/2/"
+  },
+  {
+    "materialId": "203003001",
+    "material": "Astral Ornament",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/3/"
+  },
+  {
+    "materialId": "203004001",
+    "material": "Tent Canvas",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/4/"
+  },
+  {
+    "materialId": "203005001",
+    "material": "Arcane Tome",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/5/"
+  },
+  {
+    "materialId": "203006001",
+    "material": "Papier-mâché",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/6/"
+  },
+  {
+    "materialId": "203007001",
+    "material": "Motivational Log",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/7/"
+  },
+  {
+    "materialId": "203008001",
+    "material": "Glam Shell",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/8/"
+  },
+  {
+    "materialId": "203010001",
+    "material": "Chef's Special",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/9/"
+  },
+  {
+    "materialId": "203011001",
+    "material": "Ornate Lantern",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/10/"
+  },
+  {
+    "materialId": "203012001",
+    "material": "Holy Ore",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/11/"
+  },
+  {
+    "materialId": "203013001",
+    "material": "Libretto",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/12/"
+  },
+  {
+    "materialId": "204001001",
+    "material": "Solid Fungus",
+    "category": "Void Materials",
+    "sortPath": "/32/1/1/"
+  },
+  {
+    "materialId": "204015001",
+    "material": "Crimson Fungus",
+    "category": "Void Materials",
+    "sortPath": "/32/1/2/"
+  },
+  {
+    "materialId": "204015002",
+    "material": "Burning Spore",
+    "category": "Void Materials",
+    "sortPath": "/32/1/3/"
+  },
+  {
+    "materialId": "204009001",
+    "material": "Storm Fungus",
+    "category": "Void Materials",
+    "sortPath": "/32/1/4/"
+  },
+  {
+    "materialId": "204009002",
+    "material": "Spongy Spore",
+    "category": "Void Materials",
+    "sortPath": "/32/1/5/"
+  },
+  {
+    "materialId": "204001002",
+    "material": "Shiny Spore",
+    "category": "Void Materials",
+    "sortPath": "/32/1/6/"
+  },
+  {
+    "materialId": "204006001",
+    "material": "Old Cloth",
+    "category": "Void Materials",
+    "sortPath": "/32/2/1/"
+  },
+  {
+    "materialId": "204006002",
+    "material": "Floating Red Cloth",
+    "category": "Void Materials",
+    "sortPath": "/32/2/2/"
+  },
+  {
+    "materialId": "204006003",
+    "material": "Otherworldly Lantern",
+    "category": "Void Materials",
+    "sortPath": "/32/2/3/"
+  },
+  {
+    "materialId": "204025001",
+    "material": "Floating Blue Cloth",
+    "category": "Void Materials",
+    "sortPath": "/32/2/4/"
+  },
+  {
+    "materialId": "204025002",
+    "material": "Abyssal Lantern",
+    "category": "Void Materials",
+    "sortPath": "/32/2/5/"
+  },
+  {
+    "materialId": "204019001",
+    "material": "Floating Yellow Cloth",
+    "category": "Void Materials",
+    "sortPath": "/32/2/6/"
+  },
+  {
+    "materialId": "204019002",
+    "material": "Unearthly Lantern",
+    "category": "Void Materials",
+    "sortPath": "/32/2/7/"
+  },
+  {
+    "materialId": "204010001",
+    "material": "Floating Purple Cloth",
+    "category": "Void Materials",
+    "sortPath": "/32/2/8/"
+  },
+  {
+    "materialId": "204010002",
+    "material": "Shadowy Lantern",
+    "category": "Void Materials",
+    "sortPath": "/32/2/9/"
+  },
+  {
+    "materialId": "204002001",
+    "material": "Goblin Thread",
+    "category": "Void Materials",
+    "sortPath": "/32/3/1/"
+  },
+  {
+    "materialId": "204002002",
+    "material": "Aromatic Wood",
+    "category": "Void Materials",
+    "sortPath": "/32/3/2/"
+  },
+  {
+    "materialId": "204016001",
+    "material": "Purple Thread",
+    "category": "Void Materials",
+    "sortPath": "/32/3/3/"
+  },
+  {
+    "materialId": "204016002",
+    "material": "Acoustic Wood",
+    "category": "Void Materials",
+    "sortPath": "/32/3/4/"
+  },
+  {
+    "materialId": "204003001",
+    "material": "Steel Slab",
+    "category": "Void Materials",
+    "sortPath": "/32/4/1/"
+  },
+  {
+    "materialId": "204003002",
+    "material": "Golem Core",
+    "category": "Void Materials",
+    "sortPath": "/32/4/2/"
+  },
+  {
+    "materialId": "204011001",
+    "material": "Amber Slab",
+    "category": "Void Materials",
+    "sortPath": "/32/4/3/"
+  },
+  {
+    "materialId": "204011002",
+    "material": "Light Core",
+    "category": "Void Materials",
+    "sortPath": "/32/4/5/"
+  },
+  {
+    "materialId": "204007001",
+    "material": "Obsidian Slab",
+    "category": "Void Materials",
+    "sortPath": "/32/4/6/"
+  },
+  {
+    "materialId": "204007002",
+    "material": "Dark Core",
+    "category": "Void Materials",
+    "sortPath": "/32/4/7/"
+  },
+  {
+    "materialId": "204017001",
+    "material": "Catoblepas's Hoof",
+    "category": "Void Materials",
+    "sortPath": "/32/5/1/"
+  },
+  {
+    "materialId": "204026001",
+    "material": "Catoblepas's Heateye",
+    "category": "Void Materials",
+    "sortPath": "/32/5/2/"
+  },
+  {
+    "materialId": "204017002",
+    "material": "Catoblepas's Stormeye",
+    "category": "Void Materials",
+    "sortPath": "/32/5/3/"
+  },
+  {
+    "materialId": "204029001",
+    "material": "Catoblepas's Shadoweye",
+    "category": "Void Materials",
+    "sortPath": "/32/5/4/"
+  },
+  {
+    "materialId": "204020001",
+    "material": "Soul Vestiges",
+    "category": "Void Materials",
+    "sortPath": "/32/6/1/"
+  },
+  {
+    "materialId": "204027001",
+    "material": "Infernal Soul",
+    "category": "Void Materials",
+    "sortPath": "/32/6/2/"
+  },
+  {
+    "materialId": "204030001",
+    "material": "Abyssal Soul",
+    "category": "Void Materials",
+    "sortPath": "/32/6/3/"
+  },
+  {
+    "materialId": "204020002",
+    "material": "Eolian Soul",
+    "category": "Void Materials",
+    "sortPath": "/32/6/4/"
+  },
+  {
+    "materialId": "204005001",
+    "material": "Raging Fang",
+    "category": "Void Materials",
+    "sortPath": "/32/7/1/"
+  },
+  {
+    "materialId": "204021001",
+    "material": "Smoldering Tail",
+    "category": "Void Materials",
+    "sortPath": "/32/7/2/"
+  },
+  {
+    "materialId": "204014001",
+    "material": "Greedy Tail",
+    "category": "Void Materials",
+    "sortPath": "/32/7/3/"
+  },
+  {
+    "materialId": "204023001",
+    "material": "Proud Tail",
+    "category": "Void Materials",
+    "sortPath": "/32/7/4/"
+  },
+  {
+    "materialId": "204005002",
+    "material": "Raging Tail",
+    "category": "Void Materials",
+    "sortPath": "/32/7/5/"
+  },
+  {
+    "materialId": "204004001",
+    "material": "Great Feather",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/1/1/"
+  },
+  {
+    "materialId": "204004002",
+    "material": "Zephyr Rune",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/1/2/"
+  },
+  {
+    "materialId": "204012001",
+    "material": "Oceanic Fin",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/2/1/"
+  },
+  {
+    "materialId": "204012002",
+    "material": "Oceanic Crown",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/2/2/"
+  },
+  {
+    "materialId": "204013001",
+    "material": "Necroblossom",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/3/1/"
+  },
+  {
+    "materialId": "204013002",
+    "material": "Abyssal Standard",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/3/2/"
+  },
+  {
+    "materialId": "204018001",
+    "material": "Ruinous Horn",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/4/1/"
+  },
+  {
+    "materialId": "204018002",
+    "material": "Ruinous Wing",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/4/2/"
+  },
+  {
+    "materialId": "204008001",
+    "material": "Blazing Horn",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/5/1/"
+  },
+  {
+    "materialId": "204008002",
+    "material": "Blazing Ember",
+    "category": "Void Dragon Materials",
+    "sortPath": "/33/5/2/"
+  },
+  {
+    "materialId": "204022001",
+    "material": "Volcanic Mane",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/1/1/"
+  },
+  {
+    "materialId": "204022002",
+    "material": "Volcanic Claw",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/1/2/"
+  },
+  {
+    "materialId": "204022003",
+    "material": "Volcanic Horn",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/1/3/"
+  },
+  {
+    "materialId": "204031001",
+    "material": "Tidal Mane",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/2/1/"
+  },
+  {
+    "materialId": "204031002",
+    "material": "Tidal Claw",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/2/2/"
+  },
+  {
+    "materialId": "204031003",
+    "material": "Tidal Horn",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/2/3/"
+  },
+  {
+    "materialId": "204028001",
+    "material": "Tempest Mane",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/3/1/"
+  },
+  {
+    "materialId": "204028002",
+    "material": "Tempest Claw",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/3/2/"
+  },
+  {
+    "materialId": "204028003",
+    "material": "Tempest Horn",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/3/3/"
+  },
+  {
+    "materialId": "204032001",
+    "material": "Luminous Mane",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/4/1/"
+  },
+  {
+    "materialId": "204032002",
+    "material": "Luminous Claw",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/4/2/"
+  },
+  {
+    "materialId": "204032003",
+    "material": "Luminous Horn",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/4/3/"
+  },
+  {
+    "materialId": "204024001",
+    "material": "Ebon Mane",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/5/1/"
+  },
+  {
+    "materialId": "204024002",
+    "material": "Ebon Claw",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/5/2/"
+  },
+  {
+    "materialId": "204024003",
+    "material": "Ebon Horn",
+    "category": "Void Chimera Materials",
+    "sortPath": "/34/5/3/"
+  },
+  {
+    "materialId": "202010011",
+    "material": "Burning Heart",
+    "category": "Hearts",
+    "sortPath": "/35/1/"
+  },
+  {
+    "materialId": "202010021",
+    "material": "Azure Heart",
+    "category": "Hearts",
+    "sortPath": "/35/2/"
+  },
+  {
+    "materialId": "202010031",
+    "material": "Verdant Heart",
+    "category": "Hearts",
+    "sortPath": "/35/3/"
+  },
+  {
+    "materialId": "202010041",
+    "material": "Coronal Heart",
+    "category": "Hearts",
+    "sortPath": "/35/4/"
+  },
+  {
+    "materialId": "202010051",
+    "material": "Ebony Heart",
+    "category": "Hearts",
+    "sortPath": "/35/5/"
+  },
+  {
+    "materialId": "202010061",
+    "material": "Longing Heart",
+    "category": "Hearts",
+    "sortPath": "/35/6/"
+  },
+  {
+    "materialId": "206001001",
+    "material": "Agni's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/1/1/"
+  },
+  {
+    "materialId": "206001002",
+    "material": "Prometheus's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/1/2/"
+  },
+  {
+    "materialId": "206001003",
+    "material": "Cerberus's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/1/3/"
+  },
+  {
+    "materialId": "206001004",
+    "material": "Konohana Sakuya's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/1/4/"
+  },
+  {
+    "materialId": "206001005",
+    "material": "Arctos's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/1/5/"
+  },
+  {
+    "materialId": "206001006",
+    "material": "Apollo's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/1/6/"
+  },
+  {
+    "materialId": "206001007",
+    "material": "Kagutsuchi's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/1/7/"
+  },
+  {
+    "materialId": "206002001",
+    "material": "Leviathan's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/2/1/"
+  },
+  {
+    "materialId": "206002002",
+    "material": "Poseidon's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/2/2/"
+  },
+  {
+    "materialId": "206002003",
+    "material": "Siren's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/2/3/"
+  },
+  {
+    "materialId": "206002004",
+    "material": "Simurgh's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/2/4/"
+  },
+  {
+    "materialId": "206002005",
+    "material": "Kamuy's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/2/5/"
+  },
+  {
+    "materialId": "206002006",
+    "material": "Nimis's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/2/6/"
+  },
+  {
+    "materialId": "206002007",
+    "material": "Gaibhne & Creidhne's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/2/7/"
+  },
+  {
+    "materialId": "206003001",
+    "material": "Zephyr's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/3/1/"
+  },
+  {
+    "materialId": "206003002",
+    "material": "Garuda's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/3/2/"
+  },
+  {
+    "materialId": "206003003",
+    "material": "Long Long's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/3/3/"
+  },
+  {
+    "materialId": "206003004",
+    "material": "Pazuzu's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/3/4/"
+  },
+  {
+    "materialId": "206003005",
+    "material": "Freyja's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/3/5/"
+  },
+  {
+    "materialId": "206003006",
+    "material": "Vayu's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/3/6/"
+  },
+  {
+    "materialId": "206003007",
+    "material": "Hastur's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/3/7/"
+  },
+  {
+    "materialId": "206004001",
+    "material": "Cupid's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/4/1/"
+  },
+  {
+    "materialId": "206004002",
+    "material": "Jeanne d'Arc's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/4/2/"
+  },
+  {
+    "materialId": "206004003",
+    "material": "Gilgamesh's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/4/3/"
+  },
+  {
+    "materialId": "206004004",
+    "material": "Liger's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/4/4/"
+  },
+  {
+    "materialId": "206004005",
+    "material": "Takemikazuchi's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/4/5/"
+  },
+  {
+    "materialId": "206004006",
+    "material": "Pop-Star Siren's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/4/6/"
+  },
+  {
+    "materialId": "206004007",
+    "material": "Corsaint Phoenix's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/4/7/"
+  },
+  {
+    "materialId": "206005001",
+    "material": "Chthonius's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/5/1/"
+  },
+  {
+    "materialId": "206005002",
+    "material": "Nidhogg's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/5/2/"
+  },
+  {
+    "materialId": "206005003",
+    "material": "Nyarlathotep's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/5/3/"
+  },
+  {
+    "materialId": "206005004",
+    "material": "Shinobi's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/5/4/"
+  },
+  {
+    "materialId": "206005005",
+    "material": "Epimetheus's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/5/5/"
+  },
+  {
+    "materialId": "206005006",
+    "material": "Andromeda's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/5/6/"
+  },
+  {
+    "materialId": "206005007",
+    "material": "Azazel's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/5/7/"
+  },
+  {
+    "materialId": "207001001",
+    "material": "Crown of Light's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/1/1/"
+  },
+  {
+    "materialId": "207001002",
+    "material": "Tutelary Successor's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/1/2/"
+  },
+  {
+    "materialId": "207001003",
+    "material": "Queen of the Sands' Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/1/3/"
+  },
+  {
+    "materialId": "207001004",
+    "material": "Otherworld Auspex's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/1/4/"
+  },
+  {
+    "materialId": "207001005",
+    "material": "Twilight Queen's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/1/5/"
+  },
+  {
+    "materialId": "207001006",
+    "material": "Determined Auspex's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/1/6/"
+  },
+  {
+    "materialId": "207001007",
+    "material": "Anointed Lance's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/2/1/"
+  },
+  {
+    "materialId": "207001008",
+    "material": "Doting Sister's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/2/2/"
+  },
+  {
+    "materialId": "207001009",
+    "material": "Sentient Vegetable's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/2/3/"
+  },
+  {
+    "materialId": "207001010",
+    "material": "Twilight Hunter's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/2/4/"
+  },
+  {
+    "materialId": "207001011",
+    "material": "Dreaming Vegetable's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/2/5/"
+  },
+  {
+    "materialId": "207001012",
+    "material": "Twilight Hawk's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/2/6/"
+  },
+  {
+    "materialId": "208020011",
+    "material": "Gala Elisanne's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/0/1/"
+  },
+  {
+    "materialId": "208020012",
+    "material": "Gala Elisanne's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/0/2/"
+  },
+  {
+    "materialId": "208030011",
+    "material": "Gala Ranzal's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/0.1/1/"
+  },
+  {
+    "materialId": "208030012",
+    "material": "Gala Ranzal's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/0.1/2/"
+  },
+  {
+    "materialId": "208040011",
+    "material": "Gala Prince's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/1/1/"
+  },
+  {
+    "materialId": "208040012",
+    "material": "Gala Prince's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/1/2/"
+  },
+  {
+    "materialId": "124001001",
+    "material": "Wyrmsigil Remnant",
+    "category": "Other Materials",
+    "sortPath": "/37/1/"
+  },
+  {
+    "materialId": "GatherItem_10001",
+    "material": "Fafnir Medal",
+    "category": "Other Materials",
+    "sortPath": "/37/2/"
+  }
+]

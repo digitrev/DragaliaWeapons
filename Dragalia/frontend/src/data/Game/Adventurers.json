@@ -1,0 +1,2002 @@
+[
+  {
+    "adventurerId": 19900004,
+    "adventurer": "Puppy",
+    "rarity": 5,
+    "element": "None",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150105,
+    "adventurer": "Chrom",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150104,
+    "adventurer": "Hunter Berserker",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150103,
+    "adventurer": "Lea",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150102,
+    "adventurer": "Marth",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10150101,
+    "adventurer": "Naveed",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10140103,
+    "adventurer": "Serena",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10140102,
+    "adventurer": "Karl",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10140101,
+    "adventurer": "The Prince",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10130103,
+    "adventurer": "Valentine's Orion",
+    "rarity": 3,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10130102,
+    "adventurer": "Marty",
+    "rarity": 3,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10250103,
+    "adventurer": "Nobunaga",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250102,
+    "adventurer": "Rena",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250101,
+    "adventurer": "Mikoto",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Blade",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10240101,
+    "adventurer": "Laxi",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10230101,
+    "adventurer": "Aoi",
+    "rarity": 3,
+    "element": "Flame",
+    "weaponType": "Blade",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10350102,
+    "adventurer": "Gala Laxi",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350101,
+    "adventurer": "Ezelith",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10340102,
+    "adventurer": "Yuya",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10340101,
+    "adventurer": "Melsa",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10330101,
+    "adventurer": "Renelle",
+    "rarity": 3,
+    "element": "Flame",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10450103,
+    "adventurer": "Child Ranzal",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450102,
+    "adventurer": "Halloween Mym",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450101,
+    "adventurer": "Ramona",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10440102,
+    "adventurer": "Yue",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10440101,
+    "adventurer": "Vanessa",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10550104,
+    "adventurer": "Panther",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550103,
+    "adventurer": "Kimono Elisanne",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550102,
+    "adventurer": "Nadine",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550101,
+    "adventurer": "Gala Mym",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10540103,
+    "adventurer": "Emma",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10540102,
+    "adventurer": "Xuan Zang",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10530101,
+    "adventurer": "Alain",
+    "rarity": 3,
+    "element": "Flame",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10650102,
+    "adventurer": "Chelsea",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650101,
+    "adventurer": "Gala Sarisse",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10640101,
+    "adventurer": "Valentine's Ezelith",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10630101,
+    "adventurer": "Joe",
+    "rarity": 3,
+    "element": "Flame",
+    "weaponType": "Bow",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10750104,
+    "adventurer": "Seimei",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750103,
+    "adventurer": "Incognito Nefaria",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750102,
+    "adventurer": "Mega Man",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750101,
+    "adventurer": "Student Maribelle",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10740101,
+    "adventurer": "Sinoa",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10730101,
+    "adventurer": "Xania",
+    "rarity": 3,
+    "element": "Flame",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10850103,
+    "adventurer": "Kuzunoha",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850102,
+    "adventurer": "Yukata Cassandra",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850101,
+    "adventurer": "Valentine's Hildegarde",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10840102,
+    "adventurer": "Halloween Lowen",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10840101,
+    "adventurer": "Verica",
+    "rarity": 4,
+    "element": "Flame",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10830101,
+    "adventurer": "Aurien",
+    "rarity": 3,
+    "element": "Flame",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10950102,
+    "adventurer": "Faris",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10950101,
+    "adventurer": "Gala Leonidas",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150203,
+    "adventurer": "Eugene",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150202,
+    "adventurer": "Summer Celliera",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10150201,
+    "adventurer": "Xander",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10140201,
+    "adventurer": "Halloween Odetta",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10130201,
+    "adventurer": "Zardin",
+    "rarity": 3,
+    "element": "Water",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10250202,
+    "adventurer": "Halloween Akasha",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250201,
+    "adventurer": "Valerio",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10240202,
+    "adventurer": "Summer Ranzal",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10240201,
+    "adventurer": "Celliera",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Blade",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10230201,
+    "adventurer": "Jurota",
+    "rarity": 3,
+    "element": "Water",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350204,
+    "adventurer": "Humanoid Mercury",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350203,
+    "adventurer": "Tiki",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350202,
+    "adventurer": "Mitsuba",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350201,
+    "adventurer": "Dragonyule Cleo",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10340203,
+    "adventurer": "Renee",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10340202,
+    "adventurer": "Orsem",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10340201,
+    "adventurer": "Luther",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10450204,
+    "adventurer": "Finni",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450203,
+    "adventurer": "Lazry",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450202,
+    "adventurer": "Gala Elisanne",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10450201,
+    "adventurer": "Summer Julietta",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10440201,
+    "adventurer": "Karina",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10430202,
+    "adventurer": "Pietro",
+    "rarity": 3,
+    "element": "Water",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10430201,
+    "adventurer": "Rex",
+    "rarity": 3,
+    "element": "Water",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550204,
+    "adventurer": "Catherine",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550203,
+    "adventurer": "Fjorm",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10550201,
+    "adventurer": "Xainfried",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10540202,
+    "adventurer": "Gauld",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10540201,
+    "adventurer": "Elisanne",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10530202,
+    "adventurer": "Jakob",
+    "rarity": 3,
+    "element": "Water",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10530201,
+    "adventurer": "Cibella",
+    "rarity": 3,
+    "element": "Water",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650203,
+    "adventurer": "Pinon",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650202,
+    "adventurer": "Hunter Sarisse",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650201,
+    "adventurer": "Laranoa",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Bow",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10640202,
+    "adventurer": "Dragonyule Nefaria",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Bow",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10630201,
+    "adventurer": "Waike",
+    "rarity": 3,
+    "element": "Water",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750203,
+    "adventurer": "Forager Cleo",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750202,
+    "adventurer": "Yurius",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750201,
+    "adventurer": "Lily",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10740203,
+    "adventurer": "Pipple",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10740202,
+    "adventurer": "Summer Estelle",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10740201,
+    "adventurer": "Dragonyule Xander",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850202,
+    "adventurer": "Dragonyule Lily",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850201,
+    "adventurer": "Jiang Ziya",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10840202,
+    "adventurer": "Nurse Aeleen",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10840201,
+    "adventurer": "Thaniel",
+    "rarity": 4,
+    "element": "Water",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10830201,
+    "adventurer": "Ricardt",
+    "rarity": 3,
+    "element": "Water",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10950202,
+    "adventurer": "Yoshitsune",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10950201,
+    "adventurer": "Lapis",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150304,
+    "adventurer": "Mona",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150303,
+    "adventurer": "Gala Leif",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150302,
+    "adventurer": "Wedding Elisanne",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150301,
+    "adventurer": "Gala Ranzal",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10140302,
+    "adventurer": "Templar Hope",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10140301,
+    "adventurer": "Ku Hai",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250303,
+    "adventurer": "Forager Mitsuba",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250302,
+    "adventurer": "Tobias",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250301,
+    "adventurer": "Victor",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10240302,
+    "adventurer": "Addis",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10240301,
+    "adventurer": "Musashi",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10230301,
+    "adventurer": "Melody",
+    "rarity": 3,
+    "element": "Wind",
+    "weaponType": "Blade",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10350303,
+    "adventurer": "Gala Notte",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350302,
+    "adventurer": "Summer Norwin",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350301,
+    "adventurer": "Wedding Aoi",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10340301,
+    "adventurer": "Su Fang",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10330301,
+    "adventurer": "Francesca",
+    "rarity": 3,
+    "element": "Wind",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450304,
+    "adventurer": "Kimono Luca",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450303,
+    "adventurer": "Summer Amane",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450302,
+    "adventurer": "Valentine's Melody",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450301,
+    "adventurer": "Lin You",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10440301,
+    "adventurer": "Ranzal",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10430301,
+    "adventurer": "Johanna",
+    "rarity": 3,
+    "element": "Wind",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550303,
+    "adventurer": "Halloween Melsa",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550302,
+    "adventurer": "Kirsty",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550301,
+    "adventurer": "Sylas",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10540302,
+    "adventurer": "Pia",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10540301,
+    "adventurer": "Aeleen",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650305,
+    "adventurer": "Humanoid Midgardsormr",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650304,
+    "adventurer": "Valentine's Chelsea",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650303,
+    "adventurer": "Meene",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650302,
+    "adventurer": "Hawk",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Bow",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10650301,
+    "adventurer": "Louise",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Bow",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10640302,
+    "adventurer": "Joachim",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10640301,
+    "adventurer": "Eleonora",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10630301,
+    "adventurer": "Philia",
+    "rarity": 3,
+    "element": "Wind",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750303,
+    "adventurer": "Myriam",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750302,
+    "adventurer": "Summer Sinoa",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750301,
+    "adventurer": "Maribelle",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10740302,
+    "adventurer": "Dragonyule Xainfried",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10740301,
+    "adventurer": "Noelle",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10730301,
+    "adventurer": "Nicolas",
+    "rarity": 3,
+    "element": "Wind",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850302,
+    "adventurer": "Formal Noelle",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850301,
+    "adventurer": "Akasha",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10840302,
+    "adventurer": "Wedding Xania",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10840301,
+    "adventurer": "Lowen",
+    "rarity": 4,
+    "element": "Wind",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10830301,
+    "adventurer": "Sophie",
+    "rarity": 3,
+    "element": "Wind",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10950301,
+    "adventurer": "Formal Joachim",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150404,
+    "adventurer": "Pecorine",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150403,
+    "adventurer": "Gala Prince",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10150402,
+    "adventurer": "Alfonse",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10150401,
+    "adventurer": "Albert",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10140401,
+    "adventurer": "Odetta",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10130401,
+    "adventurer": "Raemond",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250403,
+    "adventurer": "Mordecai",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250402,
+    "adventurer": "Gala Luca",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250401,
+    "adventurer": "Beautician Zardin",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10240402,
+    "adventurer": "Hanabusa",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10240401,
+    "adventurer": "Yachiyo",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10230401,
+    "adventurer": "Halloween Edward",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Blade",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10350404,
+    "adventurer": "Yukata Curran",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350403,
+    "adventurer": "Wu Kong",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350402,
+    "adventurer": "Mitsuhide",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10340402,
+    "adventurer": "Fleur",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10340401,
+    "adventurer": "Fritz",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10330401,
+    "adventurer": "Irfan",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450404,
+    "adventurer": "Sophie (Persona)",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450403,
+    "adventurer": "Zhu Bajie",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450402,
+    "adventurer": "Dragonyule Malora",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450401,
+    "adventurer": "Julietta",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10440401,
+    "adventurer": "Summer Luca",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10430401,
+    "adventurer": "Linus",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550405,
+    "adventurer": "Ryszarda",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550404,
+    "adventurer": "Sharena",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550403,
+    "adventurer": "Hunter Vanessa",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550402,
+    "adventurer": "Halloween Elisanne",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10550401,
+    "adventurer": "Annelie",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10540402,
+    "adventurer": "Sha Wujing",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10540401,
+    "adventurer": "Ryozen",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10530401,
+    "adventurer": "Malka",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650402,
+    "adventurer": "Summer Mikoto",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650401,
+    "adventurer": "Summer Cleo",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Bow",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10640403,
+    "adventurer": "Elias",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10640402,
+    "adventurer": "Rawn",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10640401,
+    "adventurer": "Luca",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Bow",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10630401,
+    "adventurer": "Malora",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750403,
+    "adventurer": "Radiant Xuan Zang",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750402,
+    "adventurer": "Peony",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750401,
+    "adventurer": "Lucretia",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10740402,
+    "adventurer": "Chitose",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10740401,
+    "adventurer": "Amane",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10730401,
+    "adventurer": "Xiao Lei",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850402,
+    "adventurer": "Gala Zena",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850401,
+    "adventurer": "Hildegarde",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10840403,
+    "adventurer": "Felicia",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10840402,
+    "adventurer": "Vixel",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10840401,
+    "adventurer": "Halloween Althemia",
+    "rarity": 4,
+    "element": "Light",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10830402,
+    "adventurer": "Estelle",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10830401,
+    "adventurer": "Hope",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10950402,
+    "adventurer": "Eirene",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10950401,
+    "adventurer": "Ilia",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10930401,
+    "adventurer": "Sharpshooter Joe",
+    "rarity": 3,
+    "element": "Light",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150503,
+    "adventurer": "Alberius",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150502,
+    "adventurer": "Gala Alex",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150501,
+    "adventurer": "Yaten",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10140503,
+    "adventurer": "Audric",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10140501,
+    "adventurer": "Berserker",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10130501,
+    "adventurer": "Rodrigo",
+    "rarity": 3,
+    "element": "Shadow",
+    "weaponType": "Sword",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10250503,
+    "adventurer": "Linnea",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250502,
+    "adventurer": "Natalie",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250501,
+    "adventurer": "Ieyasu",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Blade",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10240503,
+    "adventurer": "Aldred",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10240502,
+    "adventurer": "Durant",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10230501,
+    "adventurer": "Taro",
+    "rarity": 3,
+    "element": "Shadow",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350505,
+    "adventurer": "Joker",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350504,
+    "adventurer": "Nevin",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350503,
+    "adventurer": "Bellina",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350502,
+    "adventurer": "Delphi",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10340502,
+    "adventurer": "Alex",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10340501,
+    "adventurer": "Orion",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10330502,
+    "adventurer": "Vida",
+    "rarity": 3,
+    "element": "Shadow",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10330501,
+    "adventurer": "Vice",
+    "rarity": 3,
+    "element": "Shadow",
+    "weaponType": "Dagger",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10450503,
+    "adventurer": "Dragonyule Victor",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450502,
+    "adventurer": "Summer Patia",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450501,
+    "adventurer": "Curran",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10440501,
+    "adventurer": "Sazanka",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10430501,
+    "adventurer": "Erik",
+    "rarity": 3,
+    "element": "Shadow",
+    "weaponType": "Axe",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10550502,
+    "adventurer": "Lathna",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10550501,
+    "adventurer": "Forte",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10540502,
+    "adventurer": "Patia",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10540501,
+    "adventurer": "Botan",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Lance",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10530501,
+    "adventurer": "Zace",
+    "rarity": 3,
+    "element": "Shadow",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650504,
+    "adventurer": "Opera Karina",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650503,
+    "adventurer": "Chelle",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650502,
+    "adventurer": "Valentine's Addis",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650501,
+    "adventurer": "Nefaria",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Bow",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10640501,
+    "adventurer": "Norwin",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750505,
+    "adventurer": "Vania",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750504,
+    "adventurer": "Zena",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750503,
+    "adventurer": "Cassandra",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10750502,
+    "adventurer": "Gala Cleo",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Wand",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750501,
+    "adventurer": "Veronica",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10740501,
+    "adventurer": "Kleimann",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10730501,
+    "adventurer": "Althemia",
+    "rarity": 3,
+    "element": "Shadow",
+    "weaponType": "Wand",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10850503,
+    "adventurer": "Grace",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850502,
+    "adventurer": "Summer Verica",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10850501,
+    "adventurer": "Heinwald",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10840501,
+    "adventurer": "Cleo",
+    "rarity": 4,
+    "element": "Shadow",
+    "weaponType": "Staff",
+    "mcLimit": 70
+  },
+  {
+    "adventurerId": 10830501,
+    "adventurer": "Edward",
+    "rarity": 3,
+    "element": "Shadow",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10950501,
+    "adventurer": "Gala Chelle",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  }
+]

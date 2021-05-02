@@ -1,0 +1,1791 @@
+[
+  {
+    "wyrmprintId": 40090012,
+    "wyrmprint": "Savage Hawk (Lance's Boon)",
+    "rarity": 9,
+    "affinity": "Lance's Boon",
+    "abilities": ["Sword's Psalm"]
+  },
+  {
+    "wyrmprintId": 40090011,
+    "wyrmprint": "Beneath the Boughs (Staff's Boon)",
+    "rarity": 9,
+    "affinity": "Staff's Boon",
+    "abilities": ["Draconic Resurrection"]
+  },
+  {
+    "wyrmprintId": 40090010,
+    "wyrmprint": "Savage Hawk (Bow's Boon)",
+    "rarity": 9,
+    "affinity": "Bow's Boon",
+    "abilities": ["Stormlashed Punisher"]
+  },
+  {
+    "wyrmprintId": 40090009,
+    "wyrmprint": "Beneath the Boughs (Wolf's Boon)",
+    "rarity": 9,
+    "affinity": "Wolf's Boon",
+    "abilities": ["Draconic Resurrection"]
+  },
+  {
+    "wyrmprintId": 40090008,
+    "wyrmprint": "Wind of Oaths (Eagle's Boon)",
+    "rarity": 9,
+    "affinity": "Eagle's Boon",
+    "abilities": ["Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40090007,
+    "wyrmprint": "\"A Knight's Dream\" (Axe's Boon)",
+    "rarity": 9,
+    "affinity": "Axe's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40090006,
+    "wyrmprint": "Mask of Determination (Bow's Boon)",
+    "rarity": 9,
+    "affinity": "Bow's Boon",
+    "abilities": ["Sword's Psalm"]
+  },
+  {
+    "wyrmprintId": 40090005,
+    "wyrmprint": "Her Beloved (Crown's Boon)",
+    "rarity": 9,
+    "affinity": "Crown's Boon",
+    "abilities": ["Forbidden Corrosion"]
+  },
+  {
+    "wyrmprintId": 40090004,
+    "wyrmprint": "Mask of Determination (Lance's Boon)",
+    "rarity": 9,
+    "affinity": "Lance's Boon",
+    "abilities": ["Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40090003,
+    "wyrmprint": "Her Beloved (Sword's Boon)",
+    "rarity": 9,
+    "affinity": "Sword's Boon",
+    "abilities": ["Forbidden Corrosion"]
+  },
+  {
+    "wyrmprintId": 40090002,
+    "wyrmprint": "Tutelary's Destiny (Wolf's Boon)",
+    "rarity": 9,
+    "affinity": "Wolf's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40090001,
+    "wyrmprint": "Crown of Light (Serpent's Boon)",
+    "rarity": 9,
+    "affinity": "Serpent's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050134,
+    "wyrmprint": "Advent of the War God",
+    "rarity": 5,
+    "abilities": ["(Wind) Flurry Devastation"]
+  },
+  {
+    "wyrmprintId": 40050133,
+    "wyrmprint": "Bloody Little Queen",
+    "rarity": 5,
+    "abilities": ["(Wand) Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40050132,
+    "wyrmprint": "Springtime Breeze",
+    "rarity": 5,
+    "abilities": ["(Staff) Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050131,
+    "wyrmprint": "Holywyrm's Advent",
+    "rarity": 5,
+    "abilities": ["Reduced Defense & Enhanced Shapeshifting"]
+  },
+  {
+    "wyrmprintId": 40050130,
+    "wyrmprint": "Extreme Teamwork",
+    "rarity": 5,
+    "abilities": ["Flashburned Punisher", "Sacred Stone"]
+  },
+  {
+    "wyrmprintId": 40050129,
+    "wyrmprint": "Rivalry of Kings",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["(Manacaster) Skill Damage", "Intelligence"]
+  },
+  {
+    "wyrmprintId": 40050128,
+    "wyrmprint": "Sweet Surprise",
+    "rarity": 5,
+    "affinity": "Eagle's Boon",
+    "abilities": ["Stormlashed Punisher"]
+  },
+  {
+    "wyrmprintId": 40050127,
+    "wyrmprint": "Showtime!",
+    "rarity": 5,
+    "affinity": "Lance's Boon",
+    "abilities": ["Force Strike"]
+  },
+  {
+    "wyrmprintId": 40050126,
+    "wyrmprint": "Caged Desire",
+    "rarity": 5,
+    "affinity": "Crown's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050125,
+    "wyrmprint": "The Cutie Competition",
+    "rarity": 5,
+    "affinity": "Staff's Boon",
+    "abilities": ["Scorchrent Punisher"]
+  },
+  {
+    "wyrmprintId": 40050124,
+    "wyrmprint": "Dragonyule Dreaming",
+    "rarity": 5,
+    "affinity": "Bow's Boon",
+    "abilities": ["Bleeding Punisher"]
+  },
+  {
+    "wyrmprintId": 40050123,
+    "wyrmprint": "Meanwhile, in Landosol...",
+    "rarity": 5,
+    "affinity": "Axe's Boon",
+    "abilities": ["Striking Haste"]
+  },
+  {
+    "wyrmprintId": 40050122,
+    "wyrmprint": "Pecorine's Grand Adventure",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["HP 70 = Strength"]
+  },
+  {
+    "wyrmprintId": 40050121,
+    "wyrmprint": "A Man Unchanging",
+    "rarity": 5,
+    "abilities": ["Poisoned Punisher"]
+  },
+  {
+    "wyrmprintId": 40050120,
+    "wyrmprint": "Welcome to the Opera!",
+    "rarity": 5,
+    "abilities": ["Vibrato", "Shadowblighted Punisher"]
+  },
+  {
+    "wyrmprintId": 40050119,
+    "wyrmprint": "Free-Spirited Opera",
+    "rarity": 5,
+    "abilities": ["Librettos", "Strength -10 & Strength Debilitator"]
+  },
+  {
+    "wyrmprintId": 40050118,
+    "wyrmprint": "Secret Nightmare",
+    "rarity": 5,
+    "abilities": ["Poison = Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40050117,
+    "wyrmprint": "Guardian of the Bond",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon's Scales"]
+  },
+  {
+    "wyrmprintId": 40050116,
+    "wyrmprint": "Second Anniversary",
+    "rarity": 5,
+    "abilities": ["United Strength"]
+  },
+  {
+    "wyrmprintId": 40050115,
+    "wyrmprint": "Moonlight Party",
+    "rarity": 5,
+    "abilities": ["HP 70 = Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40050114,
+    "wyrmprint": "A Day in Her Life",
+    "rarity": 5,
+    "abilities": ["(Shadow) Paralysis Res", "Sanctity"]
+  },
+  {
+    "wyrmprintId": 40050113,
+    "wyrmprint": "Wings in the Night",
+    "rarity": 5,
+    "abilities": ["Striking Haste", "Holy Ore"]
+  },
+  {
+    "wyrmprintId": 40050112,
+    "wyrmprint": "Memories of Summer's Dusk",
+    "rarity": 5,
+    "abilities": ["Stunned Punisher"]
+  },
+  {
+    "wyrmprintId": 40050111,
+    "wyrmprint": "Blossoms on the Water's Edge",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon Haste"]
+  },
+  {
+    "wyrmprintId": 40050110,
+    "wyrmprint": "Summertime, Feeling Feline",
+    "rarity": 5,
+    "affinity": "Staff's Boon",
+    "abilities": ["Striker's Strength"]
+  },
+  {
+    "wyrmprintId": 40050109,
+    "wyrmprint": "Once in a Lifetime",
+    "rarity": 5,
+    "abilities": ["(Water) Skill Haste", "Festival Spirit"]
+  },
+  {
+    "wyrmprintId": 40050108,
+    "wyrmprint": "Best Buds",
+    "rarity": 5,
+    "abilities": ["Ornate Lanterns", "Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40050107,
+    "wyrmprint": "Me and My Bestie!",
+    "rarity": 5,
+    "abilities": ["Burning Punisher"]
+  },
+  {
+    "wyrmprintId": 40050106,
+    "wyrmprint": "Here Come the Sealers!",
+    "rarity": 5,
+    "affinity": "Lance's Boon",
+    "abilities": ["Force Strike"]
+  },
+  {
+    "wyrmprintId": 40050105,
+    "wyrmprint": "Memory of a Friend",
+    "rarity": 5,
+    "affinity": "Lance's Boon",
+    "abilities": ["Flurry Strength"]
+  },
+  {
+    "wyrmprintId": 40050104,
+    "wyrmprint": "A New Look",
+    "rarity": 5,
+    "abilities": ["Resolve (Ability)", "Slayer's Devastation"]
+  },
+  {
+    "wyrmprintId": 40050103,
+    "wyrmprint": "Welcome to the Halidom!",
+    "rarity": 5,
+    "abilities": ["Resolve (Ability)", "Last Recovery"]
+  },
+  {
+    "wyrmprintId": 40050102,
+    "wyrmprint": "Memories of Youth",
+    "rarity": 5,
+    "affinity": "Axe's Boon",
+    "abilities": ["Striker's Strength"]
+  },
+  {
+    "wyrmprintId": 40050101,
+    "wyrmprint": "The Red Impulse",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon's Skill"]
+  },
+  {
+    "wyrmprintId": 40050100,
+    "wyrmprint": "Proper Maintenance",
+    "rarity": 5,
+    "affinity": "Sword's Boon",
+    "abilities": ["Buff Skill Time"]
+  },
+  {
+    "wyrmprintId": 40050099,
+    "wyrmprint": "The Synthetic Dragon",
+    "rarity": 5,
+    "affinity": "Eagle's Boon",
+    "abilities": ["Resilient Offense"]
+  },
+  {
+    "wyrmprintId": 40050098,
+    "wyrmprint": "Brothers in Arms",
+    "rarity": 5,
+    "abilities": ["Strength Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40050097,
+    "wyrmprint": "Dazzling Duet!",
+    "rarity": 5,
+    "affinity": "Sword's Boon",
+    "abilities": ["Striking Haste"]
+  },
+  {
+    "wyrmprintId": 40050096,
+    "wyrmprint": "The Ilian Faithful",
+    "rarity": 5,
+    "abilities": ["(Wind) Affliction Guard"]
+  },
+  {
+    "wyrmprintId": 40050095,
+    "wyrmprint": "Breakfast at Valerio's",
+    "rarity": 5,
+    "abilities": ["Zest", "Flurry Strength"]
+  },
+  {
+    "wyrmprintId": 40050094,
+    "wyrmprint": "Berry Lovable Friends",
+    "rarity": 5,
+    "abilities": ["Chef's Special", "Full HP = Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050093,
+    "wyrmprint": "The Fires of Hate",
+    "rarity": 5,
+    "affinity": "Sword's Boon",
+    "abilities": ["Full HP = Strength"]
+  },
+  {
+    "wyrmprintId": 40050092,
+    "wyrmprint": "A Suit of Midnight",
+    "rarity": 5,
+    "abilities": ["(Shadow) Affliction Guard"]
+  },
+  {
+    "wyrmprintId": 40050091,
+    "wyrmprint": "The Lurker in the Woods",
+    "rarity": 5,
+    "affinity": "Lance's Boon",
+    "abilities": ["Force Strike"]
+  },
+  {
+    "wyrmprintId": 40050090,
+    "wyrmprint": "Primal Crisis",
+    "rarity": 5,
+    "abilities": ["Flurry Strength"]
+  },
+  {
+    "wyrmprintId": 40050089,
+    "wyrmprint": "Unexpected Requests",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Last Devastation"]
+  },
+  {
+    "wyrmprintId": 40050088,
+    "wyrmprint": "Felyne Hospitality",
+    "rarity": 5,
+    "abilities": ["Critical Damage Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40050087,
+    "wyrmprint": "Blossoms in a New Year's Sky",
+    "rarity": 5,
+    "abilities": ["Energy Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40050086,
+    "wyrmprint": "A Dog's Day",
+    "rarity": 5,
+    "abilities": ["(Wind) Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40050085,
+    "wyrmprint": "The Wyrmclan Duo",
+    "rarity": 5,
+    "affinity": "Crown's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050084,
+    "wyrmprint": "Spirit of the Season",
+    "rarity": 5,
+    "abilities": ["Paralyzed Punisher", "Holiday Cheer"]
+  },
+  {
+    "wyrmprintId": 40050083,
+    "wyrmprint": "Howling to the Heavens",
+    "rarity": 5,
+    "abilities": ["(Shadow) Flurry Devastation"]
+  },
+  {
+    "wyrmprintId": 40050082,
+    "wyrmprint": "Mega Friends",
+    "rarity": 5,
+    "abilities": ["Wily Machine's Bane", "Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050081,
+    "wyrmprint": "Roll On",
+    "rarity": 5,
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40050080,
+    "wyrmprint": "Wily Warriors: Flash & Heat",
+    "rarity": 5,
+    "abilities": ["Brainwashed Brunhilda's Bane", "Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40050079,
+    "wyrmprint": "Wily Warriors: Metal & Quick",
+    "rarity": 5,
+    "abilities": ["HP 70 = Critical Damage", "Brainwashed Mercury's Bane"]
+  },
+  {
+    "wyrmprintId": 40050078,
+    "wyrmprint": "Wily Warriors: Air & Crash",
+    "rarity": 5,
+    "abilities": ["Brainwashed Jupiter's Bane", "Flurry Strength"]
+  },
+  {
+    "wyrmprintId": 40050077,
+    "wyrmprint": "Wily Warriors: Bubble & Wood",
+    "rarity": 5,
+    "abilities": ["Brainwashed Zodiark's Bane", "HP 70 = Strength"]
+  },
+  {
+    "wyrmprintId": 40050076,
+    "wyrmprint": "Dear Diary",
+    "rarity": 5,
+    "abilities": ["(Bow) Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40050075,
+    "wyrmprint": "Prayers Unto Him",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon Damage"]
+  },
+  {
+    "wyrmprintId": 40050074,
+    "wyrmprint": "In an Unending World",
+    "rarity": 5,
+    "abilities": ["A Song That Envelops the World"]
+  },
+  {
+    "wyrmprintId": 40050073,
+    "wyrmprint": "An Ancient Oath",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon's Claws"]
+  },
+  {
+    "wyrmprintId": 40050072,
+    "wyrmprint": "Endless Waltz",
+    "rarity": 5,
+    "affinity": "Sword's Boon",
+    "abilities": ["Full HP = Strength"]
+  },
+  {
+    "wyrmprintId": 40050071,
+    "wyrmprint": "Ruler of Darkness",
+    "rarity": 5,
+    "abilities": ["High Zodiark Res"]
+  },
+  {
+    "wyrmprintId": 40050070,
+    "wyrmprint": "Castle Cheer Corps",
+    "rarity": 5,
+    "affinity": "Bow's Boon",
+    "abilities": ["Force Charge"]
+  },
+  {
+    "wyrmprintId": 40050069,
+    "wyrmprint": "Twinfold Bonds",
+    "rarity": 5,
+    "abilities": ["(Dagger) Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050068,
+    "wyrmprint": "Surfing Siblings",
+    "rarity": 5,
+    "abilities": ["Full HP = Critical Damage", "Glam Shells"]
+  },
+  {
+    "wyrmprintId": 40050067,
+    "wyrmprint": "Seaside Princess",
+    "rarity": 5,
+    "abilities": ["Hype", "Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40050066,
+    "wyrmprint": "Summer Paladyns",
+    "rarity": 5,
+    "abilities": ["(Axe) Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050065,
+    "wyrmprint": "King of the Skies",
+    "rarity": 5,
+    "abilities": ["High Jupiter Res"]
+  },
+  {
+    "wyrmprintId": 40050064,
+    "wyrmprint": "The Dragon Smiths",
+    "rarity": 5,
+    "abilities": ["Motivational Logs", "Healing Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40050063,
+    "wyrmprint": "Sisters' Day Out",
+    "rarity": 5,
+    "abilities": ["Force Charge", "Mettle"]
+  },
+  {
+    "wyrmprintId": 40050062,
+    "wyrmprint": "Indelible Summer",
+    "rarity": 5,
+    "affinity": "Wolf's Boon",
+    "abilities": ["(Water) Affliction Guard"]
+  },
+  {
+    "wyrmprintId": 40050061,
+    "wyrmprint": "The Bridal Dragon",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon Damage"]
+  },
+  {
+    "wyrmprintId": 40050060,
+    "wyrmprint": "Study Rabbits",
+    "rarity": 5,
+    "affinity": "Staff's Boon",
+    "abilities": ["HP"]
+  },
+  {
+    "wyrmprintId": 40050059,
+    "wyrmprint": "After an Eternity",
+    "rarity": 5,
+    "affinity": "Bull's Boon",
+    "abilities": ["(Shadow) Affliction Guard"]
+  },
+  {
+    "wyrmprintId": 40050058,
+    "wyrmprint": "Bonds Between Worlds",
+    "rarity": 5,
+    "abilities": ["HP 70 = Strength"]
+  },
+  {
+    "wyrmprintId": 40050057,
+    "wyrmprint": "The Heroes Arrive",
+    "rarity": 5,
+    "abilities": ["Valor (Ability)", "Slayer's Strength"]
+  },
+  {
+    "wyrmprintId": 40050056,
+    "wyrmprint": "Queen of the Blue Seas",
+    "rarity": 5,
+    "abilities": ["High Mercury Res"]
+  },
+  {
+    "wyrmprintId": 40050054,
+    "wyrmprint": "A Mother's Love",
+    "rarity": 5,
+    "abilities": ["Eggsploration Points", "Gauge Accelerator"]
+  },
+  {
+    "wyrmprintId": 40050053,
+    "wyrmprint": "Forest Bonds",
+    "rarity": 5,
+    "abilities": ["Eggsploration Points", "(Bow) Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050052,
+    "wyrmprint": "Honest Repose",
+    "rarity": 5,
+    "abilities": ["(Flame) Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40050051,
+    "wyrmprint": "Take My Hand",
+    "rarity": 5,
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40050050,
+    "wyrmprint": "Elegant Escort",
+    "rarity": 5,
+    "abilities": ["Burning Punisher"]
+  },
+  {
+    "wyrmprintId": 40050049,
+    "wyrmprint": "An Indelible Date",
+    "rarity": 5,
+    "abilities": ["Broken Punisher"]
+  },
+  {
+    "wyrmprintId": 40050048,
+    "wyrmprint": "Valentine's Venture",
+    "rarity": 5,
+    "abilities": ["Last Offense"]
+  },
+  {
+    "wyrmprintId": 40050047,
+    "wyrmprint": "A Heartfelt Gift",
+    "rarity": 5,
+    "abilities": ["Loving Heart"]
+  },
+  {
+    "wyrmprintId": 40050046,
+    "wyrmprint": "Hitting the Books",
+    "rarity": 5,
+    "abilities": ["Forbidden Knowledge", "Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050045,
+    "wyrmprint": "The Fleeting Girl",
+    "rarity": 5,
+    "abilities": ["Forbidden Knowledge", "Last Recovery"]
+  },
+  {
+    "wyrmprintId": 40050044,
+    "wyrmprint": "Partners in Truth",
+    "rarity": 5,
+    "abilities": ["Bog Res"]
+  },
+  {
+    "wyrmprintId": 40050043,
+    "wyrmprint": "A Solitary Light",
+    "rarity": 5,
+    "affinity": "Serpent's Boon",
+    "abilities": ["(Light) Affliction Guard"]
+  },
+  {
+    "wyrmprintId": 40050042,
+    "wyrmprint": "The Shining Overlord",
+    "rarity": 5,
+    "abilities": ["(Sword) Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050041,
+    "wyrmprint": "The Petal Queen",
+    "rarity": 5,
+    "abilities": ["Energy Prep (Ability)"]
+  },
+  {
+    "wyrmprintId": 40050040,
+    "wyrmprint": "The Rose Prince",
+    "rarity": 5,
+    "affinity": "Wolf's Boon",
+    "abilities": ["(Flame) Affliction Guard"]
+  },
+  {
+    "wyrmprintId": 40050039,
+    "wyrmprint": "The Chocolatiers",
+    "rarity": 5,
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40050038,
+    "wyrmprint": "Kung Fu Masters",
+    "rarity": 5,
+    "abilities": ["(Axe) Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40050037,
+    "wyrmprint": "Warrior Maiden",
+    "rarity": 5,
+    "affinity": "Staff's Boon",
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40050036,
+    "wyrmprint": "Astounding Trick",
+    "rarity": 5,
+    "abilities": ["(Wind) Buff Skill Time", "Renown"]
+  },
+  {
+    "wyrmprintId": 40050035,
+    "wyrmprint": "Stellar Show",
+    "rarity": 5,
+    "abilities": ["Force Strike", "Renown"]
+  },
+  {
+    "wyrmprintId": 40050034,
+    "wyrmprint": "Dragon and Tamer",
+    "rarity": 5,
+    "abilities": ["(Lance) Skill Damage", "Renown"]
+  },
+  {
+    "wyrmprintId": 40050033,
+    "wyrmprint": "Heralds of Hinomoto",
+    "rarity": 5,
+    "affinity": "Crown's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050032,
+    "wyrmprint": "Happy New Year!",
+    "rarity": 5,
+    "abilities": ["Light Res"]
+  },
+  {
+    "wyrmprintId": 40050031,
+    "wyrmprint": "The Greatest Gift",
+    "rarity": 5,
+    "abilities": ["Happy Dragonyule!"]
+  },
+  {
+    "wyrmprintId": 40050030,
+    "wyrmprint": "A Slice of Dragonyule",
+    "rarity": 5,
+    "abilities": ["Skill Prep", "Holiday Cheer"]
+  },
+  {
+    "wyrmprintId": 40050029,
+    "wyrmprint": "The Prince of Dragonyule",
+    "rarity": 5,
+    "abilities": ["(Water) Flurry Devastation", "Holiday Cheer"]
+  },
+  {
+    "wyrmprintId": 40050028,
+    "wyrmprint": "A Wish Upon the Yuletree",
+    "rarity": 5,
+    "abilities": ["Holiday Cheer", "HP 70 = Defense"]
+  },
+  {
+    "wyrmprintId": 40050027,
+    "wyrmprint": "Heavenly Holiday",
+    "rarity": 5,
+    "abilities": ["Curse Res"]
+  },
+  {
+    "wyrmprintId": 40050026,
+    "wyrmprint": "Resounding Rendition",
+    "rarity": 5,
+    "affinity": "Crown's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050024,
+    "wyrmprint": "Volcanic Queen",
+    "rarity": 5,
+    "abilities": ["High Brunhilda Res"]
+  },
+  {
+    "wyrmprintId": 40050023,
+    "wyrmprint": "Louise's Hobbies",
+    "rarity": 5,
+    "abilities": ["Recovery Potency", "Divine Gales"]
+  },
+  {
+    "wyrmprintId": 40050022,
+    "wyrmprint": "Gale of Beauty",
+    "rarity": 5,
+    "abilities": ["Broken Punisher", "Divine Gales"]
+  },
+  {
+    "wyrmprintId": 40050021,
+    "wyrmprint": "Gentle Winds",
+    "rarity": 5,
+    "abilities": ["Skill Prep", "Divine Gales"]
+  },
+  {
+    "wyrmprintId": 40050020,
+    "wyrmprint": "Jewels of the Sun",
+    "rarity": 5,
+    "affinity": "Bow's Boon",
+    "abilities": ["Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40050019,
+    "wyrmprint": "Candy Couriers",
+    "rarity": 5,
+    "abilities": ["(Wand) Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050018,
+    "wyrmprint": "Plunder Pals",
+    "rarity": 5,
+    "abilities": ["Skill Damage", "Tricker Treats"]
+  },
+  {
+    "wyrmprintId": 40050017,
+    "wyrmprint": "Of Tricks and Treats",
+    "rarity": 5,
+    "abilities": ["Tricker Treats", "Shadow Res"]
+  },
+  {
+    "wyrmprintId": 40050016,
+    "wyrmprint": "Witch's Kitchen",
+    "rarity": 5,
+    "abilities": ["Tricker Treats", "Full HP = Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050015,
+    "wyrmprint": "Crystalian Envoy",
+    "rarity": 5,
+    "abilities": ["HP 70 = Strength"]
+  },
+  {
+    "wyrmprintId": 40050014,
+    "wyrmprint": "Tough Love",
+    "rarity": 5,
+    "affinity": "Axe's Boon",
+    "abilities": ["Last Offense"]
+  },
+  {
+    "wyrmprintId": 40050013,
+    "wyrmprint": "Cleo's Ruse",
+    "rarity": 5,
+    "affinity": "Staff's Boon",
+    "abilities": ["HP 70 = Healing"]
+  },
+  {
+    "wyrmprintId": 40050012,
+    "wyrmprint": "United by One Vision",
+    "rarity": 5,
+    "abilities": ["United Haste"]
+  },
+  {
+    "wyrmprintId": 40050011,
+    "wyrmprint": "Glorious Tempest",
+    "rarity": 5,
+    "abilities": ["High Midgardsormr Res"]
+  },
+  {
+    "wyrmprintId": 40050010,
+    "wyrmprint": "Nightstalker",
+    "rarity": 5,
+    "affinity": "Lance's Boon",
+    "abilities": ["Force Strike"]
+  },
+  {
+    "wyrmprintId": 40050009,
+    "wyrmprint": "Levin's Champion",
+    "rarity": 5,
+    "abilities": ["HP 70 = Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40050008,
+    "wyrmprint": "Give Me Your Wounded",
+    "rarity": 5,
+    "affinity": "Staff's Boon",
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40050007,
+    "wyrmprint": "Luca's Prank",
+    "rarity": 5,
+    "affinity": "Crown's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050006,
+    "wyrmprint": "Dragon Brethren",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon Time"]
+  },
+  {
+    "wyrmprintId": 40050005,
+    "wyrmprint": "Auspex's Prayer",
+    "rarity": 5,
+    "affinity": "Bow's Boon",
+    "abilities": ["Full HP = Healing"]
+  },
+  {
+    "wyrmprintId": 40050004,
+    "wyrmprint": "Worthy Rivals",
+    "rarity": 5,
+    "affinity": "Axe's Boon",
+    "abilities": ["Broken Punisher"]
+  },
+  {
+    "wyrmprintId": 40050003,
+    "wyrmprint": "Evening of Luxury",
+    "rarity": 5,
+    "affinity": "Sword's Boon",
+    "abilities": ["Full HP = Strength"]
+  },
+  {
+    "wyrmprintId": 40050002,
+    "wyrmprint": "Flash of Genius",
+    "rarity": 5,
+    "affinity": "Lance's Boon",
+    "abilities": ["Flurry Strength"]
+  },
+  {
+    "wyrmprintId": 40050001,
+    "wyrmprint": "Valiant Crown",
+    "rarity": 5,
+    "affinity": "Crown's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40040094,
+    "wyrmprint": "Two Myms",
+    "rarity": 4,
+    "abilities": ["(Wand) Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40040093,
+    "wyrmprint": "Humanity's Companions",
+    "rarity": 4,
+    "affinity": "Lance's Boon",
+    "abilities": ["Striker's Strength"]
+  },
+  {
+    "wyrmprintId": 40040092,
+    "wyrmprint": "Amaterasu Oblation",
+    "rarity": 4,
+    "abilities": ["(Flame) Buff Skill Time"]
+  },
+  {
+    "wyrmprintId": 40040091,
+    "wyrmprint": "Beautiful Gunman",
+    "rarity": 4,
+    "affinity": "Sword's Boon",
+    "abilities": ["(Manacaster) Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40040090,
+    "wyrmprint": "Enter the Blue Rose!",
+    "rarity": 4,
+    "abilities": ["Vibrato", "(Manacaster) Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40040089,
+    "wyrmprint": "Rogues' Banquet",
+    "rarity": 4,
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40040088,
+    "wyrmprint": "A Perfect Faerie Tale",
+    "rarity": 4,
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40040087,
+    "wyrmprint": "Blessed Days",
+    "rarity": 4,
+    "abilities": ["Debuff Skill Time"]
+  },
+  {
+    "wyrmprintId": 40040086,
+    "wyrmprint": "To My Dear Child",
+    "rarity": 4,
+    "abilities": ["Stunned Punisher"]
+  },
+  {
+    "wyrmprintId": 40040085,
+    "wyrmprint": "Dance of the Twin Blossoms",
+    "rarity": 4,
+    "affinity": "Crown's Boon",
+    "abilities": ["Full HP = Healing"]
+  },
+  {
+    "wyrmprintId": 40040084,
+    "wyrmprint": "Treasury of Knowledge",
+    "rarity": 4,
+    "abilities": ["Sanctity", "Sleeping Punisher"]
+  },
+  {
+    "wyrmprintId": 40040083,
+    "wyrmprint": "A Passion for Produce",
+    "rarity": 4,
+    "abilities": ["(Dagger) Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40040082,
+    "wyrmprint": "Seaside Memory",
+    "rarity": 4,
+    "affinity": "Bow's Boon",
+    "abilities": ["Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40040081,
+    "wyrmprint": "Fun in the Sun",
+    "rarity": 4,
+    "abilities": ["Water Res"]
+  },
+  {
+    "wyrmprintId": 40040080,
+    "wyrmprint": "Such High Spirits!",
+    "rarity": 4,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon Time"]
+  },
+  {
+    "wyrmprintId": 40040079,
+    "wyrmprint": "Catch Me in the Sunflowers",
+    "rarity": 4,
+    "abilities": ["Festival Spirit", "Bleeding Punisher"]
+  },
+  {
+    "wyrmprintId": 40040078,
+    "wyrmprint": "Flowers Under the Moon",
+    "rarity": 4,
+    "affinity": "Lance's Boon",
+    "abilities": ["Striking Haste"]
+  },
+  {
+    "wyrmprintId": 40040077,
+    "wyrmprint": "A Bouquet",
+    "rarity": 4,
+    "affinity": "Crown's Boon",
+    "abilities": ["Life Shield Prep"]
+  },
+  {
+    "wyrmprintId": 40040076,
+    "wyrmprint": "Happy Times",
+    "rarity": 4,
+    "abilities": ["Strength Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40040075,
+    "wyrmprint": "Fallen Wings",
+    "rarity": 4,
+    "abilities": ["Dragon Damage"]
+  },
+  {
+    "wyrmprintId": 40040074,
+    "wyrmprint": "A Pledge of Protection",
+    "rarity": 4,
+    "abilities": ["Blindness Res"]
+  },
+  {
+    "wyrmprintId": 40040073,
+    "wyrmprint": "A Widow's Lament",
+    "rarity": 4,
+    "affinity": "Staff's Boon",
+    "abilities": ["Last Defense"]
+  },
+  {
+    "wyrmprintId": 40040072,
+    "wyrmprint": "A Small Courage",
+    "rarity": 4,
+    "affinity": "Sword's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40040071,
+    "wyrmprint": "The Queen of the Knife",
+    "rarity": 4,
+    "abilities": ["Zest", "Flurry Devastation"]
+  },
+  {
+    "wyrmprintId": 40040070,
+    "wyrmprint": "The Maid Crusade",
+    "rarity": 4,
+    "affinity": "Staff's Boon",
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40040069,
+    "wyrmprint": "Soaring Terror",
+    "rarity": 4,
+    "abilities": ["HP 70 = Defense"]
+  },
+  {
+    "wyrmprintId": 40040068,
+    "wyrmprint": "The Plaguebringer",
+    "rarity": 4,
+    "abilities": ["Poisoned Punisher"]
+  },
+  {
+    "wyrmprintId": 40040067,
+    "wyrmprint": "A Game of Cat and Boar",
+    "rarity": 4,
+    "abilities": ["(Light) Buff Skill Time"]
+  },
+  {
+    "wyrmprintId": 40040066,
+    "wyrmprint": "A New Year's Battle",
+    "rarity": 4,
+    "abilities": ["Flurry Devastation"]
+  },
+  {
+    "wyrmprintId": 40040065,
+    "wyrmprint": "Glittering Dragonyule",
+    "rarity": 4,
+    "abilities": ["Astral Ornament", "Flame Res"]
+  },
+  {
+    "wyrmprintId": 40040064,
+    "wyrmprint": "Fluff Aplenty",
+    "rarity": 4,
+    "abilities": ["Freeze Res"]
+  },
+  {
+    "wyrmprintId": 40040063,
+    "wyrmprint": "Chariot Drift",
+    "rarity": 4,
+    "affinity": "Bow's Boon",
+    "abilities": ["Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40040062,
+    "wyrmprint": "From Whence He Comes",
+    "rarity": 4,
+    "affinity": "Staff's Boon",
+    "abilities": ["Buff Skill Time"]
+  },
+  {
+    "wyrmprintId": 40040061,
+    "wyrmprint": "The Bewitching Magician",
+    "rarity": 4,
+    "abilities": ["Light Res"]
+  },
+  {
+    "wyrmprintId": 40040060,
+    "wyrmprint": "Masquerade Mission",
+    "rarity": 4,
+    "abilities": ["Shadow Res"]
+  },
+  {
+    "wyrmprintId": 40040059,
+    "wyrmprint": "Odd Sparrows",
+    "rarity": 4,
+    "affinity": "Axe's Boon",
+    "abilities": ["Healing Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40040058,
+    "wyrmprint": "Beautiful Nothingness",
+    "rarity": 4,
+    "affinity": "Sword's Boon",
+    "abilities": ["HP 70 = Strength"]
+  },
+  {
+    "wyrmprintId": 40040057,
+    "wyrmprint": "Hastened Squall",
+    "rarity": 4,
+    "abilities": ["(Wind) Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40040056,
+    "wyrmprint": "The Bustling Hut",
+    "rarity": 4,
+    "abilities": ["(Light) Skill Haste", "Hype"]
+  },
+  {
+    "wyrmprintId": 40040055,
+    "wyrmprint": "Preacher's Vacation",
+    "rarity": 4,
+    "abilities": ["Flame Res"]
+  },
+  {
+    "wyrmprintId": 40040054,
+    "wyrmprint": "Beach Battle",
+    "rarity": 4,
+    "affinity": "Eagle's Boon",
+    "abilities": ["(Water) Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40040053,
+    "wyrmprint": "To the Extreme!",
+    "rarity": 4,
+    "abilities": ["(Flame) Flurry Devastation", "Mettle"]
+  },
+  {
+    "wyrmprintId": 40040052,
+    "wyrmprint": "Taiko Tandem",
+    "rarity": 4,
+    "affinity": "Crown's Boon",
+    "abilities": ["Hits = Energy Level Up"]
+  },
+  {
+    "wyrmprintId": 40040051,
+    "wyrmprint": "Halidom Grooms",
+    "rarity": 4,
+    "affinity": "Staff's Boon",
+    "abilities": ["Energy Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40040050,
+    "wyrmprint": "A Maddened Master",
+    "rarity": 4,
+    "abilities": ["Wind Res"]
+  },
+  {
+    "wyrmprintId": 40040049,
+    "wyrmprint": "A Brief Repose",
+    "rarity": 4,
+    "abilities": ["Valor (Ability)", "Shield Prep"]
+  },
+  {
+    "wyrmprintId": 40040048,
+    "wyrmprint": "His Clever Brother",
+    "rarity": 4,
+    "abilities": ["Frostbitten Punisher"]
+  },
+  {
+    "wyrmprintId": 40040047,
+    "wyrmprint": "Egg-Shaped Dreams",
+    "rarity": 4,
+    "abilities": ["Eggsploration Points", "HP 70 = Defense"]
+  },
+  {
+    "wyrmprintId": 40040046,
+    "wyrmprint": "First-Rate Hospitality",
+    "rarity": 4,
+    "abilities": ["Forbidden Knowledge", "Strength Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40040044,
+    "wyrmprint": "Delightful Dancer",
+    "rarity": 4,
+    "abilities": ["Poison Res"]
+  },
+  {
+    "wyrmprintId": 40040043,
+    "wyrmprint": "New World Escort",
+    "rarity": 4,
+    "affinity": "Bull's Boon",
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40040042,
+    "wyrmprint": "Entwined Flames",
+    "rarity": 4,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Dragon Damage"]
+  },
+  {
+    "wyrmprintId": 40040041,
+    "wyrmprint": "Dragon Dance",
+    "rarity": 4,
+    "abilities": ["Bog Res"]
+  },
+  {
+    "wyrmprintId": 40040040,
+    "wyrmprint": "Lunar Festivities",
+    "rarity": 4,
+    "affinity": "Lance's Boon",
+    "abilities": ["Force Strike"]
+  },
+  {
+    "wyrmprintId": 40040039,
+    "wyrmprint": "Slow and Steady",
+    "rarity": 4,
+    "abilities": ["Poison Res", "Tent Canvas"]
+  },
+  {
+    "wyrmprintId": 40040038,
+    "wyrmprint": "Luck of the Draw",
+    "rarity": 4,
+    "abilities": ["(Shadow) Buff Skill Time"]
+  },
+  {
+    "wyrmprintId": 40040037,
+    "wyrmprint": "Hanetsuki Rally",
+    "rarity": 4,
+    "affinity": "Lance's Boon",
+    "abilities": ["Last Offense"]
+  },
+  {
+    "wyrmprintId": 40040036,
+    "wyrmprint": "Saintly Delivery",
+    "rarity": 4,
+    "abilities": ["Stun Res", "Astral Ornament"]
+  },
+  {
+    "wyrmprintId": 40040035,
+    "wyrmprint": "As the Snow Falls",
+    "rarity": 4,
+    "abilities": ["Curse Res"]
+  },
+  {
+    "wyrmprintId": 40040034,
+    "wyrmprint": "Kicking Back",
+    "rarity": 4,
+    "abilities": ["(Light) Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40040033,
+    "wyrmprint": "Fresh Perspective",
+    "rarity": 4,
+    "abilities": ["Force Strike", "Windwhistle Grass"]
+  },
+  {
+    "wyrmprintId": 40040032,
+    "wyrmprint": "Better Together",
+    "rarity": 4,
+    "abilities": ["Sleep Res"]
+  },
+  {
+    "wyrmprintId": 40040031,
+    "wyrmprint": "Samurai Siesta",
+    "rarity": 4,
+    "abilities": ["Sleep Res"]
+  },
+  {
+    "wyrmprintId": 40040030,
+    "wyrmprint": "Beauty's Secret",
+    "rarity": 4,
+    "affinity": "Sword's Boon",
+    "abilities": ["HP 70 = Strength"]
+  },
+  {
+    "wyrmprintId": 40040029,
+    "wyrmprint": "Silke Lends a Hand",
+    "rarity": 4,
+    "abilities": ["Blindness Res", "Snack-o'-Lanterns"]
+  },
+  {
+    "wyrmprintId": 40040028,
+    "wyrmprint": "The Warrioresses",
+    "rarity": 4,
+    "affinity": "Lance's Boon",
+    "abilities": ["Force Strike"]
+  },
+  {
+    "wyrmprintId": 40040027,
+    "wyrmprint": "Greatwyrm Zodiark",
+    "rarity": 4,
+    "abilities": ["Zodiark Res"]
+  },
+  {
+    "wyrmprintId": 40040026,
+    "wyrmprint": "Greatwyrm Jupiter",
+    "rarity": 4,
+    "abilities": ["Jupiter Res"]
+  },
+  {
+    "wyrmprintId": 40040025,
+    "wyrmprint": "Greatwyrm Brunhilda",
+    "rarity": 4,
+    "abilities": ["Brunhilda Res"]
+  },
+  {
+    "wyrmprintId": 40040024,
+    "wyrmprint": "Greatwyrm Mercury",
+    "rarity": 4,
+    "abilities": ["Mercury Res"]
+  },
+  {
+    "wyrmprintId": 40040023,
+    "wyrmprint": "Greatwyrm Midgardsormr",
+    "rarity": 4,
+    "abilities": ["Midgardsormr Res"]
+  },
+  {
+    "wyrmprintId": 40040022,
+    "wyrmprint": "Pipe Down",
+    "rarity": 4,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40040021,
+    "wyrmprint": "Paladyn Defender",
+    "rarity": 4,
+    "abilities": ["Burn Res"]
+  },
+  {
+    "wyrmprintId": 40040020,
+    "wyrmprint": "Happier Times",
+    "rarity": 4,
+    "abilities": ["Full HP = Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40040019,
+    "wyrmprint": "Together We Stand",
+    "rarity": 4,
+    "affinity": "Lance's Boon",
+    "abilities": ["Striker's Strength"]
+  },
+  {
+    "wyrmprintId": 40040018,
+    "wyrmprint": "Dueling Dancers",
+    "rarity": 4,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Flurry Devastation"]
+  },
+  {
+    "wyrmprintId": 40040017,
+    "wyrmprint": "Sisters of the Anvil",
+    "rarity": 4,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Strength Doublebuff"]
+  },
+  {
+    "wyrmprintId": 40040016,
+    "wyrmprint": "Revolutionary Magic",
+    "rarity": 4,
+    "abilities": ["Paralysis Res"]
+  },
+  {
+    "wyrmprintId": 40040015,
+    "wyrmprint": "Armorer's Aspirations",
+    "rarity": 4,
+    "affinity": "Sword's Boon",
+    "abilities": ["Full HP = Defense"]
+  },
+  {
+    "wyrmprintId": 40040014,
+    "wyrmprint": "Warlust",
+    "rarity": 4,
+    "affinity": "Crown's Boon",
+    "abilities": ["Last Offense"]
+  },
+  {
+    "wyrmprintId": 40040013,
+    "wyrmprint": "One with the Shadows",
+    "rarity": 4,
+    "abilities": ["Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40040012,
+    "wyrmprint": "How to Flee Properly",
+    "rarity": 4,
+    "affinity": "Crown's Boon",
+    "abilities": ["Last Defense"]
+  },
+  {
+    "wyrmprintId": 40040011,
+    "wyrmprint": "What a Handful!",
+    "rarity": 4,
+    "affinity": "Staff's Boon",
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40040010,
+    "wyrmprint": "Braving the Unknown",
+    "rarity": 4,
+    "abilities": ["Poison Res"]
+  },
+  {
+    "wyrmprintId": 40040009,
+    "wyrmprint": "King's Countenance",
+    "rarity": 4,
+    "abilities": ["Curse Res"]
+  },
+  {
+    "wyrmprintId": 40040008,
+    "wyrmprint": "Lord of the Skies",
+    "rarity": 4,
+    "abilities": ["Overdrive Punisher"]
+  },
+  {
+    "wyrmprintId": 40040007,
+    "wyrmprint": "Castaway's Journal",
+    "rarity": 4,
+    "abilities": ["Paralysis Res"]
+  },
+  {
+    "wyrmprintId": 40040006,
+    "wyrmprint": "Trove of Knowledge",
+    "rarity": 4,
+    "abilities": ["Stun Res"]
+  },
+  {
+    "wyrmprintId": 40040005,
+    "wyrmprint": "Fireside Gathering",
+    "rarity": 4,
+    "abilities": ["Burn Res"]
+  },
+  {
+    "wyrmprintId": 40040004,
+    "wyrmprint": "Promises in the Rain",
+    "rarity": 4,
+    "abilities": ["Bog Res"]
+  },
+  {
+    "wyrmprintId": 40040003,
+    "wyrmprint": "Sniper's Allure",
+    "rarity": 4,
+    "affinity": "Axe's Boon",
+    "abilities": ["Broken Punisher"]
+  },
+  {
+    "wyrmprintId": 40040002,
+    "wyrmprint": "Destiny's Hand",
+    "rarity": 4,
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40040001,
+    "wyrmprint": "Flower in the Fray",
+    "rarity": 4,
+    "affinity": "Sword's Boon",
+    "abilities": ["Full HP = Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40030039,
+    "wyrmprint": "The Order's Messenger Owl",
+    "rarity": 3,
+    "abilities": ["Valor (Ability)", "Dragon Time"]
+  },
+  {
+    "wyrmprintId": 40030038,
+    "wyrmprint": "Tiny Dragoñatas",
+    "rarity": 3,
+    "abilities": ["Papier-mâché", "(Water) Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40030037,
+    "wyrmprint": "The Heretic's Laboratory",
+    "rarity": 3,
+    "abilities": ["Arcane Tomes", "(Shadow) Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40030036,
+    "wyrmprint": "The Davian Wetlands",
+    "rarity": 3,
+    "abilities": ["Bog Res"]
+  },
+  {
+    "wyrmprintId": 40030035,
+    "wyrmprint": "To My Beloved",
+    "rarity": 3,
+    "affinity": "Eagle's Boon",
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40030034,
+    "wyrmprint": "Blossoms Ablaze",
+    "rarity": 3,
+    "abilities": ["(Wind) Broken Punisher"]
+  },
+  {
+    "wyrmprintId": 40030033,
+    "wyrmprint": "Welcome, One and All",
+    "rarity": 3,
+    "abilities": ["Skill Prep", "Tent Canvas"]
+  },
+  {
+    "wyrmprintId": 40030032,
+    "wyrmprint": "Roast Feast",
+    "rarity": 3,
+    "abilities": ["Recovery Potency", "Astral Ornament"]
+  },
+  {
+    "wyrmprintId": 40030031,
+    "wyrmprint": "Secret Friend",
+    "rarity": 3,
+    "affinity": "Serpent's Boon",
+    "abilities": ["(Light) Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40030030,
+    "wyrmprint": "Garuda's Feathers",
+    "rarity": 3,
+    "abilities": ["Windwhistle Grass", "Full HP = Defense"]
+  },
+  {
+    "wyrmprintId": 40030029,
+    "wyrmprint": "The Halidom's Picnic",
+    "rarity": 3,
+    "abilities": ["Sleep Res"]
+  },
+  {
+    "wyrmprintId": 40030027,
+    "wyrmprint": "Pumpkin Pail",
+    "rarity": 3,
+    "abilities": ["Curse Res", "Snack-o'-Lanterns"]
+  },
+  {
+    "wyrmprintId": 40030026,
+    "wyrmprint": "Nevermelt Ice",
+    "rarity": 3,
+    "abilities": ["Freeze Res"]
+  },
+  {
+    "wyrmprintId": 40030024,
+    "wyrmprint": "Crown of Yore",
+    "rarity": 3,
+    "affinity": "Bow's Boon",
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40030023,
+    "wyrmprint": "Potiongrass",
+    "rarity": 3,
+    "abilities": ["Poison Res"]
+  },
+  {
+    "wyrmprintId": 40030022,
+    "wyrmprint": "Vio Rhyse Alberia!",
+    "rarity": 3,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Slayer's Strength"]
+  },
+  {
+    "wyrmprintId": 40030021,
+    "wyrmprint": "Tracks of Hope",
+    "rarity": 3,
+    "abilities": ["Stun Res"]
+  },
+  {
+    "wyrmprintId": 40030020,
+    "wyrmprint": "Night Harbinger",
+    "rarity": 3,
+    "affinity": "Sword's Boon",
+    "abilities": ["Full HP = Strength"]
+  },
+  {
+    "wyrmprintId": 40030019,
+    "wyrmprint": "Liber Grimortis",
+    "rarity": 3,
+    "affinity": "Bow's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40030018,
+    "wyrmprint": "Unfulfilled Visions",
+    "rarity": 3,
+    "affinity": "Wolf's Boon",
+    "abilities": ["Slayer's Strength"]
+  },
+  {
+    "wyrmprintId": 40030017,
+    "wyrmprint": "Forbidden Relic",
+    "rarity": 3,
+    "affinity": "Crown's Boon",
+    "abilities": ["Gauge Inhibitor"]
+  },
+  {
+    "wyrmprintId": 40030016,
+    "wyrmprint": "Eight-Leaf Clover",
+    "rarity": 3,
+    "affinity": "Axe's Boon",
+    "abilities": ["Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40030015,
+    "wyrmprint": "Aromatherapy",
+    "rarity": 3,
+    "abilities": ["Burn Res"]
+  },
+  {
+    "wyrmprintId": 40030014,
+    "wyrmprint": "Winds of Saint Lotier",
+    "rarity": 3,
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40030013,
+    "wyrmprint": "Ironside Shield",
+    "rarity": 3,
+    "affinity": "Crown's Boon",
+    "abilities": ["Last Defense"]
+  },
+  {
+    "wyrmprintId": 40030012,
+    "wyrmprint": "Enchiridion",
+    "rarity": 3,
+    "affinity": "Bow's Boon",
+    "abilities": ["Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40030011,
+    "wyrmprint": "Dragon's Nest",
+    "rarity": 3,
+    "affinity": "Bow's Boon",
+    "abilities": ["Shapeshift Prep"]
+  },
+  {
+    "wyrmprintId": 40030010,
+    "wyrmprint": "Lakeside Euphony",
+    "rarity": 3,
+    "abilities": ["Bog Res"]
+  },
+  {
+    "wyrmprintId": 40030009,
+    "wyrmprint": "Hallowed Mountains",
+    "rarity": 3,
+    "abilities": ["Paralysis Res"]
+  },
+  {
+    "wyrmprintId": 40030008,
+    "wyrmprint": "Syndicate Mask",
+    "rarity": 3,
+    "abilities": ["Blindness Res"]
+  },
+  {
+    "wyrmprintId": 40030007,
+    "wyrmprint": "Howling Predator",
+    "rarity": 3,
+    "affinity": "Axe's Boon",
+    "abilities": ["Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40030006,
+    "wyrmprint": "Cry of the Horn",
+    "rarity": 3,
+    "affinity": "Axe's Boon",
+    "abilities": ["Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40030005,
+    "wyrmprint": "Alberian Banner",
+    "rarity": 3,
+    "affinity": "Lance's Boon",
+    "abilities": ["Force Strike"]
+  },
+  {
+    "wyrmprintId": 40030004,
+    "wyrmprint": "Bellathorna",
+    "rarity": 3,
+    "affinity": "Staff's Boon",
+    "abilities": ["Buff Skill Time"]
+  },
+  {
+    "wyrmprintId": 40030003,
+    "wyrmprint": "Teatime",
+    "rarity": 3,
+    "affinity": "Crown's Boon",
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40030002,
+    "wyrmprint": "Halo",
+    "rarity": 3,
+    "affinity": "Bow's Boon",
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40030001,
+    "wyrmprint": "Scorn the Destrier",
+    "rarity": 3,
+    "affinity": "Axe's Boon",
+    "abilities": ["Broken Punisher"]
+  },
+  {
+    "wyrmprintId": 40020005,
+    "wyrmprint": "Old Harp",
+    "rarity": 2,
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40020004,
+    "wyrmprint": "Mana Fount",
+    "rarity": 2,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40020003,
+    "wyrmprint": "Dragon Arcanum",
+    "rarity": 2,
+    "affinity": "Crown's Boon",
+    "abilities": ["Shapeshift Prep"]
+  },
+  {
+    "wyrmprintId": 40020002,
+    "wyrmprint": "Seafood Soup",
+    "rarity": 2,
+    "affinity": "Sword's Boon",
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40020001,
+    "wyrmprint": "Ring of Exaltation",
+    "rarity": 2,
+    "affinity": "Axe's Boon",
+    "abilities": ["Critical Rate"]
+  }
+]

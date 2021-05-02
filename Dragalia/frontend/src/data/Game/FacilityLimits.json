@@ -1,0 +1,286 @@
+[
+  {
+    "facilityID": 100101,
+    "maxLevel": 10
+  },
+  {
+    "facilityID": 100201,
+    "maxLevel": 45
+  },
+  {
+    "facilityID": 100301,
+    "maxLevel": 27
+  },
+  {
+    "facilityID": 100401,
+    "maxLevel": 45
+  },
+  {
+    "facilityID": 100402,
+    "maxLevel": 45
+  },
+  {
+    "facilityID": 100403,
+    "maxLevel": 45
+  },
+  {
+    "facilityID": 100404,
+    "maxLevel": 45
+  },
+  {
+    "facilityID": 100405,
+    "maxLevel": 45
+  },
+  {
+    "facilityID": 100501,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100502,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100503,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100504,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100505,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100506,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100507,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100508,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100509,
+    "maxLevel": 40
+  },
+  {
+    "facilityID": 100601,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 100602,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 100603,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 100604,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 100605,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 100701,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 100702,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 100703,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 100704,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 100705,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 100901,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 100902,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 101001,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 101002,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 101003,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 101004,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 101005,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 101101,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 101102,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 101301,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 101302,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 101401,
+    "maxLevel": 9
+  },
+  {
+    "facilityID": 101501,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 101502,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 101601,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 101602,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 101701,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 101702,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 101801,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 101802,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 101803,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 101901,
+    "maxLevel": 15
+  },
+  {
+    "facilityID": 101902,
+    "maxLevel": 15
+  },
+  {
+    "facilityID": 101903,
+    "maxLevel": 15
+  },
+  {
+    "facilityID": 101904,
+    "maxLevel": 15
+  },
+  {
+    "facilityID": 101905,
+    "maxLevel": 15
+  },
+  {
+    "facilityID": 102001,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 102002,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 102101,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 102201,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 102301,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102302,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102303,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102304,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102305,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102401,
+    "maxLevel": 35
+  },
+  {
+    "facilityID": 102402,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 102501,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102502,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 102601,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102701,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102702,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 102801,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102802,
+    "maxLevel": 0
+  }
+]

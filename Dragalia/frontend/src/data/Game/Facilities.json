@@ -1,0 +1,428 @@
+[
+  {
+    "facilityId": 100101,
+    "facility": "Halidom",
+    "limit": 1,
+    "category": "Halidom"
+  },
+  {
+    "facilityId": 101401,
+    "facility": "Smithy",
+    "limit": 1,
+    "category": "Halidom"
+  },
+  {
+    "facilityId": 100201,
+    "facility": "Rupie Mine",
+    "limit": 4,
+    "category": "Production"
+  },
+  {
+    "facilityId": 100301,
+    "facility": "Dragontree",
+    "limit": 1,
+    "category": "Production"
+  },
+  {
+    "facilityId": 100401,
+    "facility": "Flame Altar",
+    "limit": 2,
+    "category": "Altars"
+  },
+  {
+    "facilityId": 100402,
+    "facility": "Water Altar",
+    "limit": 2,
+    "category": "Altars"
+  },
+  {
+    "facilityId": 100403,
+    "facility": "Wind Altar",
+    "limit": 2,
+    "category": "Altars"
+  },
+  {
+    "facilityId": 100404,
+    "facility": "Light Altar",
+    "limit": 2,
+    "category": "Altars"
+  },
+  {
+    "facilityId": 100405,
+    "facility": "Shadow Altar",
+    "limit": 2,
+    "category": "Altars"
+  },
+  {
+    "facilityId": 100501,
+    "facility": "Sword Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 100502,
+    "facility": "Blade Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 100503,
+    "facility": "Dagger Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 100504,
+    "facility": "Axe Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 100505,
+    "facility": "Lance Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 100506,
+    "facility": "Bow Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 100507,
+    "facility": "Wand Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 100508,
+    "facility": "Staff Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 100509,
+    "facility": "Manacaster Dojo",
+    "limit": 2,
+    "category": "Dojos"
+  },
+  {
+    "facilityId": 101901,
+    "facility": "Magma Slime Statue",
+    "limit": 1,
+    "category": "Slime Statues"
+  },
+  {
+    "facilityId": 101902,
+    "facility": "Aqua Slime Statue",
+    "limit": 1,
+    "category": "Slime Statues"
+  },
+  {
+    "facilityId": 101903,
+    "facility": "Aero Slime Statue",
+    "limit": 1,
+    "category": "Slime Statues"
+  },
+  {
+    "facilityId": 101904,
+    "facility": "Twinkling Slime Statue",
+    "limit": 1,
+    "category": "Slime Statues"
+  },
+  {
+    "facilityId": 101905,
+    "facility": "Poison Slime Statue",
+    "limit": 1,
+    "category": "Slime Statues"
+  },
+  {
+    "facilityId": 102301,
+    "facility": "Flame Tree",
+    "limit": 1,
+    "category": "Agito Trees"
+  },
+  {
+    "facilityId": 102302,
+    "facility": "Water Tree",
+    "limit": 1,
+    "category": "Agito Trees"
+  },
+  {
+    "facilityId": 102303,
+    "facility": "Wind Tree",
+    "limit": 1,
+    "category": "Agito Trees"
+  },
+  {
+    "facilityId": 102304,
+    "facility": "Light Tree",
+    "limit": 1,
+    "category": "Agito Trees"
+  },
+  {
+    "facilityId": 102305,
+    "facility": "Shadow Tree",
+    "limit": 1,
+    "category": "Agito Trees"
+  },
+  {
+    "facilityId": 100901,
+    "facility": "Circus Tent",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 101101,
+    "facility": "Wind Shrine",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 101301,
+    "facility": "Seabed Stage",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 101501,
+    "facility": "Sweet Retreat",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 101601,
+    "facility": "Yuletree",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 101701,
+    "facility": "Library Obscura",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 101801,
+    "facility": "Dragoñata",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 102001,
+    "facility": "Arctos Monument",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 102401,
+    "facility": "The Hungerdome",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 102501,
+    "facility": "Festival Stage",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 102601,
+    "facility": "Statue of Ilia",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 102701,
+    "facility": "Opera House",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 102801,
+    "facility": "Cleansing Fount",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
+    "facilityId": 100601,
+    "facility": "Flame Dracolith",
+    "limit": 1,
+    "category": "Dracoliths"
+  },
+  {
+    "facilityId": 100602,
+    "facility": "Water Dracolith",
+    "limit": 1,
+    "category": "Dracoliths"
+  },
+  {
+    "facilityId": 100603,
+    "facility": "Wind Dracolith",
+    "limit": 1,
+    "category": "Dracoliths"
+  },
+  {
+    "facilityId": 100604,
+    "facility": "Light Dracolith",
+    "limit": 1,
+    "category": "Dracoliths"
+  },
+  {
+    "facilityId": 100605,
+    "facility": "Shadow Dracolith",
+    "limit": 1,
+    "category": "Dracoliths"
+  },
+  {
+    "facilityId": 101001,
+    "facility": "Fafnir Statue (Flame)",
+    "limit": 1,
+    "category": "Fafnir Statues"
+  },
+  {
+    "facilityId": 101002,
+    "facility": "Fafnir Statue (Water)",
+    "limit": 1,
+    "category": "Fafnir Statues"
+  },
+  {
+    "facilityId": 101003,
+    "facility": "Fafnir Statue (Wind)",
+    "limit": 1,
+    "category": "Fafnir Statues"
+  },
+  {
+    "facilityId": 101004,
+    "facility": "Fafnir Statue (Light)",
+    "limit": 1,
+    "category": "Fafnir Statues"
+  },
+  {
+    "facilityId": 101005,
+    "facility": "Fafnir Statue (Shadow)",
+    "limit": 1,
+    "category": "Fafnir Statues"
+  },
+  {
+    "facilityId": 100701,
+    "facility": "Red Flowers",
+    "limit": 5,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 100702,
+    "facility": "Blue Flowers",
+    "limit": 5,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 100703,
+    "facility": "Conifer Tree",
+    "limit": 5,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 100704,
+    "facility": "Broadleaf Tree",
+    "limit": 5,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 100705,
+    "facility": "Battle Standard",
+    "limit": 5,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 100902,
+    "facility": "Balloon Wagon",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 101102,
+    "facility": "Wishmill",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 101302,
+    "facility": "Palm Tree",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 101502,
+    "facility": "Jack-o'-Lantern",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 101602,
+    "facility": "Snowdrake",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 101702,
+    "facility": "Lectern",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 101802,
+    "facility": "Eggy Luca",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 101803,
+    "facility": "Eggy Sarisse",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 102002,
+    "facility": "Iron Weather Vane",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 102101,
+    "facility": "Pumpkin Mariti",
+    "limit": 3,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 102201,
+    "facility": "Metall",
+    "limit": 10,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 102402,
+    "facility": "Foodie's Fork",
+    "limit": 4,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 102502,
+    "facility": "Hinomotoan Fan",
+    "limit": 1,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 102702,
+    "facility": "Double Bass",
+    "limit": 1,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 102802,
+    "facility": "Little Pi Plushie",
+    "limit": 1,
+    "category": "Decoration"
+  }
+]

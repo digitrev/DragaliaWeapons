@@ -40,7 +40,10 @@ namespace DragaliaApi
                     options => options.UseHierarchyId())
                 );
             services.AddControllers().AddNewtonsoftJson(options =>
-                options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
+            {
+                options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DragaliaApi", Version = "v1" });
