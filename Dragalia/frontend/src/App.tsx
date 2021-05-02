@@ -47,6 +47,7 @@ const App: React.FC = () => {
       >
         <Header />
         <Switch>
+          <Redirect from="/DragaliaWeapons" to="/" />
           <Redirect from="/home" to="/" />
           <Route exact path="/" component={HomePage} />
 
