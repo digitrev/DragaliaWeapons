@@ -2,8 +2,8 @@
 import { css } from '@emotion/react';
 import { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import { AccountFacilityData, FacilityLimit } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import { LoadingText } from '../Loading';
 import { useAuth } from '../Auth/Auth';
 import { Page } from '../Page';

@@ -2,7 +2,7 @@
 import { css } from '@emotion/react';
 import { FC } from 'react';
 import { AccountInventoryData } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
+import { PrivateApi } from '../../api/UserData';
 import { useAuth } from '../Auth/Auth';
 import { Field } from '../Forms/Field';
 import { Form, Values, isInteger, required, nonNegative } from '../Forms/Form';

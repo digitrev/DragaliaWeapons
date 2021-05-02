@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AdventurerData } from '../../api/DataInterfaces';
-import { PublicApi } from '../../api/PublicData';
+import { PublicApi } from '../../api/GameData';
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AdventurerList } from './AdventurerList';

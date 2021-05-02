@@ -10,8 +10,8 @@ import {
   WeaponSeriesData,
   WeaponTypeData,
 } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AccountWeaponList } from './AccountWeaponList';

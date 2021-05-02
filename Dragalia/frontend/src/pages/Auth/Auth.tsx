@@ -1,7 +1,7 @@
 import { createContext, FC, useContext, useEffect, useState } from 'react';
 import createAuth0Client, { Auth0Client, User } from '@auth0/auth0-spa-js';
 import { authSettings } from '../../AppSettings';
-import { PrivateApi } from '../../api/PrivateData';
+import { PrivateApi } from '../../api/UserData';
 
 interface Auth0User extends User {
   name: string;

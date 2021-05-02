@@ -6,7 +6,7 @@ import {
   MaterialCosts,
   WyrmprintLimit,
 } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
+import { PrivateApi } from '../../api/UserData';
 import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';

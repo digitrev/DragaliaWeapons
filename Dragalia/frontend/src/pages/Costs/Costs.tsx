@@ -9,8 +9,8 @@ import {
   QuestData,
 } from '../../api/DataInterfaces';
 import { materialComparator, needed } from '../../api/HelperFunctions';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import { PrimaryButton } from '../../Styles';
 import { useAuth } from '../Auth/Auth';
 import { Breakdown } from './CostTables/Breakdown';

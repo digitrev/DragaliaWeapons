@@ -10,8 +10,8 @@ import {
   ElementData,
   WeaponTypeData,
 } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import {
   displayLimit,
   pageRangeDisplayed,

@@ -30,6 +30,7 @@ import weaponSeriesJson from '../data/Public/WeaponSeries.json';
 import weaponTypesJson from '../data/Public/WeaponTypes.json';
 import wyrmprintLevelLimitsJson from '../data/Public/WyrmprintLevelLimits.json';
 import wyrmprintsJson from '../data/Public/Wyrmprints.json';
+import { ensure } from './HelperFunctions';
 
 export class PublicApi {
   //adventurers
@@ -49,6 +50,9 @@ export class PublicApi {
 
   //materials
   public getMaterials = (): MaterialData[] => materialsJson;
+
+  public getMaterial = (materialID: string): MaterialData =>
+    ensure(materialsJson.find((m) => m.materialId === materialID));
 
   public getMaterialQuests = (): MaterialQuestData[] => materialQuestsJson;
 

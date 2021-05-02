@@ -6,8 +6,8 @@ import { ActionMeta } from 'react-select';
 import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
 import Select from 'react-select';
 import { AccountDragonData, ElementData } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
-import { PublicApi } from '../../api/PublicData';
+import { PrivateApi } from '../../api/UserData';
+import { PublicApi } from '../../api/GameData';
 import {
   displayLimit,
   pageRangeDisplayed,

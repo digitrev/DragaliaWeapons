@@ -2,7 +2,7 @@
 import { css } from '@emotion/react';
 import { FC, useEffect, useState } from 'react';
 import { AccountAdventurerData, MaterialCosts } from '../../api/DataInterfaces';
-import { PrivateApi } from '../../api/PrivateData';
+import { PrivateApi } from '../../api/UserData';
 import { LoadingText } from '../Loading';
 import { PrimaryButton } from '../../Styles';
 import { Field } from '../Forms/Field';
