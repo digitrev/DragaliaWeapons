@@ -51,9 +51,6 @@ export const AuthProvider: FC = ({ children }) => {
         window.location.search.indexOf('code=') > -1
       ) {
         await auth0FromHook.handleRedirectCallback();
-        const token = await auth0FromHook.getTokenSilently();
-        const api = new PrivateApi(token);
-        await api.putAccount();
         window.location.replace(window.location.origin);
       }
 

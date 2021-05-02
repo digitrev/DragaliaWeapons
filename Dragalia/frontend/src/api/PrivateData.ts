@@ -9,8 +9,9 @@ import {
   AccountWeaponData,
   AccountWyrmprintData,
   MaterialCosts,
-  WeaponData,
 } from './DataInterfaces';
+import { PublicApi } from './PublicData';
+import Store from 'store';
 
 export class PrivateApi extends HttpClient {
   public constructor(token: string) {
@@ -18,26 +19,45 @@ export class PrivateApi extends HttpClient {
     this.instance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   }
 
+  private readonly adv = 'adventurers';
+  private readonly drg = 'dragons';
+  private readonly fcl = 'facilities';
+  private readonly inv = 'inventory';
+  private readonly psv = 'passives';
+  private readonly wpn = 'weapons';
+  private readonly wpt = 'wyrmprints';
+
   //adventurers
   public getAdventurers = () => {
-    return this.instance.get<AccountAdventurerData[]>('/AccountAdventurers');
+    const api = new PublicApi();
+    return Store.get(
+      this.adv,
+      api.getAdventurers().map<AccountAdventurerData>((a) => ({
+        adventurerId: a.adventurerId,
+        currentLevel: 0,
+        wantedLevel: 0,
+        adventurer: a,
+      })),
+    ) as AccountAdventurerData[];
   };
-
-  public getAdventurer = (adventurerID: number) =>
-    this.instance.get<AccountAdventurerData>(
-      `/AccountAdventurers/${adventurerID}`,
-    );
 
   public putAdventurer = (
     adventurerID: number,
     adventurer: AccountAdventurerData,
-  ) => this.instance.put(`/AccountAdventurers/${adventurerID}`, adventurer);
-
-  public postAdventurer = (adventurer: AccountAdventurerData) =>
-    this.instance.post('/AccountAdventurer', adventurer);
-
-  public deleteAdventurer = (adventurerID: number) =>
-    this.instance.delete(`/AccountAdventurers/${adventurerID}`);
+  ) => {
+    Store.set(
+      this.adv,
+      this.getAdventurers().map((a) =>
+        a.adventurerId === adventurerID
+          ? {
+              ...a,
+              wantedLevel: adventurer.wantedLevel,
+              currentLevel: adventurer.currentLevel,
+            }
+          : a,
+      ),
+    );
+  };
 
   public getAdventurerCosts = (adventurerID?: number) =>
     this.instance.get<MaterialCosts[]>('/AccountAdventurers/costs', {
@@ -47,20 +67,33 @@ export class PrivateApi extends HttpClient {
     });
 
   //dragons
-  public getDragons = () =>
-    this.instance.get<AccountDragonData[]>('/AccountDragons');
+  public getDragons = () => {
+    const api = new PublicApi();
+    return Store.get(
+      this.drg,
+      api.getDragons().map<AccountDragonData>((d) => ({
+        dragonId: d.dragonId,
+        dragon: d,
+        unbind: 0,
+        unbindWanted: 0,
+      })),
+    ) as AccountDragonData[];
+  };
 
-  public getDragon = (dragonID: number) =>
-    this.instance.get<AccountDragonData>(`/AccountDragons/${dragonID}`);
-
-  public putDragon = (dragonID: number, dragon: AccountDragonData) =>
-    this.instance.put(`/AccountDragons/${dragonID}`, dragon);
-
-  public postDragon = (dragon: AccountDragonData) =>
-    this.instance.post('/AccountDragons', dragon);
-
-  public deleteDragon = (dragonID: number) =>
-    this.instance.delete(`/AccountDragons/${dragonID}`);
+  public putDragon = (dragonID: number, dragon: AccountDragonData) => {
+    Store.set(
+      this.drg,
+      this.getDragons().map((d) =>
+        d.dragonId === dragonID
+          ? {
+              ...d,
+              unbind: dragon.unbind,
+              unbindWanted: dragon.unbindWanted,
+            }
+          : d,
+      ),
+    );
+  };
 
   public getDragonCosts = (dragonID?: number) =>
     this.instance.get('/AccountDragons/costs', {
@@ -70,23 +103,43 @@ export class PrivateApi extends HttpClient {
     });
 
   //facilities
-  public getFacilities = () =>
-    this.instance.get<AccountFacilityData[]>('/AccountFacilities');
-
-  public getFacility = (facilityID: number, copyNumber: number) =>
-    this.instance.get<AccountFacilityData>(
-      `/AccountFacilities/${facilityID}/${copyNumber}`,
-    );
+  public getFacilities = () => {
+    const api = new PublicApi();
+    return Store.get(
+      this.fcl,
+      api.getFacilities().reduce<AccountFacilityData[]>((acc, cur) => {
+        for (let i = 0; i < cur.limit; i++) {
+          acc.push({
+            facilityId: cur.facilityId,
+            copyNumber: i + 1,
+            currentLevel: 0,
+            wantedLevel: 0,
+            facility: cur,
+          });
+        }
+        return acc;
+      }, []),
+    ) as AccountFacilityData[];
+  };
 
   public putFacility = (
     facilityID: number,
     copyNumber: number,
     facility: AccountFacilityData,
-  ) =>
-    this.instance.put(
-      `/AccountFacilities/${facilityID}/${copyNumber}`,
-      facility,
+  ) => {
+    Store.set(
+      this.fcl,
+      this.getFacilities().map((f) =>
+        f.facilityId === facilityID && f.copyNumber === copyNumber
+          ? {
+              ...f,
+              currentLevel: facility.currentLevel,
+              wantedLevel: facility.wantedLevel,
+            }
+          : f,
+      ),
     );
+  };
 
   public getFacilityCosts = (facilityID?: number, copyNumber?: number) =>
     this.instance.get<MaterialCosts[]>('/AccountFacilities/costs', {
@@ -97,33 +150,65 @@ export class PrivateApi extends HttpClient {
     });
 
   //Inventory
-  public getInventory = () =>
-    this.instance.get<AccountInventoryData[]>('/AccountInventories');
-
-  public getItem = (materialID: string) =>
-    this.instance.get<AccountInventoryData>(
-      `/AccountInventories/${materialID}`,
-    );
+  public getInventory = () => {
+    const api = new PublicApi();
+    return Store.get(
+      this.inv,
+      api.getMaterials().map<AccountInventoryData>((m) => ({
+        materialId: m.materialId,
+        quantity: 0,
+        material: m,
+      })),
+    ) as AccountInventoryData[];
+  };
 
   public getItemFilter = (materialIDs: string[]) =>
-    this.instance.get<AccountInventoryData[]>('/AccountInventories', {
-      params: {
-        materials: materialIDs.reduce((acc, cur) => `${cur},${acc}`, ''),
-      },
-    });
+    this.getInventory().filter((i) =>
+      materialIDs.some((m) => m === i.materialId),
+    );
 
-  public putItem = (materialID: string, item: AccountInventoryData) =>
-    this.instance.put(`/AccountInventories/${materialID}`, item);
+  public putItem = (materialID: string, item: AccountInventoryData) => {
+    Store.set(
+      this.inv,
+      this.getInventory().map((i) =>
+        i.materialId === materialID
+          ? {
+              ...i,
+              quantity: item.quantity,
+            }
+          : i,
+      ),
+    );
+  };
 
   //Passives
-  public getPassives = () =>
-    this.instance.get<AccountPassiveData[]>('AccountPassives');
+  public getPassives = () => {
+    const api = new PublicApi();
+    return Store.get(
+      this.psv,
+      api.getPassives().map<AccountPassiveData>((p) => ({
+        passiveId: p.passiveId,
+        owned: false,
+        wanted: false,
+        passive: p,
+      })),
+    ) as AccountPassiveData[];
+  };
 
-  public getPassive = (passiveID: number) =>
-    this.instance.get<AccountPassiveData>(`/AccountPassives/${passiveID}`);
-
-  public putPassive = (passiveID: number, passive: AccountPassiveData) =>
-    this.instance.put(`/AccountPassives/${passiveID}`, passive);
+  public putPassive = (passiveID: number, passive: AccountPassiveData) => {
+    Store.set(
+      this.psv,
+      this.getPassives().map((p) =>
+        p.passiveId === passiveID
+          ? {
+              ...p,
+              owned: passive.owned,
+              wanted: passive.wanted,
+            }
+          : p,
+      ),
+    );
+  };
 
   public getPassiveCosts = (passiveID?: number) =>
     this.instance.get<MaterialCosts[]>('AccountPassives/costs', {
@@ -133,17 +218,57 @@ export class PrivateApi extends HttpClient {
     });
 
   //Weapons
-  public getWeapons = () =>
-    this.instance.get<AccountWeaponData[]>('/AccountWeapons');
+  public getWeapons = () => {
+    const api = new PublicApi();
+    return Store.get(
+      this.wpn,
+      api.getWeapons().map<AccountWeaponData>((w) => ({
+        weaponId: w.weaponId,
+        copies: 0,
+        copiesWanted: 0,
+        weaponLevel: 0,
+        weaponLevelWanted: 0,
+        unbind: 0,
+        unbindWanted: 0,
+        refine: 0,
+        refineWanted: 0,
+        slot: 0,
+        slotWanted: 0,
+        dominion: 0,
+        dominionWanted: 0,
+        bonus: 0,
+        bonusWanted: 0,
+        weapon: w,
+      })),
+    ) as AccountWeaponData[];
+  };
 
-  public getWeapon = (weaponID: number) =>
-    this.instance.get<AccountWeaponData>(`/AccountWeapons/${weaponID}`);
-
-  public getUntrackedWeapons = () =>
-    this.instance.get<WeaponData[]>('/AccountWeapons/untracked');
-
-  public putWeapon = (weaponID: number, weapon: AccountWeaponData) =>
-    this.instance.put(`/AccountWeapons/${weaponID}`, weapon);
+  public putWeapon = (weaponID: number, weapon: AccountWeaponData) => {
+    Store.set(
+      this.wpn,
+      this.getWeapons().map((w) =>
+        w.weaponId === weaponID
+          ? {
+              ...w,
+              copies: weapon.copies,
+              copiesWanted: weapon.copiesWanted,
+              weaponLevel: weapon.weaponLevel,
+              weaponLevelWanted: weapon.weaponLevelWanted,
+              unbind: weapon.unbind,
+              unbindWanted: weapon.unbindWanted,
+              refine: weapon.refine,
+              refineWanted: weapon.refineWanted,
+              slot: weapon.slot,
+              slotWanted: weapon.slotWanted,
+              dominion: weapon.dominion,
+              dominionWanted: weapon.dominionWanted,
+              bonus: weapon.bonus,
+              bonusWanted: weapon.bonusWanted,
+            }
+          : w,
+      ),
+    );
+  };
 
   public getWeaponCosts = (weaponID?: number) =>
     this.instance.get<MaterialCosts[]>('/AccountWeapons/costs', {
@@ -153,18 +278,44 @@ export class PrivateApi extends HttpClient {
     });
 
   //wyrmprints
-  public getWyrmprints = () =>
-    this.instance.get<AccountWyrmprintData[]>('/AccountWyrmprints');
-
-  public getWyrmprint = (wyrmprintID: number) =>
-    this.instance.get<AccountWyrmprintData>(
-      `/AccountWyrmprints/${wyrmprintID}`,
-    );
+  public getWyrmprints = () => {
+    const api = new PublicApi();
+    return Store.get(
+      this.wpt,
+      api.getWyrmprints().map<AccountWyrmprintData>((w) => ({
+        wyrmprintId: w.wyrmprintId,
+        wyrmprintLevel: 0,
+        wyrmprintLevelWanted: 0,
+        unbind: 0,
+        unbindWanted: 0,
+        copies: 0,
+        copiesWanted: 0,
+        wyrmprint: w,
+      })),
+    ) as AccountWyrmprintData[];
+  };
 
   public putWyrmprint = (
     wyrmprintID: number,
     wyrmprint: AccountWyrmprintData,
-  ) => this.instance.put(`/AccountWyrmprints/${wyrmprintID}`, wyrmprint);
+  ) => {
+    Store.set(
+      this.wpt,
+      this.getWyrmprints().map((w) =>
+        w.wyrmprintId === wyrmprintID
+          ? {
+              ...w,
+              wyrmprintLevel: wyrmprint.wyrmprintLevel,
+              wyrmprintLevelWanted: wyrmprint.wyrmprintLevelWanted,
+              unbind: wyrmprint.unbind,
+              unbindWanted: wyrmprint.unbindWanted,
+              copies: wyrmprint.copies,
+              copiesWanted: wyrmprint.copiesWanted,
+            }
+          : w,
+      ),
+    );
+  };
 
   public getWyrmprintCosts = (wyrmprintID?: number) =>
     this.instance.get<MaterialCosts[]>('/AccountWyrmprints/costs', {
@@ -172,7 +323,4 @@ export class PrivateApi extends HttpClient {
         wyrmprintID: wyrmprintID,
       },
     });
-
-  //account
-  public putAccount = () => this.instance.put('/Accounts');
 }
