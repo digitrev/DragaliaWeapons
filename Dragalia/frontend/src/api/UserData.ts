@@ -59,9 +59,8 @@ export class PrivateApi {
     adventurerID: number,
     adventurer: AccountAdventurerData,
   ) => {
-    Store.set(
-      this.adv,
-      this.getAdventurers().reduce<AccountAdventurerData[]>((acc, cur) => {
+    const toSave = this.getAdventurers().reduce<AccountAdventurerData[]>(
+      (acc, cur) => {
         if (
           cur.adventurerId === adventurerID &&
           (adventurer.currentLevel > 0 || adventurer.wantedLevel > 0)
@@ -71,12 +70,21 @@ export class PrivateApi {
             currentLevel: adventurer.currentLevel,
             wantedLevel: adventurer.wantedLevel,
           });
-        else if (cur.currentLevel > 0 || cur.wantedLevel > 0) {
+        else if (
+          cur.adventurerId !== adventurerID &&
+          (cur.currentLevel > 0 || cur.wantedLevel > 0)
+        ) {
           acc.push({ ...cur, adventurer: undefined });
         }
         return acc;
-      }, []),
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.adv, toSave);
+    } else {
+      Store.remove(this.adv);
+    }
   };
 
   public getAdventurerCosts = (adventurerID?: number) => {
@@ -130,24 +138,29 @@ export class PrivateApi {
   };
 
   public putDragon = (dragonID: number, dragon: AccountDragonData) => {
-    Store.set(
-      this.drg,
-      this.getDragons().reduce<AccountDragonData[]>((acc, cur) => {
-        if (
-          cur.dragonId === dragonID &&
-          (dragon.unbind > 0 || dragon.unbindWanted > 0)
-        ) {
-          acc.push({
-            dragonId: cur.dragonId,
-            unbind: dragon.unbind,
-            unbindWanted: dragon.unbindWanted,
-          });
-        } else if (cur.unbind > 0 || cur.unbindWanted > 0) {
-          acc.push({ ...cur, dragon: undefined });
-        }
-        return acc;
-      }, []),
-    );
+    const toSave = this.getDragons().reduce<AccountDragonData[]>((acc, cur) => {
+      if (
+        cur.dragonId === dragonID &&
+        (dragon.unbind > 0 || dragon.unbindWanted > 0)
+      ) {
+        acc.push({
+          dragonId: cur.dragonId,
+          unbind: dragon.unbind,
+          unbindWanted: dragon.unbindWanted,
+        });
+      } else if (
+        cur.dragonId !== dragonID &&
+        (cur.unbind > 0 || cur.unbindWanted > 0)
+      ) {
+        acc.push({ ...cur, dragon: undefined });
+      }
+      return acc;
+    }, []);
+    if (toSave.length > 0) {
+      Store.set(this.drg, toSave);
+    } else {
+      Store.remove(this.drg);
+    }
   };
 
   public getDragonCosts = (dragonID?: number) => {
@@ -212,9 +225,8 @@ export class PrivateApi {
     copyNumber: number,
     facility: AccountFacilityData,
   ) => {
-    Store.set(
-      this.fcl,
-      this.getFacilities().reduce<AccountFacilityData[]>((acc, cur) => {
+    const toSave = this.getFacilities().reduce<AccountFacilityData[]>(
+      (acc, cur) => {
         if (
           cur.facilityId === facilityID &&
           cur.copyNumber === copyNumber &&
@@ -226,12 +238,21 @@ export class PrivateApi {
             wantedLevel: facility.wantedLevel,
             facility: undefined,
           });
-        } else if (cur.currentLevel > 0 || cur.wantedLevel > 0) {
+        } else if (
+          (cur.facilityId !== facilityID || cur.copyNumber !== copyNumber) &&
+          (cur.currentLevel > 0 || cur.wantedLevel > 0)
+        ) {
           acc.push({ ...cur, facility: undefined });
         }
         return acc;
-      }, []),
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.fcl, toSave);
+    } else {
+      Store.remove(this.fcl);
+    }
   };
 
   public getFacilityCosts = (facilityID?: number, copyNumber?: number) => {
@@ -292,20 +313,25 @@ export class PrivateApi {
     );
 
   public putItem = (materialID: string, item: AccountInventoryData) => {
-    Store.set(
-      this.inv,
-      this.getInventory().reduce<AccountInventoryData[]>((acc, cur) => {
+    const toSave = this.getInventory().reduce<AccountInventoryData[]>(
+      (acc, cur) => {
         if (cur.materialId === materialID && item.quantity > 0) {
           acc.push({
             materialId: cur.materialId,
             quantity: item.quantity,
           });
-        } else if (cur.quantity > 0) {
+        } else if (cur.materialId !== materialID && cur.quantity > 0) {
           acc.push({ ...cur, material: undefined });
         }
         return acc;
-      }, []),
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.inv, toSave);
+    } else {
+      Store.remove(this.inv);
+    }
   };
 
   //Passives
@@ -332,21 +358,26 @@ export class PrivateApi {
   };
 
   public putPassive = (passiveID: number, passive: AccountPassiveData) => {
-    Store.set(
-      this.psv,
-      this.getPassives().reduce<AccountPassiveData[]>((acc, cur) => {
+    const toSave = this.getPassives().reduce<AccountPassiveData[]>(
+      (acc, cur) => {
         if (cur.passiveId === passiveID && (passive.owned || passive.wanted)) {
           acc.push({
             passiveId: cur.passiveId,
             wanted: cur.wanted,
             owned: cur.owned,
           });
-        } else if (cur.owned || cur.wanted) {
+        } else if (cur.passiveId !== passiveID && (cur.owned || cur.wanted)) {
           acc.push({ ...cur, passive: undefined });
         }
         return acc;
-      }, []),
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.psv, toSave);
+    } else {
+      Store.remove(this.psv);
+    }
   };
 
   public getPassiveCosts = (passiveID?: number) => {
@@ -421,45 +452,44 @@ export class PrivateApi {
   };
 
   public putWeapon = (weaponID: number, weapon: AccountWeaponData) => {
-    Store.set(
-      this.wpn,
-      this.getWeapons().reduce<AccountWeaponData[]>((acc, cur) => {
-        if (
-          cur.weaponId === weaponID &&
-          (weapon.copies > 0 ||
-            weapon.copiesWanted > 0 ||
-            weapon.weaponLevel > 0 ||
-            weapon.weaponLevelWanted > 0 ||
-            weapon.unbind > 0 ||
-            weapon.unbindWanted > 0 ||
-            weapon.refine > 0 ||
-            weapon.refineWanted > 0 ||
-            weapon.slot > 0 ||
-            weapon.slotWanted > 0 ||
-            weapon.dominion > 0 ||
-            weapon.dominionWanted > 0 ||
-            weapon.bonus > 0 ||
-            weapon.bonusWanted > 0)
-        ) {
-          acc.push({
-            weaponId: cur.weaponId,
-            copies: weapon.copies,
-            copiesWanted: weapon.copiesWanted,
-            weaponLevel: weapon.weaponLevel,
-            weaponLevelWanted: weapon.weaponLevelWanted,
-            unbind: weapon.unbind,
-            unbindWanted: weapon.unbindWanted,
-            refine: weapon.refine,
-            refineWanted: weapon.refineWanted,
-            slot: weapon.slot,
-            slotWanted: weapon.slotWanted,
-            dominion: weapon.dominion,
-            dominionWanted: weapon.dominionWanted,
-            bonus: weapon.bonus,
-            bonusWanted: weapon.bonusWanted,
-          });
-        } else if (
-          cur.copies > 0 ||
+    const toSave = this.getWeapons().reduce<AccountWeaponData[]>((acc, cur) => {
+      if (
+        cur.weaponId === weaponID &&
+        (weapon.copies > 0 ||
+          weapon.copiesWanted > 0 ||
+          weapon.weaponLevel > 0 ||
+          weapon.weaponLevelWanted > 0 ||
+          weapon.unbind > 0 ||
+          weapon.unbindWanted > 0 ||
+          weapon.refine > 0 ||
+          weapon.refineWanted > 0 ||
+          weapon.slot > 0 ||
+          weapon.slotWanted > 0 ||
+          weapon.dominion > 0 ||
+          weapon.dominionWanted > 0 ||
+          weapon.bonus > 0 ||
+          weapon.bonusWanted > 0)
+      ) {
+        acc.push({
+          weaponId: cur.weaponId,
+          copies: weapon.copies,
+          copiesWanted: weapon.copiesWanted,
+          weaponLevel: weapon.weaponLevel,
+          weaponLevelWanted: weapon.weaponLevelWanted,
+          unbind: weapon.unbind,
+          unbindWanted: weapon.unbindWanted,
+          refine: weapon.refine,
+          refineWanted: weapon.refineWanted,
+          slot: weapon.slot,
+          slotWanted: weapon.slotWanted,
+          dominion: weapon.dominion,
+          dominionWanted: weapon.dominionWanted,
+          bonus: weapon.bonus,
+          bonusWanted: weapon.bonusWanted,
+        });
+      } else if (
+        cur.weaponId !== weaponID &&
+        (cur.copies > 0 ||
           cur.copiesWanted > 0 ||
           cur.weaponLevel > 0 ||
           cur.weaponLevelWanted > 0 ||
@@ -472,13 +502,17 @@ export class PrivateApi {
           cur.dominion > 0 ||
           cur.dominionWanted > 0 ||
           cur.bonus > 0 ||
-          cur.bonusWanted > 0
-        ) {
-          acc.push({ ...cur, weapon: undefined });
-        }
-        return acc;
-      }, []),
-    );
+          cur.bonusWanted > 0)
+      ) {
+        acc.push({ ...cur, weapon: undefined });
+      }
+      return acc;
+    }, []);
+    if (toSave.length > 0) {
+      Store.set(this.wpn, toSave);
+    } else {
+      Store.remove(this.wpn);
+    }
   };
 
   public getWeaponCosts = (weaponID?: number) => {
@@ -597,9 +631,8 @@ export class PrivateApi {
     wyrmprintID: number,
     wyrmprint: AccountWyrmprintData,
   ) => {
-    Store.set(
-      this.wpt,
-      this.getWyrmprints().reduce<AccountWyrmprintData[]>((acc, cur) => {
+    const toSave = this.getWyrmprints().reduce<AccountWyrmprintData[]>(
+      (acc, cur) => {
         if (
           cur.wyrmprintId === wyrmprintID &&
           (wyrmprint.wyrmprintLevel > 0 ||
@@ -618,10 +651,26 @@ export class PrivateApi {
             copies: wyrmprint.copies,
             copiesWanted: wyrmprint.copiesWanted,
           });
+        } else if (
+          cur.wyrmprintId !== wyrmprintID &&
+          (cur.wyrmprintLevel > 0 ||
+            cur.wyrmprintLevelWanted > 0 ||
+            cur.unbind > 0 ||
+            cur.unbindWanted > 0 ||
+            cur.copies > 0 ||
+            cur.copiesWanted > 0)
+        ) {
+          acc.push({ ...cur, wyrmprint: undefined });
         }
         return acc;
-      }, []),
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.wpt, toSave);
+    } else {
+      Store.remove(this.wpt);
+    }
   };
 
   public getWyrmprintCosts = (wyrmprintID?: number) => {
