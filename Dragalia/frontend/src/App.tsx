@@ -16,6 +16,7 @@ import { AccountDragonPage } from './pages/Dragons/AccountDragonPage';
 import { DragonPage } from './pages/Dragons/DragonPage';
 import { AccountFacilityPage } from './pages/Facilities/AccountFacilityPage';
 import { FacilityPage } from './pages/Facilities/FacilityPage';
+import { SaveLoad } from './pages/Forms/SaveLoad';
 import { Header } from './pages/Header';
 import { HomePage } from './pages/HomePage';
 import { InventoryPage } from './pages/Materials/InventoryPage';
@@ -110,6 +111,7 @@ const App: React.FC = () => {
 
           {/* other */}
           <Route path="/about" component={AboutPage} />
+          <Route path="/test" component={SaveLoad} />
 
           {/* fallback */}
           <Route component={NotFoundPage} />

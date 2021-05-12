@@ -224,3 +224,14 @@ export interface QuestData {
   quest: string;
   sortPath: string;
 }
+
+//save/load
+export interface SaveData {
+  adventurers: AccountAdventurerData[];
+  dragons: AccountDragonData[];
+  facilities: AccountFacilityData[];
+  inventory: AccountInventoryData[];
+  passives: AccountPassiveData[];
+  weapons: AccountWeaponData[];
+  wyrmprints: AccountWyrmprintData[];
+}
