@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 const useAccordionStatus = (expandedState: { [key: number]: boolean }) => {
   const [accordionStatus, setAccordionStatus] = useState(
@@ -16,14 +16,14 @@ const useAccordionStatus = (expandedState: { [key: number]: boolean }) => {
     setAccordionStatus({});
   };
 
-  const updateAccordion = (id: number, status: boolean) => {
+  const updateAccordion = useCallback((id: number, status: boolean) => {
     setAccordionStatus((current) => {
       return {
         ...current,
         [id]: status,
       };
     });
-  };
+  }, []);
 
   return {
     accordionStatus,

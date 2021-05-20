@@ -194,7 +194,7 @@ export const Form: FC<Props> = ({
           css={css`
             margin: 10px auto 0 auto;
             padding: 10px;
-            width: 700px;
+            width: 100%;
             background-color: ${gray6};
             border-radius: 4px;
             border: 1px solid ${gray5};

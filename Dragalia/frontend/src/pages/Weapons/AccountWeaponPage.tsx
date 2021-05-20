@@ -21,6 +21,11 @@ import {
   marginPagesDisplayed,
   pageRangeDisplayed,
 } from '../../AppSettings';
+import useElementFilter from '../../hooks/useElementFilter';
+import useWeaponFilter from '../../hooks/useWeaponFilter';
+import { WeaponString } from '../../components/WeaponIcon';
+import { FilterElement, ElementSelect } from '../../components/ElementSelect';
+import { WeaponSelect } from '../../components/WeaponSelect';
 
 export const AccountWeaponPage = () => {
   const [weapons, setWeapons] = useState<AccountWeaponData[] | null>(null);
@@ -34,15 +39,25 @@ export const AccountWeaponPage = () => {
   const [weaponSeries, setWeaponSeries] = useState<WeaponSeriesData[]>([]);
   const [weaponTypes, setWeaponTypes] = useState<WeaponTypeData[]>([]);
 
-  const [elementFilter, setElementFilter] = useState<ElementData | null>(null);
   const [
     weaponSeriesFilter,
     setWeaponSeriesFilter,
   ] = useState<WeaponSeriesData | null>(null);
-  const [
-    weaponTypeFilter,
-    setWeaponTypeFilter,
-  ] = useState<WeaponTypeData | null>(null);
+
+  const {
+    elementFilter,
+    toggleElement,
+    selectAll: selectAllElements,
+    selectNone: selectNoElements,
+  } = useElementFilter();
+
+  const {
+    weaponFilter: weaponTypeFilter,
+    toggleWeapon,
+    selectNone: selectNoWeapons,
+    selectAll: selectAllWeapons,
+  } = useWeaponFilter();
+
   const [progressFilter, setProgressFilter] = useState(false);
 
   const [offset, setOffset] = useState(0);
@@ -52,14 +67,10 @@ export const AccountWeaponPage = () => {
     let cancelled = false;
     const doGetPublicData = async () => {
       const api = new PublicApi();
-      const elementData = await api.getElements();
       const weaponSeriesData = await api.getWeaponSeries();
-      const weaponTypeData = await api.getWeaponTypes();
       const limitData = await api.getAllWeaponLimits();
       if (!cancelled) {
-        setElements(elementData);
         setWeaponSeries(weaponSeriesData);
-        setWeaponTypes(weaponTypeData);
         setLimits(limitData);
       }
     };
@@ -83,7 +94,7 @@ export const AccountWeaponPage = () => {
     if (weaponFilter) {
       if (elementFilter) {
         weaponFilter = weaponFilter.filter(
-          (w) => w.weapon?.element === elementFilter.element,
+          (w) => elementFilter[w.weapon?.element as FilterElement],
         );
       }
       if (weaponSeriesFilter) {
@@ -93,7 +104,7 @@ export const AccountWeaponPage = () => {
       }
       if (weaponTypeFilter) {
         weaponFilter = weaponFilter.filter(
-          (w) => w.weapon?.weaponType === weaponTypeFilter.weaponType,
+          (w) => weaponTypeFilter[w.weapon?.weaponType as WeaponString],
         );
       }
       if (progressFilter) {
@@ -121,25 +132,11 @@ export const AccountWeaponPage = () => {
     weapons,
   ]);
 
-  const handleChangeElement = (
-    value: ElementData | null,
-    actionMeta: ActionMeta<ElementData>,
-  ) => {
-    setElementFilter(value);
-  };
-
   const handleChangeWeaponSeries = (
     value: WeaponSeriesData | null,
     actionMeta: ActionMeta<WeaponSeriesData>,
   ) => {
     setWeaponSeriesFilter(value);
-  };
-
-  const handleChangeWeaponType = (
-    value: WeaponTypeData | null,
-    actionMeta: ActionMeta<WeaponTypeData>,
-  ) => {
-    setWeaponTypeFilter(value);
   };
 
   const handleChangeProgress = (e: ChangeEvent<HTMLInputElement>) => {
@@ -217,18 +214,14 @@ export const AccountWeaponPage = () => {
           >
             Weapon Type
           </label>
-          {weaponTypes ? (
-            <Select
-              name="weaponType"
-              options={weaponTypes}
-              getOptionValue={getWeaponTypeValue}
-              getOptionLabel={getWeaponTypeLabel}
-              onChange={handleChangeWeaponType}
-              isClearable={true}
+          <div>
+            <WeaponSelect
+              weaponFilter={weaponTypeFilter}
+              toggleWeapon={toggleWeapon}
+              selectNone={selectNoWeapons}
+              selectAll={selectAllWeapons}
             />
-          ) : (
-            <LoadingText />
-          )}
+          </div>
           <label
             htmlFor="elements"
             css={css`
@@ -237,18 +230,18 @@ export const AccountWeaponPage = () => {
           >
             Element
           </label>
-          {elements ? (
-            <Select
-              name="elements"
-              options={elements}
-              getOptionValue={getElementValue}
-              getOptionLabel={getElementLabel}
-              onChange={handleChangeElement}
-              isClearable={true}
+          <div
+            css={css`
+              padding-bottom: 10px;
+            `}
+          >
+            <ElementSelect
+              elementFilter={elementFilter}
+              toggleElement={toggleElement}
+              selectNone={selectNoElements}
+              selectAll={selectAllElements}
             />
-          ) : (
-            <LoadingText />
-          )}
+          </div>
           <AccountWeaponList
             data={displayWeapons || []}
             limits={limits || []}
