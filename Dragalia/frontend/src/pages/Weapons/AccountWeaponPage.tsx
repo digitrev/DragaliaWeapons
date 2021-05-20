@@ -5,10 +5,8 @@ import Select, { ActionMeta } from 'react-select';
 import { getOptionValue, getOptionLabel } from 'react-select/src/builtins';
 import {
   AccountWeaponData,
-  ElementData,
   WeaponLimit,
   WeaponSeriesData,
-  WeaponTypeData,
 } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/UserData';
 import { PublicApi } from '../../api/GameData';
@@ -35,9 +33,7 @@ export const AccountWeaponPage = () => {
   >(null);
   const [limits, setLimits] = useState<WeaponLimit[] | null>(null);
 
-  const [elements, setElements] = useState<ElementData[]>([]);
   const [weaponSeries, setWeaponSeries] = useState<WeaponSeriesData[]>([]);
-  const [weaponTypes, setWeaponTypes] = useState<WeaponTypeData[]>([]);
 
   const [
     weaponSeriesFilter,
@@ -147,23 +143,11 @@ export const AccountWeaponPage = () => {
     setOffset(selectedItem.selected * displayLimit);
   };
 
-  const getElementValue: getOptionValue<ElementData> = (option) =>
-    option.elementId.toString();
-
-  const getElementLabel: getOptionLabel<ElementData> = (option) =>
-    option.element;
-
   const getWeaponSeriesValue: getOptionValue<WeaponSeriesData> = (option) =>
     option.weaponSeriesId.toString();
 
   const getWeaponSeriesLabel: getOptionLabel<WeaponSeriesData> = (option) =>
     option.weaponSeries;
-
-  const getWeaponTypeValue: getOptionValue<WeaponTypeData> = (option) =>
-    option.weaponTypeId.toString();
-
-  const getWeaponTypeLabel: getOptionLabel<WeaponTypeData> = (option) =>
-    option.weaponType;
 
   return (
     <Page title="Your Weapons">
