@@ -1,24 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { ChangeEvent, Fragment, useEffect, useState } from 'react';
-import ReactPaginate from 'react-paginate';
-import Select, { ActionMeta } from 'react-select';
-import { getOptionLabel, getOptionValue } from 'react-select/src/builtins';
-import {
-  AccountPassiveData,
-  ElementData,
-  WeaponTypeData,
-} from '../../api/DataInterfaces';
+import { AccountPassiveData } from '../../api/DataInterfaces';
 import { PrivateApi } from '../../api/UserData';
-import { PublicApi } from '../../api/GameData';
-import {
-  displayLimit,
-  marginPagesDisplayed,
-  pageRangeDisplayed,
-} from '../../AppSettings';
+
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
 import { AccountPassiveList } from './AccountPassiveList';
+import { ElementSelect } from '../../components/ElementSelect';
+import { WeaponSelect } from '../../components/WeaponSelect';
+import useElementFilter from '../../hooks/useElementFilter';
+import { ElementString } from '../../components/ElementIcon';
+import useWeaponFilter from '../../hooks/useWeaponFilter';
+import { WeaponString } from '../../components/WeaponIcon';
 
 export const AccountPassivePage = () => {
   const [passives, setPassives] = useState<AccountPassiveData[] | null>(null);
@@ -28,30 +22,24 @@ export const AccountPassivePage = () => {
     AccountPassiveData[] | null
   >(null);
 
-  const [elements, setElements] = useState<ElementData[]>([]);
-  const [weaponTypes, setWeaponTypes] = useState<WeaponTypeData[]>([]);
+  const {
+    elementFilter: newElementFilter,
+    toggleElement,
+    selectNone: selectNoElements,
+    selectAll: selectAllElements,
+  } = useElementFilter();
 
-  const [elementFilter, setElementFilter] = useState<ElementData | null>(null);
-  const [
-    weaponTypeFilter,
-    setWeaponTypeFilter,
-  ] = useState<WeaponTypeData | null>(null);
+  const {
+    weaponFilter,
+    toggleWeapon,
+    selectNone: selectNoWeapons,
+    selectAll: selectAllWeapons,
+  } = useWeaponFilter();
+
   const [progressFilter, setProgressFilter] = useState(false);
-
-  const [offset, setOffset] = useState(0);
-  const [pageCount, setPageCount] = useState(1);
 
   useEffect(() => {
     let cancelled = false;
-    const doGetPublicData = async () => {
-      const api = new PublicApi();
-      const elementData = await api.getElements();
-      const weaponTypeData = await api.getWeaponTypes();
-      if (!cancelled) {
-        setElements(elementData);
-        setWeaponTypes(weaponTypeData);
-      }
-    };
     const doGetPassives = async () => {
       const api = new PrivateApi();
       const passiveData = await api.getPassives();
@@ -60,7 +48,6 @@ export const AccountPassivePage = () => {
         setPassivesLoading(false);
       }
     };
-    doGetPublicData();
     doGetPassives();
     return () => {
       cancelled = true;
@@ -70,58 +57,26 @@ export const AccountPassivePage = () => {
   useEffect(() => {
     let passiveFilter = passives;
     if (passiveFilter) {
-      if (elementFilter) {
+      if (newElementFilter) {
         passiveFilter = passiveFilter.filter(
-          (p) => p.passive?.element === elementFilter.element,
+          (p) => newElementFilter[p.passive?.element as ElementString],
         );
       }
-      if (weaponTypeFilter) {
+      if (weaponFilter) {
         passiveFilter = passiveFilter.filter(
-          (p) => p.passive?.weaponType === weaponTypeFilter.weaponType,
+          (p) => weaponFilter[p.passive?.weaponType as WeaponString],
         );
       }
       if (progressFilter) {
         passiveFilter = passiveFilter.filter((p) => p.wanted && !p.owned);
       }
-      setPageCount(Math.ceil(passiveFilter.length / displayLimit));
-      passiveFilter = passiveFilter?.slice(offset, offset + displayLimit);
       setDisplayPassives(passiveFilter);
     }
-  }, [elementFilter, offset, passives, progressFilter, weaponTypeFilter]);
-
-  const handleChangeElement = (
-    value: ElementData | null,
-    actionMeta: ActionMeta<ElementData>,
-  ) => {
-    setElementFilter(value);
-  };
-
-  const handleChangeWeaponType = (
-    value: WeaponTypeData | null,
-    actionMeta: ActionMeta<WeaponTypeData>,
-  ) => {
-    setWeaponTypeFilter(value);
-  };
+  }, [newElementFilter, passives, progressFilter, weaponFilter]);
 
   const handleChangeProgress = (e: ChangeEvent<HTMLInputElement>) => {
     setProgressFilter(e.currentTarget.checked);
   };
-
-  const handlePageChange = (selectedItem: { selected: number }) => {
-    setOffset(selectedItem.selected * displayLimit);
-  };
-
-  const getElementValue: getOptionValue<ElementData> = (option) =>
-    option.elementId.toString();
-
-  const getElementLabel: getOptionLabel<ElementData> = (option) =>
-    option.element;
-
-  const getWeaponTypeValue: getOptionValue<WeaponTypeData> = (option) =>
-    option.weaponTypeId.toString();
-
-  const getWeaponTypeLabel: getOptionLabel<WeaponTypeData> = (option) =>
-    option.weaponType;
 
   return (
     <Page title="Your Passives">
@@ -152,18 +107,14 @@ export const AccountPassivePage = () => {
           >
             Weapon Type
           </label>
-          {weaponTypes ? (
-            <Select
-              name="weaponType"
-              options={weaponTypes}
-              getOptionValue={getWeaponTypeValue}
-              getOptionLabel={getWeaponTypeLabel}
-              onChange={handleChangeWeaponType}
-              isClearable={true}
+          <div>
+            <WeaponSelect
+              weaponFilter={weaponFilter}
+              toggleWeapon={toggleWeapon}
+              selectNone={selectNoWeapons}
+              selectAll={selectAllWeapons}
             />
-          ) : (
-            <LoadingText />
-          )}
+          </div>
           <label
             htmlFor="elements"
             css={css`
@@ -172,29 +123,19 @@ export const AccountPassivePage = () => {
           >
             Element
           </label>
-          {elements ? (
-            <Select
-              name="elements"
-              options={elements}
-              getOptionValue={getElementValue}
-              getOptionLabel={getElementLabel}
-              onChange={handleChangeElement}
-              isClearable={true}
+          <div
+            css={css`
+              padding-bottom: 10px;
+            `}
+          >
+            <ElementSelect
+              elementFilter={newElementFilter}
+              toggleElement={toggleElement}
+              selectNone={selectNoElements}
+              selectAll={selectAllElements}
             />
-          ) : (
-            <LoadingText />
-          )}
+          </div>
           <AccountPassiveList data={displayPassives || []} />
-          <ReactPaginate
-            pageCount={pageCount}
-            pageRangeDisplayed={pageRangeDisplayed}
-            marginPagesDisplayed={marginPagesDisplayed}
-            onPageChange={handlePageChange}
-            containerClassName="pagination"
-            pageClassName="pages pagination"
-            activeClassName="active"
-            breakClassName="break-me"
-          />
         </Fragment>
       )}
     </Page>

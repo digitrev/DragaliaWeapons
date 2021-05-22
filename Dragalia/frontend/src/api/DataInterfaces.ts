@@ -91,6 +91,8 @@ export interface AccountPassiveGroupData {
   element: string;
   weaponType: string;
   passives: AccountPassiveData[];
+  owned: number;
+  wanted: number;
 }
 
 //material related data
