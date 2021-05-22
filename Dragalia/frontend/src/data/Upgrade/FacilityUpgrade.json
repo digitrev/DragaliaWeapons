@@ -33895,6 +33895,41 @@
   },
   {
     "FacilityID": 102601,
+    "MaterialID": "203012001",
+    "FacilityLevel": 31,
+    "Quantity": 1100,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "203012001",
+    "FacilityLevel": 32,
+    "Quantity": 1200,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "203012001",
+    "FacilityLevel": 33,
+    "Quantity": 1300,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "203012001",
+    "FacilityLevel": 34,
+    "Quantity": 1400,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "203012001",
+    "FacilityLevel": 35,
+    "Quantity": 1500,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
     "MaterialID": "Rupie",
     "FacilityLevel": 2,
     "Quantity": 100,
@@ -34094,6 +34129,41 @@
     "MaterialID": "Rupie",
     "FacilityLevel": 30,
     "Quantity": 5000,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "Rupie",
+    "FacilityLevel": 31,
+    "Quantity": 5200,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "Rupie",
+    "FacilityLevel": 32,
+    "Quantity": 5400,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "Rupie",
+    "FacilityLevel": 33,
+    "Quantity": 5600,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "Rupie",
+    "FacilityLevel": 34,
+    "Quantity": 5800,
+    "Active": true
+  },
+  {
+    "FacilityID": 102601,
+    "MaterialID": "Rupie",
+    "FacilityLevel": 35,
+    "Quantity": 6000,
     "Active": true
   },
   {
