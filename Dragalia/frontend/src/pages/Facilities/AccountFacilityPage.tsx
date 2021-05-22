@@ -9,12 +9,10 @@ import { Page } from '../Page';
 import { AccountFacilityList } from './AccountFacilityList';
 
 export const AccountFacilityPage = () => {
-  const [accountFacilities, setAccountFacilities] = useState<
-    AccountFacilityData[] | null
-  >(null);
-  const [accountFacilitiesLoading, setAccountFacilitiesLoading] = useState(
-    true,
+  const [facilities, setFacilities] = useState<AccountFacilityData[] | null>(
+    null,
   );
+  const [facilitiesLoading, setFacilitiesLoading] = useState(true);
   const [displayFacilities, setDisplayFacilities] = useState<
     AccountFacilityData[] | null
   >(null);
@@ -33,10 +31,10 @@ export const AccountFacilityPage = () => {
     };
     const doGetAccountFacilities = async () => {
       const api = new PrivateApi();
-      const accountFacilityData = await api.getFacilities();
+      const facilityData = await api.getFacilities();
       if (!cancelled) {
-        setAccountFacilities(accountFacilityData);
-        setAccountFacilitiesLoading(false);
+        setFacilities(facilityData);
+        setFacilitiesLoading(false);
       }
     };
     doGetPublicData();
@@ -47,7 +45,7 @@ export const AccountFacilityPage = () => {
   }, []);
 
   useEffect(() => {
-    let facilityFilter = accountFacilities;
+    let facilityFilter = facilities;
     if (facilityFilter) {
       if (progressFilter) {
         facilityFilter = facilityFilter.filter(
@@ -56,7 +54,7 @@ export const AccountFacilityPage = () => {
       }
       setDisplayFacilities(facilityFilter);
     }
-  }, [accountFacilities, progressFilter]);
+  }, [facilities, progressFilter]);
 
   const handleChangeProgress = (e: ChangeEvent<HTMLInputElement>) => {
     setProgressFilter(e.currentTarget.checked);
@@ -64,7 +62,7 @@ export const AccountFacilityPage = () => {
 
   return (
     <Page title="Your Facilities">
-      {accountFacilitiesLoading ? (
+      {facilitiesLoading ? (
         <LoadingText />
       ) : (
         <Fragment>

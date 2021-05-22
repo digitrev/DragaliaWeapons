@@ -29,8 +29,16 @@ export const AboutPage = () => {
         little thank you here if you do.
       </p>
       <p>
-        I don't have a privacy statement, but all I store is your name, email,
-        and the data you provide through the app.
+        Save/load is just the data structure encoded in base64, so if you want
+        to muck around with your save data, try{' '}
+        <a
+          href="https://www.base64decode.org/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          base64 decode/encode
+        </a>
+        .
       </p>
       <p>
         Thanks to:

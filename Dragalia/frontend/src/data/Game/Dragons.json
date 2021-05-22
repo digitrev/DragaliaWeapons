@@ -264,6 +264,12 @@
     "element": "Water"
   },
   {
+    "dragonId": 20050318,
+    "dragon": "Rose Queen",
+    "rarity": 5,
+    "element": "Wind"
+  },
+  {
     "dragonId": 20050317,
     "dragon": "Menoetius",
     "rarity": 5,

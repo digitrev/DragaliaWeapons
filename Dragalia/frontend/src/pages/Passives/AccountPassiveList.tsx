@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { FC } from 'react';
+import { FC, useMemo } from 'react';
 import {
   AccountPassiveData,
   AccountPassiveGroupData,
@@ -23,21 +23,32 @@ export const AccountPassiveList: FC<Props> = ({ data }) => {
       );
       if (ind >= 0) {
         acc[ind].passives.push(cur);
+        if (cur.owned) {
+          acc[ind].owned += 1;
+        } else if (cur.wanted) {
+          acc[ind].wanted += 1;
+        }
       } else {
         acc.push({
           element: cur.passive.element,
           weaponType: cur.passive.weaponType,
           passives: [cur],
+          owned: cur.owned ? 1 : 0,
+          wanted: !cur.owned && cur.wanted ? 1 : 0,
         });
       }
     }
     return acc;
   }, []);
 
-  const allExpanded = data.reduce((map, group, index) => {
-    map[index] = true;
-    return map;
-  }, {} as { [key: number]: boolean });
+  const allExpanded = useMemo(
+    () =>
+      data.reduce((map, group, index) => {
+        map[index] = true;
+        return map;
+      }, {} as { [key: number]: boolean }),
+    [data],
+  );
 
   const {
     expandAll,

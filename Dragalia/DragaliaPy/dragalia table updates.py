@@ -4,23 +4,9 @@ import getpass
 import sys
 
 #DB parameters
-print("0: Development")
-print("1: Staging")
-print("2: Production")
-env=input("Enter environment number: ")
-if (env=="0"):
-    DBName="DragaliaV2"
-    serverName = "TREVOR2020"
-    connectionString=f"Driver={{SQL Server}};Server={serverName};Database={DBName};Trusted_Connection=yes;"
-else: 
-    if (env=="1"):
-        DBName="DragaliaStaging"
-    elif (env=="2"):
-        DBName="DragaliaDB"
-    else:
-        sys.exit("Invalid selection")
-    your_password_here=getpass.getpass(f"Password for {DBName}: ")
-    connectionString = f"Driver={{ODBC Driver 17 for SQL Server}};Server=tcp:dragaliadbdbserver.database.windows.net,1433;Database={DBName};Uid=TrevorB;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+DBName="DragaliaV2"
+serverName = "TREVOR2020"
+connectionString=f"Driver={{SQL Server}};Server={serverName};Database={DBName};Trusted_Connection=yes;"
 
 #array of useful data?
 parameterDict = dict()

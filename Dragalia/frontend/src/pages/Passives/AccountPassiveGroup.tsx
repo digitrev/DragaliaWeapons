@@ -19,7 +19,7 @@ interface Props {
 }
 
 export const AccountPassiveGroup: FC<Props> = ({
-  data: { element, weaponType, passives },
+  data: { element, weaponType, passives, owned, wanted },
   updateAccordion,
   accordionStatus,
   index,
@@ -51,37 +51,46 @@ export const AccountPassiveGroup: FC<Props> = ({
               <WeaponIcon weaponType={weaponType as WeaponString} />
             )}
           </div>
+          <div
+            css={css`
+              margin: auto 25px auto auto;
+            `}
+          >
+            Owned: {owned}, Wanted: {wanted}
+          </div>
         </AccordionSummary>
         <AccordionDetails
           css={css`
             flex-direction: column;
           `}
         >
-          <ul
-            css={css`
-              list-style: none;
-              margin: 10px 0 0 0;
-              padding: 0px 20px;
-              background-color: #fff;
-              border-bottom-left-radius: 4px;
-              border-bottom-right-radius: 4px;
-              box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
-            `}
-          >
-            {passives.map((passive) => (
-              <li
-                key={passive.passiveId}
-                css={css`
-                  border-top: 1px solid ${gray5};
-                  ::first-of-type {
-                    border-top: none;
-                  }
-                `}
-              >
-                <AccountPassive data={passive} />
-              </li>
-            ))}
-          </ul>
+          {accordionStatus && accordionStatus[index] && (
+            <ul
+              css={css`
+                list-style: none;
+                margin: 10px 0 0 0;
+                padding: 0px 20px;
+                background-color: #fff;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
+              `}
+            >
+              {passives.map((passive) => (
+                <li
+                  key={passive.passiveId}
+                  css={css`
+                    border-top: 1px solid ${gray5};
+                    ::first-of-type {
+                      border-top: none;
+                    }
+                  `}
+                >
+                  <AccountPassive data={passive} />
+                </li>
+              ))}
+            </ul>
+          )}
         </AccordionDetails>
       </Accordion>
     </div>

@@ -91,6 +91,8 @@ export interface AccountPassiveGroupData {
   element: string;
   weaponType: string;
   passives: AccountPassiveData[];
+  owned: number;
+  wanted: number;
 }
 
 //material related data
@@ -223,4 +225,15 @@ export interface QuestData {
   questId: number;
   quest: string;
   sortPath: string;
+}
+
+//save/load
+export interface SaveData {
+  adventurers: AccountAdventurerData[];
+  dragons: AccountDragonData[];
+  facilities: AccountFacilityData[];
+  inventory: AccountInventoryData[];
+  passives: AccountPassiveData[];
+  weapons: AccountWeaponData[];
+  wyrmprints: AccountWyrmprintData[];
 }

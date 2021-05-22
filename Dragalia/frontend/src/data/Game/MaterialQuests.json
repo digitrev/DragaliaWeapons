@@ -1058,7 +1058,11 @@
       "category": "Adventurer Upgrade Items",
       "sortPath": "/3/1/"
     },
-    "quest": { "questId": 398, "quest": "Astral Raids", "sortPath": "/2/1/" }
+    "quest": {
+      "questId": 398,
+      "quest": "Astral Raids",
+      "sortPath": "/2/1/"
+    }
   },
   {
     "materialId": "117001001",
@@ -1069,7 +1073,11 @@
       "category": "Adventurer Upgrade Items",
       "sortPath": "/3/2/"
     },
-    "quest": { "questId": 398, "quest": "Astral Raids", "sortPath": "/2/1/" }
+    "quest": {
+      "questId": 398,
+      "quest": "Astral Raids",
+      "sortPath": "/2/1/"
+    }
   },
   {
     "materialId": "122001001",
@@ -1080,7 +1088,11 @@
       "category": "Wyrmprint Upgrade Items",
       "sortPath": "/8/1/"
     },
-    "quest": { "questId": 398, "quest": "Astral Raids", "sortPath": "/2/1/" }
+    "quest": {
+      "questId": 398,
+      "quest": "Astral Raids",
+      "sortPath": "/2/1/"
+    }
   },
   {
     "materialId": "123001001",
@@ -1091,7 +1103,11 @@
       "category": "Wyrmprint Upgrade Items",
       "sortPath": "/8/2/"
     },
-    "quest": { "questId": 398, "quest": "Astral Raids", "sortPath": "/2/1/" }
+    "quest": {
+      "questId": 398,
+      "quest": "Astral Raids",
+      "sortPath": "/2/1/"
+    }
   },
   {
     "materialId": "201016001",
@@ -1102,7 +1118,131 @@
       "category": "Astral Shards",
       "sortPath": "/25/"
     },
-    "quest": { "questId": 398, "quest": "Astral Raids", "sortPath": "/2/1/" }
+    "quest": {
+      "questId": 398,
+      "quest": "Astral Raids",
+      "sortPath": "/2/1/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 565,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 565,
+      "quest": "Zephyr's Trial",
+      "sortPath": "/2/2/1/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 565,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 565,
+      "quest": "Zephyr's Trial",
+      "sortPath": "/2/2/1/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 565,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 565,
+      "quest": "Zephyr's Trial",
+      "sortPath": "/2/2/1/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 565,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 565,
+      "quest": "Zephyr's Trial",
+      "sortPath": "/2/2/1/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 565,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 565,
+      "quest": "Zephyr's Trial",
+      "sortPath": "/2/2/1/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 565,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 565,
+      "quest": "Zephyr's Trial",
+      "sortPath": "/2/2/1/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 565,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 565,
+      "quest": "Zephyr's Trial",
+      "sortPath": "/2/2/1/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 565,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 565,
+      "quest": "Zephyr's Trial",
+      "sortPath": "/2/2/1/"
+    }
   },
   {
     "materialId": "116001001",
@@ -1195,36 +1335,6 @@
     }
   },
   {
-    "materialId": "104001044",
-    "questId": 566,
-    "material": {
-      "materialId": "104001044",
-      "material": "Resplendence Orb",
-      "category": "Orbs",
-      "sortPath": "/9/4/4/"
-    },
-    "quest": {
-      "questId": 566,
-      "quest": "Zephyr's Trial: Master",
-      "sortPath": "/2/2/1/1/"
-    }
-  },
-  {
-    "materialId": "104001001",
-    "questId": 566,
-    "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
-    },
-    "quest": {
-      "questId": 566,
-      "quest": "Zephyr's Trial: Master",
-      "sortPath": "/2/2/1/1/"
-    }
-  },
-  {
     "materialId": "201021001",
     "questId": 566,
     "material": {
@@ -1261,7 +1371,7 @@
       "materialId": "208030011",
       "material": "Gala Ranzal's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0.1/1/"
+      "sortPath": "/36.2/4/1/"
     },
     "quest": {
       "questId": 566,
@@ -1276,7 +1386,7 @@
       "materialId": "208030012",
       "material": "Gala Ranzal's Devotion",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0.1/2/"
+      "sortPath": "/36.2/4/2/"
     },
     "quest": {
       "questId": 566,
@@ -1375,36 +1485,6 @@
     }
   },
   {
-    "materialId": "104001044",
-    "questId": 567,
-    "material": {
-      "materialId": "104001044",
-      "material": "Resplendence Orb",
-      "category": "Orbs",
-      "sortPath": "/9/4/4/"
-    },
-    "quest": {
-      "questId": 567,
-      "quest": "Zephyr's Trial: Expert",
-      "sortPath": "/2/2/1/2/"
-    }
-  },
-  {
-    "materialId": "104001001",
-    "questId": 567,
-    "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
-    },
-    "quest": {
-      "questId": 567,
-      "quest": "Zephyr's Trial: Expert",
-      "sortPath": "/2/2/1/2/"
-    }
-  },
-  {
     "materialId": "201021001",
     "questId": 567,
     "material": {
@@ -1420,13 +1500,28 @@
     }
   },
   {
+    "materialId": "202004005",
+    "questId": 567,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 567,
+      "quest": "Zephyr's Trial: Expert",
+      "sortPath": "/2/2/1/2/"
+    }
+  },
+  {
     "materialId": "208030011",
     "questId": 567,
     "material": {
       "materialId": "208030011",
       "material": "Gala Ranzal's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0.1/1/"
+      "sortPath": "/36.2/4/1/"
     },
     "quest": {
       "questId": 567,
@@ -1441,7 +1536,7 @@
       "materialId": "208030012",
       "material": "Gala Ranzal's Devotion",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0.1/2/"
+      "sortPath": "/36.2/4/2/"
     },
     "quest": {
       "questId": 567,
@@ -1540,13 +1635,13 @@
     }
   },
   {
-    "materialId": "104001001",
+    "materialId": "201021001",
     "questId": 568,
     "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
     },
     "quest": {
       "questId": 568,
@@ -1555,13 +1650,13 @@
     }
   },
   {
-    "materialId": "201021001",
+    "materialId": "202004005",
     "questId": 568,
     "material": {
-      "materialId": "201021001",
-      "material": "Nature's Blessing",
-      "category": "Nature's Blessing",
-      "sortPath": "/27/"
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
     },
     "quest": {
       "questId": 568,
@@ -1576,7 +1671,7 @@
       "materialId": "208030011",
       "material": "Gala Ranzal's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0.1/1/"
+      "sortPath": "/36.2/4/1/"
     },
     "quest": {
       "questId": 568,
@@ -1586,6 +1681,126 @@
   },
   {
     "materialId": "116001001",
+    "questId": 561,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 561,
+      "quest": "Poseidon's Trial",
+      "sortPath": "/2/2/2/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 561,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 561,
+      "quest": "Poseidon's Trial",
+      "sortPath": "/2/2/2/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 561,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 561,
+      "quest": "Poseidon's Trial",
+      "sortPath": "/2/2/2/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 561,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 561,
+      "quest": "Poseidon's Trial",
+      "sortPath": "/2/2/2/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 561,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 561,
+      "quest": "Poseidon's Trial",
+      "sortPath": "/2/2/2/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 561,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 561,
+      "quest": "Poseidon's Trial",
+      "sortPath": "/2/2/2/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 561,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 561,
+      "quest": "Poseidon's Trial",
+      "sortPath": "/2/2/2/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 561,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 561,
+      "quest": "Poseidon's Trial",
+      "sortPath": "/2/2/2/"
+    }
+  },
+  {
+    "materialId": "116001001",
     "questId": 562,
     "material": {
       "materialId": "116001001",
@@ -1667,36 +1882,6 @@
       "material": "Amplifying Gemstone",
       "category": "Wyrmprint Upgrade Items",
       "sortPath": "/8/2/"
-    },
-    "quest": {
-      "questId": 562,
-      "quest": "Poseidon's Trial: Master",
-      "sortPath": "/2/2/2/1/"
-    }
-  },
-  {
-    "materialId": "104001044",
-    "questId": 562,
-    "material": {
-      "materialId": "104001044",
-      "material": "Resplendence Orb",
-      "category": "Orbs",
-      "sortPath": "/9/4/4/"
-    },
-    "quest": {
-      "questId": 562,
-      "quest": "Poseidon's Trial: Master",
-      "sortPath": "/2/2/2/1/"
-    }
-  },
-  {
-    "materialId": "104001001",
-    "questId": 562,
-    "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
     },
     "quest": {
       "questId": 562,
@@ -1741,7 +1926,7 @@
       "materialId": "208020011",
       "material": "Gala Elisanne's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0/1/"
+      "sortPath": "/36.2/2/1/"
     },
     "quest": {
       "questId": 562,
@@ -1756,7 +1941,7 @@
       "materialId": "208020012",
       "material": "Gala Elisanne's Devotion",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0/2/"
+      "sortPath": "/36.2/2/2/"
     },
     "quest": {
       "questId": 562,
@@ -1855,36 +2040,6 @@
     }
   },
   {
-    "materialId": "104001044",
-    "questId": 563,
-    "material": {
-      "materialId": "104001044",
-      "material": "Resplendence Orb",
-      "category": "Orbs",
-      "sortPath": "/9/4/4/"
-    },
-    "quest": {
-      "questId": 563,
-      "quest": "Poseidon's Trial: Expert",
-      "sortPath": "/2/2/2/2/"
-    }
-  },
-  {
-    "materialId": "104001001",
-    "questId": 563,
-    "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
-    },
-    "quest": {
-      "questId": 563,
-      "quest": "Poseidon's Trial: Expert",
-      "sortPath": "/2/2/2/2/"
-    }
-  },
-  {
     "materialId": "201021001",
     "questId": 563,
     "material": {
@@ -1900,13 +2055,28 @@
     }
   },
   {
+    "materialId": "202004005",
+    "questId": 563,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 563,
+      "quest": "Poseidon's Trial: Expert",
+      "sortPath": "/2/2/2/2/"
+    }
+  },
+  {
     "materialId": "208020011",
     "questId": 563,
     "material": {
       "materialId": "208020011",
       "material": "Gala Elisanne's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0/1/"
+      "sortPath": "/36.2/2/1/"
     },
     "quest": {
       "questId": 563,
@@ -1921,7 +2091,7 @@
       "materialId": "208020012",
       "material": "Gala Elisanne's Devotion",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0/2/"
+      "sortPath": "/36.2/2/2/"
     },
     "quest": {
       "questId": 563,
@@ -2020,13 +2190,13 @@
     }
   },
   {
-    "materialId": "104001001",
+    "materialId": "201021001",
     "questId": 564,
     "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
     },
     "quest": {
       "questId": 564,
@@ -2035,13 +2205,13 @@
     }
   },
   {
-    "materialId": "201021001",
+    "materialId": "202004005",
     "questId": 564,
     "material": {
-      "materialId": "201021001",
-      "material": "Nature's Blessing",
-      "category": "Nature's Blessing",
-      "sortPath": "/27/"
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
     },
     "quest": {
       "questId": 564,
@@ -2056,12 +2226,1242 @@
       "materialId": "208020011",
       "material": "Gala Elisanne's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/0/1/"
+      "sortPath": "/36.2/2/1/"
     },
     "quest": {
       "questId": 564,
       "quest": "Poseidon's Trial: Standard",
       "sortPath": "/2/2/2/3/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 598,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 598,
+      "quest": "Kamuy's Trial",
+      "sortPath": "/2/2/3/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 598,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 598,
+      "quest": "Kamuy's Trial",
+      "sortPath": "/2/2/3/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 598,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 598,
+      "quest": "Kamuy's Trial",
+      "sortPath": "/2/2/3/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 598,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 598,
+      "quest": "Kamuy's Trial",
+      "sortPath": "/2/2/3/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 598,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 598,
+      "quest": "Kamuy's Trial",
+      "sortPath": "/2/2/3/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 598,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 598,
+      "quest": "Kamuy's Trial",
+      "sortPath": "/2/2/3/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 598,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 598,
+      "quest": "Kamuy's Trial",
+      "sortPath": "/2/2/3/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 598,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 598,
+      "quest": "Kamuy's Trial",
+      "sortPath": "/2/2/3/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 599,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 599,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 599,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 599,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 599,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 599,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 599,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 599,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "208020021",
+    "questId": 599,
+    "material": {
+      "materialId": "208020021",
+      "material": "Nurse Aeleen's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/1/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "208020022",
+    "questId": 599,
+    "material": {
+      "materialId": "208020022",
+      "material": "Nurse Aeleen's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/2/"
+    },
+    "quest": {
+      "questId": 599,
+      "quest": "Kamuy's Trial: Master",
+      "sortPath": "/2/2/3/1/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 600,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 600,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 600,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 600,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 600,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 600,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 600,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 600,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "208020021",
+    "questId": 600,
+    "material": {
+      "materialId": "208020021",
+      "material": "Nurse Aeleen's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/1/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "208020022",
+    "questId": 600,
+    "material": {
+      "materialId": "208020022",
+      "material": "Nurse Aeleen's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/2/"
+    },
+    "quest": {
+      "questId": 600,
+      "quest": "Kamuy's Trial: Expert",
+      "sortPath": "/2/2/3/2/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 601,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 601,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 601,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 601,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 601,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 601,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 601,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 601,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "208020021",
+    "questId": 601,
+    "material": {
+      "materialId": "208020021",
+      "material": "Nurse Aeleen's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/1/"
+    },
+    "quest": {
+      "questId": 601,
+      "quest": "Kamuy's Trial: Standard",
+      "sortPath": "/2/2/3/3/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 602,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 602,
+      "quest": "Mars's Trial",
+      "sortPath": "/2/2/4/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 602,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 602,
+      "quest": "Mars's Trial",
+      "sortPath": "/2/2/4/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 602,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 602,
+      "quest": "Mars's Trial",
+      "sortPath": "/2/2/4/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 602,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 602,
+      "quest": "Mars's Trial",
+      "sortPath": "/2/2/4/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 602,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 602,
+      "quest": "Mars's Trial",
+      "sortPath": "/2/2/4/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 602,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 602,
+      "quest": "Mars's Trial",
+      "sortPath": "/2/2/4/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 602,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 602,
+      "quest": "Mars's Trial",
+      "sortPath": "/2/2/4/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 602,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 602,
+      "quest": "Mars's Trial",
+      "sortPath": "/2/2/4/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 603,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 603,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 603,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 603,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 603,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 603,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 603,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 603,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "208010011",
+    "questId": 603,
+    "material": {
+      "materialId": "208010011",
+      "material": "Yukata Cassandra's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/1/1/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "208010012",
+    "questId": 603,
+    "material": {
+      "materialId": "208010012",
+      "material": "Yukata Cassandra's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/1/2/"
+    },
+    "quest": {
+      "questId": 603,
+      "quest": "Mars's Trial: Master",
+      "sortPath": "/2/2/4/1/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 604,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 604,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 604,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 604,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 604,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 604,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 604,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 604,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "208010011",
+    "questId": 604,
+    "material": {
+      "materialId": "208010011",
+      "material": "Yukata Cassandra's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/1/1/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "208010012",
+    "questId": 604,
+    "material": {
+      "materialId": "208010012",
+      "material": "Yukata Cassandra's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/1/2/"
+    },
+    "quest": {
+      "questId": 604,
+      "quest": "Mars's Trial: Expert",
+      "sortPath": "/2/2/4/2/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 605,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 605,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 605,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 605,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 605,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 605,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 605,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 605,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "208010011",
+    "questId": 605,
+    "material": {
+      "materialId": "208010011",
+      "material": "Yukata Cassandra's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/1/1/"
+    },
+    "quest": {
+      "questId": 605,
+      "quest": "Mars's Trial: Standard",
+      "sortPath": "/2/2/4/3/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 557,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 557,
+      "quest": "Thor's Trial",
+      "sortPath": "/2/2/5/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 557,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 557,
+      "quest": "Thor's Trial",
+      "sortPath": "/2/2/5/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 557,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 557,
+      "quest": "Thor's Trial",
+      "sortPath": "/2/2/5/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 557,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 557,
+      "quest": "Thor's Trial",
+      "sortPath": "/2/2/5/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 557,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 557,
+      "quest": "Thor's Trial",
+      "sortPath": "/2/2/5/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 557,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 557,
+      "quest": "Thor's Trial",
+      "sortPath": "/2/2/5/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 557,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 557,
+      "quest": "Thor's Trial",
+      "sortPath": "/2/2/5/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 557,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 557,
+      "quest": "Thor's Trial",
+      "sortPath": "/2/2/5/"
     }
   },
   {
@@ -2076,7 +3476,7 @@
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2091,7 +3491,7 @@
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2106,7 +3506,7 @@
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2121,7 +3521,7 @@
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2136,7 +3536,7 @@
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2151,37 +3551,7 @@
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
-    }
-  },
-  {
-    "materialId": "104001044",
-    "questId": 558,
-    "material": {
-      "materialId": "104001044",
-      "material": "Resplendence Orb",
-      "category": "Orbs",
-      "sortPath": "/9/4/4/"
-    },
-    "quest": {
-      "questId": 558,
-      "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
-    }
-  },
-  {
-    "materialId": "104001001",
-    "questId": 558,
-    "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
-    },
-    "quest": {
-      "questId": 558,
-      "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2196,7 +3566,7 @@
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2211,7 +3581,7 @@
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2221,12 +3591,12 @@
       "materialId": "208040011",
       "material": "Gala Prince's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/1/1/"
+      "sortPath": "/36.2/5/1/"
     },
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2236,12 +3606,12 @@
       "materialId": "208040012",
       "material": "Gala Prince's Devotion",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/1/2/"
+      "sortPath": "/36.2/5/2/"
     },
     "quest": {
       "questId": 558,
       "quest": "Thor's Trial: Master",
-      "sortPath": "/2/2/3/1/"
+      "sortPath": "/2/2/5/1/"
     }
   },
   {
@@ -2256,7 +3626,7 @@
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2271,7 +3641,7 @@
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2286,7 +3656,7 @@
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2301,7 +3671,7 @@
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2316,7 +3686,7 @@
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2331,37 +3701,7 @@
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
-    }
-  },
-  {
-    "materialId": "104001044",
-    "questId": 559,
-    "material": {
-      "materialId": "104001044",
-      "material": "Resplendence Orb",
-      "category": "Orbs",
-      "sortPath": "/9/4/4/"
-    },
-    "quest": {
-      "questId": 559,
-      "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
-    }
-  },
-  {
-    "materialId": "104001001",
-    "questId": 559,
-    "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
-    },
-    "quest": {
-      "questId": 559,
-      "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2376,7 +3716,22 @@
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 559,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 559,
+      "quest": "Thor's Trial: Expert",
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2386,12 +3741,12 @@
       "materialId": "208040011",
       "material": "Gala Prince's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/1/1/"
+      "sortPath": "/36.2/5/1/"
     },
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2401,12 +3756,12 @@
       "materialId": "208040012",
       "material": "Gala Prince's Devotion",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/1/2/"
+      "sortPath": "/36.2/5/2/"
     },
     "quest": {
       "questId": 559,
       "quest": "Thor's Trial: Expert",
-      "sortPath": "/2/2/3/2/"
+      "sortPath": "/2/2/5/2/"
     }
   },
   {
@@ -2421,7 +3776,7 @@
     "quest": {
       "questId": 560,
       "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
+      "sortPath": "/2/2/5/3/"
     }
   },
   {
@@ -2436,7 +3791,7 @@
     "quest": {
       "questId": 560,
       "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
+      "sortPath": "/2/2/5/3/"
     }
   },
   {
@@ -2451,7 +3806,7 @@
     "quest": {
       "questId": 560,
       "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
+      "sortPath": "/2/2/5/3/"
     }
   },
   {
@@ -2466,7 +3821,7 @@
     "quest": {
       "questId": 560,
       "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
+      "sortPath": "/2/2/5/3/"
     }
   },
   {
@@ -2481,7 +3836,7 @@
     "quest": {
       "questId": 560,
       "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
+      "sortPath": "/2/2/5/3/"
     }
   },
   {
@@ -2496,22 +3851,7 @@
     "quest": {
       "questId": 560,
       "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
-    }
-  },
-  {
-    "materialId": "104001001",
-    "questId": 560,
-    "material": {
-      "materialId": "104001001",
-      "material": "Rainbow Orb",
-      "category": "Orbs",
-      "sortPath": "/9/6/"
-    },
-    "quest": {
-      "questId": 560,
-      "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
+      "sortPath": "/2/2/5/3/"
     }
   },
   {
@@ -2526,7 +3866,22 @@
     "quest": {
       "questId": 560,
       "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
+      "sortPath": "/2/2/5/3/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 560,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 560,
+      "quest": "Thor's Trial: Standard",
+      "sortPath": "/2/2/5/3/"
     }
   },
   {
@@ -2536,12 +3891,567 @@
       "materialId": "208040011",
       "material": "Gala Prince's Conviction",
       "category": "Spiral Materials",
-      "sortPath": "/36.2/1/1/"
+      "sortPath": "/36.2/5/1/"
     },
     "quest": {
       "questId": 560,
       "quest": "Thor's Trial: Standard",
-      "sortPath": "/2/2/3/3/"
+      "sortPath": "/2/2/5/3/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 606,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 606,
+      "quest": "Chthonius's Trial",
+      "sortPath": "/2/2/6/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 606,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 606,
+      "quest": "Chthonius's Trial",
+      "sortPath": "/2/2/6/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 606,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 606,
+      "quest": "Chthonius's Trial",
+      "sortPath": "/2/2/6/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 606,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 606,
+      "quest": "Chthonius's Trial",
+      "sortPath": "/2/2/6/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 606,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 606,
+      "quest": "Chthonius's Trial",
+      "sortPath": "/2/2/6/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 606,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 606,
+      "quest": "Chthonius's Trial",
+      "sortPath": "/2/2/6/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 606,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 606,
+      "quest": "Chthonius's Trial",
+      "sortPath": "/2/2/6/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 606,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 606,
+      "quest": "Chthonius's Trial",
+      "sortPath": "/2/2/6/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 607,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 607,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 607,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 607,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 607,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 607,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 607,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 607,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "208050011",
+    "questId": 607,
+    "material": {
+      "materialId": "208050011",
+      "material": "Gala Alex's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/6/1/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "208050012",
+    "questId": 607,
+    "material": {
+      "materialId": "208050012",
+      "material": "Gala Alex's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/6/2/"
+    },
+    "quest": {
+      "questId": 607,
+      "quest": "Chthonius's Trial: Master",
+      "sortPath": "/2/2/6/1/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 608,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 608,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 608,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 608,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 608,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 608,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 608,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 608,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "208050011",
+    "questId": 608,
+    "material": {
+      "materialId": "208050011",
+      "material": "Gala Alex's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/6/1/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "208050012",
+    "questId": 608,
+    "material": {
+      "materialId": "208050012",
+      "material": "Gala Alex's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/6/2/"
+    },
+    "quest": {
+      "questId": 608,
+      "quest": "Chthonius's Trial: Expert",
+      "sortPath": "/2/2/6/2/"
+    }
+  },
+  {
+    "materialId": "116001001",
+    "questId": 609,
+    "material": {
+      "materialId": "116001001",
+      "material": "Fortifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/1/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
+    }
+  },
+  {
+    "materialId": "117001001",
+    "questId": 609,
+    "material": {
+      "materialId": "117001001",
+      "material": "Amplifying Crystal",
+      "category": "Adventurer Upgrade Items",
+      "sortPath": "/3/2/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
+    }
+  },
+  {
+    "materialId": "118001001",
+    "questId": 609,
+    "material": {
+      "materialId": "118001001",
+      "material": "Fortifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/1/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
+    }
+  },
+  {
+    "materialId": "119001001",
+    "questId": 609,
+    "material": {
+      "materialId": "119001001",
+      "material": "Amplifying Dragonscale",
+      "category": "Dragon Upgrade Items",
+      "sortPath": "/5/2/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
+    }
+  },
+  {
+    "materialId": "122001001",
+    "questId": 609,
+    "material": {
+      "materialId": "122001001",
+      "material": "Fortifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/1/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
+    }
+  },
+  {
+    "materialId": "123001001",
+    "questId": 609,
+    "material": {
+      "materialId": "123001001",
+      "material": "Amplifying Gemstone",
+      "category": "Wyrmprint Upgrade Items",
+      "sortPath": "/8/2/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
+    }
+  },
+  {
+    "materialId": "201021001",
+    "questId": 609,
+    "material": {
+      "materialId": "201021001",
+      "material": "Nature's Blessing",
+      "category": "Nature's Blessing",
+      "sortPath": "/27/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
+    }
+  },
+  {
+    "materialId": "202004005",
+    "questId": 609,
+    "material": {
+      "materialId": "202004005",
+      "material": "Orichalcum",
+      "category": "Special Weapon Upgrade Materials",
+      "sortPath": "/29/2/2/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
+    }
+  },
+  {
+    "materialId": "208050011",
+    "questId": 609,
+    "material": {
+      "materialId": "208050011",
+      "material": "Gala Alex's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/6/1/"
+    },
+    "quest": {
+      "questId": 609,
+      "quest": "Chthonius's Trial: Standard",
+      "sortPath": "/2/2/6/3/"
     }
   },
   {
@@ -2793,7 +4703,11 @@
       "category": "Universal Void Drops",
       "sortPath": "/22/1/"
     },
-    "quest": { "questId": 404, "quest": "Ghost Strikes", "sortPath": "/2/3/2/" }
+    "quest": {
+      "questId": 404,
+      "quest": "Ghost Strikes",
+      "sortPath": "/2/3/2/"
+    }
   },
   {
     "materialId": "201014002",
@@ -2804,7 +4718,11 @@
       "category": "Universal Void Drops",
       "sortPath": "/22/2/"
     },
-    "quest": { "questId": 404, "quest": "Ghost Strikes", "sortPath": "/2/3/2/" }
+    "quest": {
+      "questId": 404,
+      "quest": "Ghost Strikes",
+      "sortPath": "/2/3/2/"
+    }
   },
   {
     "materialId": "201014001",
@@ -3280,7 +5198,11 @@
       "category": "Universal Void Drops",
       "sortPath": "/22/1/"
     },
-    "quest": { "questId": 412, "quest": "Golem Strikes", "sortPath": "/2/3/4/" }
+    "quest": {
+      "questId": 412,
+      "quest": "Golem Strikes",
+      "sortPath": "/2/3/4/"
+    }
   },
   {
     "materialId": "201014002",
@@ -3291,7 +5213,11 @@
       "category": "Universal Void Drops",
       "sortPath": "/22/2/"
     },
-    "quest": { "questId": 412, "quest": "Golem Strikes", "sortPath": "/2/3/4/" }
+    "quest": {
+      "questId": 412,
+      "quest": "Golem Strikes",
+      "sortPath": "/2/3/4/"
+    }
   },
   {
     "materialId": "201014001",
@@ -6812,7 +8738,11 @@
       "category": "Adventurer Upgrade Items",
       "sortPath": "/2/1/"
     },
-    "quest": { "questId": 462, "quest": "Avenue to Power", "sortPath": "/3/1/" }
+    "quest": {
+      "questId": 462,
+      "quest": "Avenue to Power",
+      "sortPath": "/3/1/"
+    }
   },
   {
     "materialId": "101001002",
@@ -6823,7 +8753,11 @@
       "category": "Adventurer Upgrade Items",
       "sortPath": "/2/2/"
     },
-    "quest": { "questId": 462, "quest": "Avenue to Power", "sortPath": "/3/1/" }
+    "quest": {
+      "questId": 462,
+      "quest": "Avenue to Power",
+      "sortPath": "/3/1/"
+    }
   },
   {
     "materialId": "101001003",
@@ -6834,7 +8768,11 @@
       "category": "Adventurer Upgrade Items",
       "sortPath": "/2/3/"
     },
-    "quest": { "questId": 462, "quest": "Avenue to Power", "sortPath": "/3/1/" }
+    "quest": {
+      "questId": 462,
+      "quest": "Avenue to Power",
+      "sortPath": "/3/1/"
+    }
   },
   {
     "materialId": "Rupie",
@@ -12095,7 +14033,11 @@
       "category": "Currency",
       "sortPath": "/1/1/"
     },
-    "quest": { "questId": 524, "quest": "Volk's Wrath", "sortPath": "/4/5/1/" }
+    "quest": {
+      "questId": 524,
+      "quest": "Volk's Wrath",
+      "sortPath": "/4/5/1/"
+    }
   },
   {
     "materialId": "116001001",
@@ -12106,7 +14048,11 @@
       "category": "Adventurer Upgrade Items",
       "sortPath": "/3/1/"
     },
-    "quest": { "questId": 524, "quest": "Volk's Wrath", "sortPath": "/4/5/1/" }
+    "quest": {
+      "questId": 524,
+      "quest": "Volk's Wrath",
+      "sortPath": "/4/5/1/"
+    }
   },
   {
     "materialId": "117001001",
@@ -12117,7 +14063,11 @@
       "category": "Adventurer Upgrade Items",
       "sortPath": "/3/2/"
     },
-    "quest": { "questId": 524, "quest": "Volk's Wrath", "sortPath": "/4/5/1/" }
+    "quest": {
+      "questId": 524,
+      "quest": "Volk's Wrath",
+      "sortPath": "/4/5/1/"
+    }
   },
   {
     "materialId": "122001001",
@@ -12128,7 +14078,11 @@
       "category": "Wyrmprint Upgrade Items",
       "sortPath": "/8/1/"
     },
-    "quest": { "questId": 524, "quest": "Volk's Wrath", "sortPath": "/4/5/1/" }
+    "quest": {
+      "questId": 524,
+      "quest": "Volk's Wrath",
+      "sortPath": "/4/5/1/"
+    }
   },
   {
     "materialId": "123001001",
@@ -12139,7 +14093,11 @@
       "category": "Wyrmprint Upgrade Items",
       "sortPath": "/8/2/"
     },
-    "quest": { "questId": 524, "quest": "Volk's Wrath", "sortPath": "/4/5/1/" }
+    "quest": {
+      "questId": 524,
+      "quest": "Volk's Wrath",
+      "sortPath": "/4/5/1/"
+    }
   },
   {
     "materialId": "Rupie",
