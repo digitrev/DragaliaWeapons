@@ -16,15 +16,15 @@ export const WeaponSelect: FC<WeaponSelectProps> = ({
   selectAll,
 }) => {
   const weapons: WeaponString[] = [
-    'Axe',
+    'Sword',
     'Blade',
-    'Bow',
+    'Axe',
     'Dagger',
     'Lance',
-    'Manacaster',
-    'Sword',
-    'Staff',
+    'Bow',
     'Wand',
+    'Staff',
+    'Manacaster',
   ];
   return (
     <>
