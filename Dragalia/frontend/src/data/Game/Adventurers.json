@@ -88,6 +88,14 @@
     "mcLimit": 70
   },
   {
+    "adventurerId": 10250104,
+    "adventurer": "Armored Yachiyo",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10250103,
     "adventurer": "Nobunaga",
     "rarity": 5,
@@ -357,7 +365,7 @@
     "rarity": 5,
     "element": "Flame",
     "weaponType": "Staff",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10850101,
@@ -765,7 +773,7 @@
     "rarity": 4,
     "element": "Water",
     "weaponType": "Staff",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10840201,
@@ -984,6 +992,14 @@
     "mcLimit": 50
   },
   {
+    "adventurerId": 10550304,
+    "adventurer": "Grimnir",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10550303,
     "adventurer": "Halloween Melsa",
     "rarity": 5,
@@ -1174,6 +1190,14 @@
     "element": "Wind",
     "weaponType": "Staff",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10950302,
+    "adventurer": "Saiga",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10950301,
@@ -1629,7 +1653,7 @@
     "rarity": 5,
     "element": "Shadow",
     "weaponType": "Sword",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10150501,

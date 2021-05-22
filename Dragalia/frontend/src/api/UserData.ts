@@ -32,33 +32,59 @@ export class PrivateApi {
 
   //adventurers
   public getAdventurers = () => {
-    return Store.get(
-      this.adv,
-      this.api.getAdventurers().map<AccountAdventurerData>((a) => ({
+    const allAdv = this.api
+      .getAdventurers()
+      .map<AccountAdventurerData>((a) => ({
         adventurerId: a.adventurerId,
         currentLevel: 0,
         wantedLevel: 0,
         adventurer: a,
-      })),
-    ) as AccountAdventurerData[];
+      }));
+    const storedAdv = Store.get(this.adv) as AccountAdventurerData[];
+    if (storedAdv) {
+      storedAdv.forEach((sa) => {
+        let i = allAdv.findIndex((aa) => aa.adventurerId === sa.adventurerId);
+        allAdv[i] = {
+          ...allAdv[i],
+          currentLevel: sa.currentLevel,
+          wantedLevel: sa.wantedLevel,
+        };
+      });
+    }
+
+    return allAdv;
   };
 
   public putAdventurer = (
     adventurerID: number,
     adventurer: AccountAdventurerData,
   ) => {
-    Store.set(
-      this.adv,
-      this.getAdventurers().map((a) =>
-        a.adventurerId === adventurerID
-          ? {
-              ...a,
-              wantedLevel: adventurer.wantedLevel,
-              currentLevel: adventurer.currentLevel,
-            }
-          : a,
-      ),
+    const toSave = this.getAdventurers().reduce<AccountAdventurerData[]>(
+      (acc, cur) => {
+        if (
+          cur.adventurerId === adventurerID &&
+          (adventurer.currentLevel > 0 || adventurer.wantedLevel > 0)
+        )
+          acc.push({
+            adventurerId: cur.adventurerId,
+            currentLevel: adventurer.currentLevel,
+            wantedLevel: adventurer.wantedLevel,
+          });
+        else if (
+          cur.adventurerId !== adventurerID &&
+          (cur.currentLevel > 0 || cur.wantedLevel > 0)
+        ) {
+          acc.push({ ...cur, adventurer: undefined });
+        }
+        return acc;
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.adv, toSave);
+    } else {
+      Store.remove(this.adv);
+    }
   };
 
   public getAdventurerCosts = (adventurerID?: number) => {
@@ -90,30 +116,51 @@ export class PrivateApi {
 
   //dragons
   public getDragons = () => {
-    return Store.get(
-      this.drg,
-      this.api.getDragons().map<AccountDragonData>((d) => ({
-        dragonId: d.dragonId,
-        dragon: d,
-        unbind: 0,
-        unbindWanted: 0,
-      })),
-    ) as AccountDragonData[];
+    const allDrg = this.api.getDragons().map<AccountDragonData>((d) => ({
+      dragonId: d.dragonId,
+      dragon: d,
+      unbind: 0,
+      unbindWanted: 0,
+    }));
+    const storedDrg = Store.get(this.drg) as AccountDragonData[];
+    if (storedDrg) {
+      storedDrg.forEach((sd) => {
+        let i = allDrg.findIndex((ad) => ad.dragonId === sd.dragonId);
+        allDrg[i] = {
+          ...allDrg[i],
+          unbind: sd.unbind,
+          unbindWanted: sd.unbindWanted,
+        };
+      });
+    }
+
+    return allDrg;
   };
 
   public putDragon = (dragonID: number, dragon: AccountDragonData) => {
-    Store.set(
-      this.drg,
-      this.getDragons().map((d) =>
-        d.dragonId === dragonID
-          ? {
-              ...d,
-              unbind: dragon.unbind,
-              unbindWanted: dragon.unbindWanted,
-            }
-          : d,
-      ),
-    );
+    const toSave = this.getDragons().reduce<AccountDragonData[]>((acc, cur) => {
+      if (
+        cur.dragonId === dragonID &&
+        (dragon.unbind > 0 || dragon.unbindWanted > 0)
+      ) {
+        acc.push({
+          dragonId: cur.dragonId,
+          unbind: dragon.unbind,
+          unbindWanted: dragon.unbindWanted,
+        });
+      } else if (
+        cur.dragonId !== dragonID &&
+        (cur.unbind > 0 || cur.unbindWanted > 0)
+      ) {
+        acc.push({ ...cur, dragon: undefined });
+      }
+      return acc;
+    }, []);
+    if (toSave.length > 0) {
+      Store.set(this.drg, toSave);
+    } else {
+      Store.remove(this.drg);
+    }
   };
 
   public getDragonCosts = (dragonID?: number) => {
@@ -141,9 +188,9 @@ export class PrivateApi {
 
   //facilities
   public getFacilities = () => {
-    return Store.get(
-      this.fcl,
-      this.api.getFacilities().reduce<AccountFacilityData[]>((acc, cur) => {
+    const allFcl = this.api
+      .getFacilities()
+      .reduce<AccountFacilityData[]>((acc, cur) => {
         for (let i = 0; i < cur.limit; i++) {
           acc.push({
             facilityId: cur.facilityId,
@@ -154,8 +201,23 @@ export class PrivateApi {
           });
         }
         return acc;
-      }, []),
-    ) as AccountFacilityData[];
+      }, []);
+    const storedFcl = Store.get(this.fcl) as AccountFacilityData[];
+    if (storedFcl) {
+      storedFcl.forEach((sf) => {
+        let i = allFcl.findIndex(
+          (af) =>
+            af.facilityId === sf.facilityId && af.copyNumber === sf.copyNumber,
+        );
+        allFcl[i] = {
+          ...allFcl[i],
+          currentLevel: sf.currentLevel,
+          wantedLevel: sf.wantedLevel,
+        };
+      });
+    }
+
+    return allFcl;
   };
 
   public putFacility = (
@@ -163,18 +225,34 @@ export class PrivateApi {
     copyNumber: number,
     facility: AccountFacilityData,
   ) => {
-    Store.set(
-      this.fcl,
-      this.getFacilities().map((f) =>
-        f.facilityId === facilityID && f.copyNumber === copyNumber
-          ? {
-              ...f,
-              currentLevel: facility.currentLevel,
-              wantedLevel: facility.wantedLevel,
-            }
-          : f,
-      ),
+    const toSave = this.getFacilities().reduce<AccountFacilityData[]>(
+      (acc, cur) => {
+        if (
+          cur.facilityId === facilityID &&
+          cur.copyNumber === copyNumber &&
+          (facility.currentLevel > 0 || facility.wantedLevel > 0)
+        ) {
+          acc.push({
+            ...cur,
+            currentLevel: facility.currentLevel,
+            wantedLevel: facility.wantedLevel,
+            facility: undefined,
+          });
+        } else if (
+          (cur.facilityId !== facilityID || cur.copyNumber !== copyNumber) &&
+          (cur.currentLevel > 0 || cur.wantedLevel > 0)
+        ) {
+          acc.push({ ...cur, facility: undefined });
+        }
+        return acc;
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.fcl, toSave);
+    } else {
+      Store.remove(this.fcl);
+    }
   };
 
   public getFacilityCosts = (facilityID?: number, copyNumber?: number) => {
@@ -213,14 +291,20 @@ export class PrivateApi {
 
   //Inventory
   public getInventory = () => {
-    return Store.get(
-      this.inv,
-      this.api.getMaterials().map<AccountInventoryData>((m) => ({
-        materialId: m.materialId,
-        quantity: 0,
-        material: m,
-      })),
-    ) as AccountInventoryData[];
+    const allInv = this.api.getMaterials().map<AccountInventoryData>((m) => ({
+      materialId: m.materialId,
+      quantity: 0,
+      material: m,
+    }));
+    const storedInv = Store.get(this.inv) as AccountInventoryData[];
+    if (storedInv) {
+      storedInv.forEach((si) => {
+        let i = allInv.findIndex((ai) => ai.materialId === si.materialId);
+        allInv[i] = { ...allInv[i], quantity: si.quantity };
+      });
+    }
+
+    return allInv;
   };
 
   public getItemFilter = (materialIDs: string[]) =>
@@ -229,45 +313,71 @@ export class PrivateApi {
     );
 
   public putItem = (materialID: string, item: AccountInventoryData) => {
-    Store.set(
-      this.inv,
-      this.getInventory().map((i) =>
-        i.materialId === materialID
-          ? {
-              ...i,
-              quantity: item.quantity,
-            }
-          : i,
-      ),
+    const toSave = this.getInventory().reduce<AccountInventoryData[]>(
+      (acc, cur) => {
+        if (cur.materialId === materialID && item.quantity > 0) {
+          acc.push({
+            materialId: cur.materialId,
+            quantity: item.quantity,
+          });
+        } else if (cur.materialId !== materialID && cur.quantity > 0) {
+          acc.push({ ...cur, material: undefined });
+        }
+        return acc;
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.inv, toSave);
+    } else {
+      Store.remove(this.inv);
+    }
   };
 
   //Passives
   public getPassives = () => {
-    return Store.get(
-      this.psv,
-      this.api.getPassives().map<AccountPassiveData>((p) => ({
-        passiveId: p.passiveId,
-        owned: false,
-        wanted: false,
-        passive: p,
-      })),
-    ) as AccountPassiveData[];
+    const allPsv = this.api.getPassives().map<AccountPassiveData>((p) => ({
+      passiveId: p.passiveId,
+      owned: false,
+      wanted: false,
+      passive: p,
+    }));
+    const storedPsv = Store.get(this.psv) as AccountPassiveData[];
+    if (storedPsv) {
+      storedPsv.forEach((sp) => {
+        let i = allPsv.findIndex((ap) => ap.passiveId === sp.passiveId);
+        allPsv[i] = {
+          ...allPsv[i],
+          owned: sp.owned,
+          wanted: sp.wanted,
+        };
+      });
+    }
+
+    return allPsv;
   };
 
   public putPassive = (passiveID: number, passive: AccountPassiveData) => {
-    Store.set(
-      this.psv,
-      this.getPassives().map((p) =>
-        p.passiveId === passiveID
-          ? {
-              ...p,
-              owned: passive.owned,
-              wanted: passive.wanted,
-            }
-          : p,
-      ),
+    const toSave = this.getPassives().reduce<AccountPassiveData[]>(
+      (acc, cur) => {
+        if (cur.passiveId === passiveID && (passive.owned || passive.wanted)) {
+          acc.push({
+            passiveId: cur.passiveId,
+            wanted: cur.wanted,
+            owned: cur.owned,
+          });
+        } else if (cur.passiveId !== passiveID && (cur.owned || cur.wanted)) {
+          acc.push({ ...cur, passive: undefined });
+        }
+        return acc;
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.psv, toSave);
+    } else {
+      Store.remove(this.psv);
+    }
   };
 
   public getPassiveCosts = (passiveID?: number) => {
@@ -296,54 +406,113 @@ export class PrivateApi {
 
   //Weapons
   public getWeapons = () => {
-    return Store.get(
-      this.wpn,
-      this.api.getWeapons().map<AccountWeaponData>((w) => ({
-        weaponId: w.weaponId,
-        copies: 0,
-        copiesWanted: 0,
-        weaponLevel: 0,
-        weaponLevelWanted: 0,
-        unbind: 0,
-        unbindWanted: 0,
-        refine: 0,
-        refineWanted: 0,
-        slot: 0,
-        slotWanted: 0,
-        dominion: 0,
-        dominionWanted: 0,
-        bonus: 0,
-        bonusWanted: 0,
-        weapon: w,
-      })),
-    ) as AccountWeaponData[];
+    const allWpn = this.api.getWeapons().map<AccountWeaponData>((w) => ({
+      weaponId: w.weaponId,
+      copies: 0,
+      copiesWanted: 0,
+      weaponLevel: 0,
+      weaponLevelWanted: 0,
+      unbind: 0,
+      unbindWanted: 0,
+      refine: 0,
+      refineWanted: 0,
+      slot: 0,
+      slotWanted: 0,
+      dominion: 0,
+      dominionWanted: 0,
+      bonus: 0,
+      bonusWanted: 0,
+      weapon: w,
+    }));
+    const storedWpn = Store.get(this.wpn) as AccountWeaponData[];
+    if (storedWpn) {
+      storedWpn.forEach((sw) => {
+        let i = allWpn.findIndex((aw) => aw.weaponId === sw.weaponId);
+        allWpn[i] = {
+          ...allWpn[i],
+          copies: sw.copies,
+          copiesWanted: sw.copiesWanted,
+          weaponLevel: sw.weaponLevel,
+          weaponLevelWanted: sw.weaponLevelWanted,
+          unbind: sw.unbind,
+          unbindWanted: sw.unbindWanted,
+          refine: sw.refine,
+          refineWanted: sw.refineWanted,
+          slot: sw.slot,
+          slotWanted: sw.slotWanted,
+          dominion: sw.dominion,
+          dominionWanted: sw.dominionWanted,
+          bonus: sw.bonus,
+          bonusWanted: sw.bonusWanted,
+        };
+      });
+    }
+
+    return allWpn;
   };
 
   public putWeapon = (weaponID: number, weapon: AccountWeaponData) => {
-    Store.set(
-      this.wpn,
-      this.getWeapons().map((w) =>
-        w.weaponId === weaponID
-          ? {
-              ...w,
-              copies: weapon.copies,
-              copiesWanted: weapon.copiesWanted,
-              weaponLevel: weapon.weaponLevel,
-              weaponLevelWanted: weapon.weaponLevelWanted,
-              unbind: weapon.unbind,
-              unbindWanted: weapon.unbindWanted,
-              refine: weapon.refine,
-              refineWanted: weapon.refineWanted,
-              slot: weapon.slot,
-              slotWanted: weapon.slotWanted,
-              dominion: weapon.dominion,
-              dominionWanted: weapon.dominionWanted,
-              bonus: weapon.bonus,
-              bonusWanted: weapon.bonusWanted,
-            }
-          : w,
-      ),
-    );
+    const toSave = this.getWeapons().reduce<AccountWeaponData[]>((acc, cur) => {
+      if (
+        cur.weaponId === weaponID &&
+        (weapon.copies > 0 ||
+          weapon.copiesWanted > 0 ||
+          weapon.weaponLevel > 0 ||
+          weapon.weaponLevelWanted > 0 ||
+          weapon.unbind > 0 ||
+          weapon.unbindWanted > 0 ||
+          weapon.refine > 0 ||
+          weapon.refineWanted > 0 ||
+          weapon.slot > 0 ||
+          weapon.slotWanted > 0 ||
+          weapon.dominion > 0 ||
+          weapon.dominionWanted > 0 ||
+          weapon.bonus > 0 ||
+          weapon.bonusWanted > 0)
+      ) {
+        acc.push({
+          weaponId: cur.weaponId,
+          copies: weapon.copies,
+          copiesWanted: weapon.copiesWanted,
+          weaponLevel: weapon.weaponLevel,
+          weaponLevelWanted: weapon.weaponLevelWanted,
+          unbind: weapon.unbind,
+          unbindWanted: weapon.unbindWanted,
+          refine: weapon.refine,
+          refineWanted: weapon.refineWanted,
+          slot: weapon.slot,
+          slotWanted: weapon.slotWanted,
+          dominion: weapon.dominion,
+          dominionWanted: weapon.dominionWanted,
+          bonus: weapon.bonus,
+          bonusWanted: weapon.bonusWanted,
+        });
+      } else if (
+        cur.weaponId !== weaponID &&
+        (cur.copies > 0 ||
+          cur.copiesWanted > 0 ||
+          cur.weaponLevel > 0 ||
+          cur.weaponLevelWanted > 0 ||
+          cur.unbind > 0 ||
+          cur.unbindWanted > 0 ||
+          cur.refine > 0 ||
+          cur.refineWanted > 0 ||
+          cur.slot > 0 ||
+          cur.slotWanted > 0 ||
+          cur.dominion > 0 ||
+          cur.dominionWanted > 0 ||
+          cur.bonus > 0 ||
+          cur.bonusWanted > 0)
+      ) {
+        acc.push({ ...cur, weapon: undefined });
+      }
+      return acc;
+    }, []);
+    if (toSave.length > 0) {
+      Store.set(this.wpn, toSave);
+    } else {
+      Store.remove(this.wpn);
+    }
   };
 
   public getWeaponCosts = (weaponID?: number) => {
@@ -429,41 +598,79 @@ export class PrivateApi {
 
   //wyrmprints
   public getWyrmprints = () => {
-    return Store.get(
-      this.wpt,
-      this.api.getWyrmprints().map<AccountWyrmprintData>((w) => ({
-        wyrmprintId: w.wyrmprintId,
-        wyrmprintLevel: 0,
-        wyrmprintLevelWanted: 0,
-        unbind: 0,
-        unbindWanted: 0,
-        copies: 0,
-        copiesWanted: 0,
-        wyrmprint: w,
-      })),
-    ) as AccountWyrmprintData[];
+    const allWpt = this.api.getWyrmprints().map<AccountWyrmprintData>((w) => ({
+      wyrmprintId: w.wyrmprintId,
+      wyrmprintLevel: 0,
+      wyrmprintLevelWanted: 0,
+      unbind: 0,
+      unbindWanted: 0,
+      copies: 0,
+      copiesWanted: 0,
+      wyrmprint: w,
+    }));
+    const storedWpt = Store.get(this.wpt) as AccountWyrmprintData[];
+    if (storedWpt) {
+      storedWpt.forEach((sw) => {
+        let i = allWpt.findIndex((aw) => aw.wyrmprintId === sw.wyrmprintId);
+        allWpt[i] = {
+          ...allWpt[i],
+          wyrmprintLevel: sw.wyrmprintLevel,
+          wyrmprintLevelWanted: sw.wyrmprintLevelWanted,
+          unbind: sw.unbind,
+          unbindWanted: sw.unbindWanted,
+          copies: sw.copies,
+          copiesWanted: sw.copiesWanted,
+        };
+      });
+    }
+
+    return allWpt;
   };
 
   public putWyrmprint = (
     wyrmprintID: number,
     wyrmprint: AccountWyrmprintData,
   ) => {
-    Store.set(
-      this.wpt,
-      this.getWyrmprints().map((w) =>
-        w.wyrmprintId === wyrmprintID
-          ? {
-              ...w,
-              wyrmprintLevel: wyrmprint.wyrmprintLevel,
-              wyrmprintLevelWanted: wyrmprint.wyrmprintLevelWanted,
-              unbind: wyrmprint.unbind,
-              unbindWanted: wyrmprint.unbindWanted,
-              copies: wyrmprint.copies,
-              copiesWanted: wyrmprint.copiesWanted,
-            }
-          : w,
-      ),
+    const toSave = this.getWyrmprints().reduce<AccountWyrmprintData[]>(
+      (acc, cur) => {
+        if (
+          cur.wyrmprintId === wyrmprintID &&
+          (wyrmprint.wyrmprintLevel > 0 ||
+            wyrmprint.wyrmprintLevelWanted > 0 ||
+            wyrmprint.unbind > 0 ||
+            wyrmprint.unbindWanted > 0 ||
+            wyrmprint.copies > 0 ||
+            wyrmprint.copiesWanted > 0)
+        ) {
+          acc.push({
+            wyrmprintId: cur.wyrmprintId,
+            wyrmprintLevel: wyrmprint.wyrmprintLevel,
+            wyrmprintLevelWanted: wyrmprint.wyrmprintLevelWanted,
+            unbind: wyrmprint.unbind,
+            unbindWanted: wyrmprint.unbindWanted,
+            copies: wyrmprint.copies,
+            copiesWanted: wyrmprint.copiesWanted,
+          });
+        } else if (
+          cur.wyrmprintId !== wyrmprintID &&
+          (cur.wyrmprintLevel > 0 ||
+            cur.wyrmprintLevelWanted > 0 ||
+            cur.unbind > 0 ||
+            cur.unbindWanted > 0 ||
+            cur.copies > 0 ||
+            cur.copiesWanted > 0)
+        ) {
+          acc.push({ ...cur, wyrmprint: undefined });
+        }
+        return acc;
+      },
+      [],
     );
+    if (toSave.length > 0) {
+      Store.set(this.wpt, toSave);
+    } else {
+      Store.remove(this.wpt);
+    }
   };
 
   public getWyrmprintCosts = (wyrmprintID?: number) => {

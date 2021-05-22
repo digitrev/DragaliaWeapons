@@ -715,24 +715,84 @@
     "sortPath": "/2/2/2/3/"
   },
   {
+    "questId": 598,
+    "quest": "Kamuy's Trial",
+    "sortPath": "/2/2/3/"
+  },
+  {
+    "questId": 599,
+    "quest": "Kamuy's Trial: Master",
+    "sortPath": "/2/2/3/1/"
+  },
+  {
+    "questId": 600,
+    "quest": "Kamuy's Trial: Expert",
+    "sortPath": "/2/2/3/2/"
+  },
+  {
+    "questId": 601,
+    "quest": "Kamuy's Trial: Standard",
+    "sortPath": "/2/2/3/3/"
+  },
+  {
+    "questId": 602,
+    "quest": "Mars's Trial",
+    "sortPath": "/2/2/4/"
+  },
+  {
+    "questId": 603,
+    "quest": "Mars's Trial: Master",
+    "sortPath": "/2/2/4/1/"
+  },
+  {
+    "questId": 604,
+    "quest": "Mars's Trial: Expert",
+    "sortPath": "/2/2/4/2/"
+  },
+  {
+    "questId": 605,
+    "quest": "Mars's Trial: Standard",
+    "sortPath": "/2/2/4/3/"
+  },
+  {
     "questId": 557,
     "quest": "Thor's Trial",
-    "sortPath": "/2/2/3/"
+    "sortPath": "/2/2/5/"
   },
   {
     "questId": 558,
     "quest": "Thor's Trial: Master",
-    "sortPath": "/2/2/3/1/"
+    "sortPath": "/2/2/5/1/"
   },
   {
     "questId": 559,
     "quest": "Thor's Trial: Expert",
-    "sortPath": "/2/2/3/2/"
+    "sortPath": "/2/2/5/2/"
   },
   {
     "questId": 560,
     "quest": "Thor's Trial: Standard",
-    "sortPath": "/2/2/3/3/"
+    "sortPath": "/2/2/5/3/"
+  },
+  {
+    "questId": 606,
+    "quest": "Chthonius's Trial",
+    "sortPath": "/2/2/6/"
+  },
+  {
+    "questId": 607,
+    "quest": "Chthonius's Trial: Master",
+    "sortPath": "/2/2/6/1/"
+  },
+  {
+    "questId": 608,
+    "quest": "Chthonius's Trial: Expert",
+    "sortPath": "/2/2/6/2/"
+  },
+  {
+    "questId": 609,
+    "quest": "Chthonius's Trial: Standard",
+    "sortPath": "/2/2/6/3/"
   },
   {
     "questId": 399,
