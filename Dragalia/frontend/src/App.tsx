@@ -111,7 +111,7 @@ const App: React.FC = () => {
 
           {/* other */}
           <Route path="/about" component={AboutPage} />
-          <Route path="/test" component={SaveLoad} />
+          <Route path="/settings" component={SaveLoad} />
 
           {/* fallback */}
           <Route component={NotFoundPage} />

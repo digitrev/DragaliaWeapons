@@ -21,6 +21,7 @@ export const Header = () => {
         z-index: 99;
       `}
     >
+      <Link to="/about">About</Link>
       <Link
         to="/"
         css={css`
@@ -32,7 +33,7 @@ export const Header = () => {
       >
         Home
       </Link>
-      <Link to="/about">About</Link>
+      <Link to="/settings">Save/Load</Link>
     </div>
   );
 };

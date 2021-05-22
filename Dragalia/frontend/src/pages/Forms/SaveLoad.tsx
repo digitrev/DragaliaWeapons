@@ -7,6 +7,7 @@ import { Form, Values } from './Form';
 import { Field } from './Field';
 import { LoadingText } from '../Loading';
 import copy from 'copy-to-clipboard';
+import { SaveData } from '../../api/DataInterfaces';
 
 export const SaveLoad = () => {
   const [saveString, setSaveString] = useState<string>();
@@ -16,27 +17,24 @@ export const SaveLoad = () => {
     let cancelled = false;
     const doGetData = async () => {
       const api = new PrivateApi();
-      const adventurerData = await api.getAdventurers();
-      const dragonData = await api.getDragons();
-      const facilityData = await api.getFacilities();
-      const inventoryData = await api.getInventory();
-      const passiveData = await api.getPassives();
-      const weaponData = await api.getWeapons();
-      const wyrmprintData = await api.getWyrmprints();
+      const adventurerData = api.getAdventurers();
+      const dragonData = api.getDragons();
+      const facilityData = api.getFacilities();
+      const inventoryData = api.getInventory();
+      const passiveData = api.getPassives();
+      const weaponData = api.getWeapons();
+      const wyrmprintData = api.getWyrmprints();
+      const saveData: SaveData = {
+        adventurers: adventurerData,
+        dragons: dragonData,
+        facilities: facilityData,
+        inventory: inventoryData,
+        passives: passiveData,
+        weapons: weaponData,
+        wyrmprints: wyrmprintData,
+      };
       if (!cancelled) {
-        setSaveString(
-          encode(
-            JSON.stringify({
-              adventurers: adventurerData,
-              dragons: dragonData,
-              facilities: facilityData,
-              inventory: inventoryData,
-              passives: passiveData,
-              weapons: weaponData,
-              wyrmprints: wyrmprintData,
-            }),
-          ),
-        );
+        setSaveString(encode(JSON.stringify(saveData)));
         setSsLoading(false);
       }
     };
@@ -54,7 +52,31 @@ export const SaveLoad = () => {
   };
 
   const handleImport = async (values: Values) => {
-    return { success: true };
+    try {
+      const {
+        adventurers,
+        dragons,
+        facilities,
+        inventory,
+        passives,
+        weapons,
+        wyrmprints,
+      }: SaveData = JSON.parse(decode(values.loadString));
+
+      const api = new PrivateApi();
+
+      adventurers.forEach((a) => api.putAdventurer(a.adventurerId, a));
+      dragons.forEach((d) => api.putDragon(d.dragonId, d));
+      facilities.forEach((f) => api.putFacility(f.facilityId, f.copyNumber, f));
+      inventory.forEach((i) => api.putItem(i.materialId, i));
+      passives.forEach((p) => api.putPassive(p.passiveId, p));
+      weapons.forEach((w) => api.putWeapon(w.weaponId, w));
+      wyrmprints.forEach((w) => api.putWyrmprint(w.wyrmprintId, w));
+
+      return { success: true };
+    } catch {
+      return { success: false };
+    }
   };
 
   return (
@@ -70,6 +92,13 @@ export const SaveLoad = () => {
           <Field name="saveString" label="Export String" type="TextArea" />
         </Form>
       )}
+      <Form
+        onSubmit={handleImport}
+        submitCaption="Import data"
+        failureMessage="Bad data"
+      >
+        <Field name="loadString" label="Import String" type="TextArea" />
+      </Form>
     </Page>
   );
 };
