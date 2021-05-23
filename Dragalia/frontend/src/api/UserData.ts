@@ -360,10 +360,7 @@ export class PrivateApi {
   public putPassive = (passiveID: number, passive: AccountPassiveData) => {
     const toSave = this.getPassives().reduce<AccountPassiveData[]>(
       (acc, cur) => {
-        if (
-          cur.passiveId === passiveID &&
-          (cur.owned !== passive.owned || cur.wanted !== passive.wanted)
-        ) {
+        if (cur.passiveId === passiveID && (passive.owned || passive.wanted)) {
           acc.push({
             passiveId: passiveID,
             wanted: passive.wanted,
