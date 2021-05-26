@@ -362,9 +362,9 @@ export class PrivateApi {
       (acc, cur) => {
         if (cur.passiveId === passiveID && (passive.owned || passive.wanted)) {
           acc.push({
-            passiveId: cur.passiveId,
-            wanted: cur.wanted,
-            owned: cur.owned,
+            passiveId: passiveID,
+            wanted: passive.wanted,
+            owned: passive.owned,
           });
         } else if (cur.passiveId !== passiveID && (cur.owned || cur.wanted)) {
           acc.push({ ...cur, passive: undefined });
