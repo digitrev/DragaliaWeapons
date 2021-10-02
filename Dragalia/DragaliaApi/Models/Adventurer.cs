@@ -10,7 +10,6 @@ namespace DragaliaApi.Models
     {
         public Adventurer()
         {
-            AccountAdventurers = new HashSet<AccountAdventurer>();
             ManaCircles = new HashSet<ManaCircle>();
         }
 
@@ -24,7 +23,6 @@ namespace DragaliaApi.Models
 
         public virtual Element Element { get; set; }
         public virtual WeaponType WeaponType { get; set; }
-        public virtual ICollection<AccountAdventurer> AccountAdventurers { get; set; }
         public virtual ICollection<ManaCircle> ManaCircles { get; set; }
     }
 }

@@ -10,7 +10,6 @@ namespace DragaliaApi.Models
     {
         public Dragon()
         {
-            AccountDragons = new HashSet<AccountDragon>();
             DragonUnbinds = new HashSet<DragonUnbind>();
         }
 
@@ -21,7 +20,6 @@ namespace DragaliaApi.Models
         public bool? Active { get; set; }
 
         public virtual Element Element { get; set; }
-        public virtual ICollection<AccountDragon> AccountDragons { get; set; }
         public virtual ICollection<DragonUnbind> DragonUnbinds { get; set; }
     }
 }

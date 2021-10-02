@@ -3,14 +3,13 @@
    "ContextClassName": "DragaliaContext",
    "ContextNamespace": null,
    "DefaultDacpacSchema": null,
-   "FilterSchemas": false,
+   "FilterSchemas": true,
    "IncludeConnectionString": false,
    "ModelNamespace": null,
    "OutputContextPath": "Data",
    "OutputPath": "Models",
-   "ProceduresReturnList": false,
    "ProjectRootNamespace": "DragaliaApi",
-   "Schemas": null,
+   "Schemas": [ ],
    "SelectedHandlebarsLanguage": 0,
    "SelectedToBeGenerated": 0,
    "Tables": [
@@ -133,41 +132,9 @@
       {
          "Name": "[core].[WyrmprintUpgrade]",
          "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[Account]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[AccountAdventurer]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[AccountDragon]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[AccountFacility]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[AccountInventory]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[AccountPassive]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[AccountWeapon]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[AccountWyrmprint]",
-         "ObjectType": 0
       }
    ],
-   "UiHint": "D:\\Users\\Trevor\\Documents\\GitHub\\DragaliaWeapons\\Dragalia\\DragaliaDB\\DragaliaDB.sqlproj",
+   "UiHint": "..\\DragaliaDB\\DragaliaDB.sqlproj",
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,
    "UseDbContextSplitting": false,
@@ -176,9 +143,11 @@
    "UseInflector": true,
    "UseLegacyPluralizer": false,
    "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
    "UseNoNavigations": false,
    "UseNoObjectFilter": false,
    "UseNodaTime": false,
    "UseNullableReferences": false,
+   "UseSchemaFolders": false,
    "UseSpatial": false
 }

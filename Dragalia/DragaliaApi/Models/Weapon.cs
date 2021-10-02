@@ -10,7 +10,6 @@ namespace DragaliaApi.Models
     {
         public Weapon()
         {
-            AccountWeapons = new HashSet<AccountWeapon>();
             WeaponCraftings = new HashSet<WeaponCrafting>();
             WeaponUpgrades = new HashSet<WeaponUpgrade>();
         }
@@ -26,7 +25,6 @@ namespace DragaliaApi.Models
         public virtual Element Element { get; set; }
         public virtual WeaponSeries WeaponSeries { get; set; }
         public virtual WeaponType WeaponType { get; set; }
-        public virtual ICollection<AccountWeapon> AccountWeapons { get; set; }
         public virtual ICollection<WeaponCrafting> WeaponCraftings { get; set; }
         public virtual ICollection<WeaponUpgrade> WeaponUpgrades { get; set; }
     }

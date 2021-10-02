@@ -10,7 +10,6 @@ namespace DragaliaApi.Models
     {
         public Wyrmprint()
         {
-            AccountWyrmprints = new HashSet<AccountWyrmprint>();
             WyrmprintAbilities = new HashSet<WyrmprintAbility>();
             WyrmprintLevels = new HashSet<WyrmprintLevel>();
             WyrmprintUpgrades = new HashSet<WyrmprintUpgrade>();
@@ -24,7 +23,6 @@ namespace DragaliaApi.Models
         public bool? Active { get; set; }
 
         public virtual Affinity Affinity { get; set; }
-        public virtual ICollection<AccountWyrmprint> AccountWyrmprints { get; set; }
         public virtual ICollection<WyrmprintAbility> WyrmprintAbilities { get; set; }
         public virtual ICollection<WyrmprintLevel> WyrmprintLevels { get; set; }
         public virtual ICollection<WyrmprintUpgrade> WyrmprintUpgrades { get; set; }

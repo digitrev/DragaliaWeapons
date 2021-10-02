@@ -10,7 +10,6 @@ namespace DragaliaApi.Models
     {
         public Passive()
         {
-            AccountPassives = new HashSet<AccountPassive>();
             PassiveCraftings = new HashSet<PassiveCrafting>();
         }
 
@@ -25,7 +24,6 @@ namespace DragaliaApi.Models
         public virtual Ability Ability { get; set; }
         public virtual Element Element { get; set; }
         public virtual WeaponType WeaponType { get; set; }
-        public virtual ICollection<AccountPassive> AccountPassives { get; set; }
         public virtual ICollection<PassiveCrafting> PassiveCraftings { get; set; }
     }
 }
