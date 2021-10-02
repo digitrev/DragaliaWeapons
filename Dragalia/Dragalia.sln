@@ -9,8 +9,6 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DragaliaPy", "DragaliaPy\Dr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DragaliaApi", "DragaliaApi\DragaliaApi.csproj", "{02431925-8A3C-4970-B983-DE5CB9CBB6B3}"
 EndProject
-Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "UpdateData", "UpdateData\UpdateData.dtproj", "{26403093-9528-4BEC-BED2-2D3A9FABD3A9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,12 +34,6 @@ Global
 		{02431925-8A3C-4970-B983-DE5CB9CBB6B3}.Development|Any CPU.Build.0 = Debug|Any CPU
 		{02431925-8A3C-4970-B983-DE5CB9CBB6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02431925-8A3C-4970-B983-DE5CB9CBB6B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26403093-9528-4BEC-BED2-2D3A9FABD3A9}.Debug|Any CPU.ActiveCfg = Development
-		{26403093-9528-4BEC-BED2-2D3A9FABD3A9}.Debug|Any CPU.Build.0 = Development
-		{26403093-9528-4BEC-BED2-2D3A9FABD3A9}.Development|Any CPU.ActiveCfg = Development
-		{26403093-9528-4BEC-BED2-2D3A9FABD3A9}.Development|Any CPU.Build.0 = Development
-		{26403093-9528-4BEC-BED2-2D3A9FABD3A9}.Release|Any CPU.ActiveCfg = Development
-		{26403093-9528-4BEC-BED2-2D3A9FABD3A9}.Release|Any CPU.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
