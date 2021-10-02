@@ -12,31 +12,6 @@ namespace DragaliaApi
     {
         public MappingProfile()
         {
-            //Account stuff
-            CreateMap<Account, AccountDTO>();
-            CreateMap<AccountDTO, Account>();
-
-            CreateMap<AccountAdventurer, AccountAdventurerDTO>();
-            CreateMap<AccountAdventurerDTO, AccountAdventurer>();
-
-            CreateMap<AccountDragon, AccountDragonDTO>();
-            CreateMap<AccountDragonDTO, AccountDragon>();
-
-            CreateMap<AccountFacility, AccountFacilityDTO>();
-            CreateMap<AccountFacilityDTO, AccountFacility>();
-
-            CreateMap<AccountInventory, AccountInventoryDTO>();
-            CreateMap<AccountInventoryDTO, AccountInventory>();
-
-            CreateMap<AccountPassive, AccountPassiveDTO>();
-            CreateMap<AccountPassiveDTO, AccountPassive>();
-
-            CreateMap<AccountWeapon, AccountWeaponDTO>();
-            CreateMap<AccountWeaponDTO, AccountWeapon>();
-
-            CreateMap<AccountWyrmprint, AccountWyrmprintDTO>();
-            CreateMap<AccountWyrmprintDTO, AccountWyrmprint>();
-
             //Weapon data
             CreateMap<Weapon, WeaponDTO>()
                 .ForMember(dest => dest.Element,

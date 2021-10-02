@@ -8,12 +8,3 @@
 	,CONSTRAINT [FK_Dragon_Element] FOREIGN KEY ([ElementID]) REFERENCES [core].[Element]([ElementID])
 	)
 GO
-
-CREATE TRIGGER [core].[Trigger_Dragon] ON [core].[Dragon]
-AFTER INSERT
-AS
-BEGIN
-	SET NOCOUNT ON
-
-	EXEC dbo.spFillDragon
-END

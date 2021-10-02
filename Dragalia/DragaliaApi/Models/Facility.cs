@@ -10,7 +10,6 @@ namespace DragaliaApi.Models
     {
         public Facility()
         {
-            AccountFacilities = new HashSet<AccountFacility>();
             FacilityUpgrades = new HashSet<FacilityUpgrade>();
         }
 
@@ -21,7 +20,6 @@ namespace DragaliaApi.Models
         public bool? Active { get; set; }
 
         public virtual Category Category { get; set; }
-        public virtual ICollection<AccountFacility> AccountFacilities { get; set; }
         public virtual ICollection<FacilityUpgrade> FacilityUpgrades { get; set; }
     }
 }
