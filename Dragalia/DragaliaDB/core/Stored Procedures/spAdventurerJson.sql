@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[spAdventurerJson]
+﻿CREATE PROCEDURE [core].[spAdventurerJson]
 AS
 SELECT a.AdventurerID AS adventurerId
 	,a.Adventurer AS adventurer

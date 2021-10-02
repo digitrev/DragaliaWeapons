@@ -1424,4 +1424,22 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Category" />
   </Operation>
+  <Operation Name="Move Schema" Key="6c397803-1730-4ccf-9e7c-964d9c88391b" ChangeDateTime="10/02/2021 23:27:14">
+    <Property Name="ElementName" Value="[dbo].[spElementJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="c811f110-685a-4c8f-b281-9b87fbe635a9" ChangeDateTime="10/02/2021 23:27:18">
+    <Property Name="ElementName" Value="[dbo].[spAdventurerJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="edf0fa84-88a8-410e-83ea-3260c7ea6fae" ChangeDateTime="10/02/2021 23:27:23">
+    <Property Name="ElementName" Value="[dbo].[spDragonJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

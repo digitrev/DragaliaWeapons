@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[spDragonJson]
+﻿CREATE PROCEDURE [core].[spDragonJson]
 AS
 SELECT d.DragonID AS dragonId
 	,d.Dragon AS dragon
