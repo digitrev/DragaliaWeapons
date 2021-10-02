@@ -6825,6 +6825,251 @@
     "Quantity": 17000
   },
   {
+    "WyrmprintID": 40040095,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40040095,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040095,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040095,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040095,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040095,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040095,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040096,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40040096,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040096,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040096,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040096,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040096,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040096,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040097,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40040097,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040097,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040097,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040097,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040097,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040097,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040098,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40040098,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040098,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040098,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040098,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040098,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040098,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040099,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40040099,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040099,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040099,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040099,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040099,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040099,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
     "WyrmprintID": 40050001,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -13538,6 +13783,447 @@
     "Quantity": 37000
   },
   {
+    "WyrmprintID": 40050135,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 300
+  },
+  {
+    "WyrmprintID": 40050135,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050135,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050135,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050135,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050135,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050135,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050136,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "WyrmprintID": 40050136,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050136,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050136,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050136,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050136,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050136,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050137,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "WyrmprintID": 40050137,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050137,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050137,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050137,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050137,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050137,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050138,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 300
+  },
+  {
+    "WyrmprintID": 40050138,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050138,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050138,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050138,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050138,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050138,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050139,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "WyrmprintID": 40050139,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050139,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050139,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050139,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050139,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050139,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050140,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 300
+  },
+  {
+    "WyrmprintID": 40050140,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050140,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050140,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050140,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050140,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050140,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050141,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 300
+  },
+  {
+    "WyrmprintID": 40050141,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050141,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050141,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050141,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050141,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050141,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050142,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "WyrmprintID": 40050142,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050142,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050142,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050142,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050142,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050142,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050143,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 300
+  },
+  {
+    "WyrmprintID": 40050143,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050143,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050143,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 400
+  },
+  {
+    "WyrmprintID": 40050143,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050143,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050143,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 1700
+  },
+  {
     "WyrmprintID": 40090001,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -15131,6 +15817,1602 @@
     "UpgradeType": "Copies",
     "Step": 4,
     "MaterialID": "207001012",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001013",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001013",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001013",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001013",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001013",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001013",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090013,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001013",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001014",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001014",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001014",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001014",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001014",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001014",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090014,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001014",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001015",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001015",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001015",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001015",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001015",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001015",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090015,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001015",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001016",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001016",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001016",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001016",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001016",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001016",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090016,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001016",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001017",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001017",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001017",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001017",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001017",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001017",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090017,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001017",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001018",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001018",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001018",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001018",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001018",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001018",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022041",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022042",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090018,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001018",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001019",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001019",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001019",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001019",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001019",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001019",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090019,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001019",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001020",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001020",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001020",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001020",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001020",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001020",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090020,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001020",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001021",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001021",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001021",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001021",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001021",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001021",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090021,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001021",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001022",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001022",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001022",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001022",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001022",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001022",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090022,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001022",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001023",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001023",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001023",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001023",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001023",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001023",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090023,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001023",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "207001024",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "207001024",
+    "Quantity": 20
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 100
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "207001024",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "207001024",
+    "Quantity": 40
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "207001024",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "207001024",
+    "Quantity": 120
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022021",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "201022022",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40090024,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "207001024",
     "Quantity": 120
   }
 ]
