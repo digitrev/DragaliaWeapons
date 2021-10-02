@@ -8,12 +8,3 @@
 	,CONSTRAINT [FK_Material_Category] FOREIGN KEY ([CategoryID]) REFERENCES [core].[Category]([CategoryID]) ON DELETE SET NULL
 	)
 GO
-
-CREATE TRIGGER [core].[Trigger_Material] ON [core].[Material]
-AFTER INSERT
-AS
-BEGIN
-	SET NOCOUNT ON
-
-	EXEC dbo.spFillInventory
-END
