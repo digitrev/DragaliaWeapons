@@ -154,6 +154,7 @@
     <Build Include="core\Stored Procedures\spAdventurerJson.sql" />
     <Build Include="core\Stored Procedures\spDragonJson.sql" />
     <Build Include="core\Stored Procedures\spElementJson.sql" />
+    <Build Include="core\Stored Procedures\spFacilityJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
