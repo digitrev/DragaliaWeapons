@@ -218,8 +218,8 @@
   {
     "weaponID": 30160201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -230,14 +230,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30160401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -248,7 +248,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -470,8 +470,8 @@
   {
     "weaponID": 30260201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -482,14 +482,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30260401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -500,7 +500,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -722,8 +722,8 @@
   {
     "weaponID": 30360201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -734,14 +734,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30360401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -752,7 +752,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -974,8 +974,8 @@
   {
     "weaponID": 30460201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -986,14 +986,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30460401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -1004,7 +1004,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -1226,8 +1226,8 @@
   {
     "weaponID": 30560201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -1238,14 +1238,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30560401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -1256,7 +1256,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -1478,8 +1478,8 @@
   {
     "weaponID": 30660201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -1490,14 +1490,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30660401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -1508,7 +1508,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -1730,8 +1730,8 @@
   {
     "weaponID": 30760201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -1742,14 +1742,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30760401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -1760,7 +1760,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -1982,8 +1982,8 @@
   {
     "weaponID": 30860201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -1994,14 +1994,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30860401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -2012,7 +2012,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -2180,8 +2180,8 @@
   {
     "weaponID": 30960201,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 0,
     "bonus": 1
@@ -2192,14 +2192,14 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   },
   {
     "weaponID": 30960401,
     "level": 90,
-    "unbind": 8,
-    "refinement": 1,
+    "unbind": 9,
+    "refinement": 2,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -2210,7 +2210,7 @@
     "unbind": 9,
     "refinement": 2,
     "slots": 1,
-    "dominion": 0,
+    "dominion": 2,
     "bonus": 1
   }
 ]
