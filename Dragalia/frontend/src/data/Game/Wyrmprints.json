@@ -1,5 +1,89 @@
 [
   {
+    "wyrmprintId": 40090024,
+    "wyrmprint": "A King's Pride (Sword's Boon)",
+    "rarity": 9,
+    "affinity": "Sword's Boon",
+    "abilities": ["Impregnable Fortress"]
+  },
+  {
+    "wyrmprintId": 40090023,
+    "wyrmprint": "An Unfreezing Flower (Axe's Boon)",
+    "rarity": 9,
+    "affinity": "Axe's Boon",
+    "abilities": ["Lance's Psalm"]
+  },
+  {
+    "wyrmprintId": 40090022,
+    "wyrmprint": "A King's Pride (Staff's Boon)",
+    "rarity": 9,
+    "affinity": "Staff's Boon",
+    "abilities": ["Impregnable Fortress"]
+  },
+  {
+    "wyrmprintId": 40090021,
+    "wyrmprint": "An Unfreezing Flower (Deer's Boon)",
+    "rarity": 9,
+    "affinity": "Deer's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40090020,
+    "wyrmprint": "Treasured Memory of the Sea (Butterfly's Boon)",
+    "rarity": 9,
+    "affinity": "Butterfly's Boon",
+    "abilities": ["Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40090019,
+    "wyrmprint": "Testament of Eternity (Fish's Boon)",
+    "rarity": 9,
+    "affinity": "Fish's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40090018,
+    "wyrmprint": "Promised Piety (Staff's Boon)",
+    "rarity": 9,
+    "affinity": "Staff's Boon",
+    "abilities": ["Bow's Psalm"]
+  },
+  {
+    "wyrmprintId": 40090017,
+    "wyrmprint": "Thunderswift Lord's Blade (Lance's Boon)",
+    "rarity": 9,
+    "affinity": "Lance's Boon",
+    "abilities": ["Flash of Desperation"]
+  },
+  {
+    "wyrmprintId": 40090016,
+    "wyrmprint": "Promised Piety (Bow's Boon)",
+    "rarity": 9,
+    "affinity": "Bow's Boon",
+    "abilities": ["Recovery Potency"]
+  },
+  {
+    "wyrmprintId": 40090015,
+    "wyrmprint": "Thunderswift Lord's Blade (Axe's Boon)",
+    "rarity": 9,
+    "affinity": "Axe's Boon",
+    "abilities": ["Flash of Desperation"]
+  },
+  {
+    "wyrmprintId": 40090014,
+    "wyrmprint": "Recital Invitation (Bull's Boon)",
+    "rarity": 9,
+    "affinity": "Bull's Boon",
+    "abilities": ["Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40090013,
+    "wyrmprint": "A Mercenary's Pride (Eagle's Boon)",
+    "rarity": 9,
+    "affinity": "Eagle's Boon",
+    "abilities": ["Skill Damage"]
+  },
+  {
     "wyrmprintId": 40090012,
     "wyrmprint": "Savage Hawk (Lance's Boon)",
     "rarity": 9,
@@ -82,6 +166,65 @@
     "rarity": 9,
     "affinity": "Serpent's Boon",
     "abilities": ["Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050143,
+    "wyrmprint": "Third Anniversary!",
+    "rarity": 5,
+    "abilities": ["United Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40050142,
+    "wyrmprint": "Emissaries of the Heavens",
+    "rarity": 5,
+    "affinity": "Wolf's Boon",
+    "abilities": ["Flurry Strength"]
+  },
+  {
+    "wyrmprintId": 40050141,
+    "wyrmprint": "Bonded by a Dream",
+    "rarity": 5,
+    "abilities": ["United Critical Damage"]
+  },
+  {
+    "wyrmprintId": 40050140,
+    "wyrmprint": "One-Winged Journey",
+    "rarity": 5,
+    "abilities": ["(Blade) Skill Damage"]
+  },
+  {
+    "wyrmprintId": 40050139,
+    "wyrmprint": "In the Limelight",
+    "rarity": 5,
+    "affinity": "Staff's Boon",
+    "abilities": ["Scorchrent Punisher"]
+  },
+  {
+    "wyrmprintId": 40050138,
+    "wyrmprint": "Superior Summer",
+    "rarity": 5,
+    "affinity": "Bull's Boon",
+    "abilities": ["Skill Prep"]
+  },
+  {
+    "wyrmprintId": 40050137,
+    "wyrmprint": "Super Soaking Androids",
+    "rarity": 5,
+    "abilities": ["Critical Damage Doublebuff", "Oceanic Resonance"]
+  },
+  {
+    "wyrmprintId": 40050136,
+    "wyrmprint": "A Rainy Day",
+    "rarity": 5,
+    "affinity": "Dragon's Boon",
+    "abilities": ["Gauge Accelerator"]
+  },
+  {
+    "wyrmprintId": 40050135,
+    "wyrmprint": "Initio's Sentinel",
+    "rarity": 5,
+    "affinity": "Staff's Boon",
+    "abilities": ["(Bow) Critical Damage"]
   },
   {
     "wyrmprintId": 40050134,
@@ -228,6 +371,7 @@
     "wyrmprintId": 40050112,
     "wyrmprint": "Memories of Summer's Dusk",
     "rarity": 5,
+    "affinity": "Spider's Boon",
     "abilities": ["Stunned Punisher"]
   },
   {
@@ -333,6 +477,7 @@
     "wyrmprintId": 40050096,
     "wyrmprint": "The Ilian Faithful",
     "rarity": 5,
+    "affinity": "Deer's Boon",
     "abilities": ["(Wind) Affliction Guard"]
   },
   {
@@ -923,9 +1068,44 @@
     "abilities": ["Skill Damage"]
   },
   {
+    "wyrmprintId": 40040099,
+    "wyrmprint": "Amane's Babysitting Chronicles",
+    "rarity": 4,
+    "affinity": "Serpent's Boon",
+    "abilities": ["(Light) Skill Haste"]
+  },
+  {
+    "wyrmprintId": 40040098,
+    "wyrmprint": "Bloom of the Battlefield",
+    "rarity": 4,
+    "affinity": "Deer's Boon",
+    "abilities": ["(Wind) Critical Rate"]
+  },
+  {
+    "wyrmprintId": 40040097,
+    "wyrmprint": "Having a Summer Ball",
+    "rarity": 4,
+    "affinity": "Sword's Boon",
+    "abilities": ["(Dagger) Critical Damage", "Tidal Tears"]
+  },
+  {
+    "wyrmprintId": 40040096,
+    "wyrmprint": "Kunoichi Charisma",
+    "rarity": 4,
+    "abilities": ["Gauge Accelerator"]
+  },
+  {
+    "wyrmprintId": 40040095,
+    "wyrmprint": "The Floofiest Bed",
+    "rarity": 4,
+    "affinity": "Axe's Boon",
+    "abilities": ["Force Strike"]
+  },
+  {
     "wyrmprintId": 40040094,
     "wyrmprint": "Two Myms",
     "rarity": 4,
+    "affinity": "Fish's Boon",
     "abilities": ["(Wand) Recovery Potency"]
   },
   {
@@ -976,6 +1156,7 @@
     "wyrmprintId": 40040086,
     "wyrmprint": "To My Dear Child",
     "rarity": 4,
+    "affinity": "Deer's Boon",
     "abilities": ["Stunned Punisher"]
   },
   {
@@ -989,6 +1170,7 @@
     "wyrmprintId": 40040084,
     "wyrmprint": "Treasury of Knowledge",
     "rarity": 4,
+    "affinity": "Deer's Boon",
     "abilities": ["Sanctity", "Sleeping Punisher"]
   },
   {
@@ -1047,6 +1229,7 @@
     "wyrmprintId": 40040075,
     "wyrmprint": "Fallen Wings",
     "rarity": 4,
+    "affinity": "Bat's Boon",
     "abilities": ["Dragon Damage"]
   },
   {
@@ -1225,6 +1408,7 @@
     "wyrmprintId": 40040047,
     "wyrmprint": "Egg-Shaped Dreams",
     "rarity": 4,
+    "affinity": "Butterfly's Boon",
     "abilities": ["Eggsploration Points", "HP 70 = Defense"]
   },
   {
@@ -1301,12 +1485,14 @@
     "wyrmprintId": 40040034,
     "wyrmprint": "Kicking Back",
     "rarity": 4,
+    "affinity": "Spider's Boon",
     "abilities": ["(Light) Critical Rate"]
   },
   {
     "wyrmprintId": 40040033,
     "wyrmprint": "Fresh Perspective",
     "rarity": 4,
+    "affinity": "Fish's Boon",
     "abilities": ["Force Strike", "Windwhistle Grass"]
   },
   {
@@ -1388,6 +1574,7 @@
     "wyrmprintId": 40040020,
     "wyrmprint": "Happier Times",
     "rarity": 4,
+    "affinity": "Butterfly's Boon",
     "abilities": ["Full HP = Skill Damage"]
   },
   {
@@ -1435,6 +1622,7 @@
     "wyrmprintId": 40040013,
     "wyrmprint": "One with the Shadows",
     "rarity": 4,
+    "affinity": "Butterfly's Boon",
     "abilities": ["Critical Rate"]
   },
   {
@@ -1504,6 +1692,7 @@
     "wyrmprintId": 40040002,
     "wyrmprint": "Destiny's Hand",
     "rarity": 4,
+    "affinity": "Bat's Boon",
     "abilities": ["Recovery Potency"]
   },
   {
@@ -1529,6 +1718,7 @@
     "wyrmprintId": 40030037,
     "wyrmprint": "The Heretic's Laboratory",
     "rarity": 3,
+    "affinity": "Bat's Boon",
     "abilities": ["Arcane Tomes", "(Shadow) Skill Haste"]
   },
   {
@@ -1554,6 +1744,7 @@
     "wyrmprintId": 40030033,
     "wyrmprint": "Welcome, One and All",
     "rarity": 3,
+    "affinity": "Spider's Boon",
     "abilities": ["Skill Prep", "Tent Canvas"]
   },
   {
@@ -1664,6 +1855,7 @@
     "wyrmprintId": 40030014,
     "wyrmprint": "Winds of Saint Lotier",
     "rarity": 3,
+    "affinity": "Fish's Boon",
     "abilities": ["Recovery Potency"]
   },
   {

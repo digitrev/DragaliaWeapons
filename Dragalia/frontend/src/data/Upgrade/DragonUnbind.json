@@ -20,6 +20,7 @@
   { "DragonID": 20050108, "MaterialID": "206001005", "Quantity": 50 },
   { "DragonID": 20050109, "MaterialID": "206001006", "Quantity": 50 },
   { "DragonID": 20050110, "MaterialID": "206001007", "Quantity": 50 },
+  { "DragonID": 20050114, "MaterialID": "206001008", "Quantity": 50 },
   { "DragonID": 20050201, "MaterialID": "206002002", "Quantity": 50 },
   { "DragonID": 20050202, "MaterialID": "201002021", "Quantity": 100 },
   { "DragonID": 20050202, "MaterialID": "201002022", "Quantity": 120 },
@@ -29,6 +30,7 @@
   { "DragonID": 20050209, "MaterialID": "206002005", "Quantity": 50 },
   { "DragonID": 20050210, "MaterialID": "206002006", "Quantity": 50 },
   { "DragonID": 20050211, "MaterialID": "206002007", "Quantity": 50 },
+  { "DragonID": 20050212, "MaterialID": "206002008", "Quantity": 50 },
   { "DragonID": 20050301, "MaterialID": "206003001", "Quantity": 50 },
   { "DragonID": 20050302, "MaterialID": "201002031", "Quantity": 100 },
   { "DragonID": 20050302, "MaterialID": "201002032", "Quantity": 120 },
@@ -38,6 +40,7 @@
   { "DragonID": 20050308, "MaterialID": "206003005", "Quantity": 50 },
   { "DragonID": 20050309, "MaterialID": "206003006", "Quantity": 50 },
   { "DragonID": 20050311, "MaterialID": "206003007", "Quantity": 50 },
+  { "DragonID": 20050312, "MaterialID": "206003008", "Quantity": 50 },
   { "DragonID": 20050401, "MaterialID": "206004002", "Quantity": 50 },
   { "DragonID": 20050402, "MaterialID": "201002041", "Quantity": 100 },
   { "DragonID": 20050402, "MaterialID": "201002042", "Quantity": 120 },
@@ -47,6 +50,7 @@
   { "DragonID": 20050407, "MaterialID": "206004004", "Quantity": 50 },
   { "DragonID": 20050408, "MaterialID": "206004005", "Quantity": 50 },
   { "DragonID": 20050409, "MaterialID": "206004006", "Quantity": 50 },
+  { "DragonID": 20050411, "MaterialID": "206004008", "Quantity": 50 },
   { "DragonID": 20050501, "MaterialID": "206005002", "Quantity": 50 },
   { "DragonID": 20050502, "MaterialID": "201002051", "Quantity": 100 },
   { "DragonID": 20050502, "MaterialID": "201002052", "Quantity": 120 },
@@ -56,5 +60,6 @@
   { "DragonID": 20050510, "MaterialID": "206005001", "Quantity": 50 },
   { "DragonID": 20050514, "MaterialID": "206005005", "Quantity": 50 },
   { "DragonID": 20050516, "MaterialID": "206005006", "Quantity": 50 },
-  { "DragonID": 20050518, "MaterialID": "206005007", "Quantity": 50 }
+  { "DragonID": 20050518, "MaterialID": "206005007", "Quantity": 50 },
+  { "DragonID": 20050520, "MaterialID": "206005008", "Quantity": 50 }
 ]

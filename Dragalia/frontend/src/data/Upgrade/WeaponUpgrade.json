@@ -12097,6 +12097,48 @@
   },
   {
     "WeaponID": 30160201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30160201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -12127,6 +12169,48 @@
     "WeaponID": 30160201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30160201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -12880,6 +12964,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30160301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30160301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30160301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30160301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30160401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -13133,6 +13245,48 @@
   },
   {
     "WeaponID": 30160401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30160401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -13163,6 +13317,48 @@
     "WeaponID": 30160401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30160401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -13942,6 +14138,34 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30160501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30160501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30160501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30160501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   },
   {
     "WeaponID": 30239901,
@@ -26041,6 +26265,48 @@
   },
   {
     "WeaponID": 30260201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30260201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -26071,6 +26337,48 @@
     "WeaponID": 30260201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30260201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -26824,6 +27132,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30260301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30260301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30260301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30260301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30260401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -27077,6 +27413,48 @@
   },
   {
     "WeaponID": 30260401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30260401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -27107,6 +27485,48 @@
     "WeaponID": 30260401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30260401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -27886,6 +28306,34 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30260501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30260501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30260501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30260501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   },
   {
     "WeaponID": 30339901,
@@ -39985,6 +40433,48 @@
   },
   {
     "WeaponID": 30360201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30360201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -40015,6 +40505,48 @@
     "WeaponID": 30360201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30360201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -40768,6 +41300,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30360301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30360301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30360301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30360301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30360401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -41021,6 +41581,48 @@
   },
   {
     "WeaponID": 30360401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30360401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -41051,6 +41653,48 @@
     "WeaponID": 30360401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30360401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -41830,6 +42474,34 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30360501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30360501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30360501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30360501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   },
   {
     "WeaponID": 30439901,
@@ -53929,6 +54601,48 @@
   },
   {
     "WeaponID": 30460201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30460201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -53959,6 +54673,48 @@
     "WeaponID": 30460201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30460201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -54712,6 +55468,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30460301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30460301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30460301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30460301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30460401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -54965,6 +55749,48 @@
   },
   {
     "WeaponID": 30460401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30460401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -54995,6 +55821,48 @@
     "WeaponID": 30460401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30460401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -55774,6 +56642,34 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30460501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30460501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30460501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30460501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   },
   {
     "WeaponID": 30539901,
@@ -67873,6 +68769,48 @@
   },
   {
     "WeaponID": 30560201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30560201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -67903,6 +68841,48 @@
     "WeaponID": 30560201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30560201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -68656,6 +69636,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30560301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30560301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30560301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30560301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30560401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -68909,6 +69917,48 @@
   },
   {
     "WeaponID": 30560401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30560401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -68939,6 +69989,48 @@
     "WeaponID": 30560401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30560401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -69718,6 +70810,34 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30560501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30560501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30560501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30560501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   },
   {
     "WeaponID": 30639901,
@@ -81817,6 +82937,48 @@
   },
   {
     "WeaponID": 30660201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30660201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -81847,6 +83009,48 @@
     "WeaponID": 30660201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30660201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -82600,6 +83804,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30660301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30660301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30660301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30660301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30660401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -82853,6 +84085,48 @@
   },
   {
     "WeaponID": 30660401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30660401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -82883,6 +84157,48 @@
     "WeaponID": 30660401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30660401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -83662,6 +84978,34 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30660501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30660501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30660501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30660501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   },
   {
     "WeaponID": 30739901,
@@ -95761,6 +97105,48 @@
   },
   {
     "WeaponID": 30760201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30760201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -95791,6 +97177,48 @@
     "WeaponID": 30760201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30760201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -96544,6 +97972,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30760301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30760301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30760301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30760301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30760401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -96797,6 +98253,48 @@
   },
   {
     "WeaponID": 30760401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30760401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -96827,6 +98325,48 @@
     "WeaponID": 30760401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30760401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -97606,6 +99146,34 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30760501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30760501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30760501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30760501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   },
   {
     "WeaponID": 30839901,
@@ -109705,6 +111273,48 @@
   },
   {
     "WeaponID": 30860201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30860201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -109735,6 +111345,48 @@
     "WeaponID": 30860201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30860201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -110488,6 +112140,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30860301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30860301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30860301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30860301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30860401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -110741,6 +112421,48 @@
   },
   {
     "WeaponID": 30860401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30860401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -110771,6 +112493,48 @@
     "WeaponID": 30860401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30860401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -111550,6 +113314,34 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30860501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30860501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30860501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30860501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   },
   {
     "WeaponID": 30949901,
@@ -120520,6 +122312,48 @@
   },
   {
     "WeaponID": 30960201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017011",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017012",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017013",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017014",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30960201,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017011",
@@ -120550,6 +122384,48 @@
     "WeaponID": 30960201,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017011",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017012",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017013",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017014",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30960201,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -121303,6 +123179,34 @@
     "Quantity": 13500000
   },
   {
+    "WeaponID": 30960301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022021",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30960301,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30960301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022022",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30960301,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
     "WeaponID": 30960401,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -121556,6 +123460,48 @@
   },
   {
     "WeaponID": 30960401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017051",
+    "Quantity": 80
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017052",
+    "Quantity": 70
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017053",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "201017054",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "202004005",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Unbind",
+    "Step": 9,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30960401,
     "UpgradeType": "Refinement",
     "Step": 1,
     "MaterialID": "201017051",
@@ -121586,6 +123532,48 @@
     "WeaponID": 30960401,
     "UpgradeType": "Refinement",
     "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 2500000
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017051",
+    "Quantity": 40
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017052",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017053",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "201017054",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
+    "MaterialID": "202004005",
+    "Quantity": 10
+  },
+  {
+    "WeaponID": 30960401,
+    "UpgradeType": "Refinement",
+    "Step": 2,
     "MaterialID": "Rupie",
     "Quantity": 2500000
   },
@@ -122365,5 +124353,33 @@
     "Step": 4,
     "MaterialID": "Rupie",
     "Quantity": 13500000
+  },
+  {
+    "WeaponID": 30960501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "201022041",
+    "Quantity": 50
+  },
+  {
+    "WeaponID": 30960501,
+    "UpgradeType": "Dominion",
+    "Step": 1,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
+  },
+  {
+    "WeaponID": 30960501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "201022042",
+    "Quantity": 30
+  },
+  {
+    "WeaponID": 30960501,
+    "UpgradeType": "Dominion",
+    "Step": 2,
+    "MaterialID": "Rupie",
+    "Quantity": 1000000
   }
 ]

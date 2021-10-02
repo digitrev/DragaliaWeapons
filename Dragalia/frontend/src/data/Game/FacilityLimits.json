@@ -257,7 +257,7 @@
   },
   {
     "facilityID": 102501,
-    "maxLevel": 30
+    "maxLevel": 35
   },
   {
     "facilityID": 102502,
@@ -277,10 +277,18 @@
   },
   {
     "facilityID": 102801,
-    "maxLevel": 30
+    "maxLevel": 35
   },
   {
     "facilityID": 102802,
+    "maxLevel": 0
+  },
+  {
+    "facilityID": 102901,
+    "maxLevel": 30
+  },
+  {
+    "facilityID": 102902,
     "maxLevel": 0
   }
 ]

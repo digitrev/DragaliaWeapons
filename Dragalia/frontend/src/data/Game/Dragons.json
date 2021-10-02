@@ -138,6 +138,12 @@
     "element": "Flame"
   },
   {
+    "dragonId": 20050216,
+    "dragon": "Summer Marishiten",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
     "dragonId": 20050215,
     "dragon": "Mini Mercs",
     "rarity": 5,
@@ -262,6 +268,12 @@
     "dragon": "Fubuki",
     "rarity": 3,
     "element": "Water"
+  },
+  {
+    "dragonId": 20050319,
+    "dragon": "Gala Beast Volk",
+    "rarity": 5,
+    "element": "Wind"
   },
   {
     "dragonId": 20050318,
@@ -408,6 +420,24 @@
     "element": "Wind"
   },
   {
+    "dragonId": 20050417,
+    "dragon": "Mini Jupi",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050416,
+    "dragon": "Summer Cat Sìth",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
+    "dragonId": 20050415,
+    "dragon": "Raphael",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
     "dragonId": 20050414,
     "dragon": "Gala Reborn Jeanne",
     "rarity": 5,
@@ -532,6 +562,18 @@
     "dragon": "Hinata",
     "rarity": 3,
     "element": "Light"
+  },
+  {
+    "dragonId": 20050525,
+    "dragon": "Gala Bahamut",
+    "rarity": 5,
+    "element": "Shadow"
+  },
+  {
+    "dragonId": 20050524,
+    "dragon": "Gala Reborn Nidhogg",
+    "rarity": 5,
+    "element": "Shadow"
   },
   {
     "dragonId": 20050523,

@@ -246,6 +246,12 @@
     "category": "Event Facility"
   },
   {
+    "facilityId": 102901,
+    "facility": "Abyssal Bell",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
     "facilityId": 100601,
     "facility": "Flame Dracolith",
     "limit": 1,
@@ -422,6 +428,12 @@
   {
     "facilityId": 102802,
     "facility": "Little Pi Plushie",
+    "limit": 1,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 102902,
+    "facility": "Extra Large Tropical Juice",
     "limit": 1,
     "category": "Decoration"
   }
