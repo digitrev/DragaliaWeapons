@@ -1448,4 +1448,10 @@
     <Property Name="NewSchema" Value="core" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="c115d9c0-f7e6-4615-abc5-68fec2d7a858" ChangeDateTime="10/02/2021 23:34:58">
+    <Property Name="ElementName" Value="[dbo].[spFacilityLimitJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>
