@@ -1,677 +1,5 @@
 [
   {
-    "materialId": "2080601",
-    "material": "Forbidden Knowledge",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080602",
-    "material": "Prudent Bookmark",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080603",
-    "material": "Divulgent Lens",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080701",
-    "material": "Eggsploration Points",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080702",
-    "material": "Woodland Herbs",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080703",
-    "material": "Mushroom Medley",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080801",
-    "material": "Mettle",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080802",
-    "material": "Turbo-Twist Jump Rope",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080803",
-    "material": "Megaton Dumbbell",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2081001",
-    "material": "Hype",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2081002",
-    "material": "Tropical Hibiscus",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2081003",
-    "material": "Glass Dolphin",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2081501",
-    "material": "Zest",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2081502",
-    "material": "Gourmet Spices",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2081503",
-    "material": "Prosciutto",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082301",
-    "material": "Festival Spirit",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082302",
-    "material": "Crunchy Nougat",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082303",
-    "material": "Energizing Fan",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082501",
-    "material": "Sanctity",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082502",
-    "material": "Miasmal Mass",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082503",
-    "material": "Apostle's Report",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082801",
-    "material": "Vibrato",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082802",
-    "material": "Blue Rose",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2082803",
-    "material": "Thief's Calling Card",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2083301",
-    "material": "Intelligence",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2083302",
-    "material": "Paradise Grain",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2083303",
-    "material": "Sanctified Water",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2130101",
-    "material": "Ravishing Rose",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2130301",
-    "material": "Occult Vestment",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2130402",
-    "material": "Valentine's Gift",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2140101",
-    "material": "Badge",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2140102",
-    "material": "Great Badge",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2140103",
-    "material": "Valor",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2140301",
-    "material": "Universal Shard",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2140302",
-    "material": "Universal Crystal",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2140303",
-    "material": "Resolve",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2180101",
-    "material": "Bolt",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2180102",
-    "material": "Hyper Bolt",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2200151",
-    "material": "Rathalos Scale",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2200152",
-    "material": "Fatalis Hardhorn",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220101",
-    "material": "Primal Crystal",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220102",
-    "material": "Glory",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220103",
-    "material": "Stratagem",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220104",
-    "material": "Battle Chart",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220105",
-    "material": "War Chronicle",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220801",
-    "material": "Coliseum Crystal",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220802",
-    "material": "Prestige",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220803",
-    "material": "Special Invitation",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220804",
-    "material": "Coliseum Map",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2220805",
-    "material": "Tournament Chronicle",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010101",
-    "material": "Battle Points",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010201",
-    "material": "Enchanted Sword Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010202",
-    "material": "Enchanted Blade Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010203",
-    "material": "Enchanted Dagger Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010204",
-    "material": "Enchanted Axe Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010205",
-    "material": "Enchanted Lance Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010206",
-    "material": "Enchanted Bow Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010207",
-    "material": "Enchanted Wand Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010208",
-    "material": "Enchanted Staff Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "223010209",
-    "material": "Enchanted Manacaster Tablet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080401",
-    "material": "Renown",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080402",
-    "material": "Big Top Balloons",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080403",
-    "material": "Colorful Bouquet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080301",
-    "material": "Holiday Cheer",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080302",
-    "material": "Gingerbread Man",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080303",
-    "material": "Dragonyule Wreath",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080201",
-    "material": "Divine Gales",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080202",
-    "material": "Friendship Bracelet",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080203",
-    "material": "Wind Chime",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2041306",
-    "material": "Otherworld Gem",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2041307",
-    "material": "Omega Key",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2041308",
-    "material": "Quantum Cog",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2042506",
-    "material": "Fried Tofu",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2042908",
-    "material": "Metaverse Junk",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2042909",
-    "material": "Dyrenell's Desires",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2043306",
-    "material": "Cyclone Bindings",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "205001001",
-    "material": "Wu Kong's Conviction",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "205001002",
-    "material": "Summer Amane's Conviction",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "205001003",
-    "material": "Mordecai's Conviction",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "205001004",
-    "material": "Forager Cleo's Conviction",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "205001005",
-    "material": "Kuzunoha's Conviction",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "205001006",
-    "material": "Sophie's Conviction",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "205001007",
-    "material": "Humanoid Midgardsormr's Conviction",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080101",
-    "material": "Tricker Treats",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080102",
-    "material": "Jack Chocolates",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2080103",
-    "material": "Candy Basket",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "120001001",
-    "material": "Fortifying Jewel",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "121001001",
-    "material": "Amplifying Jewel",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "203009001",
-    "material": "Dragonyule Present",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "203014001",
-    "material": "Sacred Stone",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2040101",
-    "material": "Peregrine Blazon",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2040102",
-    "material": "Bronze Emblem",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2040103",
-    "material": "Silver Emblem",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2040104",
-    "material": "Gold Emblem",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "2040105",
-    "material": "Otherworld Fragment",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10340101",
-    "material": "Melsa (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10340502",
-    "material": "Alex (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10140503",
-    "material": "Audric (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10150201",
-    "material": "Xander (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10240101",
-    "material": "Laxi (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10250403",
-    "material": "Mordecai (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10440301",
-    "material": "Ranzal (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10450303",
-    "material": "Summer Amane (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10540201",
-    "material": "Elisanne (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10550101",
-    "material": "Gala Mym (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10640401",
-    "material": "Luca (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10650303",
-    "material": "Meene (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10740202",
-    "material": "Summer Estelle (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10750504",
-    "material": "Zena (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10840403",
-    "material": "Felicia (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10840501",
-    "material": "Cleo (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
-    "materialId": "10950401",
-    "material": "Ilia (Skin)",
-    "category": "Unused",
-    "sortPath": "/"
-  },
-  {
     "materialId": "Rupie",
     "material": "Rupies",
     "category": "Currency",
@@ -706,6 +34,12 @@
     "material": "Gold Crystal",
     "category": "Adventurer Upgrade Items",
     "sortPath": "/2/3/"
+  },
+  {
+    "materialId": "125001001",
+    "material": "Omnicite",
+    "category": "Adventurer Upgrade Items",
+    "sortPath": "/2/4/"
   },
   {
     "materialId": "116001001",
@@ -1254,6 +588,12 @@
     "sortPath": "/19/1/3/"
   },
   {
+    "materialId": "201017014",
+    "material": "Rebellious Butterflies' Searing Fire",
+    "category": "Agito Fragments",
+    "sortPath": "/19/1/4/"
+  },
+  {
     "materialId": "201017021",
     "material": "Eliminating One's Mask Fragment",
     "category": "Agito Fragments",
@@ -1342,6 +682,12 @@
     "material": "Rebellious One's Loyalty",
     "category": "Agito Fragments",
     "sortPath": "/19/5/3/"
+  },
+  {
+    "materialId": "201017054",
+    "material": "Rebellious Lion's Twilight",
+    "category": "Agito Fragments",
+    "sortPath": "/19/5/4/"
   },
   {
     "materialId": "201005001",
@@ -1458,28 +804,52 @@
     "sortPath": "/27/"
   },
   {
-    "materialId": "201022031",
-    "material": "Cyclone Shard",
+    "materialId": "201022021",
+    "material": "Whirlpool Shard",
     "category": "Dominion Shards",
     "sortPath": "/27.1/1/1/"
   },
   {
-    "materialId": "201022051",
-    "material": "Twilight Shard",
+    "materialId": "201022022",
+    "material": "Whirlpool Prism",
     "category": "Dominion Shards",
     "sortPath": "/27.1/1/2/"
+  },
+  {
+    "materialId": "201022031",
+    "material": "Cyclone Shard",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/2/1/"
   },
   {
     "materialId": "201022032",
     "material": "Cyclone Prism",
     "category": "Dominion Shards",
-    "sortPath": "/27.1/2/1/"
+    "sortPath": "/27.1/2/2/"
+  },
+  {
+    "materialId": "201022041",
+    "material": "Blinding Shard",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/3/1/"
+  },
+  {
+    "materialId": "201022042",
+    "material": "Blinding Prism",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/3/2/"
+  },
+  {
+    "materialId": "201022051",
+    "material": "Twilight Shard",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/4/1/"
   },
   {
     "materialId": "201022052",
     "material": "Twilight Prism",
     "category": "Dominion Shards",
-    "sortPath": "/27.1/2/2/"
+    "sortPath": "/27.1/4/2/"
   },
   {
     "materialId": "202001001",
@@ -1690,6 +1060,12 @@
     "material": "Libretto",
     "category": "Event Facility Upgrade Materials",
     "sortPath": "/31/12/"
+  },
+  {
+    "materialId": "203015001",
+    "material": "Tidal Tears",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/13/"
   },
   {
     "materialId": "204001001",
@@ -2148,6 +1524,12 @@
     "sortPath": "/36/1/7/"
   },
   {
+    "materialId": "206001008",
+    "material": "Horus's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/1/8/"
+  },
+  {
     "materialId": "206002001",
     "material": "Leviathan's Essence",
     "category": "Draconic Essence",
@@ -2188,6 +1570,12 @@
     "material": "Gaibhne & Creidhne's Essence",
     "category": "Draconic Essence",
     "sortPath": "/36/2/7/"
+  },
+  {
+    "materialId": "206002008",
+    "material": "Styx's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/2/8/"
   },
   {
     "materialId": "206003001",
@@ -2232,6 +1620,12 @@
     "sortPath": "/36/3/7/"
   },
   {
+    "materialId": "206003008",
+    "material": "AC-011 Garland's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/3/8/"
+  },
+  {
     "materialId": "206004001",
     "material": "Cupid's Essence",
     "category": "Draconic Essence",
@@ -2274,6 +1668,12 @@
     "sortPath": "/36/4/7/"
   },
   {
+    "materialId": "206004008",
+    "material": "Tie Shan Gongzhu's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/4/8/"
+  },
+  {
     "materialId": "206005001",
     "material": "Chthonius's Essence",
     "category": "Draconic Essence",
@@ -2314,6 +1714,12 @@
     "material": "Azazel's Essence",
     "category": "Draconic Essence",
     "sortPath": "/36/5/7/"
+  },
+  {
+    "materialId": "206005008",
+    "material": "Ramiel's Essence",
+    "category": "Draconic Essence",
+    "sortPath": "/36/5/8/"
   },
   {
     "materialId": "207001001",
@@ -2388,6 +1794,78 @@
     "sortPath": "/36.1/2/6/"
   },
   {
+    "materialId": "207001013",
+    "material": "Arc in the Storm's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/3/1/"
+  },
+  {
+    "materialId": "207001014",
+    "material": "Songstress of the Century's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/3/2/"
+  },
+  {
+    "materialId": "207001015",
+    "material": "Thunderswift Lord's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/3/3/"
+  },
+  {
+    "materialId": "207001016",
+    "material": "Devout Oracle's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/3/4/"
+  },
+  {
+    "materialId": "207001017",
+    "material": "Thunderswift Savior's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/3/5/"
+  },
+  {
+    "materialId": "207001018",
+    "material": "Praying Oracle's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/3/6/"
+  },
+  {
+    "materialId": "207001019",
+    "material": "Belle Healer's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/4/1/"
+  },
+  {
+    "materialId": "207001020",
+    "material": "Free-Spirited Pirate's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/4/2/"
+  },
+  {
+    "materialId": "207001021",
+    "material": "Crystalian Princess's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/4/3/"
+  },
+  {
+    "materialId": "207001022",
+    "material": "Born Ruler's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/4/4/"
+  },
+  {
+    "materialId": "207001023",
+    "material": "Crystalian Hope's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/4/5/"
+  },
+  {
+    "materialId": "207001024",
+    "material": "Majestic Ruler's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/4/6/"
+  },
+  {
     "materialId": "208010011",
     "material": "Yukata Cassandra's Conviction",
     "category": "Spiral Materials",
@@ -2398,6 +1876,30 @@
     "material": "Yukata Cassandra's Devotion",
     "category": "Spiral Materials",
     "sortPath": "/36.2/1/2/"
+  },
+  {
+    "materialId": "208010021",
+    "material": "Gala Laxi's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/1.1/1/"
+  },
+  {
+    "materialId": "208010022",
+    "material": "Gala Laxi's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/1.1/2/"
+  },
+  {
+    "materialId": "208010031",
+    "material": "Lea's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/1.2/1/"
+  },
+  {
+    "materialId": "208010032",
+    "material": "Lea's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/1.2/2/"
   },
   {
     "materialId": "208020011",
@@ -2424,6 +1926,18 @@
     "sortPath": "/36.2/3/2/"
   },
   {
+    "materialId": "208020031",
+    "material": "Lazry's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3.1/1/"
+  },
+  {
+    "materialId": "208020032",
+    "material": "Lazry's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3.1/2/"
+  },
+  {
     "materialId": "208030011",
     "material": "Gala Ranzal's Conviction",
     "category": "Spiral Materials",
@@ -2434,6 +1948,30 @@
     "material": "Gala Ranzal's Devotion",
     "category": "Spiral Materials",
     "sortPath": "/36.2/4/2/"
+  },
+  {
+    "materialId": "208030021",
+    "material": "Akasha's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/4.1/1/"
+  },
+  {
+    "materialId": "208030022",
+    "material": "Akasha's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/4.1/2/"
+  },
+  {
+    "materialId": "208030031",
+    "material": "Kirsty's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/4.2/1/"
+  },
+  {
+    "materialId": "208030032",
+    "material": "Kirsty's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/4.2/2/"
   },
   {
     "materialId": "208040011",
@@ -2448,6 +1986,30 @@
     "sortPath": "/36.2/5/2/"
   },
   {
+    "materialId": "208040021",
+    "material": "Gala Luca's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/5.1/1/"
+  },
+  {
+    "materialId": "208040022",
+    "material": "Gala Luca's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/5.1/2/"
+  },
+  {
+    "materialId": "208040031",
+    "material": "Vixel's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/5.2/1/"
+  },
+  {
+    "materialId": "208040032",
+    "material": "Vixel's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/5.2/2/"
+  },
+  {
     "materialId": "208050011",
     "material": "Gala Alex's Conviction",
     "category": "Spiral Materials",
@@ -2458,6 +2020,42 @@
     "material": "Gala Alex's Devotion",
     "category": "Spiral Materials",
     "sortPath": "/36.2/6/2/"
+  },
+  {
+    "materialId": "208050021",
+    "material": "Summer Verica's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/7/1/"
+  },
+  {
+    "materialId": "208050022",
+    "material": "Summer Verica's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/7/2/"
+  },
+  {
+    "materialId": "208050031",
+    "material": "Gala Cleo's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/8/1/"
+  },
+  {
+    "materialId": "208050032",
+    "material": "Gala Cleo's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/8/2/"
+  },
+  {
+    "materialId": "208050041",
+    "material": "Yaten's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/9/1/"
+  },
+  {
+    "materialId": "208050042",
+    "material": "Yaten's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/9/2/"
   },
   {
     "materialId": "124001001",

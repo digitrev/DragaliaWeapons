@@ -32,7 +32,7 @@ namespace DragaliaApi.Controllers.Public
             try
             {
                 return await _context.Materials.Include(m => m.Category)
-                                               .Where(m => m.Category != null)
+                                               .Where(m => m.Category.Category1 != "Unused")
                                                .OrderBy(m => m.SortPath)
                                                .Select(m => _mapper.Map<MaterialDTO>(m))
                                                .ToListAsync();

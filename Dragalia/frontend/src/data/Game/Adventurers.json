@@ -8,6 +8,14 @@
     "mcLimit": 50
   },
   {
+    "adventurerId": 10150106,
+    "adventurer": "Undercover Grace",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10150105,
     "adventurer": "Chrom",
     "rarity": 5,
@@ -29,7 +37,7 @@
     "rarity": 5,
     "element": "Flame",
     "weaponType": "Sword",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10150102,
@@ -136,12 +144,20 @@
     "mcLimit": 70
   },
   {
+    "adventurerId": 10350103,
+    "adventurer": "Summer Mitsuhide",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10350102,
     "adventurer": "Gala Laxi",
     "rarity": 5,
     "element": "Flame",
     "weaponType": "Dagger",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10350101,
@@ -272,6 +288,14 @@
     "mcLimit": 70
   },
   {
+    "adventurerId": 10650103,
+    "adventurer": "Summer Alex",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10650102,
     "adventurer": "Chelsea",
     "rarity": 5,
@@ -302,6 +326,14 @@
     "element": "Flame",
     "weaponType": "Bow",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10750105,
+    "adventurer": "Yukata Cleo",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Wand",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10750104,
@@ -416,6 +448,14 @@
     "mcLimit": 50
   },
   {
+    "adventurerId": 10150204,
+    "adventurer": "Summer Ieyasu",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10150203,
     "adventurer": "Eugene",
     "rarity": 5,
@@ -454,6 +494,14 @@
     "element": "Water",
     "weaponType": "Sword",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10250203,
+    "adventurer": "Gala Mascula",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Blade",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10250202,
@@ -565,7 +613,7 @@
     "rarity": 5,
     "element": "Water",
     "weaponType": "Axe",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10450202,
@@ -605,6 +653,14 @@
     "rarity": 3,
     "element": "Water",
     "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550205,
+    "adventurer": "Faeblessed Tobias",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Lance",
     "mcLimit": 50
   },
   {
@@ -792,6 +848,14 @@
     "mcLimit": 70
   },
   {
+    "adventurerId": 10950203,
+    "adventurer": "Sharpshooter Sarisse",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10950202,
     "adventurer": "Yoshitsune",
     "rarity": 5,
@@ -805,6 +869,14 @@
     "rarity": 5,
     "element": "Water",
     "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150305,
+    "adventurer": "Nino",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Sword",
     "mcLimit": 50
   },
   {
@@ -853,6 +925,22 @@
     "rarity": 4,
     "element": "Wind",
     "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250305,
+    "adventurer": "Harle",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250304,
+    "adventurer": "Yukata Lathna",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Blade",
     "mcLimit": 50
   },
   {
@@ -1013,7 +1101,7 @@
     "rarity": 5,
     "element": "Wind",
     "weaponType": "Lance",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10550301,
@@ -1165,7 +1253,7 @@
     "rarity": 5,
     "element": "Wind",
     "weaponType": "Staff",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10840302,
@@ -1192,6 +1280,14 @@
     "mcLimit": 70
   },
   {
+    "adventurerId": 10950303,
+    "adventurer": "Cecile",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10950302,
     "adventurer": "Saiga",
     "rarity": 5,
@@ -1205,6 +1301,14 @@
     "rarity": 5,
     "element": "Wind",
     "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10150405,
+    "adventurer": "Civilian Leif",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Sword",
     "mcLimit": 50
   },
   {
@@ -1269,7 +1373,7 @@
     "rarity": 5,
     "element": "Light",
     "weaponType": "Blade",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10250401,
@@ -1302,6 +1406,14 @@
     "element": "Light",
     "weaponType": "Blade",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10350405,
+    "adventurer": "Farren",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Dagger",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10350404,
@@ -1349,6 +1461,14 @@
     "rarity": 3,
     "element": "Light",
     "weaponType": "Dagger",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10450405,
+    "adventurer": "Gala Audric",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Axe",
     "mcLimit": 50
   },
   {
@@ -1464,6 +1584,14 @@
     "mcLimit": 50
   },
   {
+    "adventurerId": 10650403,
+    "adventurer": "Isaac",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10650402,
     "adventurer": "Summer Mikoto",
     "rarity": 5,
@@ -1509,6 +1637,14 @@
     "rarity": 3,
     "element": "Light",
     "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750404,
+    "adventurer": "Summer Chelle",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Wand",
     "mcLimit": 50
   },
   {
@@ -1589,7 +1725,7 @@
     "rarity": 4,
     "element": "Light",
     "weaponType": "Staff",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10840401,
@@ -1661,7 +1797,7 @@
     "rarity": 5,
     "element": "Shadow",
     "weaponType": "Sword",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10140503,
@@ -1686,6 +1822,14 @@
     "element": "Shadow",
     "weaponType": "Sword",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10250504,
+    "adventurer": "Gala Zethia",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Blade",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10250503,
@@ -1733,6 +1877,14 @@
     "rarity": 3,
     "element": "Shadow",
     "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10350506,
+    "adventurer": "Summer Prince",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Dagger",
     "mcLimit": 50
   },
   {
@@ -1838,6 +1990,14 @@
     "element": "Shadow",
     "weaponType": "Axe",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10550503,
+    "adventurer": "Summer Leonidas",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Lance",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10550502,
@@ -1949,7 +2109,7 @@
     "rarity": 5,
     "element": "Shadow",
     "weaponType": "Wand",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10750501,
@@ -1989,7 +2149,7 @@
     "rarity": 5,
     "element": "Shadow",
     "weaponType": "Staff",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10850501,
@@ -2013,6 +2173,14 @@
     "rarity": 3,
     "element": "Shadow",
     "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10950502,
+    "adventurer": "Summer Mym",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Manacaster",
     "mcLimit": 50
   },
   {
