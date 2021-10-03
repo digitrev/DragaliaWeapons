@@ -1472,4 +1472,16 @@
     <Property Name="NewSchema" Value="core" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="a8072ead-a6b1-4465-8a2f-df30438641b4" ChangeDateTime="10/03/2021 01:45:35">
+    <Property Name="ElementName" Value="[dbo].[spQuestJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3d8a4858-77bc-4891-bb46-ee57d00fcf14" ChangeDateTime="10/03/2021 01:52:25">
+    <Property Name="ElementName" Value="[dbo].[spWeaponLimitJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

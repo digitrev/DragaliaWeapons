@@ -85,17 +85,6 @@
     <Build Include="core\Tables\Passive.sql" />
     <Build Include="core\Tables\PassiveCrafting.sql" />
     <Build Include="core\Tables\WeaponLevel.sql" />
-    <Build Include="core\Stored Procedures\spWeaponList.sql" />
-    <Build Include="core\Stored Procedures\spWeaponCrafting.sql" />
-    <Build Include="core\Stored Procedures\spWeaponLevel.sql" />
-    <Build Include="core\Stored Procedures\spWeaponUnbind.sql" />
-    <Build Include="core\Stored Procedures\spWeaponUpgrade.sql" />
-    <Build Include="core\Stored Procedures\spWeaponRefinement.sql" />
-    <Build Include="core\Stored Procedures\spWeaponSlots.sql" />
-    <Build Include="core\Stored Procedures\spWeaponBonus.sql" />
-    <Build Include="core\Stored Procedures\spWeaponCopies.sql" />
-    <Build Include="core\Stored Procedures\spPassiveList.sql" />
-    <Build Include="core\Stored Procedures\spPassiveCrafting.sql" />
     <Build Include="Security\core.sql" />
     <Build Include="jsn\Tables\TableJson.sql" />
     <Build Include="core\Tables\Facility.sql" />
@@ -140,7 +129,6 @@
     <Build Include="den\Stored Procedures\spSetQuestHierachy.sql" />
     <Build Include="den\Tables\FarmLocation.sql" />
     <Build Include="core\Tables\MaterialQuest.sql" />
-    <Build Include="core\Stored Procedures\spWeaponDominionSlots.sql" />
     <Build Include="core\Tables\Adventurer.sql" />
     <Build Include="core\Tables\ManaCircle.sql" />
     <Build Include="core\Tables\Dragon.sql" />
@@ -159,6 +147,8 @@
     <Build Include="core\Stored Procedures\spMaterialQuestJson.sql" />
     <Build Include="core\Stored Procedures\spMaterialJson.sql" />
     <Build Include="core\Stored Procedures\spPassiveJson.sql" />
+    <Build Include="core\Stored Procedures\spQuestJson.sql" />
+    <Build Include="core\Stored Procedures\spWeaponLimitJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
