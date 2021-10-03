@@ -196,12 +196,16 @@ export interface AccountDragonData {
 }
 
 //wyrmprints
+export interface AbilityData {
+  ability: string;
+}
+
 export interface WyrmprintData {
   wyrmprintId: number;
   wyrmprint: string;
   rarity: number;
   affinity?: string;
-  abilities: string[];
+  abilities: AbilityData[];
 }
 
 export interface AccountWyrmprintData {
