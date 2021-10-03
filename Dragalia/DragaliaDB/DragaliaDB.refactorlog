@@ -1515,4 +1515,10 @@
     <Property Name="ParentElementType" Value="SqlSchema" />
     <Property Name="NewName" Value="[spWyrmprintLevelLimitJson]" />
   </Operation>
+  <Operation Name="Move Schema" Key="c5df5315-21aa-43b5-9b98-dc40aab2a650" ChangeDateTime="10/03/2021 02:31:40">
+    <Property Name="ElementName" Value="[dbo].[spWyrmprintJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

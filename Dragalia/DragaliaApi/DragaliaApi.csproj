@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Public\" />
     <Folder Include="Data\" />
   </ItemGroup>
 
