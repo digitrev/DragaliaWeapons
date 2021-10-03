@@ -5,7 +5,7 @@ SELECT w.WyrmprintID AS wyrmprintId
 	,w.Rarity AS rarity
 	,af.[Affinity] AS [affinity]
 	,(
-		SELECT a.GenericName AS Ability
+		SELECT a.GenericName AS ability
 		FROM core.WyrmprintAbility AS wa
 		INNER JOIN core.Ability AS a ON a.AbilityID = wa.AbilityID
 		WHERE wa.WyrmprintID = w.WyrmprintID
