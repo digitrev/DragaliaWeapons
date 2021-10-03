@@ -1466,4 +1466,10 @@
     <Property Name="NewSchema" Value="core" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="7f4a2a9a-0b28-4652-8e7a-67b3b131adea" ChangeDateTime="10/03/2021 01:42:55">
+    <Property Name="ElementName" Value="[dbo].[spPassiveJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

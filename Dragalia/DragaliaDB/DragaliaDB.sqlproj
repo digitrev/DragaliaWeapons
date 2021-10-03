@@ -158,6 +158,7 @@
     <Build Include="core\Stored Procedures\spFacilityLimitJson.sql" />
     <Build Include="core\Stored Procedures\spMaterialQuestJson.sql" />
     <Build Include="core\Stored Procedures\spMaterialJson.sql" />
+    <Build Include="core\Stored Procedures\spPassiveJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
