@@ -30,7 +30,7 @@ export const Wyrmprint: FC<Props> = ({
         Skill(s):
         <ul>
           {abilities.map((a) => (
-            <li>{a}</li>
+            <li>{a.ability}</li>
           ))}
         </ul>
       </div>
