@@ -150,6 +150,7 @@
     <Build Include="core\Stored Procedures\spQuestJson.sql" />
     <Build Include="core\Stored Procedures\spWeaponLimitJson.sql" />
     <Build Include="core\Stored Procedures\spWeaponJson.sql" />
+    <Build Include="core\Stored Procedures\spWeaponSeriesJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
