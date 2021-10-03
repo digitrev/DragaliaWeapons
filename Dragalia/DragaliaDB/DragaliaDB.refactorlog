@@ -1502,4 +1502,17 @@
     <Property Name="NewSchema" Value="core" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="9992743e-2816-478c-8971-ad12e8e53cfa" ChangeDateTime="10/03/2021 02:06:51">
+    <Property Name="ElementName" Value="[dbo].[spWeaponLevelLimitJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="19469af6-45e1-41b6-8e50-ec84ec3fe7c5" ChangeDateTime="10/03/2021 02:08:26">
+    <Property Name="ElementName" Value="[core].[spWeaponLevelLimitJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[core]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spWyrmprintLevelLimitJson]" />
+  </Operation>
 </Operations>
