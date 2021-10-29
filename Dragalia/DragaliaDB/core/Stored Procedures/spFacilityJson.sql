@@ -8,3 +8,4 @@ FROM core.Facility AS f
 INNER JOIN core.Category AS c ON c.CategoryID = f.CategoryID
 ORDER BY c.SortPath
 	,f.FacilityID
+FOR JSON PATH
