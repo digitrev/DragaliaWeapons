@@ -9,5 +9,5 @@
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-IF OBJECT_ID('core.WyrmprintLevel') IS NOT NULL
+IF OBJECT_ID('wpt.WyrmprintLevel') IS NOT NULL
 	TRUNCATE TABLE [wpt].WyrmprintLevel
