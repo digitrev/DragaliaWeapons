@@ -77,9 +77,9 @@ BEGIN
 			,[SortPath] NVARCHAR(255)
 			)
 
-	EXEC [den].[spInitializeDenDrg]
+	EXEC [den].[spInitializeDrg]
 
-	EXEC [den].[spInitializeDenFac]
+	EXEC [den].[spInitializeFac]
 
-	EXEC [den].[spInitializeDenCht]
+	EXEC [den].[spInitializeCht]
 END

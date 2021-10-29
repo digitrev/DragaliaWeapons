@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [den].[spInitializeDenFac]
+﻿CREATE PROCEDURE [den].[spInitializeFac]
 AS
 BEGIN
 	SET NOCOUNT ON

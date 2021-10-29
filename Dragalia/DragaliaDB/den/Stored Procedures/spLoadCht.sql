@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE [den].[spLoadCht]
+AS
+BEGIN
+	SET NOCOUNT ON
+END

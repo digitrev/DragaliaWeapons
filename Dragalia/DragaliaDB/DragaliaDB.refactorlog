@@ -1853,4 +1853,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Frequency" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="432ddba0-e324-4790-8f19-e760d3a12c23" ChangeDateTime="10/29/2021 21:30:03">
+    <Property Name="ElementName" Value="[den].[spInitializeDenCht]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spInitializeCht]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="beb4658c-e809-4a02-9ce6-844597b081c6" ChangeDateTime="10/29/2021 21:30:12">
+    <Property Name="ElementName" Value="[den].[spInitializeDenDrg]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spInitializeDrg]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="66eb7d99-c051-44f3-885e-a85d28ef7bfd" ChangeDateTime="10/29/2021 21:30:21">
+    <Property Name="ElementName" Value="[den].[spInitializeDenFac]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spInitializeFac]" />
+  </Operation>
 </Operations>
