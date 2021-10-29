@@ -17,7 +17,7 @@ const wyrmprintData = [
       wyrmprint: 'Plunder Pals',
       rarity: 5,
       affinity: 'None',
-      abilities: ['ability one', 'ability two'],
+      abilities: [{ ability: 'ability one' }, { ability: 'ability two' }],
     },
   },
   {
@@ -33,7 +33,7 @@ const wyrmprintData = [
       wyrmprint: "A Dog's Day",
       rarity: 5,
       affinity: 'None',
-      abilities: ['ability one', 'ability two'],
+      abilities: [{ ability: 'ability one' }, { ability: 'ability two' }],
     },
   },
   {

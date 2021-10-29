@@ -11,12 +11,3 @@
 	,CONSTRAINT [FK_Adventurer_WeaponType] FOREIGN KEY ([WeaponTypeID]) REFERENCES [core].[WeaponType]([WeaponTypeID])
 	)
 GO
-
-CREATE TRIGGER [core].[Trigger_Adventurer] ON [core].[Adventurer]
-AFTER INSERT
-AS
-BEGIN
-	SET NOCOUNT ON
-
-	EXEC dbo.spFillAdventurer
-END

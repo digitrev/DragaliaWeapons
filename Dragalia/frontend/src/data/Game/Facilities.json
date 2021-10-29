@@ -252,6 +252,12 @@
     "category": "Event Facility"
   },
   {
+    "facilityId": 103001,
+    "facility": "Dr. Schmidt's Lab",
+    "limit": 1,
+    "category": "Event Facility"
+  },
+  {
     "facilityId": 100601,
     "facility": "Flame Dracolith",
     "limit": 1,
@@ -435,6 +441,12 @@
     "facilityId": 102902,
     "facility": "Extra Large Tropical Juice",
     "limit": 1,
+    "category": "Decoration"
+  },
+  {
+    "facilityId": 103002,
+    "facility": "Preservation Pod",
+    "limit": 4,
     "category": "Decoration"
   }
 ]

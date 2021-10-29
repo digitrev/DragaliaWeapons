@@ -804,6 +804,18 @@
     "sortPath": "/27/"
   },
   {
+    "materialId": "201022011",
+    "material": "Firestorm Shard",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/0/1/"
+  },
+  {
+    "materialId": "201022012",
+    "material": "Firestorm Prism",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/0/2/"
+  },
+  {
     "materialId": "201022021",
     "material": "Whirlpool Shard",
     "category": "Dominion Shards",
@@ -1066,6 +1078,12 @@
     "material": "Tidal Tears",
     "category": "Event Facility Upgrade Materials",
     "sortPath": "/31/13/"
+  },
+  {
+    "materialId": "203016001",
+    "material": "Conductive Bolt",
+    "category": "Event Facility Upgrade Materials",
+    "sortPath": "/31/14/"
   },
   {
     "materialId": "204001001",
@@ -1866,196 +1884,244 @@
     "sortPath": "/36.1/4/6/"
   },
   {
+    "materialId": "207001025",
+    "material": "Woodland Archer's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/5/1/"
+  },
+  {
+    "materialId": "207001026",
+    "material": "Suave Lithomancer's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/5/2/"
+  },
+  {
+    "materialId": "207001027",
+    "material": "Nature's Avatar's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/5/3/"
+  },
+  {
+    "materialId": "207001028",
+    "material": "Genius of the Century's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/5/4/"
+  },
+  {
+    "materialId": "207001029",
+    "material": "Heaven's Avatar's Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/5/5/"
+  },
+  {
+    "materialId": "207001030",
+    "material": "Genius of the Ages' Memory",
+    "category": "Wyrmprint Memories",
+    "sortPath": "/36.1/5/6/"
+  },
+  {
     "materialId": "208010011",
     "material": "Yukata Cassandra's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/1/1/"
+    "sortPath": "/36.2/1/1/1/"
   },
   {
     "materialId": "208010012",
     "material": "Yukata Cassandra's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/1/2/"
+    "sortPath": "/36.2/1/1/2/"
   },
   {
     "materialId": "208010021",
     "material": "Gala Laxi's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/1.1/1/"
+    "sortPath": "/36.2/1/2/1/"
   },
   {
     "materialId": "208010022",
     "material": "Gala Laxi's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/1.1/2/"
+    "sortPath": "/36.2/1/2/2/"
   },
   {
     "materialId": "208010031",
     "material": "Lea's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/1.2/1/"
+    "sortPath": "/36.2/1/3/1/"
   },
   {
     "materialId": "208010032",
     "material": "Lea's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/1.2/2/"
+    "sortPath": "/36.2/1/3/2/"
   },
   {
     "materialId": "208020011",
     "material": "Gala Elisanne's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/2/1/"
+    "sortPath": "/36.2/2/1/1/"
   },
   {
     "materialId": "208020012",
     "material": "Gala Elisanne's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/2/2/"
+    "sortPath": "/36.2/2/1/2/"
   },
   {
     "materialId": "208020021",
     "material": "Nurse Aeleen's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/3/1/"
+    "sortPath": "/36.2/2/2/1/"
   },
   {
     "materialId": "208020022",
     "material": "Nurse Aeleen's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/3/2/"
+    "sortPath": "/36.2/2/3/2/"
   },
   {
     "materialId": "208020031",
     "material": "Lazry's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/3.1/1/"
+    "sortPath": "/36.2/2/4/1/"
   },
   {
     "materialId": "208020032",
     "material": "Lazry's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/3.1/2/"
+    "sortPath": "/36.2/2/4/2/"
   },
   {
     "materialId": "208030011",
     "material": "Gala Ranzal's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/4/1/"
+    "sortPath": "/36.2/3/1/1/"
   },
   {
     "materialId": "208030012",
     "material": "Gala Ranzal's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/4/2/"
+    "sortPath": "/36.2/3/1/2/"
   },
   {
     "materialId": "208030021",
     "material": "Akasha's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/4.1/1/"
+    "sortPath": "/36.2/3/2/1/"
   },
   {
     "materialId": "208030022",
     "material": "Akasha's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/4.1/2/"
+    "sortPath": "/36.2/3/2/2/"
   },
   {
     "materialId": "208030031",
     "material": "Kirsty's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/4.2/1/"
+    "sortPath": "/36.2/3/3/1/"
   },
   {
     "materialId": "208030032",
     "material": "Kirsty's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/4.2/2/"
+    "sortPath": "/36.2/3/3/2/"
+  },
+  {
+    "materialId": "208030041",
+    "material": "Wedding Aoi's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3/4/1/"
+  },
+  {
+    "materialId": "208030042",
+    "material": "Wedding Aoi's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3/4/2/"
   },
   {
     "materialId": "208040011",
     "material": "Gala Prince's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/5/1/"
+    "sortPath": "/36.2/4/1/1/"
   },
   {
     "materialId": "208040012",
     "material": "Gala Prince's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/5/2/"
+    "sortPath": "/36.2/4/1/2/"
   },
   {
     "materialId": "208040021",
     "material": "Gala Luca's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/5.1/1/"
+    "sortPath": "/36.2/4/2/1/"
   },
   {
     "materialId": "208040022",
     "material": "Gala Luca's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/5.1/2/"
+    "sortPath": "/36.2/4/2/2/"
   },
   {
     "materialId": "208040031",
     "material": "Vixel's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/5.2/1/"
+    "sortPath": "/36.2/4/3/1/"
   },
   {
     "materialId": "208040032",
     "material": "Vixel's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/5.2/2/"
+    "sortPath": "/36.2/4/3/2/"
   },
   {
     "materialId": "208050011",
     "material": "Gala Alex's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/6/1/"
+    "sortPath": "/36.2/5/1/1/"
   },
   {
     "materialId": "208050012",
     "material": "Gala Alex's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/6/2/"
+    "sortPath": "/36.2/5/1/2/"
   },
   {
     "materialId": "208050021",
     "material": "Summer Verica's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/7/1/"
+    "sortPath": "/36.2/5/2/1/"
   },
   {
     "materialId": "208050022",
     "material": "Summer Verica's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/7/2/"
+    "sortPath": "/36.2/5/2/2/"
   },
   {
     "materialId": "208050031",
     "material": "Gala Cleo's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/8/1/"
+    "sortPath": "/36.2/5/3/1/"
   },
   {
     "materialId": "208050032",
     "material": "Gala Cleo's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/8/2/"
+    "sortPath": "/36.2/5/3/2/"
   },
   {
     "materialId": "208050041",
     "material": "Yaten's Conviction",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/9/1/"
+    "sortPath": "/36.2/5/4/1/"
   },
   {
     "materialId": "208050042",
     "material": "Yaten's Devotion",
     "category": "Spiral Materials",
-    "sortPath": "/36.2/9/2/"
+    "sortPath": "/36.2/5/4/2/"
   },
   {
     "materialId": "124001001",
