@@ -2,6 +2,6 @@
 AS
 SELECT WyrmprintRarity AS rarity
 	,MAX(MaxWyrmprintLevel) AS [level]
-FROM core.WyrmprintLevelLimit
+FROM [wpt].WyrmprintLevelLimit
 GROUP BY WyrmprintRarity
 FOR JSON PATH

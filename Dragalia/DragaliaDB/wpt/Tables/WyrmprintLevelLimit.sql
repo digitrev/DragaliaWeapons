@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[WyrmprintLevelLimit] (
+﻿CREATE TABLE [wpt].[WyrmprintLevelLimit] (
 	[WyrmprintRarity] INT NOT NULL
 	,[UnbindLevel] INT NOT NULL
 	,[MaxWyrmprintLevel] INT NOT NULL

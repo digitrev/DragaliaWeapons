@@ -74,11 +74,11 @@
     <Folder Include="drg" />
     <Folder Include="fac" />
     <Folder Include="wpn" />
-    <Folder Include="wpt" />
     <Folder Include="adv\Tables" />
     <Folder Include="drg\Tables" />
     <Folder Include="fac\Tables" />
     <Folder Include="wpn\Tables" />
+    <Folder Include="wpt" />
     <Folder Include="wpt\Tables" />
   </ItemGroup>
   <ItemGroup>
@@ -119,15 +119,10 @@
     <Build Include="Security\util.sql" />
     <Build Include="util\Functions\InlineMax.sql" />
     <Build Include="den\Stored Procedures\spInitializeDen.sql" />
-    <Build Include="core\Tables\Wyrmprint.sql" />
-    <Build Include="core\Tables\WyrmprintAbility.sql" />
     <Build Include="core\Tables\AbilityGroup.sql" />
     <Build Include="core\Tables\WeaponLevelLimit.sql" />
     <Build Include="core\Tables\WeaponUnbindLimit.sql" />
     <Build Include="core\Tables\Affinity.sql" />
-    <Build Include="core\Tables\WyrmprintUpgrade.sql" />
-    <Build Include="core\Tables\WyrmprintLevel.sql" />
-    <Build Include="core\Tables\WyrmprintLevelLimit.sql" />
     <Build Include="core\Tables\Category.sql" />
     <Build Include="den\Tables\MaterialMetadata.sql" />
     <Build Include="den\Tables\FacilityMetadata.sql" />
@@ -169,6 +164,11 @@
     <Build Include="drg\Tables\DragonUnbind.sql" />
     <Build Include="fac\Tables\Facility.sql" />
     <Build Include="fac\Tables\FacilityUpgrade.sql" />
+    <Build Include="wpt\Tables\Wyrmprint.sql" />
+    <Build Include="wpt\Tables\WyrmprintAbility.sql" />
+    <Build Include="wpt\Tables\WyrmprintLevel.sql" />
+    <Build Include="wpt\Tables\WyrmprintLevelLimit.sql" />
+    <Build Include="wpt\Tables\WyrmprintUpgrade.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

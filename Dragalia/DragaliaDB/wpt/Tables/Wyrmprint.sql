@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[Wyrmprint] (
+﻿CREATE TABLE [wpt].[Wyrmprint] (
 	[WyrmprintID] INT NOT NULL
 	,[Wyrmprint] NVARCHAR(50) NOT NULL
 	,[Rarity] INT NOT NULL

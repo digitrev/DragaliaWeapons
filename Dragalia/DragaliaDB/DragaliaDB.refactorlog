@@ -1557,4 +1557,34 @@
     <Property Name="NewSchema" Value="fac" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="4ffa08bd-4b39-416d-8a19-fd45d032200a" ChangeDateTime="10/29/2021 17:49:50">
+    <Property Name="ElementName" Value="[core].[Wyrmprint]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="eb33ce72-2826-48e8-b532-7f7a0167e8df" ChangeDateTime="10/29/2021 17:49:59">
+    <Property Name="ElementName" Value="[core].[WyrmprintAbility]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="2b1e5f09-4129-497f-a627-46178627894d" ChangeDateTime="10/29/2021 17:50:10">
+    <Property Name="ElementName" Value="[core].[WyrmprintLevel]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="4048b844-aaaa-4b55-bf65-c9c6c2b5bbc0" ChangeDateTime="10/29/2021 17:50:19">
+    <Property Name="ElementName" Value="[core].[WyrmprintLevelLimit]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="9e8270d6-6a9b-4422-8bff-79c6b83a8f82" ChangeDateTime="10/29/2021 17:50:28">
+    <Property Name="ElementName" Value="[core].[WyrmprintUpgrade]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

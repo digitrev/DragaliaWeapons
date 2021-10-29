@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[WyrmprintLevel] (
+﻿CREATE TABLE [wpt].[WyrmprintLevel] (
 	[WyrmprintID] INT NOT NULL
 	,[WyrmprintLevel] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
@@ -8,6 +8,6 @@
 		,[WyrmprintLevel]
 		,[MaterialID]
 		)
-	,CONSTRAINT [FK_WyrmprintLevel_Wyrmprint] FOREIGN KEY ([WyrmprintID]) REFERENCES [core].[Wyrmprint]([WyrmprintID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_WyrmprintLevel_Wyrmprint] FOREIGN KEY ([WyrmprintID]) REFERENCES [wpt].[Wyrmprint]([WyrmprintID]) ON DELETE CASCADE
 	,CONSTRAINT [FK_WyrmprintLevel_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID]) ON DELETE CASCADE
 	)

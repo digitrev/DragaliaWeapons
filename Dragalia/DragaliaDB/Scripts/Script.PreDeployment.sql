@@ -10,4 +10,4 @@
 --------------------------------------------------------------------------------------
 */
 IF OBJECT_ID('core.WyrmprintLevel') IS NOT NULL
-	TRUNCATE TABLE core.WyrmprintLevel
+	TRUNCATE TABLE [wpt].WyrmprintLevel

@@ -1060,7 +1060,7 @@ BEGIN
 			) AS w
 	WHERE wj.TableName = 'Wyrmprint'
 
-	MERGE core.Wyrmprint AS trg
+	MERGE [wpt].Wyrmprint AS trg
 	USING (
 		SELECT DISTINCT WyrmprintID
 			,REPLACE(Wyrmprint, '&amp;', '&') AS Wyrmprint
@@ -1100,9 +1100,9 @@ BEGIN
 				);
 
 	--WyrmprintAbility
-	TRUNCATE TABLE core.WyrmprintAbility
+	TRUNCATE TABLE [wpt].WyrmprintAbility
 
-	INSERT core.WyrmprintAbility (
+	INSERT [wpt].WyrmprintAbility (
 		WyrmprintID
 		,AbilityID
 		,AbilitySlot
@@ -1194,9 +1194,9 @@ BEGIN
 	INNER JOIN #Wyrmprint AS w ON w.GroupID = wu.GroupID
 	WHERE wuj.TableName = 'WyrmprintUpgrade'
 
-	TRUNCATE TABLE core.WyrmprintUpgrade
+	TRUNCATE TABLE [wpt].WyrmprintUpgrade
 
-	INSERT core.WyrmprintUpgrade (
+	INSERT [wpt].WyrmprintUpgrade (
 		WyrmprintID
 		,UpgradeTypeID
 		,Step
@@ -1283,9 +1283,9 @@ BEGIN
 	INNER JOIN #Wyrmprint AS w ON w.RarityGroup = wl.Rarity
 	WHERE wlj.TableName = 'WyrmprintLevel'
 
-	TRUNCATE TABLE core.WyrmprintLevel
+	TRUNCATE TABLE [wpt].WyrmprintLevel
 
-	INSERT core.WyrmprintLevel (
+	INSERT [wpt].WyrmprintLevel (
 		WyrmprintID
 		,WyrmprintLevel
 		,MaterialID
@@ -1349,9 +1349,9 @@ BEGIN
 			) AS wl
 	WHERE wlj.TableName = 'WyrmprintLimit'
 
-	TRUNCATE TABLE core.WyrmprintLevelLimit
+	TRUNCATE TABLE [wpt].WyrmprintLevelLimit
 
-	INSERT core.WyrmprintLevelLimit (
+	INSERT [wpt].WyrmprintLevelLimit (
 		WyrmprintRarity
 		,UnbindLevel
 		,MaxWyrmprintLevel

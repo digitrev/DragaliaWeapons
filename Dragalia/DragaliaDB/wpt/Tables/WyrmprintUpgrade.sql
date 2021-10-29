@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[WyrmprintUpgrade] (
+﻿CREATE TABLE [wpt].[WyrmprintUpgrade] (
 	[WyrmprintID] INT NOT NULL
 	,[UpgradeTypeID] INT NOT NULL
 	,[Step] INT NOT NULL
@@ -10,7 +10,7 @@
 		,[Step]
 		,[MaterialID]
 		)
-	,CONSTRAINT [FK_WyrmprintUpgrade_Wyrmprint] FOREIGN KEY ([WyrmprintID]) REFERENCES [core].[Wyrmprint]([WyrmprintID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_WyrmprintUpgrade_Wyrmprint] FOREIGN KEY ([WyrmprintID]) REFERENCES [wpt].[Wyrmprint]([WyrmprintID]) ON DELETE CASCADE
 	,CONSTRAINT [FK_WyrmprintUpgrade_UpgradeType] FOREIGN KEY ([UpgradeTypeID]) REFERENCES [core].[UpgradeType]([UpgradeTypeID]) ON DELETE CASCADE
 	,CONSTRAINT [FK_WyrmprintUpgrade_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID]) ON DELETE CASCADE
 	)
