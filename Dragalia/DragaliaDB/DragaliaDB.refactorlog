@@ -1521,4 +1521,10 @@
     <Property Name="NewSchema" Value="core" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="a4b8ff95-e6e9-402f-ad67-2bf97d49ec06" ChangeDateTime="10/29/2021 17:46:00">
+    <Property Name="ElementName" Value="[core].[Adventurer]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="adv" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

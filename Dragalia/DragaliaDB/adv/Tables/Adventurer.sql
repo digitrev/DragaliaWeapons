@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[Adventurer] (
+﻿CREATE TABLE [adv].[Adventurer] (
 	[AdventurerID] INT NOT NULL
 	,[Adventurer] NVARCHAR(50) NOT NULL
 	,[Rarity] INT NOT NULL

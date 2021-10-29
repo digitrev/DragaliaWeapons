@@ -1370,7 +1370,7 @@ BEGIN
 	WHERE upvt.MaxWyrmprintLevel > 0
 
 	--Adventurer data
-	MERGE core.Adventurer AS trg
+	MERGE [adv].Adventurer AS trg
 	USING (
 		SELECT a.AdventurerID
 			,a.VariationID
@@ -1561,7 +1561,7 @@ BEGIN
 		,mc.ManaNode
 		,'Mana'
 		,mc.ManaCost
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	WHERE mc.ManaCost > 0
@@ -1573,7 +1573,7 @@ BEGIN
 		,mc.ManaNode
 		,amc.UniqueGrowMaterialId1
 		,mc.UniqueGrowMaterialCount1
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	WHERE mc.UniqueGrowMaterialCount1 > 0
@@ -1585,7 +1585,7 @@ BEGIN
 		,mc.ManaNode
 		,amc.UniqueGrowMaterialId2
 		,mc.UniqueGrowMaterialCount2
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	WHERE mc.UniqueGrowMaterialCount2 > 0
@@ -1597,7 +1597,7 @@ BEGIN
 		,mc.ManaNode
 		,'Eldwater'
 		,mpe.Eldwater
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	INNER JOIN #ManaPieceEldwater AS mpe ON mpe.PieceMaterialElementId = amc.PieceMaterialElementId
@@ -1612,7 +1612,7 @@ BEGIN
 		,mc.ManaNode
 		,mpm.MaterialID
 		,mpm.Quantity
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN core.Element AS e ON e.ElementID = a.ElementID
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
@@ -1632,7 +1632,7 @@ BEGIN
 		,31
 		,'Eldwater'
 		,2500
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	WHERE a.Rarity = 3
 	
 	UNION ALL
@@ -1641,7 +1641,7 @@ BEGIN
 		,41
 		,'Eldwater'
 		,25000
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	WHERE a.Rarity IN (
 			3
 			,4
@@ -2013,7 +2013,7 @@ BEGIN
 				);
 
 	DELETE mc
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN core.ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
 	WHERE mc.ManaNode > a.MCLimit
 

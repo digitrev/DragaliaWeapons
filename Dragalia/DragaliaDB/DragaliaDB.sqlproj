@@ -70,6 +70,16 @@
     <Folder Include="util" />
     <Folder Include="util\Functions" />
     <Folder Include="util\Table" />
+    <Folder Include="adv" />
+    <Folder Include="drg" />
+    <Folder Include="fac" />
+    <Folder Include="wpn" />
+    <Folder Include="wpt" />
+    <Folder Include="adv\Tables" />
+    <Folder Include="drg\Tables" />
+    <Folder Include="fac\Tables" />
+    <Folder Include="wpn\Tables" />
+    <Folder Include="wpt\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -129,8 +139,6 @@
     <Build Include="den\Stored Procedures\spSetQuestHierachy.sql" />
     <Build Include="den\Tables\FarmLocation.sql" />
     <Build Include="core\Tables\MaterialQuest.sql" />
-    <Build Include="core\Tables\Adventurer.sql" />
-    <Build Include="core\Tables\ManaCircle.sql" />
     <Build Include="core\Tables\Dragon.sql" />
     <Build Include="core\Tables\DragonUnbind.sql" />
     <Build Include="den\Tables\DragonTrialCosts.sql" />
@@ -154,6 +162,13 @@
     <Build Include="core\Stored Procedures\spWeaponTypeJson.sql" />
     <Build Include="core\Stored Procedures\spWyrmprintLevelLimitJson.sql" />
     <Build Include="core\Stored Procedures\spWyrmprintJson.sql" />
+    <Build Include="Security\adv.sql" />
+    <Build Include="Security\drg.sql" />
+    <Build Include="Security\fac.sql" />
+    <Build Include="Security\wpt.sql" />
+    <Build Include="Security\wpn.sql" />
+    <Build Include="adv\Tables\Adventurer.sql" />
+    <Build Include="adv\Tables\ManaCircle.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

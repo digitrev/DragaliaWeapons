@@ -8,6 +8,6 @@
 		,[ManaNode]
 		,[MaterialID]
 		)
-	,CONSTRAINT [FK_ManaCircle_Adventurer] FOREIGN KEY ([AdventurerID]) REFERENCES [core].[Adventurer]([AdventurerID])
+	,CONSTRAINT [FK_ManaCircle_Adventurer] FOREIGN KEY ([AdventurerID]) REFERENCES [adv].[Adventurer]([AdventurerID])
 	,CONSTRAINT [FK_ManaCircle_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID])
 	)

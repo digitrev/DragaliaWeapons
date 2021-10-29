@@ -6,7 +6,7 @@ SELECT a.AdventurerID AS adventurerId
 	,e.Element AS element
 	,wt.WeaponType AS weaponType
 	,a.MCLimit AS mcLimit
-FROM core.Adventurer AS a
+FROM [adv].Adventurer AS a
 INNER JOIN core.Element AS e ON e.ElementID = a.ElementID
 INNER JOIN core.WeaponType AS wt ON wt.WeaponTypeID = a.WeaponTypeID
 ORDER BY e.SortOrder
