@@ -1629,4 +1629,16 @@
     <Property Name="NewSchema" Value="wpn" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="343241d9-d871-4685-b5f0-332758bd72f9" ChangeDateTime="10/29/2021 17:53:32">
+    <Property Name="ElementName" Value="[core].[Passive]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="1e3b27c6-29a8-4a41-ac6d-af961c9a9376" ChangeDateTime="10/29/2021 17:53:39">
+    <Property Name="ElementName" Value="[core].[PassiveCrafting]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

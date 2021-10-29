@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[PassiveCrafting] (
+﻿CREATE TABLE [wpn].[PassiveCrafting] (
 	[PassiveID] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL
 	,[Quantity] INT NOT NULL
@@ -6,6 +6,6 @@
 		[PassiveID]
 		,[MaterialID]
 		)
-	,CONSTRAINT [FK_PassiveCrafting_Passive] FOREIGN KEY ([PassiveID]) REFERENCES [core].[Passive]([PassiveID]) ON DELETE CASCADE
+	,CONSTRAINT [FK_PassiveCrafting_Passive] FOREIGN KEY ([PassiveID]) REFERENCES [wpn].[Passive]([PassiveID]) ON DELETE CASCADE
 	,CONSTRAINT [FK_PassiveCrafting_Material] FOREIGN KEY ([MaterialID]) REFERENCES [core].[Material]([MaterialID]) ON DELETE CASCADE
 	)

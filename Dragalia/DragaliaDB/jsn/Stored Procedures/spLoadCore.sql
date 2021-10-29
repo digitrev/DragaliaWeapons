@@ -746,7 +746,7 @@ BEGIN
 	LEFT JOIN core.Ability AS a ON a.AbilityID = p.AbilityID
 	WHERE a.AbilityID IS NULL
 
-	MERGE core.Passive AS trg
+	MERGE [wpn].Passive AS trg
 	USING (
 		SELECT PassiveID
 			,WeaponTypeID
@@ -790,9 +790,9 @@ BEGIN
 				);
 
 	--Passive crafting
-	TRUNCATE TABLE core.PassiveCrafting
+	TRUNCATE TABLE [wpn].PassiveCrafting
 
-	INSERT core.PassiveCrafting (
+	INSERT [wpn].PassiveCrafting (
 		PassiveID
 		,MaterialID
 		,Quantity

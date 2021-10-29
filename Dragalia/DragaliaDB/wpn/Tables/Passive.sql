@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[Passive] (
+﻿CREATE TABLE [wpn].[Passive] (
 	[PassiveID] INT NOT NULL
 	,[WeaponTypeID] INT NOT NULL
 	,[ElementID] INT NOT NULL

@@ -88,8 +88,6 @@
     <Build Include="core\Tables\Element.sql" />
     <Build Include="core\Tables\UpgradeType.sql" />
     <Build Include="core\Tables\Ability.sql" />
-    <Build Include="core\Tables\Passive.sql" />
-    <Build Include="core\Tables\PassiveCrafting.sql" />
     <Build Include="Security\core.sql" />
     <Build Include="jsn\Tables\TableJson.sql" />
     <Build Include="Security\den.sql" />
@@ -169,6 +167,8 @@
     <Build Include="wpn\Tables\WeaponSeries.sql" />
     <Build Include="wpn\Tables\WeaponUnbindLimit.sql" />
     <Build Include="wpn\Tables\WeaponUpgrade.sql" />
+    <Build Include="wpn\Tables\Passive.sql" />
+    <Build Include="wpn\Tables\PassiveCrafting.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
