@@ -183,6 +183,8 @@
     <Build Include="wpn\Stored Procedures\spWeaponUpgradeJson.sql" />
     <Build Include="wpt\Stored Procedures\spWyrmprintLevelJson.sql" />
     <Build Include="wpt\Stored Procedures\spWyrmprintUpgradeJson.sql" />
+    <Build Include="den\Stored Procedures\spLoadFac.sql" />
+    <Build Include="den\Stored Procedures\spLoadDrg.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
