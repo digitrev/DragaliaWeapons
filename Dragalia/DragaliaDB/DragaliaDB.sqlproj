@@ -195,6 +195,7 @@
     <Build Include="cht\Tables\Chest.sql" />
     <Build Include="cht\Tables\ChestDrop.sql" />
     <Build Include="cht\Tables\ChestGroup.sql" />
+    <Build Include="den\Stored Procedures\spInitializeDenCht.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

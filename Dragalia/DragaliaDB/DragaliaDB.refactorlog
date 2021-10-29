@@ -1846,4 +1846,11 @@
     <Property Name="NewSchema" Value="den" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="983efbc9-2254-4c51-a159-9b1113c5731e" ChangeDateTime="10/29/2021 19:58:59">
+    <Property Name="ElementName" Value="[den].[Chests].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[Chests]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Frequency" />
+  </Operation>
 </Operations>
