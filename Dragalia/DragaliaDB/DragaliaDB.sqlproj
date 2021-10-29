@@ -174,6 +174,15 @@
     <Build Include="wpn\Stored Procedures\spWeaponSeriesJson.sql" />
     <Build Include="wpt\Stored Procedures\spWyrmprintJson.sql" />
     <Build Include="wpt\Stored Procedures\spWyrmprintLevelLimitJson.sql" />
+    <Build Include="drg\Stored Procedures\spDragonUnbindJson.sql" />
+    <Build Include="fac\Stored Procedures\spFacilityUpgradeJson.sql" />
+    <Build Include="adv\Stored Procedures\spManaCircleJson.sql" />
+    <Build Include="wpn\Stored Procedures\spPassiveCraftingJson.sql" />
+    <Build Include="wpn\Stored Procedures\spWeaponCraftingJson.sql" />
+    <Build Include="wpn\Stored Procedures\spWeaponLevelJson.sql" />
+    <Build Include="wpn\Stored Procedures\spWeaponUpgradeJson.sql" />
+    <Build Include="wpt\Stored Procedures\spWyrmprintLevelJson.sql" />
+    <Build Include="wpt\Stored Procedures\spWyrmprintUpgradeJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

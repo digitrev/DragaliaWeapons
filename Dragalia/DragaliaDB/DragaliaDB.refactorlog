@@ -1701,4 +1701,46 @@
     <Property Name="NewSchema" Value="wpt" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="e1ef7bea-5456-4e07-9f37-dcbe5fed034a" ChangeDateTime="10/29/2021 18:00:00">
+    <Property Name="ElementName" Value="[dbo].[spDragonUnbindJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="drg" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="9df8476e-8f03-44e8-97ea-47f9e568a589" ChangeDateTime="10/29/2021 18:01:28">
+    <Property Name="ElementName" Value="[dbo].[spFacilityUpgradeJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="fac" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="205816cb-1d71-4961-872e-c0a60f5730e4" ChangeDateTime="10/29/2021 18:03:29">
+    <Property Name="ElementName" Value="[dbo].[spPassiveCraftingJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="ae9cd705-accb-4156-a718-9b6069698240" ChangeDateTime="10/29/2021 18:04:26">
+    <Property Name="ElementName" Value="[dbo].[spWeaponCraftingJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3a183402-6ebe-45e0-81de-5a1d13fedc78" ChangeDateTime="10/29/2021 18:26:53">
+    <Property Name="ElementName" Value="[dbo].[spWeaponUpgradeJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e4a6a0f9-e3cf-463b-af89-041bac7e37ed" ChangeDateTime="10/29/2021 18:28:21">
+    <Property Name="ElementName" Value="[dbo].[spWyrmprintLevelJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="5435012d-127f-4355-9e36-048b96c52170" ChangeDateTime="10/29/2021 18:29:24">
+    <Property Name="ElementName" Value="[dbo].[spWyrmprintUpgradeJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>
