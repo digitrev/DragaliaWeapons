@@ -1,6 +1,6 @@
 [
   {
-    "weaponId": 30750501,
+    "weaponID": 30750501,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -9,7 +9,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550201,
+    "weaponID": 30550201,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -18,7 +18,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550301,
+    "weaponID": 30550301,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -27,7 +27,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450407,
+    "weaponID": 30450407,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -36,7 +36,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850303,
+    "weaponID": 30850303,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -45,7 +45,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30149901,
+    "weaponID": 30149901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -54,7 +54,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30450401,
+    "weaponID": 30450401,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -63,7 +63,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750409,
+    "weaponID": 30750409,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -72,7 +72,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30759901,
+    "weaponID": 30759901,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -81,7 +81,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30250104,
+    "weaponID": 30250104,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -90,7 +90,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450307,
+    "weaponID": 30450307,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -99,7 +99,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30860101,
+    "weaponID": 30860101,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -108,7 +108,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250410,
+    "weaponID": 30250410,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -117,7 +117,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550504,
+    "weaponID": 30550504,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -126,7 +126,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750206,
+    "weaponID": 30750206,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -135,7 +135,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350201,
+    "weaponID": 30350201,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -144,7 +144,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850406,
+    "weaponID": 30850406,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -153,7 +153,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350301,
+    "weaponID": 30350301,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -162,7 +162,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650507,
+    "weaponID": 30650507,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -171,7 +171,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250204,
+    "weaponID": 30250204,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -180,7 +180,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950403,
+    "weaponID": 30950403,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -189,7 +189,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650501,
+    "weaponID": 30650501,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -198,7 +198,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950503,
+    "weaponID": 30950503,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -207,7 +207,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250502,
+    "weaponID": 30250502,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -216,7 +216,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30249901,
+    "weaponID": 30249901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -225,7 +225,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30859901,
+    "weaponID": 30859901,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -234,7 +234,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30950303,
+    "weaponID": 30950303,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -243,7 +243,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150107,
+    "weaponID": 30150107,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -252,7 +252,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750504,
+    "weaponID": 30750504,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -261,7 +261,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30739901,
+    "weaponID": 30739901,
     "level": 20,
     "unbind": 4,
     "refinement": 0,
@@ -270,7 +270,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30350307,
+    "weaponID": 30350307,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -279,7 +279,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450410,
+    "weaponID": 30450410,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -288,7 +288,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450101,
+    "weaponID": 30450101,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -297,7 +297,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450504,
+    "weaponID": 30450504,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -306,7 +306,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450201,
+    "weaponID": 30450201,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -315,7 +315,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450404,
+    "weaponID": 30450404,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -324,7 +324,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750406,
+    "weaponID": 30750406,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -333,7 +333,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450301,
+    "weaponID": 30450301,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -342,7 +342,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550501,
+    "weaponID": 30550501,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -351,7 +351,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250101,
+    "weaponID": 30250101,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -360,7 +360,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750303,
+    "weaponID": 30750303,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -369,7 +369,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150502,
+    "weaponID": 30150502,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -378,7 +378,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30960201,
+    "weaponID": 30960201,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -387,7 +387,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150408,
+    "weaponID": 30150408,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -396,7 +396,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30659901,
+    "weaponID": 30659901,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -405,7 +405,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30160501,
+    "weaponID": 30160501,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -414,7 +414,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850409,
+    "weaponID": 30850409,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -423,7 +423,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550209,
+    "weaponID": 30550209,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -432,7 +432,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30839901,
+    "weaponID": 30839901,
     "level": 20,
     "unbind": 4,
     "refinement": 0,
@@ -441,7 +441,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30960101,
+    "weaponID": 30960101,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -450,7 +450,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250307,
+    "weaponID": 30250307,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -459,7 +459,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450104,
+    "weaponID": 30450104,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -468,7 +468,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30260501,
+    "weaponID": 30260501,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -477,7 +477,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850201,
+    "weaponID": 30850201,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -486,7 +486,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150202,
+    "weaponID": 30150202,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -495,7 +495,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150208,
+    "weaponID": 30150208,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -504,7 +504,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150102,
+    "weaponID": 30150102,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -513,7 +513,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30260401,
+    "weaponID": 30260401,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -522,7 +522,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750307,
+    "weaponID": 30750307,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -531,7 +531,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350508,
+    "weaponID": 30350508,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -540,7 +540,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750401,
+    "weaponID": 30750401,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -549,7 +549,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850301,
+    "weaponID": 30850301,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -558,7 +558,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30360401,
+    "weaponID": 30360401,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -567,7 +567,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450305,
+    "weaponID": 30450305,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -576,7 +576,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850404,
+    "weaponID": 30850404,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -585,7 +585,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650107,
+    "weaponID": 30650107,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -594,7 +594,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950103,
+    "weaponID": 30950103,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -603,7 +603,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250102,
+    "weaponID": 30250102,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -612,7 +612,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750204,
+    "weaponID": 30750204,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -621,7 +621,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30260201,
+    "weaponID": 30260201,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -630,7 +630,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150503,
+    "weaponID": 30150503,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -639,7 +639,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30260301,
+    "weaponID": 30260301,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -648,7 +648,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350205,
+    "weaponID": 30350205,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -657,7 +657,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550104,
+    "weaponID": 30550104,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -666,7 +666,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550508,
+    "weaponID": 30550508,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -675,7 +675,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30349901,
+    "weaponID": 30349901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -684,7 +684,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30550402,
+    "weaponID": 30550402,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -693,7 +693,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650407,
+    "weaponID": 30650407,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -702,7 +702,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250202,
+    "weaponID": 30250202,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -711,7 +711,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950203,
+    "weaponID": 30950203,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -720,7 +720,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650101,
+    "weaponID": 30650101,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -729,7 +729,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650201,
+    "weaponID": 30650201,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -738,7 +738,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450508,
+    "weaponID": 30450508,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -747,7 +747,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150111,
+    "weaponID": 30150111,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -756,7 +756,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850507,
+    "weaponID": 30850507,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -765,7 +765,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750101,
+    "weaponID": 30750101,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -774,7 +774,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350305,
+    "weaponID": 30350305,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -783,7 +783,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30360501,
+    "weaponID": 30360501,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -792,7 +792,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750404,
+    "weaponID": 30750404,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -801,7 +801,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850304,
+    "weaponID": 30850304,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -810,7 +810,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30549901,
+    "weaponID": 30549901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -819,7 +819,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30750301,
+    "weaponID": 30750301,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -828,7 +828,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30449901,
+    "weaponID": 30449901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -837,7 +837,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30460501,
+    "weaponID": 30460501,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -846,7 +846,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550405,
+    "weaponID": 30550405,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -855,7 +855,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850401,
+    "weaponID": 30850401,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -864,7 +864,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850501,
+    "weaponID": 30850501,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -873,7 +873,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550101,
+    "weaponID": 30550101,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -882,7 +882,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650410,
+    "weaponID": 30650410,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -891,169 +891,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30959901,
-    "level": 70,
-    "unbind": 4,
-    "refinement": 0,
-    "slots": 0,
-    "dominion": 0,
-    "bonus": 0
-  },
-  {
-    "weaponId": 30350102,
-    "level": 70,
-    "unbind": 4,
-    "refinement": 0,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30550307,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30650502,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30160101,
-    "level": 90,
-    "unbind": 9,
-    "refinement": 2,
-    "slots": 1,
-    "dominion": 2,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30250503,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30650304,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30150414,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30160201,
-    "level": 90,
-    "unbind": 9,
-    "refinement": 2,
-    "slots": 1,
-    "dominion": 2,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30650204,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30160301,
-    "level": 90,
-    "unbind": 9,
-    "refinement": 2,
-    "slots": 1,
-    "dominion": 2,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30650104,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30160401,
-    "level": 90,
-    "unbind": 9,
-    "refinement": 2,
-    "slots": 1,
-    "dominion": 2,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30350406,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30650402,
-    "level": 70,
-    "unbind": 4,
-    "refinement": 0,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30850107,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30550205,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30650308,
-    "level": 70,
-    "unbind": 8,
-    "refinement": 1,
-    "slots": 1,
-    "dominion": 0,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30159901,
+    "weaponID": 30959901,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1062,25 +900,16 @@
     "bonus": 0
   },
   {
-    "weaponId": 30560401,
-    "level": 90,
-    "unbind": 9,
-    "refinement": 2,
+    "weaponID": 30350102,
+    "level": 70,
+    "unbind": 4,
+    "refinement": 0,
     "slots": 1,
-    "dominion": 2,
+    "dominion": 0,
     "bonus": 1
   },
   {
-    "weaponId": 30560501,
-    "level": 90,
-    "unbind": 9,
-    "refinement": 2,
-    "slots": 1,
-    "dominion": 2,
-    "bonus": 1
-  },
-  {
-    "weaponId": 30750104,
+    "weaponID": 30550307,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1089,7 +918,178 @@
     "bonus": 1
   },
   {
-    "weaponId": 30949901,
+    "weaponID": 30650502,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30160101,
+    "level": 90,
+    "unbind": 9,
+    "refinement": 2,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30250503,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30650304,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30150414,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30160201,
+    "level": 90,
+    "unbind": 9,
+    "refinement": 2,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30650204,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30160301,
+    "level": 90,
+    "unbind": 9,
+    "refinement": 2,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30650104,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30160401,
+    "level": 90,
+    "unbind": 9,
+    "refinement": 2,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30350406,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30650402,
+    "level": 70,
+    "unbind": 4,
+    "refinement": 0,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30850107,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30550205,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30650308,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30159901,
+    "level": 70,
+    "unbind": 4,
+    "refinement": 0,
+    "slots": 0,
+    "dominion": 0,
+    "bonus": 0
+  },
+  {
+    "weaponID": 30560401,
+    "level": 90,
+    "unbind": 9,
+    "refinement": 2,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30560501,
+    "level": 90,
+    "unbind": 9,
+    "refinement": 2,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30750104,
+    "level": 70,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30949901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -1098,7 +1098,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30360301,
+    "weaponID": 30360301,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1107,7 +1107,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850101,
+    "weaponID": 30850101,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1116,7 +1116,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750202,
+    "weaponID": 30750202,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1125,7 +1125,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450503,
+    "weaponID": 30450503,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1134,7 +1134,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750305,
+    "weaponID": 30750305,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1143,7 +1143,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450102,
+    "weaponID": 30450102,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1152,7 +1152,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450108,
+    "weaponID": 30450108,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1161,7 +1161,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30360101,
+    "weaponID": 30360101,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1170,7 +1170,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30360201,
+    "weaponID": 30360201,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1179,7 +1179,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550408,
+    "weaponID": 30550408,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1188,7 +1188,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30560201,
+    "weaponID": 30560201,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1197,7 +1197,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550102,
+    "weaponID": 30550102,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1206,7 +1206,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30139901,
+    "weaponID": 30139901,
     "level": 20,
     "unbind": 4,
     "refinement": 0,
@@ -1215,7 +1215,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30850502,
+    "weaponID": 30850502,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1224,7 +1224,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150501,
+    "weaponID": 30150501,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1233,7 +1233,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350105,
+    "weaponID": 30350105,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1242,7 +1242,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350303,
+    "weaponID": 30350303,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1251,7 +1251,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30560301,
+    "weaponID": 30560301,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1260,7 +1260,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30259901,
+    "weaponID": 30259901,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1269,7 +1269,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30649901,
+    "weaponID": 30649901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -1278,7 +1278,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30250108,
+    "weaponID": 30250108,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1287,7 +1287,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150203,
+    "weaponID": 30150203,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1296,7 +1296,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30460301,
+    "weaponID": 30460301,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1305,7 +1305,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650305,
+    "weaponID": 30650305,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1314,7 +1314,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850204,
+    "weaponID": 30850204,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1323,7 +1323,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550108,
+    "weaponID": 30550108,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1332,7 +1332,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650405,
+    "weaponID": 30650405,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1341,7 +1341,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30260101,
+    "weaponID": 30260101,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1350,7 +1350,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350503,
+    "weaponID": 30350503,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1359,7 +1359,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450205,
+    "weaponID": 30450205,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1368,7 +1368,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150303,
+    "weaponID": 30150303,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1377,7 +1377,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750107,
+    "weaponID": 30750107,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1386,7 +1386,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350409,
+    "weaponID": 30350409,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1395,7 +1395,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30660401,
+    "weaponID": 30660401,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1404,7 +1404,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850104,
+    "weaponID": 30850104,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1413,7 +1413,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30660501,
+    "weaponID": 30660501,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1422,7 +1422,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30239901,
+    "weaponID": 30239901,
     "level": 20,
     "unbind": 4,
     "refinement": 0,
@@ -1431,7 +1431,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30750508,
+    "weaponID": 30750508,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1440,7 +1440,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30849901,
+    "weaponID": 30849901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -1449,7 +1449,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30950410,
+    "weaponID": 30950410,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1458,7 +1458,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550503,
+    "weaponID": 30550503,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1467,7 +1467,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350208,
+    "weaponID": 30350208,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1476,7 +1476,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30749901,
+    "weaponID": 30749901,
     "level": 30,
     "unbind": 4,
     "refinement": 0,
@@ -1485,7 +1485,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30350108,
+    "weaponID": 30350108,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1494,7 +1494,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30760501,
+    "weaponID": 30760501,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1503,7 +1503,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850307,
+    "weaponID": 30850307,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1512,7 +1512,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30460101,
+    "weaponID": 30460101,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1521,7 +1521,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30460201,
+    "weaponID": 30460201,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1530,7 +1530,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650302,
+    "weaponID": 30650302,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1539,7 +1539,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950310,
+    "weaponID": 30950310,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1548,7 +1548,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30460401,
+    "weaponID": 30460401,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1557,7 +1557,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550305,
+    "weaponID": 30550305,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1566,7 +1566,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950510,
+    "weaponID": 30950510,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1575,7 +1575,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950502,
+    "weaponID": 30950502,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1584,7 +1584,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250303,
+    "weaponID": 30250303,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1593,7 +1593,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650202,
+    "weaponID": 30650202,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1602,7 +1602,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950210,
+    "weaponID": 30950210,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1611,7 +1611,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650102,
+    "weaponID": 30650102,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1620,7 +1620,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250209,
+    "weaponID": 30250209,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1629,7 +1629,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30660101,
+    "weaponID": 30660101,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1638,7 +1638,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750503,
+    "weaponID": 30750503,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1647,7 +1647,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950302,
+    "weaponID": 30950302,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1656,7 +1656,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350504,
+    "weaponID": 30350504,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1665,7 +1665,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550203,
+    "weaponID": 30550203,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1674,7 +1674,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350404,
+    "weaponID": 30350404,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1683,7 +1683,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30459901,
+    "weaponID": 30459901,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1692,7 +1692,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30550303,
+    "weaponID": 30550303,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1701,7 +1701,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750102,
+    "weaponID": 30750102,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1710,7 +1710,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30339901,
+    "weaponID": 30339901,
     "level": 20,
     "unbind": 4,
     "refinement": 0,
@@ -1719,7 +1719,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30450501,
+    "weaponID": 30450501,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1728,7 +1728,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30639901,
+    "weaponID": 30639901,
     "level": 20,
     "unbind": 4,
     "refinement": 0,
@@ -1737,7 +1737,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30660201,
+    "weaponID": 30660201,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1746,7 +1746,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30750208,
+    "weaponID": 30750208,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1755,7 +1755,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450209,
+    "weaponID": 30450209,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1764,7 +1764,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150307,
+    "weaponID": 30150307,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1773,7 +1773,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150401,
+    "weaponID": 30150401,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1782,7 +1782,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350203,
+    "weaponID": 30350203,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1791,7 +1791,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30439901,
+    "weaponID": 30439901,
     "level": 20,
     "unbind": 4,
     "refinement": 0,
@@ -1800,7 +1800,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30560101,
+    "weaponID": 30560101,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1809,7 +1809,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650503,
+    "weaponID": 30650503,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1818,7 +1818,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350103,
+    "weaponID": 30350103,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1827,7 +1827,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30860201,
+    "weaponID": 30860201,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1836,7 +1836,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30860301,
+    "weaponID": 30860301,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1845,7 +1845,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250404,
+    "weaponID": 30250404,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1854,7 +1854,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30550412,
+    "weaponID": 30550412,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1863,7 +1863,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30559901,
+    "weaponID": 30559901,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1872,7 +1872,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30860401,
+    "weaponID": 30860401,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1881,7 +1881,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250304,
+    "weaponID": 30250304,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1890,7 +1890,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30860501,
+    "weaponID": 30860501,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1899,7 +1899,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350501,
+    "weaponID": 30350501,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1908,7 +1908,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850202,
+    "weaponID": 30850202,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1917,7 +1917,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30960501,
+    "weaponID": 30960501,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1926,7 +1926,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150510,
+    "weaponID": 30150510,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1935,7 +1935,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30760201,
+    "weaponID": 30760201,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1944,7 +1944,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150301,
+    "weaponID": 30150301,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1953,7 +1953,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30760301,
+    "weaponID": 30760301,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1962,7 +1962,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30350401,
+    "weaponID": 30350401,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -1971,7 +1971,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30960401,
+    "weaponID": 30960401,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -1980,7 +1980,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850208,
+    "weaponID": 30850208,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1989,7 +1989,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850102,
+    "weaponID": 30850102,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -1998,7 +1998,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150101,
+    "weaponID": 30150101,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2007,7 +2007,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30760101,
+    "weaponID": 30760101,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -2016,7 +2016,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30359901,
+    "weaponID": 30359901,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2025,7 +2025,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30450303,
+    "weaponID": 30450303,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2034,7 +2034,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30450203,
+    "weaponID": 30450203,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2043,7 +2043,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150310,
+    "weaponID": 30150310,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2052,7 +2052,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950102,
+    "weaponID": 30950102,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2061,7 +2061,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30539901,
+    "weaponID": 30539901,
     "level": 20,
     "unbind": 4,
     "refinement": 0,
@@ -2070,7 +2070,7 @@
     "bonus": 0
   },
   {
-    "weaponId": 30250507,
+    "weaponID": 30250507,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2079,7 +2079,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30660301,
+    "weaponID": 30660301,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -2088,7 +2088,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150212,
+    "weaponID": 30150212,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2097,7 +2097,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30760401,
+    "weaponID": 30760401,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -2106,7 +2106,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30850503,
+    "weaponID": 30850503,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2115,7 +2115,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30960301,
+    "weaponID": 30960301,
     "level": 90,
     "unbind": 9,
     "refinement": 2,
@@ -2124,7 +2124,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250407,
+    "weaponID": 30250407,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2133,7 +2133,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30650208,
+    "weaponID": 30650208,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2142,7 +2142,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30150410,
+    "weaponID": 30150410,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
@@ -2151,7 +2151,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950202,
+    "weaponID": 30950202,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2160,7 +2160,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250201,
+    "weaponID": 30250201,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2169,7 +2169,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250301,
+    "weaponID": 30250301,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2178,7 +2178,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950402,
+    "weaponID": 30950402,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2187,7 +2187,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250401,
+    "weaponID": 30250401,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2196,7 +2196,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30250501,
+    "weaponID": 30250501,
     "level": 70,
     "unbind": 4,
     "refinement": 0,
@@ -2205,7 +2205,7 @@
     "bonus": 1
   },
   {
-    "weaponId": 30950110,
+    "weaponID": 30950110,
     "level": 70,
     "unbind": 8,
     "refinement": 1,
