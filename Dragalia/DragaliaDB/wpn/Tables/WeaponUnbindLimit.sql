@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[WeaponUnbindLimit] (
+﻿CREATE TABLE [wpn].[WeaponUnbindLimit] (
 	[WeaponRarity] INT NOT NULL
 	,[RefinementLevel] INT NOT NULL
 	,[MaxUnbindLevel] INT NOT NULL

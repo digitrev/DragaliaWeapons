@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[WeaponLevel] (
+﻿CREATE TABLE [wpn].[WeaponLevel] (
 	[Rarity] INT NOT NULL
 	,[WeaponLevel] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL

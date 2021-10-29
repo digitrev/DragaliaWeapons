@@ -84,17 +84,12 @@
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
     <Build Include="core\Tables\Material.sql" />
-    <Build Include="core\Tables\Weapon.sql" />
-    <Build Include="core\Tables\WeaponSeries.sql" />
     <Build Include="core\Tables\WeaponType.sql" />
     <Build Include="core\Tables\Element.sql" />
-    <Build Include="core\Tables\WeaponCrafting.sql" />
     <Build Include="core\Tables\UpgradeType.sql" />
-    <Build Include="core\Tables\WeaponUpgrade.sql" />
     <Build Include="core\Tables\Ability.sql" />
     <Build Include="core\Tables\Passive.sql" />
     <Build Include="core\Tables\PassiveCrafting.sql" />
-    <Build Include="core\Tables\WeaponLevel.sql" />
     <Build Include="Security\core.sql" />
     <Build Include="jsn\Tables\TableJson.sql" />
     <Build Include="Security\den.sql" />
@@ -120,8 +115,6 @@
     <Build Include="util\Functions\InlineMax.sql" />
     <Build Include="den\Stored Procedures\spInitializeDen.sql" />
     <Build Include="core\Tables\AbilityGroup.sql" />
-    <Build Include="core\Tables\WeaponLevelLimit.sql" />
-    <Build Include="core\Tables\WeaponUnbindLimit.sql" />
     <Build Include="core\Tables\Affinity.sql" />
     <Build Include="core\Tables\Category.sql" />
     <Build Include="den\Tables\MaterialMetadata.sql" />
@@ -169,6 +162,13 @@
     <Build Include="wpt\Tables\WyrmprintLevel.sql" />
     <Build Include="wpt\Tables\WyrmprintLevelLimit.sql" />
     <Build Include="wpt\Tables\WyrmprintUpgrade.sql" />
+    <Build Include="wpn\Tables\Weapon.sql" />
+    <Build Include="wpn\Tables\WeaponCrafting.sql" />
+    <Build Include="wpn\Tables\WeaponLevel.sql" />
+    <Build Include="wpn\Tables\WeaponLevelLimit.sql" />
+    <Build Include="wpn\Tables\WeaponSeries.sql" />
+    <Build Include="wpn\Tables\WeaponUnbindLimit.sql" />
+    <Build Include="wpn\Tables\WeaponUpgrade.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

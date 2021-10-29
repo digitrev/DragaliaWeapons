@@ -1587,4 +1587,46 @@
     <Property Name="NewSchema" Value="wpt" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="382a4b6a-d002-4704-b678-000093750cdc" ChangeDateTime="10/29/2021 17:51:32">
+    <Property Name="ElementName" Value="[core].[Weapon]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3af71635-8e6a-4bca-a83c-01f83d7f2d12" ChangeDateTime="10/29/2021 17:51:41">
+    <Property Name="ElementName" Value="[core].[WeaponCrafting]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="45c20081-e095-4def-921f-7637a137282f" ChangeDateTime="10/29/2021 17:51:48">
+    <Property Name="ElementName" Value="[core].[WeaponLevel]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="18c96200-0e29-4282-8371-0a5196ed9d85" ChangeDateTime="10/29/2021 17:51:55">
+    <Property Name="ElementName" Value="[core].[WeaponLevelLimit]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="8cc459ac-64f8-43ce-b191-46c468976326" ChangeDateTime="10/29/2021 17:52:04">
+    <Property Name="ElementName" Value="[core].[WeaponSeries]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="816e3cbf-aaaf-4973-9380-bce7f04a96f8" ChangeDateTime="10/29/2021 17:52:10">
+    <Property Name="ElementName" Value="[core].[WeaponUnbindLimit]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0ae70375-e99b-4c2c-9312-b495376d0ff3" ChangeDateTime="10/29/2021 17:52:15">
+    <Property Name="ElementName" Value="[core].[WeaponUpgrade]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

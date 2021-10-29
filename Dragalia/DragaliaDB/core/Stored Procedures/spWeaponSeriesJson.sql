@@ -2,6 +2,6 @@
 AS
 SELECT WeaponSeriesID AS weaponSeriesId
 	,WeaponSeries AS weaponSeries
-FROM core.WeaponSeries
+FROM [wpn].WeaponSeries
 ORDER BY SortOrder
 FOR JSON PATH

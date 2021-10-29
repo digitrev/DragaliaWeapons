@@ -298,7 +298,7 @@ BEGIN
 	SET SortOrder = - SortOrder
 	WHERE Element = 'None'
 
-	MERGE core.WeaponSeries AS trg
+	MERGE [wpn].WeaponSeries AS trg
 	USING (
 		SELECT DISTINCT WeaponSeriesID
 			,WeaponSeries
@@ -353,7 +353,7 @@ BEGIN
 			,3
 			)
 		) AS src(WeaponSeries, SortOrder)
-	INNER JOIN core.WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
+	INNER JOIN [wpn].WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
 
 	MERGE core.WeaponType AS trg
 	USING (
@@ -383,7 +383,7 @@ BEGIN
 				);
 
 	--Weapons
-	MERGE core.Weapon AS trg
+	MERGE [wpn].Weapon AS trg
 	USING (
 		SELECT DISTINCT WeaponID
 			,WeaponName
@@ -427,9 +427,9 @@ BEGIN
 				);
 
 	--Weapon crafting
-	TRUNCATE TABLE core.WeaponCrafting
+	TRUNCATE TABLE [wpn].WeaponCrafting
 
-	INSERT core.WeaponCrafting (
+	INSERT [wpn].WeaponCrafting (
 		WeaponID
 		,MaterialID
 		,Quantity
@@ -567,9 +567,9 @@ BEGIN
 				,src.UpgradeType
 				);
 
-	TRUNCATE TABLE core.WeaponUpgrade
+	TRUNCATE TABLE [wpn].WeaponUpgrade
 
-	INSERT core.WeaponUpgrade (
+	INSERT [wpn].WeaponUpgrade (
 		WeaponID
 		,UpgradeTypeID
 		,Step
@@ -868,9 +868,9 @@ BEGIN
 			) AS wl
 	WHERE wlj.TableName = 'WeaponLevel'
 
-	TRUNCATE TABLE core.WeaponLevel
+	TRUNCATE TABLE [wpn].WeaponLevel
 
-	INSERT core.WeaponLevel (
+	INSERT [wpn].WeaponLevel (
 		Rarity
 		,WeaponLevel
 		,MaterialID
@@ -982,9 +982,9 @@ BEGIN
 	WHERE wlj.TableName = 'WeaponLimit'
 
 	--WeaponUnbindLimit
-	TRUNCATE TABLE core.WeaponUnbindLimit
+	TRUNCATE TABLE [wpn].WeaponUnbindLimit
 
-	INSERT core.WeaponUnbindLimit (
+	INSERT [wpn].WeaponUnbindLimit (
 		WeaponRarity
 		,RefinementLevel
 		,MaxUnbindLevel
@@ -1001,9 +1001,9 @@ BEGIN
 	WHERE upvt.MaxUnbindLevel > 0
 
 	--WeaponLevelLimit
-	TRUNCATE TABLE core.WeaponLevelLimit
+	TRUNCATE TABLE [wpn].WeaponLevelLimit
 
-	INSERT core.WeaponLevelLimit (
+	INSERT [wpn].WeaponLevelLimit (
 		WeaponRarity
 		,UnbindLevel
 		,MaxWeaponLevel

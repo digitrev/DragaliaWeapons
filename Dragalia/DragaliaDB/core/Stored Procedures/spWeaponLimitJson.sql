@@ -7,12 +7,12 @@ SELECT pvt.WeaponID AS weaponID
 	,ISNULL(pvt.Slots, 0) AS slots
 	,ISNULL(pvt.Dominion, 0) AS dominion
 	,ISNULL(pvt.[Weapon Bonus], 0) AS bonus
-FROM core.Weapon AS w
+FROM [wpn].Weapon AS w
 INNER JOIN (
 	SELECT wu.WeaponID
 		,ut.UpgradeType
 		,wu.Step
-	FROM core.WeaponUpgrade AS wu
+	FROM [wpn].WeaponUpgrade AS wu
 	INNER JOIN core.UpgradeType AS ut ON ut.UpgradeTypeID = wu.UpgradeTypeID
 	) AS src
 PIVOT(MAX(Step) FOR UpgradeType IN (
@@ -25,7 +25,7 @@ PIVOT(MAX(Step) FOR UpgradeType IN (
 INNER JOIN (
 	SELECT Rarity
 		,MAX(WeaponLevel) AS WeaponLevel
-	FROM core.WeaponLevel
+	FROM [wpn].WeaponLevel
 	GROUP BY Rarity
 	) AS wl ON wl.Rarity = w.Rarity
 FOR JSON PATH
