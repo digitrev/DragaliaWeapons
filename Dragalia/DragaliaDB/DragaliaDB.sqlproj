@@ -85,6 +85,8 @@
     <Folder Include="fac\Stored Procedures" />
     <Folder Include="wpn\Stored Procedures" />
     <Folder Include="wpt\Stored Procedures" />
+    <Folder Include="cht" />
+    <Folder Include="cht\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -188,11 +190,11 @@
     <Build Include="den\Stored Procedures\spInitializeDenFac.sql" />
     <Build Include="den\Stored Procedures\spInitializeDenDrg.sql" />
     <Build Include="core\Tables\Frequency.sql" />
-    <Build Include="core\Tables\ChestGroup.sql" />
-    <Build Include="core\Tables\Chest.sql" />
-    <Build Include="core\Tables\ChestDrop.sql" />
-    <Build Include="den\Tables\Frequency.sql" />
-    <Build Include="den\Tables\ChestGroups.sql" />
+    <Build Include="den\Tables\Chests.sql" />
+    <Build Include="Security\cht.sql" />
+    <Build Include="cht\Tables\Chest.sql" />
+    <Build Include="cht\Tables\ChestDrop.sql" />
+    <Build Include="cht\Tables\ChestGroup.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

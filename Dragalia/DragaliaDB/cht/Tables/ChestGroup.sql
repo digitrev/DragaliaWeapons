@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[ChestGroup] (
+﻿CREATE TABLE [cht].[ChestGroup] (
 	[ChestGroupID] INT NOT NULL IDENTITY
 	,[ChestGroup] NVARCHAR(50) NOT NULL
 	,[FrequencyID] INT NOT NULL

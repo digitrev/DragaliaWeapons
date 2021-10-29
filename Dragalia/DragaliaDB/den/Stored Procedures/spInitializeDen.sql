@@ -80,12 +80,4 @@ BEGIN
 	EXEC [den].[spInitializeDenDrg]
 
 	EXEC [den].[spInitializeDenFac]
-
-	TRUNCATE TABLE [den].[Frequency]
-
-	SET @JSON = N'[{"Frequency":"Daily"},{"Frequency":"Weekly"}]'
-
-	INSERT [den].[Frequency] ([Frequency])
-	SELECT [Frequency]
-	FROM OPENJSON(@Json) WITH ([Frequency] NVARCHAR(50))
 END

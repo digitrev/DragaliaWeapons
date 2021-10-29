@@ -1822,4 +1822,28 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Frequency" />
   </Operation>
+  <Operation Name="Move Schema" Key="8bc8952e-93e0-4dd5-8a73-86ee95943f3f" ChangeDateTime="10/29/2021 19:55:28">
+    <Property Name="ElementName" Value="[core].[Chest]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="cht" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="c76ca1c2-9704-4f64-abf9-509da208fac8" ChangeDateTime="10/29/2021 19:55:39">
+    <Property Name="ElementName" Value="[core].[ChestDrop]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="cht" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3a431f76-758d-4c2b-8dc3-48148d5346a3" ChangeDateTime="10/29/2021 19:55:56">
+    <Property Name="ElementName" Value="[core].[ChestGroup]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="cht" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="709bd41d-07d6-4e7c-9222-0102b41f10c3" ChangeDateTime="10/29/2021 19:56:42">
+    <Property Name="ElementName" Value="[dbo].[Chests]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>
