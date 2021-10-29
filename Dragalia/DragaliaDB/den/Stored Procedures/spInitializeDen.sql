@@ -80,4 +80,6 @@ BEGIN
 	EXEC [den].[spInitializeDenDrg]
 
 	EXEC [den].[spInitializeDenFac]
+
+	EXEC [den].[spInitializeDenCht]
 END
