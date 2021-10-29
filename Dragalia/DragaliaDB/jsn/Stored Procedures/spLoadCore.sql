@@ -907,7 +907,7 @@ BEGIN
 	WHERE l.Quantity > 0
 
 	--Facilities
-	MERGE core.Facility AS trg
+	MERGE [fac].Facility AS trg
 	USING (
 		SELECT f.FacilityID
 			,f.FacilityName

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[Facility] (
+﻿CREATE TABLE [fac].[Facility] (
 	[FacilityID] INT NOT NULL
 	,[Facility] NVARCHAR(50) NOT NULL
 	,[Limit] INT NOT NULL

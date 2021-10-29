@@ -5,11 +5,11 @@ BEGIN
 
 	DECLARE @MineID INT = (
 			SELECT FacilityID
-			FROM core.Facility
+			FROM [fac].Facility
 			WHERE Facility = 'Rupie Mine'
 			)
 
-	MERGE core.FacilityUpgrade AS trg
+	MERGE [fac].FacilityUpgrade AS trg
 	USING (
 		--Trees
 		SELECT f.FacilityID
@@ -17,7 +17,7 @@ BEGIN
 			,tc.[Level] AS FacilityLevel
 			,tc.Silver AS Quantity
 		FROM den.TreeMats AS tm
-		INNER JOIN core.Facility AS f ON f.Facility = tm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = tm.Facility
 		INNER JOIN core.Material AS m ON m.Material = tm.SilverMat
 		CROSS JOIN den.TreeCosts AS tc
 		WHERE tc.Silver > 0
@@ -29,7 +29,7 @@ BEGIN
 			,tc.[Level]
 			,tc.Gold
 		FROM den.TreeMats AS tm
-		INNER JOIN core.Facility AS f ON f.Facility = tm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = tm.Facility
 		INNER JOIN core.Material AS m ON m.Material = tm.GoldMat
 		CROSS JOIN den.TreeCosts AS tc
 		WHERE tc.Gold > 0
@@ -41,7 +41,7 @@ BEGIN
 			,tc.[Level]
 			,tc.Rupie
 		FROM den.TreeMats AS tm
-		INNER JOIN core.Facility AS f ON f.Facility = tm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = tm.Facility
 		CROSS JOIN den.TreeCosts AS tc
 		WHERE tc.Rupie > 0
 		
@@ -107,7 +107,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Silver
 		FROM den.DojoMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		INNER JOIN core.Material AS m ON m.Material = dm.SilverMat
 		CROSS APPLY den.DojoCosts AS dc
 		WHERE dc.Silver > 0
@@ -119,7 +119,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Gold
 		FROM den.DojoMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		INNER JOIN core.Material AS m ON m.Material = dm.GoldMat
 		CROSS APPLY den.DojoCosts AS dc
 		WHERE dc.Gold > 0
@@ -131,7 +131,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Rupie
 		FROM den.DojoMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		CROSS APPLY den.DojoCosts AS dc
 		WHERE dc.Rupie > 0
 		
@@ -142,7 +142,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Aes
 		FROM den.DojoMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.DojoCosts AS dc
 		WHERE dc.Aes > 0
@@ -155,7 +155,7 @@ BEGIN
 			,dc.[Level]
 			,dc.[Argenteus]
 		FROM den.DojoMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.DojoCosts AS dc
 		WHERE dc.[Argenteus] > 0
@@ -168,7 +168,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Aureus
 		FROM den.DojoMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.DojoCosts AS dc
 		WHERE dc.Aureus > 0
@@ -181,7 +181,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Blessing
 		FROM den.DojoMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.DojoCosts AS dc
 		WHERE dc.Blessing > 0
@@ -195,7 +195,7 @@ BEGIN
 			,ac.[Level]
 			,ac.Rupie
 		FROM den.AltarMats AS am
-		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = am.Facility
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.Rupie > 0
 		
@@ -206,7 +206,7 @@ BEGIN
 			,ac.[Level]
 			,ac.Rainbow
 		FROM den.AltarMats AS am
-		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = am.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.Rainbow > 0
@@ -219,7 +219,7 @@ BEGIN
 			,ac.[Level]
 			,ac.Blessing
 		FROM den.AltarMats AS am
-		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = am.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.Blessing > 0
@@ -232,7 +232,7 @@ BEGIN
 			,ac.[Level]
 			,ac.T1
 		FROM den.AltarMats AS am
-		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = am.Facility
 		INNER JOIN core.Material AS m ON m.Material = am.T1Mat
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.T1 > 0
@@ -244,7 +244,7 @@ BEGIN
 			,ac.[Level]
 			,ac.T2
 		FROM den.AltarMats AS am
-		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = am.Facility
 		INNER JOIN core.Material AS m ON m.Material = am.T2Mat
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.T2 > 0
@@ -256,7 +256,7 @@ BEGIN
 			,ac.[Level]
 			,ac.T3
 		FROM den.AltarMats AS am
-		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = am.Facility
 		INNER JOIN core.Material AS m ON m.Material = am.T3Mat
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.T3 > 0
@@ -268,7 +268,7 @@ BEGIN
 			,ac.[Level]
 			,ac.T4
 		FROM den.AltarMats AS am
-		INNER JOIN core.Facility AS f ON f.Facility = am.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = am.Facility
 		INNER JOIN core.Material AS m ON m.Material = am.T4Mat
 		CROSS APPLY den.AltarCosts AS ac
 		WHERE ac.T4 > 0
@@ -281,7 +281,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Rupie
 		FROM den.DracolithMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		CROSS APPLY den.DracolithCosts AS dc
 		WHERE dc.Rupie > 0
 		
@@ -292,7 +292,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Talonstone
 		FROM den.DracolithMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.DracolithCosts AS dc
 		WHERE dc.Talonstone > 0
@@ -305,7 +305,7 @@ BEGIN
 			,dc.[Level]
 			,dc.GoldScale
 		FROM den.DracolithMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		INNER JOIN core.Material AS m ON m.Material = dm.GoldScaleMat
 		CROSS APPLY den.DracolithCosts AS dc
 		WHERE dc.GoldScale > 0
@@ -317,7 +317,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Sphere
 		FROM den.DracolithMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		INNER JOIN core.Material AS m ON m.Material = dm.SphereMat
 		CROSS APPLY den.DracolithCosts AS dc
 		WHERE dc.Sphere > 0
@@ -329,7 +329,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Greatsphere
 		FROM den.DracolithMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		INNER JOIN core.Material AS m ON m.Material = dm.GreatsphereMat
 		CROSS APPLY den.DracolithCosts AS dc
 		WHERE dc.Greatsphere > 0
@@ -341,7 +341,7 @@ BEGIN
 			,dc.[Level]
 			,dc.Scale
 		FROM den.DracolithMats AS dm
-		INNER JOIN core.Facility AS f ON f.Facility = dm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = dm.Facility
 		INNER JOIN core.Material AS m ON m.Material = dm.ScaleMat
 		CROSS APPLY den.DracolithCosts AS dc
 		WHERE dc.Scale > 0
@@ -354,7 +354,7 @@ BEGIN
 			,fc.[Level]
 			,fc.Rupie
 		FROM den.FafnirMats AS fm
-		INNER JOIN core.Facility AS f ON f.Facility = fm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = fm.Facility
 		CROSS APPLY den.FafnirCosts AS fc
 		WHERE fc.Rupie > 0
 		
@@ -365,7 +365,7 @@ BEGIN
 			,fc.[Level]
 			,fc.Talonstone
 		FROM den.FafnirMats AS fm
-		INNER JOIN core.Facility AS f ON f.Facility = fm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = fm.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.FafnirCosts AS fc
 		WHERE fc.Talonstone > 0
@@ -378,7 +378,7 @@ BEGIN
 			,fc.[Level]
 			,fc.GoldScale
 		FROM den.FafnirMats AS fm
-		INNER JOIN core.Facility AS f ON f.Facility = fm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = fm.Facility
 		INNER JOIN core.Material AS m ON m.Material = fm.GoldScaleMat
 		CROSS APPLY den.FafnirCosts AS fc
 		WHERE fc.GoldScale > 0
@@ -390,7 +390,7 @@ BEGIN
 			,fc.[Level]
 			,fc.Greatsphere
 		FROM den.FafnirMats AS fm
-		INNER JOIN core.Facility AS f ON f.Facility = fm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = fm.Facility
 		INNER JOIN core.Material AS m ON m.Material = fm.GreatsphereMat
 		CROSS APPLY den.FafnirCosts AS fc
 		WHERE fc.Greatsphere > 0
@@ -403,7 +403,7 @@ BEGIN
 			,sc.[Level]
 			,sc.Rupie
 		FROM den.StatueMats AS sm
-		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = sm.Facility
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Rupie > 0
 		
@@ -414,7 +414,7 @@ BEGIN
 			,sc.[Level]
 			,sc.Seed
 		FROM den.StatueMats AS sm
-		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = sm.Facility
 		CROSS APPLY core.Material AS m
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Seed > 0
@@ -427,7 +427,7 @@ BEGIN
 			,sc.[Level]
 			,sc.Bronze
 		FROM den.StatueMats AS sm
-		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = sm.Facility
 		INNER JOIN core.Material AS m ON m.Material = sm.BronzeMat
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Bronze > 0
@@ -439,7 +439,7 @@ BEGIN
 			,sc.[Level]
 			,sc.Silver
 		FROM den.StatueMats AS sm
-		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = sm.Facility
 		INNER JOIN core.Material AS m ON m.Material = sm.SilverMat
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Silver > 0
@@ -451,7 +451,7 @@ BEGIN
 			,sc.[Level]
 			,sc.Gold
 		FROM den.StatueMats AS sm
-		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = sm.Facility
 		INNER JOIN core.Material AS m ON m.Material = sm.GoldMat
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Gold > 0
@@ -463,7 +463,7 @@ BEGIN
 			,sc.[Level]
 			,sc.Void1
 		FROM den.StatueMats AS sm
-		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = sm.Facility
 		INNER JOIN core.Material AS m ON m.Material = sm.Void1Mat
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Void1 > 0
@@ -475,7 +475,7 @@ BEGIN
 			,sc.[Level]
 			,sc.Void2
 		FROM den.StatueMats AS sm
-		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = sm.Facility
 		INNER JOIN core.Material AS m ON m.Material = sm.Void2Mat
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Void2 > 0
@@ -487,7 +487,7 @@ BEGIN
 			,sc.[Level]
 			,sc.Void3
 		FROM den.StatueMats AS sm
-		INNER JOIN core.Facility AS f ON f.Facility = sm.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = sm.Facility
 		INNER JOIN core.Material AS m ON m.Material = sm.Void3Mat
 		CROSS APPLY den.StatueCosts AS sc
 		WHERE sc.Void3 > 0
@@ -500,7 +500,7 @@ BEGIN
 			,ec.[Level]
 			,ec.Rupie
 		FROM den.EventMats AS em
-		INNER JOIN core.Facility AS f ON f.Facility = em.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = em.Facility
 		CROSS APPLY den.EventCosts AS ec
 		WHERE ec.[Level] <= em.MaxLevel
 			AND ec.Rupie > 0
@@ -512,7 +512,7 @@ BEGIN
 			,ec.[Level]
 			,ec.Bronze
 		FROM den.EventMats AS em
-		INNER JOIN core.Facility AS f ON f.Facility = em.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = em.Facility
 		INNER JOIN core.Material AS m ON m.Material = em.BronzeMat
 		CROSS APPLY den.EventCosts AS ec
 		WHERE ec.[Level] <= em.MaxLevel
@@ -526,7 +526,7 @@ BEGIN
 			,hs.[Level]
 			,hs.Quantity
 		FROM den.HalidomSmithy AS hs
-		INNER JOIN core.Facility AS f ON f.Facility = hs.Facility
+		INNER JOIN [fac].Facility AS f ON f.Facility = hs.Facility
 		INNER JOIN core.Material AS m ON m.Material = hs.Material
 		WHERE hs.Quantity > 0
 		) AS src
@@ -591,7 +591,7 @@ BEGIN
 
 	UPDATE f
 	SET CategoryID = c.CategoryID
-	FROM core.Facility AS f
+	FROM [fac].Facility AS f
 	INNER JOIN den.FacilityMetadata AS fm ON fm.Facility = f.Facility
 	INNER JOIN core.Category AS c ON c.Category = fm.Category
 

@@ -2,6 +2,6 @@
 AS
 SELECT FacilityID AS facilityID
 	,MAX(FacilityLevel) AS maxLevel
-FROM core.FacilityUpgrade
+FROM [fac].FacilityUpgrade
 GROUP BY FacilityID
 FOR JSON PATH

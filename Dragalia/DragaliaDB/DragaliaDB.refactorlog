@@ -1545,4 +1545,16 @@
     <Property Name="NewSchema" Value="drg" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="e5e52c6d-9bdb-42dd-abcf-b2f1d77fcc02" ChangeDateTime="10/29/2021 17:48:18">
+    <Property Name="ElementName" Value="[core].[Facility]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="fac" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="21bdce4a-5723-4462-922c-448b6e4e81ff" ChangeDateTime="10/29/2021 17:48:32">
+    <Property Name="ElementName" Value="[core].[FacilityUpgrade]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="fac" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>
