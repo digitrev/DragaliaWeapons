@@ -496,6 +496,14 @@
     "mcLimit": 70
   },
   {
+    "adventurerId": 10250204,
+    "adventurer": "Regina",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Blade",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10250203,
     "adventurer": "Gala Mascula",
     "rarity": 5,
@@ -808,6 +816,14 @@
     "mcLimit": 50
   },
   {
+    "adventurerId": 10850203,
+    "adventurer": "Sandalphon",
+    "rarity": 5,
+    "element": "Water",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10850202,
     "adventurer": "Dragonyule Lily",
     "rarity": 5,
@@ -1013,7 +1029,7 @@
     "rarity": 5,
     "element": "Wind",
     "weaponType": "Dagger",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10340301,
@@ -1189,6 +1205,14 @@
     "rarity": 3,
     "element": "Wind",
     "weaponType": "Bow",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10750304,
+    "adventurer": "Basileus",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Wand",
     "mcLimit": 50
   },
   {
@@ -1752,6 +1776,14 @@
     "mcLimit": 50
   },
   {
+    "adventurerId": 10950403,
+    "adventurer": "Halloween Laxi",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10950402,
     "adventurer": "Eirene",
     "rarity": 5,
@@ -2037,6 +2069,14 @@
     "rarity": 3,
     "element": "Shadow",
     "weaponType": "Lance",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10650505,
+    "adventurer": "Halloween Sylas",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Bow",
     "mcLimit": 50
   },
   {
