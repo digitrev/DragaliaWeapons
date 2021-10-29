@@ -154,6 +154,10 @@
     <Build Include="core\Stored Procedures\spWeaponTypeJson.sql" />
     <Build Include="core\Stored Procedures\spWyrmprintLevelLimitJson.sql" />
     <Build Include="core\Stored Procedures\spWyrmprintJson.sql" />
+    <Build Include="core\Tables\Frequency.sql" />
+    <Build Include="core\Tables\ChestGroup.sql" />
+    <Build Include="core\Tables\Chest.sql" />
+    <Build Include="core\Tables\ChestDrop.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
