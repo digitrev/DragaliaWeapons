@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [core].[spWeaponSeriesJson]
+﻿CREATE PROCEDURE [wpn].[spWeaponSeriesJson]
 AS
 SELECT WeaponSeriesID AS weaponSeriesId
 	,WeaponSeries AS weaponSeries

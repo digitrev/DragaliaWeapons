@@ -1641,4 +1641,64 @@
     <Property Name="NewSchema" Value="wpn" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="ec7c77d9-f6e2-415d-ae6e-2c39e8810c31" ChangeDateTime="10/29/2021 17:56:20">
+    <Property Name="ElementName" Value="[core].[spAdventurerJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="adv" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="b499bb65-9a2e-4616-a8ff-b8097c4d2bb8" ChangeDateTime="10/29/2021 17:56:40">
+    <Property Name="ElementName" Value="[core].[spDragonJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="drg" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e37add71-fc83-4914-b873-ab06cb82e14d" ChangeDateTime="10/29/2021 17:56:56">
+    <Property Name="ElementName" Value="[core].[spFacilityJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="fac" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="f731fadf-70cc-4553-b548-c9f4d48315c0" ChangeDateTime="10/29/2021 17:57:03">
+    <Property Name="ElementName" Value="[core].[spFacilityLimitJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="fac" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0f7556fe-595f-46f2-92d2-f22d36bd9f21" ChangeDateTime="10/29/2021 17:57:31">
+    <Property Name="ElementName" Value="[core].[spPassiveJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="a1f49b99-2d28-4110-b71c-3d0969437e33" ChangeDateTime="10/29/2021 17:57:41">
+    <Property Name="ElementName" Value="[core].[spWeaponLimitJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="775dab35-6880-404e-baf3-db2a9fc9af64" ChangeDateTime="10/29/2021 17:57:45">
+    <Property Name="ElementName" Value="[core].[spWeaponSeriesJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="b040b58c-ca5a-4c1f-b9ba-4184eed24b07" ChangeDateTime="10/29/2021 17:57:52">
+    <Property Name="ElementName" Value="[core].[spWeaponJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpn" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0b520c78-5c68-4224-a942-482a611a92e2" ChangeDateTime="10/29/2021 17:58:21">
+    <Property Name="ElementName" Value="[core].[spWyrmprintJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="aa810457-2c57-4e9c-8a90-c205074d11dc" ChangeDateTime="10/29/2021 17:58:38">
+    <Property Name="ElementName" Value="[core].[spWyrmprintLevelLimitJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="wpt" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

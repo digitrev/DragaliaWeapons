@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [core].[spWyrmprintJson]
+﻿CREATE PROCEDURE [wpt].[spWyrmprintJson]
 AS
 SELECT w.WyrmprintID AS wyrmprintId
 	,w.Wyrmprint AS wyrmprint

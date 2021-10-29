@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [core].[spPassiveJson]
+﻿CREATE PROCEDURE [wpn].[spPassiveJson]
 AS
 SELECT p.PassiveID AS passiveId
 	,p.AbilityNumber AS abilityNumber

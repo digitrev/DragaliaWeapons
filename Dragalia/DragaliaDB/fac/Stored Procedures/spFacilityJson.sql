@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [core].[spFacilityJson]
+﻿CREATE PROCEDURE [fac].[spFacilityJson]
 AS
 SELECT f.FacilityID AS facilityId
 	,f.Facility AS facility

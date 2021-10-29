@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [core].[spWeaponLimitJson]
+﻿CREATE PROCEDURE [wpn].[spWeaponLimitJson]
 AS
 SELECT pvt.WeaponID AS weaponID
 	,wl.WeaponLevel AS [level]

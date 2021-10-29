@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [core].[spWyrmprintLevelLimitJson]
+﻿CREATE PROCEDURE [wpt].[spWyrmprintLevelLimitJson]
 AS
 SELECT WyrmprintRarity AS rarity
 	,MAX(MaxWyrmprintLevel) AS [level]

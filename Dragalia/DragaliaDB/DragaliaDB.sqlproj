@@ -80,6 +80,11 @@
     <Folder Include="wpn\Tables" />
     <Folder Include="wpt" />
     <Folder Include="wpt\Tables" />
+    <Folder Include="adv\Stored Procedures" />
+    <Folder Include="drg\Stored Procedures" />
+    <Folder Include="fac\Stored Procedures" />
+    <Folder Include="wpn\Stored Procedures" />
+    <Folder Include="wpt\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -129,21 +134,11 @@
     <Build Include="den\Tables\DragonAdvancedCosts.sql" />
     <Build Include="den\Tables\DragonAdvancedMats.sql" />
     <Build Include="den\Tables\CategoryMetadata.sql" />
-    <Build Include="core\Stored Procedures\spAdventurerJson.sql" />
-    <Build Include="core\Stored Procedures\spDragonJson.sql" />
     <Build Include="core\Stored Procedures\spElementJson.sql" />
-    <Build Include="core\Stored Procedures\spFacilityJson.sql" />
-    <Build Include="core\Stored Procedures\spFacilityLimitJson.sql" />
     <Build Include="core\Stored Procedures\spMaterialQuestJson.sql" />
     <Build Include="core\Stored Procedures\spMaterialJson.sql" />
-    <Build Include="core\Stored Procedures\spPassiveJson.sql" />
     <Build Include="core\Stored Procedures\spQuestJson.sql" />
-    <Build Include="core\Stored Procedures\spWeaponLimitJson.sql" />
-    <Build Include="core\Stored Procedures\spWeaponJson.sql" />
-    <Build Include="core\Stored Procedures\spWeaponSeriesJson.sql" />
     <Build Include="core\Stored Procedures\spWeaponTypeJson.sql" />
-    <Build Include="core\Stored Procedures\spWyrmprintLevelLimitJson.sql" />
-    <Build Include="core\Stored Procedures\spWyrmprintJson.sql" />
     <Build Include="Security\adv.sql" />
     <Build Include="Security\drg.sql" />
     <Build Include="Security\fac.sql" />
@@ -169,6 +164,16 @@
     <Build Include="wpn\Tables\WeaponUpgrade.sql" />
     <Build Include="wpn\Tables\Passive.sql" />
     <Build Include="wpn\Tables\PassiveCrafting.sql" />
+    <Build Include="adv\Stored Procedures\spAdventurerJson.sql" />
+    <Build Include="drg\Stored Procedures\spDragonJson.sql" />
+    <Build Include="fac\Stored Procedures\spFacilityJson.sql" />
+    <Build Include="fac\Stored Procedures\spFacilityLimitJson.sql" />
+    <Build Include="wpn\Stored Procedures\spPassiveJson.sql" />
+    <Build Include="wpn\Stored Procedures\spWeaponJson.sql" />
+    <Build Include="wpn\Stored Procedures\spWeaponLimitJson.sql" />
+    <Build Include="wpn\Stored Procedures\spWeaponSeriesJson.sql" />
+    <Build Include="wpt\Stored Procedures\spWyrmprintJson.sql" />
+    <Build Include="wpt\Stored Procedures\spWyrmprintLevelLimitJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

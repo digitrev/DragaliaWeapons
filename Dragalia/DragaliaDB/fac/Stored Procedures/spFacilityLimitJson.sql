@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [core].[spFacilityLimitJson]
+﻿CREATE PROCEDURE [fac].[spFacilityLimitJson]
 AS
 SELECT FacilityID AS facilityID
 	,MAX(FacilityLevel) AS maxLevel
