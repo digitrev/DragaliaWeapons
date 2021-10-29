@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[ManaCircle] (
+﻿CREATE TABLE [adv].[ManaCircle] (
 	[AdventurerID] INT NOT NULL
 	,[ManaNode] INT NOT NULL
 	,[MaterialID] NVARCHAR(50) NOT NULL

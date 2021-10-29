@@ -1548,9 +1548,9 @@ BEGIN
 	FROM #ManaPieceRaw AS mpr
 	WHERE DewPoint <> 0
 
-	TRUNCATE TABLE core.ManaCircle
+	TRUNCATE TABLE [adv].ManaCircle
 
-	INSERT core.ManaCircle (
+	INSERT [adv].ManaCircle (
 		AdventurerID
 		,ManaNode
 		,MaterialID
@@ -1622,7 +1622,7 @@ BEGIN
 	WHERE mpm.Quantity > 0
 
 	--3 & 4⭐ unbinds
-	INSERT core.ManaCircle (
+	INSERT [adv].ManaCircle (
 		AdventurerID
 		,ManaNode
 		,MaterialID
@@ -1981,7 +1981,7 @@ BEGIN
 		FROM #MCUnbind
 		WHERE OrbData5Num5 <> 0
 		)
-	MERGE core.ManaCircle AS trg
+	MERGE [adv].ManaCircle AS trg
 	USING (
 		SELECT ub.AdventurerID
 			,cte.ManaNode
@@ -2014,11 +2014,11 @@ BEGIN
 
 	DELETE mc
 	FROM [adv].Adventurer AS a
-	INNER JOIN core.ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
+	INNER JOIN [adv].ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
 	WHERE mc.ManaNode > a.MCLimit
 
 	--Dragons
-	MERGE core.Dragon AS trg
+	MERGE [drg].Dragon AS trg
 	USING (
 		SELECT d.DragonID
 			,REPLACE(d.Dragon, '&amp;', '&') AS Dragon
@@ -2061,15 +2061,15 @@ BEGIN
 				,src.ElementID
 				);
 
-	TRUNCATE TABLE core.[DragonUnbind]
+	TRUNCATE TABLE [drg].[DragonUnbind]
 
-	INSERT core.[DragonUnbind] (
+	INSERT [drg].[DragonUnbind] (
 		DragonID
 		,MaterialID
 		)
 	SELECT d.DragonID
 		,m.MaterialID
-	FROM core.Dragon AS d
+	FROM [drg].Dragon AS d
 	INNER JOIN core.Material AS m ON m.Material = CONCAT (
 			d.Dragon
 			,'''s Essence'

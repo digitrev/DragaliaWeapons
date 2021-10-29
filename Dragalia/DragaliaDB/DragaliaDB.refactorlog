@@ -1527,4 +1527,22 @@
     <Property Name="NewSchema" Value="adv" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="ee44e32f-58f0-4042-a7c4-433ac85fadb5" ChangeDateTime="10/29/2021 17:47:18">
+    <Property Name="ElementName" Value="[core].[ManaCircle]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="adv" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="6ca916aa-34bc-438f-bfe0-979728ffb8d7" ChangeDateTime="10/29/2021 17:47:30">
+    <Property Name="ElementName" Value="[core].[Dragon]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="drg" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3daa204e-979b-48e1-bd83-c9ae06101762" ChangeDateTime="10/29/2021 17:47:41">
+    <Property Name="ElementName" Value="[core].[DragonUnbind]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="drg" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

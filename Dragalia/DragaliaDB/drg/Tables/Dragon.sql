@@ -1,4 +1,4 @@
-﻿CREATE TABLE [core].[Dragon] (
+﻿CREATE TABLE [drg].[Dragon] (
 	[DragonID] INT NOT NULL
 	,[Dragon] NVARCHAR(50) NOT NULL
 	,[Rarity] INT NOT NULL
