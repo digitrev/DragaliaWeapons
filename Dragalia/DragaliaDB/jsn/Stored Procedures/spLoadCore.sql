@@ -298,7 +298,7 @@ BEGIN
 	SET SortOrder = - SortOrder
 	WHERE Element = 'None'
 
-	MERGE core.WeaponSeries AS trg
+	MERGE [wpn].WeaponSeries AS trg
 	USING (
 		SELECT DISTINCT WeaponSeriesID
 			,WeaponSeries
@@ -353,7 +353,7 @@ BEGIN
 			,3
 			)
 		) AS src(WeaponSeries, SortOrder)
-	INNER JOIN core.WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
+	INNER JOIN [wpn].WeaponSeries AS ws ON ws.WeaponSeries = src.WeaponSeries
 
 	MERGE core.WeaponType AS trg
 	USING (
@@ -383,7 +383,7 @@ BEGIN
 				);
 
 	--Weapons
-	MERGE core.Weapon AS trg
+	MERGE [wpn].Weapon AS trg
 	USING (
 		SELECT DISTINCT WeaponID
 			,WeaponName
@@ -427,9 +427,9 @@ BEGIN
 				);
 
 	--Weapon crafting
-	TRUNCATE TABLE core.WeaponCrafting
+	TRUNCATE TABLE [wpn].WeaponCrafting
 
-	INSERT core.WeaponCrafting (
+	INSERT [wpn].WeaponCrafting (
 		WeaponID
 		,MaterialID
 		,Quantity
@@ -567,9 +567,9 @@ BEGIN
 				,src.UpgradeType
 				);
 
-	TRUNCATE TABLE core.WeaponUpgrade
+	TRUNCATE TABLE [wpn].WeaponUpgrade
 
-	INSERT core.WeaponUpgrade (
+	INSERT [wpn].WeaponUpgrade (
 		WeaponID
 		,UpgradeTypeID
 		,Step
@@ -746,7 +746,7 @@ BEGIN
 	LEFT JOIN core.Ability AS a ON a.AbilityID = p.AbilityID
 	WHERE a.AbilityID IS NULL
 
-	MERGE core.Passive AS trg
+	MERGE [wpn].Passive AS trg
 	USING (
 		SELECT PassiveID
 			,WeaponTypeID
@@ -790,9 +790,9 @@ BEGIN
 				);
 
 	--Passive crafting
-	TRUNCATE TABLE core.PassiveCrafting
+	TRUNCATE TABLE [wpn].PassiveCrafting
 
-	INSERT core.PassiveCrafting (
+	INSERT [wpn].PassiveCrafting (
 		PassiveID
 		,MaterialID
 		,Quantity
@@ -868,9 +868,9 @@ BEGIN
 			) AS wl
 	WHERE wlj.TableName = 'WeaponLevel'
 
-	TRUNCATE TABLE core.WeaponLevel
+	TRUNCATE TABLE [wpn].WeaponLevel
 
-	INSERT core.WeaponLevel (
+	INSERT [wpn].WeaponLevel (
 		Rarity
 		,WeaponLevel
 		,MaterialID
@@ -907,7 +907,7 @@ BEGIN
 	WHERE l.Quantity > 0
 
 	--Facilities
-	MERGE core.Facility AS trg
+	MERGE [fac].Facility AS trg
 	USING (
 		SELECT f.FacilityID
 			,f.FacilityName
@@ -982,9 +982,9 @@ BEGIN
 	WHERE wlj.TableName = 'WeaponLimit'
 
 	--WeaponUnbindLimit
-	TRUNCATE TABLE core.WeaponUnbindLimit
+	TRUNCATE TABLE [wpn].WeaponUnbindLimit
 
-	INSERT core.WeaponUnbindLimit (
+	INSERT [wpn].WeaponUnbindLimit (
 		WeaponRarity
 		,RefinementLevel
 		,MaxUnbindLevel
@@ -1001,9 +1001,9 @@ BEGIN
 	WHERE upvt.MaxUnbindLevel > 0
 
 	--WeaponLevelLimit
-	TRUNCATE TABLE core.WeaponLevelLimit
+	TRUNCATE TABLE [wpn].WeaponLevelLimit
 
-	INSERT core.WeaponLevelLimit (
+	INSERT [wpn].WeaponLevelLimit (
 		WeaponRarity
 		,UnbindLevel
 		,MaxWeaponLevel
@@ -1060,7 +1060,7 @@ BEGIN
 			) AS w
 	WHERE wj.TableName = 'Wyrmprint'
 
-	MERGE core.Wyrmprint AS trg
+	MERGE [wpt].Wyrmprint AS trg
 	USING (
 		SELECT DISTINCT WyrmprintID
 			,REPLACE(Wyrmprint, '&amp;', '&') AS Wyrmprint
@@ -1100,9 +1100,9 @@ BEGIN
 				);
 
 	--WyrmprintAbility
-	TRUNCATE TABLE core.WyrmprintAbility
+	TRUNCATE TABLE [wpt].WyrmprintAbility
 
-	INSERT core.WyrmprintAbility (
+	INSERT [wpt].WyrmprintAbility (
 		WyrmprintID
 		,AbilityID
 		,AbilitySlot
@@ -1194,9 +1194,9 @@ BEGIN
 	INNER JOIN #Wyrmprint AS w ON w.GroupID = wu.GroupID
 	WHERE wuj.TableName = 'WyrmprintUpgrade'
 
-	TRUNCATE TABLE core.WyrmprintUpgrade
+	TRUNCATE TABLE [wpt].WyrmprintUpgrade
 
-	INSERT core.WyrmprintUpgrade (
+	INSERT [wpt].WyrmprintUpgrade (
 		WyrmprintID
 		,UpgradeTypeID
 		,Step
@@ -1283,9 +1283,9 @@ BEGIN
 	INNER JOIN #Wyrmprint AS w ON w.RarityGroup = wl.Rarity
 	WHERE wlj.TableName = 'WyrmprintLevel'
 
-	TRUNCATE TABLE core.WyrmprintLevel
+	TRUNCATE TABLE [wpt].WyrmprintLevel
 
-	INSERT core.WyrmprintLevel (
+	INSERT [wpt].WyrmprintLevel (
 		WyrmprintID
 		,WyrmprintLevel
 		,MaterialID
@@ -1349,9 +1349,9 @@ BEGIN
 			) AS wl
 	WHERE wlj.TableName = 'WyrmprintLimit'
 
-	TRUNCATE TABLE core.WyrmprintLevelLimit
+	TRUNCATE TABLE [wpt].WyrmprintLevelLimit
 
-	INSERT core.WyrmprintLevelLimit (
+	INSERT [wpt].WyrmprintLevelLimit (
 		WyrmprintRarity
 		,UnbindLevel
 		,MaxWyrmprintLevel
@@ -1370,7 +1370,7 @@ BEGIN
 	WHERE upvt.MaxWyrmprintLevel > 0
 
 	--Adventurer data
-	MERGE core.Adventurer AS trg
+	MERGE [adv].Adventurer AS trg
 	USING (
 		SELECT a.AdventurerID
 			,a.VariationID
@@ -1548,9 +1548,9 @@ BEGIN
 	FROM #ManaPieceRaw AS mpr
 	WHERE DewPoint <> 0
 
-	TRUNCATE TABLE core.ManaCircle
+	TRUNCATE TABLE [adv].ManaCircle
 
-	INSERT core.ManaCircle (
+	INSERT [adv].ManaCircle (
 		AdventurerID
 		,ManaNode
 		,MaterialID
@@ -1561,7 +1561,7 @@ BEGIN
 		,mc.ManaNode
 		,'Mana'
 		,mc.ManaCost
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	WHERE mc.ManaCost > 0
@@ -1573,7 +1573,7 @@ BEGIN
 		,mc.ManaNode
 		,amc.UniqueGrowMaterialId1
 		,mc.UniqueGrowMaterialCount1
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	WHERE mc.UniqueGrowMaterialCount1 > 0
@@ -1585,7 +1585,7 @@ BEGIN
 		,mc.ManaNode
 		,amc.UniqueGrowMaterialId2
 		,mc.UniqueGrowMaterialCount2
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	WHERE mc.UniqueGrowMaterialCount2 > 0
@@ -1597,7 +1597,7 @@ BEGIN
 		,mc.ManaNode
 		,'Eldwater'
 		,mpe.Eldwater
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
 	INNER JOIN #ManaPieceEldwater AS mpe ON mpe.PieceMaterialElementId = amc.PieceMaterialElementId
@@ -1612,7 +1612,7 @@ BEGIN
 		,mc.ManaNode
 		,mpm.MaterialID
 		,mpm.Quantity
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	INNER JOIN core.Element AS e ON e.ElementID = a.ElementID
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodes AS mc ON mc.MCID = amc.MCID
@@ -1622,7 +1622,7 @@ BEGIN
 	WHERE mpm.Quantity > 0
 
 	--3 & 4⭐ unbinds
-	INSERT core.ManaCircle (
+	INSERT [adv].ManaCircle (
 		AdventurerID
 		,ManaNode
 		,MaterialID
@@ -1632,7 +1632,7 @@ BEGIN
 		,31
 		,'Eldwater'
 		,2500
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	WHERE a.Rarity = 3
 	
 	UNION ALL
@@ -1641,7 +1641,7 @@ BEGIN
 		,41
 		,'Eldwater'
 		,25000
-	FROM core.Adventurer AS a
+	FROM [adv].Adventurer AS a
 	WHERE a.Rarity IN (
 			3
 			,4
@@ -1981,7 +1981,7 @@ BEGIN
 		FROM #MCUnbind
 		WHERE OrbData5Num5 <> 0
 		)
-	MERGE core.ManaCircle AS trg
+	MERGE [adv].ManaCircle AS trg
 	USING (
 		SELECT ub.AdventurerID
 			,cte.ManaNode
@@ -2013,12 +2013,12 @@ BEGIN
 				);
 
 	DELETE mc
-	FROM core.Adventurer AS a
-	INNER JOIN core.ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
+	FROM [adv].Adventurer AS a
+	INNER JOIN [adv].ManaCircle AS mc ON mc.AdventurerID = a.AdventurerID
 	WHERE mc.ManaNode > a.MCLimit
 
 	--Dragons
-	MERGE core.Dragon AS trg
+	MERGE [drg].Dragon AS trg
 	USING (
 		SELECT d.DragonID
 			,REPLACE(d.Dragon, '&amp;', '&') AS Dragon
@@ -2061,15 +2061,15 @@ BEGIN
 				,src.ElementID
 				);
 
-	TRUNCATE TABLE core.[DragonUnbind]
+	TRUNCATE TABLE [drg].[DragonUnbind]
 
-	INSERT core.[DragonUnbind] (
+	INSERT [drg].[DragonUnbind] (
 		DragonID
 		,MaterialID
 		)
 	SELECT d.DragonID
 		,m.MaterialID
-	FROM core.Dragon AS d
+	FROM [drg].Dragon AS d
 	INNER JOIN core.Material AS m ON m.Material = CONCAT (
 			d.Dragon
 			,'''s Essence'

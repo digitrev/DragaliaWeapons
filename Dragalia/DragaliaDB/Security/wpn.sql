@@ -1,0 +1,1 @@
+﻿CREATE SCHEMA [wpn] AUTHORIZATION [dbo];

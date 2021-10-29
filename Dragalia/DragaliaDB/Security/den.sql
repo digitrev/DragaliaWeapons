@@ -1,3 +1,1 @@
-﻿CREATE SCHEMA [den]
-    AUTHORIZATION [dbo];
-
+﻿CREATE SCHEMA [den] AUTHORIZATION [dbo];
