@@ -388,7 +388,8 @@ BEGIN
 
 	TRUNCATE TABLE [den].[EventMats]
 
-	SET @Json = N'[{"BronzeMat":"Motivational Log","Facility":"Arctos Monument","MaxLevel":35},{"BronzeMat":"Tent Canvas","Facility":"Circus Tent","MaxLevel":35},{"BronzeMat":"Sacred Stone","Facility":"Cleansing Fount","MaxLevel":35},{"BronzeMat":"Papier-mâché","Facility":"Dragoñata","MaxLevel":35},{"BronzeMat":"Ornate Lantern","Facility":"Festival Stage","MaxLevel":35},{"BronzeMat":"Arcane Tome","Facility":"Library Obscura","MaxLevel":35},{"BronzeMat":"Libretto","Facility":"Opera House","MaxLevel":30},{"BronzeMat":"Glam Shell","Facility":"Seabed Stage","MaxLevel":35},{"BronzeMat":"Holy Ore","Facility":"Statue of Ilia","MaxLevel":35},{"BronzeMat":"Snack-o''-Lantern","Facility":"Sweet Retreat","MaxLevel":35},{"BronzeMat":"Chef''s Special","Facility":"The Hungerdome","MaxLevel":35},{"BronzeMat":"Windwhistle Grass","Facility":"Wind Shrine","MaxLevel":35},{"BronzeMat":"Astral Ornament","Facility":"Yuletree","MaxLevel":35},{"BronzeMat":"Tidal Tears","Facility":"Abyssal Bell","MaxLevel":30},{"BronzeMat":"Conductive Bolt","Facility":"Dr. Schmidt''s Lab","MaxLevel":30}]'
+	SET @Json = 
+		N'[{"BronzeMat":"Motivational Log","Facility":"Arctos Monument","MaxLevel":35},{"BronzeMat":"Tent Canvas","Facility":"Circus Tent","MaxLevel":35},{"BronzeMat":"Sacred Stone","Facility":"Cleansing Fount","MaxLevel":35},{"BronzeMat":"Papier-mâché","Facility":"Dragoñata","MaxLevel":35},{"BronzeMat":"Ornate Lantern","Facility":"Festival Stage","MaxLevel":35},{"BronzeMat":"Arcane Tome","Facility":"Library Obscura","MaxLevel":35},{"BronzeMat":"Libretto","Facility":"Opera House","MaxLevel":30},{"BronzeMat":"Glam Shell","Facility":"Seabed Stage","MaxLevel":35},{"BronzeMat":"Holy Ore","Facility":"Statue of Ilia","MaxLevel":35},{"BronzeMat":"Snack-o''-Lantern","Facility":"Sweet Retreat","MaxLevel":35},{"BronzeMat":"Chef''s Special","Facility":"The Hungerdome","MaxLevel":35},{"BronzeMat":"Windwhistle Grass","Facility":"Wind Shrine","MaxLevel":35},{"BronzeMat":"Astral Ornament","Facility":"Yuletree","MaxLevel":35},{"BronzeMat":"Tidal Tears","Facility":"Abyssal Bell","MaxLevel":30},{"BronzeMat":"Conductive Bolt","Facility":"Dr. Schmidt''s Lab","MaxLevel":30}]'
 
 	INSERT [den].[EventMats] (
 		[Facility]
@@ -441,9 +442,7 @@ BEGIN
 			[Category] NVARCHAR(50)
 			,[Facilities] NVARCHAR(MAX) AS JSON
 			) AS c
-	CROSS APPLY OPENJSON(c.[Facilities]) WITH (
-			[Facility] NVARCHAR(50)
-			) AS f
+	CROSS APPLY OPENJSON(c.[Facilities]) WITH ([Facility] NVARCHAR(50)) AS f
 
 	TRUNCATE TABLE [den].[QuestHierarchy]
 
@@ -575,4 +574,12 @@ BEGIN
 			[Category] NVARCHAR(50)
 			,[SortPath] NVARCHAR(255)
 			)
+
+	TRUNCATE TABLE [den].[Frequency]
+
+	SET @JSON = N'[{"Frequency":"Daily"},{"Frequency":"Weekly"}]'
+
+	INSERT [den].[Frequency] ([Frequency])
+	SELECT [Frequency]
+	FROM OPENJSON(@Json) WITH ([Frequency] NVARCHAR(50))
 END

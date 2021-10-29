@@ -1587,4 +1587,17 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_ChestDrop_Material]" />
   </Operation>
+  <Operation Name="Move Schema" Key="0b3d3f2e-35f3-4adb-ac38-f71f5c291fef" ChangeDateTime="10/29/2021 16:45:44">
+    <Property Name="ElementName" Value="[dbo].[Frequency]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c4b522d6-ea1e-405d-9f4f-0d3c313d8eea" ChangeDateTime="10/29/2021 16:45:50">
+    <Property Name="ElementName" Value="[den].[Frequency].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[Frequency]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Frequency" />
+  </Operation>
 </Operations>
