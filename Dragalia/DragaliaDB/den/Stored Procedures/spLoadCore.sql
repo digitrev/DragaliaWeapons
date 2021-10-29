@@ -69,4 +69,8 @@ BEGIN
 	FROM den.FarmLocation AS fl
 	INNER JOIN core.Material AS m ON m.Material = fl.Material
 	INNER JOIN core.Quest AS q ON q.Quest = fl.Quest
+
+	EXEC [den].spLoadDrg
+
+	EXEC [den].spLoadFac
 END
