@@ -73,4 +73,6 @@ BEGIN
 	EXEC [den].spLoadDrg
 
 	EXEC [den].spLoadFac
+
+	EXEC [den].spLoadCht
 END
