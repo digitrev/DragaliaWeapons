@@ -1,5 +1,71 @@
 [
   {
+    "wyrmprintId": 40090030,
+    "wyrmprint": "The Genius Tactician",
+    "rarity": 9,
+    "affinity": "Spider's Boon",
+    "abilities": [
+      {
+        "ability": "Enemy Foresight"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40090029,
+    "wyrmprint": "Ravenous Fire",
+    "rarity": 9,
+    "affinity": "Crown's Boon",
+    "abilities": [
+      {
+        "ability": "Staff's Psalm"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40090028,
+    "wyrmprint": "The Genius Tactician",
+    "rarity": 9,
+    "affinity": "Bow's Boon",
+    "abilities": [
+      {
+        "ability": "Enemy Foresight"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40090027,
+    "wyrmprint": "Ravenous Fire",
+    "rarity": 9,
+    "affinity": "Deer's Boon",
+    "abilities": [
+      {
+        "ability": "Skill Haste"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40090026,
+    "wyrmprint": "Crystalline Blades",
+    "rarity": 9,
+    "affinity": "Bat's Boon",
+    "abilities": [
+      {
+        "ability": "Skill Haste"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40090025,
+    "wyrmprint": "Apple-licious Dreams",
+    "rarity": 9,
+    "affinity": "Butterfly's Boon",
+    "abilities": [
+      {
+        "ability": "Skill Damage"
+      }
+    ]
+  },
+  {
     "wyrmprintId": 40090024,
     "wyrmprint": "A King's Pride (Sword's Boon)",
     "rarity": 9,
@@ -260,6 +326,34 @@
     "abilities": [
       {
         "ability": "Skill Damage"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40050145,
+    "wyrmprint": "Adventure in the Past",
+    "rarity": 5,
+    "affinity": "Sword's Boon",
+    "abilities": [
+      {
+        "ability": "(Sword) Critical Rate"
+      },
+      {
+        "ability": "Acclaim"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40050144,
+    "wyrmprint": "A Halloween Spectacular!",
+    "rarity": 5,
+    "affinity": "Crown's Boon",
+    "abilities": [
+      {
+        "ability": "(Shadow) Skill Haste"
+      },
+      {
+        "ability": "Conductive Bolts"
       }
     ]
   },
@@ -1844,6 +1938,16 @@
     "abilities": [
       {
         "ability": "Skill Damage"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40040100,
+    "wyrmprint": "A Choice Blend",
+    "rarity": 4,
+    "abilities": [
+      {
+        "ability": "(Blade) Critical Rate"
       }
     ]
   },

@@ -88,32 +88,8 @@
     "maxLevel": 30
   },
   {
-    "facilityID": 100701,
-    "maxLevel": 0
-  },
-  {
-    "facilityID": 100702,
-    "maxLevel": 0
-  },
-  {
-    "facilityID": 100703,
-    "maxLevel": 0
-  },
-  {
-    "facilityID": 100704,
-    "maxLevel": 0
-  },
-  {
-    "facilityID": 100705,
-    "maxLevel": 0
-  },
-  {
     "facilityID": 100901,
     "maxLevel": 35
-  },
-  {
-    "facilityID": 100902,
-    "maxLevel": 0
   },
   {
     "facilityID": 101001,
@@ -140,16 +116,8 @@
     "maxLevel": 35
   },
   {
-    "facilityID": 101102,
-    "maxLevel": 0
-  },
-  {
     "facilityID": 101301,
     "maxLevel": 35
-  },
-  {
-    "facilityID": 101302,
-    "maxLevel": 0
   },
   {
     "facilityID": 101401,
@@ -160,36 +128,16 @@
     "maxLevel": 35
   },
   {
-    "facilityID": 101502,
-    "maxLevel": 0
-  },
-  {
     "facilityID": 101601,
     "maxLevel": 35
-  },
-  {
-    "facilityID": 101602,
-    "maxLevel": 0
   },
   {
     "facilityID": 101701,
     "maxLevel": 35
   },
   {
-    "facilityID": 101702,
-    "maxLevel": 0
-  },
-  {
     "facilityID": 101801,
     "maxLevel": 35
-  },
-  {
-    "facilityID": 101802,
-    "maxLevel": 0
-  },
-  {
-    "facilityID": 101803,
-    "maxLevel": 0
   },
   {
     "facilityID": 101901,
@@ -216,18 +164,6 @@
     "maxLevel": 35
   },
   {
-    "facilityID": 102002,
-    "maxLevel": 0
-  },
-  {
-    "facilityID": 102101,
-    "maxLevel": 0
-  },
-  {
-    "facilityID": 102201,
-    "maxLevel": 0
-  },
-  {
     "facilityID": 102301,
     "maxLevel": 30
   },
@@ -252,16 +188,8 @@
     "maxLevel": 35
   },
   {
-    "facilityID": 102402,
-    "maxLevel": 0
-  },
-  {
     "facilityID": 102501,
     "maxLevel": 35
-  },
-  {
-    "facilityID": 102502,
-    "maxLevel": 0
   },
   {
     "facilityID": 102601,
@@ -272,23 +200,15 @@
     "maxLevel": 30
   },
   {
-    "facilityID": 102702,
-    "maxLevel": 0
-  },
-  {
     "facilityID": 102801,
     "maxLevel": 35
-  },
-  {
-    "facilityID": 102802,
-    "maxLevel": 0
   },
   {
     "facilityID": 102901,
     "maxLevel": 30
   },
   {
-    "facilityID": 102902,
-    "maxLevel": 0
+    "facilityID": 103001,
+    "maxLevel": 30
   }
 ]

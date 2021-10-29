@@ -420,6 +420,12 @@
     "element": "Wind"
   },
   {
+    "dragonId": 20050418,
+    "dragon": "Gala Chronos Nyx",
+    "rarity": 5,
+    "element": "Light"
+  },
+  {
     "dragonId": 20050417,
     "dragon": "Mini Jupi",
     "rarity": 5,

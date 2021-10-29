@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [core].[spWeaponLimitJson]
 AS
-SELECT pvt.WeaponID AS weaponId
+SELECT pvt.WeaponID AS weaponID
 	,wl.WeaponLevel AS [level]
 	,ISNULL(pvt.Unbind, 0) AS unbind
 	,ISNULL(pvt.Refinement, 0) AS refinement
