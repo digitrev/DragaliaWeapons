@@ -1874,4 +1874,11 @@
     <Property Name="ParentElementType" Value="SqlSchema" />
     <Property Name="NewName" Value="[spInitializeFac]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="0cb55951-d9d8-439c-9cc3-e2ea0bb560f7" ChangeDateTime="10/29/2021 23:07:00">
+    <Property Name="ElementName" Value="[cht].[ChestDrop].[Weight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[cht].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DropWeight" />
+  </Operation>
 </Operations>
