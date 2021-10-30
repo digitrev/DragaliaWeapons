@@ -1881,4 +1881,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="DropWeight" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="01e14981-c64e-412b-a535-e193e225b07c" ChangeDateTime="10/29/2021 23:13:14">
+    <Property Name="ElementName" Value="[cht].[ChestDrop].[DropWeight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[cht].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DropQuantity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c79777b3-2cb4-4b19-b995-18a83a4aa9fd" ChangeDateTime="10/29/2021 23:13:19">
+    <Property Name="ElementName" Value="[cht].[ChestDrop].[DropQuantity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[cht].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Quantity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="12475cb0-598b-4ade-b5ef-5d03dc7f00c9" ChangeDateTime="10/30/2021 02:00:49">
+    <Property Name="ElementName" Value="[den].[Chests].[Quantity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[Chests]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuestQuantity" />
+  </Operation>
 </Operations>

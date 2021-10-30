@@ -21,7 +21,7 @@ BEGIN
 	USING (
 		SELECT DISTINCT c.ChestGroup
 			,f.FrequencyID
-			,c.Quantity
+			,c.QuestQuantity
 		FROM den.Chests AS c
 		INNER JOIN core.Frequency AS f ON f.Frequency = c.Frequency
 		) AS src
@@ -30,7 +30,7 @@ BEGIN
 		THEN
 			UPDATE
 			SET FrequencyID = src.FrequencyID
-				,Quantity = src.Quantity
+				,Quantity = src.QuestQuantity
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
@@ -41,7 +41,7 @@ BEGIN
 			VALUES (
 				src.ChestGroup
 				,src.FrequencyID
-				,src.Quantity
+				,src.QuestQuantity
 				)
 	WHEN NOT MATCHED BY SOURCE
 		THEN
@@ -75,6 +75,7 @@ BEGIN
 	USING (
 		SELECT DISTINCT c.ChestID
 			,m.MaterialID
+			,dc.DropQuantity
 		FROM den.Chests AS dc
 		INNER JOIN cht.ChestGroup AS cg ON cg.ChestGroup = dc.ChestGroup
 		INNER JOIN core.Quest AS q ON q.Quest = dc.Quest
@@ -84,15 +85,21 @@ BEGIN
 		) AS src
 		ON src.ChestID = trg.ChestID
 			AND src.MaterialID = trg.MaterialID
+	WHEN MATCHED
+		THEN
+			UPDATE
+			SET Quantity = src.DropQuantity
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
 				ChestID
 				,MaterialID
+				,Quantity
 				)
 			VALUES (
 				src.ChestID
 				,src.MaterialID
+				,src.DropQuantity
 				)
 	WHEN NOT MATCHED BY SOURCE
 		THEN
