@@ -2,7 +2,7 @@
 AS
 SELECT p.PassiveID AS passiveId
 	,p.AbilityNumber AS abilityNumber
-	,a.Ability AS ability
+	,a.GenericName AS ability
 	,e.Element AS element
 	,wt.WeaponType AS weaponType
 FROM [wpn].Passive AS p
