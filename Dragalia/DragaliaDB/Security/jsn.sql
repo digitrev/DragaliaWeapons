@@ -1,3 +1,1 @@
-﻿CREATE SCHEMA [jsn]
-    AUTHORIZATION [dbo];
-
+﻿CREATE SCHEMA [jsn] AUTHORIZATION [dbo];

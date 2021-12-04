@@ -864,6 +864,12 @@
     "sortPath": "/27.1/4/2/"
   },
   {
+    "materialId": "201022053",
+    "material": "Twilight Amethyst",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/4/3/"
+  },
+  {
     "materialId": "202001001",
     "material": "Iron Ore",
     "category": "Weapon Upgrade Materials",
@@ -2038,6 +2044,18 @@
     "material": "Wedding Aoi's Devotion",
     "category": "Spiral Materials",
     "sortPath": "/36.2/3/4/2/"
+  },
+  {
+    "materialId": "208030051",
+    "material": "Gala Leif's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3/5/1/"
+  },
+  {
+    "materialId": "208030052",
+    "material": "Gala Leif's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3/5/2/"
   },
   {
     "materialId": "208040011",

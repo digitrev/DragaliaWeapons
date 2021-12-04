@@ -192,6 +192,14 @@
     "mcLimit": 70
   },
   {
+    "adventurerId": 10450104,
+    "adventurer": "Gala Gatov",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10450103,
     "adventurer": "Child Ranzal",
     "rarity": 5,
@@ -430,6 +438,14 @@
     "element": "Flame",
     "weaponType": "Staff",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10950103,
+    "adventurer": "Dragonyule Ilia",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Manacaster",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10950102,
@@ -909,7 +925,7 @@
     "rarity": 5,
     "element": "Wind",
     "weaponType": "Sword",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10150302,
@@ -1006,6 +1022,14 @@
     "element": "Wind",
     "weaponType": "Blade",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10350304,
+    "adventurer": "Dragonyule Nevin",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Dagger",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10350303,
@@ -1381,6 +1405,14 @@
     "rarity": 3,
     "element": "Light",
     "weaponType": "Sword",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10250404,
+    "adventurer": "Humanoid Jupiter",
+    "rarity": 5,
+    "element": "Light",
+    "weaponType": "Blade",
     "mcLimit": 50
   },
   {

@@ -1095,6 +1095,26 @@
     "sortPath": "/2/2/17/3/"
   },
   {
+    "questId": 691,
+    "quest": "Harle's Trial",
+    "sortPath": "/2/2/18/"
+  },
+  {
+    "questId": 692,
+    "quest": "Harle's Trial: Master",
+    "sortPath": "/2/2/18/1/"
+  },
+  {
+    "questId": 693,
+    "quest": "Harle's Trial: Expert",
+    "sortPath": "/2/2/18/2/"
+  },
+  {
+    "questId": 694,
+    "quest": "Harle's Trial: Standard",
+    "sortPath": "/2/2/18/3/"
+  },
+  {
     "questId": 399,
     "quest": "Void Battles",
     "sortPath": "/2/3/"
@@ -1988,5 +2008,15 @@
     "questId": 554,
     "quest": "Morsayati Reckoning",
     "sortPath": "/5/2/1/"
+  },
+  {
+    "questId": 695,
+    "quest": "Rise of the Sinister Dominion: Legend Difficulty",
+    "sortPath": "/5/3/"
+  },
+  {
+    "questId": 696,
+    "quest": "Lilith's Encroaching Shadow: Legend Difficulty",
+    "sortPath": "/5/3/1/"
   }
 ]
