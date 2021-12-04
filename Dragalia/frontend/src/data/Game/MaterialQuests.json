@@ -2145,6 +2145,51 @@
     }
   },
   {
+    "materialId": "208030051",
+    "questId": 691,
+    "material": {
+      "materialId": "208030051",
+      "material": "Gala Leif's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/5/1/"
+    },
+    "quest": {
+      "questId": 691,
+      "quest": "Harle's Trial",
+      "sortPath": "/2/2/18/"
+    }
+  },
+  {
+    "materialId": "208030052",
+    "questId": 692,
+    "material": {
+      "materialId": "208030052",
+      "material": "Gala Leif's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/5/2/"
+    },
+    "quest": {
+      "questId": 692,
+      "quest": "Harle's Trial: Master",
+      "sortPath": "/2/2/18/1/"
+    }
+  },
+  {
+    "materialId": "208030052",
+    "questId": 693,
+    "material": {
+      "materialId": "208030052",
+      "material": "Gala Leif's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/5/2/"
+    },
+    "quest": {
+      "questId": 693,
+      "quest": "Harle's Trial: Expert",
+      "sortPath": "/2/2/18/2/"
+    }
+  },
+  {
     "materialId": "201014001",
     "questId": 399,
     "material": {
@@ -5550,13 +5595,13 @@
     }
   },
   {
-    "materialId": "202009041",
+    "materialId": "202008041",
     "questId": 515,
     "material": {
-      "materialId": "202009041",
-      "material": "High Lightwyrm's Horn",
+      "materialId": "202008041",
+      "material": "High Lightwyrm's Tail",
       "category": "High Dragon Materials",
-      "sortPath": "/16/4/2/"
+      "sortPath": "/16/4/1/"
     },
     "quest": {
       "questId": 515,
@@ -5655,13 +5700,13 @@
     }
   },
   {
-    "materialId": "202009051",
+    "materialId": "202008051",
     "questId": 520,
     "material": {
-      "materialId": "202009051",
-      "material": "High Shadowwyrm's Horn",
+      "materialId": "202008051",
+      "material": "High Shadowwyrm's Tail",
       "category": "High Dragon Materials",
-      "sortPath": "/16/5/2/"
+      "sortPath": "/16/5/1/"
     },
     "quest": {
       "questId": 520,
@@ -7122,6 +7167,21 @@
       "questId": 554,
       "quest": "Morsayati Reckoning",
       "sortPath": "/5/2/1/"
+    }
+  },
+  {
+    "materialId": "201022053",
+    "questId": 696,
+    "material": {
+      "materialId": "201022053",
+      "material": "Twilight Amethyst",
+      "category": "Dominion Shards",
+      "sortPath": "/27.1/4/3/"
+    },
+    "quest": {
+      "questId": 696,
+      "quest": "Lilith's Encroaching Shadow: Legend Difficulty",
+      "sortPath": "/5/3/1/"
     }
   }
 ]
