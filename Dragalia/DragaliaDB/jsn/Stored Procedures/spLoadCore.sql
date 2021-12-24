@@ -1374,7 +1374,7 @@ BEGIN
 	USING (
 		SELECT a.AdventurerID
 			,a.VariationID
-			,a.Adventurer
+			,REPLACE(a.Adventurer, '&amp;', '&') AS Adventurer
 			,a.Rarity
 			,a.ElementID
 			,a.WeaponTypeID

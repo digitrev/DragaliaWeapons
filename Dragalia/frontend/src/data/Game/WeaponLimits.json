@@ -171,6 +171,15 @@
     "bonus": 1
   },
   {
+    "weaponID": 30960304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
     "weaponID": 30250204,
     "level": 70,
     "unbind": 8,
@@ -720,6 +729,15 @@
     "bonus": 1
   },
   {
+    "weaponID": 30160304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
     "weaponID": 30650101,
     "level": 70,
     "unbind": 4,
@@ -870,6 +888,15 @@
     "refinement": 0,
     "slots": 1,
     "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30260304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 2,
     "bonus": 1
   },
   {
@@ -1060,6 +1087,15 @@
     "slots": 0,
     "dominion": 0,
     "bonus": 0
+  },
+  {
+    "weaponID": 30460304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
   },
   {
     "weaponID": 30560401,
@@ -1395,6 +1431,15 @@
     "bonus": 1
   },
   {
+    "weaponID": 30360304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
     "weaponID": 30660401,
     "level": 90,
     "unbind": 9,
@@ -1566,6 +1611,15 @@
     "bonus": 1
   },
   {
+    "weaponID": 30560304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
     "weaponID": 30950510,
     "level": 70,
     "unbind": 8,
@@ -1719,6 +1773,15 @@
     "bonus": 0
   },
   {
+    "weaponID": 30760304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
     "weaponID": 30450501,
     "level": 70,
     "unbind": 4,
@@ -1741,6 +1804,15 @@
     "level": 90,
     "unbind": 9,
     "refinement": 2,
+    "slots": 1,
+    "dominion": 2,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30660304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
     "slots": 1,
     "dominion": 2,
     "bonus": 1
@@ -2202,6 +2274,15 @@
     "refinement": 0,
     "slots": 1,
     "dominion": 0,
+    "bonus": 1
+  },
+  {
+    "weaponID": 30860304,
+    "level": 90,
+    "unbind": 8,
+    "refinement": 1,
+    "slots": 1,
+    "dominion": 2,
     "bonus": 1
   },
   {

@@ -392,6 +392,14 @@
     "mcLimit": 70
   },
   {
+    "adventurerId": 10850104,
+    "adventurer": "Ayaha & Otoha",
+    "rarity": 5,
+    "element": "Flame",
+    "weaponType": "Staff",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10850103,
     "adventurer": "Kuzunoha",
     "rarity": 5,
@@ -997,7 +1005,7 @@
     "rarity": 5,
     "element": "Wind",
     "weaponType": "Blade",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10240302,
@@ -1613,7 +1621,7 @@
     "rarity": 5,
     "element": "Light",
     "weaponType": "Lance",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10540402,
