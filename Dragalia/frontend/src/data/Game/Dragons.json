@@ -1,5 +1,11 @@
 [
   {
+    "dragonId": 20050118,
+    "dragon": "Uriel",
+    "rarity": 5,
+    "element": "Flame"
+  },
+  {
     "dragonId": 20050117,
     "dragon": "Gala Reborn Agni",
     "rarity": 5,

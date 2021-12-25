@@ -840,6 +840,12 @@
     "sortPath": "/27.1/2/2/"
   },
   {
+    "materialId": "201022033",
+    "material": "Cyclone Emerald",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/2/3/"
+  },
+  {
     "materialId": "201022041",
     "material": "Blinding Shard",
     "category": "Dominion Shards",
@@ -862,6 +868,30 @@
     "material": "Twilight Prism",
     "category": "Dominion Shards",
     "sortPath": "/27.1/4/2/"
+  },
+  {
+    "materialId": "201022053",
+    "material": "Twilight Amethyst",
+    "category": "Dominion Shards",
+    "sortPath": "/27.1/4/3/"
+  },
+  {
+    "materialId": "201023031",
+    "material": "Primal Windwyrm's Sphere",
+    "category": "Primal Spheres",
+    "sortPath": "/27.2/1/1/"
+  },
+  {
+    "materialId": "201023032",
+    "material": "Primal Windwyrm's Greatsphere",
+    "category": "Primal Spheres",
+    "sortPath": "/27.2/1/2/"
+  },
+  {
+    "materialId": "201023033",
+    "material": "Primal Windwyrm's Emerald",
+    "category": "Primal Spheres",
+    "sortPath": "/27.2/1/3/"
   },
   {
     "materialId": "202001001",
@@ -2040,6 +2070,30 @@
     "sortPath": "/36.2/3/4/2/"
   },
   {
+    "materialId": "208030051",
+    "material": "Gala Leif's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3/5/1/"
+  },
+  {
+    "materialId": "208030052",
+    "material": "Gala Leif's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3/5/2/"
+  },
+  {
+    "materialId": "208030061",
+    "material": "Victor's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3/6/1/"
+  },
+  {
+    "materialId": "208030062",
+    "material": "Victor's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/3/6/2/"
+  },
+  {
     "materialId": "208040011",
     "material": "Gala Prince's Conviction",
     "category": "Spiral Materials",
@@ -2074,6 +2128,18 @@
     "material": "Vixel's Devotion",
     "category": "Spiral Materials",
     "sortPath": "/36.2/4/3/2/"
+  },
+  {
+    "materialId": "208040041",
+    "material": "Annelie's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/4/4/1/"
+  },
+  {
+    "materialId": "208040042",
+    "material": "Annelie's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/4/4/2/"
   },
   {
     "materialId": "208050011",

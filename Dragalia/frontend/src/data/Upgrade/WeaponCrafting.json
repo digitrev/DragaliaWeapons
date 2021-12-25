@@ -655,6 +655,26 @@
     "Quantity": 2000000
   },
   {
+    "WeaponID": 30160304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30160304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30160304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30160304,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
     "WeaponID": 30160401,
     "MaterialID": "201017051",
     "Quantity": 40
@@ -1346,6 +1366,26 @@
   },
   {
     "WeaponID": 30260301,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30260304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30260304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30260304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30260304,
     "MaterialID": "Rupie",
     "Quantity": 2000000
   },
@@ -2045,6 +2085,26 @@
     "Quantity": 2000000
   },
   {
+    "WeaponID": 30360304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30360304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30360304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30360304,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
     "WeaponID": 30360401,
     "MaterialID": "201017051",
     "Quantity": 40
@@ -2740,6 +2800,26 @@
     "Quantity": 2000000
   },
   {
+    "WeaponID": 30460304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30460304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30460304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30460304,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
     "WeaponID": 30460401,
     "MaterialID": "201017051",
     "Quantity": 40
@@ -3431,6 +3511,26 @@
   },
   {
     "WeaponID": 30560301,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30560304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30560304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30560304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30560304,
     "MaterialID": "Rupie",
     "Quantity": 2000000
   },
@@ -4130,6 +4230,26 @@
     "Quantity": 2000000
   },
   {
+    "WeaponID": 30660304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30660304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30660304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30660304,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
     "WeaponID": 30660401,
     "MaterialID": "201017051",
     "Quantity": 40
@@ -4821,6 +4941,26 @@
   },
   {
     "WeaponID": 30760301,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30760304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30760304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30760304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30760304,
     "MaterialID": "Rupie",
     "Quantity": 2000000
   },
@@ -5520,6 +5660,26 @@
     "Quantity": 2000000
   },
   {
+    "WeaponID": 30860304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30860304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30860304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30860304,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
     "WeaponID": 30860401,
     "MaterialID": "201017051",
     "Quantity": 40
@@ -6056,6 +6216,26 @@
   },
   {
     "WeaponID": 30960301,
+    "MaterialID": "Rupie",
+    "Quantity": 2000000
+  },
+  {
+    "WeaponID": 30960304,
+    "MaterialID": "201023031",
+    "Quantity": 20
+  },
+  {
+    "WeaponID": 30960304,
+    "MaterialID": "201023032",
+    "Quantity": 15
+  },
+  {
+    "WeaponID": 30960304,
+    "MaterialID": "202004004",
+    "Quantity": 1
+  },
+  {
+    "WeaponID": 30960304,
     "MaterialID": "Rupie",
     "Quantity": 2000000
   },

@@ -1,7 +1,7 @@
 [
   {
     "wyrmprintId": 40090030,
-    "wyrmprint": "The Genius Tactician",
+    "wyrmprint": "The Genius Tactician (Spider's Boon)",
     "rarity": 9,
     "affinity": "Spider's Boon",
     "abilities": [
@@ -12,7 +12,7 @@
   },
   {
     "wyrmprintId": 40090029,
-    "wyrmprint": "Ravenous Fire",
+    "wyrmprint": "Ravenous Fire (Crown's Boon)",
     "rarity": 9,
     "affinity": "Crown's Boon",
     "abilities": [
@@ -23,7 +23,7 @@
   },
   {
     "wyrmprintId": 40090028,
-    "wyrmprint": "The Genius Tactician",
+    "wyrmprint": "The Genius Tactician (Bow's Boon)",
     "rarity": 9,
     "affinity": "Bow's Boon",
     "abilities": [
@@ -34,7 +34,7 @@
   },
   {
     "wyrmprintId": 40090027,
-    "wyrmprint": "Ravenous Fire",
+    "wyrmprint": "Ravenous Fire (Deer's Boon)",
     "rarity": 9,
     "affinity": "Deer's Boon",
     "abilities": [
@@ -45,7 +45,7 @@
   },
   {
     "wyrmprintId": 40090026,
-    "wyrmprint": "Crystalline Blades",
+    "wyrmprint": "Crystalline Blades (Bat's Boon)",
     "rarity": 9,
     "affinity": "Bat's Boon",
     "abilities": [
@@ -56,7 +56,7 @@
   },
   {
     "wyrmprintId": 40090025,
-    "wyrmprint": "Apple-licious Dreams",
+    "wyrmprint": "Apple-licious Dreams (Butterfly's Boon)",
     "rarity": 9,
     "affinity": "Butterfly's Boon",
     "abilities": [
@@ -326,6 +326,28 @@
     "abilities": [
       {
         "ability": "Skill Damage"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40050147,
+    "wyrmprint": "A Dragonyule for Ilia",
+    "rarity": 5,
+    "affinity": "Serpent's Boon",
+    "abilities": [
+      {
+        "ability": "(Light) Skill Haste"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40050146,
+    "wyrmprint": "Going Undercover",
+    "rarity": 5,
+    "affinity": "Eagle's Boon",
+    "abilities": [
+      {
+        "ability": "Stormlashed Punisher"
       }
     ]
   },
@@ -799,7 +821,7 @@
     "rarity": 5,
     "abilities": [
       {
-        "ability": "Resolve (Ability)"
+        "ability": "Resolve"
       },
       {
         "ability": "Slayer's Devastation"
@@ -812,7 +834,7 @@
     "rarity": 5,
     "abilities": [
       {
-        "ability": "Resolve (Ability)"
+        "ability": "Resolve"
       },
       {
         "ability": "Last Recovery"
@@ -1329,7 +1351,7 @@
     "rarity": 5,
     "abilities": [
       {
-        "ability": "Valor (Ability)"
+        "ability": "Valor"
       },
       {
         "ability": "Slayer's Strength"
@@ -1942,6 +1964,28 @@
     ]
   },
   {
+    "wyrmprintId": 40040102,
+    "wyrmprint": "Saint Starfall's Circus",
+    "rarity": 4,
+    "affinity": "Sword's Boon",
+    "abilities": [
+      {
+        "ability": "(Lance) Critical Rate"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40040101,
+    "wyrmprint": "A Gift from an Angel",
+    "rarity": 4,
+    "affinity": "Bat's Boon",
+    "abilities": [
+      {
+        "ability": "(Shadow) Critical Rate"
+      }
+    ]
+  },
+  {
     "wyrmprintId": 40040100,
     "wyrmprint": "A Choice Blend",
     "rarity": 4,
@@ -2506,7 +2550,7 @@
     "rarity": 4,
     "abilities": [
       {
-        "ability": "Valor (Ability)"
+        "ability": "Valor"
       },
       {
         "ability": "Shield Prep"
@@ -3029,7 +3073,7 @@
     "rarity": 3,
     "abilities": [
       {
-        "ability": "Valor (Ability)"
+        "ability": "Valor"
       },
       {
         "ability": "Dragon Time"
