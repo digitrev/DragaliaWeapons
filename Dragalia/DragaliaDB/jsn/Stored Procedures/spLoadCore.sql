@@ -1478,7 +1478,7 @@ BEGIN
 			WHEN 'UniqueGrowMaterial1'
 				THEN amc.UniqueGrowMaterialId1
 			WHEN 'UniqueGrowMaterial2'
-				THEN amc.UniqueGrowMaterial2
+				THEN amc.UniqueGrowMaterialId2
 			ELSE mc.MaterialID
 			END
 		,mc.MaterialQuantity
