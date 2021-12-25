@@ -231,6 +231,29 @@ export interface QuestData {
   sortPath: string;
 }
 
+//chests
+export interface ChestDropData {
+  chestDropId: number;
+  materialId: string;
+  material?: MaterialData;
+  quantity: number;
+}
+
+export interface ChestData {
+  chestId: number;
+  questId: number;
+  quest?: QuestData;
+  chestDrops: ChestDropData[];
+}
+
+export interface ChestGroupData {
+  chestGroupId: number;
+  chestGroup: string;
+  frequency: string;
+  quantity: number;
+  chests: ChestData[];
+}
+
 //save/load
 export interface SaveData {
   adventurers: AccountAdventurerData[];

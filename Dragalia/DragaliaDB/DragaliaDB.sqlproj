@@ -87,6 +87,7 @@
     <Folder Include="wpt\Stored Procedures" />
     <Folder Include="cht" />
     <Folder Include="cht\Tables" />
+    <Folder Include="cht\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -197,6 +198,7 @@
     <Build Include="cht\Tables\ChestGroup.sql" />
     <Build Include="den\Stored Procedures\spInitializeCht.sql" />
     <Build Include="den\Stored Procedures\spLoadCht.sql" />
+    <Build Include="cht\Stored Procedures\spChestGroupJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />
