@@ -11570,6 +11570,18 @@
   {
     "AdventurerID": 10150103,
     "ManaNode": 11,
+    "MaterialID": "104001011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 11,
+    "MaterialID": "104001012",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 11,
     "MaterialID": "Mana",
     "Quantity": 4300
   },
@@ -11630,8 +11642,44 @@
   {
     "AdventurerID": 10150103,
     "ManaNode": 21,
+    "MaterialID": "104001011",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 21,
+    "MaterialID": "104001012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 21,
+    "MaterialID": "104001013",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 21,
     "MaterialID": "Mana",
     "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 22,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 22,
+    "MaterialID": "104001011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 22,
+    "MaterialID": "104001012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
@@ -11666,6 +11714,24 @@
   {
     "AdventurerID": 10150103,
     "ManaNode": 27,
+    "MaterialID": "104001011",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 27,
+    "MaterialID": "104001012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 27,
+    "MaterialID": "104001013",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 27,
     "MaterialID": "Mana",
     "Quantity": 6000
   },
@@ -11684,8 +11750,56 @@
   {
     "AdventurerID": 10150103,
     "ManaNode": 30,
+    "MaterialID": "104001011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 30,
+    "MaterialID": "104002011",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 30,
+    "MaterialID": "104002012",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 31,
+    "MaterialID": "104001012",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 31,
+    "MaterialID": "104001013",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 31,
+    "MaterialID": "104002011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 31,
+    "MaterialID": "104002012",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10150103,
@@ -11698,6 +11812,24 @@
     "ManaNode": 32,
     "MaterialID": "Mana",
     "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 33,
+    "MaterialID": "104001011",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 33,
+    "MaterialID": "104002011",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 33,
+    "MaterialID": "104002012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
@@ -11726,6 +11858,24 @@
   {
     "AdventurerID": 10150103,
     "ManaNode": 37,
+    "MaterialID": "104001011",
+    "Quantity": 50
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 37,
+    "MaterialID": "104001012",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 37,
+    "MaterialID": "104001013",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 37,
     "MaterialID": "Mana",
     "Quantity": 11000
   },
@@ -11744,8 +11894,62 @@
   {
     "AdventurerID": 10150103,
     "ManaNode": 40,
+    "MaterialID": "104001011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 40,
+    "MaterialID": "104002011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 40,
+    "MaterialID": "104002012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 40,
     "MaterialID": "Mana",
     "Quantity": 12500
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 41,
+    "MaterialID": "104001012",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 41,
+    "MaterialID": "104001013",
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 41,
+    "MaterialID": "104002011",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 41,
+    "MaterialID": "104002012",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
@@ -11762,6 +11966,24 @@
   {
     "AdventurerID": 10150103,
     "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 43,
+    "MaterialID": "104001013",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 43,
     "MaterialID": "Mana",
     "Quantity": 30000
   },
@@ -11773,9 +11995,51 @@
   },
   {
     "AdventurerID": 10150103,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 47,
+    "MaterialID": "104002011",
+    "Quantity": 35
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 47,
+    "MaterialID": "104002012",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 47,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
     "ManaNode": 47,
     "MaterialID": "Mana",
     "Quantity": 32000
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
   },
   {
     "AdventurerID": 10150103,
@@ -11786,122 +12050,284 @@
   {
     "AdventurerID": 10150103,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 52,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 52,
+    "MaterialID": "208010031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 55,
+    "MaterialID": "208010031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 56,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 56,
+    "MaterialID": "208010031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 59,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 59,
+    "MaterialID": "208010031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 60,
+    "MaterialID": "208010031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 60,
+    "MaterialID": "208010032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 61,
+    "MaterialID": "208010032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 62,
+    "MaterialID": "208010032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 63,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 63,
+    "MaterialID": "208010031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 63,
+    "MaterialID": "208010032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 64,
+    "MaterialID": "208010032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 65,
+    "MaterialID": "201002032",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 65,
+    "MaterialID": "208010031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 65,
+    "MaterialID": "208010032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 66,
+    "MaterialID": "208010032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 67,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 67,
+    "MaterialID": "208010031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 67,
+    "MaterialID": "208010032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 68,
+    "MaterialID": "208010032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208010031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 69,
+    "MaterialID": "208010032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150103,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "104001001",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 70,
+    "MaterialID": "104001014",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 70,
+    "MaterialID": "208010031",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150103,
+    "ManaNode": 70,
+    "MaterialID": "208010032",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10150104,
@@ -17727,13 +18153,13 @@
     "AdventurerID": 10150303,
     "ManaNode": 11,
     "MaterialID": "104001031",
-    "Quantity": 15
+    "Quantity": 25
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 11,
     "MaterialID": "104001032",
-    "Quantity": 3
+    "Quantity": 4
   },
   {
     "AdventurerID": 10150303,
@@ -17794,6 +18220,24 @@
     "ManaNode": 20,
     "MaterialID": "Mana",
     "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 21,
+    "MaterialID": "104001031",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 21,
+    "MaterialID": "104001032",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 21,
+    "MaterialID": "104001033",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
@@ -17908,6 +18352,36 @@
     "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 31,
+    "MaterialID": "104001032",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 31,
+    "MaterialID": "104001033",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 31,
+    "MaterialID": "104002031",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 31,
+    "MaterialID": "104002032",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10150303,
@@ -18027,7 +18501,7 @@
     "AdventurerID": 10150303,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 2
+    "Quantity": 5
   },
   {
     "AdventurerID": 10150303,
@@ -18039,7 +18513,25 @@
     "AdventurerID": 10150303,
     "ManaNode": 41,
     "MaterialID": "104001033",
-    "Quantity": 7
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 41,
+    "MaterialID": "104002031",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 41,
+    "MaterialID": "104002032",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
@@ -18140,8 +18632,8 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
@@ -18158,20 +18650,20 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030051",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
@@ -18182,8 +18674,8 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "208030051",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
@@ -18200,20 +18692,20 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "208030051",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
@@ -18230,8 +18722,8 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030051",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
@@ -18242,20 +18734,38 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "208030051",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 60,
+    "MaterialID": "208030052",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 61,
+    "MaterialID": "208030052",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 62,
+    "MaterialID": "208030052",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
@@ -18272,14 +18782,26 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030051",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 63,
+    "MaterialID": "208030052",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 64,
+    "MaterialID": "208030052",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150303,
@@ -18296,14 +18818,26 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "208030051",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 65,
+    "MaterialID": "208030052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 66,
+    "MaterialID": "208030052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
@@ -18320,20 +18854,38 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030051",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 67,
+    "MaterialID": "208030052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 68,
+    "MaterialID": "208030052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030051",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 69,
+    "MaterialID": "208030052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150303,
@@ -18350,8 +18902,14 @@
   {
     "AdventurerID": 10150303,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "208030051",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150303,
+    "ManaNode": 70,
+    "MaterialID": "208030052",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10150304,
@@ -23102,6 +23660,18 @@
   {
     "AdventurerID": 10150501,
     "ManaNode": 11,
+    "MaterialID": "104001051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 11,
+    "MaterialID": "104001052",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 11,
     "MaterialID": "Mana",
     "Quantity": 4300
   },
@@ -23162,8 +23732,44 @@
   {
     "AdventurerID": 10150501,
     "ManaNode": 21,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 21,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 21,
+    "MaterialID": "104001053",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 21,
     "MaterialID": "Mana",
     "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 22,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 22,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 22,
+    "MaterialID": "104001052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
@@ -23198,6 +23804,24 @@
   {
     "AdventurerID": 10150501,
     "ManaNode": 27,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 27,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 27,
+    "MaterialID": "104001053",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 27,
     "MaterialID": "Mana",
     "Quantity": 6000
   },
@@ -23216,8 +23840,56 @@
   {
     "AdventurerID": 10150501,
     "ManaNode": 30,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 30,
+    "MaterialID": "104002051",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 30,
+    "MaterialID": "104002052",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 31,
+    "MaterialID": "104001052",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 31,
+    "MaterialID": "104001053",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 31,
+    "MaterialID": "104002051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 31,
+    "MaterialID": "104002052",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10150501,
@@ -23230,6 +23902,24 @@
     "ManaNode": 32,
     "MaterialID": "Mana",
     "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 33,
+    "MaterialID": "104001051",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 33,
+    "MaterialID": "104002051",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 33,
+    "MaterialID": "104002052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
@@ -23258,6 +23948,24 @@
   {
     "AdventurerID": 10150501,
     "ManaNode": 37,
+    "MaterialID": "104001051",
+    "Quantity": 50
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 37,
+    "MaterialID": "104001052",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 37,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 37,
     "MaterialID": "Mana",
     "Quantity": 11000
   },
@@ -23276,8 +23984,62 @@
   {
     "AdventurerID": 10150501,
     "ManaNode": 40,
+    "MaterialID": "104001051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 40,
+    "MaterialID": "104002051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 40,
+    "MaterialID": "104002052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 40,
     "MaterialID": "Mana",
     "Quantity": 12500
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 41,
+    "MaterialID": "104001052",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 41,
+    "MaterialID": "104001053",
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 41,
+    "MaterialID": "104002051",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 41,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
@@ -23294,6 +24056,24 @@
   {
     "AdventurerID": 10150501,
     "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 43,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 43,
     "MaterialID": "Mana",
     "Quantity": 30000
   },
@@ -23305,9 +24085,51 @@
   },
   {
     "AdventurerID": 10150501,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 47,
+    "MaterialID": "104002051",
+    "Quantity": 35
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 47,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 47,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
     "ManaNode": 47,
     "MaterialID": "Mana",
     "Quantity": 32000
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
   },
   {
     "AdventurerID": 10150501,
@@ -23318,122 +24140,284 @@
   {
     "AdventurerID": 10150501,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 52,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 52,
+    "MaterialID": "208050041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 55,
+    "MaterialID": "208050041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 56,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 56,
+    "MaterialID": "208050041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 59,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 59,
+    "MaterialID": "208050041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 60,
+    "MaterialID": "208050041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 60,
+    "MaterialID": "208050042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 61,
+    "MaterialID": "208050042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 62,
+    "MaterialID": "208050042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 63,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 63,
+    "MaterialID": "208050041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 63,
+    "MaterialID": "208050042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 64,
+    "MaterialID": "208050042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 65,
+    "MaterialID": "201002042",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 65,
+    "MaterialID": "208050041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 65,
+    "MaterialID": "208050042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 66,
+    "MaterialID": "208050042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 67,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 67,
+    "MaterialID": "208050041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 67,
+    "MaterialID": "208050042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 68,
+    "MaterialID": "208050042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 69,
+    "MaterialID": "208050042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150501,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "104001001",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 70,
+    "MaterialID": "104001054",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 70,
+    "MaterialID": "208050041",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150501,
+    "ManaNode": 70,
+    "MaterialID": "208050042",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10150502,
@@ -23498,6 +24482,18 @@
   {
     "AdventurerID": 10150502,
     "ManaNode": 11,
+    "MaterialID": "104001051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 11,
+    "MaterialID": "104001052",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 11,
     "MaterialID": "Mana",
     "Quantity": 4300
   },
@@ -23558,8 +24554,44 @@
   {
     "AdventurerID": 10150502,
     "ManaNode": 21,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 21,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 21,
+    "MaterialID": "104001053",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 21,
     "MaterialID": "Mana",
     "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 22,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 22,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 22,
+    "MaterialID": "104001052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
@@ -23594,6 +24626,24 @@
   {
     "AdventurerID": 10150502,
     "ManaNode": 27,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 27,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 27,
+    "MaterialID": "104001053",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 27,
     "MaterialID": "Mana",
     "Quantity": 6000
   },
@@ -23612,8 +24662,56 @@
   {
     "AdventurerID": 10150502,
     "ManaNode": 30,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 30,
+    "MaterialID": "104002051",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 30,
+    "MaterialID": "104002052",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 31,
+    "MaterialID": "104001052",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 31,
+    "MaterialID": "104001053",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 31,
+    "MaterialID": "104002051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 31,
+    "MaterialID": "104002052",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10150502,
@@ -23626,6 +24724,24 @@
     "ManaNode": 32,
     "MaterialID": "Mana",
     "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 33,
+    "MaterialID": "104001051",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 33,
+    "MaterialID": "104002051",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 33,
+    "MaterialID": "104002052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
@@ -23654,6 +24770,24 @@
   {
     "AdventurerID": 10150502,
     "ManaNode": 37,
+    "MaterialID": "104001051",
+    "Quantity": 50
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 37,
+    "MaterialID": "104001052",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 37,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 37,
     "MaterialID": "Mana",
     "Quantity": 11000
   },
@@ -23672,8 +24806,62 @@
   {
     "AdventurerID": 10150502,
     "ManaNode": 40,
+    "MaterialID": "104001051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 40,
+    "MaterialID": "104002051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 40,
+    "MaterialID": "104002052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 40,
     "MaterialID": "Mana",
     "Quantity": 12500
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 41,
+    "MaterialID": "104001052",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 41,
+    "MaterialID": "104001053",
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 41,
+    "MaterialID": "104002051",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 41,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
@@ -23690,6 +24878,24 @@
   {
     "AdventurerID": 10150502,
     "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 43,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 43,
     "MaterialID": "Mana",
     "Quantity": 30000
   },
@@ -23701,9 +24907,51 @@
   },
   {
     "AdventurerID": 10150502,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 47,
+    "MaterialID": "104002051",
+    "Quantity": 35
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 47,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 47,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
     "ManaNode": 47,
     "MaterialID": "Mana",
     "Quantity": 32000
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
   },
   {
     "AdventurerID": 10150502,
@@ -23714,122 +24962,284 @@
   {
     "AdventurerID": 10150502,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 52,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 52,
+    "MaterialID": "208050011",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 55,
+    "MaterialID": "208050011",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 56,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 56,
+    "MaterialID": "208050011",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 59,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 59,
+    "MaterialID": "208050011",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 60,
+    "MaterialID": "208050011",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 60,
+    "MaterialID": "208050012",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 61,
+    "MaterialID": "208050012",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 62,
+    "MaterialID": "208050012",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 63,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 63,
+    "MaterialID": "208050011",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 63,
+    "MaterialID": "208050012",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 64,
+    "MaterialID": "208050012",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 65,
+    "MaterialID": "201002042",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 65,
+    "MaterialID": "208050011",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 65,
+    "MaterialID": "208050012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 66,
+    "MaterialID": "208050012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 67,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 67,
+    "MaterialID": "208050011",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 67,
+    "MaterialID": "208050012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 68,
+    "MaterialID": "208050012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050011",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 69,
+    "MaterialID": "208050012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10150502,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "104001001",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 70,
+    "MaterialID": "104001054",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 70,
+    "MaterialID": "208050011",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10150502,
+    "ManaNode": 70,
+    "MaterialID": "208050012",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10150503,
@@ -37611,13 +39021,13 @@
     "AdventurerID": 10250301,
     "ManaNode": 11,
     "MaterialID": "104001031",
-    "Quantity": 15
+    "Quantity": 25
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 11,
     "MaterialID": "104001032",
-    "Quantity": 3
+    "Quantity": 4
   },
   {
     "AdventurerID": 10250301,
@@ -37678,6 +39088,24 @@
     "ManaNode": 20,
     "MaterialID": "Mana",
     "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 21,
+    "MaterialID": "104001031",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 21,
+    "MaterialID": "104001032",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 21,
+    "MaterialID": "104001033",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
@@ -37792,6 +39220,36 @@
     "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 31,
+    "MaterialID": "104001032",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 31,
+    "MaterialID": "104001033",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 31,
+    "MaterialID": "104002031",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 31,
+    "MaterialID": "104002032",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10250301,
@@ -37911,7 +39369,7 @@
     "AdventurerID": 10250301,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 2
+    "Quantity": 5
   },
   {
     "AdventurerID": 10250301,
@@ -37923,7 +39381,25 @@
     "AdventurerID": 10250301,
     "ManaNode": 41,
     "MaterialID": "104001033",
-    "Quantity": 7
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 41,
+    "MaterialID": "104002031",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 41,
+    "MaterialID": "104002032",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
@@ -38024,8 +39500,8 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
@@ -38042,20 +39518,20 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030061",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
@@ -38066,8 +39542,8 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "208030061",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
@@ -38084,20 +39560,20 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "208030061",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
@@ -38114,8 +39590,8 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030061",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
@@ -38126,20 +39602,38 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "208030061",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 60,
+    "MaterialID": "208030062",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 61,
+    "MaterialID": "208030062",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 62,
+    "MaterialID": "208030062",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
@@ -38156,14 +39650,26 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030061",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 63,
+    "MaterialID": "208030062",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 64,
+    "MaterialID": "208030062",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250301,
@@ -38180,14 +39686,26 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "208030061",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 65,
+    "MaterialID": "208030062",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 66,
+    "MaterialID": "208030062",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
@@ -38204,20 +39722,38 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030061",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 67,
+    "MaterialID": "208030062",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 68,
+    "MaterialID": "208030062",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030061",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 69,
+    "MaterialID": "208030062",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250301,
@@ -38234,8 +39770,14 @@
   {
     "AdventurerID": 10250301,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "208030061",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10250301,
+    "ManaNode": 70,
+    "MaterialID": "208030062",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10250302,
@@ -41001,13 +42543,13 @@
     "AdventurerID": 10250402,
     "ManaNode": 11,
     "MaterialID": "104001041",
-    "Quantity": 15
+    "Quantity": 25
   },
   {
     "AdventurerID": 10250402,
     "ManaNode": 11,
     "MaterialID": "104001042",
-    "Quantity": 3
+    "Quantity": 4
   },
   {
     "AdventurerID": 10250402,
@@ -41068,6 +42610,24 @@
     "ManaNode": 20,
     "MaterialID": "Mana",
     "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 21,
+    "MaterialID": "104001041",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 21,
+    "MaterialID": "104001042",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 21,
+    "MaterialID": "104001043",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250402,
@@ -41182,6 +42742,36 @@
     "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 31,
+    "MaterialID": "104001042",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 31,
+    "MaterialID": "104001043",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 31,
+    "MaterialID": "104002041",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 31,
+    "MaterialID": "104002042",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10250402,
@@ -41301,7 +42891,7 @@
     "AdventurerID": 10250402,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 2
+    "Quantity": 5
   },
   {
     "AdventurerID": 10250402,
@@ -41313,7 +42903,25 @@
     "AdventurerID": 10250402,
     "ManaNode": 41,
     "MaterialID": "104001043",
-    "Quantity": 7
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 41,
+    "MaterialID": "104002041",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 41,
+    "MaterialID": "104002042",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10250402,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10250402,
@@ -41415,7 +43023,7 @@
     "AdventurerID": 10250402,
     "ManaNode": 51,
     "MaterialID": "208040021",
-    "Quantity": 1
+    "Quantity": 2
   },
   {
     "AdventurerID": 10250402,
@@ -44707,6 +46315,66 @@
   },
   {
     "AdventurerID": 10250504,
+    "ManaNode": 1,
+    "MaterialID": "Mana",
+    "Quantity": 450
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 2,
+    "MaterialID": "Mana",
+    "Quantity": 550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 3,
+    "MaterialID": "Mana",
+    "Quantity": 450
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 4,
+    "MaterialID": "Mana",
+    "Quantity": 550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 5,
+    "MaterialID": "Mana",
+    "Quantity": 450
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 6,
+    "MaterialID": "Mana",
+    "Quantity": 550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 7,
+    "MaterialID": "Mana",
+    "Quantity": 650
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 8,
+    "MaterialID": "Mana",
+    "Quantity": 450
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 9,
+    "MaterialID": "Mana",
+    "Quantity": 550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 10,
+    "MaterialID": "Mana",
+    "Quantity": 800
+  },
+  {
+    "AdventurerID": 10250504,
     "ManaNode": 11,
     "MaterialID": "104001051",
     "Quantity": 10
@@ -44716,6 +46384,66 @@
     "ManaNode": 11,
     "MaterialID": "104001052",
     "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 11,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 12,
+    "MaterialID": "Mana",
+    "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 13,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 14,
+    "MaterialID": "Mana",
+    "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 15,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 16,
+    "MaterialID": "Mana",
+    "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 17,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 18,
+    "MaterialID": "Mana",
+    "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 19,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 20,
+    "MaterialID": "Mana",
+    "Quantity": 1950
   },
   {
     "AdventurerID": 10250504,
@@ -44734,6 +46462,120 @@
     "ManaNode": 21,
     "MaterialID": "104001053",
     "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 21,
+    "MaterialID": "Mana",
+    "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 22,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 22,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 22,
+    "MaterialID": "104001052",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 22,
+    "MaterialID": "Mana",
+    "Quantity": 8100
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 23,
+    "MaterialID": "Mana",
+    "Quantity": 4000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 24,
+    "MaterialID": "Mana",
+    "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 25,
+    "MaterialID": "Mana",
+    "Quantity": 4000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 26,
+    "MaterialID": "Mana",
+    "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 27,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 27,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 27,
+    "MaterialID": "104001053",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 27,
+    "MaterialID": "Mana",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 28,
+    "MaterialID": "Mana",
+    "Quantity": 4000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 29,
+    "MaterialID": "Mana",
+    "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 30,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 30,
+    "MaterialID": "104002051",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 30,
+    "MaterialID": "104002052",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 30,
+    "MaterialID": "Mana",
+    "Quantity": 7000
   },
   {
     "AdventurerID": 10250504,
@@ -44767,15 +46609,117 @@
   },
   {
     "AdventurerID": 10250504,
+    "ManaNode": 31,
+    "MaterialID": "Mana",
+    "Quantity": 6200
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 32,
+    "MaterialID": "Mana",
+    "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 33,
+    "MaterialID": "104001051",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 33,
+    "MaterialID": "104002051",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 33,
+    "MaterialID": "104002052",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 33,
+    "MaterialID": "Mana",
+    "Quantity": 9500
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 34,
+    "MaterialID": "Mana",
+    "Quantity": 6200
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 35,
+    "MaterialID": "Mana",
+    "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 36,
+    "MaterialID": "Mana",
+    "Quantity": 6200
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 37,
+    "MaterialID": "104001051",
+    "Quantity": 50
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 37,
+    "MaterialID": "104001052",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 37,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 37,
+    "MaterialID": "Mana",
+    "Quantity": 11000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 38,
+    "MaterialID": "Mana",
+    "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 39,
+    "MaterialID": "Mana",
+    "Quantity": 6200
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 40,
+    "MaterialID": "Mana",
+    "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10250504,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 3
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 41,
+    "MaterialID": "104001052",
+    "Quantity": 20
   },
   {
     "AdventurerID": 10250504,
     "ManaNode": 41,
     "MaterialID": "104001053",
-    "Quantity": 7
+    "Quantity": 14
   },
   {
     "AdventurerID": 10250504,
@@ -44794,6 +46738,102 @@
     "ManaNode": 41,
     "MaterialID": "104003002",
     "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 41,
+    "MaterialID": "Mana",
+    "Quantity": 21500
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 42,
+    "MaterialID": "Mana",
+    "Quantity": 10500
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 43,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 43,
+    "MaterialID": "Mana",
+    "Quantity": 30000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 44,
+    "MaterialID": "Mana",
+    "Quantity": 8500
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 47,
+    "MaterialID": "104002051",
+    "Quantity": 35
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 47,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 47,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 47,
+    "MaterialID": "Mana",
+    "Quantity": 32000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
+  },
+  {
+    "AdventurerID": 10250504,
+    "ManaNode": 50,
+    "MaterialID": "Mana",
+    "Quantity": 10500
   },
   {
     "AdventurerID": 10330101,
@@ -55344,6 +57384,828 @@
     "Quantity": 150000
   },
   {
+    "AdventurerID": 10350102,
+    "ManaNode": 1,
+    "MaterialID": "Mana",
+    "Quantity": 450
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 2,
+    "MaterialID": "Mana",
+    "Quantity": 550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 3,
+    "MaterialID": "Mana",
+    "Quantity": 450
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 4,
+    "MaterialID": "Mana",
+    "Quantity": 550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 5,
+    "MaterialID": "Mana",
+    "Quantity": 450
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 6,
+    "MaterialID": "Mana",
+    "Quantity": 550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 7,
+    "MaterialID": "Mana",
+    "Quantity": 650
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 8,
+    "MaterialID": "Mana",
+    "Quantity": 450
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 9,
+    "MaterialID": "Mana",
+    "Quantity": 550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 10,
+    "MaterialID": "Mana",
+    "Quantity": 800
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 11,
+    "MaterialID": "104001011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 11,
+    "MaterialID": "104001012",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 11,
+    "MaterialID": "Mana",
+    "Quantity": 4300
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 12,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 13,
+    "MaterialID": "Mana",
+    "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 14,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 15,
+    "MaterialID": "Mana",
+    "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 16,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 17,
+    "MaterialID": "Mana",
+    "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 18,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 19,
+    "MaterialID": "Mana",
+    "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 20,
+    "MaterialID": "Mana",
+    "Quantity": 1550
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 21,
+    "MaterialID": "104001011",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 21,
+    "MaterialID": "104001012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 21,
+    "MaterialID": "104001013",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 21,
+    "MaterialID": "Mana",
+    "Quantity": 4000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 22,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 22,
+    "MaterialID": "104001011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 22,
+    "MaterialID": "104001012",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 22,
+    "MaterialID": "Mana",
+    "Quantity": 8100
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 23,
+    "MaterialID": "Mana",
+    "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 24,
+    "MaterialID": "Mana",
+    "Quantity": 4000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 25,
+    "MaterialID": "Mana",
+    "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 26,
+    "MaterialID": "Mana",
+    "Quantity": 4000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 27,
+    "MaterialID": "104001011",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 27,
+    "MaterialID": "104001012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 27,
+    "MaterialID": "104001013",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 27,
+    "MaterialID": "Mana",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 28,
+    "MaterialID": "Mana",
+    "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 29,
+    "MaterialID": "Mana",
+    "Quantity": 4000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 30,
+    "MaterialID": "104001011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 30,
+    "MaterialID": "104002011",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 30,
+    "MaterialID": "104002012",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 30,
+    "MaterialID": "Mana",
+    "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 31,
+    "MaterialID": "104001012",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 31,
+    "MaterialID": "104001013",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 31,
+    "MaterialID": "104002011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 31,
+    "MaterialID": "104002012",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 31,
+    "MaterialID": "Mana",
+    "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 32,
+    "MaterialID": "Mana",
+    "Quantity": 6200
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 33,
+    "MaterialID": "104001011",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 33,
+    "MaterialID": "104002011",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 33,
+    "MaterialID": "104002012",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 33,
+    "MaterialID": "Mana",
+    "Quantity": 9500
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 34,
+    "MaterialID": "Mana",
+    "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 35,
+    "MaterialID": "Mana",
+    "Quantity": 6200
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 36,
+    "MaterialID": "Mana",
+    "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 37,
+    "MaterialID": "104001011",
+    "Quantity": 50
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 37,
+    "MaterialID": "104001012",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 37,
+    "MaterialID": "104001013",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 37,
+    "MaterialID": "Mana",
+    "Quantity": 11000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 38,
+    "MaterialID": "Mana",
+    "Quantity": 6200
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 39,
+    "MaterialID": "Mana",
+    "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 40,
+    "MaterialID": "104001011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 40,
+    "MaterialID": "104002011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 40,
+    "MaterialID": "104002012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 40,
+    "MaterialID": "Mana",
+    "Quantity": 12500
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 41,
+    "MaterialID": "104001012",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 41,
+    "MaterialID": "104001013",
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 41,
+    "MaterialID": "104002011",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 41,
+    "MaterialID": "104002012",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 41,
+    "MaterialID": "Mana",
+    "Quantity": 21500
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 42,
+    "MaterialID": "Mana",
+    "Quantity": 10500
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 43,
+    "MaterialID": "104001013",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 43,
+    "MaterialID": "Mana",
+    "Quantity": 30000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 44,
+    "MaterialID": "Mana",
+    "Quantity": 8500
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 47,
+    "MaterialID": "104002011",
+    "Quantity": 35
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 47,
+    "MaterialID": "104002012",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 47,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 47,
+    "MaterialID": "Mana",
+    "Quantity": 32000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 50,
+    "MaterialID": "Mana",
+    "Quantity": 10500
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 51,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 52,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 52,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 52,
+    "MaterialID": "208010021",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 53,
+    "MaterialID": "208010021",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 54,
+    "MaterialID": "208010021",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 55,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 55,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 56,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 56,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 56,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 57,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 58,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 59,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 59,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 59,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 60,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 60,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 60,
+    "MaterialID": "208010022",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 61,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 61,
+    "MaterialID": "208010022",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 62,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 62,
+    "MaterialID": "208010022",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 63,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 63,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 63,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 63,
+    "MaterialID": "208010022",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 64,
+    "MaterialID": "208010021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 64,
+    "MaterialID": "208010022",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 65,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 65,
+    "MaterialID": "201002032",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 65,
+    "MaterialID": "208010021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 65,
+    "MaterialID": "208010022",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 66,
+    "MaterialID": "208010021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 66,
+    "MaterialID": "208010022",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 67,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 67,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 67,
+    "MaterialID": "208010021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 67,
+    "MaterialID": "208010022",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 68,
+    "MaterialID": "208010021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 68,
+    "MaterialID": "208010022",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 69,
+    "MaterialID": "208010021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 69,
+    "MaterialID": "208010022",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 70,
+    "MaterialID": "104001001",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 70,
+    "MaterialID": "104001014",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 70,
+    "MaterialID": "208010021",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350102,
+    "ManaNode": 70,
+    "MaterialID": "208010022",
+    "Quantity": 5
+  },
+  {
     "AdventurerID": 10350103,
     "ManaNode": 1,
     "MaterialID": "Mana",
@@ -58419,13 +61281,13 @@
     "AdventurerID": 10350301,
     "ManaNode": 11,
     "MaterialID": "104001031",
-    "Quantity": 15
+    "Quantity": 25
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 11,
     "MaterialID": "104001032",
-    "Quantity": 3
+    "Quantity": 4
   },
   {
     "AdventurerID": 10350301,
@@ -58486,6 +61348,24 @@
     "ManaNode": 20,
     "MaterialID": "Mana",
     "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 21,
+    "MaterialID": "104001031",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 21,
+    "MaterialID": "104001032",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 21,
+    "MaterialID": "104001033",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
@@ -58600,6 +61480,36 @@
     "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 31,
+    "MaterialID": "104001032",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 31,
+    "MaterialID": "104001033",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 31,
+    "MaterialID": "104002031",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 31,
+    "MaterialID": "104002032",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10350301,
@@ -58719,7 +61629,7 @@
     "AdventurerID": 10350301,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 2
+    "Quantity": 5
   },
   {
     "AdventurerID": 10350301,
@@ -58731,7 +61641,25 @@
     "AdventurerID": 10350301,
     "ManaNode": 41,
     "MaterialID": "104001033",
-    "Quantity": 7
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 41,
+    "MaterialID": "104002031",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 41,
+    "MaterialID": "104002032",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
@@ -58832,8 +61760,8 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
@@ -58850,20 +61778,20 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
@@ -58874,8 +61802,8 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "208030041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
@@ -58892,20 +61820,20 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "208030041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
@@ -58922,8 +61850,8 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
@@ -58934,20 +61862,38 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "208030041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 60,
+    "MaterialID": "208030042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 61,
+    "MaterialID": "208030042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 62,
+    "MaterialID": "208030042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
@@ -58964,14 +61910,26 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 63,
+    "MaterialID": "208030042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 64,
+    "MaterialID": "208030042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10350301,
@@ -58988,14 +61946,26 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "208030041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 65,
+    "MaterialID": "208030042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 66,
+    "MaterialID": "208030042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
@@ -59012,20 +61982,38 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 67,
+    "MaterialID": "208030042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 68,
+    "MaterialID": "208030042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 69,
+    "MaterialID": "208030042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10350301,
@@ -59042,8 +62030,14 @@
   {
     "AdventurerID": 10350301,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "208030041",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10350301,
+    "ManaNode": 70,
+    "MaterialID": "208030042",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10350302,
@@ -76677,13 +79671,13 @@
     "AdventurerID": 10450203,
     "ManaNode": 11,
     "MaterialID": "104001021",
-    "Quantity": 15
+    "Quantity": 25
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 11,
     "MaterialID": "104001022",
-    "Quantity": 3
+    "Quantity": 4
   },
   {
     "AdventurerID": 10450203,
@@ -76744,6 +79738,24 @@
     "ManaNode": 20,
     "MaterialID": "Mana",
     "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 21,
+    "MaterialID": "104001021",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 21,
+    "MaterialID": "104001022",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 21,
+    "MaterialID": "104001023",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
@@ -76858,6 +79870,36 @@
     "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 31,
+    "MaterialID": "104001022",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 31,
+    "MaterialID": "104001023",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 31,
+    "MaterialID": "104002021",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 31,
+    "MaterialID": "104002022",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10450203,
@@ -76977,7 +80019,7 @@
     "AdventurerID": 10450203,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 2
+    "Quantity": 5
   },
   {
     "AdventurerID": 10450203,
@@ -76989,7 +80031,25 @@
     "AdventurerID": 10450203,
     "ManaNode": 41,
     "MaterialID": "104001023",
-    "Quantity": 7
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 41,
+    "MaterialID": "104002021",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 41,
+    "MaterialID": "104002022",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
@@ -77090,8 +80150,8 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
@@ -77108,20 +80168,20 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208020031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
@@ -77132,8 +80192,8 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "208020031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
@@ -77150,20 +80210,20 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "208020031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
@@ -77180,8 +80240,8 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208020031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
@@ -77192,20 +80252,38 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "208020031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 60,
+    "MaterialID": "208020032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 61,
+    "MaterialID": "208020032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 62,
+    "MaterialID": "208020032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
@@ -77222,14 +80300,26 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208020031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 63,
+    "MaterialID": "208020032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 64,
+    "MaterialID": "208020032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10450203,
@@ -77246,14 +80336,26 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "208020031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 65,
+    "MaterialID": "208020032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 66,
+    "MaterialID": "208020032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
@@ -77270,20 +80372,38 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208020031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 67,
+    "MaterialID": "208020032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 68,
+    "MaterialID": "208020032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208020031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 69,
+    "MaterialID": "208020032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10450203,
@@ -77300,8 +80420,14 @@
   {
     "AdventurerID": 10450203,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "208020031",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10450203,
+    "ManaNode": 70,
+    "MaterialID": "208020032",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10450204,
@@ -100191,13 +103317,13 @@
     "AdventurerID": 10550302,
     "ManaNode": 11,
     "MaterialID": "104001031",
-    "Quantity": 15
+    "Quantity": 25
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 11,
     "MaterialID": "104001032",
-    "Quantity": 3
+    "Quantity": 4
   },
   {
     "AdventurerID": 10550302,
@@ -100258,6 +103384,24 @@
     "ManaNode": 20,
     "MaterialID": "Mana",
     "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 21,
+    "MaterialID": "104001031",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 21,
+    "MaterialID": "104001032",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 21,
+    "MaterialID": "104001033",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
@@ -100372,6 +103516,36 @@
     "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 31,
+    "MaterialID": "104001032",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 31,
+    "MaterialID": "104001033",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 31,
+    "MaterialID": "104002031",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 31,
+    "MaterialID": "104002032",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10550302,
@@ -100491,7 +103665,7 @@
     "AdventurerID": 10550302,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 2
+    "Quantity": 5
   },
   {
     "AdventurerID": 10550302,
@@ -100503,7 +103677,25 @@
     "AdventurerID": 10550302,
     "ManaNode": 41,
     "MaterialID": "104001033",
-    "Quantity": 7
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 41,
+    "MaterialID": "104002031",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 41,
+    "MaterialID": "104002032",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
@@ -100604,8 +103796,8 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
@@ -100622,20 +103814,20 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
@@ -100646,8 +103838,8 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "208030031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
@@ -100664,20 +103856,20 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "208030031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
@@ -100694,8 +103886,8 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
@@ -100706,20 +103898,38 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "208030031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 60,
+    "MaterialID": "208030032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 61,
+    "MaterialID": "208030032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 62,
+    "MaterialID": "208030032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
@@ -100736,14 +103946,26 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 63,
+    "MaterialID": "208030032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 64,
+    "MaterialID": "208030032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550302,
@@ -100760,14 +103982,26 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "208030031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 65,
+    "MaterialID": "208030032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 66,
+    "MaterialID": "208030032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
@@ -100784,20 +104018,38 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 67,
+    "MaterialID": "208030032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 68,
+    "MaterialID": "208030032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 69,
+    "MaterialID": "208030032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550302,
@@ -100814,8 +104066,14 @@
   {
     "AdventurerID": 10550302,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "208030031",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10550302,
+    "ManaNode": 70,
+    "MaterialID": "208030032",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10550303,
@@ -101961,13 +105219,13 @@
     "AdventurerID": 10550401,
     "ManaNode": 11,
     "MaterialID": "104001041",
-    "Quantity": 15
+    "Quantity": 25
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 11,
     "MaterialID": "104001042",
-    "Quantity": 3
+    "Quantity": 4
   },
   {
     "AdventurerID": 10550401,
@@ -102028,6 +105286,24 @@
     "ManaNode": 20,
     "MaterialID": "Mana",
     "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 21,
+    "MaterialID": "104001041",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 21,
+    "MaterialID": "104001042",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 21,
+    "MaterialID": "104001043",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
@@ -102142,6 +105418,36 @@
     "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 31,
+    "MaterialID": "104001042",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 31,
+    "MaterialID": "104001043",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 31,
+    "MaterialID": "104002041",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 31,
+    "MaterialID": "104002042",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10550401,
@@ -102261,7 +105567,7 @@
     "AdventurerID": 10550401,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 2
+    "Quantity": 5
   },
   {
     "AdventurerID": 10550401,
@@ -102273,7 +105579,25 @@
     "AdventurerID": 10550401,
     "ManaNode": 41,
     "MaterialID": "104001043",
-    "Quantity": 7
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 41,
+    "MaterialID": "104002041",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 41,
+    "MaterialID": "104002042",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
@@ -102374,8 +105698,8 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
@@ -102392,20 +105716,20 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208040041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
@@ -102416,8 +105740,8 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "208040041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
@@ -102434,20 +105758,20 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "208040041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
@@ -102464,8 +105788,8 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208040041",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
@@ -102476,20 +105800,38 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "208040041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 60,
+    "MaterialID": "208040042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 61,
+    "MaterialID": "208040042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 62,
+    "MaterialID": "208040042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
@@ -102506,14 +105848,26 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208040041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 63,
+    "MaterialID": "208040042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 64,
+    "MaterialID": "208040042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10550401,
@@ -102530,14 +105884,26 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "208040041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 65,
+    "MaterialID": "208040042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 66,
+    "MaterialID": "208040042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
@@ -102554,20 +105920,38 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208040041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 67,
+    "MaterialID": "208040042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 68,
+    "MaterialID": "208040042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208040041",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 69,
+    "MaterialID": "208040042",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10550401,
@@ -102584,8 +105968,14 @@
   {
     "AdventurerID": 10550401,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "208040041",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10550401,
+    "ManaNode": 70,
+    "MaterialID": "208040042",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10550402,
@@ -144734,6 +148124,18 @@
   {
     "AdventurerID": 10750502,
     "ManaNode": 11,
+    "MaterialID": "104001051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 11,
+    "MaterialID": "104001052",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 11,
     "MaterialID": "Mana",
     "Quantity": 4300
   },
@@ -144794,8 +148196,44 @@
   {
     "AdventurerID": 10750502,
     "ManaNode": 21,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 21,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 21,
+    "MaterialID": "104001053",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 21,
     "MaterialID": "Mana",
     "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 22,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 22,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 22,
+    "MaterialID": "104001052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
@@ -144830,6 +148268,24 @@
   {
     "AdventurerID": 10750502,
     "ManaNode": 27,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 27,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 27,
+    "MaterialID": "104001053",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 27,
     "MaterialID": "Mana",
     "Quantity": 6000
   },
@@ -144848,8 +148304,56 @@
   {
     "AdventurerID": 10750502,
     "ManaNode": 30,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 30,
+    "MaterialID": "104002051",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 30,
+    "MaterialID": "104002052",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 31,
+    "MaterialID": "104001052",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 31,
+    "MaterialID": "104001053",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 31,
+    "MaterialID": "104002051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 31,
+    "MaterialID": "104002052",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10750502,
@@ -144862,6 +148366,24 @@
     "ManaNode": 32,
     "MaterialID": "Mana",
     "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 33,
+    "MaterialID": "104001051",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 33,
+    "MaterialID": "104002051",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 33,
+    "MaterialID": "104002052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
@@ -144890,6 +148412,24 @@
   {
     "AdventurerID": 10750502,
     "ManaNode": 37,
+    "MaterialID": "104001051",
+    "Quantity": 50
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 37,
+    "MaterialID": "104001052",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 37,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 37,
     "MaterialID": "Mana",
     "Quantity": 11000
   },
@@ -144908,8 +148448,62 @@
   {
     "AdventurerID": 10750502,
     "ManaNode": 40,
+    "MaterialID": "104001051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 40,
+    "MaterialID": "104002051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 40,
+    "MaterialID": "104002052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 40,
     "MaterialID": "Mana",
     "Quantity": 12500
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 41,
+    "MaterialID": "104001052",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 41,
+    "MaterialID": "104001053",
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 41,
+    "MaterialID": "104002051",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 41,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
@@ -144926,6 +148520,24 @@
   {
     "AdventurerID": 10750502,
     "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 43,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 43,
     "MaterialID": "Mana",
     "Quantity": 30000
   },
@@ -144937,9 +148549,51 @@
   },
   {
     "AdventurerID": 10750502,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 47,
+    "MaterialID": "104002051",
+    "Quantity": 35
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 47,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 47,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
     "ManaNode": 47,
     "MaterialID": "Mana",
     "Quantity": 32000
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
   },
   {
     "AdventurerID": 10750502,
@@ -144950,122 +148604,284 @@
   {
     "AdventurerID": 10750502,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 52,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 52,
+    "MaterialID": "208050031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 55,
+    "MaterialID": "208050031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 56,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 56,
+    "MaterialID": "208050031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 59,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 59,
+    "MaterialID": "208050031",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 60,
+    "MaterialID": "208050031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 60,
+    "MaterialID": "208050032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 61,
+    "MaterialID": "208050032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 62,
+    "MaterialID": "208050032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 63,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 63,
+    "MaterialID": "208050031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 63,
+    "MaterialID": "208050032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 64,
+    "MaterialID": "208050032",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 65,
+    "MaterialID": "201002042",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 65,
+    "MaterialID": "208050031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 65,
+    "MaterialID": "208050032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 66,
+    "MaterialID": "208050032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 67,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 67,
+    "MaterialID": "208050031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 67,
+    "MaterialID": "208050032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 68,
+    "MaterialID": "208050032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208050031",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 69,
+    "MaterialID": "208050032",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10750502,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "104001001",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 70,
+    "MaterialID": "104001054",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 70,
+    "MaterialID": "208050031",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10750502,
+    "ManaNode": 70,
+    "MaterialID": "208050032",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10750503,
@@ -152954,6 +156770,18 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 11,
+    "MaterialID": "104001021",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 11,
+    "MaterialID": "104001022",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 11,
     "MaterialID": "Mana",
     "Quantity": 3400
   },
@@ -153014,6 +156842,24 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 21,
+    "MaterialID": "104001021",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 21,
+    "MaterialID": "104001022",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 21,
+    "MaterialID": "104001023",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 21,
     "MaterialID": "Mana",
     "Quantity": 2800
   },
@@ -153028,6 +156874,24 @@
     "ManaNode": 23,
     "MaterialID": "Mana",
     "Quantity": 2800
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 24,
+    "MaterialID": "104001021",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 24,
+    "MaterialID": "104001022",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 24,
+    "MaterialID": "104001023",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10840202,
@@ -153068,8 +156932,56 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 30,
+    "MaterialID": "104001021",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 30,
+    "MaterialID": "104002021",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 30,
+    "MaterialID": "104002022",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 6900
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 31,
+    "MaterialID": "104001022",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 31,
+    "MaterialID": "104001023",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 31,
+    "MaterialID": "104002021",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 31,
+    "MaterialID": "104002022",
+    "Quantity": 8
   },
   {
     "AdventurerID": 10840202,
@@ -153082,6 +156994,24 @@
     "ManaNode": 32,
     "MaterialID": "Mana",
     "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 33,
+    "MaterialID": "104001021",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 33,
+    "MaterialID": "104002021",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 33,
+    "MaterialID": "104002022",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10840202,
@@ -153110,6 +157040,24 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 37,
+    "MaterialID": "104001021",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 37,
+    "MaterialID": "104001022",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 37,
+    "MaterialID": "104001023",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 37,
     "MaterialID": "Mana",
     "Quantity": 9000
   },
@@ -153128,8 +157076,62 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 40,
+    "MaterialID": "104001021",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 40,
+    "MaterialID": "104002021",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 40,
+    "MaterialID": "104002022",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 40,
     "MaterialID": "Mana",
     "Quantity": 10000
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 41,
+    "MaterialID": "104001022",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 41,
+    "MaterialID": "104001023",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 41,
+    "MaterialID": "104002021",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 41,
+    "MaterialID": "104002022",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 41,
+    "MaterialID": "104003001",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10840202,
@@ -153152,6 +157154,24 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 43,
+    "MaterialID": "104001023",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 43,
     "MaterialID": "Mana",
     "Quantity": 30000
   },
@@ -153163,9 +157183,51 @@
   },
   {
     "AdventurerID": 10840202,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 47,
+    "MaterialID": "104002021",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 47,
+    "MaterialID": "104002022",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 47,
+    "MaterialID": "104003001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840202,
     "ManaNode": 47,
     "MaterialID": "Mana",
     "Quantity": 25000
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
   },
   {
     "AdventurerID": 10840202,
@@ -153177,7 +157239,19 @@
     "AdventurerID": 10840202,
     "ManaNode": 51,
     "MaterialID": "208020021",
-    "Quantity": 1
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 52,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 52,
+    "MaterialID": "104001024",
+    "Quantity": 4
   },
   {
     "AdventurerID": 10840202,
@@ -153200,8 +157274,26 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 55,
+    "MaterialID": "104001024",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 55,
+    "MaterialID": "104003001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 55,
     "MaterialID": "208020021",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 56,
+    "MaterialID": "104001024",
+    "Quantity": 4
   },
   {
     "AdventurerID": 10840202,
@@ -153224,8 +157316,32 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 59,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 59,
+    "MaterialID": "104001024",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 59,
     "MaterialID": "208020021",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 60,
+    "MaterialID": "104001024",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 60,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10840202,
@@ -153266,6 +157382,18 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 63,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 63,
+    "MaterialID": "104001024",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 63,
     "MaterialID": "208020021",
     "Quantity": 2
   },
@@ -153290,6 +157418,24 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 65,
+    "MaterialID": "104001024",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 65,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 65,
+    "MaterialID": "201002012",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 65,
     "MaterialID": "208020021",
     "Quantity": 3
   },
@@ -153314,6 +157460,18 @@
   {
     "AdventurerID": 10840202,
     "ManaNode": 67,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 67,
+    "MaterialID": "104001024",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 67,
     "MaterialID": "208020021",
     "Quantity": 3
   },
@@ -153346,6 +157504,18 @@
     "ManaNode": 69,
     "MaterialID": "208020022",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 70,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840202,
+    "ManaNode": 70,
+    "MaterialID": "104001024",
+    "Quantity": 8
   },
   {
     "AdventurerID": 10840202,
@@ -155630,6 +159800,18 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 11,
+    "MaterialID": "104001041",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 11,
+    "MaterialID": "104001042",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 11,
     "MaterialID": "Mana",
     "Quantity": 3400
   },
@@ -155690,6 +159872,24 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 21,
+    "MaterialID": "104001041",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 21,
+    "MaterialID": "104001042",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 21,
+    "MaterialID": "104001043",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 21,
     "MaterialID": "Mana",
     "Quantity": 2800
   },
@@ -155704,6 +159904,24 @@
     "ManaNode": 23,
     "MaterialID": "Mana",
     "Quantity": 2800
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 24,
+    "MaterialID": "104001041",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 24,
+    "MaterialID": "104001042",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 24,
+    "MaterialID": "104001043",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10840402,
@@ -155744,8 +159962,56 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 30,
+    "MaterialID": "104001041",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 30,
+    "MaterialID": "104002041",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 30,
+    "MaterialID": "104002042",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 6900
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 31,
+    "MaterialID": "104001042",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 31,
+    "MaterialID": "104001043",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 31,
+    "MaterialID": "104002041",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 31,
+    "MaterialID": "104002042",
+    "Quantity": 8
   },
   {
     "AdventurerID": 10840402,
@@ -155758,6 +160024,24 @@
     "ManaNode": 32,
     "MaterialID": "Mana",
     "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 33,
+    "MaterialID": "104001041",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 33,
+    "MaterialID": "104002041",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 33,
+    "MaterialID": "104002042",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10840402,
@@ -155786,6 +160070,24 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 37,
+    "MaterialID": "104001041",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 37,
+    "MaterialID": "104001042",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 37,
+    "MaterialID": "104001043",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 37,
     "MaterialID": "Mana",
     "Quantity": 9000
   },
@@ -155804,8 +160106,62 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 40,
+    "MaterialID": "104001041",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 40,
+    "MaterialID": "104002041",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 40,
+    "MaterialID": "104002042",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 40,
     "MaterialID": "Mana",
     "Quantity": 10000
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 41,
+    "MaterialID": "104001042",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 41,
+    "MaterialID": "104001043",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 41,
+    "MaterialID": "104002041",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 41,
+    "MaterialID": "104002042",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 41,
+    "MaterialID": "104003001",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10840402,
@@ -155828,6 +160184,24 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 43,
+    "MaterialID": "104001043",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 43,
     "MaterialID": "Mana",
     "Quantity": 30000
   },
@@ -155839,9 +160213,51 @@
   },
   {
     "AdventurerID": 10840402,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 47,
+    "MaterialID": "104002041",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 47,
+    "MaterialID": "104002042",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 47,
+    "MaterialID": "104003001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840402,
     "ManaNode": 47,
     "MaterialID": "Mana",
     "Quantity": 25000
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
   },
   {
     "AdventurerID": 10840402,
@@ -155853,7 +160269,19 @@
     "AdventurerID": 10840402,
     "ManaNode": 51,
     "MaterialID": "208040031",
-    "Quantity": 1
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 52,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 52,
+    "MaterialID": "104001044",
+    "Quantity": 4
   },
   {
     "AdventurerID": 10840402,
@@ -155876,8 +160304,26 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 55,
+    "MaterialID": "104001044",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 55,
+    "MaterialID": "104003001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 55,
     "MaterialID": "208040031",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 56,
+    "MaterialID": "104001044",
+    "Quantity": 4
   },
   {
     "AdventurerID": 10840402,
@@ -155900,8 +160346,32 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 59,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 59,
+    "MaterialID": "104001044",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 59,
     "MaterialID": "208040031",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 60,
+    "MaterialID": "104001044",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 60,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10840402,
@@ -155942,6 +160412,18 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 63,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 63,
+    "MaterialID": "104001044",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 63,
     "MaterialID": "208040031",
     "Quantity": 2
   },
@@ -155966,6 +160448,24 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 65,
+    "MaterialID": "104001044",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 65,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 65,
+    "MaterialID": "201002052",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 65,
     "MaterialID": "208040031",
     "Quantity": 3
   },
@@ -155990,6 +160490,18 @@
   {
     "AdventurerID": 10840402,
     "ManaNode": 67,
+    "MaterialID": "104001001",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 67,
+    "MaterialID": "104001044",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 67,
     "MaterialID": "208040031",
     "Quantity": 3
   },
@@ -156022,6 +160534,18 @@
     "ManaNode": 69,
     "MaterialID": "208040032",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 70,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10840402,
+    "ManaNode": 70,
+    "MaterialID": "104001044",
+    "Quantity": 8
   },
   {
     "AdventurerID": 10840402,
@@ -158312,6 +162836,18 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 11,
+    "MaterialID": "104001011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 11,
+    "MaterialID": "104001012",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 11,
     "MaterialID": "Mana",
     "Quantity": 4300
   },
@@ -158372,8 +162908,44 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 21,
+    "MaterialID": "104001011",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 21,
+    "MaterialID": "104001012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 21,
+    "MaterialID": "104001013",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 21,
     "MaterialID": "Mana",
     "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 22,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 22,
+    "MaterialID": "104001011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 22,
+    "MaterialID": "104001012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850102,
@@ -158408,6 +162980,24 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 27,
+    "MaterialID": "104001011",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 27,
+    "MaterialID": "104001012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 27,
+    "MaterialID": "104001013",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 27,
     "MaterialID": "Mana",
     "Quantity": 6000
   },
@@ -158426,8 +163016,56 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 30,
+    "MaterialID": "104001011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 30,
+    "MaterialID": "104002011",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 30,
+    "MaterialID": "104002012",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 31,
+    "MaterialID": "104001012",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 31,
+    "MaterialID": "104001013",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 31,
+    "MaterialID": "104002011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 31,
+    "MaterialID": "104002012",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10850102,
@@ -158440,6 +163078,24 @@
     "ManaNode": 32,
     "MaterialID": "Mana",
     "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 33,
+    "MaterialID": "104001011",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 33,
+    "MaterialID": "104002011",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 33,
+    "MaterialID": "104002012",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850102,
@@ -158468,6 +163124,24 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 37,
+    "MaterialID": "104001011",
+    "Quantity": 50
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 37,
+    "MaterialID": "104001012",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 37,
+    "MaterialID": "104001013",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 37,
     "MaterialID": "Mana",
     "Quantity": 11000
   },
@@ -158486,8 +163160,62 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 40,
+    "MaterialID": "104001011",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 40,
+    "MaterialID": "104002011",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 40,
+    "MaterialID": "104002012",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 40,
     "MaterialID": "Mana",
     "Quantity": 12500
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 41,
+    "MaterialID": "104001012",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 41,
+    "MaterialID": "104001013",
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 41,
+    "MaterialID": "104002011",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 41,
+    "MaterialID": "104002012",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850102,
@@ -158504,6 +163232,24 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 43,
+    "MaterialID": "104001013",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 43,
     "MaterialID": "Mana",
     "Quantity": 30000
   },
@@ -158515,9 +163261,51 @@
   },
   {
     "AdventurerID": 10850102,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 47,
+    "MaterialID": "104002011",
+    "Quantity": 35
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 47,
+    "MaterialID": "104002012",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 47,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850102,
     "ManaNode": 47,
     "MaterialID": "Mana",
     "Quantity": 32000
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
   },
   {
     "AdventurerID": 10850102,
@@ -158529,7 +163317,19 @@
     "AdventurerID": 10850102,
     "ManaNode": 51,
     "MaterialID": "208010011",
-    "Quantity": 1
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 52,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 52,
+    "MaterialID": "104001014",
+    "Quantity": 6
   },
   {
     "AdventurerID": 10850102,
@@ -158552,8 +163352,26 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 55,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 55,
     "MaterialID": "208010011",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 56,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 56,
+    "MaterialID": "104001014",
+    "Quantity": 6
   },
   {
     "AdventurerID": 10850102,
@@ -158576,8 +163394,26 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 59,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 59,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 59,
     "MaterialID": "208010011",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 60,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850102,
@@ -158618,6 +163454,18 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 63,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 63,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 63,
     "MaterialID": "208010011",
     "Quantity": 2
   },
@@ -158642,6 +163490,18 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 65,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 65,
+    "MaterialID": "201002032",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 65,
     "MaterialID": "208010011",
     "Quantity": 3
   },
@@ -158666,6 +163526,18 @@
   {
     "AdventurerID": 10850102,
     "ManaNode": 67,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 67,
+    "MaterialID": "104001014",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 67,
     "MaterialID": "208010011",
     "Quantity": 3
   },
@@ -158698,6 +163570,18 @@
     "ManaNode": 69,
     "MaterialID": "208010012",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 70,
+    "MaterialID": "104001001",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10850102,
+    "ManaNode": 70,
+    "MaterialID": "104001014",
+    "Quantity": 12
   },
   {
     "AdventurerID": 10850102,
@@ -161475,13 +166359,13 @@
     "AdventurerID": 10850301,
     "ManaNode": 11,
     "MaterialID": "104001031",
-    "Quantity": 15
+    "Quantity": 25
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 11,
     "MaterialID": "104001032",
-    "Quantity": 3
+    "Quantity": 4
   },
   {
     "AdventurerID": 10850301,
@@ -161542,6 +166426,24 @@
     "ManaNode": 20,
     "MaterialID": "Mana",
     "Quantity": 1950
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 21,
+    "MaterialID": "104001031",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 21,
+    "MaterialID": "104001032",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 21,
+    "MaterialID": "104001033",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
@@ -161656,6 +166558,36 @@
     "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 31,
+    "MaterialID": "104001032",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 31,
+    "MaterialID": "104001033",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 31,
+    "MaterialID": "104002031",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 31,
+    "MaterialID": "104002032",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10850301,
@@ -161775,7 +166707,7 @@
     "AdventurerID": 10850301,
     "ManaNode": 41,
     "MaterialID": "104001001",
-    "Quantity": 2
+    "Quantity": 5
   },
   {
     "AdventurerID": 10850301,
@@ -161787,7 +166719,25 @@
     "AdventurerID": 10850301,
     "ManaNode": 41,
     "MaterialID": "104001033",
-    "Quantity": 7
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 41,
+    "MaterialID": "104002031",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 41,
+    "MaterialID": "104002032",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
@@ -161888,8 +166838,8 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 51,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
@@ -161906,20 +166856,20 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 52,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030021",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 53,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 54,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
@@ -161930,8 +166880,8 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 55,
-    "MaterialID": "Mana",
-    "Quantity": 37500
+    "MaterialID": "208030021",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
@@ -161948,20 +166898,20 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 56,
-    "MaterialID": "Mana",
-    "Quantity": 70000
+    "MaterialID": "208030021",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 57,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 58,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
@@ -161978,8 +166928,8 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 59,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030021",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
@@ -161990,20 +166940,38 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 60,
-    "MaterialID": "Mana",
-    "Quantity": 75000
+    "MaterialID": "208030021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 60,
+    "MaterialID": "208030022",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 61,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 61,
+    "MaterialID": "208030022",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 62,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 62,
+    "MaterialID": "208030022",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
@@ -162020,14 +166988,26 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 63,
-    "MaterialID": "Mana",
-    "Quantity": 30000
+    "MaterialID": "208030021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 63,
+    "MaterialID": "208030022",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 64,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 64,
+    "MaterialID": "208030022",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850301,
@@ -162044,14 +167024,26 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 65,
-    "MaterialID": "Mana",
-    "Quantity": 112500
+    "MaterialID": "208030021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 65,
+    "MaterialID": "208030022",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 66,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 66,
+    "MaterialID": "208030022",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
@@ -162068,20 +167060,38 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 67,
-    "MaterialID": "Mana",
-    "Quantity": 45000
+    "MaterialID": "208030021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 67,
+    "MaterialID": "208030022",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 68,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 68,
+    "MaterialID": "208030022",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
     "ManaNode": 69,
-    "MaterialID": "Mana",
-    "Quantity": 20000
+    "MaterialID": "208030021",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 69,
+    "MaterialID": "208030022",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850301,
@@ -162098,8 +167108,14 @@
   {
     "AdventurerID": 10850301,
     "ManaNode": 70,
-    "MaterialID": "Mana",
-    "Quantity": 150000
+    "MaterialID": "208030021",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850301,
+    "ManaNode": 70,
+    "MaterialID": "208030022",
+    "Quantity": 5
   },
   {
     "AdventurerID": 10850302,
@@ -164948,6 +169964,18 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 11,
+    "MaterialID": "104001051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 11,
+    "MaterialID": "104001052",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 11,
     "MaterialID": "Mana",
     "Quantity": 4300
   },
@@ -165008,8 +170036,44 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 21,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 21,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 21,
+    "MaterialID": "104001053",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 21,
     "MaterialID": "Mana",
     "Quantity": 3200
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 22,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 22,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 22,
+    "MaterialID": "104001052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850502,
@@ -165044,6 +170108,24 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 27,
+    "MaterialID": "104001051",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 27,
+    "MaterialID": "104001052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 27,
+    "MaterialID": "104001053",
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 27,
     "MaterialID": "Mana",
     "Quantity": 6000
   },
@@ -165062,8 +170144,56 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 30,
+    "MaterialID": "104001051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 30,
+    "MaterialID": "104002051",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 30,
+    "MaterialID": "104002052",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 30,
     "MaterialID": "Mana",
     "Quantity": 7000
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 31,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 31,
+    "MaterialID": "104001052",
+    "Quantity": 10
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 31,
+    "MaterialID": "104001053",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 31,
+    "MaterialID": "104002051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 31,
+    "MaterialID": "104002052",
+    "Quantity": 10
   },
   {
     "AdventurerID": 10850502,
@@ -165076,6 +170206,24 @@
     "ManaNode": 32,
     "MaterialID": "Mana",
     "Quantity": 5000
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 33,
+    "MaterialID": "104001051",
+    "Quantity": 40
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 33,
+    "MaterialID": "104002051",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 33,
+    "MaterialID": "104002052",
+    "Quantity": 2
   },
   {
     "AdventurerID": 10850502,
@@ -165104,6 +170252,24 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 37,
+    "MaterialID": "104001051",
+    "Quantity": 50
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 37,
+    "MaterialID": "104001052",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 37,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 37,
     "MaterialID": "Mana",
     "Quantity": 11000
   },
@@ -165122,8 +170288,62 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 40,
+    "MaterialID": "104001051",
+    "Quantity": 25
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 40,
+    "MaterialID": "104002051",
+    "Quantity": 15
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 40,
+    "MaterialID": "104002052",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 40,
     "MaterialID": "Mana",
     "Quantity": 12500
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 41,
+    "MaterialID": "104001001",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 41,
+    "MaterialID": "104001052",
+    "Quantity": 20
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 41,
+    "MaterialID": "104001053",
+    "Quantity": 14
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 41,
+    "MaterialID": "104002051",
+    "Quantity": 30
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 41,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 41,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850502,
@@ -165140,6 +170360,24 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 43,
+    "MaterialID": "104001001",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 43,
+    "MaterialID": "104001053",
+    "Quantity": 3
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 43,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 43,
     "MaterialID": "Mana",
     "Quantity": 30000
   },
@@ -165151,9 +170389,51 @@
   },
   {
     "AdventurerID": 10850502,
+    "ManaNode": 45,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 46,
+    "MaterialID": "Eldwater",
+    "Quantity": 12000
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 47,
+    "MaterialID": "104002051",
+    "Quantity": 35
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 47,
+    "MaterialID": "104002052",
+    "Quantity": 12
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 47,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850502,
     "ManaNode": 47,
     "MaterialID": "Mana",
     "Quantity": 32000
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 48,
+    "MaterialID": "Eldwater",
+    "Quantity": 20000
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 49,
+    "MaterialID": "Eldwater",
+    "Quantity": 35000
   },
   {
     "AdventurerID": 10850502,
@@ -165165,7 +170445,19 @@
     "AdventurerID": 10850502,
     "ManaNode": 51,
     "MaterialID": "208050021",
-    "Quantity": 1
+    "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 52,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 52,
+    "MaterialID": "104001054",
+    "Quantity": 6
   },
   {
     "AdventurerID": 10850502,
@@ -165188,8 +170480,26 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 55,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 55,
     "MaterialID": "208050021",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 56,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 56,
+    "MaterialID": "104001054",
+    "Quantity": 6
   },
   {
     "AdventurerID": 10850502,
@@ -165212,8 +170522,26 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 59,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 59,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 59,
     "MaterialID": "208050021",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 60,
+    "MaterialID": "104003002",
+    "Quantity": 1
   },
   {
     "AdventurerID": 10850502,
@@ -165254,6 +170582,18 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 63,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 63,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 63,
     "MaterialID": "208050021",
     "Quantity": 2
   },
@@ -165278,6 +170618,18 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 65,
+    "MaterialID": "104003002",
+    "Quantity": 1
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 65,
+    "MaterialID": "201002042",
+    "Quantity": 5
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 65,
     "MaterialID": "208050021",
     "Quantity": 3
   },
@@ -165302,6 +170654,18 @@
   {
     "AdventurerID": 10850502,
     "ManaNode": 67,
+    "MaterialID": "104001001",
+    "Quantity": 4
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 67,
+    "MaterialID": "104001054",
+    "Quantity": 6
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 67,
     "MaterialID": "208050021",
     "Quantity": 3
   },
@@ -165334,6 +170698,18 @@
     "ManaNode": 69,
     "MaterialID": "208050022",
     "Quantity": 2
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 70,
+    "MaterialID": "104001001",
+    "Quantity": 8
+  },
+  {
+    "AdventurerID": 10850502,
+    "ManaNode": 70,
+    "MaterialID": "104001054",
+    "Quantity": 12
   },
   {
     "AdventurerID": 10850502,
