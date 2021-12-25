@@ -36,9 +36,6 @@ BEGIN
 	IF OBJECT_ID('tempdb..#MCNodeCost') IS NOT NULL
 		DROP TABLE #MCNodeCost
 
-	IF OBJECT_ID('tempdb..#MCUnbind') IS NOT NULL
-		DROP TABLE #MCUnbind
-
 	--Ability group
 	MERGE core.AbilityGroup AS trg
 	USING (
@@ -324,14 +321,6 @@ BEGIN
 	SET SortOrder = src.SortOrder
 	FROM (
 		VALUES (
-			'Core'
-			,1
-			)
-			,(
-			'Void'
-			,2
-			)
-			,(
 			'High Dragon'
 			,4
 			)
@@ -1485,6 +1474,7 @@ BEGIN
 	FROM [adv].Adventurer AS a
 	INNER JOIN #AdventurerMC AS amc ON amc.AdventurerID = a.AdventurerID
 	INNER JOIN #MCNodeCost AS mc ON mc.PieceMaterialElementID = amc.PieceMaterialElementId
+		AND mc.MCID = amc.MCID
 	WHERE mc.MaterialQuantity > 0
 
 	--3 & 4⭐ unbinds
@@ -1517,7 +1507,13 @@ BEGIN
 	USING (
 		SELECT ub.AdventurerID
 			,mcn.ManaNode + 1 AS ManaNode
-			,mcn.MaterialID
+			,CASE mcn.MaterialID
+				WHEN 'UniqueGrowMaterial1'
+					THEN ub.UniqueGrowMaterialId1
+				WHEN 'UniqueGrowMaterial2'
+					THEN ub.UniqueGrowMaterialId2
+				ELSE mcn.MaterialID
+				END AS MaterialID
 			,mcn.MaterialQuantity AS Quantity
 		FROM #MCNodeCost AS mcn
 		INNER JOIN #AdventurerMC AS ub ON ub.UnbindID = mcn.UnbindID
