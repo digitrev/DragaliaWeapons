@@ -1966,5 +1966,77 @@
     "weaponType": "Manacaster",
     "rarity": 6,
     "element": "Shadow"
+  },
+  {
+    "weaponId": 30160304,
+    "weapon": "Primal Tempest",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Sword",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30260304,
+    "weapon": "Noble Horizon",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Blade",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30360304,
+    "weapon": "Windruler's Fang",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Dagger",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30460304,
+    "weapon": "Tempest's Guide",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Axe",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30560304,
+    "weapon": "Gale's Aid",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Lance",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30660304,
+    "weapon": "Jormungand's Wrath",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Bow",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30760304,
+    "weapon": "Storm Chaser",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Wand",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30860304,
+    "weapon": "Squallruler",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Staff",
+    "rarity": 6,
+    "element": "Wind"
+  },
+  {
+    "weaponId": 30960304,
+    "weapon": "Cyclone Trigger",
+    "weaponSeries": "Primal Dragon",
+    "weaponType": "Manacaster",
+    "rarity": 6,
+    "element": "Wind"
   }
 ]

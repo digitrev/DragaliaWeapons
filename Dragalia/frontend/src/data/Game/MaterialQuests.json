@@ -2190,6 +2190,96 @@
     }
   },
   {
+    "materialId": "208040041",
+    "questId": 697,
+    "material": {
+      "materialId": "208040041",
+      "material": "Annelie's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/4/4/1/"
+    },
+    "quest": {
+      "questId": 697,
+      "quest": "Asura's Trial (Light)",
+      "sortPath": "/2/2/19/"
+    }
+  },
+  {
+    "materialId": "208040042",
+    "questId": 698,
+    "material": {
+      "materialId": "208040042",
+      "material": "Annelie's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/4/4/2/"
+    },
+    "quest": {
+      "questId": 698,
+      "quest": "Asura's Trial (Light): Master",
+      "sortPath": "/2/2/19/1/"
+    }
+  },
+  {
+    "materialId": "208040042",
+    "questId": 699,
+    "material": {
+      "materialId": "208040042",
+      "material": "Annelie's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/4/4/2/"
+    },
+    "quest": {
+      "questId": 699,
+      "quest": "Asura's Trial (Light): Expert",
+      "sortPath": "/2/2/19/2/"
+    }
+  },
+  {
+    "materialId": "208030061",
+    "questId": 701,
+    "material": {
+      "materialId": "208030061",
+      "material": "Victor's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/6/1/"
+    },
+    "quest": {
+      "questId": 701,
+      "quest": "Asura's Trial (Wind)",
+      "sortPath": "/2/2/20/"
+    }
+  },
+  {
+    "materialId": "208030062",
+    "questId": 702,
+    "material": {
+      "materialId": "208030062",
+      "material": "Victor's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/6/2/"
+    },
+    "quest": {
+      "questId": 702,
+      "quest": "Asura's Trial (Wind): Master",
+      "sortPath": "/2/2/20/1/"
+    }
+  },
+  {
+    "materialId": "208030062",
+    "questId": 703,
+    "material": {
+      "materialId": "208030062",
+      "material": "Victor's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/3/6/2/"
+    },
+    "quest": {
+      "questId": 703,
+      "quest": "Asura's Trial (Wind): Expert",
+      "sortPath": "/2/2/20/2/"
+    }
+  },
+  {
     "materialId": "201014001",
     "questId": 399,
     "material": {
@@ -7047,6 +7137,81 @@
       "questId": 548,
       "quest": "Lilith's Encroaching Shadow: Standard",
       "sortPath": "/4/6/5/3/"
+    }
+  },
+  {
+    "materialId": "201023032",
+    "questId": 707,
+    "material": {
+      "materialId": "201023032",
+      "material": "Primal Windwyrm's Greatsphere",
+      "category": "Primal Spheres",
+      "sortPath": "/27.2/1/2/"
+    },
+    "quest": {
+      "questId": 707,
+      "quest": "Primal Midgardsormr's Trial: Master",
+      "sortPath": "/4/7/1/1/"
+    }
+  },
+  {
+    "materialId": "201023033",
+    "questId": 707,
+    "material": {
+      "materialId": "201023033",
+      "material": "Primal Windwyrm's Emerald",
+      "category": "Primal Spheres",
+      "sortPath": "/27.2/1/3/"
+    },
+    "quest": {
+      "questId": 707,
+      "quest": "Primal Midgardsormr's Trial: Master",
+      "sortPath": "/4/7/1/1/"
+    }
+  },
+  {
+    "materialId": "201023031",
+    "questId": 708,
+    "material": {
+      "materialId": "201023031",
+      "material": "Primal Windwyrm's Sphere",
+      "category": "Primal Spheres",
+      "sortPath": "/27.2/1/1/"
+    },
+    "quest": {
+      "questId": 708,
+      "quest": "Primal Midgardsormr's Trial: Expert",
+      "sortPath": "/4/7/1/2/"
+    }
+  },
+  {
+    "materialId": "201023032",
+    "questId": 708,
+    "material": {
+      "materialId": "201023032",
+      "material": "Primal Windwyrm's Greatsphere",
+      "category": "Primal Spheres",
+      "sortPath": "/27.2/1/2/"
+    },
+    "quest": {
+      "questId": 708,
+      "quest": "Primal Midgardsormr's Trial: Expert",
+      "sortPath": "/4/7/1/2/"
+    }
+  },
+  {
+    "materialId": "201023031",
+    "questId": 709,
+    "material": {
+      "materialId": "201023031",
+      "material": "Primal Windwyrm's Sphere",
+      "category": "Primal Spheres",
+      "sortPath": "/27.2/1/1/"
+    },
+    "quest": {
+      "questId": 709,
+      "quest": "Primal Midgardsormr's Trial: Standard",
+      "sortPath": "/4/7/1/3/"
     }
   },
   {

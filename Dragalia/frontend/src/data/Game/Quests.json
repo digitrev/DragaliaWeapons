@@ -1115,6 +1115,46 @@
     "sortPath": "/2/2/18/3/"
   },
   {
+    "questId": 697,
+    "quest": "Asura's Trial (Light)",
+    "sortPath": "/2/2/19/"
+  },
+  {
+    "questId": 698,
+    "quest": "Asura's Trial (Light): Master",
+    "sortPath": "/2/2/19/1/"
+  },
+  {
+    "questId": 699,
+    "quest": "Asura's Trial (Light): Expert",
+    "sortPath": "/2/2/19/2/"
+  },
+  {
+    "questId": 700,
+    "quest": "Asura's Trial (Light): Standard",
+    "sortPath": "/2/2/19/3/"
+  },
+  {
+    "questId": 701,
+    "quest": "Asura's Trial (Wind)",
+    "sortPath": "/2/2/20/"
+  },
+  {
+    "questId": 702,
+    "quest": "Asura's Trial (Wind): Master",
+    "sortPath": "/2/2/20/1/"
+  },
+  {
+    "questId": 703,
+    "quest": "Asura's Trial (Wind): Expert",
+    "sortPath": "/2/2/20/2/"
+  },
+  {
+    "questId": 704,
+    "quest": "Asura's Trial (Wind): Standard",
+    "sortPath": "/2/2/20/3/"
+  },
+  {
     "questId": 399,
     "quest": "Void Battles",
     "sortPath": "/2/3/"
@@ -1963,6 +2003,31 @@
     "questId": 548,
     "quest": "Lilith's Encroaching Shadow: Standard",
     "sortPath": "/4/6/5/3/"
+  },
+  {
+    "questId": 705,
+    "quest": "Primal Dragon Trials",
+    "sortPath": "/4/7/"
+  },
+  {
+    "questId": 706,
+    "quest": "Primal Midgardsormr's Trial",
+    "sortPath": "/4/7/1/"
+  },
+  {
+    "questId": 707,
+    "quest": "Primal Midgardsormr's Trial: Master",
+    "sortPath": "/4/7/1/1/"
+  },
+  {
+    "questId": 708,
+    "quest": "Primal Midgardsormr's Trial: Expert",
+    "sortPath": "/4/7/1/2/"
+  },
+  {
+    "questId": 709,
+    "quest": "Primal Midgardsormr's Trial: Standard",
+    "sortPath": "/4/7/1/3/"
   },
   {
     "questId": 549,
