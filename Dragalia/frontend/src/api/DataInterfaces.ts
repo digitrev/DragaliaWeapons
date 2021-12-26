@@ -235,14 +235,14 @@ export interface QuestData {
 export interface ChestDropData {
   chestDropId: number;
   materialId: string;
-  material?: MaterialData;
+  material: MaterialData;
   quantity: number;
 }
 
 export interface ChestData {
   chestId: number;
   questId: number;
-  quest?: QuestData;
+  quest: QuestData;
   chestDrops: ChestDropData[];
 }
 

@@ -1,0 +1,858 @@
+[
+  {
+    "chestGroupId": 1,
+    "chestGroup": "Advanced Dragon Trials",
+    "frequency": "Weekly",
+    "quantity": 5,
+    "chests": [
+      {
+        "chestId": 1,
+        "questId": 499,
+        "quest": {
+          "questId": 499,
+          "quest": "High Midgardsormr's Trial: Master",
+          "sortPath": "/4/4/1/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 1,
+            "materialId": "201002032",
+            "material": {
+              "materialId": "201002032",
+              "material": "Windwyrm's Greatsphere",
+              "category": "Dragon Spheres",
+              "sortPath": "/15/3/2/"
+            },
+            "quantity": 60
+          },
+          {
+            "chestDropId": 2,
+            "materialId": "202009031",
+            "material": {
+              "materialId": "202009031",
+              "material": "High Windwyrm's Horn",
+              "category": "High Dragon Materials",
+              "sortPath": "/16/3/2/"
+            },
+            "quantity": 24
+          }
+        ]
+      },
+      {
+        "chestId": 2,
+        "questId": 500,
+        "quest": {
+          "questId": 500,
+          "quest": "High Midgardsormr's Trial: Expert",
+          "sortPath": "/4/4/1/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 3,
+            "materialId": "201002032",
+            "material": {
+              "materialId": "201002032",
+              "material": "Windwyrm's Greatsphere",
+              "category": "Dragon Spheres",
+              "sortPath": "/15/3/2/"
+            },
+            "quantity": 39
+          },
+          {
+            "chestDropId": 4,
+            "materialId": "202008031",
+            "material": {
+              "materialId": "202008031",
+              "material": "High Windwyrm's Tail",
+              "category": "High Dragon Materials",
+              "sortPath": "/16/3/1/"
+            },
+            "quantity": 18
+          },
+          {
+            "chestDropId": 5,
+            "materialId": "202009031",
+            "material": {
+              "materialId": "202009031",
+              "material": "High Windwyrm's Horn",
+              "category": "High Dragon Materials",
+              "sortPath": "/16/3/2/"
+            },
+            "quantity": 9
+          }
+        ]
+      },
+      {
+        "chestId": 3,
+        "questId": 501,
+        "quest": {
+          "questId": 501,
+          "quest": "High Midgardsormr's Trial: Standard",
+          "sortPath": "/4/4/1/3/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 6,
+            "materialId": "201002032",
+            "material": {
+              "materialId": "201002032",
+              "material": "Windwyrm's Greatsphere",
+              "category": "Dragon Spheres",
+              "sortPath": "/15/3/2/"
+            },
+            "quantity": 33
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chestGroupId": 2,
+    "chestGroup": "Dragon Trials",
+    "frequency": "Daily",
+    "quantity": 1,
+    "chests": [
+      {
+        "chestId": 16,
+        "questId": 486,
+        "quest": {
+          "questId": 486,
+          "quest": "Midgardsormr's Trial",
+          "sortPath": "/4/2/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 31,
+            "materialId": "104002031",
+            "material": {
+              "materialId": "104002031",
+              "material": "Windwyrm's Scale",
+              "category": "Scales",
+              "sortPath": "/10/3/1/"
+            },
+            "quantity": 10
+          },
+          {
+            "chestDropId": 32,
+            "materialId": "104002032",
+            "material": {
+              "materialId": "104002032",
+              "material": "Windwyrm's Squallscale",
+              "category": "Scales",
+              "sortPath": "/10/3/1/"
+            },
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "chestId": 17,
+        "questId": 487,
+        "quest": {
+          "questId": 487,
+          "quest": "Mercury's Trial",
+          "sortPath": "/4/2/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 33,
+            "materialId": "104002021",
+            "material": {
+              "materialId": "104002021",
+              "material": "Waterwyrm's Scale",
+              "category": "Scales",
+              "sortPath": "/10/2/1/"
+            },
+            "quantity": 10
+          },
+          {
+            "chestDropId": 34,
+            "materialId": "104002022",
+            "material": {
+              "materialId": "104002022",
+              "material": "Waterwyrm's Glistscale",
+              "category": "Scales",
+              "sortPath": "/10/2/2/"
+            },
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "chestId": 18,
+        "questId": 488,
+        "quest": {
+          "questId": 488,
+          "quest": "Brunhilda's Trial",
+          "sortPath": "/4/2/3/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 35,
+            "materialId": "104002011",
+            "material": {
+              "materialId": "104002011",
+              "material": "Flamewyrm's Scale",
+              "category": "Scales",
+              "sortPath": "/10/1/1/"
+            },
+            "quantity": 10
+          },
+          {
+            "chestDropId": 36,
+            "materialId": "104002012",
+            "material": {
+              "materialId": "104002012",
+              "material": "Flamewyrm's Scaldscale",
+              "category": "Scales",
+              "sortPath": "/10/1/2/"
+            },
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chestGroupId": 3,
+    "chestGroup": "Elemental Ruins",
+    "frequency": "Daily",
+    "quantity": 1,
+    "chests": [
+      {
+        "chestId": 21,
+        "questId": 465,
+        "quest": {
+          "questId": 465,
+          "quest": "Flamehowl Ruins",
+          "sortPath": "/3/3/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 41,
+            "materialId": "104001011",
+            "material": {
+              "materialId": "104001011",
+              "material": "Flame Orb",
+              "category": "Orbs",
+              "sortPath": "/9/1/1/"
+            },
+            "quantity": 18
+          },
+          {
+            "chestDropId": 42,
+            "materialId": "104001012",
+            "material": {
+              "materialId": "104001012",
+              "material": "Blaze Orb",
+              "category": "Orbs",
+              "sortPath": "/9/1/2/"
+            },
+            "quantity": 9
+          },
+          {
+            "chestDropId": 43,
+            "materialId": "104001013",
+            "material": {
+              "materialId": "104001013",
+              "material": "Inferno Orb",
+              "category": "Orbs",
+              "sortPath": "/9/1/3/"
+            },
+            "quantity": 6
+          }
+        ]
+      },
+      {
+        "chestId": 22,
+        "questId": 466,
+        "quest": {
+          "questId": 466,
+          "quest": "Waterscour Ruins",
+          "sortPath": "/3/3/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 44,
+            "materialId": "104001021",
+            "material": {
+              "materialId": "104001021",
+              "material": "Water Orb",
+              "category": "Orbs",
+              "sortPath": "/9/2/1/"
+            },
+            "quantity": 18
+          },
+          {
+            "chestDropId": 45,
+            "materialId": "104001022",
+            "material": {
+              "materialId": "104001022",
+              "material": "Stream Orb",
+              "category": "Orbs",
+              "sortPath": "/9/2/2/"
+            },
+            "quantity": 9
+          },
+          {
+            "chestDropId": 46,
+            "materialId": "104001023",
+            "material": {
+              "materialId": "104001023",
+              "material": "Deluge Orb",
+              "category": "Orbs",
+              "sortPath": "/9/2/3/"
+            },
+            "quantity": 6
+          }
+        ]
+      },
+      {
+        "chestId": 23,
+        "questId": 467,
+        "quest": {
+          "questId": 467,
+          "quest": "Windmaul Ruins",
+          "sortPath": "/3/3/3/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 47,
+            "materialId": "104001031",
+            "material": {
+              "materialId": "104001031",
+              "material": "Wind Orb",
+              "category": "Orbs",
+              "sortPath": "/9/3/1/"
+            },
+            "quantity": 18
+          },
+          {
+            "chestDropId": 48,
+            "materialId": "104001032",
+            "material": {
+              "materialId": "104001032",
+              "material": "Storm Orb",
+              "category": "Orbs",
+              "sortPath": "/9/3/2/"
+            },
+            "quantity": 9
+          },
+          {
+            "chestDropId": 49,
+            "materialId": "104001033",
+            "material": {
+              "materialId": "104001033",
+              "material": "Maelstrom Orb",
+              "category": "Orbs",
+              "sortPath": "/9/3/3/"
+            },
+            "quantity": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chestGroupId": 4,
+    "chestGroup": "Primal Dragon Trials",
+    "frequency": "Weekly",
+    "quantity": 3,
+    "chests": [
+      {
+        "chestId": 26,
+        "questId": 707,
+        "quest": {
+          "questId": 707,
+          "quest": "Primal Midgardsormr's Trial: Master",
+          "sortPath": "/4/7/1/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 56,
+            "materialId": "201023033",
+            "material": {
+              "materialId": "201023033",
+              "material": "Primal Windwyrm's Emerald",
+              "category": "Primal Spheres",
+              "sortPath": "/27.2/1/3/"
+            },
+            "quantity": 6
+          }
+        ]
+      },
+      {
+        "chestId": 27,
+        "questId": 708,
+        "quest": {
+          "questId": 708,
+          "quest": "Primal Midgardsormr's Trial: Expert",
+          "sortPath": "/4/7/1/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 57,
+            "materialId": "201023031",
+            "material": {
+              "materialId": "201023031",
+              "material": "Primal Windwyrm's Sphere",
+              "category": "Primal Spheres",
+              "sortPath": "/27.2/1/1/"
+            },
+            "quantity": 4
+          },
+          {
+            "chestDropId": 58,
+            "materialId": "201023032",
+            "material": {
+              "materialId": "201023032",
+              "material": "Primal Windwyrm's Greatsphere",
+              "category": "Primal Spheres",
+              "sortPath": "/27.2/1/2/"
+            },
+            "quantity": 6
+          },
+          {
+            "chestDropId": 59,
+            "materialId": "201023033",
+            "material": {
+              "materialId": "201023033",
+              "material": "Primal Windwyrm's Emerald",
+              "category": "Primal Spheres",
+              "sortPath": "/27.2/1/3/"
+            },
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "chestId": 28,
+        "questId": 709,
+        "quest": {
+          "questId": 709,
+          "quest": "Primal Midgardsormr's Trial: Standard",
+          "sortPath": "/4/7/1/3/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 60,
+            "materialId": "201023031",
+            "material": {
+              "materialId": "201023031",
+              "material": "Primal Windwyrm's Sphere",
+              "category": "Primal Spheres",
+              "sortPath": "/27.2/1/1/"
+            },
+            "quantity": 9
+          },
+          {
+            "chestDropId": 61,
+            "materialId": "201023032",
+            "material": {
+              "materialId": "201023032",
+              "material": "Primal Windwyrm's Greatsphere",
+              "category": "Primal Spheres",
+              "sortPath": "/27.2/1/2/"
+            },
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chestGroupId": 5,
+    "chestGroup": "Rise of the Sinister Dominion",
+    "frequency": "Weekly",
+    "quantity": 3,
+    "chests": [
+      {
+        "chestId": 29,
+        "questId": 546,
+        "quest": {
+          "questId": 546,
+          "quest": "Lilith's Encroaching Shadow: Master",
+          "sortPath": "/4/6/5/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 62,
+            "materialId": "201022051",
+            "material": {
+              "materialId": "201022051",
+              "material": "Twilight Shard",
+              "category": "Dominion Shards",
+              "sortPath": "/27.1/4/1/"
+            },
+            "quantity": 7
+          },
+          {
+            "chestDropId": 63,
+            "materialId": "201022052",
+            "material": {
+              "materialId": "201022052",
+              "material": "Twilight Prism",
+              "category": "Dominion Shards",
+              "sortPath": "/27.1/4/2/"
+            },
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "chestId": 30,
+        "questId": 547,
+        "quest": {
+          "questId": 547,
+          "quest": "Lilith's Encroaching Shadow: Expert",
+          "sortPath": "/4/6/5/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 64,
+            "materialId": "201022051",
+            "material": {
+              "materialId": "201022051",
+              "material": "Twilight Shard",
+              "category": "Dominion Shards",
+              "sortPath": "/27.1/4/1/"
+            },
+            "quantity": 4
+          },
+          {
+            "chestDropId": 65,
+            "materialId": "201022052",
+            "material": {
+              "materialId": "201022052",
+              "material": "Twilight Prism",
+              "category": "Dominion Shards",
+              "sortPath": "/27.1/4/2/"
+            },
+            "quantity": 6
+          }
+        ]
+      },
+      {
+        "chestId": 31,
+        "questId": 548,
+        "quest": {
+          "questId": 548,
+          "quest": "Lilith's Encroaching Shadow: Standard",
+          "sortPath": "/4/6/5/3/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 66,
+            "materialId": "201022051",
+            "material": {
+              "materialId": "201022051",
+              "material": "Twilight Shard",
+              "category": "Dominion Shards",
+              "sortPath": "/27.1/4/1/"
+            },
+            "quantity": 9
+          },
+          {
+            "chestDropId": 67,
+            "materialId": "201022052",
+            "material": {
+              "materialId": "201022052",
+              "material": "Twilight Prism",
+              "category": "Dominion Shards",
+              "sortPath": "/27.1/4/2/"
+            },
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chestGroupId": 6,
+    "chestGroup": "The Agito Uprising",
+    "frequency": "Weekly",
+    "quantity": 5,
+    "chests": [
+      {
+        "chestId": 44,
+        "questId": 525,
+        "quest": {
+          "questId": 525,
+          "quest": "Volk's Wrath: Master",
+          "sortPath": "/4/5/1/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 92,
+            "materialId": "201017033",
+            "material": {
+              "materialId": "201017033",
+              "material": "Rebellious One's Insanity",
+              "category": "Agito Fragments",
+              "sortPath": "/19/3/3/"
+            },
+            "quantity": 18
+          }
+        ]
+      },
+      {
+        "chestId": 45,
+        "questId": 526,
+        "quest": {
+          "questId": 526,
+          "quest": "Volk's Wrath: Expert",
+          "sortPath": "/4/5/1/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 93,
+            "materialId": "201017031",
+            "material": {
+              "materialId": "201017031",
+              "material": "Destitute One's Mask Fragment",
+              "category": "Agito Fragments",
+              "sortPath": "/19/3/1/"
+            },
+            "quantity": 12
+          },
+          {
+            "chestDropId": 94,
+            "materialId": "201017032",
+            "material": {
+              "materialId": "201017032",
+              "material": "Plagued One's Mask Fragment",
+              "category": "Agito Fragments",
+              "sortPath": "/19/3/2/"
+            },
+            "quantity": 18
+          },
+          {
+            "chestDropId": 95,
+            "materialId": "201017033",
+            "material": {
+              "materialId": "201017033",
+              "material": "Rebellious One's Insanity",
+              "category": "Agito Fragments",
+              "sortPath": "/19/3/3/"
+            },
+            "quantity": 6
+          }
+        ]
+      },
+      {
+        "chestId": 46,
+        "questId": 527,
+        "quest": {
+          "questId": 527,
+          "quest": "Volk's Wrath: Standard",
+          "sortPath": "/4/5/1/3/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 96,
+            "materialId": "201017031",
+            "material": {
+              "materialId": "201017031",
+              "material": "Destitute One's Mask Fragment",
+              "category": "Agito Fragments",
+              "sortPath": "/19/3/1/"
+            },
+            "quantity": 27
+          },
+          {
+            "chestDropId": 97,
+            "materialId": "201017032",
+            "material": {
+              "materialId": "201017032",
+              "material": "Plagued One's Mask Fragment",
+              "category": "Agito Fragments",
+              "sortPath": "/19/3/2/"
+            },
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chestGroupId": 7,
+    "chestGroup": "The Agito Uprising: Legend Difficulty",
+    "frequency": "Weekly",
+    "quantity": 1,
+    "chests": [
+      {
+        "chestId": 59,
+        "questId": 551,
+        "quest": {
+          "questId": 551,
+          "quest": "Volk's Wrath: Legend Difficulty",
+          "sortPath": "/5/1/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 122,
+            "materialId": "201017034",
+            "material": {
+              "materialId": "201017034",
+              "material": "Rebellious Wolf's Gale",
+              "category": "Agito Fragments",
+              "sortPath": "/19/3/4/"
+            },
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "chestId": 60,
+        "questId": 552,
+        "quest": {
+          "questId": 552,
+          "quest": "Kai Yan's Wrath: Legend Difficulty",
+          "sortPath": "/5/1/4/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 123,
+            "materialId": "201017044",
+            "material": {
+              "materialId": "201017044",
+              "material": "Rebellious Ox's Lightning",
+              "category": "Agito Fragments",
+              "sortPath": "/19/4/4/"
+            },
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "chestId": 61,
+        "questId": 555,
+        "quest": {
+          "questId": 555,
+          "quest": "Ciella's Wrath: Legend Difficulty",
+          "sortPath": "/5/1/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 124,
+            "materialId": "201017024",
+            "material": {
+              "materialId": "201017024",
+              "material": "Rebellious Bird's Tide",
+              "category": "Agito Fragments",
+              "sortPath": "/19/2/4/"
+            },
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chestGroupId": 8,
+    "chestGroup": "The Imperial Onslaught",
+    "frequency": "Daily",
+    "quantity": 1,
+    "chests": [
+      {
+        "chestId": 64,
+        "questId": 492,
+        "quest": {
+          "questId": 492,
+          "quest": "Battle at Mount Adolla",
+          "sortPath": "/4/3/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 127,
+            "materialId": "201010011",
+            "material": {
+              "materialId": "201010011",
+              "material": "Vermilion Insignia",
+              "category": "Insignia",
+              "sortPath": "/18/1/1/"
+            },
+            "quantity": 1440
+          },
+          {
+            "chestDropId": 128,
+            "materialId": "201010012",
+            "material": {
+              "materialId": "201010012",
+              "material": "Royal Vermilion Insignia",
+              "category": "Insignia",
+              "sortPath": "/18/1/2/"
+            },
+            "quantity": 960
+          }
+        ]
+      },
+      {
+        "chestId": 65,
+        "questId": 493,
+        "quest": {
+          "questId": 493,
+          "quest": "Battle at Myriage Lake",
+          "sortPath": "/4/3/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 129,
+            "materialId": "201010021",
+            "material": {
+              "materialId": "201010021",
+              "material": "Azure Insignia",
+              "category": "Insignia",
+              "sortPath": "/18/2/1/"
+            },
+            "quantity": 1440
+          },
+          {
+            "chestDropId": 130,
+            "materialId": "201010022",
+            "material": {
+              "materialId": "201010022",
+              "material": "Royal Azure Insignia",
+              "category": "Insignia",
+              "sortPath": "/18/2/2/"
+            },
+            "quantity": 960
+          }
+        ]
+      },
+      {
+        "chestId": 66,
+        "questId": 494,
+        "quest": {
+          "questId": 494,
+          "quest": "Battle in Rovetelle Forest",
+          "sortPath": "/4/3/3/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 131,
+            "materialId": "201010031",
+            "material": {
+              "materialId": "201010031",
+              "material": "Jade Insignia",
+              "category": "Insignia",
+              "sortPath": "/18/3/1/"
+            },
+            "quantity": 1440
+          },
+          {
+            "chestDropId": 132,
+            "materialId": "201010032",
+            "material": {
+              "materialId": "201010032",
+              "material": "Royal Jade Insignia",
+              "category": "Insignia",
+              "sortPath": "/18/3/2/"
+            },
+            "quantity": 960
+          }
+        ]
+      }
+    ]
+  }
+]

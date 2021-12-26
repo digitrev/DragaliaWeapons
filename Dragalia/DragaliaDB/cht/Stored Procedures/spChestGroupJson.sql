@@ -9,7 +9,7 @@ SELECT cg.ChestGroupID AS chestGroupId
 			,c.QuestID AS questId
 			,q.QuestID AS [quest.questId]
 			,q.Quest AS [quest.quest]
-			,q.SortPath AS [quest.SortPath]
+			,q.SortPath AS [quest.sortPath]
 			,(
 				SELECT cd.ChestDropID AS chestDropId
 					,cd.MaterialID AS materialId
