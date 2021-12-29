@@ -18,7 +18,8 @@ export const ChestGroup: FC<Props> = ({
         font-size: 19px;
       `}
     >
-      {chestGroup} ({quantity} times {frequency})
+      {chestGroup} ({quantity} time{quantity === 1 ? '' : 's'}{' '}
+      {frequency.toLowerCase()})
       <ChestList data={chests} />
     </div>
   );

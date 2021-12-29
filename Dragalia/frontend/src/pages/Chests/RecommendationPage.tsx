@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import {
   AccountInventoryData,
   ChestGroupData,
-  MaterialCosts,
+  SummaryTable,
 } from '../../api/DataInterfaces';
 import { PublicApi } from '../../api/GameData';
+import { sumByMaterial } from '../../api/HelperFunctions';
 import { PrivateApi } from '../../api/UserData';
 import { LoadingText } from '../Loading';
 import { Page } from '../Page';
@@ -14,7 +15,7 @@ export const RecommendationPage = () => {
   const [inventory, setInventory] = useState<AccountInventoryData[] | null>(
     null,
   );
-  const [costs, setCosts] = useState<MaterialCosts[]>([]);
+  const [costs, setCosts] = useState<SummaryTable[]>([]);
   const [chestGroups, setChestGroups] = useState<ChestGroupData[] | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -27,7 +28,7 @@ export const RecommendationPage = () => {
       const costData = await api.getTotalCosts();
       if (!cancelled) {
         setInventory(inventoryData);
-        setCosts(costData);
+        setCosts(sumByMaterial(costData));
         setLoading(false);
       }
     };
@@ -52,11 +53,16 @@ export const RecommendationPage = () => {
       {loading ? (
         <LoadingText />
       ) : (
-        <RecommendationList
-          data={chestGroups || []}
-          items={inventory || []}
-          costs={costs || []}
-        />
+        <Fragment>
+          Recommended chests based on inventory needs and unique chest drops -
+          weight of recommendation displayed in brackets. Common drops across
+          all possible quests not considered.
+          <RecommendationList
+            data={chestGroups || []}
+            items={inventory || []}
+            costs={costs || []}
+          />
+        </Fragment>
       )}
     </Page>
   );

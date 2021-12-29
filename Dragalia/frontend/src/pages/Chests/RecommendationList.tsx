@@ -4,14 +4,14 @@ import { FC } from 'react';
 import {
   AccountInventoryData,
   ChestGroupData,
-  MaterialCosts,
+  SummaryTable,
 } from '../../api/DataInterfaces';
 import { accent2, gray5 } from '../../Styles';
 import { Recommendation } from './Recommendation';
 
 interface Props {
   data: ChestGroupData[];
-  costs: MaterialCosts[];
+  costs: SummaryTable[];
   items: AccountInventoryData[];
 }
 
