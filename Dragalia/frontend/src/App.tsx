@@ -5,6 +5,7 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { AboutPage } from './pages/AboutPage';
 import { AccountAdventurerPage } from './pages/Adventurers/AccountAdventurerPage';
 import { AdventurerPage } from './pages/Adventurers/AdventurerPage';
+import { ChestGroupPage } from './pages/Chests/ChestGroupPage';
 import { AdventurerCostsPage } from './pages/Costs/AdventurerCostsPage';
 import { DragonCostsPage } from './pages/Costs/DragonCostsPage';
 import { FacilityCostsPage } from './pages/Costs/FacilityCostsPage';
@@ -61,6 +62,7 @@ const App: React.FC = () => {
           <Route path="/quests" component={QuestPage} />
           <Route path="/weapons" component={WeaponPage} />
           <Route path="/wyrmprints" component={WyrmprintPage} />
+          <Route path="/chests" component={ChestGroupPage} />
 
           {/* account stuff */}
           <Route path="/account/adventurers">

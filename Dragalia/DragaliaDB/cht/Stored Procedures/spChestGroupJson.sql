@@ -5,7 +5,7 @@ SELECT cg.ChestGroupID AS chestGroupId
 	,f.Frequency AS frequency
 	,cg.Quantity AS quantity
 	,(
-		SELECT TOP 3 c.ChestID AS chestId
+		SELECT c.ChestID AS chestId
 			,c.QuestID AS questId
 			,q.QuestID AS [quest.questId]
 			,q.Quest AS [quest.quest]
@@ -22,13 +22,16 @@ SELECT cg.ChestGroupID AS chestGroupId
 				INNER JOIN core.Material AS m ON m.MaterialID = cd.MaterialID
 				INNER JOIN core.Category AS cat ON cat.CategoryID = m.CategoryID
 				WHERE cd.ChestID = c.ChestID
+				ORDER BY m.SortPath
 				FOR JSON PATH
 				) AS chestDrops
 		FROM cht.Chest AS c
 		INNER JOIN core.Quest AS q ON q.QuestID = c.QuestID
 		WHERE c.ChestGroupID = cg.ChestGroupID
+		ORDER BY q.SortPath
 		FOR JSON PATH
 		) AS chests
 FROM cht.ChestGroup AS cg
 INNER JOIN core.Frequency AS f ON f.FrequencyID = cg.FrequencyID
+ORDER BY f.Frequency, cg.ChestGroup
 FOR JSON PATH
