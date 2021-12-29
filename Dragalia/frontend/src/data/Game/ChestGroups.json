@@ -2306,5 +2306,57 @@
         ]
       }
     ]
+  },
+  {
+    "chestGroupId": 10,
+    "chestGroup": "Rise of the Sinister Dominion: Legend Difficulty",
+    "frequency": "Weekly",
+    "quantity": 1,
+    "chests": [
+      {
+        "chestId": 69,
+        "questId": 696,
+        "quest": {
+          "questId": 696,
+          "quest": "Lilith's Encroaching Shadow: Legend Difficulty",
+          "sortPath": "/5/3/1/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 138,
+            "materialId": "201022053",
+            "material": {
+              "materialId": "201022053",
+              "material": "Twilight Amethyst",
+              "category": "Dominion Shards",
+              "sortPath": "/27.1/4/3/"
+            },
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "chestId": 70,
+        "questId": 710,
+        "quest": {
+          "questId": 710,
+          "quest": "Jaldabaoth's Piercing Gale: Legend Difficulty",
+          "sortPath": "/5/3/2/"
+        },
+        "chestDrops": [
+          {
+            "chestDropId": 137,
+            "materialId": "201022033",
+            "material": {
+              "materialId": "201022033",
+              "material": "Cyclone Emerald",
+              "category": "Dominion Shards",
+              "sortPath": "/27.1/2/3/"
+            },
+            "quantity": 10
+          }
+        ]
+      }
+    ]
   }
 ]
