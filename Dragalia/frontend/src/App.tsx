@@ -1,37 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import React from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-import { AboutPage } from './pages/AboutPage';
-import { AccountAdventurerPage } from './pages/Adventurers/AccountAdventurerPage';
-import { AdventurerPage } from './pages/Adventurers/AdventurerPage';
-import { ChestGroupPage } from './pages/Chests/ChestGroupPage';
-import { RecommendationPage } from './pages/Chests/RecommendationPage';
-import { AdventurerCostsPage } from './pages/Costs/AdventurerCostsPage';
-import { DragonCostsPage } from './pages/Costs/DragonCostsPage';
-import { FacilityCostsPage } from './pages/Costs/FacilityCostsPage';
-import { PassiveCostsPage } from './pages/Costs/PassiveCostsPage';
-import { TotalCostsPage } from './pages/Costs/TotalCosts';
-import { WeaponCostsPage } from './pages/Costs/WeaponCostsPage';
-import { WyrmprintCostsPage } from './pages/Costs/WyrmprintCostPage';
-import { AccountDragonPage } from './pages/Dragons/AccountDragonPage';
-import { DragonPage } from './pages/Dragons/DragonPage';
-import { AccountFacilityPage } from './pages/Facilities/AccountFacilityPage';
-import { FacilityPage } from './pages/Facilities/FacilityPage';
-import { SaveLoad } from './pages/Forms/SaveLoad';
+import { BrowserRouter } from 'react-router-dom';
+import { MainPage } from './MainPage';
 import { Header } from './pages/Header';
-import { HomePage } from './pages/HomePage';
-import { InventoryPage } from './pages/Materials/InventoryPage';
-import { MaterialPage } from './pages/Materials/MaterialPage';
-import { NotFoundPage } from './pages/NotFoundPage';
-import { AccountPassivePage } from './pages/Passives/AccountPassivePage';
-import { PassivePage } from './pages/Passives/PassivePage';
-import { QuestPage } from './pages/Quests/QuestPage';
-import { AccountWeaponPage } from './pages/Weapons/AccountWeaponPage';
-import { WeaponPage } from './pages/Weapons/WeaponPage';
-import { WeaponSummaryPage } from './pages/Weapons/WeaponSummaryPage';
-import { AccountWyrmprintPage } from './pages/Wyrmprints/AccountWyrmprintPage';
-import { WyrmprintPage } from './pages/Wyrmprints/WyrmprintPage';
 import { fontFamily, fontSize, gray2 } from './Styles';
 
 const App: React.FC = () => {
@@ -49,79 +21,7 @@ const App: React.FC = () => {
         `}
       >
         <Header />
-        <Switch>
-          <Redirect from="/DragaliaWeapons" to="/" />
-          <Redirect from="/home" to="/" />
-          <Route exact path="/" component={HomePage} />
-
-          {/* public stuff */}
-          <Route path="/adventurers" component={AdventurerPage} />
-          <Route path="/dragons" component={DragonPage} />
-          <Route path="/facilities" component={FacilityPage} />
-          <Route path="/materials" component={MaterialPage} />
-          <Route path="/passives" component={PassivePage} />
-          <Route path="/quests" component={QuestPage} />
-          <Route path="/weapons" component={WeaponPage} />
-          <Route path="/wyrmprints" component={WyrmprintPage} />
-          <Route path="/chests" component={ChestGroupPage} />
-
-          {/* account stuff */}
-          <Route path="/account/chests">
-            <RecommendationPage />
-          </Route>
-          <Route path="/account/adventurers">
-            <AccountAdventurerPage />
-          </Route>
-          <Route path="/account/facilities">
-            <AccountFacilityPage />
-          </Route>
-          <Route path="/account/inventory">
-            <InventoryPage />
-          </Route>
-          <Route path="/account/passives">
-            <AccountPassivePage />
-          </Route>
-          <Route path="/account/dragons">
-            <AccountDragonPage />
-          </Route>
-          <Route path="/account/weapons">
-            <AccountWeaponPage />
-          </Route>
-          <Route path="/summary/weapons">
-            <WeaponSummaryPage />
-          </Route>
-          <Route path="/account/wyrmprints">
-            <AccountWyrmprintPage />
-          </Route>
-          <Route path="/costs/adventurers">
-            <AdventurerCostsPage />
-          </Route>
-          <Route path="/costs/dragons">
-            <DragonCostsPage />
-          </Route>
-          <Route path="/costs/facilities">
-            <FacilityCostsPage />
-          </Route>
-          <Route path="/costs/passives">
-            <PassiveCostsPage />
-          </Route>
-          <Route path="/costs/weapons">
-            <WeaponCostsPage />
-          </Route>
-          <Route path="/costs/wyrmprints">
-            <WyrmprintCostsPage />
-          </Route>
-          <Route path="/costs/totals">
-            <TotalCostsPage />
-          </Route>
-
-          {/* other */}
-          <Route path="/about" component={AboutPage} />
-          <Route path="/settings" component={SaveLoad} />
-
-          {/* fallback */}
-          <Route component={NotFoundPage} />
-        </Switch>
+        <MainPage />
       </div>
     </BrowserRouter>
   );

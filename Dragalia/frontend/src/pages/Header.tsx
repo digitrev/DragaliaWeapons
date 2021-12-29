@@ -21,9 +21,9 @@ export const Header = () => {
         z-index: 99;
       `}
     >
-      <Link to="/about">About</Link>
+      <Link to="/DragaliaWeapons?page=about">About</Link>
       <Link
-        to="/"
+        to="/DragaliaWeapons"
         css={css`
           font-size: 24px;
           font-weight: bold;
@@ -33,7 +33,7 @@ export const Header = () => {
       >
         Home
       </Link>
-      <Link to="/settings">Save/Load</Link>
+      <Link to="/DragaliaWeapons?page=settings">Save/Load</Link>
     </div>
   );
 };
