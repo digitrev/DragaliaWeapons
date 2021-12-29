@@ -52,7 +52,7 @@ export const AccountPassivePage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [progressFilter]);
 
   useEffect(() => {
     let passiveFilter = passives;

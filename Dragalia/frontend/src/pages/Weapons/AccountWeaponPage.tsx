@@ -83,7 +83,7 @@ export const AccountWeaponPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [progressFilter]);
 
   useEffect(() => {
     let weaponFilter = weapons;
