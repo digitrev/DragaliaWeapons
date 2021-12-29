@@ -12,6 +12,12 @@ export const HomePage = () => {
             <li>
               <Link to="/quests">Quest List</Link>
             </li>
+            <li>
+              <Link to="/chests">Chest List</Link>
+            </li>
+            <li>
+              <Link to="/account/chests">Chest Recommendations</Link>
+            </li>
           </ul>
         </li>
         <li>

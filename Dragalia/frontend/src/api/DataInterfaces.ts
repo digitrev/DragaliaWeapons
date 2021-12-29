@@ -132,6 +132,16 @@ export interface MaterialCosts {
   quantity: number;
 }
 
+export interface SummaryTable {
+  material: MaterialData;
+  sum: number;
+}
+
+export interface FarmingTable {
+  quest: QuestData;
+  sum: number;
+}
+
 //facility related data
 export interface FacilityData {
   facilityId: number;
@@ -229,6 +239,29 @@ export interface QuestData {
   questId: number;
   quest: string;
   sortPath: string;
+}
+
+//chests
+export interface ChestDropData {
+  chestDropId: number;
+  materialId: string;
+  material: MaterialData;
+  quantity: number;
+}
+
+export interface ChestData {
+  chestId: number;
+  questId: number;
+  quest: QuestData;
+  chestDrops: ChestDropData[];
+}
+
+export interface ChestGroupData {
+  chestGroupId: number;
+  chestGroup: string;
+  frequency: string;
+  quantity: number;
+  chests: ChestData[];
 }
 
 //save/load

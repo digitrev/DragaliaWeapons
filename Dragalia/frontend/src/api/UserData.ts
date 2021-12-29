@@ -725,4 +725,19 @@ export class PrivateApi {
     });
     return costs;
   };
+
+  public getTotalCosts = async () => {
+    const adventurerCosts = this.getAdventurerCosts();
+    const dragonCosts = this.getDragonCosts();
+    const facilityCosts = this.getFacilityCosts();
+    const passiveCosts = this.getPassiveCosts();
+    const weaponCosts = this.getWeaponCosts();
+    const wyrmprintCosts = this.getWyrmprintCosts();
+    return adventurerCosts
+      .concat(dragonCosts)
+      .concat(facilityCosts)
+      .concat(passiveCosts)
+      .concat(weaponCosts)
+      .concat(wyrmprintCosts);
+  };
 }

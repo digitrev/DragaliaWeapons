@@ -1,5 +1,6 @@
 import {
   AdventurerData,
+  ChestGroupData,
   DragonData,
   ElementData,
   FacilityData,
@@ -16,6 +17,7 @@ import {
   WyrmprintLimit,
 } from './DataInterfaces';
 import adventurersJson from '../data/Game/Adventurers.json';
+import chestGroupJson from '../data/Game/ChestGroups.json';
 import dragonsJson from '../data/Game/Dragons.json';
 import elementsJson from '../data/Game/Elements.json';
 import facilitiesJson from '../data/Game/Facilities.json';
@@ -83,4 +85,7 @@ export class PublicApi {
   public getWyrmprints = (): WyrmprintData[] => wyrmprintsJson;
 
   public getWyrmprintLimits = (): WyrmprintLimit[] => wyrmprintLevelLimitsJson;
+
+  //chests
+  public getChestGroups = (): ChestGroupData[] => chestGroupJson;
 }

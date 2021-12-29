@@ -85,6 +85,9 @@
     <Folder Include="fac\Stored Procedures" />
     <Folder Include="wpn\Stored Procedures" />
     <Folder Include="wpt\Stored Procedures" />
+    <Folder Include="cht" />
+    <Folder Include="cht\Tables" />
+    <Folder Include="cht\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\jsn.sql" />
@@ -185,8 +188,17 @@
     <Build Include="wpt\Stored Procedures\spWyrmprintUpgradeJson.sql" />
     <Build Include="den\Stored Procedures\spLoadFac.sql" />
     <Build Include="den\Stored Procedures\spLoadDrg.sql" />
-    <Build Include="den\Stored Procedures\spInitializeDenFac.sql" />
-    <Build Include="den\Stored Procedures\spInitializeDenDrg.sql" />
+    <Build Include="den\Stored Procedures\spInitializeFac.sql" />
+    <Build Include="den\Stored Procedures\spInitializeDrg.sql" />
+    <Build Include="core\Tables\Frequency.sql" />
+    <Build Include="den\Tables\Chests.sql" />
+    <Build Include="Security\cht.sql" />
+    <Build Include="cht\Tables\Chest.sql" />
+    <Build Include="cht\Tables\ChestDrop.sql" />
+    <Build Include="cht\Tables\ChestGroup.sql" />
+    <Build Include="den\Stored Procedures\spInitializeCht.sql" />
+    <Build Include="den\Stored Procedures\spLoadCht.sql" />
+    <Build Include="cht\Stored Procedures\spChestGroupJson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DragaliaDB.refactorlog" />

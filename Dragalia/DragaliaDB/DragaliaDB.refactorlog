@@ -1743,4 +1743,169 @@
     <Property Name="NewSchema" Value="wpt" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Move Schema" Key="ba07d896-d2cc-44a9-a52d-e0dc76f3b472" ChangeDateTime="10/29/2021 16:08:17">
+    <Property Name="ElementName" Value="[dbo].[Frequency]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="189887bd-30a4-489c-b8c4-86a04cf316d2" ChangeDateTime="10/29/2021 16:08:23">
+    <Property Name="ElementName" Value="[core].[Frequency].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Frequency]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FrequencyID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="f0570bb4-180c-4607-9ae1-491ebe0957f4" ChangeDateTime="10/29/2021 16:11:32">
+    <Property Name="ElementName" Value="[dbo].[ChestGroup]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c67e9bf8-eb34-4733-91f4-596075bb4503" ChangeDateTime="10/29/2021 16:11:37">
+    <Property Name="ElementName" Value="[core].[ChestGroup].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[ChestGroup]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChestGroupID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="c038eb97-8b43-45bd-872a-8b8595928944" ChangeDateTime="10/29/2021 16:13:32">
+    <Property Name="ElementName" Value="[dbo].[Chest]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="75d6b863-806c-4aa6-a0c4-503a965c1450" ChangeDateTime="10/29/2021 16:13:38">
+    <Property Name="ElementName" Value="[core].[Chest].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[core].[Chest]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChestID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a6575c4c-ae3e-417c-bc04-f6d444fd84b1" ChangeDateTime="10/29/2021 16:15:19">
+    <Property Name="ElementName" Value="[dbo].[ChestDrop].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChestDrop" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9a084689-f30a-4753-b91a-2d58808e7762" ChangeDateTime="10/29/2021 16:15:26">
+    <Property Name="ElementName" Value="[dbo].[ChestDrop].[ChestDrop]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChestDropID" />
+  </Operation>
+  <Operation Name="Move Schema" Key="d02840b7-19f9-4a14-9db1-758f4f10a6d0" ChangeDateTime="10/29/2021 16:15:30">
+    <Property Name="ElementName" Value="[dbo].[ChestDrop]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="core" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a07e811b-aeb7-4d6b-85ac-afe2df07cb5c" ChangeDateTime="10/29/2021 16:16:13">
+    <Property Name="ElementName" Value="[core].[FK_ChestDrop_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[core].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ChestDrop_Material]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0b3d3f2e-35f3-4adb-ac38-f71f5c291fef" ChangeDateTime="10/29/2021 16:45:44">
+    <Property Name="ElementName" Value="[dbo].[Frequency]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c4b522d6-ea1e-405d-9f4f-0d3c313d8eea" ChangeDateTime="10/29/2021 16:45:50">
+    <Property Name="ElementName" Value="[den].[Frequency].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[Frequency]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Frequency" />
+  </Operation>
+  <Operation Name="Move Schema" Key="8bc8952e-93e0-4dd5-8a73-86ee95943f3f" ChangeDateTime="10/29/2021 19:55:28">
+    <Property Name="ElementName" Value="[core].[Chest]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="cht" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="c76ca1c2-9704-4f64-abf9-509da208fac8" ChangeDateTime="10/29/2021 19:55:39">
+    <Property Name="ElementName" Value="[core].[ChestDrop]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="cht" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3a431f76-758d-4c2b-8dc3-48148d5346a3" ChangeDateTime="10/29/2021 19:55:56">
+    <Property Name="ElementName" Value="[core].[ChestGroup]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="cht" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="709bd41d-07d6-4e7c-9222-0102b41f10c3" ChangeDateTime="10/29/2021 19:56:42">
+    <Property Name="ElementName" Value="[dbo].[Chests]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="den" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="983efbc9-2254-4c51-a159-9b1113c5731e" ChangeDateTime="10/29/2021 19:58:59">
+    <Property Name="ElementName" Value="[den].[Chests].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[Chests]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Frequency" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="432ddba0-e324-4790-8f19-e760d3a12c23" ChangeDateTime="10/29/2021 21:30:03">
+    <Property Name="ElementName" Value="[den].[spInitializeDenCht]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spInitializeCht]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="beb4658c-e809-4a02-9ce6-844597b081c6" ChangeDateTime="10/29/2021 21:30:12">
+    <Property Name="ElementName" Value="[den].[spInitializeDenDrg]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spInitializeDrg]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="66eb7d99-c051-44f3-885e-a85d28ef7bfd" ChangeDateTime="10/29/2021 21:30:21">
+    <Property Name="ElementName" Value="[den].[spInitializeDenFac]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[den]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spInitializeFac]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0cb55951-d9d8-439c-9cc3-e2ea0bb560f7" ChangeDateTime="10/29/2021 23:07:00">
+    <Property Name="ElementName" Value="[cht].[ChestDrop].[Weight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[cht].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DropWeight" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="01e14981-c64e-412b-a535-e193e225b07c" ChangeDateTime="10/29/2021 23:13:14">
+    <Property Name="ElementName" Value="[cht].[ChestDrop].[DropWeight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[cht].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DropQuantity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c79777b3-2cb4-4b19-b995-18a83a4aa9fd" ChangeDateTime="10/29/2021 23:13:19">
+    <Property Name="ElementName" Value="[cht].[ChestDrop].[DropQuantity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[cht].[ChestDrop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Quantity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="12475cb0-598b-4ade-b5ef-5d03dc7f00c9" ChangeDateTime="10/30/2021 02:00:49">
+    <Property Name="ElementName" Value="[den].[Chests].[Quantity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[den].[Chests]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuestQuantity" />
+  </Operation>
+  <Operation Name="Move Schema" Key="bea3613d-a9f8-4856-98c5-81cc97aca715" ChangeDateTime="12/25/2021 22:28:21">
+    <Property Name="ElementName" Value="[dbo].[spChestGroupJson]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="cht" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
 </Operations>

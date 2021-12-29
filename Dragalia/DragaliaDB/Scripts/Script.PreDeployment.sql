@@ -11,3 +11,6 @@
 */
 IF OBJECT_ID('wpt.WyrmprintLevel') IS NOT NULL
 	TRUNCATE TABLE [wpt].WyrmprintLevel
+
+IF OBJECT_ID('den.Chests') IS NOT NULL
+	TRUNCATE TABLE [den].Chests
