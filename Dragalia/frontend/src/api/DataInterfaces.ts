@@ -132,6 +132,16 @@ export interface MaterialCosts {
   quantity: number;
 }
 
+export interface SummaryTable {
+  material: MaterialData;
+  sum: number;
+}
+
+export interface FarmingTable {
+  quest: QuestData;
+  sum: number;
+}
+
 //facility related data
 export interface FacilityData {
   facilityId: number;

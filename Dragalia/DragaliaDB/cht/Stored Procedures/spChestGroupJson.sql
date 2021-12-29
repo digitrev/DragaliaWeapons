@@ -33,5 +33,6 @@ SELECT cg.ChestGroupID AS chestGroupId
 		) AS chests
 FROM cht.ChestGroup AS cg
 INNER JOIN core.Frequency AS f ON f.FrequencyID = cg.FrequencyID
-ORDER BY f.Frequency, cg.ChestGroup
+INNER JOIN core.Quest AS q ON q.Quest = cg.ChestGroup
+ORDER BY q.SortPath
 FOR JSON PATH

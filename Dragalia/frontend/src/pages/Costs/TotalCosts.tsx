@@ -13,18 +13,7 @@ export const TotalCostsPage = () => {
     let cancelled = false;
     const doGetCosts = async () => {
       const api = new PrivateApi();
-      const adventurerCosts = await api.getAdventurerCosts();
-      const dragonCosts = await api.getDragonCosts();
-      const facilityCosts = await api.getFacilityCosts();
-      const passiveCosts = await api.getPassiveCosts();
-      const weaponCosts = await api.getWeaponCosts();
-      const wyrmprintCosts = await api.getWyrmprintCosts();
-      const costData = adventurerCosts
-        .concat(dragonCosts)
-        .concat(facilityCosts)
-        .concat(passiveCosts)
-        .concat(weaponCosts)
-        .concat(wyrmprintCosts);
+      const costData = await api.getTotalCosts();
       if (!cancelled) {
         setTotalCosts(costData);
         setCostsLoading(false);

@@ -3,10 +3,10 @@ import { css } from '@emotion/react';
 import { FC, Fragment, useEffect, useState } from 'react';
 import {
   AccountInventoryData,
+  FarmingTable,
   MaterialCosts,
-  MaterialData,
   MaterialQuestData,
-  QuestData,
+  SummaryTable,
 } from '../../api/DataInterfaces';
 import { materialComparator, needed } from '../../api/HelperFunctions';
 import { PrivateApi } from '../../api/UserData';
@@ -18,16 +18,6 @@ import { Summary } from './CostTables/Summary';
 
 interface Props {
   data: MaterialCosts[];
-}
-
-export interface SummaryTable {
-  material: MaterialData;
-  sum: number;
-}
-
-export interface FarmingTable {
-  quest: QuestData;
-  sum: number;
 }
 
 type DisplayType = 'Summary' | 'Breakdown' | 'Farming';

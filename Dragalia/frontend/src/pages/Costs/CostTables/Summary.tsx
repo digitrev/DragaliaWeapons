@@ -2,9 +2,11 @@
 import { css } from '@emotion/react';
 import { FC } from 'react';
 import NumberFormat from 'react-number-format';
-import { AccountInventoryData } from '../../../api/DataInterfaces';
+import {
+  AccountInventoryData,
+  SummaryTable,
+} from '../../../api/DataInterfaces';
 import { needed } from '../../../api/HelperFunctions';
-import { SummaryTable } from '../Costs';
 
 interface Props {
   data: SummaryTable[];
