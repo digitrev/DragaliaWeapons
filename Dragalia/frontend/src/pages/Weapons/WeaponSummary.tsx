@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import React, { FC, Fragment, useEffect } from 'react';
+import React, { FC, Fragment } from 'react';
 import {
   AccountWeaponData,
   ElementData,
