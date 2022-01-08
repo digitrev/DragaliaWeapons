@@ -701,7 +701,7 @@
     "rarity": 5,
     "element": "Water",
     "weaponType": "Lance",
-    "mcLimit": 50
+    "mcLimit": 70
   },
   {
     "adventurerId": 10550203,
@@ -1080,6 +1080,14 @@
     "mcLimit": 50
   },
   {
+    "adventurerId": 10450305,
+    "adventurer": "Shingen",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
     "adventurerId": 10450304,
     "adventurer": "Kimono Luca",
     "rarity": 5,
@@ -1125,6 +1133,14 @@
     "rarity": 3,
     "element": "Wind",
     "weaponType": "Axe",
+    "mcLimit": 50
+  },
+  {
+    "adventurerId": 10550305,
+    "adventurer": "Izumo",
+    "rarity": 5,
+    "element": "Wind",
+    "weaponType": "Lance",
     "mcLimit": 50
   },
   {
@@ -2062,6 +2078,14 @@
     "element": "Shadow",
     "weaponType": "Axe",
     "mcLimit": 70
+  },
+  {
+    "adventurerId": 10550504,
+    "adventurer": "Yukimura",
+    "rarity": 5,
+    "element": "Shadow",
+    "weaponType": "Lance",
+    "mcLimit": 50
   },
   {
     "adventurerId": 10550503,

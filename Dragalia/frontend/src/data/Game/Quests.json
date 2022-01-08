@@ -1155,6 +1155,26 @@
     "sortPath": "/2/2/20/3/"
   },
   {
+    "questId": 711,
+    "quest": "Iblis's Trial (Water)",
+    "sortPath": "/2/2/21/"
+  },
+  {
+    "questId": 712,
+    "quest": "Iblis's Trial (Water): Master",
+    "sortPath": "/2/2/21/1/"
+  },
+  {
+    "questId": 713,
+    "quest": "Iblis's Trial (Water): Expert",
+    "sortPath": "/2/2/21/2/"
+  },
+  {
+    "questId": 714,
+    "quest": "Iblis's Trial (Water): Standard",
+    "sortPath": "/2/2/21/3/"
+  },
+  {
     "questId": 399,
     "quest": "Void Battles",
     "sortPath": "/2/3/"
@@ -2083,5 +2103,10 @@
     "questId": 696,
     "quest": "Lilith's Encroaching Shadow: Legend Difficulty",
     "sortPath": "/5/3/1/"
+  },
+  {
+    "questId": 710,
+    "quest": "Jaldabaoth's Piercing Gale: Legend Difficulty",
+    "sortPath": "/5/3/2/"
   }
 ]

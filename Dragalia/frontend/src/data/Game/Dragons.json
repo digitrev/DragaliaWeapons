@@ -144,6 +144,12 @@
     "element": "Flame"
   },
   {
+    "dragonId": 20050217,
+    "dragon": "Gala Beast Ciella",
+    "rarity": 5,
+    "element": "Water"
+  },
+  {
     "dragonId": 20050216,
     "dragon": "Summer Marishiten",
     "rarity": 5,
@@ -274,6 +280,12 @@
     "dragon": "Fubuki",
     "rarity": 3,
     "element": "Water"
+  },
+  {
+    "dragonId": 20050320,
+    "dragon": "Fudo Myo-o",
+    "rarity": 5,
+    "element": "Wind"
   },
   {
     "dragonId": 20050319,

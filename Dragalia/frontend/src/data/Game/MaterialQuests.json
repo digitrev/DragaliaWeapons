@@ -2280,6 +2280,51 @@
     }
   },
   {
+    "materialId": "208020041",
+    "questId": 711,
+    "material": {
+      "materialId": "208020041",
+      "material": "Catherine's Conviction",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/2/5/1/"
+    },
+    "quest": {
+      "questId": 711,
+      "quest": "Iblis's Trial (Water)",
+      "sortPath": "/2/2/21/"
+    }
+  },
+  {
+    "materialId": "208020042",
+    "questId": 712,
+    "material": {
+      "materialId": "208020042",
+      "material": "Catherine's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/2/5/2/"
+    },
+    "quest": {
+      "questId": 712,
+      "quest": "Iblis's Trial (Water): Master",
+      "sortPath": "/2/2/21/1/"
+    }
+  },
+  {
+    "materialId": "208020042",
+    "questId": 713,
+    "material": {
+      "materialId": "208020042",
+      "material": "Catherine's Devotion",
+      "category": "Spiral Materials",
+      "sortPath": "/36.2/2/5/2/"
+    },
+    "quest": {
+      "questId": 713,
+      "quest": "Iblis's Trial (Water): Expert",
+      "sortPath": "/2/2/21/2/"
+    }
+  },
+  {
     "materialId": "201014001",
     "questId": 399,
     "material": {
@@ -7347,6 +7392,21 @@
       "questId": 696,
       "quest": "Lilith's Encroaching Shadow: Legend Difficulty",
       "sortPath": "/5/3/1/"
+    }
+  },
+  {
+    "materialId": "201022033",
+    "questId": 710,
+    "material": {
+      "materialId": "201022033",
+      "material": "Cyclone Emerald",
+      "category": "Dominion Shards",
+      "sortPath": "/27.1/2/3/"
+    },
+    "quest": {
+      "questId": 710,
+      "quest": "Jaldabaoth's Piercing Gale: Legend Difficulty",
+      "sortPath": "/5/3/2/"
     }
   }
 ]

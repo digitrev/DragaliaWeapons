@@ -330,6 +330,17 @@
     ]
   },
   {
+    "wyrmprintId": 40050148,
+    "wyrmprint": "Wings of Rebellion at Rest",
+    "rarity": 5,
+    "affinity": "Wolf's Boon",
+    "abilities": [
+      {
+        "ability": "Frostbitten Punisher"
+      }
+    ]
+  },
+  {
     "wyrmprintId": 40050147,
     "wyrmprint": "A Dragonyule for Ilia",
     "rarity": 5,
@@ -1960,6 +1971,17 @@
     "abilities": [
       {
         "ability": "Skill Damage"
+      }
+    ]
+  },
+  {
+    "wyrmprintId": 40040103,
+    "wyrmprint": "Passion Inherited",
+    "rarity": 4,
+    "affinity": "Bow's Boon",
+    "abilities": [
+      {
+        "ability": "Defense"
       }
     ]
   },
