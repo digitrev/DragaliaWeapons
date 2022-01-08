@@ -62,7 +62,7 @@ export const AccountAdventurerPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [progressFilter, elementFilter, progressFilter, weaponFilter, offset]);
 
   useEffect(() => {
     let adventurerFilter = adventurers;
@@ -79,7 +79,7 @@ export const AccountAdventurerPage = () => {
       }
       if (progressFilter) {
         adventurerFilter = adventurerFilter.filter(
-          (p) => p.currentLevel <= p.wantedLevel,
+          (p) => p.currentLevel < p.wantedLevel,
         );
       }
       setPageCount(Math.ceil(adventurerFilter.length / displayLimit));

@@ -55,7 +55,7 @@ export const AccountDragonPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [progressFilter, elementFilter, offset]);
 
   useEffect(() => {
     let dragonFilter = dragons;
@@ -66,7 +66,7 @@ export const AccountDragonPage = () => {
         );
       }
       if (progressFilter) {
-        dragonFilter = dragonFilter.filter((p) => p.unbind <= p.unbindWanted);
+        dragonFilter = dragonFilter.filter((p) => p.unbind < p.unbindWanted);
       }
       setPageCount(Math.ceil(dragonFilter.length / displayLimit));
       dragonFilter = dragonFilter?.slice(offset, offset + displayLimit);
