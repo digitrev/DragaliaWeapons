@@ -42,7 +42,7 @@ export const AccountFacilityPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [progressFilter]);
 
   useEffect(() => {
     let facilityFilter = facilities;

@@ -10,7 +10,15 @@ export const HomePage = () => {
           Quests
           <ul>
             <li>
-              <Link to="/quests">Quest List</Link>
+              <Link to="/DragaliaWeapons?page=quests">Quest List</Link>
+            </li>
+            <li>
+              <Link to="/DragaliaWeapons?page=chests">Chest List</Link>
+            </li>
+            <li>
+              <Link to="/DragaliaWeapons?page=account/chests">
+                Chest Recommendations
+              </Link>
             </li>
           </ul>
         </li>
@@ -18,13 +26,15 @@ export const HomePage = () => {
           Materials
           <ul>
             <li>
-              <Link to="/materials">Material List</Link>
+              <Link to="/DragaliaWeapons?page=materials">Material List</Link>
             </li>
             <li>
-              <Link to="/account/inventory">Your Inventory</Link>
+              <Link to="/DragaliaWeapons?page=account/inventory">
+                Your Inventory
+              </Link>
             </li>
             <li>
-              <Link to="/costs/totals">Total Costs</Link>
+              <Link to="/DragaliaWeapons?page=costs/totals">Total Costs</Link>
             </li>
           </ul>
         </li>
@@ -32,13 +42,19 @@ export const HomePage = () => {
           Adventurers
           <ul>
             <li>
-              <Link to="/adventurers">Adventurer List</Link>
+              <Link to="/DragaliaWeapons?page=adventurers">
+                Adventurer List
+              </Link>
             </li>
             <li>
-              <Link to="/account/adventurers">Your Adventurers</Link>
+              <Link to="/DragaliaWeapons?page=account/adventurers">
+                Your Adventurers
+              </Link>
             </li>
             <li>
-              <Link to="/costs/adventurers">Adventurer Costs</Link>
+              <Link to="/DragaliaWeapons?page=costs/adventurers">
+                Adventurer Costs
+              </Link>
             </li>
           </ul>
         </li>
@@ -46,16 +62,20 @@ export const HomePage = () => {
           Weapons
           <ul>
             <li>
-              <Link to="/weapons">Weapon List</Link>
+              <Link to="/DragaliaWeapons?page=weapons">Weapon List</Link>
             </li>
             <li>
-              <Link to="/account/weapons">Your Weapons</Link>
+              <Link to="/DragaliaWeapons?page=account/weapons">
+                Your Weapons
+              </Link>
             </li>
             <li>
-              <Link to="/summary/weapons">Weapon Summary</Link>
+              <Link to="/DragaliaWeapons?page=summary/weapons">
+                Weapon Summary
+              </Link>
             </li>
             <li>
-              <Link to="/costs/weapons">Weapon Costs</Link>
+              <Link to="/DragaliaWeapons?page=costs/weapons">Weapon Costs</Link>
             </li>
           </ul>
         </li>
@@ -63,13 +83,17 @@ export const HomePage = () => {
           Passives
           <ul>
             <li>
-              <Link to="/passives">Passive List</Link>
+              <Link to="/DragaliaWeapons?page=passives">Passive List</Link>
             </li>
             <li>
-              <Link to="/account/passives">Your Passives</Link>
+              <Link to="/DragaliaWeapons?page=account/passives">
+                Your Passives
+              </Link>
             </li>
             <li>
-              <Link to="/costs/passives">Passive Costs</Link>
+              <Link to="/DragaliaWeapons?page=costs/passives">
+                Passive Costs
+              </Link>
             </li>
           </ul>
         </li>
@@ -77,13 +101,17 @@ export const HomePage = () => {
           Wyrmprints
           <ul>
             <li>
-              <Link to="/wyrmprints">Wyrmprint List</Link>
+              <Link to="/DragaliaWeapons?page=wyrmprints">Wyrmprint List</Link>
             </li>
             <li>
-              <Link to="/account/wyrmprints">Your Wyrmprints</Link>
+              <Link to="/DragaliaWeapons?page=account/wyrmprints">
+                Your Wyrmprints
+              </Link>
             </li>
             <li>
-              <Link to="/costs/wyrmprints">Wyrmprint Costs</Link>
+              <Link to="/DragaliaWeapons?page=costs/wyrmprints">
+                Wyrmprint Costs
+              </Link>
             </li>
           </ul>
         </li>
@@ -91,13 +119,15 @@ export const HomePage = () => {
           Dragons
           <ul>
             <li>
-              <Link to="/dragons">Dragon List</Link>
+              <Link to="/DragaliaWeapons?page=dragons">Dragon List</Link>
             </li>
             <li>
-              <Link to="/account/dragons">Your Dragons</Link>
+              <Link to="/DragaliaWeapons?page=account/dragons">
+                Your Dragons
+              </Link>
             </li>
             <li>
-              <Link to="/costs/dragons">Dragon Costs</Link>
+              <Link to="/DragaliaWeapons?page=costs/dragons">Dragon Costs</Link>
             </li>
           </ul>
         </li>
@@ -105,13 +135,17 @@ export const HomePage = () => {
           Facilities
           <ul>
             <li>
-              <Link to="/facilities">Facility List</Link>
+              <Link to="/DragaliaWeapons?page=facilities">Facility List</Link>
             </li>
             <li>
-              <Link to="/account/facilities">Your Facilities</Link>
+              <Link to="/DragaliaWeapons?page=account/facilities">
+                Your Facilities
+              </Link>
             </li>
             <li>
-              <Link to="/costs/facilities">Facility Costs</Link>
+              <Link to="/DragaliaWeapons?page=costs/facilities">
+                Facility Costs
+              </Link>
             </li>
           </ul>
         </li>

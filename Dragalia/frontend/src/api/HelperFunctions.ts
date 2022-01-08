@@ -1,4 +1,4 @@
-import { MaterialData } from './DataInterfaces';
+import { MaterialCosts, MaterialData, SummaryTable } from './DataInterfaces';
 
 const numberArrayComparator = (
   n1: number[] | undefined,
@@ -69,3 +69,21 @@ export function ensure<T>(
 
   return arg;
 }
+
+export const sumByMaterial = (costs: MaterialCosts[]): SummaryTable[] =>
+  costs
+    .reduce<SummaryTable[]>((acc, cur) => {
+      const x = acc.find(
+        (m) => m.material.materialId === cur.material.materialId,
+      );
+      if (x === undefined) {
+        acc.push({
+          material: cur.material,
+          sum: cur.quantity,
+        });
+      } else {
+        x.sum += cur.quantity;
+      }
+      return acc;
+    }, [])
+    .sort((a, b) => materialComparator(a.material, b.material));

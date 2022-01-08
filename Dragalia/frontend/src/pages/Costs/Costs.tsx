@@ -3,12 +3,12 @@ import { css } from '@emotion/react';
 import { FC, Fragment, useEffect, useState } from 'react';
 import {
   AccountInventoryData,
+  FarmingTable,
   MaterialCosts,
-  MaterialData,
   MaterialQuestData,
-  QuestData,
+  SummaryTable,
 } from '../../api/DataInterfaces';
-import { materialComparator, needed } from '../../api/HelperFunctions';
+import { needed, sumByMaterial } from '../../api/HelperFunctions';
 import { PrivateApi } from '../../api/UserData';
 import { PublicApi } from '../../api/GameData';
 import { PrimaryButton } from '../../Styles';
@@ -20,16 +20,6 @@ interface Props {
   data: MaterialCosts[];
 }
 
-export interface SummaryTable {
-  material: MaterialData;
-  sum: number;
-}
-
-export interface FarmingTable {
-  quest: QuestData;
-  sum: number;
-}
-
 type DisplayType = 'Summary' | 'Breakdown' | 'Farming';
 
 export const Costs: FC<Props> = ({ data }) => {
@@ -38,24 +28,6 @@ export const Costs: FC<Props> = ({ data }) => {
   const [displayType, setDisplayType] = useState<DisplayType>('Summary');
   const [items, setItems] = useState<AccountInventoryData[]>([]);
   const [quests, setQuests] = useState<MaterialQuestData[]>([]);
-
-  const sumByMaterial = (costs: MaterialCosts[]): SummaryTable[] =>
-    costs
-      .reduce<SummaryTable[]>((acc, cur) => {
-        const x = acc.find(
-          (m) => m.material.materialId === cur.material.materialId,
-        );
-        if (x === undefined) {
-          acc.push({
-            material: cur.material,
-            sum: cur.quantity,
-          });
-        } else {
-          x.sum += cur.quantity;
-        }
-        return acc;
-      }, [])
-      .sort((a, b) => materialComparator(a.material, b.material));
 
   const handleDisplay = (newDisplay: DisplayType) => {
     setDisplayType(newDisplay);

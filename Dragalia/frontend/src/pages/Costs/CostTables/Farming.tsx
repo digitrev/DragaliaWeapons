@@ -2,7 +2,7 @@
 import { css } from '@emotion/react';
 import { FC } from 'react';
 import NumberFormat from 'react-number-format';
-import { FarmingTable } from '../Costs';
+import { FarmingTable } from '../../../api/DataInterfaces';
 
 interface Props {
   data: FarmingTable[];

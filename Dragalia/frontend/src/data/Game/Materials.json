@@ -2022,6 +2022,18 @@
     "sortPath": "/36.2/2/4/2/"
   },
   {
+    "materialId": "208020041",
+    "material": "Catherine's Conviction",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/2/5/1/"
+  },
+  {
+    "materialId": "208020042",
+    "material": "Catherine's Devotion",
+    "category": "Spiral Materials",
+    "sortPath": "/36.2/2/5/2/"
+  },
+  {
     "materialId": "208030011",
     "material": "Gala Ranzal's Conviction",
     "category": "Spiral Materials",

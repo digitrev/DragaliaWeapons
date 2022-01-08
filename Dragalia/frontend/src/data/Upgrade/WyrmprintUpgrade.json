@@ -7217,6 +7217,55 @@
     "Quantity": 850
   },
   {
+    "WyrmprintID": 40040103,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 150
+  },
+  {
+    "WyrmprintID": 40040103,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040103,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040103,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 200
+  },
+  {
+    "WyrmprintID": 40040103,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040103,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
+    "WyrmprintID": 40040103,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 850
+  },
+  {
     "WyrmprintID": 40050001,
     "UpgradeType": "Unbind",
     "Step": 1,
@@ -14565,6 +14614,55 @@
     "Step": 4,
     "MaterialID": "Eldwater",
     "Quantity": 1700
+  },
+  {
+    "WyrmprintID": 40050148,
+    "UpgradeType": "Unbind",
+    "Step": 1,
+    "MaterialID": "Eldwater",
+    "Quantity": 6000
+  },
+  {
+    "WyrmprintID": 40050148,
+    "UpgradeType": "Unbind",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050148,
+    "UpgradeType": "Unbind",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050148,
+    "UpgradeType": "Unbind",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 9000
+  },
+  {
+    "WyrmprintID": 40050148,
+    "UpgradeType": "Copies",
+    "Step": 2,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050148,
+    "UpgradeType": "Copies",
+    "Step": 3,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
+  },
+  {
+    "WyrmprintID": 40050148,
+    "UpgradeType": "Copies",
+    "Step": 4,
+    "MaterialID": "Eldwater",
+    "Quantity": 37000
   },
   {
     "WyrmprintID": 40090001,

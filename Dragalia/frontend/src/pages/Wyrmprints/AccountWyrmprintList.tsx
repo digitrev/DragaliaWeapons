@@ -5,6 +5,7 @@ import { AccountWyrmprintData, WyrmprintLimit } from '../../api/DataInterfaces';
 import { accent2, gray5, PrimaryButton } from '../../Styles';
 import { AccountWyrmprint } from './AccountWyrmprint';
 import useAccordionStatus from '../../hooks/useAccordionStatus';
+
 interface Props {
   data: AccountWyrmprintData[];
   limits: WyrmprintLimit[];

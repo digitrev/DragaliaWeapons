@@ -15,9 +15,9 @@ export const InventoryPage = () => {
     let cancelled = false;
     const doGetInventory = async () => {
       const api = new PrivateApi();
-      const weaponData = await api.getInventory();
+      const inventoryData = await api.getInventory();
       if (!cancelled) {
-        setInventory(weaponData);
+        setInventory(inventoryData);
         setInventoryLoading(false);
       }
     };

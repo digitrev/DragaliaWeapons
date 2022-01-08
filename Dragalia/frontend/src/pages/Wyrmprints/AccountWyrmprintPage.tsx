@@ -68,7 +68,7 @@ export const AccountWyrmprintPage = () => {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [progressFilter, rarityFilter, offset]);
 
   useEffect(() => {
     let wyrmprintFilter = wyrmprints;
