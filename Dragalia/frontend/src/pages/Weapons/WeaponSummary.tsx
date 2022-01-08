@@ -29,9 +29,9 @@ export const WeaponSummary: FC<Props> = ({
     return `${w.unbind}.${w.refine}`;
   };
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+  // useEffect(() => {
+  //   console.log(data);
+  // }, [data]);
 
   return (
     <Fragment>

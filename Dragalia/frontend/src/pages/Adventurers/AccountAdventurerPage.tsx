@@ -62,7 +62,7 @@ export const AccountAdventurerPage = () => {
     return () => {
       cancelled = true;
     };
-  }, [progressFilter]);
+  }, [progressFilter, elementFilter, progressFilter, weaponFilter, offset]);
 
   useEffect(() => {
     let adventurerFilter = adventurers;

@@ -23,7 +23,7 @@ export const AccountPassivePage = () => {
   >(null);
 
   const {
-    elementFilter: newElementFilter,
+    elementFilter,
     toggleElement,
     selectNone: selectNoElements,
     selectAll: selectAllElements,
@@ -52,14 +52,14 @@ export const AccountPassivePage = () => {
     return () => {
       cancelled = true;
     };
-  }, [progressFilter]);
+  }, [progressFilter, weaponFilter, elementFilter]);
 
   useEffect(() => {
     let passiveFilter = passives;
     if (passiveFilter) {
-      if (newElementFilter) {
+      if (elementFilter) {
         passiveFilter = passiveFilter.filter(
-          (p) => newElementFilter[p.passive?.element as ElementString],
+          (p) => elementFilter[p.passive?.element as ElementString],
         );
       }
       if (weaponFilter) {
@@ -72,7 +72,7 @@ export const AccountPassivePage = () => {
       }
       setDisplayPassives(passiveFilter);
     }
-  }, [newElementFilter, passives, progressFilter, weaponFilter]);
+  }, [elementFilter, passives, progressFilter, weaponFilter]);
 
   const handleChangeProgress = (e: ChangeEvent<HTMLInputElement>) => {
     setProgressFilter(e.currentTarget.checked);
@@ -129,7 +129,7 @@ export const AccountPassivePage = () => {
             `}
           >
             <ElementSelect
-              elementFilter={newElementFilter}
+              elementFilter={elementFilter}
               toggleElement={toggleElement}
               selectNone={selectNoElements}
               selectAll={selectAllElements}

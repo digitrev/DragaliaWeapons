@@ -55,7 +55,7 @@ export const AccountDragonPage = () => {
     return () => {
       cancelled = true;
     };
-  }, [progressFilter]);
+  }, [progressFilter, elementFilter, offset]);
 
   useEffect(() => {
     let dragonFilter = dragons;
